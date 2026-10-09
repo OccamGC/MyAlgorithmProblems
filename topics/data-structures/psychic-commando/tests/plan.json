@@ -1,0 +1,148 @@
+{
+  "cases": [
+    {
+      "id": "horizontal",
+      "span": [
+        1000,
+        0
+      ],
+      "m": 10000,
+      "group": 1,
+      "score_percent": 10,
+      "origin": [
+        0,
+        0
+      ],
+      "seed": 421,
+      "offline": false,
+      "outside": false,
+      "purpose": "horizontal; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "vertical",
+      "span": [
+        0,
+        1000
+      ],
+      "m": 10000,
+      "group": 1,
+      "score_percent": 10,
+      "origin": [
+        -500,
+        -500
+      ],
+      "seed": 422,
+      "offline": false,
+      "outside": false,
+      "purpose": "vertical; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "narrow",
+      "span": [
+        50,
+        1000
+      ],
+      "m": 10000,
+      "group": 2,
+      "score_percent": 10,
+      "origin": [
+        99998000,
+        -99999000
+      ],
+      "seed": 423,
+      "offline": false,
+      "outside": false,
+      "purpose": "narrow; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "one-cell",
+      "span": [
+        0,
+        0
+      ],
+      "m": 40,
+      "group": 2,
+      "score_percent": 10,
+      "origin": [
+        0,
+        0
+      ],
+      "seed": 424,
+      "offline": false,
+      "outside": true,
+      "purpose": "one-cell; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "offline",
+      "span": [
+        1000,
+        1000
+      ],
+      "m": 10000,
+      "group": 3,
+      "score_percent": 20,
+      "origin": [
+        0,
+        0
+      ],
+      "seed": 425,
+      "offline": true,
+      "outside": false,
+      "purpose": "offline; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "clipping",
+      "span": [
+        12,
+        17
+      ],
+      "m": 200,
+      "group": 4,
+      "score_percent": 10,
+      "origin": [
+        -10,
+        -5
+      ],
+      "seed": 426,
+      "offline": false,
+      "outside": true,
+      "purpose": "clipping; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "medium",
+      "span": [
+        1000,
+        1000
+      ],
+      "m": 10000,
+      "group": 4,
+      "score_percent": 10,
+      "origin": [
+        -500,
+        -500
+      ],
+      "seed": 427,
+      "offline": false,
+      "outside": false,
+      "purpose": "medium; mixed queries, bombardments and cleanup"
+    },
+    {
+      "id": "maximum-random",
+      "span": [
+        1000,
+        1000
+      ],
+      "m": 30000,
+      "group": 5,
+      "score_percent": 20,
+      "origin": [
+        99998000,
+        -99999000
+      ],
+      "seed": 428,
+      "offline": false,
+      "outside": false,
+      "purpose": "maximum-random; mixed queries, bombardments and cleanup"
+    }
+  ]
+}

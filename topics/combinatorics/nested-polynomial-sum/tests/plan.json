@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012401,
+      "purpose": "one; boundary and full-range coverage",
+      "n": 1,
+      "m": 1,
+      "k": 0,
+      "mode": "one"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012402,
+      "purpose": "random; boundary and full-range coverage",
+      "n": 17,
+      "m": 3,
+      "k": 7,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012403,
+      "purpose": "maximum; boundary and full-range coverage",
+      "n": 2000000000,
+      "m": 1,
+      "k": 300,
+      "mode": "maximum"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012404,
+      "purpose": "maximum; boundary and full-range coverage",
+      "n": 2000000000,
+      "m": 10000000,
+      "k": 0,
+      "mode": "maximum"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012405,
+      "purpose": "random; boundary and full-range coverage",
+      "n": 2000000000,
+      "m": 10000000,
+      "k": 300,
+      "mode": "random"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012406,
+      "purpose": "maximum; boundary and full-range coverage",
+      "n": 1,
+      "m": 10000000,
+      "k": 300,
+      "mode": "maximum"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012407,
+      "purpose": "random; boundary and full-range coverage",
+      "n": 10,
+      "m": 100,
+      "k": 300,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012408,
+      "purpose": "random; boundary and full-range coverage",
+      "n": 2000000000,
+      "m": 1000000,
+      "k": 299,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012409,
+      "purpose": "alternating; boundary and full-range coverage",
+      "n": 1000000000,
+      "m": 9999999,
+      "k": 150,
+      "mode": "alternating"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012410,
+      "purpose": "alternating; boundary and full-range coverage",
+      "n": 1999999999,
+      "m": 10000000,
+      "k": 300,
+      "mode": "alternating"
+    }
+  ]
+}

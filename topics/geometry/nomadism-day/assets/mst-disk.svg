@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="360" viewBox="0 0 750 360" role="img" aria-labelledby="title description">
+  <title id="title">An MST edge has an empty diameter disk</title>
+  <desc id="description">Suppose P is another site inside or on the diameter disk of AB. Both AP and BP are shorter than AB. Removing AB from the tree separates A and B; one of AP and BP crosses that cut and gives a cheaper tree.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="750" height="360" fill="white" stroke="none" />
+  <circle cx="220" cy="180" r="120" fill="#eef4fa" stroke="#acb9c6" stroke-width="2" />
+  <line x1="100" y1="180" x2="340" y2="180" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="100" y1="180" x2="220" y2="120" stroke="#a85a04" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 4" />
+  <line x1="220" y1="120" x2="340" y2="180" stroke="#a85a04" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 4" />
+  <circle cx="100" cy="180" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="82" y="165" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="340" cy="180" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="358" y="165" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="220" cy="120" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="220" y="105" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">P</text>
+  <text x="545" y="112" fill="#a85a04" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">|AP| &lt; |AB|</text>
+  <text x="545" y="157" fill="#a85a04" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">|BP| &lt; |AB|</text>
+  <text x="545" y="232" fill="#086d61" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">T − AB + AP</text>
+  <text x="545" y="271" fill="#086d61" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">T − AB + BP</text>
+  <text x="220" y="332" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">AB ∈ MST  ⇒  P cannot exist</text>
+</svg>

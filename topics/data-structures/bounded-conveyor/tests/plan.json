@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360000,
+      "n": 0,
+      "m": 0,
+      "mode": "pop",
+      "purpose": "empty input sequence"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360001,
+      "n": 0,
+      "m": 2000,
+      "mode": "mixed",
+      "purpose": "zero capacity"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360002,
+      "n": 1,
+      "m": 2000,
+      "mode": "alternate",
+      "purpose": "capacity one, signed endpoints"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360003,
+      "n": 20,
+      "m": 2000,
+      "mode": "cycle",
+      "purpose": "overflow and underflow"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360004,
+      "n": 500000,
+      "m": 500000,
+      "mode": "push",
+      "purpose": "full memory"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360005,
+      "n": 500000,
+      "m": 3000000,
+      "mode": "cycle",
+      "purpose": "maximum operations and wraparound"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360006,
+      "n": 17,
+      "m": 3000000,
+      "mode": "mixed",
+      "purpose": "random wraparound"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360007,
+      "n": 500000,
+      "m": 3000000,
+      "mode": "pop",
+      "purpose": "all removals ignored"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360008,
+      "n": 500000,
+      "m": 3000000,
+      "mode": "alternate",
+      "purpose": "maximum output"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360009,
+      "n": 500000,
+      "m": 3000000,
+      "mode": "mixed",
+      "purpose": "large random queue"
+    }
+  ]
+}

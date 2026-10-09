@@ -1,0 +1,115 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291500
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291501
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291502
+    },
+    {
+      "id": "maximum-chain",
+      "kind": "chain",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum chain",
+      "n": 100000,
+      "low": 1,
+      "high": 2,
+      "separate": true,
+      "large_denominator": true,
+      "seed": 202609291503
+    },
+    {
+      "id": "maximum-star",
+      "kind": "star",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum star",
+      "n": 100000,
+      "low": 99999,
+      "high": 2,
+      "seed": 202609291504
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 100000,
+      "low": 100000,
+      "high": 2,
+      "seed": 202609291505
+    },
+    {
+      "id": "no-sellers",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "no sellers",
+      "n": 100000,
+      "low": 0,
+      "high": 2,
+      "seed": 202609291506
+    },
+    {
+      "id": "no-buyers",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "no buyers",
+      "n": 100000,
+      "low": 100000,
+      "high": 0,
+      "seed": 202609291507
+    },
+    {
+      "id": "all-open",
+      "kind": "chain",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "all open",
+      "n": 100000,
+      "low": 1,
+      "high": 1,
+      "separate": true,
+      "open": true,
+      "seed": 202609291508
+    },
+    {
+      "id": "all-closed",
+      "kind": "star",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "all closed",
+      "n": 100000,
+      "low": 1,
+      "high": 1,
+      "separate": true,
+      "closed": true,
+      "seed": 202609291509
+    }
+  ]
+}

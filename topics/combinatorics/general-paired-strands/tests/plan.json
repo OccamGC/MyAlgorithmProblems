@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012601,
+      "purpose": "small; boundary and full-range coverage",
+      "mode": "small",
+      "queries": 31
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012602,
+      "purpose": "small; boundary and full-range coverage",
+      "mode": "small",
+      "queries": 1000
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012603,
+      "purpose": "random; boundary and full-range coverage",
+      "mode": "random",
+      "queries": 500000
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012604,
+      "purpose": "even_modulus; boundary and full-range coverage",
+      "mode": "even_modulus",
+      "queries": 500000
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012605,
+      "purpose": "unit_modulus; boundary and full-range coverage",
+      "mode": "unit_modulus",
+      "queries": 500000
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012606,
+      "purpose": "maximum_alphabet; boundary and full-range coverage",
+      "mode": "maximum_alphabet",
+      "queries": 500000
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012607,
+      "purpose": "odd_length; boundary and full-range coverage",
+      "mode": "odd_length",
+      "queries": 500000
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012608,
+      "purpose": "even_length; boundary and full-range coverage",
+      "mode": "even_length",
+      "queries": 500000
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012609,
+      "purpose": "boundaries; boundary and full-range coverage",
+      "mode": "boundaries",
+      "queries": 499999
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012610,
+      "purpose": "paired; boundary and full-range coverage",
+      "mode": "paired",
+      "queries": 500000
+    }
+  ]
+}

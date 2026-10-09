@@ -1,0 +1,116 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290200
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609290201
+    },
+    {
+      "id": "sample-4",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 4",
+      "sample": "04",
+      "seed": 202609290202
+    },
+    {
+      "id": "carry-small",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "carry small",
+      "n": 30,
+      "m": 2,
+      "la": 10,
+      "lb": 10,
+      "seed": 202609290203
+    },
+    {
+      "id": "maximum-carry",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum carry",
+      "n": 30,
+      "m": 2,
+      "la": 20000,
+      "lb": 20000,
+      "seed": 202609290204
+    },
+    {
+      "id": "equal-base",
+      "kind": "equal",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "equal base",
+      "n": 30,
+      "m": 30,
+      "la": 20000,
+      "lb": 20000,
+      "seed": 202609290205
+    },
+    {
+      "id": "larger-target-base",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "larger target base",
+      "n": 2,
+      "m": 30,
+      "la": 20000,
+      "lb": 20000,
+      "seed": 202609290206
+    },
+    {
+      "id": "long-standard",
+      "kind": "maximum",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "long standard",
+      "n": 30,
+      "m": 2,
+      "la": 20000,
+      "lb": 1,
+      "seed": 202609290207
+    },
+    {
+      "id": "zero-standard",
+      "kind": "zero",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "zero standard",
+      "n": 30,
+      "m": 2,
+      "la": 1,
+      "lb": 20000,
+      "seed": 202609290208
+    },
+    {
+      "id": "all-maximal",
+      "kind": "maximum",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "all maximal",
+      "n": 30,
+      "m": 2,
+      "la": 20000,
+      "lb": 20000,
+      "seed": 202609290209
+    }
+  ]
+}

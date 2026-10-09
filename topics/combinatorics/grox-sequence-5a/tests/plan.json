@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301420,
+      "purpose": "zero",
+      "digits": 1,
+      "k": 0,
+      "p": 1,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301421,
+      "purpose": "small",
+      "digits": 2,
+      "k": 31,
+      "p": 16,
+      "mode": "small"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301422,
+      "purpose": "zero",
+      "digits": 1,
+      "k": 3000,
+      "p": 2,
+      "mode": "zero"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301423,
+      "purpose": "max-n",
+      "digits": 1001,
+      "k": 0,
+      "p": 2000000000,
+      "mode": "max-n"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301424,
+      "purpose": "max-n",
+      "digits": 1001,
+      "k": 3000,
+      "p": 2000000000,
+      "mode": "max-n"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301425,
+      "purpose": "ones",
+      "digits": 1000,
+      "k": 3000,
+      "p": 1073741824,
+      "mode": "ones"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301426,
+      "purpose": "random",
+      "digits": 1000,
+      "k": 3000,
+      "p": 1000000007,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301427,
+      "purpose": "random",
+      "digits": 1000,
+      "k": 2999,
+      "p": 1999999998,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301428,
+      "purpose": "random",
+      "digits": 1000,
+      "k": 3000,
+      "p": 1,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301429,
+      "purpose": "random",
+      "digits": 1000,
+      "k": 3000,
+      "p": 10007,
+      "mode": "random"
+    }
+  ]
+}

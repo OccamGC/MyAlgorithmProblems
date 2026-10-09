@@ -1,0 +1,131 @@
+{
+  "cases": [
+    {
+      "id": "sample-bomb",
+      "kind": "sample",
+      "n": 5,
+      "m": 5,
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "one connected obstacle removed; diagonal turns",
+      "seed": 5100,
+      "sample": "01"
+    },
+    {
+      "id": "straight-corridor",
+      "kind": "sample",
+      "n": 1,
+      "m": 4,
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "one drone versus multiple drones",
+      "seed": 5101,
+      "sample": "02"
+    },
+    {
+      "id": "two-barriers",
+      "kind": "sample",
+      "n": 1,
+      "m": 5,
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "one bombing cannot open two components",
+      "seed": 5102,
+      "sample": "04"
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "n": 5,
+      "m": 5,
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "multiple starts and obstacle components",
+      "seed": 5103
+    },
+    {
+      "id": "single-start",
+      "kind": "random",
+      "n": 40,
+      "m": 40,
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "one start and one trap at full grid size",
+      "seed": 5104,
+      "single_start": true
+    },
+    {
+      "id": "many-components",
+      "kind": "checkerboard",
+      "n": 40,
+      "m": 40,
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "nearly 800 obstacle components; one trap",
+      "seed": 5105
+    },
+    {
+      "id": "long-corridor",
+      "kind": "corridor",
+      "n": 1,
+      "m": 40,
+      "group": 3,
+      "score_percent": 5,
+      "purpose": "many replacement drones needed",
+      "seed": 5106
+    },
+    {
+      "id": "all-starts",
+      "kind": "open",
+      "n": 40,
+      "m": 40,
+      "group": 3,
+      "score_percent": 5,
+      "purpose": "all open cells with one trap",
+      "seed": 5107
+    },
+    {
+      "id": "multiple-traps",
+      "kind": "random",
+      "n": 40,
+      "m": 40,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "many sources for reverse BFS",
+      "seed": 5108,
+      "many_traps": true
+    },
+    {
+      "id": "dense-obstacles",
+      "kind": "random",
+      "n": 40,
+      "m": 40,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "dense four-connected obstacle blocks",
+      "seed": 5109,
+      "obstacle_percent": 75,
+      "many_traps": true
+    },
+    {
+      "id": "no-trap",
+      "kind": "no-trap",
+      "n": 40,
+      "m": 40,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "all queried answers are impossible",
+      "seed": 5110
+    },
+    {
+      "id": "no-start",
+      "kind": "no-start",
+      "n": 40,
+      "m": 40,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "empty output",
+      "seed": 5111
+    }
+  ]
+}

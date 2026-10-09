@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012200,
+      "purpose": "random; boundary/structure coverage",
+      "n": 1,
+      "T": 2,
+      "mode": "random"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012201,
+      "purpose": "random; boundary/structure coverage",
+      "n": 4,
+      "T": 200,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012202,
+      "purpose": "all-one; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "all-one"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012203,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "chain"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012204,
+      "purpose": "aliases; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "aliases"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012205,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "diamond"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012206,
+      "purpose": "no-join; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "no-join"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012207,
+      "purpose": "no-bottom; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "no-bottom"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012208,
+      "purpose": "almost-chain; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "almost-chain"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012209,
+      "purpose": "random; boundary/structure coverage",
+      "n": 50,
+      "T": 1000,
+      "mode": "random"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012000,
+      "purpose": "boundary and structure coverage",
+      "X": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012001,
+      "purpose": "boundary and structure coverage",
+      "X": 1
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012002,
+      "purpose": "boundary and structure coverage",
+      "X": 2
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012003,
+      "purpose": "boundary and structure coverage",
+      "X": 3
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012004,
+      "purpose": "boundary and structure coverage",
+      "X": 10
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012005,
+      "purpose": "maximum size or randomized coverage",
+      "X": 20
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012006,
+      "purpose": "maximum size or randomized coverage",
+      "X": 40
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012007,
+      "purpose": "maximum size or randomized coverage",
+      "X": 60
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012008,
+      "purpose": "maximum size or randomized coverage",
+      "X": 79
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012009,
+      "purpose": "maximum size or randomized coverage",
+      "X": 80
+    }
+  ]
+}

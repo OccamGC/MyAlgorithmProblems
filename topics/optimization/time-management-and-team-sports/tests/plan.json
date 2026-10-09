@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012801,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "0\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012802,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "5\n5 5 5 5 5\n5 3 2 1 1\n2 2 2 2 2\n2 5 2 5 2\n4 4 1 1 1\n"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012803,
+      "purpose": "uniform",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "uniform"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012804,
+      "purpose": "diagonal",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "diagonal"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012805,
+      "purpose": "staircase",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "staircase"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012806,
+      "purpose": "rows",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "rows"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012807,
+      "purpose": "sparse",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "sparse"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012808,
+      "purpose": "two",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "two"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012809,
+      "purpose": "cycle",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "cycle"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012810,
+      "purpose": "random",
+      "mode": "assignment",
+      "n": 500,
+      "shape": "random"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="670" height="330" viewBox="0 0 670 330">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#264c66"/></marker></defs>
+<rect width="670" height="330" rx="10" fill="#f5f8fc"/>
+<path d="M116 131Q168 85 217 131" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M219 169Q169 219 117 169" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M470.61197078765184 95.17905112160932L399.38802921234816 219.82094887839068" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M414.0 245.0L556.0 245.0" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M570.6119707876518 219.82094887839068L499.38802921234816 95.17905112160932" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<circle cx="95" cy="150" r="25" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="95" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">1</text>
+<circle cx="240" cy="150" r="25" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="240" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">2</text>
+<circle cx="485" cy="70" r="25" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="485" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">3</text>
+<circle cx="385" cy="245" r="25" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="385" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">4</text>
+<circle cx="585" cy="245" r="25" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="585" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">5</text>
+<text x="167" y="292" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">2</text>
+<text x="485" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">3</text>
+</svg>

@@ -1,0 +1,76 @@
+{
+  "cases": [
+    {
+      "id": "single-negative",
+      "kind": "single",
+      "n": 1,
+      "seed": 91,
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "negative answer; empty intervals forbidden"
+    },
+    {
+      "id": "small-signed",
+      "kind": "random",
+      "n": 300,
+      "seed": 92,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "mixed signs and brute-force scale"
+    },
+    {
+      "id": "medium-ties",
+      "kind": "ties",
+      "n": 2000,
+      "seed": 93,
+      "group": 2,
+      "score_percent": 20,
+      "purpose": "equal minima and alternating sums"
+    },
+    {
+      "id": "medium-monotone",
+      "kind": "monotone",
+      "n": 10000,
+      "seed": 94,
+      "group": 3,
+      "score_percent": 20,
+      "purpose": "deep Cartesian tree"
+    },
+    {
+      "id": "maximum-monotone",
+      "kind": "monotone",
+      "n": 1000000,
+      "seed": 95,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "million-node chain without recursion"
+    },
+    {
+      "id": "maximum-product",
+      "kind": "product",
+      "n": 1000000,
+      "seed": 96,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "answer 10^18; 64-bit arithmetic"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 1000000,
+      "seed": 97,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "large irregular Cartesian tree"
+    },
+    {
+      "id": "zero-minima",
+      "kind": "zeros",
+      "n": 1000000,
+      "seed": 98,
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "all interval products zero"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "single",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "All operations on one item",
+      "kind": "singletons",
+      "n": 1,
+      "m": 200000
+    },
+    {
+      "id": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "Small direct-model case",
+      "kind": "random",
+      "n": 80,
+      "m": 300
+    },
+    {
+      "id": "random",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "All four operations at full scale",
+      "kind": "random",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "uniform",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Uniform segments and lazy tags",
+      "kind": "uniform",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "alternating",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "Many initial runs",
+      "kind": "alternating",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "whole",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "Moving and reversing the entire sequence",
+      "kind": "whole",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "moving",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "Repeated large moves to the end",
+      "kind": "moving",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "singletons",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Single-element ranges",
+      "kind": "singletons",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "second-random",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "Independent full-scale seed",
+      "kind": "random",
+      "n": 200000,
+      "m": 200000
+    }
+  ]
+}

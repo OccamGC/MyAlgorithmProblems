@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301800,
+      "purpose": "mixed",
+      "n": 1,
+      "m": 1,
+      "K": 1,
+      "mode": "mixed"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301801,
+      "purpose": "rotation",
+      "n": 1,
+      "m": 20,
+      "K": 1000,
+      "mode": "rotation"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301802,
+      "purpose": "rotation",
+      "n": 20,
+      "m": 1,
+      "K": 1000,
+      "mode": "rotation"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301803,
+      "purpose": "rotation",
+      "n": 20,
+      "m": 20,
+      "K": 1000,
+      "mode": "rotation"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301804,
+      "purpose": "valid",
+      "n": 20,
+      "m": 20,
+      "K": 1000,
+      "mode": "valid"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301805,
+      "purpose": "mixed",
+      "n": 20,
+      "m": 20,
+      "K": 1000,
+      "mode": "mixed"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301806,
+      "purpose": "mixed",
+      "n": 19,
+      "m": 20,
+      "K": 1000,
+      "mode": "mixed"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301807,
+      "purpose": "invalid",
+      "n": 20,
+      "m": 19,
+      "K": 1000,
+      "mode": "invalid"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301808,
+      "purpose": "mixed",
+      "n": 2,
+      "m": 3,
+      "K": 1000,
+      "mode": "mixed"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301809,
+      "purpose": "valid",
+      "n": 20,
+      "m": 20,
+      "K": 999,
+      "mode": "valid"
+    }
+  ]
+}

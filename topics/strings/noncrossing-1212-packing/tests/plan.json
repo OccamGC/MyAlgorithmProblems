@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "s": "",
+      "purpose": "empty sequence",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370301
+    },
+    {
+      "mode": "literal",
+      "s": "1121122121222111",
+      "purpose": "published sample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370302
+    },
+    {
+      "mode": "literal",
+      "s": "11221122111112222122",
+      "purpose": "greedy counterexample with five groups",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370303
+    },
+    {
+      "mode": "ones",
+      "n": 10000000,
+      "purpose": "all unmatched openings, peak stack",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370304
+    },
+    {
+      "mode": "alternating",
+      "n": 10000000,
+      "purpose": "maximum packing",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370305
+    },
+    {
+      "mode": "nested",
+      "n": 10000000,
+      "purpose": "one fully nested chain",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370306
+    },
+    {
+      "mode": "chains",
+      "a": 3000000,
+      "b": 2000000,
+      "purpose": "unequal incomparable chains",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370307
+    },
+    {
+      "mode": "rooted",
+      "a": 1000000,
+      "b": 4000000,
+      "purpose": "unmatchable ancestor chain over many leaves",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370308
+    },
+    {
+      "mode": "unmatched",
+      "a": 2000000,
+      "b": 4000000,
+      "purpose": "unmatched openings promote child forests",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370309
+    },
+    {
+      "mode": "closing",
+      "a": 2000000,
+      "b": 4000000,
+      "purpose": "unmatched closing prefix",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370310
+    }
+  ]
+}

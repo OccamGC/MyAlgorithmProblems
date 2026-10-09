@@ -1,0 +1,102 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "sample": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291500,
+      "purpose": "sample 1"
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "sample": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291501,
+      "purpose": "sample 2"
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "sample": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291502,
+      "purpose": "sample 3"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 1000000,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291503,
+      "purpose": "maximum random"
+    },
+    {
+      "id": "maximum-same",
+      "kind": "same",
+      "n": 1000000,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291504,
+      "purpose": "maximum same"
+    },
+    {
+      "id": "maximum-alternating",
+      "kind": "alternating",
+      "n": 1000000,
+      "K": 1,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291505,
+      "purpose": "maximum alternating"
+    },
+    {
+      "id": "maximum-palindrome",
+      "kind": "palindrome",
+      "n": 1000000,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291506,
+      "purpose": "maximum palindrome"
+    },
+    {
+      "id": "maximum-periodic",
+      "kind": "periodic",
+      "n": 999983,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291507,
+      "purpose": "maximum periodic"
+    },
+    {
+      "id": "maximum-near-periodic",
+      "kind": "near-periodic",
+      "n": 1000000,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291508,
+      "purpose": "maximum near periodic"
+    },
+    {
+      "id": "maximum-alternating-all",
+      "kind": "alternating",
+      "n": 1000000,
+      "K": 20,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291509,
+      "purpose": "maximum alternating all"
+    }
+  ]
+}

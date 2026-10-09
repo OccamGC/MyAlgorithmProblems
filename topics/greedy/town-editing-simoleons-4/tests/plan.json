@@ -1,0 +1,174 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "rows": [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "oracle": "exact",
+      "purpose": "Two targets and one collection slot",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420401,
+      "verification": "exact Fraction grid"
+    },
+    {
+      "mode": "literal",
+      "rows": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "oracle": "exact",
+      "purpose": "Fractional initial target mean",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420402,
+      "verification": "exact Fraction grid"
+    },
+    {
+      "mode": "poor",
+      "k": 1000000,
+      "money": 1000000000,
+      "oracle": "initial",
+      "purpose": "No richer outsider",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420403,
+      "n": 1000000,
+      "verification": "initial wealth is optimal"
+    },
+    {
+      "mode": "few",
+      "k": 1000000,
+      "money": 1,
+      "oracle": "matrix",
+      "purpose": "Huge target population and only three rich outsiders",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420404,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation across outsiders"
+    },
+    {
+      "mode": "same",
+      "k": 1000000,
+      "money": 1,
+      "oracle": "tail",
+      "purpose": "Both populations near one million, equal outsider wealth",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420405,
+      "n": 1000000,
+      "verification": "column-wise grouped tail formula, separate from the standard row-wise recurrence"
+    },
+    {
+      "mode": "groups",
+      "k": 1000000,
+      "money": 1,
+      "values": [
+        17,
+        999999937
+      ],
+      "oracle": "tail",
+      "purpose": "Two wealth levels in shuffled order",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420406,
+      "n": 1000000,
+      "verification": "column-wise grouped tail formula, separate from the standard row-wise recurrence"
+    },
+    {
+      "mode": "groups",
+      "k": 999999,
+      "money": 1000000000,
+      "values": [
+        0,
+        1001,
+        2003,
+        1000000000
+      ],
+      "oracle": "tail",
+      "purpose": "Three rich levels plus poor outsiders",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420407,
+      "n": 1000000,
+      "verification": "column-wise grouped tail formula, separate from the standard row-wise recurrence"
+    },
+    {
+      "mode": "random",
+      "k": 1,
+      "money": 500,
+      "oracle": "grid",
+      "purpose": "Single target and arbitrary outsider wealth",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420408,
+      "n": 1000000,
+      "verification": "literal modular averaging grid"
+    },
+    {
+      "mode": "distinct",
+      "k": 20,
+      "money": 7,
+      "oracle": "grid",
+      "purpose": "Many distinct wealth values and 20 targets",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420409,
+      "n": 1000000,
+      "verification": "literal modular averaging grid"
+    },
+    {
+      "mode": "random",
+      "k": 1000000,
+      "money": 1000000000,
+      "oracle": "factorial",
+      "purpose": "Full-size arbitrary rich values, factorial coefficient check",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420410,
+      "n": 1000000,
+      "verification": "proof-supported coefficient identity evaluated with factorials; not exhaustive state search"
+    }
+  ]
+}

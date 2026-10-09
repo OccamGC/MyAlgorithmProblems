@@ -1,0 +1,15 @@
+* text=auto
+*.md text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.in text eol=lf
+*.out text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Empty sequences are represented by required empty input lines.
+topics/data-structures/crystal-list/tests/samples/03.in whitespace=-blank-at-eof
+topics/number-theory/factorial-recovery/tests/samples/04.in whitespace=-blank-at-eof

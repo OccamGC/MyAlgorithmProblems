@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300001,
+      "purpose": "Boundary and full-range coverage: zero",
+      "n": 1,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300002,
+      "purpose": "Boundary and full-range coverage: random",
+      "n": 9,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300003,
+      "purpose": "Boundary and full-range coverage: zero",
+      "n": 100,
+      "mode": "zero"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300004,
+      "purpose": "Boundary and full-range coverage: spike",
+      "n": 100,
+      "mode": "spike"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300005,
+      "purpose": "Boundary and full-range coverage: ramp",
+      "n": 100,
+      "mode": "ramp"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300006,
+      "purpose": "Boundary and full-range coverage: equal",
+      "n": 500,
+      "mode": "equal"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300007,
+      "purpose": "Boundary and full-range coverage: zero",
+      "n": 500,
+      "mode": "zero"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300008,
+      "purpose": "Boundary and full-range coverage: random",
+      "n": 500,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300009,
+      "purpose": "Boundary and full-range coverage: spike",
+      "n": 500,
+      "mode": "spike"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300010,
+      "purpose": "Boundary and full-range coverage: ramp",
+      "n": 500,
+      "mode": "ramp"
+    }
+  ]
+}

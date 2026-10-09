@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="410" viewBox="0 0 1000 410">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#536779"/></marker></defs>
+<rect width="1000" height="410" fill="#f8fafc"/>
+<text x="500" y="34" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">id : value</text>
+<text x="85" y="96" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">L1</text>
+<rect x="180" y="60" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="257" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">1 : 1</text>
+<path d="M340 83L399 83" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M399 102L340 102" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="405" y="60" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="482" y="98" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">2 : 2</text>
+<text x="630" y="97" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">NULL</text>
+<text x="85" y="181" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">L2</text>
+<rect x="180" y="145" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="257" y="183" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">3 : 3</text>
+<text x="405" y="182" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">NULL</text>
+<path d="M790 115L790 235" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="865" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">3–8</text>
+<text x="85" y="281" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">L1</text>
+<rect x="180" y="245" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="257" y="283" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">4 : 4</text>
+<path d="M340 268L399 268" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M399 287L340 287" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="405" y="245" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="482" y="283" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">2 : −7</text>
+<text x="630" y="282" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">NULL</text>
+<text x="85" y="361" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">L2</text>
+<rect x="180" y="325" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="257" y="363" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">3 : 3</text>
+<path d="M340 348L399 348" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M399 367L340 367" stroke="#536779" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="405" y="325" width="155" height="60" rx="9" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="482" y="363" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#1b354b">5 : 5</text>
+<text x="630" y="362" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">NULL</text>
+</svg>

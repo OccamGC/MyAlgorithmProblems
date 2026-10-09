@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301800,
+      "purpose": "boundary",
+      "T": 0,
+      "mode": "boundary"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301801,
+      "purpose": "boundary",
+      "T": 1,
+      "mode": "boundary"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301802,
+      "purpose": "boundary",
+      "T": 49,
+      "mode": "boundary"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301803,
+      "purpose": "boundary",
+      "T": 10000,
+      "mode": "boundary"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301804,
+      "purpose": "odd",
+      "T": 10000,
+      "mode": "odd"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301805,
+      "purpose": "zero",
+      "T": 10000,
+      "mode": "zero"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301806,
+      "purpose": "random",
+      "T": 10000,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301807,
+      "purpose": "random",
+      "T": 10000,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301808,
+      "purpose": "random",
+      "T": 9999,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301809,
+      "purpose": "odd",
+      "T": 10000,
+      "mode": "odd"
+    }
+  ]
+}

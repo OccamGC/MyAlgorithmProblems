@@ -1,0 +1,1029 @@
+{
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "GCC 16.2.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra",
+  "problems": {
+    "bounded-conveyor": {
+      "sources": {
+        "std.cpp": "270d410cc1d870b97b021ea202be954de7090a1a93dd69b26acbb7802937e9d2"
+      },
+      "binaries": {
+        "std": "27a556a271f88afc20821767b3852f10c7298add62daad67afeec48cd3a5ac4d"
+      },
+      "generator_sha256": "32006249ff7d00cdfda6d1ba0191d11fa704313c1f5a3f96ff8b206e58a44340",
+      "plan_sha256": "585622d328847d15815ea82a83c3cd3bd104a8812f490eac78c0da215b94293d",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "0ccdb5a77ba5bf7687f2565a8ed97dfb9c1af45503c496fb646312239fab5101",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.013153099920600653,
+                0.012232899898663163,
+                0.012527799932286143,
+                0.010828700033016503,
+                0.011775300023145974
+              ],
+              "peak_working_set_bytes": 4993024,
+              "median_seconds": 0.012232899898663163
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "02",
+          "input_sha256": "303d460d19df66f2debd2c872380485db06f3781f907579b3fdbdd89911a63b6",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01205760007724166,
+                0.011754299979656935,
+                0.011525899986736476,
+                0.010877499938942492,
+                0.013425300014205277
+              ],
+              "peak_working_set_bytes": 5001216,
+              "median_seconds": 0.011754299979656935
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "03",
+          "input_sha256": "84df9fb04876610705357b1345cda15fcca87655c062271404e4721373b58cc4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.011230200063437223,
+                0.012234500027261674,
+                0.011898799915798008,
+                0.012507600011304021,
+                0.012920200009830296
+              ],
+              "peak_working_set_bytes": 5029888,
+              "median_seconds": 0.012234500027261674
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "de50f44f766a56dd0573fd9ead71f8e4415d0444ae0236639c4e601cee21bcfc"
+        },
+        {
+          "id": "04",
+          "input_sha256": "ef245ec104ebf0c1df309334c75eeef2a2b9e68ab38d540202fd3a2313ad02c8",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.013051000074483454,
+                0.013121199910528958,
+                0.011468000011518598,
+                0.012323800008744001,
+                0.011804600013419986
+              ],
+              "peak_working_set_bytes": 5025792,
+              "median_seconds": 0.012323800008744001
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "2f21b6451854e58d17e3ddb20552b8b2d79fd52febd0826ee4b98d47639a9778"
+        },
+        {
+          "id": "05",
+          "input_sha256": "c786ae369d2f2f9512149613eb13a2e0a5a79a8a31664c0464c5bfb4af075602",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.022885699989274144,
+                0.02418099995702505,
+                0.02230389998294413,
+                0.023373299976810813,
+                0.022666099946945906
+              ],
+              "peak_working_set_bytes": 6926336,
+              "median_seconds": 0.022885699989274144
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "06",
+          "input_sha256": "a76f3f40ed9eac212bb8fe47c37971d9bb110144c675b43c9b9eb8ea1dedef22",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0713355999905616,
+                0.07032450009137392,
+                0.07116350007709116,
+                0.07281470007728785,
+                0.07378160010557622
+              ],
+              "peak_working_set_bytes": 6950912,
+              "median_seconds": 0.0713355999905616
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "b720c02a804bd91f913e904f3536f9aa8b8d9b1348cbbbc74309be7ff3add3ca"
+        },
+        {
+          "id": "07",
+          "input_sha256": "775572bcb3e45f5c37c613cd84d38867f4d456663409af1b029e4f5e7d11603e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.34112360002472997,
+                0.3598529000300914,
+                0.3592166000744328,
+                0.3585655000060797,
+                0.35313309996854514
+              ],
+              "peak_working_set_bytes": 5033984,
+              "median_seconds": 0.3585655000060797
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "0555d53f6998c39660a013ab31c9b5d1784f68f3f2650f900cd3fc4f8bb028b1"
+        },
+        {
+          "id": "08",
+          "input_sha256": "ee7c60b5660c1b1bf113a52e59ffb3a982b509c0926e59c5cff3f988bbc84688",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02845720003824681,
+                0.02906319999601692,
+                0.02927629998885095,
+                0.029229799984022975,
+                0.03177689993754029
+              ],
+              "peak_working_set_bytes": 4997120,
+              "median_seconds": 0.029229799984022975
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "09",
+          "input_sha256": "b4d8cbe2021dcb9b1f5b0ee40537db2bff16e165ec96f43eb4faae741c6caa3e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.25945749995298684,
+                0.27053139999043196,
+                0.27777589997276664,
+                0.27420169999822974,
+                0.2781067000469193
+              ],
+              "peak_working_set_bytes": 6967296,
+              "median_seconds": 0.27420169999822974
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "a7282fccfe220332a030d0d626586405a1e3f70cf726f07b7de045defe3402bc"
+        },
+        {
+          "id": "10",
+          "input_sha256": "5feeb24b1594860e6d67aaeecff63cc5ddbc6a11d299a9b9d5a1fde82fb7db5b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3638253000099212,
+                0.4295707999262959,
+                0.3414297999115661,
+                0.35426639998331666,
+                0.3679980000015348
+              ],
+              "peak_working_set_bytes": 6963200,
+              "median_seconds": 0.3638253000099212
+            }
+          },
+          "verification_method": "Python deque",
+          "output_sha256": "e6d78af64e300460bd246702f5c895aa8314476a26105e91f0165b8d4e957166"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.3638253000099212,
+          "peak_working_set_bytes": 6967296,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 1.0
+    },
+    "white-cell-board": {
+      "sources": {
+        "alternative.cpp": "93e79c102b4ff449ff60b358bb2be61784c8bd98e4bd6c6d55b08057977f9106",
+        "std.cpp": "bfb6323df67115bfb4147e73996f0f91163d2a1b2e6c58680fad6b946034da97"
+      },
+      "binaries": {
+        "alternative": "0076cc00cba31a4707d77056c7bd49a13d20dfaca1c10c0872ccc44186e7c9e8",
+        "std": "b53b89421b3febff0927c69287e56bdb44a5d486232a56ecd2032e68cb9084b3"
+      },
+      "generator_sha256": "616414fe6fdaa63eb6b659124497655d8a9c84e30ab3fbeb246693bfc9d7be68",
+      "plan_sha256": "124a65b57b33992cac180033e74988daf62650a878e0269df4b10cae059ec670",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.011616799980401993,
+                0.012446200009435415,
+                0.014522199984639883,
+                0.013361899997107685,
+                0.013197400025092065
+              ],
+              "peak_working_set_bytes": 5013504,
+              "median_seconds": 0.013197400025092065
+            },
+            "std": {
+              "seconds": [
+                0.01546050002798438,
+                0.013147899997420609,
+                0.011000999948009849,
+                0.012913500075228512,
+                0.012056100065819919
+              ],
+              "peak_working_set_bytes": 5001216,
+              "median_seconds": 0.012913500075228512
+            }
+          },
+          "verification_method": "independent inclusion-exclusion calculation; exhaustive boards through n=4",
+          "output_sha256": "75c067b90949700dd5df5e67cd686a427c7d0d0848b5126251c8ec4c9bfc23e9"
+        }
+      ],
+      "summary": {
+        "alternative": {
+          "slowest_median_seconds": 0.013197400025092065,
+          "peak_working_set_bytes": 5013504,
+          "passes_estimated_limit": true
+        },
+        "std": {
+          "slowest_median_seconds": 0.012913500075228512,
+          "peak_working_set_bytes": 5001216,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 0.5
+    },
+    "box-gcd-prefix-sum": {
+      "sources": {
+        "std.cpp": "d9991381cd68bec5434ce34169a8b28207d13a4a4cd927ebe1e691b9a2578d7e",
+        "totient-sums.hpp": "6f9dced9fe0f9051b41c42d79e4fcd0f8829340f57750f0191aa318c854d3011"
+      },
+      "binaries": {
+        "std": "92c47260bce0dd5b87ede603e053acbc3a020c7d8321174263dc1a1c481ad681"
+      },
+      "generator_sha256": "3c68373bb8f941ec80eb797754723896ba7cdc1bb100b2267e950ad8e5b7965a",
+      "plan_sha256": "91d7e7c05a6236eeb17cb94ee0b9797efaae81bec10916ae0686163a3a95a813",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "3f11ad6bbc7ecca0b2416b713dee77f1a635c00aaeaa946e14cde1c2bfae56d5",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01412409998010844,
+                0.01474789995700121,
+                0.014809000073000789,
+                0.013291200040839612,
+                0.013671199907548726
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.01412409998010844
+            }
+          },
+          "verification_method": "closed m=1 identity",
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "02",
+          "input_sha256": "d0b4a270120c9c6da237ca84c4b5dcb4ac5c80ab26570670ab578f73a5568247",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.013253899989649653,
+                0.014027700060978532,
+                0.013821600005030632,
+                0.012268099933862686,
+                0.013348400010727346
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.013348400010727346
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "03",
+          "input_sha256": "c84ee08831e31415e32cdb604fbe79f9aef82e00a33ae7579f7d82dfa8c41eef",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.014195200055837631,
+                0.014795599970966578,
+                0.013357500080019236,
+                0.014742999919690192,
+                0.013718599919229746
+              ],
+              "peak_working_set_bytes": 5308416,
+              "median_seconds": 0.014195200055837631
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "76b84d4652a721eefa07441c62707a4c198447f3d24dded57828f869f3c44546"
+        },
+        {
+          "id": "04",
+          "input_sha256": "ad63693a207f7b44e7d8cf13fc01d0cb995b0a328ea416214bd1942ce173d663",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.014914899948053062,
+                0.013644299935549498,
+                0.01681180007290095,
+                0.018854600028134882,
+                0.013782400055788457
+              ],
+              "peak_working_set_bytes": 5300224,
+              "median_seconds": 0.014914899948053062
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "a4fbb28d5df7be4ae1f8aeb3fffd47aec8fb7682f82e6e7528b028f951ed25cd"
+        },
+        {
+          "id": "05",
+          "input_sha256": "f6017b79a6dbe80bd341d80cc5d50e42e754c411306c02828276958b14489549",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04634350002743304,
+                0.047489100019447505,
+                0.04589309997390956,
+                0.05190919991582632,
+                0.04900999995879829
+              ],
+              "peak_working_set_bytes": 38244352,
+              "median_seconds": 0.047489100019447505
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "5db79125e2842d6a32100658cf1850ad4f92d7ca416603743568ca5f19cb8969"
+        },
+        {
+          "id": "06",
+          "input_sha256": "548534f7d096113e1e3ede6e409fb69183018de8d4985189df54e7c4d484a9ad",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.10528399993199855,
+                0.10509910003747791,
+                0.10467239993158728,
+                0.10374890000093728,
+                0.1051942000631243
+              ],
+              "peak_working_set_bytes": 38543360,
+              "median_seconds": 0.10509910003747791
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "370010849f903693aa6353975891c263d2898f67bd5312b7c6930537a933c38c"
+        },
+        {
+          "id": "07",
+          "input_sha256": "f6578226f3ba364360cb1a6f814d084ad7a7d3c5a9f9d13f39c120879c75dd5f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04715219989884645,
+                0.04631790006533265,
+                0.04597520001698285,
+                0.0464548000600189,
+                0.04654490004759282
+              ],
+              "peak_working_set_bytes": 38240256,
+              "median_seconds": 0.0464548000600189
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "20bcaca35e903b29892f17e9a7d2bdc8656fb050cc589e12b347240833e27ae1"
+        },
+        {
+          "id": "08",
+          "input_sha256": "3ec978a90b30c0e64bc26d81e53e1898ea2f06619ac982fb32936cc96d4e07f9",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.08229839999694377,
+                0.143056400003843,
+                0.09391309996135533,
+                0.0797703000716865,
+                0.08119199995417148
+              ],
+              "peak_working_set_bytes": 38240256,
+              "median_seconds": 0.08229839999694377
+            }
+          },
+          "verification_method": "closed m=1 identity",
+          "output_sha256": "4c8245460aa6ff7199c541b1b39d2adb89f575c481d866e30da2ad5a3509028d"
+        },
+        {
+          "id": "09",
+          "input_sha256": "fadbed009375db75fa1c3211056d4b672a22e2a5e1c7339c8735b5f4b6571aa7",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.8173821000382304,
+                0.816148400073871,
+                0.8172382999910042,
+                0.819173900061287,
+                0.8320011999458075
+              ],
+              "peak_working_set_bytes": 38543360,
+              "median_seconds": 0.8173821000382304
+            }
+          },
+          "verification_method": "separate B=1000000 build; small literal models verify the shared identities",
+          "output_sha256": "d90df95f144210873550802ae73b23f8bd74ac4767db98bc0a0924c56ae35d0f"
+        },
+        {
+          "id": "10",
+          "input_sha256": "31d8daaf2be87161f72a2d4ebfee0ea523820396ec35ab6d101e5b5582eca310",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.8096025999402627,
+                0.8252337999874726,
+                0.8298835000023246,
+                0.8270807999651879,
+                0.8203844999661669
+              ],
+              "peak_working_set_bytes": 38551552,
+              "median_seconds": 0.8252337999874726
+            }
+          },
+          "verification_method": "separate B=1000000 build; small literal models verify the shared identities",
+          "output_sha256": "bd79b2d65284e710e4cd7aac2ed3f6d48900466777c4fe956c7667ef32d2d01a"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.8252337999874726,
+          "peak_working_set_bytes": 38551552,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 2.0
+    },
+    "monotone-gcd-sum": {
+      "sources": {
+        "std.cpp": "f967869c70d820182effdfadb9a26238c9ce7a9ec33cc0b3cf306ca90be36a81",
+        "totient-sums.hpp": "6f9dced9fe0f9051b41c42d79e4fcd0f8829340f57750f0191aa318c854d3011"
+      },
+      "binaries": {
+        "std": "b566d8b1ac3299f01a2a9fa75597669cc80e6bbc1c35476ef70b9052d60bedfa"
+      },
+      "generator_sha256": "3c68373bb8f941ec80eb797754723896ba7cdc1bb100b2267e950ad8e5b7965a",
+      "plan_sha256": "96ba6cefc938e794034fcc13a92b0241058f15071d8c57a235ae400211047704",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "3f11ad6bbc7ecca0b2416b713dee77f1a635c00aaeaa946e14cde1c2bfae56d5",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01541160000488162,
+                0.017988999956287444,
+                0.01502789999358356,
+                0.014273399952799082,
+                0.01333139999769628
+              ],
+              "peak_working_set_bytes": 5300224,
+              "median_seconds": 0.01502789999358356
+            }
+          },
+          "verification_method": "closed m=1 identity",
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "02",
+          "input_sha256": "d0b4a270120c9c6da237ca84c4b5dcb4ac5c80ab26570670ab578f73a5568247",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01293750002514571,
+                0.01477020001038909,
+                0.01461589999962598,
+                0.013653600006364286,
+                0.015009300084784627
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.01461589999962598
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "03",
+          "input_sha256": "c84ee08831e31415e32cdb604fbe79f9aef82e00a33ae7579f7d82dfa8c41eef",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.012696799938566983,
+                0.014364699949510396,
+                0.014423100044950843,
+                0.012677399907261133,
+                0.013929499895311892
+              ],
+              "peak_working_set_bytes": 5300224,
+              "median_seconds": 0.013929499895311892
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "9961d158a7e0e2f990765971a9e490af826c0743b7d603020f34cc8944319fcb"
+        },
+        {
+          "id": "04",
+          "input_sha256": "ad63693a207f7b44e7d8cf13fc01d0cb995b0a328ea416214bd1942ce173d663",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.014943099929951131,
+                0.014423899934627116,
+                0.014779900084249675,
+                0.024981700000353158,
+                0.013750000041909516
+              ],
+              "peak_working_set_bytes": 5300224,
+              "median_seconds": 0.014779900084249675
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "bfdb8bc02abfac18537bfff970ac27fcf95c1ee5e8c39c6b47a44161aeba7c35"
+        },
+        {
+          "id": "05",
+          "input_sha256": "f6017b79a6dbe80bd341d80cc5d50e42e754c411306c02828276958b14489549",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.055092800059355795,
+                0.05644600000232458,
+                0.0553883999818936,
+                0.05521209992002696,
+                0.05307369993533939
+              ],
+              "peak_working_set_bytes": 38227968,
+              "median_seconds": 0.05521209992002696
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "eba31bad79cd490cf70906d8b617df680cee58b5cd191bd2ff82895373512439"
+        },
+        {
+          "id": "06",
+          "input_sha256": "548534f7d096113e1e3ede6e409fb69183018de8d4985189df54e7c4d484a9ad",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.054615600034594536,
+                0.05323429999407381,
+                0.05444189999252558,
+                0.056152200093492866,
+                0.0561903000343591
+              ],
+              "peak_working_set_bytes": 38236160,
+              "median_seconds": 0.054615600034594536
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "c89be7b1415145374bdd9f711edca2afe08f8460b0b341b08f90f6ca7eb9dad4"
+        },
+        {
+          "id": "07",
+          "input_sha256": "f6578226f3ba364360cb1a6f814d084ad7a7d3c5a9f9d13f39c120879c75dd5f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.054888100014068186,
+                0.05189780006185174,
+                0.055983299971558154,
+                0.05250170000363141,
+                0.05486369994468987
+              ],
+              "peak_working_set_bytes": 38232064,
+              "median_seconds": 0.05486369994468987
+            }
+          },
+          "verification_method": "direct phi sieve and ungrouped divisor sum",
+          "output_sha256": "1d628cb54259eeb95324e90446d4a052ce11482346797f0c311d673511382919"
+        },
+        {
+          "id": "08",
+          "input_sha256": "3ec978a90b30c0e64bc26d81e53e1898ea2f06619ac982fb32936cc96d4e07f9",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.08814909995999187,
+                0.08564890001434833,
+                0.08611529995687306,
+                0.08979380002710968,
+                0.08724140003323555
+              ],
+              "peak_working_set_bytes": 38236160,
+              "median_seconds": 0.08724140003323555
+            }
+          },
+          "verification_method": "closed m=1 identity",
+          "output_sha256": "6e2ae11dad0616f66bbb2b6e6556f580bb987fd911d7132aa6bee2bfc7cc7b52"
+        },
+        {
+          "id": "09",
+          "input_sha256": "fadbed009375db75fa1c3211056d4b672a22e2a5e1c7339c8735b5f4b6571aa7",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2818608999950811,
+                0.2843954999698326,
+                0.2977299001067877,
+                0.2937522999709472,
+                0.2848672999534756
+              ],
+              "peak_working_set_bytes": 38232064,
+              "median_seconds": 0.2848672999534756
+            }
+          },
+          "verification_method": "separate B=1000000 build; small literal models verify the shared identities",
+          "output_sha256": "be7cec1d11d397449836ab78d50cc4463603250e22be6a256d08ccf4ce793378"
+        },
+        {
+          "id": "10",
+          "input_sha256": "31d8daaf2be87161f72a2d4ebfee0ea523820396ec35ab6d101e5b5582eca310",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.295774900005199,
+                0.2738107000477612,
+                0.28815050004050136,
+                0.28075329994317144,
+                0.2871838000137359
+              ],
+              "peak_working_set_bytes": 38236160,
+              "median_seconds": 0.2871838000137359
+            }
+          },
+          "verification_method": "separate B=1000000 build; small literal models verify the shared identities",
+          "output_sha256": "f80f15cfb63fec74495451ca42dafda1223f1e5473220268f0cc5534ce64176a"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.2871838000137359,
+          "peak_working_set_bytes": 38236160,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 1.0
+    },
+    "falling-factorial-binomial-sum": {
+      "sources": {
+        "alternative.cpp": "9f88da87846c4667a6f0c30251857ad570354bbe6950a0b1e7416a163875bfef",
+        "factorial-table.hpp": "f87665891acd4ca5e1c79c552e4870635de49b7c43f59e8c8da8f08ccd005f28",
+        "std.cpp": "9f699a996294f019553b420b5b5b72f1f3af156bc4badb6ce78632a229569fdc",
+        "tests\\generate-table.cpp": "604f2f9860ac1364b2cb8a46f056c954da5a634aa4c10d13ad87d99ad2d120e6",
+        "tests\\verify-table.cpp": "59f6a1dce458fb80db1ec69f2eedcec588dc1c59ff2f29eeb7ebbe15b0639899"
+      },
+      "binaries": {
+        "alternative": "db9964bf8039f2c630e0bf5d668a3a298a89e9b146de1b9025784609a6a4fc0b",
+        "std": "1a6a994795855edc4d60aac4955ae5ab8b5bab6d62c07b2060d431fa2c5622aa"
+      },
+      "generator_sha256": "7d246b1232962f2798157e9d1e2e92307b68bef28629be05e40919ed1ea013a1",
+      "plan_sha256": "1f254650e083c7454dc14dd96983844989b23e6c35e70cb7d0417d134fabafac",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "3f11ad6bbc7ecca0b2416b713dee77f1a635c00aaeaa946e14cde1c2bfae56d5",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.015562199987471104,
+                0.01288699998985976,
+                0.013390099979005754,
+                0.012702199979685247,
+                0.012377999955788255
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.01288699998985976
+            },
+            "std": {
+              "seconds": [
+                0.011975399916991591,
+                0.011072699911892414,
+                0.0120514000300318,
+                0.013363500009290874,
+                0.012211200082674623
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 0.0120514000300318
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "02",
+          "input_sha256": "215a7a7dc3cc760ce2c0db86c1c4dcd30362ac7c347f84d216c9272f21c31201",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.012314800056628883,
+                0.013142099953256547,
+                0.013752699946053326,
+                0.012750099995173514,
+                0.012259899987839162
+              ],
+              "peak_working_set_bytes": 5050368,
+              "median_seconds": 0.012750099995173514
+            },
+            "std": {
+              "seconds": [
+                0.01271530007943511,
+                0.012295199907384813,
+                0.01212840003427118,
+                0.012081399909220636,
+                0.011693699983879924
+              ],
+              "peak_working_set_bytes": 5050368,
+              "median_seconds": 0.01212840003427118
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        {
+          "id": "03",
+          "input_sha256": "8b2400d87bdbae9842fb0f3af97842ee8245fb64129e1b0aa046a0b299267505",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.012927699950523674,
+                0.019305999972857535,
+                0.019583799992688,
+                0.015344699961133301,
+                0.01686950004659593
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 0.01686950004659593
+            },
+            "std": {
+              "seconds": [
+                0.012828400009311736,
+                0.018749300041235983,
+                0.01831870002206415,
+                0.01838939997833222,
+                0.014793099951930344
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.01831870002206415
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "acbf3426054eb2943640b7d941b8181fe3cc9c00a2f396a4ebaa7647d493e420"
+        },
+        {
+          "id": "04",
+          "input_sha256": "4820758506e53c1aad7135002864299af80914295427d9b25e8ac060f70fbd65",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.01695860002655536,
+                0.016326199984177947,
+                0.016115900012664497,
+                0.01733790000434965,
+                0.017210599966347218
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 0.01695860002655536
+            },
+            "std": {
+              "seconds": [
+                0.017031499999575317,
+                0.016299700015224516,
+                0.01668140001129359,
+                0.01635539997369051,
+                0.016122100059874356
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.01635539997369051
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "bd7ffda5b189e9044131396178f6029f47b4de0634afe143df53da2c4b59dcf1"
+        },
+        {
+          "id": "05",
+          "input_sha256": "a488c881c3f74c40a2876e2bfea14bad612fa01ca19ff2ab432e1a293aa99d0c",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.012239199946634471,
+                0.012278300011530519,
+                0.013300499995239079,
+                0.013511800090782344,
+                0.013140999944880605
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 0.013140999944880605
+            },
+            "std": {
+              "seconds": [
+                0.016973900026641786,
+                0.015514300088398159,
+                0.01709910004865378,
+                0.016853000037372112,
+                0.015520800021477044
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 0.016853000037372112
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "75793f5fe031b8add25ab118ab2c3de2ffee30799058c2d0390948baab7c9e79"
+        },
+        {
+          "id": "06",
+          "input_sha256": "11803993790a4008334f85bd7dba90378fdaf651f0086d0a756efa01d9b94e3a",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.01767560001462698,
+                0.018104100017808378,
+                0.017852499964646995,
+                0.017692599911242723,
+                0.01686069997958839
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 0.017692599911242723
+            },
+            "std": {
+              "seconds": [
+                0.01250780001282692,
+                0.012714499956928194,
+                0.014342400012537837,
+                0.012740499922074378,
+                0.012813500012271106
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.012740499922074378
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "e5259aae1c02d386a7b0531e5386a20e1a3c949d2fe39fc9d1db43f28a807d7b"
+        },
+        {
+          "id": "07",
+          "input_sha256": "0073cf03577a737756752129cc3abcb9f5a4069c705321ee2115574cc31c59f9",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.013425000011920929,
+                0.013101299991831183,
+                0.01372699998319149,
+                0.012287799967452884,
+                0.013009799993596971
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 0.013101299991831183
+            },
+            "std": {
+              "seconds": [
+                0.013685900019481778,
+                0.013503700029104948,
+                0.013397200033068657,
+                0.013481399975717068,
+                0.01202490006107837
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.013481399975717068
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "cbcd54fa717ad4aff26945cbd0be4af9f4d7a49c4dc9cfc5c9f7462a12dce931"
+        },
+        {
+          "id": "08",
+          "input_sha256": "0b911c0bde9247a386b343e29ab7e075a9dbcf86b14718a9f82104ecdb18f46b",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                1.9504604000831023,
+                1.9730025000171736,
+                1.9950759999919683,
+                1.9635087000206113,
+                1.957361999899149
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 1.9635087000206113
+            },
+            "std": {
+              "seconds": [
+                0.01631109998561442,
+                0.017131100059486926,
+                0.01839400001335889,
+                0.01756289997138083,
+                0.01822690002154559
+              ],
+              "peak_working_set_bytes": 5062656,
+              "median_seconds": 0.01756289997138083
+            }
+          },
+          "verification_method": "independent small enumeration, verified formula and factorial checkpoints",
+          "output_sha256": "e7c104f6c4e266f27f7b2ba9ba353ddecd9695f6d12b7e242fcf86be2f505670"
+        },
+        {
+          "id": "09",
+          "input_sha256": "5aa64bf442b87fe8f6074b9e0b1fc489f2b2186bd33b3d7c17715c8a4d977a8a",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                1.9496168000623584,
+                1.9705218999879435,
+                1.9472092000069097,
+                1.9540752000175416,
+                1.9578315999824554
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 1.9540752000175416
+            },
+            "std": {
+              "seconds": [
+                0.020968299941159785,
+                0.020535800023935735,
+                0.0193112000124529,
+                0.02645539992954582,
+                0.020159600069746375
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 0.020535800023935735
+            }
+          },
+          "verification_method": "independent small enumeration, verified formula and factorial checkpoints",
+          "output_sha256": "f009af47bb1ede78a5907ca06939cd4f9f24c50eb2f5d0a56f0bbdfe8c838a9c"
+        },
+        {
+          "id": "10",
+          "input_sha256": "094f53851d789a7dfbebbbd19875d6dff79aeb9b1dbbadefc1f5bab77d597ff0",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.014671099954284728,
+                0.012823800090700388,
+                0.01309160003438592,
+                0.012928599957376719,
+                0.01318200002424419
+              ],
+              "peak_working_set_bytes": 5054464,
+              "median_seconds": 0.01309160003438592
+            },
+            "std": {
+              "seconds": [
+                0.012339700013399124,
+                0.013529299991205335,
+                0.012244999990798533,
+                0.013003499945625663,
+                0.012064500013366342
+              ],
+              "peak_working_set_bytes": 5058560,
+              "median_seconds": 0.012339700013399124
+            }
+          },
+          "verification_method": "direct product or Wilson complement",
+          "output_sha256": "fc2185d36614e1ab501c8914978e95aa3d8bfdfe806479ed7be19c46ca2cce66"
+        }
+      ],
+      "summary": {
+        "alternative": {
+          "slowest_median_seconds": 1.9635087000206113,
+          "peak_working_set_bytes": 5062656,
+          "passes_estimated_limit": false
+        },
+        "std": {
+          "slowest_median_seconds": 0.020535800023935735,
+          "peak_working_set_bytes": 5062656,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 0.5
+    }
+  }
+}

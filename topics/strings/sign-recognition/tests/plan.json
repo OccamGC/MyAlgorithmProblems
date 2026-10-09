@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291300
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291301
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291302
+    },
+    {
+      "id": "single-long",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "single long",
+      "n": 1,
+      "length": 50000,
+      "seed": 202609291303
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 5,
+      "length": 50000,
+      "seed": 202609291304
+    },
+    {
+      "id": "maximum-equal",
+      "kind": "equal",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum equal",
+      "n": 5,
+      "length": 50000,
+      "seed": 202609291305
+    },
+    {
+      "id": "maximum-disjoint",
+      "kind": "disjoint",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum disjoint",
+      "n": 5,
+      "length": 50000,
+      "seed": 202609291306
+    },
+    {
+      "id": "long-prefixes",
+      "kind": "prefix",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "long prefixes",
+      "n": 5,
+      "length": 50000,
+      "seed": 202609291307
+    },
+    {
+      "id": "binary",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "binary",
+      "n": 5,
+      "length": 50000,
+      "alphabet": 2,
+      "seed": 202609291308
+    },
+    {
+      "id": "single-character",
+      "kind": "equal",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "single character",
+      "n": 5,
+      "length": 1,
+      "seed": 202609291309
+    }
+  ]
+}

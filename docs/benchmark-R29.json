@@ -1,0 +1,1398 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "compiler": "g++.exe (GCC) 16.2.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-pedantic-errors"
+  ],
+  "repeat": 5,
+  "resolution_seconds": 0.5,
+  "timing_scope": "Includes process startup and input/output; excludes generation and validation.",
+  "memory_scope": "Separately measured peak working set includes runtime.",
+  "problems": {
+    "selective-suffix-sort": {
+      "sources": {
+        "std.cpp": "422da2507ceac8b9e32460b6ab300002bae8bc15e00c610bfced7200e17ff4b4"
+      },
+      "binaries": {
+        "std": "9200339a32cff89d56b6944178fad31c584943ef3726ed8910d44905422529a9"
+      },
+      "generator_sha256": "41929fbe75c8ad747f4fd5d428876fbb1641e4581f1f1eae59f4b751b8a4921f",
+      "plan_sha256": "9c519a189b77316d6e00bea445e9405f33936f24b9374e3a4e71d407d5c4c532",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "d4e05b71c75dc1791572f87052ac14251d69ba7c0217db0156a76bfad31e3d6c",
+          "output_sha256": "d8deecbe48599073d3b2b2e787b5e76e20f1f1050505e108b02c5da0cfff3b49",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.022513700067065656,
+                0.023005599970929325,
+                0.02302540000528097,
+                0.021881200023926795,
+                0.022725899936631322
+              ],
+              "median_seconds": 0.022725899936631322,
+              "peak_working_set_bytes": 5578752
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "b46eab79199dec0ec333de767c0391a71de2e123cdd2b3b64248c3b8228a5a95",
+          "output_sha256": "532da0452320df7aab527a0e94074f70f23aa231af8fd0194eac0e325353e864",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.021411900059320033,
+                0.02086710010189563,
+                0.021996999974362552,
+                0.020026399986818433,
+                0.023811399936676025
+              ],
+              "median_seconds": 0.021411900059320033,
+              "peak_working_set_bytes": 5578752
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "7869ca3050c83226fbe21bbaf9a8e91fdabae1eb3a39e4b2190c33a7b94edd46",
+          "output_sha256": "285cf05e6ae00d8f48534870b0517f1cbfae378f29be57a397399df253cb90b7",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05103580001741648,
+                0.05432580003980547,
+                0.05495999997947365,
+                0.05177729995921254,
+                0.05610600009094924
+              ],
+              "median_seconds": 0.05432580003980547,
+              "peak_working_set_bytes": 15896576
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "996e1febd8d982ccbd09f37103879881d6e452553a9b3889ece8d8d69184cacf",
+          "output_sha256": "6f97eeaaf7f9aeb1db42f0940e2176673374e49175e4e410d90f50bda8eb0768",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05849710002075881,
+                0.0602037999778986,
+                0.057691399939358234,
+                0.05792479997035116,
+                0.05661379999946803
+              ],
+              "median_seconds": 0.05792479997035116,
+              "peak_working_set_bytes": 15929344
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "dfbcded5df74fa9e6967bc989cf92ee4391be5be7d34e7e434c3449b202318bb",
+          "output_sha256": "285cf05e6ae00d8f48534870b0517f1cbfae378f29be57a397399df253cb90b7",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.042549600009806454,
+                0.04294590000063181,
+                0.041198199964128435,
+                0.04092250007670373,
+                0.04262140009086579
+              ],
+              "median_seconds": 0.042549600009806454,
+              "peak_working_set_bytes": 13492224
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "0b7fa0c9d2759b80f86407d661e9485b927c9d7924d71a0e1f76bc9ebe87cd37",
+          "output_sha256": "4979c7b11bcb54f7727537d6fcaa18d07828c447ca9bfd58e416b68c0d6917aa",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04969310003798455,
+                0.04686900007072836,
+                0.04715639993082732,
+                0.045647500082850456,
+                0.052606699988245964
+              ],
+              "median_seconds": 0.04715639993082732,
+              "peak_working_set_bytes": 13488128
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "f14e97ea2eeff2f9baef518e53afb7087a0251758e35eb2ba0e29fa4086c7238",
+          "output_sha256": "1cb2b6e307a9b5e0d329eadb7eb08f3e0f087bb092c257399062ea1b4ef1665e",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.06842210004106164,
+                0.07204529992304742,
+                0.07099379994906485,
+                0.07370139996055514,
+                0.07232640008442104
+              ],
+              "median_seconds": 0.07204529992304742,
+              "peak_working_set_bytes": 13828096
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "ad90d27b98646a2cd9905c5b03b4fcf4450563e81a9aa3a2e7b2a5baf425619a",
+          "output_sha256": "a53f048e5f65c84919b96b23af607911eb5238a2eaa8688f2176e3d603aaedfe",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05627920001279563,
+                0.061596799991093576,
+                0.057797799934633076,
+                0.05641739990096539,
+                0.054520900011993945
+              ],
+              "median_seconds": 0.05641739990096539,
+              "peak_working_set_bytes": 13672448
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "089d24eac923eeeb10a495a2f299887c5623dbc14249ed17222e55bd5f204f08",
+          "output_sha256": "cfbeb7635ca7d20b83551c7ed2ad5f597675b46737e52b310b9ab1804570da82",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.1485974999377504,
+                0.10349010000936687,
+                0.09583709994331002,
+                0.09740019997116178,
+                0.09883870009798557
+              ],
+              "median_seconds": 0.09883870009798557,
+              "peak_working_set_bytes": 15872000
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "All initial inversion totals independently counted; every output checked for length and monotonic bounds; structured repeat/ordered cases have exact answers. Optimal count evolution proved and compared to actual array sorting on 700 small inputs.",
+          "input_sha256": "8c833da348a2b861b867995aeaa31ef05d114353740be4e49846f839e384fb9c",
+          "output_sha256": "d3d9ebb64d6a578dce982a0d6ffdd5c9defe6e0d3a8401f23905727d70f4cb76",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.08539709995966405,
+                0.09144290001131594,
+                0.16127440007403493,
+                0.0919821000425145,
+                0.08664579992182553
+              ],
+              "median_seconds": 0.09144290001131594,
+              "peak_working_set_bytes": 15884288
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.09883870009798557,
+          "peak_working_set_bytes": 15929344
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 0.5,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "common-tree-subset": {
+      "sources": {
+        "std.cpp": "13eb8d35715171275dfdbb60ae7101bbf2c9b9fe14513b37ce7d6217ca06a43b"
+      },
+      "binaries": {
+        "std": "7c51380843eebc221486faa29753598c9686db049b464254db6b6e9ed90bac7d"
+      },
+      "generator_sha256": "41929fbe75c8ad747f4fd5d428876fbb1641e4581f1f1eae59f4b751b8a4921f",
+      "plan_sha256": "f24956fb61ae5954a039fa6c5bab41c4596dd7ba742b57fa288c86651dd8a3ad",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "956d9a23f0cd18e852b9c401809a58943c43ba11a85fc4acb479cc62a74dc06a",
+          "output_sha256": "69fa4dd4fdc0b43ba7ca7c997539c4500f03ab9b220228e2b1e97bd305397806",
+          "certificate": {
+            "certificate_sha256": "fcd18a8a3ed33743a37c9345e2958e1b8dc090166d4920a221317bb4ccbd21ed",
+            "centers": 7,
+            "flow_certificates": 3
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02558559994213283,
+                0.02410889999009669,
+                0.025938900071196258,
+                0.027090499992482364,
+                0.0250183999305591
+              ],
+              "median_seconds": 0.02558559994213283,
+              "peak_working_set_bytes": 5582848
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "d6e31bc37eb62427ad94bcad0dc92d126bb05110800be27d1f5643339dc9c676",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "certificate": {
+            "certificate_sha256": "82695722b7664d1e26c19a96a8b316ce137c18b2e978e304848beb718f1a839b",
+            "centers": 2,
+            "flow_certificates": 0
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.10688990005291998,
+                0.038584599969908595,
+                0.03128700004890561,
+                0.02507039997726679,
+                0.026489200070500374
+              ],
+              "median_seconds": 0.03128700004890561,
+              "peak_working_set_bytes": 5574656
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "108c3d3b15184aede6fdf747e45052f26ed3c8ecaa42a614c5dec40b041367fa",
+          "output_sha256": "9f825cc4e56b16f73b64ef585348e494cb6fe846a20777e087f74cbf900464ec",
+          "certificate": {
+            "certificate_sha256": "b3a3e91ce48488a8c71acdc8aab35f76c63f1e6a780c10487b712396453b52f8",
+            "centers": 20000,
+            "flow_certificates": 157
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                1.4196054000640288,
+                1.46276789996773,
+                1.417157500050962,
+                1.413239499903284,
+                1.4107209999347106
+              ],
+              "median_seconds": 1.417157500050962,
+              "peak_working_set_bytes": 10334208
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "5e9deb7fbfa9e3d7a4cb98a77e6462b5f47d719fe0f940a8c8d7a5b0c74717c2",
+          "output_sha256": "fcf661617dd6af43d5e7358a3cf79c078e3da948342007e93febf92e33c8030c",
+          "certificate": {
+            "certificate_sha256": "baad551adfca953dc1c09fcd34c91ece1452655d33e661b7e679f3f726e36e3d",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05625029990915209,
+                0.05869660002645105,
+                0.05591630004346371,
+                0.05511369998566806,
+                0.06389310001395643
+              ],
+              "median_seconds": 0.05625029990915209,
+              "peak_working_set_bytes": 17158144
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "64726f3015abdf027d9abfece35b0868c773aef1af1c615ba2b5b5d2116dc8ad",
+          "output_sha256": "37a6408c79f0a229e5e29562efa48e6ce7238d478c5f9b35b576ce1630e8c1c7",
+          "certificate": {
+            "certificate_sha256": "61194ea0d3b08c016043be7a9cfd79af35c63ea59530b1dd100e33f503bc177b",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07813269994221628,
+                0.0794050000840798,
+                0.07813939999323338,
+                0.07620510004926473,
+                0.07773690007161349
+              ],
+              "median_seconds": 0.07813269994221628,
+              "peak_working_set_bytes": 17403904
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "d1c5fb731cd92b4ca835df5e6e148a8feca28ef1745ea493753c4de415dc1cb7",
+          "output_sha256": "660c403e8b779cfc8705ffac14f6f0f8d3eb4a8fb1a5b71844e51ab5c9712ea1",
+          "certificate": {
+            "certificate_sha256": "e8a7b613e0b044ea53a76a542f0a8f10ee5fb33cc6bc0979d3d32cbd5451271f",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0777477000374347,
+                0.08202370000071824,
+                0.08053569996263832,
+                0.08319170004688203,
+                0.07487690006382763
+              ],
+              "median_seconds": 0.08053569996263832,
+              "peak_working_set_bytes": 16805888
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "6e78e1a934d42be54d2e0f64fce386d9425c4391a25c40f5f0603864a0bef1c5",
+          "output_sha256": "45b0f27a417def329b220ab800ea4d75d0830610a4731cd81126959759770896",
+          "certificate": {
+            "certificate_sha256": "0caa19f8fab5d6e1fee0a348030acdfe8eb8aa5279c7a6ec742b79f7ff34334a",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.13033670000731945,
+                0.13167789997532964,
+                0.12864100001752377,
+                0.1288036999758333,
+                0.12290109996683896
+              ],
+              "median_seconds": 0.1288036999758333,
+              "peak_working_set_bytes": 17571840
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "89eb3ade1906786d5d9b6129e8a6ed827b642b2747e2e81df46b3d65d20226a9",
+          "output_sha256": "2e0f54b4beaf596b413b115b0ec674b8d59490154542a8c2967f65a8122ff699",
+          "certificate": {
+            "certificate_sha256": "a4453ab1d7eaa324ab1a0b336e77826882e2ea5c8696ad023875f3d5a3cc142d",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.09184060001280159,
+                0.09216720005497336,
+                0.09478769998531789,
+                0.0968717000214383,
+                0.09198809997178614
+              ],
+              "median_seconds": 0.09216720005497336,
+              "peak_working_set_bytes": 17547264
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "da9bba6bc8bb6787e87c53f1c1de690653ca1e1ca8b2cbb364cb5a0529ccaaab",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "certificate": {
+            "certificate_sha256": "013b16a78a23ff39ebf93b761ff55a0873f36f485eb88da20df014d183ab1153",
+            "centers": 20000,
+            "flow_certificates": 0
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07946529996115714,
+                0.07743770000524819,
+                0.08812710002530366,
+                0.07759570004418492,
+                0.0851861999835819
+              ],
+              "median_seconds": 0.07946529996115714,
+              "peak_working_set_bytes": 11280384
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every centroid/pruned closure graph reconstructed independently; every non-skipped flow checked for capacities, conservation, source value and equal-capacity residual minimum cut. Complete center coverage and global maximum checked.",
+          "input_sha256": "b55703c670438019cb5f66c40e5b2031b19024ac00761884446a1701b1990b1c",
+          "output_sha256": "5eb700b60fff367d78552a22e2808fb8064dc19fe36d791174c2333ba22edbde",
+          "certificate": {
+            "certificate_sha256": "3d11ce71ff85a2a98bf90ed53ebee4aa647a88ad2f29367c3a29dbd997baff86",
+            "centers": 20000,
+            "flow_certificates": 1
+          },
+          "programs": {
+            "std": {
+              "seconds": [
+                0.14150649996008724,
+                0.1342778999824077,
+                0.13390970008913428,
+                0.1466269000666216,
+                0.140960399992764
+              ],
+              "median_seconds": 0.140960399992764,
+              "peak_working_set_bytes": 17555456
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 1.417157500050962,
+          "peak_working_set_bytes": 17571840
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 3.0,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "binary-power-partitions": {
+      "sources": {
+        "std.cpp": "78a56f8f1030c52adf8effd940e0e2dec9e22f6291e50213d98970f405b42af5"
+      },
+      "binaries": {
+        "std": "c42566684c803c1da7f76f80a9fd222d244aea3ed05edd4775e49513e77d974d"
+      },
+      "generator_sha256": "41929fbe75c8ad747f4fd5d428876fbb1641e4581f1f1eae59f4b751b8a4921f",
+      "plan_sha256": "0ea2e145d23393f1787d1a30585aee559be036058a411e9517e91bf284b54352",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8",
+          "output_sha256": "4593c89b4d60161d78fef3f48312d7833649b876a0c1d762cb5b9d73acaa0a20",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0288795999949798,
+                0.02511330007109791,
+                0.02499309997074306,
+                0.025135000003501773,
+                0.02573850005865097
+              ],
+              "median_seconds": 0.025135000003501773,
+              "peak_working_set_bytes": 5537792
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.024451500037685037,
+                0.025215800036676228,
+                0.024819400045089424,
+                0.026433799997903407,
+                0.025435599964112043
+              ],
+              "median_seconds": 0.025215800036676228,
+              "peak_working_set_bytes": 5517312
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02652389998547733,
+                0.025402499944902956,
+                0.025572899961844087,
+                0.024202300002798438,
+                0.03570570005103946
+              ],
+              "median_seconds": 0.025572899961844087,
+              "peak_working_set_bytes": 5521408
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3",
+          "output_sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02599500003270805,
+                0.024632200016640127,
+                0.026125799980945885,
+                0.025130499969236553,
+                0.023596400045789778
+              ],
+              "median_seconds": 0.025130499969236553,
+              "peak_working_set_bytes": 5525504
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "10159baf262b43a92d95db59dae1f72c645127301661e0a3ce4e38b295a97c58",
+          "output_sha256": "92961e9752250efa971147344b22295db32d7b75e940e0971e5fb34f21d0bc67",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.026924700010567904,
+                0.028653100016526878,
+                0.024951300001703203,
+                0.02878769999369979,
+                0.026610399945639074
+              ],
+              "median_seconds": 0.026924700010567904,
+              "peak_working_set_bytes": 5537792
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "4225294e0b1c479988ce8e032ef662c1166728a7a0c1f6bbefef1d45a2b02581",
+          "output_sha256": "7102d71812a768817a2e3c5420859dbd11972b37e4620d3d7c5e334bf4ea22ce",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.026192600023932755,
+                0.024786399910226464,
+                0.02515640005003661,
+                0.026744799921289086,
+                0.026377699919976294
+              ],
+              "median_seconds": 0.026192600023932755,
+              "peak_working_set_bytes": 5894144
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "3cc45f6daaf2b588a75a515785fe5815d135630d4cccbe7c923bbcb6bc2b87cb",
+          "output_sha256": "6ab1c8b28b21b1414878d11876839fa58a99a8ab615ff819a365360234ec50e4",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.026454700040630996,
+                0.026937499991618097,
+                0.025701800012029707,
+                0.026202499982900918,
+                0.026785199996083975
+              ],
+              "median_seconds": 0.026454700040630996,
+              "peak_working_set_bytes": 5931008
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "e86b780e63b75e7c4f06ca4938433c79193f14db61356f1b75c20a6e23d2ad3c",
+          "output_sha256": "131b186e5628243dc5d80a32fa2f1568b9d1564c3f083c2ead05b057cc4cd584",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.027246200013905764,
+                0.0275991999078542,
+                0.026583899976685643,
+                0.0277388000395149,
+                0.03034900000784546
+              ],
+              "median_seconds": 0.0275991999078542,
+              "peak_working_set_bytes": 6766592
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "44a569cf066371ab49eceaaba646654465a600ab4b7b7395846c500229eb5fec",
+          "output_sha256": "c7761048a37edd338498437d4d6067a082692977c9bcff30bce79ffbf84e60ce",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03412430000025779,
+                0.028684200020506978,
+                0.02898330008611083,
+                0.02750309999100864,
+                0.031007199897430837
+              ],
+              "median_seconds": 0.02898330008611083,
+              "peak_working_set_bytes": 6770688
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every full result compared with the unaccelerated original splitting recurrence. Four hundred small inputs additionally checked by ordinary coin-change DP.",
+          "input_sha256": "26d928ca7798882c482edb82cf892a2036308dff7482080e65ac947719112ef2",
+          "output_sha256": "c7761048a37edd338498437d4d6067a082692977c9bcff30bce79ffbf84e60ce",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.027801499934867024,
+                0.02825379988644272,
+                0.028448000084608793,
+                0.026396799948997796,
+                0.027079800027422607
+              ],
+              "median_seconds": 0.027801499934867024,
+              "peak_working_set_bytes": 6766592
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.02898330008611083,
+          "peak_working_set_bytes": 6770688
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 0.5,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "battle-upgrades": {
+      "sources": {
+        "std.cpp": "eb47bd43c02c18534448b921e7fb321b9384d52b365194fc8b26890a0668516c",
+        "alternative-heap.cpp": "69d90fc853e8e7e4e763e11855e305414a0f4905cf33fd2ed6be8e959fdaca5e"
+      },
+      "binaries": {
+        "std": "61f7378c51348e6d1337c04e9eb1dc6078158f24394d5da4d8c277c0a38a6353",
+        "alternative-heap": "961090859168bb3f1f821bce82e370bdc63f476ad0ec4c6b4538eb53ded587e6"
+      },
+      "generator_sha256": "41929fbe75c8ad747f4fd5d428876fbb1641e4581f1f1eae59f4b751b8a4921f",
+      "plan_sha256": "4605a7bdead0d59578f3bb00cb515461b347aa4b368e4afdc7ee164f56316474",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "50a310364f0e7636d050c1d9242870a04608cff8b43c0873ae0726c137419043",
+          "output_sha256": "eb685b2caf36e45bccc6bcc30f9d3d124b4b388ba93d98bae4c5e74b22350b18",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.021876699989661574,
+                0.022775000077672303,
+                0.021548999939113855,
+                0.021325899986550212,
+                0.02137199998833239
+              ],
+              "median_seconds": 0.021548999939113855,
+              "peak_working_set_bytes": 5570560
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.02202689996920526,
+                0.021906699985265732,
+                0.02946750004775822,
+                0.020801299950107932,
+                0.02236190007533878
+              ],
+              "median_seconds": 0.02202689996920526,
+              "peak_working_set_bytes": 5574656
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "d77dbe4828d698c5b262833c9d12b297c87f3ffd7298d9fc532f27774d1e72e2",
+          "output_sha256": "ca99aa0df02187eefcd0fed50a43ada5a81919a3f3401392405a7dc17fb2cd93",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02323880000039935,
+                0.023196399910375476,
+                0.02101959998253733,
+                0.022875400027260184,
+                0.02060050005093217
+              ],
+              "median_seconds": 0.022875400027260184,
+              "peak_working_set_bytes": 5566464
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.02222730009816587,
+                0.023010300006717443,
+                0.02200350002385676,
+                0.021554999984800816,
+                0.0222192999208346
+              ],
+              "median_seconds": 0.0222192999208346,
+              "peak_working_set_bytes": 5574656
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "09e2a6639d3478f3a8379b0821f04bd7e92c961a3c05e0e81d65d946ae6cd744",
+          "output_sha256": "6ad5c9fe9fbf0bfb466947ca57d98e102db0c71b635ea3270d8db9c41670e7f3",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                1.3489050000207499,
+                1.3429480000631884,
+                1.318112500011921,
+                1.2776195000624284,
+                1.2996046000625938
+              ],
+              "median_seconds": 1.318112500011921,
+              "peak_working_set_bytes": 324509696
+            },
+            "alternative-heap": {
+              "seconds": [
+                1.1593989999964833,
+                1.1617712000152096,
+                1.16169280000031,
+                1.1702899999218062,
+                1.196795600000769
+              ],
+              "median_seconds": 1.1617712000152096,
+              "peak_working_set_bytes": 125833216
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "3610113f5cd143c4f9ccb416940d545a26d96a061bc82e77c0c820314e19a2e2",
+          "output_sha256": "8d919ff57d789032196dc87035691e3762cb8285320e42baf2586525ba672d3a",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.025663800071924925,
+                0.02777569997124374,
+                0.029528699931688607,
+                0.026443000067956746,
+                0.027467200066894293
+              ],
+              "median_seconds": 0.027467200066894293,
+              "peak_working_set_bytes": 5771264
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.02687499998137355,
+                0.029808899969793856,
+                0.02742149995174259,
+                0.027953799930401146,
+                0.030751200043596327
+              ],
+              "median_seconds": 0.027953799930401146,
+              "peak_working_set_bytes": 5988352
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "c2b7f572082366e5284b51517fa5a6f3f955fc84eab68d209558637b7334cbf7",
+          "output_sha256": "6f96b418fe262a0c7cd71271b232ba0010e4f9b09efcc369e6984051b6b422cd",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                1.2728396001039073,
+                1.2701781999785453,
+                1.2770889999810606,
+                1.2666073000291362,
+                1.2562166000716388
+              ],
+              "median_seconds": 1.2701781999785453,
+              "peak_working_set_bytes": 344477696
+            },
+            "alternative-heap": {
+              "seconds": [
+                1.1360011000651866,
+                1.1618729999754578,
+                1.1493692999938503,
+                1.1709713999880478,
+                1.172404000069946
+              ],
+              "median_seconds": 1.1618729999754578,
+              "peak_working_set_bytes": 125829120
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "bc3a76806852af3dbff5f8b7fa8e9a5b08a90b68cbf1f9647e8e180ca2dcb800",
+          "output_sha256": "762084b1bd0b7e47510c4835b8418702acfe4a1316846df70fb596b17627318d",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.042713999981060624,
+                0.043071000021882355,
+                0.05740649998188019,
+                0.04283589997794479,
+                0.04256239999085665
+              ],
+              "median_seconds": 0.04283589997794479,
+              "peak_working_set_bytes": 45617152
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.026249999995343387,
+                0.028171899961307645,
+                0.10338510002475232,
+                0.02982309996150434,
+                0.02724100009072572
+              ],
+              "median_seconds": 0.028171899961307645,
+              "peak_working_set_bytes": 5779456
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "321cb9c7f326b0cb2596afc7b291d35ef147040aafbbf78d2a98ca68ca4515d4",
+          "output_sha256": "2c2bc27f5c664e0e6e07c86dc2caec76073834e1fc4828284d6113001720dd58",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.09976570005528629,
+                0.09220259997528046,
+                0.09169889998156577,
+                0.09232689999043941,
+                0.09294670005328953
+              ],
+              "median_seconds": 0.09232689999043941,
+              "peak_working_set_bytes": 125575168
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.09737880004104227,
+                0.09398040000814945,
+                0.09312340000178665,
+                0.09720429999288172,
+                0.1253593999426812
+              ],
+              "median_seconds": 0.09720429999288172,
+              "peak_working_set_bytes": 125665280
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "59fc9ab9accfccc46b69a128ba87b2716d5c7ec24d73595332d56d201e18eef7",
+          "output_sha256": "eb685b2caf36e45bccc6bcc30f9d3d124b4b388ba93d98bae4c5e74b22350b18",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.025967599940486252,
+                0.026586199994198978,
+                0.02493379998486489,
+                0.026916100061498582,
+                0.025941999978385866
+              ],
+              "median_seconds": 0.025967599940486252,
+              "peak_working_set_bytes": 5779456
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.027889799908734858,
+                0.025599800050258636,
+                0.027105099987238646,
+                0.026474200072698295,
+                0.03262389998417348
+              ],
+              "median_seconds": 0.027105099987238646,
+              "peak_working_set_bytes": 5775360
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "bb89c3de225c36f5e187c301b9d7040654402cf33f90e1a69f56d814016b87c3",
+          "output_sha256": "efa690f141075df5985f51a580a85ba03eb7771e72f63c3c5462a76958f6bb00",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0793434000806883,
+                0.08761519996915013,
+                0.081383700016886,
+                0.07994399999734014,
+                0.07995970000047237
+              ],
+              "median_seconds": 0.07995970000047237,
+              "peak_working_set_bytes": 137183232
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.0747260000789538,
+                0.06603410001844168,
+                0.0659443000331521,
+                0.07104190008249134,
+                0.12530499999411404
+              ],
+              "median_seconds": 0.07104190008249134,
+              "peak_working_set_bytes": 101683200
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Array event lists and heap event scheduling agree on every full output; final combat survival and cost independently recomputed with Python integers. Optimality/tie rules have proofs and 600 exhaustive small inputs.",
+          "input_sha256": "1a308b2406e3908bceaadea3b28837e83d0100f46b04bd4a1720cb20c7bff50a",
+          "output_sha256": "2e1816bb33d5155a83dfd2fb7515d6f3b46ae819335a4921e3882c568b80f7d9",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.6480748999165371,
+                0.6603702999418601,
+                0.6541006000479683,
+                0.6496350000379607,
+                0.6632496999809518
+              ],
+              "median_seconds": 0.6541006000479683,
+              "peak_working_set_bytes": 140840960
+            },
+            "alternative-heap": {
+              "seconds": [
+                0.8630680000642315,
+                0.8702590999891981,
+                0.8568128999322653,
+                0.8581763000693172,
+                0.8769649000605568
+              ],
+              "median_seconds": 0.8630680000642315,
+              "peak_working_set_bytes": 45826048
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 1.318112500011921,
+          "peak_working_set_bytes": 344477696
+        },
+        "alternative-heap": {
+          "slowest_median_seconds": 1.1618729999754578,
+          "peak_working_set_bytes": 125833216
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 3.0,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "dynamic-path-independence": {
+      "sources": {
+        "std.cpp": "66f1392f99ad181bafdfd4aa4be341de142a9754389606253aff306a79153c08",
+        "alternative-offline.cpp": "9fdadbccb31cab95d92d70ffb2789e14897645202e0beeac609c18f67041ed09"
+      },
+      "binaries": {
+        "std": "59fc1a3d958b0721e32ca6048cd4e03ca4b1645d5844dab830f3c794509ca77f",
+        "alternative-offline": "953b5e473788d4ef414398ecdc579abb16e8dc4609c03dbf13e191b2dcff8cfa"
+      },
+      "generator_sha256": "41929fbe75c8ad747f4fd5d428876fbb1641e4581f1f1eae59f4b751b8a4921f",
+      "plan_sha256": "da30d06379433ce8397daa638bddf0a102b07131c008e91ca75fc9d972fbfa68",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "2e98de66cda8780cd10cde6acac11d22c39b0bd02befc51e7e8190c7f2cf9867",
+          "output_sha256": "95d4decf2fbeb8c63561fbd47b90967256579c98df485ce2cd281c0a775b5bbd",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.030383599922060966,
+                0.0257885999744758,
+                0.025923400069586933,
+                0.02601549995597452,
+                0.02592520008329302
+              ],
+              "median_seconds": 0.02592520008329302,
+              "peak_working_set_bytes": 5820416
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.026813400094397366,
+                0.02637659991160035,
+                0.029023299925029278,
+                0.024383799987845123,
+                0.03047050000168383
+              ],
+              "median_seconds": 0.026813400094397366,
+              "peak_working_set_bytes": 5820416
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "410cffc7e4ef85a2b68b14e771cbdd319efd7e1286d21fa53f94ea56a1db5d01",
+          "output_sha256": "ac7a342d94bb7863cb894a81b84a44d36af54075850add458f17c6c643d855bd",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.031357500003650784,
+                0.024983900017105043,
+                0.02619609993416816,
+                0.028455999912694097,
+                0.02785690000746399
+              ],
+              "median_seconds": 0.02785690000746399,
+              "peak_working_set_bytes": 5820416
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.11513320007361472,
+                0.03191580006387085,
+                0.028317400021478534,
+                0.026092099957168102,
+                0.026924700010567904
+              ],
+              "median_seconds": 0.028317400021478534,
+              "peak_working_set_bytes": 5816320
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "91a5b67c7872ae84fd301b11e403a9140df98f3c70dc94b88e3d3e36ed32b59a",
+          "output_sha256": "46707fe00824ff4c4910e2d91bd38cfb9602986e2be5d8ff61914a303025d6a8",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.052920900052413344,
+                0.054862699937075377,
+                0.04984659992624074,
+                0.05226529994979501,
+                0.050687599927186966
+              ],
+              "median_seconds": 0.05226529994979501,
+              "peak_working_set_bytes": 15912960
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.0852178999921307,
+                0.08447180001530796,
+                0.09386459994129837,
+                0.08277400000952184,
+                0.08503970003221184
+              ],
+              "median_seconds": 0.08503970003221184,
+              "peak_working_set_bytes": 17723392
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "c92282efb011eb42c25312dabfd4c1f3472112349122c7fe93c59b1449bf6f76",
+          "output_sha256": "d3a7ab38bb37e80a74108d4fb88a874ef24404b0e90356f0af1c62869184e9b6",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.6923504000296816,
+                0.7272227000212297,
+                0.6854506999952719,
+                0.735600300016813,
+                0.7108470000093803
+              ],
+              "median_seconds": 0.7108470000093803,
+              "peak_working_set_bytes": 114339840
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.19077380001544952,
+                0.18962369998916984,
+                0.18637829995714128,
+                0.19689160003326833,
+                0.18953430000692606
+              ],
+              "median_seconds": 0.18962369998916984,
+              "peak_working_set_bytes": 29724672
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "21a2c5964a39c3bd776510b5330dcf54e101890fb38c4ca5e4fffca34008a60b",
+          "output_sha256": "a8fda6ece8d8a254fda86ce7d1ab9fe73ca511c90951080ccb1b624e770a66ff",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.1235049000242725,
+                0.12813399999868125,
+                0.11604700004681945,
+                0.12694780004676431,
+                0.12887040001805872
+              ],
+              "median_seconds": 0.12694780004676431,
+              "peak_working_set_bytes": 29519872
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.14208560006227344,
+                0.1390302999643609,
+                0.13059139996767044,
+                0.14893969998229295,
+                0.14013129996601492
+              ],
+              "median_seconds": 0.14013129996601492,
+              "peak_working_set_bytes": 31723520
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "8ef4d1d2c0cbdca4bd85bad577911c6d8ce91da2b31877b631f625267062576a",
+          "output_sha256": "a8fda6ece8d8a254fda86ce7d1ab9fe73ca511c90951080ccb1b624e770a66ff",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.11889819998759776,
+                0.12211270001716912,
+                0.1276106999721378,
+                0.1176654000300914,
+                0.1206332000438124
+              ],
+              "median_seconds": 0.1206332000438124,
+              "peak_working_set_bytes": 29523968
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.1393191999522969,
+                0.14676889998372644,
+                0.14970780001021922,
+                0.13697440002579242,
+                0.17190760001540184
+              ],
+              "median_seconds": 0.14676889998372644,
+              "peak_working_set_bytes": 31735808
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "6aa2a84890a5fdbbb6624e82f6dc698fabd904dee2228f5a34fa7654fa4a3ce1",
+          "output_sha256": "bfa62b5246358e5a16b786b4fe67d57096cada89bacf9b362d0d46f9f197fccd",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.32430470001418144,
+                0.32950290001463145,
+                0.3193172999890521,
+                0.3447143000084907,
+                0.3180103999329731
+              ],
+              "median_seconds": 0.32430470001418144,
+              "peak_working_set_bytes": 50794496
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.19070270005613565,
+                0.1814433999825269,
+                0.18640360003337264,
+                0.1918344999430701,
+                0.1754860000219196
+              ],
+              "median_seconds": 0.18640360003337264,
+              "peak_working_set_bytes": 29749248
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "5da48f4344c569bc26f2b3128fb5b48b68cba6ec7d5e3680ea32090a46e56990",
+          "output_sha256": "3208985da365fb18535f4b36caecd0fed08ba2bc6568e32a4fea9c5c313a2b19",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.38213329995051026,
+                0.3357730000279844,
+                0.33968340000137687,
+                0.34470839996356517,
+                0.3378097000531852
+              ],
+              "median_seconds": 0.33968340000137687,
+              "peak_working_set_bytes": 47120384
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.19703839998692274,
+                0.21223760000430048,
+                0.18636299995705485,
+                0.20091710006818175,
+                0.200282400008291
+              ],
+              "median_seconds": 0.200282400008291,
+              "peak_working_set_bytes": 29999104
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "fd35a662b2d07d9f2ef5411b360a119e4835b95bb5c1025347937dd5daed79bd",
+          "output_sha256": "9031638a30a84bed5ed68a5878c4220a2136fc295e43e40d118502c71087d501",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.054416799917817116,
+                0.06434180005453527,
+                0.05690880003385246,
+                0.05676740000490099,
+                0.05603430001065135
+              ],
+              "median_seconds": 0.05676740000490099,
+              "peak_working_set_bytes": 25571328
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.14456520008388907,
+                0.15630819997750223,
+                0.14639450004324317,
+                0.14612349995877594,
+                0.1455983999185264
+              ],
+              "median_seconds": 0.14612349995877594,
+              "peak_working_set_bytes": 28012544
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Online canonical blocks and offline doubling ranks agree on every full output; operation validity checked independently. Both programs compared with explicit path strings on 600 small inputs each.",
+          "input_sha256": "3e0d488465c55cbdbcaee6def5959fd659f1b74b0f3c2c7a77bd136b33e4309d",
+          "output_sha256": "87ffde04211adf205bac22f720eaf559256fd47762a6c3a240c9c1354955e030",
+          "certificate": {},
+          "programs": {
+            "std": {
+              "seconds": [
+                0.28919859998859465,
+                0.2715165999252349,
+                0.28247670002747327,
+                0.27597590000368655,
+                0.2820790000259876
+              ],
+              "median_seconds": 0.2820790000259876,
+              "peak_working_set_bytes": 34500608
+            },
+            "alternative-offline": {
+              "seconds": [
+                0.19521409994922578,
+                0.24750840000342578,
+                0.20310809998773038,
+                0.19667570001911372,
+                0.21031419991049916
+              ],
+              "median_seconds": 0.20310809998773038,
+              "peak_working_set_bytes": 32661504
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.7108470000093803,
+          "peak_working_set_bytes": 114339840
+        },
+        "alternative-offline": {
+          "slowest_median_seconds": 0.20310809998773038,
+          "peak_working_set_bytes": 32661504
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 1.5,
+      "multiplier_reason": "Default twofold headroom."
+    }
+  }
+}

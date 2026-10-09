@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012601,
+      "mode": "literal",
+      "input": "1\n2\n",
+      "purpose": "one pair"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012602,
+      "mode": "tiles_b",
+      "n": 8,
+      "shape": "small",
+      "purpose": "small"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012603,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "1",
+      "purpose": "1"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012604,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "2",
+      "purpose": "2"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012605,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "3",
+      "purpose": "3"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012606,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "1000000000",
+      "purpose": "1000000000"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012607,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "random",
+      "purpose": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012608,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "cycle",
+      "purpose": "cycle"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012609,
+      "mode": "tiles_b",
+      "n": 5000000,
+      "shape": "small",
+      "purpose": "small"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012610,
+      "mode": "tiles_b",
+      "n": 4999999,
+      "shape": "999999999",
+      "purpose": "999999999"
+    }
+  ]
+}

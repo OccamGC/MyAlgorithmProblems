@@ -1,0 +1,90 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310001,
+      "purpose": "Boundary or explicit regression",
+      "expression": "3<2<1"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310002,
+      "purpose": "Boundary or explicit regression",
+      "expression": "-7%3+9/(-2)"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310003,
+      "purpose": "Boundary or explicit regression",
+      "expression": "9*9*9*9*9*9*9*9*9*9*9"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310004,
+      "purpose": "Boundary or explicit regression",
+      "expression": "1/(7-6-1)"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310005,
+      "purpose": "nested",
+      "mode": "nested",
+      "length": 1000
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310006,
+      "purpose": "unary",
+      "mode": "unary",
+      "length": 100000
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310007,
+      "purpose": "deep",
+      "mode": "deep",
+      "length": 100000
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310008,
+      "purpose": "nested",
+      "mode": "nested",
+      "length": 100000
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310009,
+      "purpose": "error",
+      "mode": "error",
+      "length": 100000
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310010,
+      "purpose": "sum",
+      "mode": "sum",
+      "length": 100000
+    }
+  ]
+}

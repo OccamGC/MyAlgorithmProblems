@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320001,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        10,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320002,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5,
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320003,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320004,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        1000,
+        100,
+        100001
+      ]
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320005,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        100,
+        7,
+        9000000
+      ]
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320006,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        100000,
+        999999937,
+        100000000000000
+      ]
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320007,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        0,
+        1,
+        99999999995000
+      ]
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320008,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        100000,
+        1000000000,
+        100000000000000
+      ]
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320009,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        1000,
+        6,
+        2152302898747
+      ]
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320010,
+      "purpose": "Boundary and full-range parameters",
+      "values": [
+        5000,
+        0,
+        1,
+        3474749660300
+      ]
+    }
+  ]
+}

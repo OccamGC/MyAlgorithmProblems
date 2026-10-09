@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample",
+      "kind": "sample",
+      "purpose": "A solution and an impossible query",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "01",
+      "seed": 202609281300
+    },
+    {
+      "id": "center",
+      "kind": "sample",
+      "purpose": "Length one, center changes and aligned halves",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "02",
+      "seed": 202609281301
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "purpose": "Many independently sized mutation budgets",
+      "group": 1,
+      "score_percent": 10,
+      "n": 9,
+      "q": 1000,
+      "seed": 202609281302
+    },
+    {
+      "id": "maximum-length",
+      "kind": "random",
+      "purpose": "Longest odd string",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999999,
+      "q": 1,
+      "seed": 202609281303
+    },
+    {
+      "id": "maximum-queries",
+      "kind": "random",
+      "purpose": "One million length-one queries",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1,
+      "q": 1000000,
+      "seed": 202609281304
+    },
+    {
+      "id": "all-change",
+      "kind": "all-change",
+      "purpose": "Change every position",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999999,
+      "q": 1,
+      "seed": 202609281305
+    },
+    {
+      "id": "no-change",
+      "kind": "same",
+      "purpose": "Return a long unchanged valid string",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999999,
+      "q": 1,
+      "seed": 202609281306
+    },
+    {
+      "id": "impossible",
+      "kind": "impossible",
+      "purpose": "Budget below the number of unequal pairs",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999999,
+      "q": 1,
+      "seed": 202609281307
+    },
+    {
+      "id": "minimum",
+      "kind": "minimum",
+      "purpose": "Exact minimum number of mutations",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999,
+      "q": 1001,
+      "seed": 202609281308
+    },
+    {
+      "id": "center-only",
+      "kind": "center",
+      "purpose": "One mutation with identical halves",
+      "group": 1,
+      "score_percent": 10,
+      "n": 999999,
+      "q": 1,
+      "seed": 202609281309
+    }
+  ]
+}

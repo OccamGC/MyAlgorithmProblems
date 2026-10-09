@@ -1,0 +1,98 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291400
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291401
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291402
+    },
+    {
+      "id": "maximum-chain",
+      "kind": "chain",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum chain",
+      "n": 500000,
+      "seed": 202609291403
+    },
+    {
+      "id": "maximum-star",
+      "kind": "star",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum star",
+      "n": 500000,
+      "seed": 202609291404
+    },
+    {
+      "id": "maximum-balanced",
+      "kind": "balanced",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum balanced",
+      "n": 500000,
+      "seed": 202609291405
+    },
+    {
+      "id": "maximum-isolated",
+      "kind": "isolated",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum isolated",
+      "n": 500000,
+      "seed": 202609291406
+    },
+    {
+      "id": "maximum-forest",
+      "kind": "forest",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum forest",
+      "n": 500000,
+      "relabel": true,
+      "seed": 202609291407
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 500000,
+      "relabel": true,
+      "seed": 202609291408
+    },
+    {
+      "id": "relabelled-chain",
+      "kind": "chain",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "relabelled chain",
+      "n": 500000,
+      "relabel": true,
+      "seed": 202609291409
+    }
+  ]
+}

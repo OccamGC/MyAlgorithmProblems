@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301460,
+      "purpose": "zero",
+      "Q": 1,
+      "beta": 0,
+      "k": 0,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301461,
+      "purpose": "updates",
+      "Q": 10,
+      "beta": 1,
+      "k": 5,
+      "mode": "updates"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301462,
+      "purpose": "maximum",
+      "Q": 500,
+      "beta": 1,
+      "k": 200,
+      "mode": "maximum"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301463,
+      "purpose": "updates",
+      "Q": 500,
+      "beta": 0,
+      "k": 200,
+      "mode": "updates"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301464,
+      "purpose": "updates",
+      "Q": 500,
+      "beta": -1,
+      "k": 200,
+      "mode": "updates"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301465,
+      "purpose": "random",
+      "Q": 500,
+      "beta": 2,
+      "k": 200,
+      "mode": "random"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301466,
+      "purpose": "updates",
+      "Q": 500,
+      "beta": -1000000000,
+      "k": 200,
+      "mode": "updates"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301467,
+      "purpose": "maximum",
+      "Q": 500,
+      "beta": 1000000000,
+      "k": 200,
+      "mode": "maximum"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301468,
+      "purpose": "updates",
+      "Q": 500,
+      "beta": 1,
+      "k": 200,
+      "mode": "updates"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301469,
+      "purpose": "random",
+      "Q": 500,
+      "beta": -2,
+      "k": 199,
+      "mode": "random"
+    }
+  ]
+}

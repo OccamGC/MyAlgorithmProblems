@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"id": "zero-patterns", "kind": "empty", "length": 10, "seed": 10, "group": 1, "score_percent": 10, "purpose": "no recipes; answer must be zero"},
+    {"id": "short-repeats", "kind": "repeat", "length": 100, "seed": 11, "group": 1, "score_percent": 10, "purpose": "overlapping and duplicate short matches"},
+    {"id": "suffix-match", "kind": "suffix", "length": 120, "seed": 15, "group": 1, "score_percent": 10, "purpose": "terminal suffix reached through a nonterminal trie state; answer 30"},
+    {"id": "failure-chain", "kind": "prefix", "length": 100000, "count": 500, "seed": 12, "group": 4, "score_percent": 30, "purpose": "long failure links without any full match"},
+    {"id": "random-medium", "kind": "random", "length": 100000, "count": 500, "min_pattern": 1, "max_pattern": 30, "seed": 13, "group": 2, "score_percent": 20, "purpose": "medium mixed-length patterns"},
+    {"id": "maximum-scale", "kind": "random", "length": 5000000, "count": 100000, "min_pattern": 50, "max_pattern": 50, "seed": 14, "group": 3, "score_percent": 20, "purpose": "maximum total pattern and text lengths"}
+  ]
+}

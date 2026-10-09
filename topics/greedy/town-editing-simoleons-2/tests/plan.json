@@ -1,0 +1,121 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "1\n20 1\n",
+      "purpose": "Only the original target members",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400101,
+      "verification": "exact expanded-population Fraction grid"
+    },
+    {
+      "mode": "literal",
+      "input": "2\n2 2\n1 9\n",
+      "purpose": "Splitting targets beats keeping them together",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400102,
+      "verification": "exact expanded-population Fraction grid"
+    },
+    {
+      "mode": "literal",
+      "input": "6\n3 2\n4 19\n2 1\n1 7\n5 25\n2 12\n",
+      "purpose": "Mixed exact rational means",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400103,
+      "verification": "exact expanded-population Fraction grid"
+    },
+    {
+      "mode": "poor",
+      "n": 1000000,
+      "k": 20,
+      "money": 1000000,
+      "purpose": "No richer outsiders, maximum initial target wealth",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400104,
+      "verification": "no richer outsider: initial wealth is optimal"
+    },
+    {
+      "mode": "same",
+      "n": 1000000,
+      "k": 20,
+      "money": 1,
+      "purpose": "Huge population with equal rich means",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400105,
+      "verification": "generic matrix exponentiation on grouped equal means"
+    },
+    {
+      "mode": "groups",
+      "n": 1000000,
+      "k": 20,
+      "money": 1,
+      "purpose": "64 rich rational means, random family order",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400106,
+      "verification": "generic matrix exponentiation on grouped equal means"
+    },
+    {
+      "mode": "distinct",
+      "n": 1000000,
+      "k": 20,
+      "money": 1,
+      "purpose": "Nearly one million different rational means",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400107,
+      "expected": 670107806,
+      "verification": "backward coefficients versus forward batch convolution; proof-supported full-size cross-check"
+    },
+    {
+      "mode": "random",
+      "n": 1000000,
+      "k": 20,
+      "money": 1,
+      "purpose": "Full-size arbitrary rational means and populations",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400108,
+      "expected": 574366089,
+      "verification": "backward coefficients versus forward batch convolution; proof-supported full-size cross-check"
+    },
+    {
+      "mode": "groups",
+      "n": 1000000,
+      "k": 1,
+      "money": 1,
+      "around_one": true,
+      "purpose": "Single target with poorer, equal, and richer groups",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400109,
+      "verification": "generic matrix exponentiation on grouped equal means"
+    },
+    {
+      "mode": "modulus",
+      "n": 1000000,
+      "k": 20,
+      "money": 1,
+      "purpose": "Rich group populations P-1, P, P+1 and huge poor population",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 400110,
+      "verification": "generic matrix exponentiation on grouped equal means"
+    }
+  ]
+}

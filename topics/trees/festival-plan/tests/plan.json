@@ -1,0 +1,127 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "sample": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291100,
+      "purpose": "sample 1"
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "sample": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291101,
+      "purpose": "sample 2"
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "sample": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291102,
+      "purpose": "sample 3"
+    },
+    {
+      "id": "maximum-chain-window",
+      "kind": "chain",
+      "n": 500000,
+      "L": 100000,
+      "R": 250000,
+      "weights": "alternating",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609291103,
+      "purpose": "maximum chain window"
+    },
+    {
+      "id": "maximum-relabelled-chain",
+      "kind": "chain",
+      "n": 500000,
+      "L": 1,
+      "R": 249997,
+      "weights": "random",
+      "relabel": true,
+      "group": 1,
+      "score_percent": 5,
+      "seed": 2026093001,
+      "purpose": "deep repeated traversal with shuffled labels and a wide length window"
+    },
+    {
+      "id": "maximum-positive",
+      "kind": "chain",
+      "n": 500000,
+      "L": 1,
+      "R": 500000,
+      "weights": "positive",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291104,
+      "purpose": "maximum positive"
+    },
+    {
+      "id": "maximum-negative-single",
+      "kind": "chain",
+      "n": 500000,
+      "L": 1,
+      "R": 1,
+      "weights": "negative",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291105,
+      "purpose": "maximum negative single"
+    },
+    {
+      "id": "maximum-star",
+      "kind": "star",
+      "n": 500000,
+      "L": 2,
+      "R": 2,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291106,
+      "purpose": "maximum star"
+    },
+    {
+      "id": "maximum-binary",
+      "kind": "binary",
+      "n": 500000,
+      "L": 10,
+      "R": 20,
+      "relabel": true,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291107,
+      "purpose": "maximum binary"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 500000,
+      "L": 1,
+      "R": 500000,
+      "relabel": true,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291108,
+      "purpose": "maximum random"
+    },
+    {
+      "id": "maximum-broom",
+      "kind": "broom",
+      "n": 500000,
+      "L": 100000,
+      "R": 100001,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291109,
+      "purpose": "maximum broom"
+    }
+  ]
+}

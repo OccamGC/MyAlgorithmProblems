@@ -1,0 +1,79 @@
+{
+  "cases": [
+    {
+      "n": 30,
+      "q": 2000,
+      "group": 1,
+      "purpose": "small changing jump and outside queries",
+      "id": "01",
+      "score_percent": 12.5,
+      "seed": 370201
+    },
+    {
+      "n": 300000,
+      "q": 6000000,
+      "group": 1,
+      "purpose": "48 million update-position sum and 64-bit answer total",
+      "id": "02",
+      "score_percent": 12.5,
+      "seed": 370202
+    },
+    {
+      "n": 100,
+      "q": 2000,
+      "group": 2,
+      "batches": 5,
+      "purpose": "five update batches",
+      "id": "03",
+      "score_percent": 12.5,
+      "seed": 370203
+    },
+    {
+      "n": 300000,
+      "q": 6000000,
+      "group": 2,
+      "purpose": "100000 updates in 100 batches",
+      "id": "04",
+      "score_percent": 12.5,
+      "seed": 370204
+    },
+    {
+      "n": 100,
+      "q": 2000,
+      "group": 3,
+      "batches": 5,
+      "purpose": "five query batches",
+      "id": "05",
+      "score_percent": 12.5,
+      "seed": 370205
+    },
+    {
+      "n": 300000,
+      "q": 6000000,
+      "group": 3,
+      "purpose": "100000 queries in 100 batches",
+      "id": "06",
+      "score_percent": 12.5,
+      "seed": 370206
+    },
+    {
+      "n": 50,
+      "q": 2000,
+      "group": 4,
+      "batches": 5,
+      "purpose": "small local batches",
+      "id": "07",
+      "score_percent": 12.5,
+      "seed": 370207
+    },
+    {
+      "n": 300000,
+      "q": 1000000,
+      "group": 4,
+      "purpose": "100 spatial intervals, width 500, random operation positions",
+      "id": "08",
+      "score_percent": 12.5,
+      "seed": 370208
+    }
+  ]
+}

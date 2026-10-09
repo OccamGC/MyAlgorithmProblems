@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026100401,
+      "mode": "boundaries",
+      "purpose": "zero/certain probabilities, multiplier one, equality and signed 64-bit-safe threshold handling"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026100402,
+      "mode": "small-random",
+      "purpose": "small independent exhaustive checks, mathematical products beyond int64"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 2026100403,
+      "mode": "dp-max",
+      "purpose": "maximum small-threshold budget; reject exponential enumeration and dense product DP"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 2026100404,
+      "mode": "dp-squares",
+      "purpose": "quotient indexing near squares, zero probabilities and unit multipliers"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 2026100405,
+      "mode": "dp-low-factors",
+      "purpose": "2000 swords with small factors and threshold 2*10^7; dense-DP stress"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 2026100406,
+      "mode": "mitm-medium",
+      "purpose": "medium meet-in-the-middle instances with unequal probabilities"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 2026100407,
+      "mode": "integer-boundaries",
+      "purpose": "integer boundaries, huge conceptual products, safe truncation and inclusive thresholds"
+    },
+    {
+      "id": "08",
+      "group": 4,
+      "score_percent": 10,
+      "seed": 20261049,
+      "mode": "anti-sort",
+      "purpose": "five n=44 collections with distinct integer multipliers; comparison-sort witness"
+    },
+    {
+      "id": "09",
+      "group": 4,
+      "score_percent": 10,
+      "seed": 20269224,
+      "mode": "anti-binary",
+      "purpose": "5600 queries on 28 distinct prime multipliers; binary-search witness without repeated-product shortcuts"
+    },
+    {
+      "id": "10",
+      "group": 4,
+      "score_percent": 10,
+      "seed": 2026100410,
+      "mode": "mixed-budget",
+      "purpose": "near-maximum large-query work combined with maximum small-threshold work"
+    }
+  ]
+}

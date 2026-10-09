@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="484" height="444" viewBox="0 0 484 444" role="img" aria-labelledby="title description">
+  <title id="title">Integer cell coordinates</title>
+  <desc id="description">Every cell is labeled (x,y). x increases to the right and y downward. The origin is outlined.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="484" height="444" fill="white" stroke="none" />
+  <text x="130.0" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="194.0" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="258.0" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <text x="322.0" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="386.0" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="78" y="122.0" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="78" y="186.0" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="78" y="250.0" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <text x="78" y="314.0" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="78" y="378.0" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <line x1="98" y1="36" x2="418" y2="36" stroke="#20354b" stroke-width="1.7" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <text x="440" y="42" fill="#20354b" font-size="19" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">x</text>
+  <line x1="45" y1="84" x2="45" y2="404" stroke="#20354b" stroke-width="1.7" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <text x="45" y="429" fill="#20354b" font-size="19" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">y</text>
+  <rect x="98" y="84" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="130.0" y="122.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-2,-2)</text>
+  <rect x="162" y="84" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="194.0" y="122.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-1,-2)</text>
+  <rect x="226" y="84" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="258.0" y="122.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(0,-2)</text>
+  <rect x="290" y="84" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="322.0" y="122.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1,-2)</text>
+  <rect x="354" y="84" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="386.0" y="122.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,-2)</text>
+  <rect x="98" y="148" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="130.0" y="186.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-2,-1)</text>
+  <rect x="162" y="148" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="194.0" y="186.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-1,-1)</text>
+  <rect x="226" y="148" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="258.0" y="186.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(0,-1)</text>
+  <rect x="290" y="148" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="322.0" y="186.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1,-1)</text>
+  <rect x="354" y="148" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="386.0" y="186.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,-1)</text>
+  <rect x="98" y="212" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="130.0" y="250.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-2,0)</text>
+  <rect x="162" y="212" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="194.0" y="250.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-1,0)</text>
+  <rect x="226" y="212" width="64" height="64" fill="#e0f1ed" stroke="#acb9c6" />
+  <text x="258.0" y="250.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(0,0)</text>
+  <rect x="290" y="212" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="322.0" y="250.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1,0)</text>
+  <rect x="354" y="212" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="386.0" y="250.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,0)</text>
+  <rect x="98" y="276" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="130.0" y="314.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-2,1)</text>
+  <rect x="162" y="276" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="194.0" y="314.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-1,1)</text>
+  <rect x="226" y="276" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="258.0" y="314.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(0,1)</text>
+  <rect x="290" y="276" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="322.0" y="314.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1,1)</text>
+  <rect x="354" y="276" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="386.0" y="314.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,1)</text>
+  <rect x="98" y="340" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="130.0" y="378.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-2,2)</text>
+  <rect x="162" y="340" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="194.0" y="378.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(-1,2)</text>
+  <rect x="226" y="340" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="258.0" y="378.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(0,2)</text>
+  <rect x="290" y="340" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="322.0" y="378.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1,2)</text>
+  <rect x="354" y="340" width="64" height="64" fill="white" stroke="#acb9c6" />
+  <text x="386.0" y="378.0" fill="#20354b" font-size="17" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,2)</text>
+  <rect x="228" y="214" width="60" height="60" fill="none" stroke="#086d61" stroke-width="3" />
+</svg>

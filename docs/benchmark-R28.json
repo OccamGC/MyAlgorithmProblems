@@ -1,0 +1,1308 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "compiler": "g++.exe (GCC) 16.2.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-Wall",
+    "-Wextra",
+    "-pedantic-errors"
+  ],
+  "repeat": 5,
+  "resolution_seconds": 0.5,
+  "timing_scope": "Process startup and input/output included; generation and validation excluded.",
+  "memory_scope": "Separately measured peak working set includes runtime.",
+  "problems": {
+    "tree-demolition": {
+      "sources": {
+        "std.cpp": "54d2fb98e649ac0326535de8fd0b2b842b99250223eab1dd325c276e20af2150"
+      },
+      "binaries": {
+        "std": "174115e2a387076a9d358852f5e162dacd05047aedac086bacffd7fbb520d03d"
+      },
+      "generator_sha256": "e97f25f162675d3019c7e10768c07301fdd8f6daa1c76e39ddbe83eb5796fb66",
+      "plan_sha256": "a3c1683cc1e2e653035fa3c9c790c334d20ebaf94a25246719afaef587b5b8f9",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "1c18cbda58b32d3408e27a9b9ca256d34a94e7c6689dfebb2f7b32e54eacb9ca",
+          "output_sha256": "9b38d284bae4dc26e593ab0d5cb50d846c3328a8c0467291a8a473cf15c1615b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.018781800055876374,
+                0.013866099994629622,
+                0.015052299946546555,
+                0.014355899998918176,
+                0.015254200086928904
+              ],
+              "median_seconds": 0.015052299946546555,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "0932206cc0ce616b2c3c79948558d895d7f51ff4a4aea77849854f8b8c20683d",
+          "output_sha256": "ad9aa073858ab83c6e4afcf14dc3fa15c192a65f298183e7842cbd136ebd0d7f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.014328000019304454,
+                0.014927599928341806,
+                0.014394399942830205,
+                0.014336799969896674,
+                0.015252400073222816
+              ],
+              "median_seconds": 0.014394399942830205,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "437e407b6c10334db2acbe17b1358a40c408cfe5981f7878b33d360dece47d95",
+          "output_sha256": "1bc647ab42ddc983c6826375817b780ac24363a22d4c15b643c5bb4207f19690",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.18118770001456141,
+                0.1762794000096619,
+                0.1747730999486521,
+                0.17406840005423874,
+                0.1726094998884946
+              ],
+              "median_seconds": 0.1747730999486521,
+              "peak_working_set_bytes": 48259072
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "2c7b6ed317ca6bef3ae1ce695fd9b37c09a38738a3ecb1227355366f307f3472",
+          "output_sha256": "5fb69a3b0fe77e9d4d6041de8f41adddbf13e362c135d6c2218eb42595ef7dd7",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.22493130003567785,
+                0.22522420005407184,
+                0.23139480000827461,
+                0.23094600008334965,
+                0.22872769995592535
+              ],
+              "median_seconds": 0.22872769995592535,
+              "peak_working_set_bytes": 48275456
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "9d735e2c2414bfc7bd22a521bc7683813a30dc297559cea48f1b20c9f8cfa657",
+          "output_sha256": "f28c49cc896aba133d5b8b3f1b2107fd83e65a97762e95dadc33df7a09697c19",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.37829239992424846,
+                0.4053778999950737,
+                0.37183240009471774,
+                0.39089489995967597,
+                0.3828282000031322
+              ],
+              "median_seconds": 0.3828282000031322,
+              "peak_working_set_bytes": 48271360
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "90ab80a6046a78d026a3c374ea8f69943b1608eb41ecb4aadc86cdace978541f",
+          "output_sha256": "ab0b6c500f92939c391d824a30aace016de0085d608232d3e8783ec490f9c28e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.1350588999921456,
+                0.17576929996721447,
+                0.13433799997437745,
+                0.13704260007943958,
+                0.1426006000256166
+              ],
+              "median_seconds": 0.13704260007943958,
+              "peak_working_set_bytes": 48271360
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "6b3659b872476b49af7e535621aca8a35e41a56645428676f23e30e8139523bb",
+          "output_sha256": "f6372d362eac4461c75838d08bbd00b48dc3758f385f98a038d11a41ddb0385d",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5282216999912634,
+                0.5371875999262556,
+                0.5317298000445589,
+                0.5150798999238759,
+                0.5163223999552429
+              ],
+              "median_seconds": 0.5282216999912634,
+              "peak_working_set_bytes": 48271360
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "c72dc8c755a69c9f9078ca93201492905824274a0a3b104f2f88ee31e6b6675c",
+          "output_sha256": "ad6b0d3f0e1e1c4331f726c7ececaae4c34d073d1028843428cf14936189a368",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.38273369998205453,
+                0.39622350002173334,
+                0.3767387999687344,
+                0.4074035999365151,
+                0.3789320000214502
+              ],
+              "median_seconds": 0.38273369998205453,
+              "peak_working_set_bytes": 48275456
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "f1a3be5aa4b1d28cc70d9cfa8bb38c172ff96753c05b62acbb86ff4c95eceadf",
+          "output_sha256": "40f22b87bd18e8c5b7652e0da1bade363b6376801b7bf7e2447ef4f053b9b719",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3788275000406429,
+                0.3449495999375358,
+                0.34171569999307394,
+                0.336859600036405,
+                0.3414489000570029
+              ],
+              "median_seconds": 0.34171569999307394,
+              "peak_working_set_bytes": 48230400
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every full output checked for permutation, leaf-removal precedence and exact 64-bit objective; equal-weight instances additionally compared with a smallest-leaf heap. Optimality and tie handling have a block-exchange proof and exhaustive small-instance checks.",
+          "input_sha256": "925f977ed07af57443c14a4c590d83538edf82cddd8c280c2de63f1c42bdba12",
+          "output_sha256": "b88ba60d2a730427f314ff4fffa962b3db81a1de759bfd34787993cfd4039f50",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.1564924999838695,
+                0.16177590005099773,
+                0.17215260001830757,
+                0.15923449990805238,
+                0.15858089993707836
+              ],
+              "median_seconds": 0.15923449990805238,
+              "peak_working_set_bytes": 48254976
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.5282216999912634,
+          "peak_working_set_bytes": 48275456
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 1.5,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "line-capacity-transport": {
+      "sources": {
+        "std.cpp": "aae44126da8d874a83d95cc738af19d73b37e4dbe2e853a55d41bf2b6e3fb309",
+        "alternative-blocks.cpp": "89b15b5114eaae56656d5b82b8785022097d0ca9a8ddaa5df74fd03b86c85e53"
+      },
+      "binaries": {
+        "std": "8862bd04e36a4d196e28521340d506c49135ec87379923cf3fdf98dbad1829d6",
+        "alternative-blocks": "2fea3588be73a5fc5aea4f1d271ecde669edd069a1e2fb595808aebf6b24d921"
+      },
+      "generator_sha256": "e97f25f162675d3019c7e10768c07301fdd8f6daa1c76e39ddbe83eb5796fb66",
+      "plan_sha256": "3f3db03d8a9ce30173716d9d6f3133e7f1261ccd3da29acba7ebb6119b7579d1",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "e8787489ca91e485ad55a7f52c55faa9f230ea651dafdad189338a680c7361ea",
+          "output_sha256": "953614b55d940dc9ebbf50655808c54860ae7aabcac55874cc780f6c34017144",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016717700054869056,
+                0.016190700000151992,
+                0.021267300006002188,
+                0.01900299999397248,
+                0.017018800019286573
+              ],
+              "median_seconds": 0.017018800019286573,
+              "peak_working_set_bytes": 5353472
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.0170652000233531,
+                0.015292900032363832,
+                0.019127800012938678,
+                0.01904449996072799,
+                0.01838669995777309
+              ],
+              "median_seconds": 0.01838669995777309,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "4b5c69b978cf1a43582a960ecfe0f7806c8627c78503999353fe9d369c7a9076",
+          "output_sha256": "d11839e0b22045fb537fbf1bc1b799f0ff365c45c8e44f55613f60a86c6ca414",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01627829996868968,
+                0.016791700036264956,
+                0.015802100067958236,
+                0.0178553001023829,
+                0.017347099957987666
+              ],
+              "median_seconds": 0.016791700036264956,
+              "peak_working_set_bytes": 5373952
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.017821600078605115,
+                0.017550199991092086,
+                0.01671400002669543,
+                0.018342799972742796,
+                0.01877019996754825
+              ],
+              "median_seconds": 0.017821600078605115,
+              "peak_working_set_bytes": 5369856
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "fda3175c02c8203f00b4783a6fb8ed7311cc3fe832b547a62efd00648fd8a2c2",
+          "output_sha256": "503b7990a579e3540c17d1e9393d284994264dac8e099c8b08cb3d6f472c939f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.06914660008624196,
+                0.06725660001393408,
+                0.06713199999649078,
+                0.14636110002174973,
+                0.05763599998317659
+              ],
+              "median_seconds": 0.06725660001393408,
+              "peak_working_set_bytes": 18059264
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.5491301999427378,
+                0.6553195000160486,
+                0.5246927000116557,
+                0.48910450004041195,
+                0.5685655999695882
+              ],
+              "median_seconds": 0.5491301999427378,
+              "peak_working_set_bytes": 8753152
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "a24154e227bf5a2866e020d61c7f132f0af9344755cd584e9bac0dc9ceeff4ca",
+          "output_sha256": "68b769eda18ee3ac1951789fbbe04db81f3caa051a97543b78aa98de7d3d1226",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.054624599986709654,
+                0.05627450009342283,
+                0.061777499970048666,
+                0.0494874999858439,
+                0.05259670002851635
+              ],
+              "median_seconds": 0.054624599986709654,
+              "peak_working_set_bytes": 18063360
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.5467401000205427,
+                0.5596388999838382,
+                0.4962581000290811,
+                0.48444010003004223,
+                0.5721737999701872
+              ],
+              "median_seconds": 0.5467401000205427,
+              "peak_working_set_bytes": 8769536
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "8932eaf24fc749497c9b259272d3b53136b792af26f82ef9b2c8003d6403fb5d",
+          "output_sha256": "bd1d32b6aeb1dbf969cc9a58c527af94a27f1f627e3b3d198c7ca86795396d96",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0765565000474453,
+                0.08376720000524074,
+                0.08009180007502437,
+                0.08391340007074177,
+                0.07805900007952005
+              ],
+              "median_seconds": 0.08009180007502437,
+              "peak_working_set_bytes": 22933504
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.8735796000109985,
+                0.8945146999321878,
+                0.9389599000569433,
+                0.9748658000025898,
+                0.8802776000229642
+              ],
+              "median_seconds": 0.8945146999321878,
+              "peak_working_set_bytes": 13615104
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "0803bad8fd44b3bc085b39bf7abcd45a84f8deaae47ee638f8dae9c9e02761a7",
+          "output_sha256": "6e2833b5499272afd7fb37500adf29c70f57f018033d293d78cf18faeab9beca",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05980970000382513,
+                0.058699200046248734,
+                0.05273629992734641,
+                0.052285200101323426,
+                0.050936799962073565
+              ],
+              "median_seconds": 0.05273629992734641,
+              "peak_working_set_bytes": 22925312
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.04748209996614605,
+                0.05183339992072433,
+                0.04651180002838373,
+                0.05319270002655685,
+                0.04581170005258173
+              ],
+              "median_seconds": 0.04748209996614605,
+              "peak_working_set_bytes": 13606912
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "79de0e60f79f3e97ceb2a14992d3e200c5f9fe056628bb36037fc09f48024cb9",
+          "output_sha256": "290b79a0fe4a15367f7368219e4025290475b6e446fcc6c6889aeabc0815c357",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.10037250001914799,
+                0.09939940006006509,
+                0.0962874999968335,
+                0.1856334999902174,
+                0.1058806999353692
+              ],
+              "median_seconds": 0.10037250001914799,
+              "peak_working_set_bytes": 18120704
+            },
+            "alternative-blocks": {
+              "seconds": [
+                1.0683117000153288,
+                1.0796407000161707,
+                1.0958254999713972,
+                1.0713595000561327,
+                1.0641702000284567
+              ],
+              "median_seconds": 1.0713595000561327,
+              "peak_working_set_bytes": 8814592
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "2da89b1d248d76f3c98be6c7f3fa674389218460efbf8d1eff4f4aeab009037a",
+          "output_sha256": "6e2833b5499272afd7fb37500adf29c70f57f018033d293d78cf18faeab9beca",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03752220002934337,
+                0.04270300001371652,
+                0.04319950006902218,
+                0.03926380001939833,
+                0.042411700007505715
+              ],
+              "median_seconds": 0.042411700007505715,
+              "peak_working_set_bytes": 22921216
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.03669520001858473,
+                0.034193300059996545,
+                0.03478950005955994,
+                0.0342782000079751,
+                0.03780050005298108
+              ],
+              "median_seconds": 0.03478950005955994,
+              "peak_working_set_bytes": 13598720
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "bff6d253714fabd20304d109956e70c90958fb5daad19b0d2650eac63064bba5",
+          "output_sha256": "6e2833b5499272afd7fb37500adf29c70f57f018033d293d78cf18faeab9beca",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.10413580003660172,
+                0.09921459993347526,
+                0.11000099999364465,
+                0.09790180006530136,
+                0.16898580000270158
+              ],
+              "median_seconds": 0.10413580003660172,
+              "peak_working_set_bytes": 21331968
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.46445970004424453,
+                0.47890450002159923,
+                0.4913959999103099,
+                0.4921919999178499,
+                0.4728606999851763
+              ],
+              "median_seconds": 0.47890450002159923,
+              "peak_working_set_bytes": 12017664
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every prefix compared between sign-aware segment tree and independent sorted-block range-flow representation; full assignment-state enumeration on small inputs.",
+          "input_sha256": "43520e936517119f4422d19cb5e2b697b0441c83dedfaecaed601d07e99a99b2",
+          "output_sha256": "4cecc8b052d69a655891a4be376a95f3530273cb8dbb8dfb11da315575546268",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.11428380000870675,
+                0.10821070009842515,
+                0.10714370000641793,
+                0.12040899996645749,
+                0.11483019997831434
+              ],
+              "median_seconds": 0.11428380000870675,
+              "peak_working_set_bytes": 21331968
+            },
+            "alternative-blocks": {
+              "seconds": [
+                0.7216438000323251,
+                0.7851682000327855,
+                0.7177283000200987,
+                0.7178466999903321,
+                0.7481758999638259
+              ],
+              "median_seconds": 0.7216438000323251,
+              "peak_working_set_bytes": 12013568
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.11428380000870675,
+          "peak_working_set_bytes": 22933504
+        },
+        "alternative-blocks": {
+          "slowest_median_seconds": 1.0713595000561327,
+          "peak_working_set_bytes": 13615104
+        }
+      },
+      "multiplier": 18,
+      "limit_seconds": 2.5,
+      "multiplier_reason": "The documented correct alternative needs twofold measured headroom on the original full range."
+    },
+    "time-management-and-team-sports": {
+      "sources": {
+        "std.cpp": "6feadbb079b8de43a8ded8f8a66c9e9087ec08be92f3fac9b813465869489db3"
+      },
+      "binaries": {
+        "std": "994e30fb252ea46f949f6afea6c421110675309b8f87ae461c21d4d18b3a2785"
+      },
+      "generator_sha256": "e97f25f162675d3019c7e10768c07301fdd8f6daa1c76e39ddbe83eb5796fb66",
+      "plan_sha256": "7531f689478c0435dc88536b30484bfbf9090e972cabfe721b9fda38709f41d2",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "output_sha256": "2b3d187e89755c5c200ee3c025b5753175dbf40fb698ca1fba1750fb10ba2645",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01575530006084591,
+                0.01608590001706034,
+                0.017855899990536273,
+                0.016991500044241548,
+                0.020215800032019615
+              ],
+              "median_seconds": 0.016991500044241548,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "d024c809008fd394d41d06218103effa889c9526454319f3dc940bbb86b87717",
+          "output_sha256": "cfb174154116fcb9e8e4e1e8aa6fc3096d416b8611335f62c927032d28a2762d",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016198100056499243,
+                0.016211099922657013,
+                0.023067599977366626,
+                0.01631069998256862,
+                0.014486199943348765
+              ],
+              "median_seconds": 0.016211099922657013,
+              "peak_working_set_bytes": 5361664
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "11f7c2dd6cd2bae8419078409fc59231d4c498f10071fe1410f965fc99233831",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.859163900022395,
+                1.8525183000601828,
+                1.9859152000863105,
+                1.8730970999458805,
+                1.8474487999919802
+              ],
+              "median_seconds": 1.859163900022395,
+              "peak_working_set_bytes": 6504448
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "6ced5856606170882aaf8384ef6df3f0cd68a719c91a209cbd28de526d4017cc",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.028739599976688623,
+                0.03028969990555197,
+                0.027693699928931892,
+                0.028519899933598936,
+                0.028922699973918498
+              ],
+              "median_seconds": 0.028739599976688623,
+              "peak_working_set_bytes": 6500352
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "a043cba250256954d868cad3729f510de3cfe34a9564367f10c06ddcbfdbfa48",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.7831873999675736,
+                1.7639341000467539,
+                1.786288799950853,
+                1.7539979999419302,
+                1.7740784999914467
+              ],
+              "median_seconds": 1.7740784999914467,
+              "peak_working_set_bytes": 6504448
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "c2d9650ed541f3232e1e9b594b27358c84e74457a915095db5206f35d487d6b8",
+          "output_sha256": "c9f2ee7893c0e9a6eb6880b61514be2d87a08a566cbc850f280ca61ef4ea8f84",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.9143834999995306,
+                1.8444119000341743,
+                1.9794227000093088,
+                1.9116355000296608,
+                1.8725159000605345
+              ],
+              "median_seconds": 1.9116355000296608,
+              "peak_working_set_bytes": 6504448
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "a7a568b0e6bf02a02191b5c4f30872696049f0c510a2d692a00f7062e68aee9e",
+          "output_sha256": "b9d8a1e77f034f9e5f3de30e1ca04571bfc0fb91e74ba750e44ec0d6bb681f2a",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.1305021999869496,
+                1.1758837000234053,
+                1.1309886999661103,
+                1.1334071999881417,
+                1.1338950000936165
+              ],
+              "median_seconds": 1.1334071999881417,
+              "peak_working_set_bytes": 6504448
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "07d5cf05f683f0aac04b932dfb372e4c5b03a4501cee68f0341c34233c6f2c69",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                2.0698873999062926,
+                2.1275739000411704,
+                2.2941373999929056,
+                2.245244799996726,
+                2.176987300044857
+              ],
+              "median_seconds": 2.176987300044857,
+              "peak_working_set_bytes": 6500352
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "c1ef5fe5235ab2d77065928c802bbb18ea7a41c0176421aef74626ac43d2daba",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03630340006202459,
+                0.028663699980825186,
+                0.028179200016893446,
+                0.031011200044304132,
+                0.03070180001668632
+              ],
+              "median_seconds": 0.03070180001668632,
+              "peak_working_set_bytes": 6504448
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every full output has an independently checked arbitrary-precision matching/dual certificate: all dual inequalities, equality on matched edges, bijection and reward histogram.",
+          "input_sha256": "6ff94d019d7f99eccc4d50bd0c3913487fd0fd5aa2a33c0a9689846c2624b034",
+          "output_sha256": "2aa94745e5e98d3e6dd1ce18aa943d8ec34aeb26ffd8623e661f7b72ae1e4889",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.5080786999315023,
+                1.5093359999591485,
+                1.5678007000824437,
+                1.4842016999609768,
+                1.5056329999351874
+              ],
+              "median_seconds": 1.5080786999315023,
+              "peak_working_set_bytes": 6500352
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 2.176987300044857,
+          "peak_working_set_bytes": 6504448
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 4.5,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "dynamic-binary-bounds": {
+      "sources": {
+        "std.cpp": "7b642c482e0eb4c45510ff84879b396c6fe7a7dd1aa96dc7692a4425f7e7aeb2"
+      },
+      "binaries": {
+        "std": "a92d0b8d95effead46fd3c91d7fdce2c0431aca835009b3a85cb1ecaf505c4ad"
+      },
+      "generator_sha256": "e97f25f162675d3019c7e10768c07301fdd8f6daa1c76e39ddbe83eb5796fb66",
+      "plan_sha256": "084f142a896466b9c8e2f5389ee4aab6d9c72ad1b3a22d787524c6e9bbe6c9aa",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "92efddd9f6e03d5512d538b8696e445c9fe1921442e322052ce1a1e8ab8d33a8",
+          "output_sha256": "ccb17bd8de5415eb14c5740391afbf74ac4213221f0b2dff351594da978a5b24",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016653900034725666,
+                0.01708150003105402,
+                0.017783100018277764,
+                0.017388700041919947,
+                0.01693909999448806
+              ],
+              "median_seconds": 0.01708150003105402,
+              "peak_working_set_bytes": 5369856
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "6ebd8cbe2dfca43df2d105b95409b1d8cb1d8bf2c7772f023aa27e494e274dc2",
+          "output_sha256": "511db7442c1cf15cdfa1f84b85ae61ca89f06048482f3e16da4ebcf2aa778e5a",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016945500043220818,
+                0.016222400008700788,
+                0.016626300057396293,
+                0.01798690005671233,
+                0.016077400068752468
+              ],
+              "median_seconds": 0.016626300057396293,
+              "peak_working_set_bytes": 5373952
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "1511475c1492b517bef5880f229bceb9a4f8cbd8bcc371bb73b1237617ed495b",
+          "output_sha256": "0c65021de23f4f816c7951a076385d4bf984675f07e17f12ac0b87fa01d92adb",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.20915140002034605,
+                0.21778720000293106,
+                0.2138975999550894,
+                0.20787499996367842,
+                0.21472200006246567
+              ],
+              "median_seconds": 0.2138975999550894,
+              "peak_working_set_bytes": 37199872
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "52c48661d5238a09b25afc51b761577a735d0176675d8f8d026cda61b7d9a93e",
+          "output_sha256": "7421d72ea6c75fd690738e433e58d3aa1b50b57abe8b6db7197ea9c8b0a40b5f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.20380109990946949,
+                0.22174720000475645,
+                0.20543790003284812,
+                0.214155999943614,
+                0.20622209995053709
+              ],
+              "median_seconds": 0.20622209995053709,
+              "peak_working_set_bytes": 37203968
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "b46f1f2977a382a9932ee17fb793ea7c8feb5043038c3cfa2a7ecc4c6e828792",
+          "output_sha256": "fdad6ba76c80ce980520375e21173458acd7028e898e8c815361db4b3f53ae4a",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.21295850002206862,
+                0.20857719995547086,
+                0.252100000041537,
+                0.20654689997900277,
+                0.21981219993904233
+              ],
+              "median_seconds": 0.21295850002206862,
+              "peak_working_set_bytes": 37199872
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "e16bf9f56fca2568fb0ad7e1195c976b47319dd66569b14f0a677fb5ba21f553",
+          "output_sha256": "72fa956db7c72aa525cbc57872470ea9b71e7e3d0d8fb64d526a004620c4dd38",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.18263870000373572,
+                0.18924589990638196,
+                0.25246700004208833,
+                0.19218880007974803,
+                0.1856835000216961
+              ],
+              "median_seconds": 0.18924589990638196,
+              "peak_working_set_bytes": 37199872
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "7e09303bd94fd528e0588f8bd31efd71c4a2c99f2a8313b3b449be609317f13c",
+          "output_sha256": "c9a3492dba936e8c66f5ba3538a47bda7a4d3da5ed907c8d1899c536e3b35d7b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2250188000034541,
+                0.20024929998908192,
+                0.18796980008482933,
+                0.1919460000935942,
+                0.20060950005427003
+              ],
+              "median_seconds": 0.20024929998908192,
+              "peak_working_set_bytes": 37203968
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "4c085a7b37d7e122d54e3c3c378ffc7a5d5e74f35be3ae9fb25f06dc4300fd78",
+          "output_sha256": "d06d8b0631026c8d4d0a707c598d33b25e512740b648f59307e09c3df5a60c3d",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.20409920008387417,
+                0.2355241000186652,
+                0.19603590003680438,
+                0.19426450005266815,
+                0.20098690001759678
+              ],
+              "median_seconds": 0.20098690001759678,
+              "peak_working_set_bytes": 37199872
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "83ffc8daec212486d517b0f45464bfc57b3afbd3f34042c0a098b33e7e6040f4",
+          "output_sha256": "ea2eb6655c4840ffd810f3c96d000225ebada5b89caf631ac89e1e23bcfe26f5",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.27968249993864447,
+                0.2070797000778839,
+                0.2130300001008436,
+                0.21382329997140914,
+                0.2208894999930635
+              ],
+              "median_seconds": 0.21382329997140914,
+              "peak_working_set_bytes": 37203968
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every answer compared with a dense, decreasing equal-mask automaton using generic matrix multiplication and subset Mobius inversion; small inputs additionally enumerate all integer pairs.",
+          "input_sha256": "52b874261e6ed6885e0bc4ead9cdd118399bc74f3b2b9dda01beb2231a07f244",
+          "output_sha256": "b7cc21baf96582f4ed664396f6130a4698e8433655038b40a424c1d1f139cb11",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.22008340002503246,
+                0.21460529998876154,
+                0.2023870999692008,
+                0.20878370001446456,
+                0.21658250002656132
+              ],
+              "median_seconds": 0.21460529998876154,
+              "peak_working_set_bytes": 37199872
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.21460529998876154,
+          "peak_working_set_bytes": 37203968
+        }
+      },
+      "multiplier": 2,
+      "limit_seconds": 0.5,
+      "multiplier_reason": "Default twofold headroom."
+    },
+    "grid-forest-matching": {
+      "sources": {
+        "std.cpp": "0aabcd81214279752287d1ca35ff4192fd4dafbca47a74037e36da63b2a546d0",
+        "alternative-bitsets.cpp": "cda4e073b95fd4a4a453443921cb145f3ede06aab138f5cf14f68daf3da3ef4b"
+      },
+      "binaries": {
+        "std": "ccfebef2430316b02edc733470233e10fddc0b1b9d6bcea7883cf5eb9032f246",
+        "alternative-bitsets": "6b1599b425d8ad6df5b6abdd8cc8f92ced6ea82b10d77095acaf8f71b63f25a8"
+      },
+      "generator_sha256": "e97f25f162675d3019c7e10768c07301fdd8f6daa1c76e39ddbe83eb5796fb66",
+      "plan_sha256": "ec6303300b3280b39818fe354aa2e2a2c24470f326b11b73f5f96f154101a35d",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "92a8f1fc4264e6c574d2447f8ab27d5b673ee5b8a2a980e8fb22af4d8b60c76e",
+          "output_sha256": "36a3e8c855aa1fc8f3ad645b0f4368d33bd5dc3a22a1921228c13a1f4108d6eb",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.018615399952977896,
+                0.018553100060671568,
+                0.01950199995189905,
+                0.01902489992789924,
+                0.019820200046524405
+              ],
+              "median_seconds": 0.01902489992789924,
+              "peak_working_set_bytes": 6934528
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.017400900018401444,
+                0.019010599935427308,
+                0.020363499992527068,
+                0.02120610000565648,
+                0.018510700087063015
+              ],
+              "median_seconds": 0.019010599935427308,
+              "peak_working_set_bytes": 5390336
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "b0db66e0356cdb25aaf4e7d44e8ba0100949abdedaee96982d57c45d36ba61af",
+          "output_sha256": "dc21fffae1f1ec0ffbcdb5501b8a5872c4cf46dbe5eeff55e9424aa17e9fa2fb",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.018397900043055415,
+                0.01903119997587055,
+                0.019939800025895238,
+                0.017824700102210045,
+                0.019201299990527332
+              ],
+              "median_seconds": 0.01903119997587055,
+              "peak_working_set_bytes": 6918144
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.020678600063547492,
+                0.022272199974395335,
+                0.018824200029484928,
+                0.017449599923565984,
+                0.019688400090672076
+              ],
+              "median_seconds": 0.019688400090672076,
+              "peak_working_set_bytes": 5386240
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "a92774bcdfb06ca4e64bc3aa63052a68531c1d7383356b04154313f6dc6a9683",
+          "output_sha256": "2dd72aa582fc8d5a328ac29fe9eeda5f0f1e83594e03ad6a8cf0fd090bf30696",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02790920005645603,
+                0.024647300015203655,
+                0.0279179000062868,
+                0.025026699993759394,
+                0.028796000056900084
+              ],
+              "median_seconds": 0.02790920005645603,
+              "peak_working_set_bytes": 5541888
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.02661870000883937,
+                0.02714879997074604,
+                0.02629809989593923,
+                0.026172099984250963,
+                0.028999000089243054
+              ],
+              "median_seconds": 0.02661870000883937,
+              "peak_working_set_bytes": 5394432
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "bc06b66f4aedb530cc4f2959b1bed8efd27733c2d813caa1987c88002b736979",
+          "output_sha256": "1f39973169a586db280047770c5cd17c56e414ef6ff4a8be5e0f52436fbe39e4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.027600300032645464,
+                0.026391199906356633,
+                0.1150276999687776,
+                0.02820519998203963,
+                0.02493700000923127
+              ],
+              "median_seconds": 0.027600300032645464,
+              "peak_working_set_bytes": 6967296
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.027963400003500283,
+                0.02464489999692887,
+                0.031347300042398274,
+                0.02911500004120171,
+                0.027047500014305115
+              ],
+              "median_seconds": 0.027963400003500283,
+              "peak_working_set_bytes": 5398528
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "40fc82662c9ae29a0d244ff009cbe54cfd072c8f045e0779f6261e8e1eb6eb92",
+          "output_sha256": "1f9b85a2413401ff06f3b7f1ecb35d3acc6a00ee1063b73e712a16d2e76ff437",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.050297999987378716,
+                0.0496812000637874,
+                0.04598000005353242,
+                0.14079850004054606,
+                0.04799470002762973
+              ],
+              "median_seconds": 0.0496812000637874,
+              "peak_working_set_bytes": 6918144
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.4568699999945238,
+                0.37262889998964965,
+                0.3792840000241995,
+                0.3742720999289304,
+                0.38752530002966523
+              ],
+              "median_seconds": 0.3792840000241995,
+              "peak_working_set_bytes": 5398528
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "32a0470f2101ae10f0006745ffbede2c337fc8a695914c141bdf030e2fd8973f",
+          "output_sha256": "1f9b85a2413401ff06f3b7f1ecb35d3acc6a00ee1063b73e712a16d2e76ff437",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.057743600104004145,
+                0.047589699970558286,
+                0.04807479993905872,
+                0.0470418999902904,
+                0.04962229996453971
+              ],
+              "median_seconds": 0.04807479993905872,
+              "peak_working_set_bytes": 6914048
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.37205400003585964,
+                0.38087820005603135,
+                0.4333824999630451,
+                0.37609350006096065,
+                0.37090330000501126
+              ],
+              "median_seconds": 0.37609350006096065,
+              "peak_working_set_bytes": 5402624
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "7c94998764f745b64c7f18fdeed17a3352c959f39aabd8259135624b2de94160",
+          "output_sha256": "99101d7aef081215c2621ad8328de7fd8222823920b0e1346664f5eb222fe09e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.041863400023430586,
+                0.043954099994152784,
+                0.0411371000809595,
+                0.04155950003769249,
+                0.042703800019808114
+              ],
+              "median_seconds": 0.041863400023430586,
+              "peak_working_set_bytes": 6942720
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.0278634000569582,
+                0.030574699980206788,
+                0.028811499942094088,
+                0.028264099964872003,
+                0.028340799966827035
+              ],
+              "median_seconds": 0.028340799966827035,
+              "peak_working_set_bytes": 5398528
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "5dfa702308686a96f7cd27cd5f41ed9c6c299178d6a9b765ab39c7a3a84ac261",
+          "output_sha256": "9a36037015c02022a5c62c8262d02bd1d8a3c1e3e56ff5aef65532d5183a9a6f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04061609995551407,
+                0.037824700004421175,
+                0.03662100003566593,
+                0.041270800051279366,
+                0.03870540007483214
+              ],
+              "median_seconds": 0.03870540007483214,
+              "peak_working_set_bytes": 6967296
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.03672870004083961,
+                0.04054109996650368,
+                0.03882250003516674,
+                0.03767930006142706,
+                0.03950250009074807
+              ],
+              "median_seconds": 0.03882250003516674,
+              "peak_working_set_bytes": 5398528
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "6e9147d89052a40f2912d42c4ad9b7d209558cd96bcea90dd144e7dc071e9764",
+          "output_sha256": "c04080a6b2a31c0e4920dd73bfd13bdb52d665deb9bb1e1e76c810d908449eb6",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.048461099970154464,
+                0.04944540001451969,
+                0.14048549998551607,
+                0.04853269993327558,
+                0.05083039996679872
+              ],
+              "median_seconds": 0.04944540001451969,
+              "peak_working_set_bytes": 6971392
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.03494220005813986,
+                0.03636130003724247,
+                0.03505890001542866,
+                0.0350839999737218,
+                0.03584000002592802
+              ],
+              "median_seconds": 0.0350839999737218,
+              "peak_working_set_bytes": 5402624
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every answer compared between candidate-list filtering and word-parallel translated masks; small inputs move all surviving positions after every operation.",
+          "input_sha256": "1101cfa77c36da4afe7c3814fa46beb65925128f4df5d459a5a0b312a3bf39d5",
+          "output_sha256": "99101d7aef081215c2621ad8328de7fd8222823920b0e1346664f5eb222fe09e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04358040005899966,
+                0.04491370008327067,
+                0.04289530008099973,
+                0.044881299952976406,
+                0.04053270001895726
+              ],
+              "median_seconds": 0.04358040005899966,
+              "peak_working_set_bytes": 6959104
+            },
+            "alternative-bitsets": {
+              "seconds": [
+                0.030210900004021823,
+                0.028900900040753186,
+                0.029148699948564172,
+                0.027758299955166876,
+                0.03270079998765141
+              ],
+              "median_seconds": 0.029148699948564172,
+              "peak_working_set_bytes": 5402624
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.0496812000637874,
+          "peak_working_set_bytes": 6971392
+        },
+        "alternative-bitsets": {
+          "slowest_median_seconds": 0.3792840000241995,
+          "peak_working_set_bytes": 5402624
+        }
+      },
+      "multiplier": 11,
+      "limit_seconds": 1.0,
+      "multiplier_reason": "The documented correct alternative needs twofold measured headroom on the original full range."
+    }
+  }
+}

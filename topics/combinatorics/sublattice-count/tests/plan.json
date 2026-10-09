@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012200,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 1,
+      "mode": "chain",
+      "historical_index": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012201,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 2,
+      "mode": "diamond",
+      "historical_index": 1
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012202,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 3,
+      "mode": "chain",
+      "historical_index": 2
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012203,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 4,
+      "mode": "diamond",
+      "historical_index": 3
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012204,
+      "purpose": "pentagon; boundary/structure coverage",
+      "n": 5,
+      "mode": "pentagon",
+      "historical_index": 4
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012205,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 6,
+      "mode": "diamond",
+      "historical_index": 5
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012206,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 7,
+      "mode": "chain",
+      "historical_index": 6
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012207,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 8,
+      "mode": "diamond",
+      "historical_index": 7
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012208,
+      "purpose": "product; boundary/structure coverage",
+      "n": 9,
+      "mode": "product",
+      "historical_index": 8
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012209,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 10,
+      "mode": "diamond",
+      "historical_index": 9
+    },
+    {
+      "id": "11",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012210,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 11,
+      "mode": "chain",
+      "historical_index": 10
+    },
+    {
+      "id": "12",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012211,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 12,
+      "mode": "diamond",
+      "historical_index": 11
+    },
+    {
+      "id": "13",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012212,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 13,
+      "mode": "chain",
+      "historical_index": 12
+    },
+    {
+      "id": "14",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012213,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 14,
+      "mode": "diamond",
+      "historical_index": 13
+    },
+    {
+      "id": "15",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012214,
+      "purpose": "product; boundary/structure coverage",
+      "n": 15,
+      "mode": "product",
+      "historical_index": 14
+    },
+    {
+      "id": "16",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012215,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 16,
+      "mode": "diamond",
+      "historical_index": 15
+    },
+    {
+      "id": "17",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012216,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 17,
+      "mode": "chain",
+      "historical_index": 16
+    },
+    {
+      "id": "18",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012217,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 18,
+      "mode": "diamond",
+      "historical_index": 17
+    },
+    {
+      "id": "19",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012218,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 19,
+      "mode": "chain",
+      "historical_index": 18
+    },
+    {
+      "id": "20",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012219,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 20,
+      "mode": "diamond",
+      "historical_index": 19
+    },
+    {
+      "id": "21",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012220,
+      "purpose": "product; boundary/structure coverage",
+      "n": 21,
+      "mode": "product",
+      "historical_index": 20
+    },
+    {
+      "id": "22",
+      "group": 1,
+      "score_percent": 4,
+      "seed": 202610012221,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 22,
+      "mode": "diamond",
+      "historical_index": 21
+    },
+    {
+      "id": "23",
+      "group": 1,
+      "score_percent": 12,
+      "seed": 202610012222,
+      "purpose": "sample; boundary/structure coverage",
+      "n": 8,
+      "mode": "sample",
+      "historical_index": 22
+    },
+    {
+      "id": "24",
+      "group": 1,
+      "score_percent": 0,
+      "seed": 202610012223,
+      "purpose": "chain; boundary/structure coverage",
+      "n": 22,
+      "mode": "chain",
+      "purpose_override": "Unscored legal-range stress; bounds unchanged"
+    },
+    {
+      "id": "25",
+      "group": 1,
+      "score_percent": 0,
+      "seed": 202610012224,
+      "purpose": "product; boundary/structure coverage",
+      "n": 22,
+      "mode": "product",
+      "width": 2,
+      "purpose_override": "Unscored legal-range stress; bounds unchanged"
+    },
+    {
+      "id": "26",
+      "group": 1,
+      "score_percent": 0,
+      "seed": 202610012225,
+      "purpose": "diamond; boundary/structure coverage",
+      "n": 21,
+      "mode": "diamond",
+      "purpose_override": "Unscored legal-range stress; bounds unchanged"
+    }
+  ]
+}

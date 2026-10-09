@@ -1,0 +1,1019 @@
+{
+  "timestamp": "2026-09-28 16:57:33 +0800",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "repeats": 5,
+  "time_resolution_seconds": 0.5,
+  "multiplier": 2.0,
+  "timing": "wall clock, one input file per process; first run used to produce output, then repeated timed runs; median per case",
+  "problems": {
+    "terror-drone": {
+      "sample_count": 4,
+      "std_sha256": "6d1a5785fa7ab4a55eceaeffce63683d3b9589db880eee0b2fda1b210defb805",
+      "generator_sha256": "d32d16490b4bbbd28b702f60e4e4390b41a46c4f111d0303c513061d729e6fcb",
+      "plan_sha256": "d3b88a53a0241c93c7da9e85687ea83340fd53d96cb677c274be9acf9fd7f30e",
+      "program_sha256": "14a5dd91e9ff7a60f250d977db9f1ec07c5a47705cdd6a1b34ff03abcfff0ee5",
+      "standard_time_seconds": 0.0593347999965772,
+      "peak_working_set_bytes": 5111808,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "sample-bomb",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "one connected obstacle removed; diagonal turns",
+          "dimensions": {
+            "n": 5,
+            "m": 5,
+            "starts": 1,
+            "traps": 1,
+            "obstacles": 6
+          },
+          "input_bytes": 34,
+          "input_sha256": "ec510747f4aaf4f820d83a0f120ffe87beab041b9d1f60905ec26150f8040d7e",
+          "output_sha256": "7fb2aaeaf3eef66b52db104118c30f62899f5f0df520350a94a8fcb843c0dfdf",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.015237199957482517,
+            0.015592999989166856,
+            0.016201599966734648,
+            0.015567799971904606,
+            0.0163314999663271
+          ],
+          "median_seconds": 0.015592999989166856
+        },
+        {
+          "id": "straight-corridor",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "one drone versus multiple drones",
+          "dimensions": {
+            "n": 1,
+            "m": 4,
+            "starts": 2,
+            "traps": 1,
+            "obstacles": 0
+          },
+          "input_bytes": 9,
+          "input_sha256": "88e459b69ea2834570ceb5b61f111aa28ab6314562918a0eb764e3d604f30ef4",
+          "output_sha256": "3c4cac97638b65b0047047c4d3cb23d8f9b148bd1afe39cf3ba96eec6e32684e",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.015196399996057153,
+            0.016074499988462776,
+            0.015168000012636185,
+            0.01629599998705089,
+            0.015389600011985749
+          ],
+          "median_seconds": 0.015389600011985749
+        },
+        {
+          "id": "two-barriers",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "one bombing cannot open two components",
+          "dimensions": {
+            "n": 1,
+            "m": 5,
+            "starts": 1,
+            "traps": 1,
+            "obstacles": 2
+          },
+          "input_bytes": 10,
+          "input_sha256": "73e139ec4d74010bef11451114deec434ce834fd3de4391c2c2df45060a3565f",
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577",
+          "peak_working_set_bytes": 5046272,
+          "times_seconds": [
+            0.016216499963775277,
+            0.015252000011969358,
+            0.015293599979486316,
+            0.015941300021950155,
+            0.01613030000589788
+          ],
+          "median_seconds": 0.015941300021950155
+        },
+        {
+          "id": "small-random",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "multiple starts and obstacle components",
+          "dimensions": {
+            "n": 5,
+            "m": 5,
+            "starts": 16,
+            "traps": 1,
+            "obstacles": 8
+          },
+          "input_bytes": 34,
+          "input_sha256": "ca369833c6a2a18a8aa5e077cf8e3b1d371744490dd97cf4b20d55ef2ec51b05",
+          "output_sha256": "cecebd8aba0cdda1e2962a51f0bcfcb4e1f992a1152ee3d663ab29cca642594c",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.01540000003296882,
+            0.015621399972587824,
+            0.01581319997785613,
+            0.015379799995571375,
+            0.015235900005791336
+          ],
+          "median_seconds": 0.01540000003296882
+        },
+        {
+          "id": "single-start",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "one start and one trap at full grid size",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 1,
+            "traps": 1,
+            "obstacles": 635
+          },
+          "input_bytes": 1646,
+          "input_sha256": "fd426f125a72929ed059033d3c2534771efe2e6179f2280b46bbf46d70d45b43",
+          "output_sha256": "8abf1183c8fa6e85383e57785f594c00ab750b7b60f3f03a24c7fe4ce1cbdaa0",
+          "peak_working_set_bytes": 5103616,
+          "times_seconds": [
+            0.050667100003920496,
+            0.05057190003572032,
+            0.05175059998873621,
+            0.04983469995204359,
+            0.05476759996963665
+          ],
+          "median_seconds": 0.050667100003920496
+        },
+        {
+          "id": "many-components",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "nearly 800 obstacle components; one trap",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 799,
+            "traps": 1,
+            "obstacles": 800
+          },
+          "input_bytes": 1646,
+          "input_sha256": "23a2be2a481e5adac4a8ab1941ed62aa50cde517a18d25814583a5a08a75277d",
+          "output_sha256": "11d3c0b7abdffd49475cc776a22a70277a86b9340272fe1660fde24f0a96334f",
+          "peak_working_set_bytes": 5103616,
+          "times_seconds": [
+            0.03747270000167191,
+            0.03699230001075193,
+            0.037125599978026,
+            0.037326699995901436,
+            0.03683399996953085
+          ],
+          "median_seconds": 0.037125599978026
+        },
+        {
+          "id": "long-corridor",
+          "group": 3,
+          "score_percent": 5,
+          "purpose": "many replacement drones needed",
+          "dimensions": {
+            "n": 1,
+            "m": 40,
+            "starts": 1,
+            "traps": 1,
+            "obstacles": 0
+          },
+          "input_bytes": 46,
+          "input_sha256": "03cf0bbc709459077e0468139f658aff8ecd289adf7b8be373c471004698604e",
+          "output_sha256": "bc9e7195e151f6a1f21497f20697dade2aabec130109b8196897bed6ba7be42b",
+          "peak_working_set_bytes": 5046272,
+          "times_seconds": [
+            0.01702349999686703,
+            0.01582980004604906,
+            0.01572440000018105,
+            0.016563299985136837,
+            0.015382200013846159
+          ],
+          "median_seconds": 0.01582980004604906
+        },
+        {
+          "id": "all-starts",
+          "group": 3,
+          "score_percent": 5,
+          "purpose": "all open cells with one trap",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 1599,
+            "traps": 1,
+            "obstacles": 0
+          },
+          "input_bytes": 1646,
+          "input_sha256": "2fac8aa2068caa1b02e3c5ebea70698efd484efebf467bd5f2953202198d166e",
+          "output_sha256": "71bdf83095fde9ace90579fdbd831cf853229c8a3e760f64ee78c593e499bcf2",
+          "peak_working_set_bytes": 5111808,
+          "times_seconds": [
+            0.015247799979988486,
+            0.01586939999833703,
+            0.015948699961882085,
+            0.01589909999165684,
+            0.014729599992278963
+          ],
+          "median_seconds": 0.01586939999833703
+        },
+        {
+          "id": "multiple-traps",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "many sources for reverse BFS",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 923,
+            "traps": 20,
+            "obstacles": 657
+          },
+          "input_bytes": 1646,
+          "input_sha256": "d659c6bf5edb7f9dca8e03c3eec6c83889338ef26488b69034c496fac6b2af93",
+          "output_sha256": "56f1ed3a2ec47977406f322f38f170d16200ad53dd2a5b0ed7b0fbe4f18e18b5",
+          "peak_working_set_bytes": 5103616,
+          "times_seconds": [
+            0.04335789999458939,
+            0.046124599990434945,
+            0.043361499963793904,
+            0.04537960002198815,
+            0.04915179999079555
+          ],
+          "median_seconds": 0.04537960002198815
+        },
+        {
+          "id": "dense-obstacles",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "dense four-connected obstacle blocks",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 397,
+            "traps": 21,
+            "obstacles": 1182
+          },
+          "input_bytes": 1646,
+          "input_sha256": "7447c15c4610b976f7cf989277ef99281f494e7a324bc233107308afba391cf1",
+          "output_sha256": "d89ffe9c732f7c7485451dd1b4afa13dc5e5f48913e23b013b7f84422a5e3926",
+          "peak_working_set_bytes": 5095424,
+          "times_seconds": [
+            0.01703550003003329,
+            0.017865900008473545,
+            0.018906200013589114,
+            0.017088100023102015,
+            0.01647989999037236
+          ],
+          "median_seconds": 0.017088100023102015
+        },
+        {
+          "id": "no-trap",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "all queried answers are impossible",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 1038,
+            "traps": 0,
+            "obstacles": 562
+          },
+          "input_bytes": 1646,
+          "input_sha256": "ca9de8f9af4c5ba0ff19a1d29122e7b035a90aea690855f3f0259c92929e22c2",
+          "output_sha256": "a62a3d1fc4a3ca06589692271ed6d87a9ea7d6f3d68b729916cb97a54d41c034",
+          "peak_working_set_bytes": 5091328,
+          "times_seconds": [
+            0.017468799953348935,
+            0.017353100003674626,
+            0.016285999969113618,
+            0.016491200018208474,
+            0.017240900022443384
+          ],
+          "median_seconds": 0.017240900022443384
+        },
+        {
+          "id": "no-start",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "empty output",
+          "dimensions": {
+            "n": 40,
+            "m": 40,
+            "starts": 0,
+            "traps": 1,
+            "obstacles": 491
+          },
+          "input_bytes": 1646,
+          "input_sha256": "92e54780286fbda04d2baa2d39ef5870976c8f9b6571d0d581bf0604ffa65bcf",
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "peak_working_set_bytes": 5070848,
+          "times_seconds": [
+            0.0593347999965772,
+            0.06273799994960427,
+            0.058869200001936406,
+            0.06157109997002408,
+            0.05905989999882877
+          ],
+          "median_seconds": 0.0593347999965772
+        }
+      ]
+    },
+    "virus-sniper": {
+      "sample_count": 3,
+      "std_sha256": "e46daddbf41856228f11ed581bb620807db202c9b60c874738f9bcfe6f1dbe37",
+      "generator_sha256": "20eb213325f2ab102f369c406f2b7fe3934039e75913ae8c18b7c0e381d266ee",
+      "plan_sha256": "fe1bec4e91cea3edad56cb218e908e11688441ac7c0b46c558054b53dc30ecbf",
+      "program_sha256": "c567765efe188ba76be165e752c65a06e5d2e4946b610c01784b940756326326",
+      "standard_time_seconds": 0.3000860000029206,
+      "peak_working_set_bytes": 17707008,
+      "indicative_limit_seconds": 1.0,
+      "cases": [
+        {
+          "id": "sample-growth",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "retained intensity and independent restarts",
+          "dimensions": {
+            "A": 1,
+            "B": 2,
+            "N": 1,
+            "M": 2,
+            "Q": 2,
+            "K": 3,
+            "max_time": "2",
+            "max_decimal_digits": 1
+          },
+          "input_bytes": 78,
+          "input_sha256": "38a0028d6cc214ae8527e62e3c2cd5dbb5f3771828535e66e58d9b7e7d824061",
+          "output_sha256": "831f132962591b92208f89abe0479b67293124640cb08b4beb8a1aa9e7e1e3f7",
+          "peak_working_set_bytes": 5033984,
+          "times_seconds": [
+            0.015540899999905378,
+            0.015110499982256442,
+            0.01583849999587983,
+            0.015981399978045374,
+            0.01494050002656877
+          ],
+          "median_seconds": 0.015540899999905378
+        },
+        {
+          "id": "small-random",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "small time with rational probabilities",
+          "dimensions": {
+            "A": 5,
+            "B": 10,
+            "N": 5,
+            "M": 10,
+            "Q": 1000,
+            "K": 5,
+            "max_time": "1000",
+            "max_decimal_digits": 4
+          },
+          "input_bytes": 22999,
+          "input_sha256": "173e89490674b4ce30844d5cc8c5e49683d501f7566fcdb674769e7fa185d8c0",
+          "output_sha256": "50db4c48120ab0bd10d64a33b4f665a75ad5ce4e11689a796f603ac034944613",
+          "peak_working_set_bytes": 6311936,
+          "times_seconds": [
+            0.024626400030683726,
+            0.023781700001563877,
+            0.02369989996077493,
+            0.02255140000488609,
+            0.026133199979085475
+          ],
+          "median_seconds": 0.023781700001563877
+        },
+        {
+          "id": "one-way",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "non-diagonalizable 50-cell transition",
+          "dimensions": {
+            "A": 1,
+            "B": 50,
+            "N": 1,
+            "M": 50,
+            "Q": 1000,
+            "K": 5,
+            "max_time": "1000",
+            "max_decimal_digits": 4
+          },
+          "input_bytes": 20539,
+          "input_sha256": "6fcbc36e74346a8d76d2723b3d246f25704596a0f74c45a3127562b2361a4d75",
+          "output_sha256": "309cd9a01df1ea337281ac39b54b62fdc361c87a20e9b91fff4b633b4f57e361",
+          "peak_working_set_bytes": 6316032,
+          "times_seconds": [
+            0.023400900012347847,
+            0.02325239998754114,
+            0.021774900029413402,
+            0.022179300023708493,
+            0.02239009999902919
+          ],
+          "median_seconds": 0.02239009999902919
+        },
+        {
+          "id": "time-zero",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "maximum additions with no evolution",
+          "dimensions": {
+            "A": 5,
+            "B": 10,
+            "N": 5,
+            "M": 10,
+            "Q": 1000000,
+            "K": 5,
+            "max_time": "0",
+            "max_decimal_digits": 1
+          },
+          "input_bytes": 20004920,
+          "input_sha256": "35a708c4b63e48d84dac3c210320781c91f01471f60380f1f26e82f2e933f24a",
+          "output_sha256": "034870bf6640737980b876b4f9739d1bbab69d94bca89af1596a8be140b68761",
+          "peak_working_set_bytes": 6307840,
+          "times_seconds": [
+            0.20377219998044893,
+            0.20031960000051185,
+            0.2022255000192672,
+            0.2072125999839045,
+            0.20909260003827512
+          ],
+          "median_seconds": 0.20377219998044893
+        },
+        {
+          "id": "exponent-regression",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "fails exponent reduction modulo P-1",
+          "dimensions": {
+            "A": 1,
+            "B": 2,
+            "N": 1,
+            "M": 2,
+            "Q": 1,
+            "K": 1,
+            "max_time": "1000000008",
+            "max_decimal_digits": 10
+          },
+          "input_bytes": 73,
+          "input_sha256": "7502d34b72c8376b1d1500465c3abee5dfd25bf2cfbb6a6d1b2b331777018dae",
+          "output_sha256": "7e89042708370e16370e37cdd5a8aec0833143b8c361acaf7a1893051288f77a",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.015477799985092133,
+            0.015290900017134845,
+            0.015490799967665225,
+            0.01549169997451827,
+            0.015144199947826564
+          ],
+          "median_seconds": 0.015477799985092133
+        },
+        {
+          "id": "fixed-large-time",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "full dimension and 64-bit times",
+          "dimensions": {
+            "A": 10,
+            "B": 5,
+            "N": 10,
+            "M": 5,
+            "Q": 1000,
+            "K": 5,
+            "max_time": "1000000000000000000",
+            "max_decimal_digits": 19
+          },
+          "input_bytes": 23030,
+          "input_sha256": "a730488689d593677cccef37409d2abc4ef906c1c530d819199f1d87fc1d73d4",
+          "output_sha256": "0c3f071ecfdc28377f5f2d5c0d1d5ff9ec65974eb20f37fdfc7b86c02810d0fe",
+          "peak_working_set_bytes": 6356992,
+          "times_seconds": [
+            0.02379879995714873,
+            0.023888399999123067,
+            0.11025639995932579,
+            0.02264039998408407,
+            0.023411799978930503
+          ],
+          "median_seconds": 0.02379879995714873
+        },
+        {
+          "id": "online-sum",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "sum of output residues is not reduced again",
+          "dimensions": {
+            "A": 3,
+            "B": 3,
+            "N": 1,
+            "M": 2,
+            "Q": 3,
+            "K": 2,
+            "max_time": "0",
+            "max_decimal_digits": 1
+          },
+          "input_bytes": 96,
+          "input_sha256": "0fa03ce653b7206070706345a88fb403852cc2c38437f9bcba09ec11f20b1176",
+          "output_sha256": "9da47684b259e1af881a06941cd31ac0c04786734aa6edc44160bf522ddee3a5",
+          "peak_working_set_bytes": 5033984,
+          "times_seconds": [
+            0.01619819999905303,
+            0.016344499948900193,
+            0.015662499994505197,
+            0.015530899981968105,
+            0.015587600006256253
+          ],
+          "median_seconds": 0.015662499994505197
+        },
+        {
+          "id": "maximum-additions",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "million rectangles; maximum field; online regions",
+          "dimensions": {
+            "A": 1000,
+            "B": 1000,
+            "N": 5,
+            "M": 10,
+            "Q": 1000000,
+            "K": 5,
+            "max_time": "1000000000000000000",
+            "max_decimal_digits": 19
+          },
+          "input_bytes": 25466477,
+          "input_sha256": "0cbad4d6457d486d157f3625b8690c0503babb81eedbbd9fa5c4d8488a2d8f46",
+          "output_sha256": "3e8ea28a1b34c52a08d3b1454327bc68b916d57539da7b4ad09f91bcf28c8780",
+          "peak_working_set_bytes": 14807040,
+          "times_seconds": [
+            0.31136590003734455,
+            0.31056310003623366,
+            0.3000860000029206,
+            0.2937989999772981,
+            0.2929602999938652
+          ],
+          "median_seconds": 0.3000860000029206
+        },
+        {
+          "id": "online-identity",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "ignored boundary probabilities and independent initial regions",
+          "dimensions": {
+            "A": 1000,
+            "B": 1000,
+            "N": 1,
+            "M": 50,
+            "Q": 1000,
+            "K": 5,
+            "max_time": "1000000000000000000",
+            "max_decimal_digits": 19
+          },
+          "input_bytes": 26548,
+          "input_sha256": "5fd2af7a0ffd4a1cc6e4325a2cebb6e075de38b50db9c5aa949f8388f3085931",
+          "output_sha256": "e0dcfa4a42d4d6e3b18474a1f3db7571afa17a899ba2ba240e0f1cfd40763dcd",
+          "peak_working_set_bytes": 14807040,
+          "times_seconds": [
+            0.025905500049702823,
+            0.027514900022652,
+            0.027219699986744672,
+            0.026872200018260628,
+            0.027441699989140034
+          ],
+          "median_seconds": 0.027219699986744672
+        },
+        {
+          "id": "huge-dense",
+          "group": 5,
+          "score_percent": 5,
+          "purpose": "1000-digit exponents and exact upper bound 10^1000",
+          "dimensions": {
+            "A": 1000,
+            "B": 1000,
+            "N": 5,
+            "M": 10,
+            "Q": 1000,
+            "K": 5,
+            "max_time": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "max_decimal_digits": 1001
+          },
+          "input_bytes": 33339,
+          "input_sha256": "569854d1a6605d72f231ef40992c4ec0c0a80d9c228986e218a19e8c74d12258",
+          "output_sha256": "e0dcfa4a42d4d6e3b18474a1f3db7571afa17a899ba2ba240e0f1cfd40763dcd",
+          "peak_working_set_bytes": 17707008,
+          "times_seconds": [
+            0.0756995000410825,
+            0.06935850001173094,
+            0.0764546999707818,
+            0.07394510001176968,
+            0.0737123999861069
+          ],
+          "median_seconds": 0.07394510001176968
+        },
+        {
+          "id": "zero-transition",
+          "group": 5,
+          "score_percent": 5,
+          "purpose": "scalar transition is zero modulo P; distinguish T=0",
+          "dimensions": {
+            "A": 2,
+            "B": 2,
+            "N": 1,
+            "M": 1,
+            "Q": 10,
+            "K": 5,
+            "max_time": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+            "max_decimal_digits": 1001
+          },
+          "input_bytes": 3247,
+          "input_sha256": "2bf7e1954fdc6123d921042f1af4834bcff97bcebf7671e0f3be7b897eb80411",
+          "output_sha256": "b71fbb4a17a000bc9defe0b8f458bbdc42712b43ed1a669cb0591975d5d5b79e",
+          "peak_working_set_bytes": 5185536,
+          "times_seconds": [
+            0.029635399987455457,
+            0.02897589997155592,
+            0.029160099977161735,
+            0.02949139999691397,
+            0.029000500042457134
+          ],
+          "median_seconds": 0.029160099977161735
+        }
+      ]
+    },
+    "chrono-legion": {
+      "sample_count": 4,
+      "std_sha256": "3aa015c22b009d625cfd9564633bae73c6aac9f484347b76bd3bc1db599255da",
+      "generator_sha256": "084f2e2741641b2a523be6443f1d5b1600fb21427666c781a315241a18410d6b",
+      "plan_sha256": "6e4c65c19077d01593dde60e14fcea9dc94417844404772932cab3e95749e48b",
+      "program_sha256": "0de9bf21aae45e539ddde5ba4df11336b1635dd6306d0111d0b9883f19850a06",
+      "standard_time_seconds": 0.04531050001969561,
+      "peak_working_set_bytes": 5775360,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "single",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "empty cofactor and empty deletion sequence",
+          "dimensions": {
+            "N": 1,
+            "M": 1,
+            "K": 1,
+            "mod": 2,
+            "is_prime": true,
+            "edge_count": 0,
+            "max_time": 0,
+            "max_threshold_count": 1
+          },
+          "input_bytes": 18,
+          "input_sha256": "9f252ea1951186885efb8a0331ec06b1b8a87b094b7ee13c221c896aa7e49644",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.014782899990677834,
+            0.014499400043860078,
+            0.014761800004635006,
+            0.01436290005221963,
+            0.014680200023576617
+          ],
+          "median_seconds": 0.014680200023576617
+        },
+        {
+          "id": "small-random",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "small graph suitable for spanning-tree enumeration",
+          "dimensions": {
+            "N": 10,
+            "M": 10,
+            "K": 8,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 11,
+            "max_time": 7,
+            "max_threshold_count": 7
+          },
+          "input_bytes": 161,
+          "input_sha256": "e8ed9e0339b80d3f808e54bc7193a3abd568c27652eb7a091aa312c3da422616",
+          "output_sha256": "9cabf50e574a8c68bb61e894224431f18ba749eef3a067814639d70b2ee811ca",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.014345699979458004,
+            0.015264599991496652,
+            0.01486060000024736,
+            0.014551199972629547,
+            0.01483529998222366
+          ],
+          "median_seconds": 0.01483529998222366
+        },
+        {
+          "id": "radius-zero",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "overlapping buildings require radius zero",
+          "dimensions": {
+            "N": 1,
+            "M": 2,
+            "K": 3,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 3,
+            "max_time": 3,
+            "max_threshold_count": 2
+          },
+          "input_bytes": 49,
+          "input_sha256": "021d7f0ea96fd9118a55374dca01e30c0e7f894efe0531fa5518c90eee11347e",
+          "output_sha256": "24ba1e99dc06b19351323aae0d7370243d586475a634b7f6ff7927fbc72cfaed",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.015786000003572553,
+            0.015043899999000132,
+            0.014920399989932775,
+            0.013487800024449825,
+            0.014307299978099763
+          ],
+          "median_seconds": 0.014920399989932775
+        },
+        {
+          "id": "small-ties",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "many equal distances and repeated thresholds",
+          "dimensions": {
+            "N": 3,
+            "M": 3,
+            "K": 8,
+            "mod": 97,
+            "is_prime": true,
+            "edge_count": 12,
+            "max_time": 7,
+            "max_threshold_count": 8
+          },
+          "input_bytes": 153,
+          "input_sha256": "f2cea7edfd7487acefdc4a53ceba9af57e1607ce7b5a064c9ffb0e674904e83d",
+          "output_sha256": "a0ec0460fc75a1eea654e7a06b4b6addb3a2f8a4dfc8cd3ea9f2356d644ab44f",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.014977300015743822,
+            0.014622599992435426,
+            0.015593199990689754,
+            0.014395000005606562,
+            0.014563900011125952
+          ],
+          "median_seconds": 0.014622599992435426
+        },
+        {
+          "id": "maximum-buildings",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "200 buildings and every threshold",
+          "dimensions": {
+            "N": 1000,
+            "M": 1000,
+            "K": 200,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 917,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 144588,
+          "input_sha256": "aa3dfcb46c2e0ddf0bbac341e07930a4bfa5cc893c404abbdd1ff4a2a7bc8e3e",
+          "output_sha256": "8c694b47ef031425609d82ed86d8775fdf1149edd42fe34c374e8443939d19ca",
+          "peak_working_set_bytes": 5767168,
+          "times_seconds": [
+            0.04022109997458756,
+            0.03913390001980588,
+            0.03953120001824573,
+            0.04193939996184781,
+            0.03865790000418201
+          ],
+          "median_seconds": 0.03953120001824573
+        },
+        {
+          "id": "all-overlap",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "200 overlapping buildings form a star",
+          "dimensions": {
+            "N": 1000,
+            "M": 1000,
+            "K": 200,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 199,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 165426,
+          "input_sha256": "6461fbccf18ebfbef5679477e0b4ca445c2460b9e0e3b9000ace2a1895553378",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "peak_working_set_bytes": 5767168,
+          "times_seconds": [
+            0.01783269998850301,
+            0.01869060000171885,
+            0.01832579995971173,
+            0.01748450001468882,
+            0.01813599996967241
+          ],
+          "median_seconds": 0.01813599996967241
+        },
+        {
+          "id": "repeated-thresholds",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "duplicate requests must not create parallel edges",
+          "dimensions": {
+            "N": 1000,
+            "M": 1000,
+            "K": 200,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 199,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 166178,
+          "input_sha256": "ce9f99a073006b9de5a896fa027a170e3adc33143ea4b41675e5dd124c7e12a0",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "peak_working_set_bytes": 5775360,
+          "times_seconds": [
+            0.04441059997770935,
+            0.047095199988689274,
+            0.04531050001969561,
+            0.048171899979934096,
+            0.04333109996514395
+          ],
+          "median_seconds": 0.04531050001969561
+        },
+        {
+          "id": "million-column-line",
+          "group": 3,
+          "score_percent": 5,
+          "purpose": "million-column geometry without grid allocation",
+          "dimensions": {
+            "N": 1,
+            "M": 1000000,
+            "K": 200,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 1063,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 144802,
+          "input_sha256": "d9d712fd933821a07c39f9c54d1add47def78a59ae16a06bbd8f6a7986400805",
+          "output_sha256": "5e69bf237d3a66f259659bbefac920eb80ffc19c84100bc9384e92c6f77d50eb",
+          "peak_working_set_bytes": 5775360,
+          "times_seconds": [
+            0.03654519998235628,
+            0.034336899989284575,
+            0.03534340002806857,
+            0.03546699997968972,
+            0.03417489997809753
+          ],
+          "median_seconds": 0.03534340002806857
+        },
+        {
+          "id": "complete-graph",
+          "group": 3,
+          "score_percent": 5,
+          "purpose": "known Cayley count on 20 vertices",
+          "dimensions": {
+            "N": 1,
+            "M": 1000000,
+            "K": 20,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 190,
+            "max_time": 19,
+            "max_threshold_count": 20
+          },
+          "input_bytes": 1282,
+          "input_sha256": "76e795c93a1b62d93278fed1d96ac2d51988946a0e91df76f92a5000d0f9950e",
+          "output_sha256": "da3a9c49ed47933f535f6e8d02925435e273a10284dcbddf1a06a53de058dcd2",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.09818610001821071,
+            0.014424299995880574,
+            0.014246600039768964,
+            0.015307800029404461,
+            0.013700700015760958
+          ],
+          "median_seconds": 0.014424299995880574
+        },
+        {
+          "id": "tall-field",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "maximum field height and 64-bit construction times",
+          "dimensions": {
+            "N": 500000,
+            "M": 2,
+            "K": 200,
+            "mod": 1000000007,
+            "is_prime": true,
+            "edge_count": 973,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 144781,
+          "input_sha256": "ba98cb39f897d2c4b358a16b7eed1f8c262fa24490ada8ba22fc540895ee1ed0",
+          "output_sha256": "c54b246566cffeb8064acfabe17abd701c8bf4ea060ae95af1c7369f310a5d8c",
+          "peak_working_set_bytes": 5775360,
+          "times_seconds": [
+            0.044341000029817224,
+            0.043511199997738004,
+            0.045302399958018214,
+            0.04407790000550449,
+            0.04421369999181479
+          ],
+          "median_seconds": 0.04421369999181479
+        },
+        {
+          "id": "composite-triangle",
+          "group": 5,
+          "score_percent": 5,
+          "purpose": "noninvertible diagonal pivot modulo 12",
+          "dimensions": {
+            "N": 1,
+            "M": 4,
+            "K": 3,
+            "mod": 12,
+            "is_prime": false,
+            "edge_count": 3,
+            "max_time": 3,
+            "max_threshold_count": 2
+          },
+          "input_bytes": 41,
+          "input_sha256": "dd4e3970ed3ede2e5065ceeb4733f5a4c9b4e2ed45d06c606bbfa31fd71b78d8",
+          "output_sha256": "24ba1e99dc06b19351323aae0d7370243d586475a634b7f6ff7927fbc72cfaed",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.014619599969591945,
+            0.01350780000211671,
+            0.014792100002523512,
+            0.014710600022226572,
+            0.014391100034117699
+          ],
+          "median_seconds": 0.014619599969591945
+        },
+        {
+          "id": "composite-clique",
+          "group": 5,
+          "score_percent": 5,
+          "purpose": "composite modulus and determinant row-swap signs",
+          "dimensions": {
+            "N": 1,
+            "M": 1000000,
+            "K": 12,
+            "mod": 1000000500,
+            "is_prime": false,
+            "edge_count": 66,
+            "max_time": 11,
+            "max_threshold_count": 12
+          },
+          "input_bytes": 473,
+          "input_sha256": "0133bec96585539b2a3ff3d118e9451beda21629f829f73e6162c5f5ab0a69b5",
+          "output_sha256": "08a51a157cc1def227ab6671c7bdab8fe79a25aba743ef436ad821e424de53e2",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.02001059998292476,
+            0.016289499995764345,
+            0.014354599989019334,
+            0.01435250003123656,
+            0.013923699967563152
+          ],
+          "median_seconds": 0.014354599989019334
+        },
+        {
+          "id": "composite-maximum",
+          "group": 5,
+          "score_percent": 10,
+          "purpose": "full-scale graph with composite modulus",
+          "dimensions": {
+            "N": 1000,
+            "M": 1000,
+            "K": 200,
+            "mod": 1000000000,
+            "is_prime": false,
+            "edge_count": 895,
+            "max_time": 1000000000000000000,
+            "max_threshold_count": 200
+          },
+          "input_bytes": 144576,
+          "input_sha256": "77f6752c657863b1d0d87c7351ac90cd977d1912429a01cce71653cd0537f7fb",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5771264,
+          "times_seconds": [
+            0.04036759998416528,
+            0.03791529999580234,
+            0.0391067000455223,
+            0.038599499966949224,
+            0.03835589997470379
+          ],
+          "median_seconds": 0.038599499966949224
+        }
+      ]
+    }
+  }
+}

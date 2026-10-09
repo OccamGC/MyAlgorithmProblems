@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 20,
+      "extra_conditions": "n,m <= 10"
+    },
+    {
+      "id": 2,
+      "score_percent": 30,
+      "extra_conditions": "n <= 1000; m <= 2000"
+    },
+    {
+      "id": 3,
+      "score_percent": 20,
+      "extra_conditions": "n <= 300000; m <= 500000"
+    },
+    {
+      "id": 4,
+      "score_percent": 30,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012701,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "2 1 1\n0 0\n2\n2 1 0\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012702,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "4 4 1\n0 0 0 0\n4\n4 3 0\n3 1 0\n4 2 0\n2 1 0\n"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 15,
+      "seed": 202610012703,
+      "purpose": "chain",
+      "mode": "byte",
+      "n": 1000,
+      "m": 2000,
+      "k": 1,
+      "shape": "chain"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 15,
+      "seed": 202610012704,
+      "purpose": "zero",
+      "mode": "byte",
+      "n": 1000,
+      "m": 2000,
+      "k": 300,
+      "shape": "zero"
+    },
+    {
+      "id": "05",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012705,
+      "purpose": "chain",
+      "mode": "byte",
+      "n": 300000,
+      "m": 500000,
+      "k": 1,
+      "shape": "chain"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012706,
+      "purpose": "zero",
+      "mode": "byte",
+      "n": 300000,
+      "m": 500000,
+      "k": 100000,
+      "shape": "zero"
+    },
+    {
+      "id": "07",
+      "group": 4,
+      "score_percent": "15/2",
+      "seed": 202610012707,
+      "purpose": "chain",
+      "mode": "byte",
+      "n": 2000000,
+      "m": 3000000,
+      "k": 1,
+      "shape": "chain"
+    },
+    {
+      "id": "08",
+      "group": 4,
+      "score_percent": "15/2",
+      "seed": 202610012708,
+      "purpose": "star",
+      "mode": "byte",
+      "n": 2000000,
+      "m": 3000000,
+      "k": 1999999,
+      "shape": "star"
+    },
+    {
+      "id": "09",
+      "group": 4,
+      "score_percent": "15/2",
+      "seed": 202610012709,
+      "purpose": "ties",
+      "mode": "byte",
+      "n": 2000000,
+      "m": 3000000,
+      "k": 500000,
+      "shape": "ties"
+    },
+    {
+      "id": "10",
+      "group": 4,
+      "score_percent": "15/2",
+      "seed": 202610012710,
+      "purpose": "random",
+      "mode": "byte",
+      "n": 2000000,
+      "m": 3000000,
+      "k": 1,
+      "shape": "random"
+    }
+  ]
+}

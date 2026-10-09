@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="778" height="346" viewBox="0 0 778 346" role="img" aria-labelledby="title description">
+  <title id="title">Aligned DNA halves</title>
+  <desc id="description">Positions 1,2,3 match positions 5,6,7 respectively, with position 4 in the middle. Changing 0123012 to 0023002 changes positions 2 and 6 only.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="778" height="346" fill="white" stroke="none" />
+  <rect x="137" y="27" width="222" height="40" fill="#cceae4" stroke="#086d61" />
+  <text x="248.0" y="55" fill="#086d61" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="365" y="27" width="70" height="40" fill="#ffedc4" stroke="#a85a04" />
+  <text x="400.0" y="55" fill="#a85a04" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">c</text>
+  <rect x="441" y="27" width="222" height="40" fill="#cceae4" stroke="#086d61" />
+  <text x="552.0" y="55" fill="#086d61" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">A</text>
+  <text x="172.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="248.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="324.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3</text>
+  <text x="400.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">4</text>
+  <text x="476.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">5</text>
+  <text x="552.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">6</text>
+  <text x="628.0" y="98" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">7</text>
+  <text x="71" y="155" fill="#20354b" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">s</text>
+  <rect x="134" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="172.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="210" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="248.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <rect x="286" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="324.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <rect x="362" y="116" width="76" height="64" fill="#ffedc4" stroke="#acb9c6" />
+  <text x="400.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3</text>
+  <rect x="438" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="476.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="514" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="552.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <rect x="590" y="116" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="628.0" y="159" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="71" y="262" fill="#20354b" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">t</text>
+  <rect x="134" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="172.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="210" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="248.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="213" y="226" width="70" height="58" fill="none" stroke="#1268b3" stroke-width="3" />
+  <rect x="286" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="324.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <rect x="362" y="223" width="76" height="64" fill="#ffedc4" stroke="#acb9c6" />
+  <text x="400.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3</text>
+  <rect x="438" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="476.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="514" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="552.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <rect x="517" y="226" width="70" height="58" fill="none" stroke="#1268b3" stroke-width="3" />
+  <rect x="590" y="223" width="76" height="64" fill="#e8f4f0" stroke="#acb9c6" />
+  <text x="628.0" y="266" fill="#20354b" font-size="31" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <line x1="248.0" y1="187" x2="248.0" y2="213" stroke="#1268b3" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <line x1="552.0" y1="187" x2="552.0" y2="213" stroke="#1268b3" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <text x="262" y="326" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1 ↔ 5</text>
+  <text x="402" y="326" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2 ↔ 6</text>
+  <text x="542" y="326" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3 ↔ 7</text>
+</svg>

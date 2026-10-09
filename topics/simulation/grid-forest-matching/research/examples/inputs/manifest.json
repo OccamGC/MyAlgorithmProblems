@@ -1,0 +1,58 @@
+[
+  {
+    "file": "unchanged-bounding-box.in",
+    "n": 9,
+    "moves": 19,
+    "expected_scans": 44,
+    "sha256": "989718d54bf53073c76b5863e51d5d97f699f1ad435d67c7f03688624f70bec8"
+  },
+  {
+    "file": "unchanged-union.in",
+    "n": 17,
+    "moves": 39,
+    "expected_scans": 138,
+    "sha256": "4e2b5e95b2d8cfcf5f96b711c08c144e5a64a5314a440fbbdbd3d5bb4399822e"
+  },
+  {
+    "file": "same-direction-parallelogram.in",
+    "n": 8,
+    "moves": 69,
+    "expected_scans": 97,
+    "sha256": "10c65c00508cce7019c51799d3157d578f7dd914f3765d0b708b050d292af12e"
+  },
+  {
+    "file": "local-path-capacity-k2.in",
+    "n": 9,
+    "moves": 48,
+    "expected_scans": 100,
+    "sha256": "71ce85353ee19caba09e4b1165d45d9ed118f16316781bf0829697ee341c1e1b"
+  },
+  {
+    "file": "connected-resources.in",
+    "n": 30,
+    "moves": 126,
+    "expected_scans": 421,
+    "sha256": "1d15a4749076921f08a6550111603a640febc1306ebcbe1aed37e75acb7f57d2"
+  },
+  {
+    "file": "overlapping-bands-s4.in",
+    "n": 21,
+    "moves": 15,
+    "expected_scans": 165,
+    "sha256": "2624f0a0e02a9ab6eb7d46f49b0c9c4ab90b63d693cc7dc4f6d7aaf9a3800a14"
+  },
+  {
+    "file": "repeated-axis-classes.in",
+    "n": 246,
+    "moves": 286,
+    "expected_scans": 15507,
+    "sha256": "1737705bb0aaa91bc5ad9a6296be3d64ce64745625438921e39182475a1a46e6"
+  },
+  {
+    "file": "nested-combs-k7-t3-w4.in",
+    "n": 376,
+    "moves": 2682,
+    "expected_scans": null,
+    "sha256": "adf366e5132c9ecd7fe3801199e1becc8d7037acdc2dd1b2494c2167088c3129"
+  }
+]

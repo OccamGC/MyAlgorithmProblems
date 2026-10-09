@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="355" viewBox="0 0 940 355"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#718096"/></marker><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1379ad"/></marker></defs><rect width="100%" height="100%" fill="#fff"/>
+<text x="150" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">t = 0</text>
+<path d="M150 103L77 231" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M150 103L223 231" fill="none" stroke="#718096" stroke-width="2"/>
+<circle cx="150" cy="103" r="33" fill="#f4f6f9" stroke="#718096" stroke-width="2"/>
+<text x="150" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">0</text>
+<text x="150" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">0</text>
+<circle cx="77" cy="231" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="77" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">1</text>
+<text x="77" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<circle cx="223" cy="231" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="223" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">2</text>
+<text x="223" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<text x="150" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#172b4d">I(1) = 0</text>
+<text x="470" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">t = 1</text>
+<path d="M470 103L470 231" fill="none" stroke="#718096" stroke-width="2"/>
+<circle cx="470" cy="103" r="33" fill="#f4f6f9" stroke="#718096" stroke-width="2"/>
+<text x="470" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">0</text>
+<text x="470" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">0</text>
+<circle cx="470" cy="231" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="470" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">1</text>
+<text x="470" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<text x="470" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#172b4d">I(1) = 2</text>
+<text x="790" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">t = 2</text>
+<path d="M790 103L717 231" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M790 103L863 231" fill="none" stroke="#718096" stroke-width="2"/>
+<circle cx="790" cy="103" r="33" fill="#f4f6f9" stroke="#718096" stroke-width="2"/>
+<text x="790" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">0</text>
+<text x="790" y="122" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">0</text>
+<circle cx="717" cy="231" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="717" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">1</text>
+<text x="717" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<circle cx="863" cy="231" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="863" y="228" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">2</text>
+<text x="863" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">8</text>
+<text x="790" y="317" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#172b4d">I(1) = 2</text>
+</svg>

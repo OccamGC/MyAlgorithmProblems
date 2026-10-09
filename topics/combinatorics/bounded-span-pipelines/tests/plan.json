@@ -1,0 +1,139 @@
+{
+  "cases": [
+    {
+      "n": 2,
+      "k": 2,
+      "mode": "literal",
+      "pipes": [
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "purpose": "one fixed pipe",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380101
+    },
+    {
+      "n": 6,
+      "k": 5,
+      "mode": "literal",
+      "pipes": [
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "purpose": "nested reversible outer pipe",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380102
+    },
+    {
+      "n": 13,
+      "k": 9,
+      "mode": "literal",
+      "pipes": [
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          5,
+          7,
+          0
+        ]
+      ],
+      "purpose": "original input with reconstructed answer",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380103
+    },
+    {
+      "n": 1000000,
+      "k": 18,
+      "mode": "paired",
+      "purpose": "maximum mandatory endpoints",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380104
+    },
+    {
+      "n": 1000000,
+      "k": 2,
+      "mode": "free",
+      "purpose": "minimum feasible height",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380105
+    },
+    {
+      "n": 1000000,
+      "k": 18,
+      "mode": "free",
+      "purpose": "maximum width and mostly free cells",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380106
+    },
+    {
+      "n": 999999,
+      "k": 17,
+      "mode": "tiles",
+      "fixed": 0,
+      "purpose": "independent full-span enclosures with orientations",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380107
+    },
+    {
+      "n": 1000000,
+      "k": 18,
+      "mode": "tiles",
+      "fixed": 1,
+      "purpose": "maximum-span fixed enclosures",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380108
+    },
+    {
+      "n": 1000000,
+      "k": 3,
+      "mode": "tiles",
+      "fixed": 0,
+      "purpose": "many small nested interiors",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380109
+    },
+    {
+      "n": 1000000,
+      "k": 18,
+      "mode": "tiles",
+      "fixed": 0,
+      "purpose": "full-width reversible enclosures",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380110
+    }
+  ]
+}

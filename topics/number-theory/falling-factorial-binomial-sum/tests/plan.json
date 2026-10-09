@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360400,
+      "n": 1,
+      "parameter": 1,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360401,
+      "n": 1,
+      "parameter": 1000000000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360402,
+      "n": 5,
+      "parameter": 3,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360403,
+      "n": 999999,
+      "parameter": 999999,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360404,
+      "n": 1000000,
+      "parameter": 1,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360405,
+      "n": 1000001,
+      "parameter": 1000000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360406,
+      "n": 1000000000,
+      "parameter": 1000000000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360407,
+      "n": 1000000000,
+      "parameter": 500000001,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360408,
+      "n": 999999999,
+      "parameter": 500000000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360409,
+      "n": 1000000000,
+      "parameter": 999999999,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    }
+  ]
+}

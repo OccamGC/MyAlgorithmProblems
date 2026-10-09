@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093060,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093061,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 1
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093062,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 3
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093063,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 31
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093064,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 1023
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093065,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 32767
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093066,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 65535
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093067,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 99998
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093068,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 99999
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093069,
+      "purpose": "polynomial boundary; parameters recorded below",
+      "n": 100000
+    }
+  ]
+}

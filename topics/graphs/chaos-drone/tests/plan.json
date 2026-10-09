@@ -1,0 +1,98 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "small-odd",
+      "kind": "sample",
+      "purpose": "Odd cycle with an augmenting path",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "02",
+      "seed": 202609280800
+    },
+    {
+      "id": "small-names",
+      "kind": "random",
+      "purpose": "Case-sensitive UTF-8 labels and negative-looking names",
+      "group": 1,
+      "score_percent": 10,
+      "n": 10,
+      "names": true,
+      "density": 40,
+      "seed": 202609280801
+    },
+    {
+      "id": "forest",
+      "kind": "forest",
+      "purpose": "Disconnected forests and isolated vertices",
+      "group": 2,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280802
+    },
+    {
+      "id": "star",
+      "kind": "star",
+      "purpose": "A maximal matching is not a large matching",
+      "group": 2,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280803
+    },
+    {
+      "id": "odd-components",
+      "kind": "unicyclic",
+      "purpose": "Disjoint odd cycles with attached trees",
+      "group": 3,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280804
+    },
+    {
+      "id": "odd-components-shuffled",
+      "kind": "unicyclic",
+      "purpose": "Reordered names and edges",
+      "group": 3,
+      "score_percent": 10,
+      "n": 285,
+      "seed": 202609280805
+    },
+    {
+      "id": "complete",
+      "kind": "complete",
+      "purpose": "Maximum edge count",
+      "group": 4,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280806
+    },
+    {
+      "id": "nested-odd",
+      "kind": "nested-odd",
+      "purpose": "Intersecting odd-cycle structures",
+      "group": 5,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280807
+    },
+    {
+      "id": "dense",
+      "kind": "random",
+      "purpose": "Dense general graph",
+      "group": 5,
+      "score_percent": 10,
+      "n": 300,
+      "density": 78,
+      "seed": 202609280808
+    },
+    {
+      "id": "isolated",
+      "kind": "empty",
+      "purpose": "All vertices absent from edge labels",
+      "group": 5,
+      "score_percent": 10,
+      "n": 300,
+      "seed": 202609280809
+    }
+  ]
+}

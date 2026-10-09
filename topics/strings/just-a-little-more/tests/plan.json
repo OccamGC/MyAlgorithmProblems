@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "single-letter",
+      "initial": "a",
+      "queries": [
+        1,
+        2,
+        3,
+        30
+      ],
+      "seed": 81,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "single letter and rounding up"
+    },
+    {
+      "id": "small-prefix",
+      "initial": "abbbcd",
+      "queries": [
+        5,
+        2,
+        1,
+        30,
+        5
+      ],
+      "seed": 82,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "unsorted and repeated versions"
+    },
+    {
+      "id": "medium-versions",
+      "initial": "abcdefghij",
+      "queries": [
+        50,
+        31,
+        40
+      ],
+      "seed": 83,
+      "group": 2,
+      "score_percent": 20,
+      "purpose": "middle-sized outputs"
+    },
+    {
+      "id": "maximum-output",
+      "initial": "abcdefghij",
+      "queries": [
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "seed": 84,
+      "group": 3,
+      "score_percent": 20,
+      "purpose": "maximum total output volume"
+    },
+    {
+      "id": "mixed-versions",
+      "initial": "abbbcd",
+      "queries": [
+        1,
+        70,
+        2,
+        69,
+        70
+      ],
+      "seed": 85,
+      "group": 3,
+      "score_percent": 15,
+      "purpose": "large and small versions in arbitrary order"
+    },
+    {
+      "id": "maximum-single-letter",
+      "initial": "z",
+      "queries": [
+        70,
+        70,
+        1
+      ],
+      "seed": 86,
+      "group": 3,
+      "score_percent": 15,
+      "purpose": "deep recursion with shortest initial string"
+    }
+  ]
+}

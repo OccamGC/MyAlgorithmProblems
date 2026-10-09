@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012701,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "2 2\n1 2\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012702,
+      "purpose": "random",
+      "mode": "heap",
+      "n": 8,
+      "shape": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012703,
+      "purpose": "chain",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "chain"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012704,
+      "purpose": "star",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "star"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012705,
+      "purpose": "relabelled_chain",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "relabelled_chain"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012706,
+      "purpose": "balanced",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "balanced"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012707,
+      "purpose": "random",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012708,
+      "purpose": "random",
+      "mode": "heap",
+      "n": 499999,
+      "shape": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012709,
+      "purpose": "balanced",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "balanced"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012710,
+      "purpose": "relabelled_chain",
+      "mode": "heap",
+      "n": 500000,
+      "shape": "relabelled_chain"
+    }
+  ]
+}

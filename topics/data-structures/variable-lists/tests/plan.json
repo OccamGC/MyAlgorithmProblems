@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011900,
+      "purpose": "query",
+      "n": 1,
+      "c": 1,
+      "m": 1,
+      "mode": "query"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011901,
+      "purpose": "empty",
+      "n": 1,
+      "c": 1,
+      "m": 1000,
+      "mode": "empty"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011902,
+      "purpose": "random",
+      "n": 5,
+      "c": 5,
+      "m": 5000,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011903,
+      "purpose": "append",
+      "n": 500,
+      "c": 1000,
+      "m": 500000,
+      "mode": "append"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011904,
+      "purpose": "front",
+      "n": 500,
+      "c": 1000,
+      "m": 500000,
+      "mode": "front"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011905,
+      "purpose": "empty",
+      "n": 1,
+      "c": 1,
+      "m": 500000,
+      "mode": "empty"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011906,
+      "purpose": "query",
+      "n": 500,
+      "c": 1000,
+      "m": 500000,
+      "mode": "query"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011907,
+      "purpose": "invalid",
+      "n": 500,
+      "c": 1000,
+      "m": 500000,
+      "mode": "invalid"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011908,
+      "purpose": "random",
+      "n": 500,
+      "c": 1,
+      "m": 500000,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011909,
+      "purpose": "random",
+      "n": 500,
+      "c": 1000,
+      "m": 500000,
+      "mode": "random"
+    }
+  ]
+}

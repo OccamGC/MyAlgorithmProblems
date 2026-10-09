@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "empty",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "N=K=M=0",
+      "kind": "empty",
+      "n": 0,
+      "k": 0,
+      "m": 0
+    },
+    {
+      "id": "no-crystals",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "Energy updates with N=0",
+      "kind": "empty",
+      "n": 0,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "Small direct-model case",
+      "kind": "random",
+      "n": 80,
+      "k": 20,
+      "m": 300
+    },
+    {
+      "id": "alternating",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Many initial intervals",
+      "kind": "random",
+      "n": 500000,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "uniform",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "Uniform initial list",
+      "kind": "uniform",
+      "n": 500000,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "equal-energy",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "Distinct types with equal energy",
+      "kind": "equal",
+      "n": 500000,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "singletons",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "Maximum number of surviving boundaries",
+      "kind": "singletons",
+      "n": 500000,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "sweep",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Large score and repeated interval removal",
+      "kind": "sweep",
+      "n": 500000,
+      "k": 500000,
+      "m": 100000
+    },
+    {
+      "id": "one-type",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "One type and zero scores",
+      "kind": "uniform",
+      "n": 500000,
+      "k": 1,
+      "m": 100000
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012801,
+      "purpose": "snake",
+      "mode": "grid",
+      "n": 400,
+      "m": 0,
+      "shape": "snake"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012802,
+      "purpose": "oscillate",
+      "mode": "grid",
+      "n": 400,
+      "m": 300,
+      "shape": "oscillate"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012803,
+      "purpose": "empty",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "empty"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012804,
+      "purpose": "checker",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "checker"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012805,
+      "purpose": "snake",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "snake"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012806,
+      "purpose": "snake_reverse",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "snake_reverse"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012807,
+      "purpose": "vertical",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "vertical"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012808,
+      "purpose": "oscillate",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "oscillate"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012809,
+      "purpose": "excursion",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "excursion"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012810,
+      "purpose": "horizontal",
+      "mode": "grid",
+      "n": 400,
+      "m": 1000000,
+      "shape": "horizontal"
+    }
+  ]
+}

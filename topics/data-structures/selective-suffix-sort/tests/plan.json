@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "4 2\n2 2 1 0\n1\n1\n",
+      "purpose": "boundary/sample",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012901
+    },
+    {
+      "mode": "literal",
+      "input": "4 3\n3 -1 3 0\n-4\n-8\n2\n",
+      "purpose": "boundary/sample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012902
+    },
+    {
+      "mode": "war",
+      "shape": "increasing",
+      "purpose": "increasing",
+      "n": 100000,
+      "m": 100000,
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012903
+    },
+    {
+      "mode": "war",
+      "shape": "descending",
+      "purpose": "descending",
+      "n": 100000,
+      "m": 100000,
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012904
+    },
+    {
+      "mode": "war",
+      "shape": "equal",
+      "purpose": "equal",
+      "n": 100000,
+      "m": 100000,
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012905
+    },
+    {
+      "mode": "war",
+      "shape": "two",
+      "purpose": "two",
+      "n": 100000,
+      "m": 100000,
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012906
+    },
+    {
+      "mode": "war",
+      "shape": "layers",
+      "purpose": "layers",
+      "n": 100000,
+      "m": 100000,
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012907
+    },
+    {
+      "mode": "war",
+      "shape": "repeat",
+      "purpose": "repeat",
+      "n": 100000,
+      "m": 100000,
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012908
+    },
+    {
+      "mode": "war",
+      "shape": "permutation",
+      "purpose": "permutation",
+      "n": 100000,
+      "m": 100000,
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012909
+    },
+    {
+      "mode": "war",
+      "shape": "random",
+      "purpose": "random",
+      "n": 100000,
+      "m": 100000,
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012910
+    }
+  ]
+}

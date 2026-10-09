@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "one",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "Single reachable NPC",
+      "kind": "duplicates",
+      "n": 1
+    },
+    {
+      "id": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "Small independent closure",
+      "kind": "random",
+      "n": 100
+    },
+    {
+      "id": "chain",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "Long chain of successive unlocks",
+      "kind": "chain",
+      "n": 100000
+    },
+    {
+      "id": "reverse-chain",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Input order opposes reachability",
+      "kind": "reverse-chain",
+      "n": 100000
+    },
+    {
+      "id": "none",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "No initially reachable NPC",
+      "kind": "none",
+      "n": 100000
+    },
+    {
+      "id": "all",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "All points in one dominance query",
+      "kind": "all",
+      "n": 100000
+    },
+    {
+      "id": "duplicates",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "Duplicate requirements and copy removal",
+      "kind": "duplicates",
+      "n": 100000
+    },
+    {
+      "id": "antichain",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Reject aggregation of different summoners",
+      "kind": "antichain",
+      "n": 100000
+    },
+    {
+      "id": "random",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "Dense mixed dominance searches",
+      "kind": "random",
+      "n": 100000
+    }
+  ]
+}

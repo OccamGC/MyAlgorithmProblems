@@ -1,0 +1,220 @@
+{
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "GCC 16.2.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra",
+  "problems": {
+    "single-member-household": {
+      "sources": {
+        "std.cpp": "3f90e57f507ca312793c01b16d9b7f5f18343a6620aeb484792a9c60f518f13a"
+      },
+      "binaries": {
+        "std": "d99adf70ff7163d575a9bb44b41946a5523a878e0e69657e4317783e5241bfcf"
+      },
+      "generator_sha256": "e5d9a00ba573b3e1baa205492bb800ba3951ec6ab999441389ce5e4bd24fdb3a",
+      "plan_sha256": "fcdb0357215e47aeb9ba0172fbf98d34fdab5cd3ebcc0e96d5409002d30b889e",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "326011090737c9be1e65e368c5db401d8ee3525cd050dc47953df2c92a23b91c",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.013975400011986494,
+                0.01430929999332875,
+                0.015439399983733892,
+                0.014820899930782616,
+                0.017443199991248548
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.014820899930782616
+            }
+          },
+          "output_sha256": "83f6d0f28ad37739486ed480e31ec30cb8d71c5bf755d543d5a854a8e68f2dcd"
+        },
+        {
+          "id": "02",
+          "input_sha256": "cf976a3dcdefbc8dff8090193fcb274ec211ea80e290db25f8121491783f59ba",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0987089000409469,
+                0.016436400008387864,
+                0.015132199972867966,
+                0.015000300016254187,
+                0.015386899933218956
+              ],
+              "peak_working_set_bytes": 5287936,
+              "median_seconds": 0.015386899933218956
+            }
+          },
+          "output_sha256": "e58f6005969740386aba05429c1a5ee401ed55c8b6d1051c39d1f227c98aecd8"
+        },
+        {
+          "id": "03",
+          "input_sha256": "55633c128a1658421ce3c37af6fb7c56f550f3de33c98129f30eb13c0c5394f8",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.014681999920867383,
+                0.01551689999178052,
+                0.01415209996048361,
+                0.015718799899332225,
+                0.01569350005593151
+              ],
+              "peak_working_set_bytes": 5292032,
+              "median_seconds": 0.01551689999178052
+            }
+          },
+          "output_sha256": "d7f9c078caa6b702cc54d2284d1c649ef2de18c13e286a12557312af94bbede9"
+        },
+        {
+          "id": "04",
+          "input_sha256": "96a14d5d5ba250719d81466e10e9e789cc5c4de9cb2157e3c5ace4a745c4b54f",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.41350840008817613,
+                0.4209539999719709,
+                0.428423700039275,
+                0.43081070005428046,
+                0.4176670000888407
+              ],
+              "peak_working_set_bytes": 13172736,
+              "median_seconds": 0.4209539999719709
+            }
+          },
+          "output_sha256": "557238054e9a91c3a22e16508f54f339261a22c0c046f4332b3ef3ef03080d8c"
+        },
+        {
+          "id": "05",
+          "input_sha256": "5c0888ddb6d3d10ea74412f50834cfd150928dbe49137c901c74226f683d11a2",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5509869999950752,
+                0.5564761999994516,
+                0.5404375999933109,
+                0.5427850000560284,
+                0.5367038999684155
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 0.5427850000560284
+            }
+          },
+          "output_sha256": "5164d09de3dba1695aae200211c720c36e2c4a39d0e49b7aa15023bda04caa96"
+        },
+        {
+          "id": "06",
+          "input_sha256": "6574a1bd08e6e97b13f0383cd527e400c37f5115331bb77dfce621422349f70d",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4311480999458581,
+                0.4096007999032736,
+                0.41065830003935844,
+                0.42505920003168285,
+                0.39114179997704923
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 0.41065830003935844
+            }
+          },
+          "output_sha256": "5ebe8f2e0c94c61f6d29fe240234eef2f2840ade8a505358c9163da4040740c1"
+        },
+        {
+          "id": "07",
+          "input_sha256": "d6682b9ecd5067bb675ba9ffd692bd4fe442f2f73d21303f7a8cb1862e36d52a",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4037591000087559,
+                0.434283500071615,
+                0.418065799982287,
+                0.3944086000556126,
+                0.41925120004452765
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 0.418065799982287
+            }
+          },
+          "output_sha256": "3e9cee26b9d29448874de6e8b74c8129a9495d350ad1a572b3f01d5d2d9394f9"
+        },
+        {
+          "id": "08",
+          "input_sha256": "1fef1403d18349189973b1ce85d6ba5450f735c1242c23d8bd290374e0c1430b",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3451377999735996,
+                0.35047019994817674,
+                0.3602864999556914,
+                0.38551880000159144,
+                0.39770809991750866
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 0.3602864999556914
+            }
+          },
+          "output_sha256": "4233f987d72ca1e475568491a8107743f0d0ba13c5f85e3df2c61beafead92a3"
+        },
+        {
+          "id": "09",
+          "input_sha256": "6dc7255ea8ce3f24fc259d72e9d17bf0c766f3f3cc65a627bb387648dfafea2f",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.530414400040172,
+                0.5471350000007078,
+                0.5711951999692246,
+                0.5819662999128923,
+                0.5869271999690682
+              ],
+              "peak_working_set_bytes": 13164544,
+              "median_seconds": 0.5711951999692246
+            }
+          },
+          "output_sha256": "9de90607ff6246672c53a0ad9ed5dd82ccccd69e23465c8cdcf7e941228d7626"
+        },
+        {
+          "id": "10",
+          "input_sha256": "34621147fe15eb92c5af8f69f6d14a3677cc294d349fa1fc76cbdbe0ee42a30f",
+          "verification_method": "exact expanded-population Fractions, or reverse histogram contributions with structural branch bounds",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.6188388000009581,
+                0.6301687000086531,
+                0.6217295000096783,
+                0.6139964000321925,
+                0.6104883999796584
+              ],
+              "peak_working_set_bytes": 13172736,
+              "median_seconds": 0.6188388000009581
+            }
+          },
+          "output_sha256": "87abb3627d295f346ad1ba8314d5528c41646a63f90d78f4708e96415a4b87c8"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.6188388000009581,
+          "peak_working_set_bytes": 13172736,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 1.5
+    }
+  }
+}

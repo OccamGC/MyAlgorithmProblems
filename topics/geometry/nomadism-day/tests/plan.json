@@ -1,0 +1,185 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "sample 1",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280800
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "sample": "02",
+      "purpose": "sample 2",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280801
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "sample": "03",
+      "purpose": "sample 3",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280802
+    },
+    {
+      "id": "sample-4",
+      "kind": "sample",
+      "sample": "04",
+      "purpose": "sample 4",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280803
+    },
+    {
+      "id": "sample-5",
+      "kind": "sample",
+      "sample": "05",
+      "purpose": "sample 5",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280804
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 400000,
+      "purpose": "maximum random",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280805
+    },
+    {
+      "id": "maximum-grid",
+      "kind": "grid",
+      "n": 400000,
+      "purpose": "maximum grid",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280806
+    },
+    {
+      "id": "narrow-strip",
+      "kind": "narrow",
+      "n": 400000,
+      "purpose": "narrow strip",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280807
+    },
+    {
+      "id": "all-coincident",
+      "kind": "same",
+      "n": 400000,
+      "purpose": "all coincident",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280808
+    },
+    {
+      "id": "horizontal-line",
+      "kind": "horizontal",
+      "n": 400000,
+      "purpose": "horizontal line",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280809
+    },
+    {
+      "id": "vertical-line",
+      "kind": "vertical",
+      "n": 400000,
+      "purpose": "vertical line",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280810
+    },
+    {
+      "id": "diagonal-line",
+      "kind": "diagonal",
+      "n": 400000,
+      "purpose": "diagonal line",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280811
+    },
+    {
+      "id": "anti-diagonal",
+      "kind": "antidiagonal",
+      "n": 400000,
+      "purpose": "anti diagonal",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280812
+    },
+    {
+      "id": "cocircular",
+      "kind": "circle",
+      "n": 400000,
+      "purpose": "cocircular",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280813
+    },
+    {
+      "id": "separated-clusters",
+      "kind": "clusters",
+      "n": 400000,
+      "purpose": "separated clusters",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280814
+    },
+    {
+      "id": "square-boundary",
+      "kind": "boundary",
+      "n": 400000,
+      "purpose": "square boundary",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280815
+    },
+    {
+      "id": "two-columns",
+      "kind": "columns",
+      "n": 400000,
+      "purpose": "two columns",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280816
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "n": 14,
+      "purpose": "small random",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280817
+    },
+    {
+      "id": "medium-random",
+      "kind": "random",
+      "n": 3000,
+      "purpose": "medium random",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280818
+    },
+    {
+      "id": "many-equal-x",
+      "kind": "zigzag",
+      "n": 400000,
+      "purpose": "many equal x",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202609280819
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300001,
+      "purpose": "Boundary and full-range coverage: (1, 1)",
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300002,
+      "purpose": "Boundary and full-range coverage: (8, 9)",
+      "values": [
+        8,
+        9
+      ]
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300003,
+      "purpose": "Boundary and full-range coverage: (2000, 1)",
+      "values": [
+        2000,
+        1
+      ]
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300004,
+      "purpose": "Boundary and full-range coverage: (1, 2000)",
+      "values": [
+        1,
+        2000
+      ]
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300005,
+      "purpose": "Boundary and full-range coverage: (50, 2000)",
+      "values": [
+        50,
+        2000
+      ]
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300006,
+      "purpose": "Boundary and full-range coverage: (2000, 2000)",
+      "values": [
+        2000,
+        2000
+      ]
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300007,
+      "purpose": "Boundary and full-range coverage: (1999, 2000)",
+      "values": [
+        1999,
+        2000
+      ]
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300008,
+      "purpose": "Boundary and full-range coverage: (2000, 1999)",
+      "values": [
+        2000,
+        1999
+      ]
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300009,
+      "purpose": "Boundary and full-range coverage: (1753, 1987)",
+      "values": [
+        1753,
+        1987
+      ]
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300010,
+      "purpose": "Boundary and full-range coverage: (1500, 1800)",
+      "values": [
+        1500,
+        1800
+      ]
+    }
+  ]
+}

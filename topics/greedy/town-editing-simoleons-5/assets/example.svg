@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-labelledby="title desc">
+<title id="title">Edit Town and Simoleons 5: fixed household positions</title>
+<desc id="desc">Each outsider visits A, C, D. Then T2 joins T1 in A. Total town wealth stays 38.</desc>
+<rect width="1120" height="740" rx="20" fill="#f3f6fc"/>
+<g font-family="Segoe UI, Arial, sans-serif" fill="#17243d">
+<text x="28" y="44" font-size="25" font-weight="700">Edit Town and Simoleons 5</text>
+<text x="28" y="73" font-size="17" fill="#506079">Four fixed positions: A, B, C, D</text>
+<text x="152.75" y="117" text-anchor="middle" font-size="20" font-weight="700">Initial</text>
+<text x="152.75" y="143" text-anchor="middle" font-size="15" fill="#506079">All positions occupied</text>
+<rect x="28.0" y="163" width="249.5" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="190" font-size="18" font-weight="700">A</text>
+<text x="152.75" y="203" text-anchor="middle" font-size="20">T × 2</text>
+<text x="152.75" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 2</text>
+<rect x="28.0" y="282" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="309" font-size="18" font-weight="700">B</text>
+<text x="152.75" y="322" text-anchor="middle" font-size="20">O × 2</text>
+<text x="152.75" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 18</text>
+<rect x="28.0" y="401" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="428" font-size="18" font-weight="700">C</text>
+<text x="152.75" y="441" text-anchor="middle" font-size="20">O</text>
+<text x="152.75" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 9</text>
+<rect x="28.0" y="520" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="547" font-size="18" font-weight="700">D</text>
+<text x="152.75" y="560" text-anchor="middle" font-size="20">O</text>
+<text x="152.75" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 9</text>
+<path d="M 282.5 397 H 294.5 l -5 -5 m 5 5 l -5 5" fill="none" stroke="#6c809e" stroke-width="2"/>
+<text x="424.25" y="117" text-anchor="middle" font-size="20" font-weight="700">Merge outsiders</text>
+<text x="424.25" y="143" text-anchor="middle" font-size="15" fill="#506079">Equal mean: 9</text>
+<rect x="299.5" y="163" width="249.5" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="313.5" y="190" font-size="18" font-weight="700">A</text>
+<text x="424.25" y="203" text-anchor="middle" font-size="20">T × 2</text>
+<text x="424.25" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 2</text>
+<rect x="299.5" y="282" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="313.5" y="309" font-size="18" font-weight="700">B</text>
+<text x="424.25" y="322" text-anchor="middle" font-size="20">O × 4</text>
+<text x="424.25" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 36</text>
+<rect x="299.5" y="401" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="313.5" y="428" font-size="18" font-weight="700">C</text>
+<text x="424.25" y="441" text-anchor="middle" font-size="20">empty</text>
+<text x="424.25" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<rect x="299.5" y="520" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="313.5" y="547" font-size="18" font-weight="700">D</text>
+<text x="424.25" y="560" text-anchor="middle" font-size="20">empty</text>
+<text x="424.25" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<path d="M 554.0 397 H 566.0 l -5 -5 m 5 5 l -5 5" fill="none" stroke="#6c809e" stroke-width="2"/>
+<text x="695.75" y="117" text-anchor="middle" font-size="20" font-weight="700">Separate targets</text>
+<text x="695.75" y="143" text-anchor="middle" font-size="15" fill="#506079">Reserve D for outsiders</text>
+<rect x="571.0" y="163" width="249.5" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="585.0" y="190" font-size="18" font-weight="700">A</text>
+<text x="695.75" y="203" text-anchor="middle" font-size="20">T1</text>
+<text x="695.75" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 1</text>
+<rect x="571.0" y="282" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="585.0" y="309" font-size="18" font-weight="700">B</text>
+<text x="695.75" y="322" text-anchor="middle" font-size="20">O × 4</text>
+<text x="695.75" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 36</text>
+<rect x="571.0" y="401" width="249.5" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="585.0" y="428" font-size="18" font-weight="700">C</text>
+<text x="695.75" y="441" text-anchor="middle" font-size="20">T2</text>
+<text x="695.75" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 1</text>
+<rect x="571.0" y="520" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="585.0" y="547" font-size="18" font-weight="700">D</text>
+<text x="695.75" y="560" text-anchor="middle" font-size="20">empty</text>
+<text x="695.75" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<path d="M 825.5 397 H 837.5 l -5 -5 m 5 5 l -5 5" fill="none" stroke="#6c809e" stroke-width="2"/>
+<text x="967.25" y="117" text-anchor="middle" font-size="20" font-weight="700">Final</text>
+<text x="967.25" y="143" text-anchor="middle" font-size="15" fill="#506079">Process, then reunite</text>
+<rect x="842.5" y="163" width="249.5" height="101" rx="12" fill="#dff6eb" stroke="#1f9470" stroke-width="2"/>
+<text x="856.5" y="190" font-size="18" font-weight="700">A</text>
+<text x="967.25" y="203" text-anchor="middle" font-size="20">T1, T2</text>
+<text x="967.25" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 16</text>
+<rect x="842.5" y="282" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="856.5" y="309" font-size="18" font-weight="700">B</text>
+<text x="967.25" y="322" text-anchor="middle" font-size="20">empty</text>
+<text x="967.25" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<rect x="842.5" y="401" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="856.5" y="428" font-size="18" font-weight="700">C</text>
+<text x="967.25" y="441" text-anchor="middle" font-size="20">empty</text>
+<text x="967.25" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<rect x="842.5" y="520" width="249.5" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="856.5" y="547" font-size="18" font-weight="700">D</text>
+<text x="967.25" y="560" text-anchor="middle" font-size="20">O × 4</text>
+<text x="967.25" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 22</text>
+<text x="28" y="675" font-size="18">Each outsider visits A, C, D. Then T2 joins T1 in A. Total town wealth stays 38.</text>
+<text x="28" y="711" font-size="16" fill="#506079">T = target resident   O = other resident   M = household wealth</text>
+</g></svg>

@@ -1,0 +1,461 @@
+{
+  "timestamp": "2026-09-28 13:24:20 +0800",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "repeats": 5,
+  "time_resolution_seconds": 0.5,
+  "multiplier": 2.0,
+  "timing": "wall clock, one input file per process; first run used to produce output, then repeated timed runs; median per case",
+  "problems": {
+    "eating-candy": {
+      "sample_count": 1,
+      "std_sha256": "b81453a7aabfd40027ca7e48aa842e6a5fca3aa9d4f6a67c0167c8610a914abe",
+      "generator_sha256": "1f3b1b6b65eefa7d1930cda097d8704b7150a2f84a7d397368303f5c994dbcec",
+      "plan_sha256": "b7061b15b3a373206cc36c341b4055127fb40e7a8ed056b7f5aac71eff763611",
+      "program_sha256": "cbde8e906f024c12c38f7fc4a8f01505be0ccd2ddafd5674076ef0db5b9b06b6",
+      "standard_time_seconds": 0.39305610000155866,
+      "peak_working_set_bytes": 77266944,
+      "indicative_limit_seconds": 1.0,
+      "cases": [
+        {
+          "id": "zero-patterns",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "no recipes; answer must be zero",
+          "dimensions": {
+            "n": 0,
+            "text_length": 10,
+            "total_pattern_length": 0,
+            "max_pattern_length": 0,
+            "all_patterns_equal_length": true
+          },
+          "input_bytes": 13,
+          "input_sha256": "a9b9cbae693974d851c572f7417ccd0e4b3d6088f5d56528b2a2e131ceb8f016",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.015989899984560907,
+            0.015233499987516552,
+            0.015507700038142502,
+            0.015904200030490756,
+            0.016052199993282557
+          ],
+          "median_seconds": 0.015904200030490756
+        },
+        {
+          "id": "short-repeats",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "overlapping and duplicate short matches",
+          "dimensions": {
+            "n": 4,
+            "text_length": 100,
+            "total_pattern_length": 6,
+            "max_pattern_length": 2,
+            "all_patterns_equal_length": false
+          },
+          "input_bytes": 113,
+          "input_sha256": "d1eda17c8772a4d1b8e77e4fe87f43d21e4853ace48fff9b3ea4d0d1f952999c",
+          "output_sha256": "90b53df56816c127246136d4403aba3b26cec599b2b950fb2ba78d6c1fb4e6bf",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.016488099994603544,
+            0.0156559000024572,
+            0.015818099956959486,
+            0.016292100015562028,
+            0.017890799965243787
+          ],
+          "median_seconds": 0.016292100015562028
+        },
+        {
+          "id": "suffix-match",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "terminal suffix reached through a nonterminal trie state; answer 30",
+          "dimensions": {
+            "n": 3,
+            "text_length": 120,
+            "total_pattern_length": 8,
+            "max_pattern_length": 4,
+            "all_patterns_equal_length": false
+          },
+          "input_bytes": 134,
+          "input_sha256": "32e9139d88d54743f74fcf24a1a6bf944d92981533bf585d7da6c7e294164552",
+          "output_sha256": "c5dbb92bcb2ba79188091ae09688fc17d60b46256d913b3712d785dbc16bc954",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.016526099992915988,
+            0.01608000003034249,
+            0.01642070000525564,
+            0.01610359997721389,
+            0.016559000010602176
+          ],
+          "median_seconds": 0.01642070000525564
+        },
+        {
+          "id": "failure-chain",
+          "group": 4,
+          "score_percent": 30,
+          "purpose": "long failure links without any full match",
+          "dimensions": {
+            "n": 500,
+            "text_length": 100000,
+            "total_pattern_length": 125750,
+            "max_pattern_length": 501,
+            "all_patterns_equal_length": false
+          },
+          "input_bytes": 226255,
+          "input_sha256": "55251786390ad064b619912c6f0631330a00cee44d50bfe826c103169a99a24b",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5128192,
+          "times_seconds": [
+            0.017270400014240295,
+            0.01715560001321137,
+            0.01720900001237169,
+            0.017410799977369606,
+            0.01751700002932921
+          ],
+          "median_seconds": 0.017270400014240295
+        },
+        {
+          "id": "random-medium",
+          "group": 2,
+          "score_percent": 20,
+          "purpose": "medium mixed-length patterns",
+          "dimensions": {
+            "n": 500,
+            "text_length": 100000,
+            "total_pattern_length": 7873,
+            "max_pattern_length": 30,
+            "all_patterns_equal_length": false
+          },
+          "input_bytes": 108378,
+          "input_sha256": "6e9c32570c83b1fd6a36c74056c0b7431fb7b3bbac59f644bac6df4ed500c564",
+          "output_sha256": "5e7fdeb146334b292a336c2d6f43cfb0eff41100f6bb067e593318f71beb3ebe",
+          "peak_working_set_bytes": 5206016,
+          "times_seconds": [
+            0.016818900010548532,
+            0.016588600003160536,
+            0.016099499945994467,
+            0.016936899977736175,
+            0.018024200049694628
+          ],
+          "median_seconds": 0.016818900010548532
+        },
+        {
+          "id": "maximum-scale",
+          "group": 3,
+          "score_percent": 20,
+          "purpose": "maximum total pattern and text lengths",
+          "dimensions": {
+            "n": 100000,
+            "text_length": 5000000,
+            "total_pattern_length": 5000000,
+            "max_pattern_length": 50,
+            "all_patterns_equal_length": true
+          },
+          "input_bytes": 10100008,
+          "input_sha256": "0ee4cbe7af9689d75e0b2d94c383d27a4f9b3db12879b4d41584c83d60666c52",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 77266944,
+          "times_seconds": [
+            0.38807069999165833,
+            0.40723429998615757,
+            0.40785980003420264,
+            0.39305610000155866,
+            0.3845337000093423
+          ],
+          "median_seconds": 0.39305610000155866
+        }
+      ]
+    },
+    "bridge-tales-no-first-plan": {
+      "sample_count": 2,
+      "std_sha256": "fa6f3f587cc613bb7e8dc3e3c24c4eeaebc5b5d9fdf8df0d6979cc682b29e437",
+      "generator_sha256": "b42a2ce15b95aa9675c99783dc6c0dac11eafca2b1ce13fba053d45f42878095",
+      "plan_sha256": "aebb1e6205e106b597714314dd140c7ab47d069ffdabeb342cede97a560760b5",
+      "program_sha256": "6479eaef8e5c9768a612e185328dafb98111bd1a3cf7c56f8390afa7cc508756",
+      "standard_time_seconds": 0.14441890001762658,
+      "peak_working_set_bytes": 37347328,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "equal-cycle",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "equal MST alternatives and strict second cost",
+          "dimensions": {
+            "n": 3,
+            "m": 4
+          },
+          "input_bytes": 28,
+          "input_sha256": "3b65ddd03c063dccd975b2855857fbbb600abb716f1badd8abde853b3462dd88",
+          "output_sha256": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.018821400008164346,
+            0.018810699984896928,
+            0.025122399965766817,
+            0.020299899973906577,
+            0.020847099949605763
+          ],
+          "median_seconds": 0.020299899973906577
+        },
+        {
+          "id": "second-distinct",
+          "group": 1,
+          "score_percent": 5,
+          "purpose": "equal-weight replacement must use the second-largest distinct path weight; answer 4",
+          "dimensions": {
+            "n": 3,
+            "m": 3
+          },
+          "input_bytes": 22,
+          "input_sha256": "30b3e0ae18091efdeafad4483df93c059ab313efe375f2013ff71815bdf82986",
+          "output_sha256": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.018643699993845075,
+            0.018850099993869662,
+            0.02006959996651858,
+            0.01807679998455569,
+            0.017896000004839152
+          ],
+          "median_seconds": 0.018643699993845075
+        },
+        {
+          "id": "random-small",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "small connected graph with parallel candidates",
+          "dimensions": {
+            "n": 8,
+            "m": 20
+          },
+          "input_bytes": 174,
+          "input_sha256": "26c0f32c725a673608c5168da5fdbf65d65b0b975deca5e9c61d44954c0306d1",
+          "output_sha256": "528f714938332017fb6d1e1f8cfebd5965f0067366d64046bbba8c1614b5b4fd",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.01909370004432276,
+            0.018767800007481128,
+            0.018040700000710785,
+            0.018865899997763336,
+            0.01988879998680204
+          ],
+          "median_seconds": 0.018865899997763336
+        },
+        {
+          "id": "medium",
+          "group": 2,
+          "score_percent": 30,
+          "purpose": "medium connected graph",
+          "dimensions": {
+            "n": 5000,
+            "m": 10000
+          },
+          "input_bytes": 136802,
+          "input_sha256": "563d79c94fb5a9bca534c7ce7636c44c1f0e4aa8fa048de1b98f6336677e8650",
+          "output_sha256": "3bbf45365c7304aef2719c15ff213085876d4ef9e3c364be15cc439f930ae13b",
+          "peak_working_set_bytes": 6504448,
+          "times_seconds": [
+            0.025321100023575127,
+            0.02513999998336658,
+            0.024724199960473925,
+            0.02542320004431531,
+            0.024491199990734458
+          ],
+          "median_seconds": 0.02513999998336658
+        },
+        {
+          "id": "long-chain",
+          "group": 3,
+          "score_percent": 25,
+          "purpose": "maximum-depth tree and many path queries",
+          "dimensions": {
+            "n": 100000,
+            "m": 200000
+          },
+          "input_bytes": 3033724,
+          "input_sha256": "928776ff7372112b693fc48f6c0915e36ab62f6cf6cf3fb74928b67e9f6a24dc",
+          "output_sha256": "5e7fdeb146334b292a336c2d6f43cfb0eff41100f6bb067e593318f71beb3ebe",
+          "peak_working_set_bytes": 37347328,
+          "times_seconds": [
+            0.09042960003716871,
+            0.09405489999335259,
+            0.10909069998888299,
+            0.0916778999962844,
+            0.09740710002370179
+          ],
+          "median_seconds": 0.09405489999335259
+        },
+        {
+          "id": "maximum-random",
+          "group": 3,
+          "score_percent": 25,
+          "purpose": "maximum vertex and edge counts",
+          "dimensions": {
+            "n": 100000,
+            "m": 200000
+          },
+          "input_bytes": 3195085,
+          "input_sha256": "84deda1be3f8f955ffb49200fe98c4d20fdbca4dec02fe3fe2289600c5a409bf",
+          "output_sha256": "607315094f5a2e7d5173dc722e8b2b531eb1626fe6b4234e3bef9d7006b2875e",
+          "peak_working_set_bytes": 37240832,
+          "times_seconds": [
+            0.13267870002891868,
+            0.13805710000451654,
+            0.15068250003969297,
+            0.16086529998574406,
+            0.14441890001762658
+          ],
+          "median_seconds": 0.14441890001762658
+        }
+      ]
+    },
+    "build-a-big-star": {
+      "sample_count": 2,
+      "std_sha256": "b5dbc6021366bb4a2772dd9b78a0a92e4def3a75a2fa6f4d8688c42479eb0716",
+      "generator_sha256": "b68fa8f7cd3ef9bd5981e26da4508eec8406629862b9a6224b4c2f068d2b70b3",
+      "plan_sha256": "a1c6b25e963edfe7cba1fbfa2acb4b85980784f84d1ae0af69f4a6ba01fd2d54",
+      "program_sha256": "e961a0583a4c9277cdc47ac34a6819e5e0d9127190c30fd9f72e810b505a2d6c",
+      "standard_time_seconds": 0.13301000004867092,
+      "peak_working_set_bytes": 5083136,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "empty-start",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "empty initial sequence and later updates",
+          "dimensions": {
+            "n": 0,
+            "m": 100
+          },
+          "input_bytes": 407,
+          "input_sha256": "52cd9d35206d23a60a0c0d3e015f7f44920f8e98d4d688fd51566ebb372ba2b9",
+          "output_sha256": "216bc18805faae2f8043b166c69c55dae93782c43e38354e770e5d9980416afc",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.017994599998928607,
+            0.02286690002074465,
+            0.020523600047454238,
+            0.023168299987446517,
+            0.02000469999620691
+          ],
+          "median_seconds": 0.020523600047454238
+        },
+        {
+          "id": "short-static",
+          "group": 1,
+          "score_percent": 20,
+          "purpose": "small sequence with no updates",
+          "dimensions": {
+            "n": 25,
+            "m": 0
+          },
+          "input_bytes": 55,
+          "input_sha256": "bafd449124149445a8e777da8b1bb5fef7ab75ffc1df4ad8621fd42fd734cd47",
+          "output_sha256": "f7c4f4cc6c99f0e5d21986eaf4e0ee5170b03b05ba444a6b2792a902e38f07b2",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.019064599997363985,
+            0.018108999996911734,
+            0.021396900003310293,
+            0.02082570001948625,
+            0.019163799996022135
+          ],
+          "median_seconds": 0.019163799996022135
+        },
+        {
+          "id": "medium-static",
+          "group": 2,
+          "score_percent": 20,
+          "purpose": "medium sequence with no updates",
+          "dimensions": {
+            "n": 5000,
+            "m": 0
+          },
+          "input_bytes": 10007,
+          "input_sha256": "b45c772115ba7567f153505f92f617618b2d1cd21644d55d0b6495339541abb5",
+          "output_sha256": "812d2c671b8d18bc329f1acd3510c5ce56f625ffbee06c3cdb0831ae0994c8ca",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.024823399959132075,
+            0.01987720001488924,
+            0.02001639996888116,
+            0.022054100001696497,
+            0.021433399990200996
+          ],
+          "median_seconds": 0.021433399990200996
+        },
+        {
+          "id": "medium-random",
+          "group": 3,
+          "score_percent": 20,
+          "purpose": "mixed marks and update directions",
+          "dimensions": {
+            "n": 5000,
+            "m": 5000
+          },
+          "input_bytes": 30010,
+          "input_sha256": "5c8fa2ddc853dbb52ab68c0c11968f180a6710b8736dab3d7b79b446ace1fc83",
+          "output_sha256": "5b3160eeac2ba3e072e1971ed75a7865903ef14f0d9caeff66233322965b66e3",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.019390200031921268,
+            0.020897699985653162,
+            0.019679600023664534,
+            0.020499899983406067,
+            0.02136610000161454
+          ],
+          "median_seconds": 0.020499899983406067
+        },
+        {
+          "id": "alternating-ends",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "frequent left-right alternation",
+          "dimensions": {
+            "n": 10000,
+            "m": 10000
+          },
+          "input_bytes": 60012,
+          "input_sha256": "4e8d49dcf37f9da713a64225b73b88797f4bbbff94bdd0a7cca241c1cf8a6f86",
+          "output_sha256": "eab688eafaa86b0be85e778d440f6c8a572d956aa9f8f522a0d518d6d30e4a46",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.02110249997349456,
+            0.021312500000931323,
+            0.02187590004177764,
+            0.020838399999774992,
+            0.02102699998067692
+          ],
+          "median_seconds": 0.02110249997349456
+        },
+        {
+          "id": "maximum-blocks",
+          "group": 4,
+          "score_percent": 20,
+          "purpose": "maximum input size and long runs of marks",
+          "dimensions": {
+            "n": 1000000,
+            "m": 1000000
+          },
+          "input_bytes": 6000016,
+          "input_sha256": "af31aab7c5427a40f09e73bc4e7a2bf54e58463e8a6c9479cf44162857ba43c9",
+          "output_sha256": "0d3a5085a6fa6d05bfe9c40ebb76ff421514aa7e69d5cd29d4e4e84ec54a6d06",
+          "peak_working_set_bytes": 5083136,
+          "times_seconds": [
+            0.19508659996790811,
+            0.135541399999056,
+            0.1327688000164926,
+            0.13301000004867092,
+            0.13240049994783476
+          ],
+          "median_seconds": 0.13301000004867092
+        }
+      ]
+    }
+  }
+}

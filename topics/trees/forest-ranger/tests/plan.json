@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {"id": "tiny-star", "kind": "star", "n": 10, "seed": 61, "group": 1, "score_percent": 15, "purpose": "one leaf per day"},
+    {"id": "tiny-chain", "kind": "chain", "n": 10, "seed": 62, "group": 1, "score_percent": 15, "purpose": "all vertices in one day"},
+    {"id": "medium-balanced", "kind": "balanced", "n": 5000, "seed": 63, "group": 2, "score_percent": 15, "purpose": "many equal-depth branches"},
+    {"id": "medium-broom", "kind": "broom", "n": 5000, "seed": 64, "group": 2, "score_percent": 15, "purpose": "deep handle and many leaves"},
+    {"id": "maximum-chain", "kind": "chain", "n": 1000000, "seed": 65, "group": 3, "score_percent": 10, "purpose": "deep tree without recursion"},
+    {"id": "maximum-star", "kind": "star", "n": 1000000, "seed": 66, "group": 3, "score_percent": 15, "purpose": "maximum number of output days"},
+    {"id": "maximum-random", "kind": "random", "n": 1000000, "seed": 67, "group": 3, "score_percent": 15, "purpose": "large irregular tree"}
+  ]
+}

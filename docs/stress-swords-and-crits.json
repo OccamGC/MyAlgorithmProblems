@@ -1,0 +1,42 @@
+{
+  "timeout_seconds": 5.0,
+  "stress": [
+    {
+      "completed": false,
+      "exceeded_seconds": 5.0,
+      "program": "slow-dense",
+      "case": "05",
+      "input_sha256": "068078c0d5ac9d58ee0a2072e9d26d199e046978fb7e4a614ee3d79cebb54853"
+    },
+    {
+      "completed": false,
+      "exceeded_seconds": 5.0,
+      "program": "streaming",
+      "case": "09",
+      "input_sha256": "578dcb7b1cf1992bfa64a1ffe0a33b6e5c1230b22461723ce68c0c247dff345d"
+    }
+  ],
+  "memory_example": {
+    "n": 40,
+    "q": 1,
+    "input_sha256": "ac3917f937c597707ef8c90c105e63bdccdda727aed7b243fa01c3c333790436",
+    "programs": {
+      "std": {
+        "peak_working_set_bytes": 45928448
+      },
+      "streaming": {
+        "peak_working_set_bytes": 5033984
+      }
+    }
+  },
+  "sources": {
+    "alternative-streaming.cpp": "a77b62352072c521699e3df2d79a7a9e5134a049fe73c270a70713b41df426f4",
+    "brute.cpp": "f6883ac82f702e58330cb90871085b3c16f71383cbc4ff32727e6d4c1564a541",
+    "std.cpp": "3d7a486e5eeaf243f3eb8ca5119b700b583fecb4c3c6aefa5d52e36f5d960a06",
+    "tests\\slow-binary.cpp": "094a9c30933ca322917b21dbd1dc34b311a6ece89871bed7ae839f47c792b4f8",
+    "tests\\slow-dense.cpp": "9f7c7a7a357cf19bf0253e1ba7b79ff30639642a4b7ca3f1778d968c40a6a66c",
+    "tests\\slow-sort.cpp": "aa5276b6512acffa44a954b144e4b30c25664be1992bab805db5a0150704ebf0",
+    "tests\\verify-arithmetic.cpp": "b6825201e4dca498b08ada3a60d592e1bffd05ee6a79e4118b7b8e34a2b288e9",
+    "tests\\verify-branches.cpp": "27609cf3b16faa53fd385214235ac7d7939925ad4b00875a5b3f810f0c00552b"
+  }
+}

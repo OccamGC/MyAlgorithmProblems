@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290500
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290501
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small random",
+      "n": 80,
+      "m": 80,
+      "seed": 202609290502
+    },
+    {
+      "id": "medium-random",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium random",
+      "n": 300,
+      "m": 300,
+      "seed": 202609290503
+    },
+    {
+      "id": "medium-point",
+      "kind": "point",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium point",
+      "n": 300,
+      "m": 300,
+      "seed": 202609290504
+    },
+    {
+      "id": "large-cover",
+      "kind": "all-cover",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "large cover",
+      "n": 1500,
+      "m": 1500,
+      "seed": 202609290505
+    },
+    {
+      "id": "large-random",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "large random",
+      "n": 700,
+      "m": 1300,
+      "seed": 202609290506
+    },
+    {
+      "id": "thin-grid",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "thin grid",
+      "n": 1500,
+      "m": 1,
+      "seed": 202609290507
+    },
+    {
+      "id": "maximum-cover",
+      "kind": "all-cover",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "maximum cover",
+      "n": 2200,
+      "m": 2200,
+      "seed": 202609290508
+    },
+    {
+      "id": "maximum-parity",
+      "kind": "parity",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "maximum parity",
+      "n": 2200,
+      "m": 2200,
+      "seed": 202609290509
+    }
+  ]
+}

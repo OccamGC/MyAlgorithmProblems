@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample",
+      "kind": "sample",
+      "purpose": "Mixed interval queries and point assignments",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "01",
+      "seed": 202609281200
+    },
+    {
+      "id": "bit-16",
+      "kind": "sample",
+      "purpose": "Inclusive value upper bound 65536",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "02",
+      "seed": 202609281201
+    },
+    {
+      "id": "random-small",
+      "kind": "random",
+      "purpose": "Short intervals with updates",
+      "group": 1,
+      "score_percent": 10,
+      "n": 80,
+      "q": 300,
+      "seed": 202609281202
+    },
+    {
+      "id": "maximum",
+      "kind": "random",
+      "purpose": "Maximum array and operation counts",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281203
+    },
+    {
+      "id": "high-bit",
+      "kind": "high-bit",
+      "purpose": "17th bit and a 64-bit answer",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281204
+    },
+    {
+      "id": "zero",
+      "kind": "zero",
+      "purpose": "Zero answer for every interval",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281205
+    },
+    {
+      "id": "alternating",
+      "kind": "alternating",
+      "purpose": "Adjacent prefix XOR values from different bits",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281206
+    },
+    {
+      "id": "updates-only",
+      "kind": "updates",
+      "purpose": "No output is required",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281207
+    },
+    {
+      "id": "singletons",
+      "kind": "singletons",
+      "purpose": "Single-element queries",
+      "group": 1,
+      "score_percent": 10,
+      "n": 100000,
+      "q": 100000,
+      "seed": 202609281208
+    },
+    {
+      "id": "one-element",
+      "kind": "random",
+      "purpose": "Repeated assignments at one position",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1,
+      "q": 100000,
+      "seed": 202609281209
+    }
+  ]
+}

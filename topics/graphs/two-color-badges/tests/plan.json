@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"id": "self-loops", "kind": "self-loops", "n": 5, "m": 8, "seed": 41, "group": 1, "score_percent": 15, "purpose": "self-conflicts, duplicates, and a rejected odd cycle"},
+    {"id": "small-random", "kind": "random", "n": 15, "m": 15, "seed": 42, "group": 1, "score_percent": 15, "purpose": "small random reports"},
+    {"id": "medium-random", "kind": "random", "n": 5000, "m": 5000, "seed": 43, "group": 2, "score_percent": 30, "purpose": "medium component merges"},
+    {"id": "long-chain", "kind": "chain", "n": 500000, "m": 500000, "seed": 44, "group": 3, "score_percent": 15, "purpose": "large connected component and final odd cycle"},
+    {"id": "dense-conflicts", "kind": "dense", "n": 30000, "m": 500000, "seed": 45, "group": 3, "score_percent": 10, "purpose": "many repeated and rejected reports"},
+    {"id": "maximum-random", "kind": "random", "n": 500000, "m": 500000, "seed": 46, "group": 3, "score_percent": 15, "purpose": "maximum vertex and report counts"}
+  ]
+}

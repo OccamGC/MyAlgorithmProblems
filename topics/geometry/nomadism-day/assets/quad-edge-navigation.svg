@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="790" height="355" viewBox="0 0 790 355" role="img" aria-labelledby="title description">
+  <title id="title">Navigating a directed edge</title>
+  <desc id="description">In the counterclockwise triangle u v w, e points from u to v. Onext(e) points from u to w, LeftNext(e) points from v to w, and Reverse(e) points from v to u. Onext stays at the origin; LeftNext walks around the left face.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="790" height="355" fill="white" stroke="none" />
+  <polygon points="100,270 365,270 200,70" fill="#eef4fa" stroke="none" />
+  <line x1="100" y1="270" x2="353.0" y2="270.0" stroke="#1268b3" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <line x1="100" y1="270" x2="194.6334368540005" y2="80.73312629199899" stroke="#20354b" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <line x1="365" y1="270" x2="207.63659545754678" y2="79.25647934248093" stroke="#20354b" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <circle cx="100" cy="270" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="83" y="255" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">u</text>
+  <circle cx="365" cy="270" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="382" y="255" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">v</text>
+  <circle cx="200" cy="70" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="200" y="55" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">w</text>
+  <text x="232" y="302" fill="#1268b3" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">e = u → v</text>
+  <text x="74" y="158" fill="#20354b" font-size="19" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">Onext</text>
+  <text x="343" y="148" fill="#20354b" font-size="19" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">LeftNext</text>
+  <text x="600" y="106" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">Onext(e) = u → w</text>
+  <text x="600" y="171" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">LeftNext(e) = v → w</text>
+  <text x="600" y="236" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">Reverse(e) = v → u</text>
+</svg>

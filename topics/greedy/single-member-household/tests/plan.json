@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "1\n1 1000000\n",
+      "purpose": "No outsiders; zero gaps and vacuous strict ranking",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390101
+    },
+    {
+      "mode": "literal",
+      "input": "2\n1 1\n1 1000000\n",
+      "purpose": "One richer outsider; equal final wealth",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390102
+    },
+    {
+      "mode": "literal",
+      "input": "8\n1 17\n2 46\n2 24\n4 65\n3 66\n19 51\n20 73\n7 100\n",
+      "purpose": "Mixed rational means and all gap candidates",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390103
+    },
+    {
+      "mode": "equal",
+      "n": 1000000,
+      "purpose": "Equal means; strict rankings impossible",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390104
+    },
+    {
+      "mode": "poor",
+      "n": 1000000,
+      "purpose": "All outsiders no richer; maximum initial money",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390105
+    },
+    {
+      "mode": "same-rich",
+      "n": 1000000,
+      "purpose": "Twenty million people represented by one million families",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390106
+    },
+    {
+      "mode": "near",
+      "n": 1000000,
+      "purpose": "A below 2b by an exponentially tiny amount",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390107
+    },
+    {
+      "mode": "exact",
+      "n": 1000000,
+      "purpose": "Exact equality A=2b",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390108
+    },
+    {
+      "mode": "random",
+      "n": 1000000,
+      "purpose": "Full-size unsorted rational means",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390109
+    },
+    {
+      "mode": "reverse",
+      "n": 1000000,
+      "purpose": "Reverse money order and varied denominators",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 390110
+    }
+  ]
+}

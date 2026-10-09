@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093100,
+      "purpose": "zero; parameters recorded below",
+      "n": 1,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093101,
+      "purpose": "random; parameters recorded below",
+      "n": 10,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093102,
+      "purpose": "chain; parameters recorded below",
+      "n": 2000,
+      "mode": "chain"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093103,
+      "purpose": "star; parameters recorded below",
+      "n": 2000,
+      "mode": "star"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093104,
+      "purpose": "balanced; parameters recorded below",
+      "n": 2000,
+      "mode": "balanced"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093105,
+      "purpose": "broom; parameters recorded below",
+      "n": 2000,
+      "mode": "broom"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093106,
+      "purpose": "random; parameters recorded below",
+      "n": 2000,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093107,
+      "purpose": "zero; parameters recorded below",
+      "n": 2000,
+      "mode": "zero"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093108,
+      "purpose": "random; parameters recorded below",
+      "n": 1999,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093109,
+      "purpose": "random; parameters recorded below",
+      "n": 2000,
+      "mode": "random"
+    }
+  ]
+}

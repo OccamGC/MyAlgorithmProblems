@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 350001,
+      "n": 1,
+      "m": 100,
+      "shape": "chain",
+      "mode": "literal",
+      "purpose": "chain / literal"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 350002,
+      "n": 30,
+      "m": 100,
+      "shape": "random",
+      "mode": "literal",
+      "purpose": "random / literal"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 350003,
+      "n": 100,
+      "m": 1000,
+      "shape": "chain",
+      "mode": "literal",
+      "purpose": "chain / literal"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 350004,
+      "n": 500,
+      "m": 1000,
+      "shape": "star",
+      "mode": "literal",
+      "purpose": "star / literal"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 350005,
+      "n": 500,
+      "m": 2000,
+      "shape": "random",
+      "mode": "literal",
+      "purpose": "random / literal"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 350006,
+      "n": 100000,
+      "m": 100000,
+      "shape": "chain",
+      "mode": "sparse",
+      "purpose": "chain / sparse"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 350007,
+      "n": 100000,
+      "m": 100000,
+      "shape": "star",
+      "mode": "sparse",
+      "purpose": "star / sparse"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 350008,
+      "n": 100000,
+      "m": 100000,
+      "shape": "binary",
+      "mode": "zero",
+      "purpose": "binary / zero"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 350009,
+      "n": 100000,
+      "m": 100000,
+      "shape": "random",
+      "mode": "sparse",
+      "purpose": "random / sparse"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 350010,
+      "n": 100000,
+      "m": 100000,
+      "shape": "chain",
+      "mode": "accumulate",
+      "purpose": "chain / accumulate"
+    }
+  ]
+}

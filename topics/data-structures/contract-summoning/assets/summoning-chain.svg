@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="440" viewBox="0 0 900 440">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#2563eb"/></marker></defs>
+<rect width="100%" height="100%" fill="white"/>
+<g font-family="Arial, sans-serif" font-size="21" fill="#172033">
+<rect x="35" y="65" width="210" height="120" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+<text x="140" y="93" font-size="22" text-anchor="middle">0</text>
+<text x="140" y="164" font-size="21" text-anchor="middle">(2, 3, 5)</text>
+<rect x="345" y="65" width="210" height="120" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+<text x="450" y="93" font-size="22" text-anchor="middle">NPC 1</text>
+<text x="450" y="129" font-size="21" text-anchor="middle">(1, 2, 4)</text>
+<text x="450" y="164" font-size="21" text-anchor="middle">(4, 2, 2)</text>
+<rect x="655" y="65" width="210" height="120" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="2"/>
+<text x="760" y="93" font-size="22" text-anchor="middle">NPC 3</text>
+<text x="760" y="129" font-size="21" text-anchor="middle">(4, 1, 1)</text>
+<text x="760" y="164" font-size="21" text-anchor="middle">(5, 2, 3)</text>
+<rect x="345" y="285" width="210" height="120" rx="12" fill="#f8fafc" stroke="#475569" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="450" y="313" font-size="22" text-anchor="middle">NPC 2</text>
+<text x="450" y="349" font-size="21" text-anchor="middle">(3, 2, 3)</text>
+<text x="450" y="384" font-size="21" text-anchor="middle">(3, 4, 3)</text>
+<line x1="247" y1="126" x2="334" y2="126" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="557" y1="126" x2="644" y2="126" stroke="#2563eb" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="450" y="240" font-size="24" text-anchor="middle">0 → 1 → 3</text>
+</g>
+</svg>

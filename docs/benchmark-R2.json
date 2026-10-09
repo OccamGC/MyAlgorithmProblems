@@ -1,0 +1,470 @@
+{
+  "timestamp": "2026-09-28 16:33:23 +0800",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "repeats": 5,
+  "time_resolution_seconds": 0.5,
+  "multiplier": 2.0,
+  "timing": "wall clock, one input file per process; first run used to produce output, then repeated timed runs; median per case",
+  "problems": {
+    "two-color-badges": {
+      "sample_count": 2,
+      "std_sha256": "65dd8ab9cabac4824a5eecf310c6845445d69ecdd124f4a3d8c1cfe75061027f",
+      "generator_sha256": "7a4ae7bf431d8892caf8a11a20dbda2ccda9071a6902ee7c5614b8168decb042",
+      "plan_sha256": "17c8a398782c3a4ccd7192913ddc79688594fff1817819b4dd7a755a59551c59",
+      "program_sha256": "db8e4ec55cbd2855ea07a5a89903a5eb0ba26d1c6a265032c5c129962727ec59",
+      "standard_time_seconds": 0.1607914000051096,
+      "peak_working_set_bytes": 14893056,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "self-loops",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "self-conflicts, duplicates, and a rejected odd cycle",
+          "dimensions": {
+            "n": 5,
+            "m": 8
+          },
+          "input_bytes": 36,
+          "input_sha256": "61cbf40a9f9d611d2814311324de1fb72ced9cc98e92db9cbac5406a1adb8759",
+          "output_sha256": "8eedcd7cb3372157d24c09671d7f81d9acb2529b20e46a2034e5743573115e66",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.013995599991176277,
+            0.014254100038670003,
+            0.01428269996540621,
+            0.014163200045004487,
+            0.014240699994843453
+          ],
+          "median_seconds": 0.014240699994843453
+        },
+        {
+          "id": "small-random",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "small random reports",
+          "dimensions": {
+            "n": 15,
+            "m": 15
+          },
+          "input_bytes": 79,
+          "input_sha256": "1cdf56ec71e26fc1e7641c12a2c0589985419a9cab003b840f7d2865ce8ea87c",
+          "output_sha256": "3cb6c8b33617ec869386ae1353533580c8a2295bf27ee0fd593db6723c90644f",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.013761399954091758,
+            0.013109900057315826,
+            0.014725100016221404,
+            0.014168699970468879,
+            0.01594499999191612
+          ],
+          "median_seconds": 0.014168699970468879
+        },
+        {
+          "id": "medium-random",
+          "group": 2,
+          "score_percent": 30,
+          "purpose": "medium component merges",
+          "dimensions": {
+            "n": 5000,
+            "m": 5000
+          },
+          "input_bytes": 47838,
+          "input_sha256": "fbe2e789ee75a5abd5dc0c6235d0e458830c6d087b28a095b842c92ce3466ece",
+          "output_sha256": "8b0a9d8ef3a1bebfe1b30294d89a769ae42705813029d7fc51df32863d558c4e",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.09472509997431189,
+            0.01620130002265796,
+            0.015530699980445206,
+            0.01493289996869862,
+            0.014827599981799722
+          ],
+          "median_seconds": 0.015530699980445206
+        },
+        {
+          "id": "long-chain",
+          "group": 3,
+          "score_percent": 15,
+          "purpose": "large connected component and final odd cycle",
+          "dimensions": {
+            "n": 500000,
+            "m": 500000
+          },
+          "input_bytes": 6777799,
+          "input_sha256": "397f8e25f0f46e01a8b9fbe666e94c76baf8cc21bd4a05205453835ba9b821c1",
+          "output_sha256": "73fc1393d25e675a3dcf63bcdecfd3b022e872e24ac65e60715e5fb3a073afd8",
+          "peak_working_set_bytes": 14893056,
+          "times_seconds": [
+            0.0896037999773398,
+            0.08628490002593026,
+            0.08863709995057434,
+            0.0906161000020802,
+            0.08541930001229048
+          ],
+          "median_seconds": 0.08863709995057434
+        },
+        {
+          "id": "dense-conflicts",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "many repeated and rejected reports",
+          "dimensions": {
+            "n": 30000,
+            "m": 500000
+          },
+          "input_bytes": 3638881,
+          "input_sha256": "d664722b3c27bc590f5b0cdbf6a7cdf8894e6c865035453f69616150aeb901bf",
+          "output_sha256": "4ab392977559c4e74796047c87aa635f50d2368e77f02decce8e408b2ce5b1cd",
+          "peak_working_set_bytes": 5623808,
+          "times_seconds": [
+            0.07344119995832443,
+            0.07520630001090467,
+            0.07596200000261888,
+            0.07952510000905022,
+            0.07859669998288155
+          ],
+          "median_seconds": 0.07596200000261888
+        },
+        {
+          "id": "maximum-random",
+          "group": 3,
+          "score_percent": 15,
+          "purpose": "maximum vertex and report counts",
+          "dimensions": {
+            "n": 500000,
+            "m": 500000
+          },
+          "input_bytes": 6778356,
+          "input_sha256": "1315fd722060985e1213b6b00c262420484cf940468b0cb47e6e92df3b5a25b7",
+          "output_sha256": "560c280656dbca7467c61e491b1b6297947ac375533c70d2442f6c0cfb4cbdb7",
+          "peak_working_set_bytes": 14888960,
+          "times_seconds": [
+            0.1607914000051096,
+            0.15798660001019016,
+            0.15215149999130517,
+            0.16635670000687242,
+            0.17506579996552318
+          ],
+          "median_seconds": 0.1607914000051096
+        }
+      ]
+    },
+    "passengers-need-exercise": {
+      "sample_count": 2,
+      "std_sha256": "2bf6810c5930faf4b2f0bfea65372ac79d4717e403d0b2b922ca71149856e010",
+      "generator_sha256": "07fa9e720595637ee30583b06c12b7dfef4fd34c0a919ff391f31594e92c695f",
+      "plan_sha256": "4e8258f1e9e63093c78fec0ab9c98eebd13e06787f1be43618da7bff794a93bc",
+      "program_sha256": "de36b11d42a7b5484cd4e3ee84d84202447bdfb8ff4f0f54fa3b3a930df16fc1",
+      "standard_time_seconds": 0.014867699996102601,
+      "peak_working_set_bytes": 5038080,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "tiny-tie",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "leftmost maximizer",
+          "dimensions": {
+            "L": 10,
+            "M": 5,
+            "N": 3,
+            "last_door": 4
+          },
+          "input_bytes": 22,
+          "input_sha256": "2dea599fcefea4edbbdf49f9e22ba621320e3c803af9f6837c7b5670ca769056",
+          "output_sha256": "c6778b0af98577e115dcf1d40f103857d9125a9a845c559748a489077d7b48e3",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.015323600033298135,
+            0.013893600029405206,
+            0.014871099963784218,
+            0.014354599989019334,
+            0.014125200046692044
+          ],
+          "median_seconds": 0.014354599989019334
+        },
+        {
+          "id": "tiny-random",
+          "group": 1,
+          "score_percent": 20,
+          "purpose": "small dense positions",
+          "dimensions": {
+            "L": 100,
+            "M": 50,
+            "N": 50,
+            "last_door": 97
+          },
+          "input_bytes": 299,
+          "input_sha256": "17babb11bbdca51ed524567f5fed2e559c70875bf0bf72d46cc99dc0b3fa5d0e",
+          "output_sha256": "d6799043a8dfb3e8273839000f151120943f299d290b67cf667877919a6d11c8",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.014581099967472255,
+            0.01580130000365898,
+            0.01464409998152405,
+            0.016652899968903512,
+            0.013256200007162988
+          ],
+          "median_seconds": 0.01464409998152405
+        },
+        {
+          "id": "one-door",
+          "group": 2,
+          "score_percent": 20,
+          "purpose": "single-door convex objective",
+          "dimensions": {
+            "L": 1000000000,
+            "M": 300,
+            "N": 1,
+            "last_door": 0
+          },
+          "input_bytes": 2971,
+          "input_sha256": "7aab2844f51c3df4fb91349eaedb0b45b86633b30b972635be7b7d98a00b99a6",
+          "output_sha256": "814f63fd925a0c2536281c0137c44b34ced6fb5205138b4861da5c82a66a70f8",
+          "peak_working_set_bytes": 5033984,
+          "times_seconds": [
+            0.014345800038427114,
+            0.014869200007524341,
+            0.013635799987241626,
+            0.01481449999846518,
+            0.013843199994880706
+          ],
+          "median_seconds": 0.014345800038427114
+        },
+        {
+          "id": "uneven-doors",
+          "group": 2,
+          "score_percent": 25,
+          "purpose": "uneven gaps and many candidate peaks",
+          "dimensions": {
+            "L": 1000000000,
+            "M": 300,
+            "N": 300,
+            "last_door": 998412763
+          },
+          "input_bytes": 5194,
+          "input_sha256": "37be923f9bb81cc5e49a63465246a0d49c32a6dc95198d947c9ac8c2808b3171",
+          "output_sha256": "23b644eea3d4fd08d3c5d3cd87205eba9f8dd2a128b270828b4bc30580fac9c3",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.014806999999564141,
+            0.013491699995938689,
+            0.015162999974563718,
+            0.013761499954853207,
+            0.014604400028474629
+          ],
+          "median_seconds": 0.014604400028474629
+        },
+        {
+          "id": "maximum-random",
+          "group": 2,
+          "score_percent": 15,
+          "purpose": "maximum passenger and door counts",
+          "dimensions": {
+            "L": 1000000000,
+            "M": 300,
+            "N": 300,
+            "last_door": 998661561
+          },
+          "input_bytes": 5957,
+          "input_sha256": "4baadaf457713418c734a93610c486cb0b4e3350a2b9b50fb496fd4e17d0ae42",
+          "output_sha256": "1f11b16a9b3683e278c310052228b105cd800729f08882f78863d35b6d630363",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.01482350000878796,
+            0.014923200011253357,
+            0.014733400021214038,
+            0.014578700007405132,
+            0.014971400029025972
+          ],
+          "median_seconds": 0.01482350000878796
+        },
+        {
+          "id": "half-integer",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "unique interior half-integer optimum; rejects integer-only and endpoint-only enumeration",
+          "dimensions": {
+            "L": 300,
+            "M": 300,
+            "N": 300,
+            "last_door": 299
+          },
+          "input_bytes": 2190,
+          "input_sha256": "e7f83a809e3c8b0b37576e05127dd20f093347d94559726136dbce451287ac29",
+          "output_sha256": "95373f5f10668b2f71658a1e0d3c3fcf6cb2d75a7bcc0fc0e965b2d7348640cf",
+          "peak_working_set_bytes": 5033984,
+          "times_seconds": [
+            0.015389100008178502,
+            0.014080499997362494,
+            0.015643400023691356,
+            0.014867699996102601,
+            0.01456129999132827
+          ],
+          "median_seconds": 0.014867699996102601
+        }
+      ]
+    },
+    "forest-ranger": {
+      "sample_count": 2,
+      "std_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+      "generator_sha256": "11d57d449b328585addce12e34861fba0fd1340d65d6cb6310e248fcccd62ea8",
+      "plan_sha256": "5a01ba3a2255c281d07bfb81ad3fde9fee3ceb4a1533c674f89285dbe5ef8d66",
+      "program_sha256": "6f5a0df87630e8f33852c17804dc4089b1679768c0eaa753abacaf755d6ab03c",
+      "standard_time_seconds": 0.22279379999963567,
+      "peak_working_set_bytes": 52985856,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "tiny-star",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "one leaf per day",
+          "dimensions": {
+            "n": 10
+          },
+          "input_bytes": 40,
+          "input_sha256": "c707d75cdb0590b41ca5603ea165b9bd07117cacaa28432c940992bb4b6b6bf5",
+          "output_sha256": "9efc1ab22c673b454495427ede36b79a0e0a36d4d4597b380f3115596dfff5fb",
+          "peak_working_set_bytes": 5009408,
+          "times_seconds": [
+            0.014340099995024502,
+            0.013925799983553588,
+            0.01394039997830987,
+            0.015236200008075684,
+            0.014570400002412498
+          ],
+          "median_seconds": 0.014340099995024502
+        },
+        {
+          "id": "tiny-chain",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "all vertices in one day",
+          "dimensions": {
+            "n": 10
+          },
+          "input_bytes": 40,
+          "input_sha256": "c8e439df6d6cec73dd751bd79d630cd32b860b378c9ddfd344a6b98d9672bd4e",
+          "output_sha256": "2a75686d6b1173c6b17b29df9c216a72b53d413defcbec12de8a5eeb1d5fd7a1",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.015403400000650436,
+            0.015639099990949035,
+            0.014652699988801032,
+            0.014177899982314557,
+            0.013829600007738918
+          ],
+          "median_seconds": 0.014652699988801032
+        },
+        {
+          "id": "medium-balanced",
+          "group": 2,
+          "score_percent": 15,
+          "purpose": "many equal-depth branches",
+          "dimensions": {
+            "n": 5000
+          },
+          "input_bytes": 46677,
+          "input_sha256": "bff3f161cd4f570db1feadc308fd91c857c969f7c92096cdebc2c0121c2c5eb2",
+          "output_sha256": "7e2655eed21cde88fe3f1b338b8c29cb84d8035bc048a442a4838613de9fd0ac",
+          "peak_working_set_bytes": 5107712,
+          "times_seconds": [
+            0.015117300034034997,
+            0.015298900019843131,
+            0.01421449996996671,
+            0.015250600001309067,
+            0.014463100000284612
+          ],
+          "median_seconds": 0.015117300034034997
+        },
+        {
+          "id": "medium-broom",
+          "group": 2,
+          "score_percent": 15,
+          "purpose": "deep handle and many leaves",
+          "dimensions": {
+            "n": 5000
+          },
+          "input_bytes": 47784,
+          "input_sha256": "f5a9f2024872adf83564204f32507b2bd90b030f3fd88f97aa2a59906e1961a1",
+          "output_sha256": "68aeaf5562de332801cf66a46eb364711309d2a531a529cab13c536274605145",
+          "peak_working_set_bytes": 5111808,
+          "times_seconds": [
+            0.016110700031276792,
+            0.015109899977687746,
+            0.01587259996449575,
+            0.015351800015196204,
+            0.015136900008656085
+          ],
+          "median_seconds": 0.015351800015196204
+        },
+        {
+          "id": "maximum-chain",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "deep tree without recursion",
+          "dimensions": {
+            "n": 1000000
+          },
+          "input_bytes": 13777790,
+          "input_sha256": "f18f0c9e24497ca9c57500a7780bddb9c98aaf15eb82099d76289c8cb249a69a",
+          "output_sha256": "cc278b0c2f4b98c1e3ff66698151fd8bf66dc302013e92f4530d93c70732fc5f",
+          "peak_working_set_bytes": 40873984,
+          "times_seconds": [
+            0.12125570001080632,
+            0.12681320001138374,
+            0.1267989999614656,
+            0.1278786999755539,
+            0.12537500000325963
+          ],
+          "median_seconds": 0.1267989999614656
+        },
+        {
+          "id": "maximum-star",
+          "group": 3,
+          "score_percent": 15,
+          "purpose": "maximum number of output days",
+          "dimensions": {
+            "n": 1000000
+          },
+          "input_bytes": 8888900,
+          "input_sha256": "7d2998c5b666438b15a4bb982f42cfeafe97ec274ae597a5cbf457dfa61bb41f",
+          "output_sha256": "ba10933db934c6779ba3c14aa2d22417cd3d71abe56898b397246838e6e3bb83",
+          "peak_working_set_bytes": 52985856,
+          "times_seconds": [
+            0.14320620003854856,
+            0.13798279996262863,
+            0.1403779999818653,
+            0.13394079997669905,
+            0.13338229997316375
+          ],
+          "median_seconds": 0.13798279996262863
+        },
+        {
+          "id": "maximum-random",
+          "group": 3,
+          "score_percent": 15,
+          "purpose": "large irregular tree",
+          "dimensions": {
+            "n": 1000000
+          },
+          "input_bytes": 13493007,
+          "input_sha256": "227e240a08b3be1ca6c94fbb3998f03a6ef5a20f02ac4d47a6df27bf6aefd485",
+          "output_sha256": "b5230c27afeb93219890ec2bcb627c28135d61432c616a439f78ef471e6badfc",
+          "peak_working_set_bytes": 47112192,
+          "times_seconds": [
+            0.29068189999088645,
+            0.22214319999329746,
+            0.2221735999919474,
+            0.22279379999963567,
+            0.22300600004382432
+          ],
+          "median_seconds": 0.22279379999963567
+        }
+      ]
+    }
+  }
+}

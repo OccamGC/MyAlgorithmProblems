@@ -1,0 +1,108 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "no-reductions",
+      "kind": "random",
+      "n": 100000,
+      "K": 0,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291300,
+      "purpose": "no reductions"
+    },
+    {
+      "id": "one-reduction",
+      "kind": "random",
+      "n": 100000,
+      "K": 1,
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202609291301,
+      "purpose": "one reduction"
+    },
+    {
+      "id": "one-sparse-goods",
+      "kind": "sparse-goods",
+      "n": 100000,
+      "K": 1,
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202609291302,
+      "purpose": "one early shipment through late zero-resource stations"
+    },
+    {
+      "id": "small",
+      "kind": "random",
+      "n": 50,
+      "K": 50,
+      "max_num": 50,
+      "max_time": 500,
+      "max_travel": 100,
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202609291303,
+      "purpose": "small"
+    },
+    {
+      "id": "medium-random",
+      "kind": "random",
+      "n": 2000,
+      "K": 2000,
+      "group": 4,
+      "score_percent": 10,
+      "seed": 202609291304,
+      "purpose": "medium random"
+    },
+    {
+      "id": "medium-zero-travel",
+      "kind": "zero-travel",
+      "n": 2000,
+      "K": 2000,
+      "group": 4,
+      "score_percent": 10,
+      "seed": 202609291305,
+      "purpose": "zero travel times with late zero-resource stations"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "mixed-zeros",
+      "n": 100000,
+      "K": 500000000,
+      "group": 5,
+      "score_percent": 10,
+      "seed": 202609291306,
+      "purpose": "maximum mixed positive and zero-resource stations"
+    },
+    {
+      "id": "maximum-no-waits",
+      "kind": "no-waits",
+      "n": 100000,
+      "K": 500000000,
+      "group": 5,
+      "score_percent": 10,
+      "seed": 202609291307,
+      "purpose": "maximum no waits"
+    },
+    {
+      "id": "maximum-barriers",
+      "kind": "barriers",
+      "n": 100000,
+      "K": 500000000,
+      "group": 5,
+      "score_percent": 10,
+      "seed": 202609291308,
+      "purpose": "maximum barriers"
+    },
+    {
+      "id": "maximum-overflow",
+      "kind": "overflow",
+      "n": 100000,
+      "K": 500000000,
+      "group": 5,
+      "score_percent": 10,
+      "seed": 202609291309,
+      "purpose": "maximum overflow"
+    }
+  ]
+}

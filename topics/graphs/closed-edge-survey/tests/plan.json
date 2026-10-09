@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "n": 100000,
+      "mode": "tree",
+      "purpose": "large tree, unrestricted odd count",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 350001
+    },
+    {
+      "n": 100000,
+      "mode": "star",
+      "purpose": "tree with many odd leaves",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 350002
+    },
+    {
+      "n": 2,
+      "mode": "euler",
+      "extra_pairs": 4,
+      "purpose": "parallel Euler edges",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 350003
+    },
+    {
+      "n": 100000,
+      "mode": "euler",
+      "extra_pairs": 50000,
+      "purpose": "large even-degree graph",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 350004
+    },
+    {
+      "n": 100000,
+      "mode": "zero",
+      "extra_pairs": 50000,
+      "purpose": "zero-weight Euler graph",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 350005
+    },
+    {
+      "n": 100000,
+      "mode": "leaves",
+      "leaves": 20,
+      "extra_pairs": 50000,
+      "purpose": "twenty odd bridge leaves",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 350006
+    },
+    {
+      "n": 100000,
+      "mode": "chords",
+      "purpose": "twenty odd vertices on a cycle with chords",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 350007
+    },
+    {
+      "n": 1000,
+      "mode": "chords",
+      "purpose": "medium weighted matching",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 350008
+    },
+    {
+      "n": 100000,
+      "mode": "leaves",
+      "leaves": 2,
+      "extra_pairs": 50000,
+      "purpose": "two odd bridge leaves",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 350009
+    },
+    {
+      "n": 100000,
+      "mode": "zero",
+      "leaves": 20,
+      "extra_pairs": 50000,
+      "purpose": "zero-weight matching",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 350010
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320001,
+      "purpose": "Boundary and full-range parameters",
+      "input": "0 1 -1\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320002,
+      "purpose": "random",
+      "L": 12,
+      "n": 12,
+      "R": 5,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320003,
+      "purpose": "unit",
+      "L": 200,
+      "n": 200,
+      "R": 1,
+      "mode": "unit"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320004,
+      "purpose": "empty",
+      "L": 200,
+      "n": 150,
+      "R": 50,
+      "mode": "empty"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320005,
+      "purpose": "descending",
+      "L": 200,
+      "n": 200,
+      "R": -1,
+      "mode": "descending"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320006,
+      "purpose": "descending",
+      "L": 2000,
+      "n": 2000,
+      "R": -1,
+      "mode": "descending"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320007,
+      "purpose": "unit",
+      "L": 2000,
+      "n": 2000,
+      "R": 2000,
+      "mode": "unit"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320008,
+      "purpose": "random",
+      "L": 2000,
+      "n": 2000,
+      "R": 37,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320009,
+      "purpose": "ascending",
+      "L": 2000,
+      "n": 2000,
+      "R": 2000,
+      "mode": "ascending"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320010,
+      "purpose": "free",
+      "L": 2000,
+      "n": 2000,
+      "R": -1,
+      "mode": "free"
+    }
+  ]
+}

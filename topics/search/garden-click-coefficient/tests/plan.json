@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 1,
+      "A": 0,
+      "purpose": "single cell without achievements",
+      "expected": "0.0494021562500000000000000000000000000000000000000000000000000",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380001
+    },
+    {
+      "n": 1,
+      "m": 1,
+      "A": 1000,
+      "purpose": "single cell cannot combine bloom and clicks",
+      "expected": "0.0494021562500000000000000000000000000000000000000000000000000",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380002
+    },
+    {
+      "n": 1,
+      "m": 2,
+      "A": 1000,
+      "purpose": "two interacting cells",
+      "expected": "0.0976228921875000000000000000000000000000000000000000000000000",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380003
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "A": 0,
+      "purpose": "zero milk and full seven-type oracle",
+      "expected": "0.190604351456054687500000000000000000000000000000000000000000",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380004
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "A": 500,
+      "purpose": "two-dimensional adjacency",
+      "expected": "0.190604351456054687500000000000000000000000000000000000000000",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380005
+    },
+    {
+      "n": 1,
+      "m": 8,
+      "A": 0,
+      "purpose": "maximum line with zero achievements",
+      "expected": "0.363298437278306452846527099609375000000000000000000000000000",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380006
+    },
+    {
+      "n": 1,
+      "m": 8,
+      "A": 1000,
+      "purpose": "maximum line with milk",
+      "expected": "0.548594501366938404631818484678445706651198625584178609773476",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380007
+    },
+    {
+      "n": 2,
+      "m": 4,
+      "A": 1000,
+      "purpose": "maximum rectangular layout",
+      "expected": "0.585456787445308403452280316944247623139928375392836824154584",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380008
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "A": 200,
+      "purpose": "transposed rectangle",
+      "expected": "0.373479864608519025682653591502457857131958007812500000000000",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380009
+    },
+    {
+      "n": 2,
+      "m": 4,
+      "A": 700,
+      "purpose": "intermediate achievement count",
+      "expected": "0.433704009318642835258189800739025194422782845921649828629380",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380010
+    }
+  ]
+}

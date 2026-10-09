@@ -1,0 +1,35 @@
+# Local generated data and maintenance records
+/build/
+/review/
+/tmp/
+
+# Compiled programs and intermediate files (sample *.out files are versioned)
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.out.exe
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+/.venv/
+/.pytest_cache/
+
+# Editor, OS and temporary files
+/.vs/
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

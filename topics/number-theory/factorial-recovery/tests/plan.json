@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "zero",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "0! and an empty suffix",
+      "kind": "factorial",
+      "n": 0,
+      "missing": 15
+    },
+    {
+      "id": "one-full",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "No missing prefix",
+      "kind": "factorial",
+      "n": 1,
+      "missing": 0
+    },
+    {
+      "id": "small-no-suffix",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "K=0 at the last admissible factorial",
+      "kind": "factorial",
+      "n": 17,
+      "missing": 15
+    },
+    {
+      "id": "leading-zeros",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Suffix contains leading zeros",
+      "kind": "factorial",
+      "n": 20,
+      "missing": 15
+    },
+    {
+      "id": "small-prefix",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "One missing digit",
+      "kind": "factorial",
+      "n": 100,
+      "missing": 1
+    },
+    {
+      "id": "medium",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "Full 15-digit prefix",
+      "kind": "factorial",
+      "n": 10000,
+      "missing": 15
+    },
+    {
+      "id": "large",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "Long known suffix",
+      "kind": "factorial",
+      "n": 100000,
+      "missing": 15
+    },
+    {
+      "id": "maximum",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Maximum N and missing prefix",
+      "kind": "factorial",
+      "n": 500000,
+      "missing": 15
+    },
+    {
+      "id": "maximum-full",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "Maximum N with no missing prefix",
+      "kind": "factorial",
+      "n": 500000,
+      "missing": 0
+    }
+  ]
+}

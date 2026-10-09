@@ -1,0 +1,180 @@
+{
+  "cases": [
+    {
+      "id": "sample-growth",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "retained intensity and independent restarts",
+      "seed": 5200,
+      "sample": "01"
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small time with rational probabilities",
+      "seed": 5201,
+      "A": 5,
+      "B": 10,
+      "N": 5,
+      "M": 10,
+      "Q": 1000,
+      "times": [
+        0,
+        1,
+        2,
+        999,
+        1000
+      ]
+    },
+    {
+      "id": "one-way",
+      "kind": "one-way",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "non-diagonalizable 50-cell transition",
+      "seed": 5202,
+      "A": 1,
+      "B": 50,
+      "N": 1,
+      "M": 50,
+      "Q": 1000,
+      "times": [
+        0,
+        1,
+        49,
+        50,
+        1000
+      ]
+    },
+    {
+      "id": "time-zero",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "maximum additions with no evolution",
+      "seed": 5203,
+      "A": 5,
+      "B": 10,
+      "N": 5,
+      "M": 10,
+      "Q": 1000000,
+      "full_updates": true,
+      "times": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "exponent-regression",
+      "kind": "sample",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "fails exponent reduction modulo P-1",
+      "seed": 5204,
+      "sample": "02"
+    },
+    {
+      "id": "fixed-large-time",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "full dimension and 64-bit times",
+      "seed": 5205,
+      "A": 10,
+      "B": 5,
+      "N": 10,
+      "M": 5,
+      "Q": 1000,
+      "times": [
+        1000000008,
+        1000000009,
+        1000000000000000000,
+        999999999999999999,
+        0
+      ]
+    },
+    {
+      "id": "online-sum",
+      "kind": "sample",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "sum of output residues is not reduced again",
+      "seed": 5206,
+      "sample": "03"
+    },
+    {
+      "id": "maximum-additions",
+      "kind": "random",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "million rectangles; maximum field; online regions",
+      "seed": 5207,
+      "A": 1000,
+      "B": 1000,
+      "N": 5,
+      "M": 10,
+      "Q": 1000000,
+      "times": [
+        0,
+        1,
+        1000000008,
+        1000000000000000000,
+        999999999999999999
+      ]
+    },
+    {
+      "id": "online-identity",
+      "kind": "identity",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "ignored boundary probabilities and independent initial regions",
+      "seed": 5208,
+      "A": 1000,
+      "B": 1000,
+      "N": 1,
+      "M": 50,
+      "Q": 1000,
+      "times": [
+        0,
+        1,
+        1000000009,
+        1000000000000000000,
+        0
+      ]
+    },
+    {
+      "id": "huge-dense",
+      "kind": "random",
+      "group": 5,
+      "score_percent": 5,
+      "purpose": "1000-digit exponents and exact upper bound 10^1000",
+      "seed": 5209,
+      "A": 1000,
+      "B": 1000,
+      "N": 5,
+      "M": 10,
+      "Q": 1000,
+      "huge": true
+    },
+    {
+      "id": "zero-transition",
+      "kind": "zero-scalar",
+      "group": 5,
+      "score_percent": 5,
+      "purpose": "scalar transition is zero modulo P; distinguish T=0",
+      "seed": 5210,
+      "A": 2,
+      "B": 2,
+      "N": 1,
+      "M": 1,
+      "Q": 10,
+      "huge": true
+    }
+  ]
+}

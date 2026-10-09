@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; random.Random with fixed seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301700,
+      "purpose": "empty",
+      "mode": "empty",
+      "length": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301701,
+      "purpose": "zeros",
+      "mode": "zeros",
+      "length": 1
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301702,
+      "purpose": "zeros",
+      "mode": "zeros",
+      "length": 100000
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301703,
+      "purpose": "upper",
+      "mode": "upper",
+      "length": 100000
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301704,
+      "purpose": "lower",
+      "mode": "lower",
+      "length": 100000
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301705,
+      "purpose": "cents",
+      "mode": "cents",
+      "length": 100000
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301706,
+      "purpose": "large",
+      "mode": "large",
+      "length": 100000
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301707,
+      "purpose": "integers",
+      "mode": "integers",
+      "length": 100000
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301708,
+      "purpose": "mixed",
+      "mode": "mixed",
+      "length": 99999
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301709,
+      "purpose": "mixed",
+      "mode": "mixed",
+      "length": 100000
+    }
+  ]
+}

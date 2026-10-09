@@ -1,0 +1,337 @@
+{
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "GCC 16.2.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra",
+  "problems": {
+    "town-editing-simoleons-2": {
+      "sources": {
+        "alternative-forward.cpp": "789bb5cf54960fcb30fc95e78f27721d6ec39cd4675ca5ea07a7f5d938ef0fa2",
+        "std.cpp": "b9bf50d258960be3bfc0f704e77ca2d6d06bbfa60a0255d47aa8f7c93388c890"
+      },
+      "binaries": {
+        "alternative-forward": "d329967374f09bec3691c613d831ff063209c4b2dbd2c059723b861946b6d7e0",
+        "std": "000c4f338e661ef5b95d702089872c4379df0b797ae4f3a9fa1706fd6d773aef"
+      },
+      "generator_sha256": "f2e9aaf23065afeb05bebbd9962374632dad5ff8b9fa7cacc0b9c837df0b19a1",
+      "plan_sha256": "ba504aa48f6972e2e5a7379b9106c0700cee9496229435181d0222ee3a996c16",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "05e0c7d7e2cc0a1c6d4fe0c3f533531c1c0f52a57486f20b26439bd54aa8fd62",
+          "verification_method": "exact expanded-population Fraction grid",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.013398900046013296,
+                0.014385299989953637,
+                0.014167999965138733,
+                0.013117099995724857,
+                0.012893499922938645
+              ],
+              "peak_working_set_bytes": 5292032,
+              "median_seconds": 0.013398900046013296
+            },
+            "std": {
+              "seconds": [
+                0.013415599940344691,
+                0.01816430001053959,
+                0.013966500060632825,
+                0.012876900029368699,
+                0.014011899940669537
+              ],
+              "peak_working_set_bytes": 5287936,
+              "median_seconds": 0.013966500060632825
+            }
+          },
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "02",
+          "input_sha256": "b541707310d7a0c7fe0edeac4c923062a2c43581c5fe5abe48ec934cf81e583b",
+          "verification_method": "exact expanded-population Fraction grid",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.012950100004673004,
+                0.013061100034974515,
+                0.01224700000602752,
+                0.012426699977368116,
+                0.01660730002913624
+              ],
+              "peak_working_set_bytes": 5287936,
+              "median_seconds": 0.012950100004673004
+            },
+            "std": {
+              "seconds": [
+                0.015561599982902408,
+                0.013897700002416968,
+                0.011766999959945679,
+                0.011492999969050288,
+                0.016602199990302324
+              ],
+              "peak_working_set_bytes": 5283840,
+              "median_seconds": 0.013897700002416968
+            }
+          },
+          "output_sha256": "aa67a169b0bba217aa0aa88a65346920c84c42447c36ba5f7ea65f422c1fe5d8"
+        },
+        {
+          "id": "03",
+          "input_sha256": "f8ef228520235994f71ee3e1e23a6224899db1b1c2ae5f01b938eaba45e58432",
+          "verification_method": "exact expanded-population Fraction grid",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.011572399991564453,
+                0.0145819999743253,
+                0.013256400008685887,
+                0.012577699963003397,
+                0.013634299975819886
+              ],
+              "peak_working_set_bytes": 5292032,
+              "median_seconds": 0.013256400008685887
+            },
+            "std": {
+              "seconds": [
+                0.012848400045186281,
+                0.013971899985335767,
+                0.011776900035329163,
+                0.013131699990481138,
+                0.012297899927943945
+              ],
+              "peak_working_set_bytes": 5287936,
+              "median_seconds": 0.012848400045186281
+            }
+          },
+          "output_sha256": "ff5a252da8aa501b235524e14438ab02102128d81908701fc96b2da57752210a"
+        },
+        {
+          "id": "04",
+          "input_sha256": "0a04aa23c16b5e10e3d3cbc5e8aca4b99b220ae2d12a6f3c4c267cebb2b89f84",
+          "verification_method": "no richer outsider: initial wealth is optimal",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.634909600019455,
+                0.5321383000118658,
+                0.5476816999725997,
+                0.504759700037539,
+                0.5294486000202596
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.5321383000118658
+            },
+            "std": {
+              "seconds": [
+                0.5379217999288812,
+                0.5506888999370858,
+                0.5300311999162659,
+                0.518794999923557,
+                0.5287173000397161
+              ],
+              "peak_working_set_bytes": 21172224,
+              "median_seconds": 0.5300311999162659
+            }
+          },
+          "output_sha256": "085c348f64a3b543e973a33749e90ba20847b99016a87e5228847597d61ce582"
+        },
+        {
+          "id": "05",
+          "input_sha256": "cc729b126f2759e9b4ccb6c903d0ce4b81718af44eadb777acacd20fc3d44e09",
+          "verification_method": "generic matrix exponentiation on grouped equal means",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                1.2744653000263497,
+                1.352970500010997,
+                1.2927785000065342,
+                1.2790061000268906,
+                1.3230903999647126
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 1.2927785000065342
+            },
+            "std": {
+              "seconds": [
+                0.7638499999884516,
+                0.7734693000093102,
+                0.7905479000182822,
+                0.7779322999995202,
+                0.7726021000416949
+              ],
+              "peak_working_set_bytes": 29171712,
+              "median_seconds": 0.7734693000093102
+            }
+          },
+          "output_sha256": "abed9320f2c94c0990b031b410252b510ea2bbb61c2ad00b19973f9109f45f56"
+        },
+        {
+          "id": "06",
+          "input_sha256": "658a7fc3bc0fe2c31b0be93f99414ff86d471ac6a0d1c11ec889b09502586349",
+          "verification_method": "generic matrix exponentiation on grouped equal means",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                1.246250499971211,
+                1.28976660000626,
+                1.2665408999891952,
+                1.2447292000288144,
+                1.271304199937731
+              ],
+              "peak_working_set_bytes": 13164544,
+              "median_seconds": 1.2665408999891952
+            },
+            "std": {
+              "seconds": [
+                0.6711472000461072,
+                0.7070537999970838,
+                0.6856149999657646,
+                0.6746295000193641,
+                0.6972360999789089
+              ],
+              "peak_working_set_bytes": 14127104,
+              "median_seconds": 0.6856149999657646
+            }
+          },
+          "output_sha256": "cc53f3784af290219db0752e9d32752a5ae705d5b8e9a29afe13607d93f0e3e8"
+        },
+        {
+          "id": "07",
+          "input_sha256": "c1ad2f8ee49d0f6f5a79e199833bedbf44db741cefef34ecac497c3b2a13ec65",
+          "verification_method": "backward coefficients versus forward batch convolution; proof-supported full-size cross-check",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                1.3279516000766307,
+                1.3409532000077888,
+                1.3123649000190198,
+                1.3244002000428736,
+                1.3423836999572814
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 1.3279516000766307
+            },
+            "std": {
+              "seconds": [
+                0.7067112000659108,
+                0.7129756999202073,
+                0.6987668999936432,
+                0.7285773999756202,
+                0.7086724999826401
+              ],
+              "peak_working_set_bytes": 29171712,
+              "median_seconds": 0.7086724999826401
+            }
+          },
+          "output_sha256": "2f04b7763d4c993eecc898586cf0b1d7a2c8ad198c07bb49cfc0b328ea20a75a"
+        },
+        {
+          "id": "08",
+          "input_sha256": "2b4f5aeea880bde1176d66ba056bda95714ab94e289f399b01fce58a32c18d0b",
+          "verification_method": "backward coefficients versus forward batch convolution; proof-supported full-size cross-check",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                1.3433272000402212,
+                1.3372458000667393,
+                1.3936785999685526,
+                1.3842869999352843,
+                1.378412399906665
+              ],
+              "peak_working_set_bytes": 13168640,
+              "median_seconds": 1.378412399906665
+            },
+            "std": {
+              "seconds": [
+                0.7798735999967903,
+                0.7861129998927936,
+                0.7811372000724077,
+                0.7856967999832705,
+                0.781931999954395
+              ],
+              "peak_working_set_bytes": 29167616,
+              "median_seconds": 0.781931999954395
+            }
+          },
+          "output_sha256": "c0d7320a1eaaf2ba40cd07c6cce75bcf8c7add48aa263090fcfc14e027464e4c"
+        },
+        {
+          "id": "09",
+          "input_sha256": "2ec1f861b5158dd4895004576e55ea018b00be3eb2bdc8f51535ed3e9b2ebc0b",
+          "verification_method": "generic matrix exponentiation on grouped equal means",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.6246948000043631,
+                0.6031882000388578,
+                0.6024230000330135,
+                0.6018259000265971,
+                0.5948706999188289
+              ],
+              "peak_working_set_bytes": 9203712,
+              "median_seconds": 0.6024230000330135
+            },
+            "std": {
+              "seconds": [
+                0.5441242000088096,
+                0.5689631000859663,
+                0.5450846999883652,
+                0.5518299000104889,
+                0.5491295999381691
+              ],
+              "peak_working_set_bytes": 25169920,
+              "median_seconds": 0.5491295999381691
+            }
+          },
+          "output_sha256": "2a01cd266c1b9315910144fd1923067dc6b22664a4f3bc797aacddb215f4d678"
+        },
+        {
+          "id": "10",
+          "input_sha256": "d01e332d86d3f072a3b6e6b81a34375dcb76ef0272e8b28655c2f8a0019b853e",
+          "verification_method": "generic matrix exponentiation on grouped equal means",
+          "programs": {
+            "alternative-forward": {
+              "seconds": [
+                0.4789271999616176,
+                0.49893900007009506,
+                0.4799645999446511,
+                0.4351084000663832,
+                0.43487560003995895
+              ],
+              "peak_working_set_bytes": 5296128,
+              "median_seconds": 0.4789271999616176
+            },
+            "std": {
+              "seconds": [
+                0.45282999996561557,
+                0.46317480003926903,
+                0.45856739999726415,
+                0.47005690005607903,
+                0.45699550001882017
+              ],
+              "peak_working_set_bytes": 21217280,
+              "median_seconds": 0.45856739999726415
+            }
+          },
+          "output_sha256": "e21edaae5af504bab30bb2c46a5aae899a8182949fe29e1053a9d403f86dfd8a"
+        }
+      ],
+      "summary": {
+        "alternative-forward": {
+          "slowest_median_seconds": 1.378412399906665,
+          "peak_working_set_bytes": 13168640,
+          "passes_estimated_limit": true
+        },
+        "std": {
+          "slowest_median_seconds": 0.781931999954395,
+          "peak_working_set_bytes": 29171712,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 2.0
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 100,
+      "shape": "equal",
+      "mode": "mixed",
+      "purpose": "equal mixed",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 340001
+    },
+    {
+      "n": 50,
+      "m": 100,
+      "shape": "random",
+      "mode": "mixed",
+      "purpose": "random mixed",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 340002
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "shape": "increasing",
+      "mode": "mixed",
+      "purpose": "increasing mixed",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 340003
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "shape": "decreasing",
+      "mode": "mixed",
+      "purpose": "decreasing mixed",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 340004
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "shape": "random",
+      "mode": "mixed",
+      "purpose": "random mixed",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 340005
+    },
+    {
+      "n": 50000,
+      "m": 50000,
+      "shape": "decreasing",
+      "mode": "mixed",
+      "purpose": "decreasing mixed",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 340006
+    },
+    {
+      "n": 50000,
+      "m": 50000,
+      "shape": "equal",
+      "mode": "mixed",
+      "purpose": "equal mixed",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 340007
+    },
+    {
+      "n": 50000,
+      "m": 50000,
+      "shape": "random",
+      "mode": "mixed",
+      "purpose": "random mixed",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 340008
+    },
+    {
+      "n": 50000,
+      "m": 50000,
+      "shape": "random",
+      "mode": "updates",
+      "purpose": "random updates",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 340009
+    },
+    {
+      "n": 50000,
+      "m": 50000,
+      "shape": "increasing",
+      "mode": "mixed",
+      "purpose": "increasing mixed",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 340010
+    }
+  ]
+}

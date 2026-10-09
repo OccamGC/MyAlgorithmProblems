@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="854" height="456" viewBox="0 0 854 456" role="img" aria-labelledby="title description">
+  <title id="title">Reflection and counterclockwise rotation</title>
+  <desc id="description">Both panels start at P=(2,1). Reflection in x=y gives Q=(1,2), and a 90 degree counterclockwise rotation gives Q=(-1,2).</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="854" height="456" fill="white" stroke="none" />
+  <text x="211" y="31" fill="#20354b" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">(A)</text>
+  <line x1="82" y1="119" x2="340" y2="119" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="119" x2="82" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="162" x2="340" y2="162" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="125" y1="119" x2="125" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="205" x2="340" y2="205" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="168" y1="119" x2="168" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="248" x2="340" y2="248" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="211" y1="119" x2="211" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="291" x2="340" y2="291" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="254" y1="119" x2="254" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="334" x2="340" y2="334" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="297" y1="119" x2="297" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="377" x2="340" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="340" y1="119" x2="340" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="82" y1="248" x2="355" y2="248" stroke="#20354b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <line x1="211" y1="377" x2="211" y2="104" stroke="#20354b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <text x="368" y="254" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">x</text>
+  <text x="211" y="91" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">y</text>
+  <text x="125" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="197" y="340" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="168" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="197" y="297" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="254" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="197" y="211" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="297" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="197" y="168" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="225" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <line x1="82" y1="377" x2="340" y2="119" stroke="#a85a04" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 5" />
+  <text x="283" y="109" fill="#a85a04" font-size="19" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">x = y</text>
+  <line x1="288" y1="196" x2="264" y2="172" stroke="#1268b3" stroke-width="2.5" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <circle cx="297" cy="205" r="7" fill="#1268b3" stroke="#1268b3" stroke-width="2" />
+  <rect x="247" y="155" width="14" height="14" fill="#cceae4" stroke="#086d61" stroke-width="2" />
+  <text x="324" y="210" fill="#1268b3" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">P</text>
+  <text x="231" y="147" fill="#086d61" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">Q</text>
+  <text x="211" y="421" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,1) → (1,2)</text>
+  <text x="639" y="31" fill="#20354b" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">(B)</text>
+  <line x1="510" y1="119" x2="768" y2="119" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="119" x2="510" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="162" x2="768" y2="162" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="553" y1="119" x2="553" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="205" x2="768" y2="205" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="596" y1="119" x2="596" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="248" x2="768" y2="248" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="639" y1="119" x2="639" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="291" x2="768" y2="291" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="682" y1="119" x2="682" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="334" x2="768" y2="334" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="725" y1="119" x2="725" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="377" x2="768" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="768" y1="119" x2="768" y2="377" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="510" y1="248" x2="783" y2="248" stroke="#20354b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <line x1="639" y1="377" x2="639" y2="104" stroke="#20354b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-ink)" />
+  <text x="796" y="254" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">x</text>
+  <text x="639" y="91" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">y</text>
+  <text x="553" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="625" y="340" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-2</text>
+  <text x="596" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="625" y="297" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">-1</text>
+  <text x="682" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="625" y="211" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <text x="725" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="625" y="168" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <text x="653" y="268" fill="#20354b" font-size="16" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">0</text>
+  <path d="M 725 195 A 96.32000000000001 96.32000000000001 0 0 0 608 158" stroke="#1268b3" stroke-width="2.5" fill="none" marker-end="url(#arrow-blue)" />
+  <text x="658" y="143" fill="#1268b3" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">90°</text>
+  <circle cx="725" cy="205" r="7" fill="#1268b3" stroke="#1268b3" stroke-width="2" />
+  <rect x="589" y="155" width="14" height="14" fill="#cceae4" stroke="#086d61" stroke-width="2" />
+  <text x="752" y="210" fill="#1268b3" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">P</text>
+  <text x="573" y="147" fill="#086d61" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">Q</text>
+  <text x="639" y="421" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2,1) → (-1,2)</text>
+</svg>

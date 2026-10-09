@@ -1,0 +1,119 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "line-maximum",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "line maximum",
+      "n": 1,
+      "m": 1000,
+      "tp": 0,
+      "vines": 450,
+      "seed": 202609290900
+    },
+    {
+      "id": "short-line-maximum",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "short line maximum",
+      "n": 1,
+      "m": 19,
+      "tp": 0,
+      "vines": 10,
+      "seed": 202609290901
+    },
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290902
+    },
+    {
+      "id": "maximum-grid",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "maximum grid",
+      "n": 25,
+      "m": 40,
+      "tp": 0,
+      "vines": 470,
+      "seed": 202609290903
+    },
+    {
+      "id": "maximum-narrow",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "maximum narrow",
+      "n": 2,
+      "m": 500,
+      "tp": 0,
+      "vines": 450,
+      "seed": 202609290904
+    },
+    {
+      "id": "line-minimum",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "line minimum",
+      "n": 1,
+      "m": 100,
+      "tp": 1,
+      "vines": 18,
+      "seed": 202609290905
+    },
+    {
+      "id": "isolated-minimum",
+      "kind": "isolated",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "isolated minimum",
+      "n": 1,
+      "m": 35,
+      "tp": 1,
+      "vines": 18,
+      "seed": 202609290906
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290907
+    },
+    {
+      "id": "dense-minimum",
+      "kind": "random",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "dense minimum",
+      "n": 6,
+      "m": 6,
+      "tp": 1,
+      "vines": 18,
+      "seed": 202609290908
+    },
+    {
+      "id": "full-minimum",
+      "kind": "random",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "full minimum",
+      "n": 10,
+      "m": 10,
+      "tp": 1,
+      "vines": 18,
+      "seed": 202609290909
+    }
+  ]
+}

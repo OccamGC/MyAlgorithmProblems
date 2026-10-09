@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301700,
+      "purpose": "zero",
+      "n": 0,
+      "initial": "a",
+      "mode": "zero",
+      "queries": "none"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301701,
+      "purpose": "zero",
+      "n": 0,
+      "initial": "Ab09",
+      "mode": "zero"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301702,
+      "purpose": "wrap",
+      "n": 10,
+      "initial": "A",
+      "mode": "wrap"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301703,
+      "purpose": "random",
+      "n": 70,
+      "initial": "0123456789",
+      "mode": "random",
+      "queries": "last"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301704,
+      "purpose": "wrap",
+      "n": 70,
+      "initial": "0123456789",
+      "mode": "wrap"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301705,
+      "purpose": "zero",
+      "n": 70,
+      "initial": "aaaaaaaaaa",
+      "mode": "zero"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301706,
+      "purpose": "random",
+      "n": 70,
+      "initial": "Ab9",
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301707,
+      "purpose": "random",
+      "n": 70,
+      "initial": "Z",
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301708,
+      "purpose": "random",
+      "n": 70,
+      "initial": "0123456789",
+      "mode": "random",
+      "queries": "first"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301709,
+      "purpose": "random",
+      "n": 69,
+      "initial": "aZ09bY18cX",
+      "mode": "random"
+    }
+  ]
+}

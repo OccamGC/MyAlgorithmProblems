@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320001,
+      "purpose": "random",
+      "n": 2,
+      "m": 10,
+      "shape": "chain",
+      "state": "on",
+      "mode": "random"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320002,
+      "purpose": "random",
+      "n": 30,
+      "m": 100,
+      "shape": "random",
+      "state": "random",
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320003,
+      "purpose": "leaves",
+      "n": 2000,
+      "m": 2000,
+      "shape": "star",
+      "state": "on",
+      "mode": "leaves"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320004,
+      "purpose": "random",
+      "n": 2000,
+      "m": 2000,
+      "shape": "chain",
+      "state": "random",
+      "mode": "random"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320005,
+      "purpose": "points",
+      "n": 2000,
+      "m": 2000,
+      "shape": "balanced",
+      "state": "on",
+      "mode": "points"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320006,
+      "purpose": "late-cut",
+      "n": 100000,
+      "m": 200000,
+      "shape": "chain",
+      "state": "on",
+      "mode": "late-cut"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320007,
+      "purpose": "leaves",
+      "n": 100000,
+      "m": 200000,
+      "shape": "star",
+      "state": "random",
+      "mode": "leaves"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320008,
+      "purpose": "points",
+      "n": 100000,
+      "m": 200000,
+      "shape": "balanced",
+      "state": "on",
+      "mode": "points"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320009,
+      "purpose": "random",
+      "n": 100000,
+      "m": 200000,
+      "shape": "random",
+      "state": "random",
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320010,
+      "purpose": "random",
+      "n": 100000,
+      "m": 200000,
+      "shape": "chain",
+      "state": "off",
+      "mode": "random"
+    }
+  ]
+}

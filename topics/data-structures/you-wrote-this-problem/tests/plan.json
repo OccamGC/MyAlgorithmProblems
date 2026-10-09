@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 100,
+      "mode": "mixed",
+      "alphabet": 1,
+      "purpose": "mixed",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 340001
+    },
+    {
+      "n": 50,
+      "m": 100,
+      "mode": "mixed",
+      "alphabet": 4,
+      "purpose": "mixed",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 340002
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "mode": "mixed",
+      "alphabet": 9,
+      "purpose": "mixed",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 340003
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "mode": "unique",
+      "alphabet": 100,
+      "purpose": "unique",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 340004
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "mode": "constant",
+      "alphabet": 1,
+      "purpose": "constant",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 340005
+    },
+    {
+      "n": 100000,
+      "m": 10000,
+      "mode": "constant",
+      "alphabet": 1,
+      "purpose": "constant",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 340006
+    },
+    {
+      "n": 100000,
+      "m": 10000,
+      "mode": "mixed",
+      "alphabet": 8,
+      "purpose": "mixed",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 340007
+    },
+    {
+      "n": 100000,
+      "m": 10000,
+      "mode": "updates",
+      "alphabet": 1000000000,
+      "purpose": "updates",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 340008
+    },
+    {
+      "n": 100000,
+      "m": 10000,
+      "mode": "unique",
+      "alphabet": 1000000000,
+      "purpose": "unique",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 340009
+    },
+    {
+      "n": 100000,
+      "m": 10000,
+      "mode": "mixed",
+      "alphabet": 32,
+      "purpose": "mixed",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 340010
+    }
+  ]
+}

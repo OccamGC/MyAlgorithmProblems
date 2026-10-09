@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 30,
+      "extra_conditions": "n <= 20"
+    },
+    {
+      "id": 2,
+      "score_percent": 40,
+      "extra_conditions": "n <= 2000"
+    },
+    {
+      "id": 3,
+      "score_percent": 30,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012200,
+      "purpose": "random; boundary/structure coverage",
+      "n": 0,
+      "mode": "random"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012201,
+      "purpose": "ties; boundary/structure coverage",
+      "n": 20,
+      "mode": "ties"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012202,
+      "purpose": "random; boundary/structure coverage",
+      "n": 20,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012203,
+      "purpose": "increasing; boundary/structure coverage",
+      "n": 2000,
+      "mode": "increasing"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012204,
+      "purpose": "decreasing; boundary/structure coverage",
+      "n": 2000,
+      "mode": "decreasing"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012205,
+      "purpose": "ties; boundary/structure coverage",
+      "n": 2000,
+      "mode": "ties"
+    },
+    {
+      "id": "07",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012206,
+      "purpose": "same-attack; boundary/structure coverage",
+      "n": 2000,
+      "mode": "same-attack"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012207,
+      "purpose": "decreasing; boundary/structure coverage",
+      "n": 1000000,
+      "mode": "decreasing"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012208,
+      "purpose": "equal; boundary/structure coverage",
+      "n": 1000000,
+      "mode": "equal"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012209,
+      "purpose": "random; boundary/structure coverage",
+      "n": 1000000,
+      "mode": "random"
+    }
+  ]
+}

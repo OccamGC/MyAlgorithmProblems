@@ -1,0 +1,158 @@
+{
+  "cases": [
+    {
+      "id": "single",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "empty cofactor and empty deletion sequence",
+      "seed": 5300,
+      "sample": "04",
+      "mod": 2
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small graph suitable for spanning-tree enumeration",
+      "seed": 5301,
+      "N": 10,
+      "M": 10,
+      "K": 8,
+      "mod": 1000000007
+    },
+    {
+      "id": "radius-zero",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "overlapping buildings require radius zero",
+      "seed": 5302,
+      "sample": "03",
+      "mod": 1000000007
+    },
+    {
+      "id": "small-ties",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "many equal distances and repeated thresholds",
+      "seed": 5303,
+      "N": 3,
+      "M": 3,
+      "K": 8,
+      "mod": 97
+    },
+    {
+      "id": "maximum-buildings",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "200 buildings and every threshold",
+      "seed": 5304,
+      "N": 1000,
+      "M": 1000,
+      "K": 200,
+      "mod": 1000000007,
+      "all_thresholds": true
+    },
+    {
+      "id": "all-overlap",
+      "kind": "overlap",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "200 overlapping buildings form a star",
+      "seed": 5305,
+      "N": 1000,
+      "M": 1000,
+      "K": 200,
+      "mod": 1000000007
+    },
+    {
+      "id": "repeated-thresholds",
+      "kind": "star",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "duplicate requests must not create parallel edges",
+      "seed": 5306,
+      "N": 1000,
+      "M": 1000,
+      "K": 200,
+      "mod": 1000000007
+    },
+    {
+      "id": "million-column-line",
+      "kind": "line",
+      "group": 3,
+      "score_percent": 5,
+      "purpose": "million-column geometry without grid allocation",
+      "seed": 5307,
+      "N": 1,
+      "M": 1000000,
+      "K": 200,
+      "mod": 1000000007,
+      "all_thresholds": true
+    },
+    {
+      "id": "complete-graph",
+      "kind": "clique",
+      "group": 3,
+      "score_percent": 5,
+      "purpose": "known Cayley count on 20 vertices",
+      "seed": 5308,
+      "N": 1,
+      "M": 1000000,
+      "K": 20,
+      "mod": 1000000007
+    },
+    {
+      "id": "tall-field",
+      "kind": "random",
+      "group": 4,
+      "score_percent": 10,
+      "purpose": "maximum field height and 64-bit construction times",
+      "seed": 5309,
+      "N": 500000,
+      "M": 2,
+      "K": 200,
+      "mod": 1000000007,
+      "all_thresholds": true
+    },
+    {
+      "id": "composite-triangle",
+      "kind": "sample",
+      "group": 5,
+      "score_percent": 5,
+      "purpose": "noninvertible diagonal pivot modulo 12",
+      "seed": 5310,
+      "sample": "02",
+      "mod": 12
+    },
+    {
+      "id": "composite-clique",
+      "kind": "clique",
+      "group": 5,
+      "score_percent": 5,
+      "purpose": "composite modulus and determinant row-swap signs",
+      "seed": 5311,
+      "N": 1,
+      "M": 1000000,
+      "K": 12,
+      "mod": 1000000500
+    },
+    {
+      "id": "composite-maximum",
+      "kind": "random",
+      "group": 5,
+      "score_percent": 10,
+      "purpose": "full-scale graph with composite modulus",
+      "seed": 5312,
+      "N": 1000,
+      "M": 1000,
+      "K": 200,
+      "mod": 1000000000,
+      "all_thresholds": true
+    }
+  ]
+}

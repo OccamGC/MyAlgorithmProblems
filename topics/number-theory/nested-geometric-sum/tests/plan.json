@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012401,
+      "mode": "literal",
+      "input": "1 1 1\n",
+      "purpose": "minimum"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012402,
+      "mode": "literal",
+      "input": "17 3 8\n",
+      "purpose": "m recurrence"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012403,
+      "mode": "literal",
+      "input": "8 1000000 999999999\n",
+      "purpose": "n convolution kernel"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012404,
+      "mode": "literal",
+      "input": "2000000000 1000000 2000000000\n",
+      "purpose": "all upper bounds"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012405,
+      "mode": "literal",
+      "input": "2000000000 1000000 1\n",
+      "purpose": "unit base full m"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012406,
+      "mode": "literal",
+      "input": "1000000 1000000 2\n",
+      "purpose": "equal branch boundary"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012407,
+      "mode": "literal",
+      "input": "1000001 1000000 1073741823\n",
+      "purpose": "recurrence branch boundary"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012408,
+      "mode": "literal",
+      "input": "999999 1000000 1\n",
+      "purpose": "kernel unit base"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012409,
+      "mode": "literal",
+      "input": "2000000000 1 2\n",
+      "purpose": "huge n one layer"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012410,
+      "mode": "literal",
+      "input": "5000 5001 2000000000\n",
+      "purpose": "kernel moderate independent powers"
+    }
+  ]
+}

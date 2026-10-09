@@ -1,0 +1,105 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "long-row",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "checker",
+      "seed": 202609291000,
+      "purpose": "Transpose the longest allowed row; path optimum.",
+      "n": 1,
+      "m": 5000
+    },
+    {
+      "id": "long-column-pairs",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "pairs",
+      "seed": 202609291001,
+      "purpose": "Independent forced edges separated by obstacles.",
+      "n": 5000,
+      "m": 1
+    },
+    {
+      "id": "four-columns",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "checker",
+      "seed": 202609291002,
+      "purpose": "Long narrow board with many vines.",
+      "n": 1250,
+      "m": 4
+    },
+    {
+      "id": "four-rows",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "random",
+      "seed": 202609291003,
+      "purpose": "Transpose a random narrow board.",
+      "n": 4,
+      "m": 1250
+    },
+    {
+      "id": "striped-board",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "stripes",
+      "seed": 202609291004,
+      "purpose": "Only vertical vine-to-empty edges.",
+      "n": 1250,
+      "m": 4
+    },
+    {
+      "id": "maximum-checker",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "checker",
+      "seed": 202609291005,
+      "purpose": "Full area and width; many alternating matching choices.",
+      "n": 625,
+      "m": 8
+    },
+    {
+      "id": "maximum-transposed",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "checker",
+      "seed": 202609291006,
+      "purpose": "Transpose at the maximum area and width.",
+      "n": 8,
+      "m": 625
+    },
+    {
+      "id": "maximum-random",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "random",
+      "seed": 202609291007,
+      "purpose": "Obstacles, same-type neighbors and disconnected components.",
+      "n": 625,
+      "m": 8
+    },
+    {
+      "id": "no-empty-cells",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "vines",
+      "seed": 202609291008,
+      "purpose": "No legal growth despite many vines.",
+      "n": 625,
+      "m": 8
+    },
+    {
+      "id": "maximum-pairs",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "pairs",
+      "seed": 202609291009,
+      "purpose": "Many independent components with an exact answer.",
+      "n": 625,
+      "m": 8
+    }
+  ]
+}

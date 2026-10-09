@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012701,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "2 0\n\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012702,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "2 8\n00011011\n"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012703,
+      "purpose": "batch",
+      "mode": "queue",
+      "n": 2,
+      "m": 4000000,
+      "shape": "batch"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012704,
+      "purpose": "random",
+      "mode": "queue",
+      "n": 2,
+      "m": 4000000,
+      "shape": "random"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012705,
+      "purpose": "batch",
+      "mode": "queue",
+      "n": 1000000000,
+      "m": 4000000,
+      "shape": "batch"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012706,
+      "purpose": "push",
+      "mode": "queue",
+      "n": 2,
+      "m": 4000000,
+      "shape": "push"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012707,
+      "purpose": "pop",
+      "mode": "queue",
+      "n": 2,
+      "m": 4000000,
+      "shape": "pop"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012708,
+      "purpose": "0001100111",
+      "mode": "queue",
+      "n": 3,
+      "m": 4000000,
+      "shape": "0001100111"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012709,
+      "purpose": "01",
+      "mode": "queue",
+      "n": 2,
+      "m": 4000000,
+      "shape": "01"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012710,
+      "purpose": "random",
+      "mode": "queue",
+      "n": 50,
+      "m": 4000000,
+      "shape": "random"
+    }
+  ]
+}

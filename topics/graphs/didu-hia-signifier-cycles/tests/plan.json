@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011900,
+      "purpose": "self",
+      "n": 0,
+      "mode": "self",
+      "relabel": false
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011901,
+      "purpose": "self",
+      "n": 1,
+      "mode": "self",
+      "relabel": false
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011902,
+      "purpose": "cycle",
+      "n": 100000,
+      "mode": "cycle",
+      "relabel": false
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011903,
+      "purpose": "chain",
+      "n": 100000,
+      "mode": "chain",
+      "relabel": false
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011904,
+      "purpose": "tail-cycle",
+      "n": 100000,
+      "mode": "tail-cycle",
+      "relabel": true
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011905,
+      "purpose": "star",
+      "n": 100000,
+      "mode": "star",
+      "relabel": true
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011906,
+      "purpose": "pairs",
+      "n": 100000,
+      "mode": "pairs",
+      "relabel": true
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011907,
+      "purpose": "self",
+      "n": 100000,
+      "mode": "self",
+      "relabel": false
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011908,
+      "purpose": "random",
+      "n": 100000,
+      "mode": "random",
+      "relabel": false
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011909,
+      "purpose": "chain",
+      "n": 99999,
+      "mode": "chain",
+      "relabel": true
+    }
+  ]
+}

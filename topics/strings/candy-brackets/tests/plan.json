@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 20,
+      "extra_conditions": "N + M <= 100"
+    },
+    {
+      "id": 2,
+      "score_percent": 20,
+      "extra_conditions": "All weights are nonnegative"
+    },
+    {
+      "id": 3,
+      "score_percent": 20,
+      "extra_conditions": "Every element has type 2"
+    },
+    {
+      "id": 4,
+      "score_percent": 40,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202610020001,
+      "n": 0,
+      "m": 0,
+      "mode": "random",
+      "weights": "signed",
+      "purpose": "Empty initial string and no operations"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202610020002,
+      "n": 2,
+      "m": 0,
+      "mode": "manual",
+      "weights": "signed",
+      "purpose": "A negative prefix must be excluded",
+      "initial": [
+        [
+          2,
+          -10
+        ],
+        [
+          2,
+          100
+        ]
+      ],
+      "operations": []
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202610020003,
+      "n": 1,
+      "m": 7,
+      "mode": "manual",
+      "weights": "signed",
+      "purpose": "Negative wrappers, interior optimum, legal boundary summaries and both insertion ends",
+      "initial": [
+        [
+          2,
+          10
+        ]
+      ],
+      "operations": [
+        [
+          0,
+          0,
+          -8
+        ],
+        [
+          1,
+          1,
+          -9
+        ],
+        [
+          0,
+          2,
+          7
+        ],
+        [
+          1,
+          2,
+          20
+        ],
+        [
+          1,
+          2,
+          -40
+        ],
+        [
+          0,
+          1,
+          100
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 5,
+      "seed": 202610020004,
+      "n": 50,
+      "m": 50,
+      "mode": "random",
+      "weights": "extremes",
+      "purpose": "Small signed cases, zero weights and 64-bit boundaries"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 5,
+      "seed": 202610020005,
+      "n": 0,
+      "m": 1000000,
+      "mode": "random",
+      "weights": "positive",
+      "purpose": "Nonnegative compatibility from an empty string"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": 5,
+      "seed": 202610020006,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "candy",
+      "weights": "maximum",
+      "purpose": "Maximum answer 8000000000000000 and both ends"
+    },
+    {
+      "id": "07",
+      "group": 2,
+      "score_percent": 5,
+      "seed": 202610020007,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "nested",
+      "weights": "positive",
+      "purpose": "Deep matching blocks and alternating external brackets"
+    },
+    {
+      "id": "08",
+      "group": 2,
+      "score_percent": 5,
+      "seed": 202610020008,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "unmatched",
+      "weights": "positive",
+      "purpose": "Maximum deque size: two million unmatched brackets"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 5,
+      "seed": 202610020009,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "candy",
+      "weights": "negative",
+      "purpose": "All negative; empty answer and total -8000000000000000"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 5,
+      "seed": 202610020010,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "candy",
+      "weights": "alternating",
+      "purpose": "Alternating signs; prefix/suffix distinction at both ends"
+    },
+    {
+      "id": "11",
+      "group": 3,
+      "score_percent": 5,
+      "seed": 202610020011,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "candy",
+      "weights": "signed",
+      "purpose": "Ordinary maximum-subarray special case with random signed weights"
+    },
+    {
+      "id": "12",
+      "group": 3,
+      "score_percent": 5,
+      "seed": 202610020012,
+      "n": 0,
+      "m": 1000000,
+      "mode": "candy",
+      "weights": "zero",
+      "purpose": "Zero weights and empty initialization"
+    },
+    {
+      "id": "13",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020013,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "close",
+      "weights": "alternating",
+      "purpose": "Deep pending opening brackets closed one by one"
+    },
+    {
+      "id": "14",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020014,
+      "n": 1,
+      "m": 1000000,
+      "mode": "wrap",
+      "weights": "extremes",
+      "purpose": "An interior optimum repeatedly enclosed by signed bracket pairs"
+    },
+    {
+      "id": "15",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020015,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "unmatched",
+      "weights": "signed",
+      "purpose": "Signed weights at maximum unreduced deque size"
+    },
+    {
+      "id": "16",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020016,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "random",
+      "weights": "signed",
+      "purpose": "Full mixed random types, weights and insertion sides"
+    },
+    {
+      "id": "17",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020017,
+      "n": 1000000,
+      "m": 0,
+      "mode": "nested",
+      "weights": "alternating",
+      "purpose": "Deep static nesting without recursive implementation"
+    },
+    {
+      "id": "18",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020018,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "atoms",
+      "weights": "alternating",
+      "purpose": "Signed sibling blocks, negative interiors and mirrored insertions"
+    },
+    {
+      "id": "19",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020019,
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "random",
+      "weights": "zero",
+      "purpose": "Zero-weight brackets must still obey matching constraints"
+    },
+    {
+      "id": "20",
+      "group": 4,
+      "score_percent": 5,
+      "seed": 202610020020,
+      "n": 0,
+      "m": 1000000,
+      "mode": "random",
+      "weights": "extremes",
+      "purpose": "Empty start, extreme signed values and both ends"
+    }
+  ]
+}

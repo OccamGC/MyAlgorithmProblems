@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"id": "empty-start", "kind": "random", "n": 0, "m": 100, "seed": 31, "group": 3, "score_percent": 10, "purpose": "empty initial sequence and later updates"},
+    {"id": "short-static", "kind": "random", "n": 25, "m": 0, "seed": 32, "group": 1, "score_percent": 20, "purpose": "small sequence with no updates"},
+    {"id": "medium-static", "kind": "random", "n": 5000, "m": 0, "seed": 36, "group": 2, "score_percent": 20, "purpose": "medium sequence with no updates"},
+    {"id": "medium-random", "kind": "random", "n": 5000, "m": 5000, "seed": 33, "group": 3, "score_percent": 20, "purpose": "mixed marks and update directions"},
+    {"id": "alternating-ends", "kind": "alternating", "n": 10000, "m": 10000, "seed": 34, "group": 4, "score_percent": 10, "purpose": "frequent left-right alternation"},
+    {"id": "maximum-blocks", "kind": "blocks", "n": 1000000, "m": 1000000, "seed": 35, "group": 4, "score_percent": 20, "purpose": "maximum input size and long runs of marks"}
+  ]
+}

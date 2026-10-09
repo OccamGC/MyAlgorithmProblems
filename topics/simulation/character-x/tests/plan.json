@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011900,
+      "purpose": "cycle",
+      "T": 0,
+      "mode": "cycle",
+      "start": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011901,
+      "purpose": "cycle",
+      "T": 1,
+      "mode": "cycle",
+      "start": 17
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011902,
+      "purpose": "cycle",
+      "T": 3,
+      "mode": "cycle",
+      "start": 34
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011903,
+      "purpose": "cycle",
+      "T": 20,
+      "mode": "cycle",
+      "start": 51
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011904,
+      "purpose": "cycle",
+      "T": 20,
+      "mode": "cycle",
+      "start": 68
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011905,
+      "purpose": "random",
+      "T": 20,
+      "mode": "random",
+      "start": 85
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011906,
+      "purpose": "random",
+      "T": 20,
+      "mode": "random",
+      "start": 102
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011907,
+      "purpose": "random",
+      "T": 20,
+      "mode": "random",
+      "start": 119
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011908,
+      "purpose": "random",
+      "T": 20,
+      "mode": "random",
+      "start": 136
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610011909,
+      "purpose": "random",
+      "T": 20,
+      "mode": "random",
+      "start": 153
+    }
+  ]
+}

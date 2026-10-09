@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "7 2\n6 7\n2 1 5\n3 2 5\n4 1 9\n5 1 4\n6 5 10\n7 2 9\n",
+      "purpose": "Greedy regression; exact answer 2 / 28 / 42",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380301
+    },
+    {
+      "mode": "literal",
+      "input": "8 2\n7 4\n2 1 20\n3 2 7\n4 1 15\n5 2 17\n6 2 20\n7 3 12\n8 7 15\n",
+      "purpose": "Optimal unions need not be nested",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380302
+    },
+    {
+      "mode": "chain",
+      "n": 1000,
+      "marks": [
+        500
+      ],
+      "purpose": "Two paths from an internal marked point",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380303
+    },
+    {
+      "mode": "chain",
+      "n": 1000,
+      "purpose": "One path covers a long chain",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380304
+    },
+    {
+      "mode": "star",
+      "n": 1000,
+      "mixed": true,
+      "purpose": "Two leaf-count dimensions at the new maximum",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380305
+    },
+    {
+      "mode": "star",
+      "n": 1000,
+      "purpose": "All leaves marked; pair leaf endpoints",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380306
+    },
+    {
+      "mode": "binary",
+      "n": 1000,
+      "purpose": "Balanced tree; single-source marginal oracle",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380307
+    },
+    {
+      "mode": "random",
+      "n": 1000,
+      "purpose": "Random tree; single-source marginal oracle",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380308
+    },
+    {
+      "mode": "random",
+      "n": 1000,
+      "marks": [
+        637
+      ],
+      "purpose": "Rerooted random tree",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380309
+    },
+    {
+      "mode": "binary",
+      "n": 999,
+      "marks": [
+        799
+      ],
+      "purpose": "Nontrivial marked root in a balanced tree",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380310
+    }
+  ]
+}

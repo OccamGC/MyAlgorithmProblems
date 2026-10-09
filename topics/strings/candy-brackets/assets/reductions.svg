@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="385" viewBox="0 0 700 385">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#264c66"/></marker></defs>
+<rect width="700" height="385" rx="10" fill="#f5f8fc"/>
+<text x="90" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="90" y="87" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">-10</text>
+<text x="175" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="175" y="87" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">100</text>
+<path d="M340 47L460 47" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="565" y="55" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="565" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">S = 90</text>
+<text x="565" y="111" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">B = 100</text>
+<text x="90" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">(</text>
+<text x="90" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">-4</text>
+<text x="175" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">)</text>
+<text x="175" y="207" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">7</text>
+<path d="M340 167L460 167" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="565" y="175" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="565" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">S = 3</text>
+<text x="565" y="231" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">B = 3</text>
+<text x="90" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">(</text>
+<text x="90" y="327" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">-8</text>
+<text x="175" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="175" y="327" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">10</text>
+<text x="260" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">)</text>
+<text x="260" y="327" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">-9</text>
+<path d="M340 287L460 287" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="565" y="295" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#17364c">●</text>
+<text x="565" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">S = -7</text>
+<text x="565" y="351" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#17364c">B = 10</text>
+</svg>

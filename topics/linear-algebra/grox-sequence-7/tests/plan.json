@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301480,
+      "purpose": "random",
+      "k": 0,
+      "mode": "random"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301481,
+      "purpose": "random",
+      "k": 1,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301482,
+      "purpose": "random",
+      "k": 3,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301483,
+      "purpose": "zero",
+      "k": 9,
+      "mode": "zero"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301484,
+      "purpose": "equal",
+      "k": 9,
+      "mode": "equal"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301485,
+      "purpose": "constant",
+      "k": 9,
+      "mode": "constant"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301486,
+      "purpose": "monomial",
+      "k": 9,
+      "mode": "monomial"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301487,
+      "purpose": "maximum",
+      "k": 9,
+      "mode": "maximum"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301488,
+      "purpose": "random",
+      "k": 9,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301489,
+      "purpose": "random",
+      "k": 8,
+      "mode": "random"
+    }
+  ]
+}

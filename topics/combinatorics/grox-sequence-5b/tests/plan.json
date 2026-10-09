@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301440,
+      "purpose": "degree/exponent boundary",
+      "n": 0,
+      "k": 0
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301441,
+      "purpose": "degree/exponent boundary",
+      "n": 10,
+      "k": 103
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301442,
+      "purpose": "degree/exponent boundary",
+      "n": 1000000000,
+      "k": 0
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301443,
+      "purpose": "degree/exponent boundary",
+      "n": 0,
+      "k": 100000
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301444,
+      "purpose": "degree/exponent boundary",
+      "n": 1,
+      "k": 100000
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301445,
+      "purpose": "degree/exponent boundary",
+      "n": 1000000000,
+      "k": 100000
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301446,
+      "purpose": "degree/exponent boundary",
+      "n": 999999999,
+      "k": 99999
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301447,
+      "purpose": "degree/exponent boundary",
+      "n": 999,
+      "k": 100000
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301448,
+      "purpose": "degree/exponent boundary",
+      "n": 100000,
+      "k": 100000
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301449,
+      "purpose": "degree/exponent boundary",
+      "n": 1000000000,
+      "k": 65536
+    }
+  ]
+}

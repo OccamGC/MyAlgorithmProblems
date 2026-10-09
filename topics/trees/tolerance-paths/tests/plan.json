@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 0,
+      "mode": "zero",
+      "purpose": "zero",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 340001
+    },
+    {
+      "n": 8,
+      "m": 15,
+      "mode": "random",
+      "purpose": "random",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 340002
+    },
+    {
+      "n": 100,
+      "m": 1000,
+      "mode": "random",
+      "purpose": "random",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 340003
+    },
+    {
+      "n": 100,
+      "m": 1000,
+      "mode": "zero",
+      "purpose": "zero",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 340004
+    },
+    {
+      "n": 100,
+      "m": 1000,
+      "mode": "broad",
+      "purpose": "broad",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 340005
+    },
+    {
+      "n": 1000,
+      "m": 20000,
+      "mode": "broad",
+      "purpose": "broad",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 340006
+    },
+    {
+      "n": 1000,
+      "m": 20000,
+      "mode": "chain",
+      "purpose": "chain",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 340007
+    },
+    {
+      "n": 1000,
+      "m": 20000,
+      "mode": "star",
+      "purpose": "star",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 340008
+    },
+    {
+      "n": 1000,
+      "m": 20000,
+      "mode": "holes",
+      "purpose": "holes",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 340009
+    },
+    {
+      "n": 1000,
+      "m": 20000,
+      "mode": "zero",
+      "purpose": "zero",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 340010
+    }
+  ]
+}

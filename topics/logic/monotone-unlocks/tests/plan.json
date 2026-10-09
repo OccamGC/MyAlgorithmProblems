@@ -1,0 +1,95 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300001,
+      "purpose": "Boundary and full-range coverage: literal",
+      "mode": "literal",
+      "input": "2 4\n1||3&&4\n3&&2\n6\n5\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300002,
+      "purpose": "Boundary and full-range coverage: random",
+      "mode": "random",
+      "m": 10,
+      "n": 2
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300003,
+      "purpose": "Boundary and full-range coverage: chain",
+      "mode": "chain",
+      "m": 999
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300004,
+      "purpose": "Boundary and full-range coverage: cycle",
+      "mode": "cycle",
+      "m": 1000
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300005,
+      "purpose": "Boundary and full-range coverage: break",
+      "mode": "break",
+      "m": 999
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300006,
+      "purpose": "Boundary and full-range coverage: chain",
+      "mode": "chain",
+      "m": 140000
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300007,
+      "purpose": "Boundary and full-range coverage: cycle",
+      "mode": "cycle",
+      "m": 140000
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300008,
+      "purpose": "Boundary and full-range coverage: break",
+      "mode": "break",
+      "m": 140000
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300009,
+      "purpose": "Boundary and full-range coverage: deep",
+      "mode": "deep",
+      "depth": 499999
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300010,
+      "purpose": "Boundary and full-range coverage: wide",
+      "mode": "wide",
+      "terms": 333333
+    }
+  ]
+}

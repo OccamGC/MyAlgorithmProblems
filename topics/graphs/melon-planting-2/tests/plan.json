@@ -1,0 +1,105 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "no-vines",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "empty",
+      "seed": 202609291000,
+      "purpose": "No vines; all plots stay empty.",
+      "p": 0,
+      "q": 96
+    },
+    {
+      "id": "small-irregular",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "random",
+      "seed": 202609291001,
+      "purpose": "Zero degrees and overlapping neighborhoods.",
+      "p": 10,
+      "q": 12
+    },
+    {
+      "id": "eighteen-dense",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "four",
+      "seed": 202609291002,
+      "purpose": "Many vines compete for a small set of plots.",
+      "p": 18,
+      "q": 10
+    },
+    {
+      "id": "eighteen-cycle",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "cycle",
+      "seed": 202609291003,
+      "purpose": "Long alternating paths and repeated rerouting.",
+      "p": 18,
+      "q": 18
+    },
+    {
+      "id": "eighteen-irregular",
+      "group": 2,
+      "score_percent": 10,
+      "kind": "random",
+      "seed": 202609291004,
+      "purpose": "Unused plot IDs and unequal degrees.",
+      "p": 18,
+      "q": 40
+    },
+    {
+      "id": "maximum-dense",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "four",
+      "seed": 202609291005,
+      "purpose": "Frequent loss and restoration of required-plot coverage.",
+      "p": 24,
+      "q": 12
+    },
+    {
+      "id": "maximum-balanced",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "four",
+      "seed": 202609291006,
+      "purpose": "Alternating paths across a general connection graph.",
+      "p": 24,
+      "q": 24
+    },
+    {
+      "id": "maximum-sparse",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "four",
+      "seed": 202609291007,
+      "purpose": "Many plots, some with a single possible vine.",
+      "p": 24,
+      "q": 48
+    },
+    {
+      "id": "maximum-private",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "private",
+      "seed": 202609291008,
+      "purpose": "Every vine must grow; stresses full subset enumeration.",
+      "p": 24,
+      "q": 96
+    },
+    {
+      "id": "maximum-cycle",
+      "group": 3,
+      "score_percent": 10,
+      "kind": "cycle",
+      "seed": 202609291009,
+      "purpose": "Connected degree-two graph with a known optimum.",
+      "p": 24,
+      "q": 24
+    }
+  ]
+}

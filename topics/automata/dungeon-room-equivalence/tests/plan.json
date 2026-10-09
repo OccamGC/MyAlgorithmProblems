@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "k": 1,
+      "mode": "zero",
+      "purpose": "single blocked room",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370001
+    },
+    {
+      "n": 1,
+      "k": 26,
+      "mode": "closed",
+      "purpose": "single closed room",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370002
+    },
+    {
+      "n": 30,
+      "k": 4,
+      "mode": "random",
+      "purpose": "literal refinement",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370003
+    },
+    {
+      "n": 500,
+      "k": 3,
+      "mode": "random",
+      "purpose": "mixed cycles and obstacle reachability",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370004
+    },
+    {
+      "n": 200000,
+      "k": 1,
+      "mode": "chain",
+      "purpose": "long distinguishing words",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370005
+    },
+    {
+      "n": 200000,
+      "k": 10,
+      "mode": "chain",
+      "purpose": "maximum edges and classes",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370006
+    },
+    {
+      "n": 200000,
+      "k": 10,
+      "mode": "closed",
+      "purpose": "all rooms equivalent with no obstacle",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370007
+    },
+    {
+      "n": 200000,
+      "k": 10,
+      "mode": "zero",
+      "purpose": "all directions blocked",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370008
+    },
+    {
+      "n": 76923,
+      "k": 26,
+      "mode": "levels",
+      "levels": 997,
+      "purpose": "largest alphabet and repeated behavior classes",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370009
+    },
+    {
+      "n": 200000,
+      "k": 10,
+      "mode": "levels",
+      "levels": 1000,
+      "purpose": "many repeated classes",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370010
+    }
+  ]
+}

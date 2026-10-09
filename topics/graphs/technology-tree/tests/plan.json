@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301900,
+      "purpose": "chain",
+      "n": 1,
+      "m": 0,
+      "mode": "chain"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301901,
+      "purpose": "zero-cycle",
+      "n": 1,
+      "m": 1,
+      "mode": "zero-cycle"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301902,
+      "purpose": "mixed",
+      "n": 1000000,
+      "m": 0,
+      "mode": "mixed"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301903,
+      "purpose": "chain",
+      "n": 1000000,
+      "m": 999999,
+      "mode": "chain"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301904,
+      "purpose": "random",
+      "n": 1000000,
+      "m": 2000000,
+      "mode": "random"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301905,
+      "purpose": "parallel",
+      "n": 1000000,
+      "m": 2000000,
+      "mode": "parallel"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301906,
+      "purpose": "cycle",
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "cycle"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301907,
+      "purpose": "broken-cycle",
+      "n": 1000000,
+      "m": 1000000,
+      "mode": "broken-cycle"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301908,
+      "purpose": "complete",
+      "n": 1000000,
+      "m": 2000000,
+      "mode": "complete"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301909,
+      "purpose": "mixed",
+      "n": 1000000,
+      "m": 2000000,
+      "mode": "mixed"
+    }
+  ]
+}

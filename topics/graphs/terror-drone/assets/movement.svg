@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="746" height="372" viewBox="0 0 746 372" role="img" aria-labelledby="title description">
+  <title id="title">Safe turns for the Terror Drone</title>
+  <desc id="description">F is the fortress and D the drone. Checks mark safe destinations, crosses mark collinear moves. The fortress moves from F to D in either case. Staying at D destroys the drone.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="746" height="372" fill="white" stroke="none" />
+  <text x="188.0" y="32" fill="#20354b" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">(A)</text>
+  <rect x="65" y="68" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 96.0 109.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="147" y="68" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <rect x="229" y="68" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 260.0 109.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="65" y="150" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 96.0 191.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="147" y="150" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <rect x="229" y="150" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 260.0 191.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="65" y="232" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 96.0 273.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="147" y="232" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <line x1="179.0" y1="264.0" x2="197.0" y2="282.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="179.0" y1="282.0" x2="197.0" y2="264.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <rect x="229" y="232" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 260.0 273.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <line x1="188.0" y1="109.0" x2="188.0" y2="273.0" stroke="#ad3845" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5" />
+  <line x1="188.0" y1="135.0" x2="188.0" y2="164.0" stroke="#1268b3" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <rect x="166.0" y="87.0" width="44" height="44" fill="#d9eafa" stroke="#1268b3" stroke-width="2" rx="5" />
+  <text x="188.0" y="117.0" fill="#1268b3" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">F</text>
+  <line x1="212.0" y1="76.0" x2="222.0" y2="86.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="212.0" y1="86.0" x2="222.0" y2="76.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <circle cx="188.0" cy="191.0" r="24" fill="#fff0d7" stroke="#a85a04" stroke-width="2" />
+  <text x="188.0" y="199.0" fill="#a85a04" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="212.0" y1="158.0" x2="222.0" y2="168.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="212.0" y1="168.0" x2="222.0" y2="158.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <text x="552.0" y="32" fill="#20354b" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">(B)</text>
+  <rect x="429" y="68" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <rect x="511" y="68" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 542.0 109.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="593" y="68" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 624.0 109.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="429" y="150" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 460.0 191.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="511" y="150" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <rect x="593" y="150" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 624.0 191.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="429" y="232" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 460.0 273.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="511" y="232" width="82" height="82" fill="#e0f1ed" stroke="#acb9c6" />
+  <path d="M 542.0 273.0 l 7 7 l 14 -16" fill="none" stroke="#086d61" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="593" y="232" width="82" height="82" fill="#fce8e9" stroke="#acb9c6" />
+  <line x1="625.0" y1="264.0" x2="643.0" y2="282.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="625.0" y1="282.0" x2="643.0" y2="264.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="470.0" y1="109.0" x2="634.0" y2="273.0" stroke="#ad3845" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="5 5" />
+  <line x1="488.3847763108502" y1="127.38477631085024" x2="532.9081169079632" y2="171.9081169079632" stroke="#1268b3" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-blue)" />
+  <rect x="448.0" y="87.0" width="44" height="44" fill="#d9eafa" stroke="#1268b3" stroke-width="2" rx="5" />
+  <text x="470.0" y="117.0" fill="#1268b3" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">F</text>
+  <line x1="494.0" y1="76.0" x2="504.0" y2="86.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="494.0" y1="86.0" x2="504.0" y2="76.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <circle cx="552.0" cy="191.0" r="24" fill="#fff0d7" stroke="#a85a04" stroke-width="2" />
+  <text x="552.0" y="199.0" fill="#a85a04" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-weight="bold">D</text>
+  <line x1="576.0" y1="158.0" x2="586.0" y2="168.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+  <line x1="576.0" y1="168.0" x2="586.0" y2="158.0" stroke="#ad3845" stroke-width="3" stroke-linecap="round" />
+</svg>

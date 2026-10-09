@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093080,
+      "purpose": "boundary; parameters recorded below",
+      "n": 0,
+      "q": 10,
+      "mode": "boundary"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093081,
+      "purpose": "boundary; parameters recorded below",
+      "n": 10,
+      "q": 100,
+      "mode": "boundary"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093082,
+      "purpose": "random; parameters recorded below",
+      "n": 100,
+      "q": 1000,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093083,
+      "purpose": "long; parameters recorded below",
+      "n": 5000,
+      "q": 200000,
+      "mode": "long"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093084,
+      "purpose": "random; parameters recorded below",
+      "n": 5000,
+      "q": 200000,
+      "mode": "random"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093085,
+      "purpose": "zero; parameters recorded below",
+      "n": 5000,
+      "q": 200000,
+      "mode": "zero"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093086,
+      "purpose": "boundary; parameters recorded below",
+      "n": 4999,
+      "q": 200000,
+      "mode": "boundary"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093087,
+      "purpose": "empty; parameters recorded below",
+      "n": 999,
+      "q": 200000,
+      "mode": "empty"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093088,
+      "purpose": "random; parameters recorded below",
+      "n": 4096,
+      "q": 200000,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093089,
+      "purpose": "boundary; parameters recorded below",
+      "n": 1,
+      "q": 200000,
+      "mode": "boundary"
+    }
+  ]
+}

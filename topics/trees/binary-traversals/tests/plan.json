@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302000,
+      "purpose": "left",
+      "n": 1,
+      "mode": "left",
+      "shuffle": false
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302001,
+      "purpose": "random",
+      "n": 20,
+      "mode": "random",
+      "shuffle": true
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302002,
+      "purpose": "left",
+      "n": 1000000,
+      "mode": "left",
+      "shuffle": false
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302003,
+      "purpose": "right",
+      "n": 1000000,
+      "mode": "right",
+      "shuffle": false
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302004,
+      "purpose": "zigzag",
+      "n": 1000000,
+      "mode": "zigzag",
+      "shuffle": false
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302005,
+      "purpose": "balanced",
+      "n": 1000000,
+      "mode": "balanced",
+      "shuffle": false
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302006,
+      "purpose": "balanced",
+      "n": 1000000,
+      "mode": "balanced",
+      "shuffle": true
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302007,
+      "purpose": "random",
+      "n": 1000000,
+      "mode": "random",
+      "shuffle": true
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302008,
+      "purpose": "random",
+      "n": 999999,
+      "mode": "random",
+      "shuffle": false
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609302009,
+      "purpose": "zigzag",
+      "n": 1000000,
+      "mode": "zigzag",
+      "shuffle": true
+    }
+  ]
+}

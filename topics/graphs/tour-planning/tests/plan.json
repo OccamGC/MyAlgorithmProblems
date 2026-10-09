@@ -1,0 +1,102 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "sample": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291400,
+      "purpose": "sample 1"
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "sample": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291401,
+      "purpose": "sample 2"
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "sample": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291402,
+      "purpose": "sample 3"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291403,
+      "purpose": "maximum random"
+    },
+    {
+      "id": "maximum-dag",
+      "kind": "dag",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291404,
+      "purpose": "maximum dag"
+    },
+    {
+      "id": "maximum-ties",
+      "kind": "ties",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291405,
+      "purpose": "maximum ties"
+    },
+    {
+      "id": "maximum-negative-cycle",
+      "kind": "negative-cycle",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291406,
+      "purpose": "maximum negative cycle"
+    },
+    {
+      "id": "maximum-no-targets",
+      "kind": "no-targets",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291407,
+      "purpose": "maximum no targets"
+    },
+    {
+      "id": "maximum-no-travelers",
+      "kind": "no-travelers",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291408,
+      "purpose": "maximum no travelers"
+    },
+    {
+      "id": "maximum-zero-cost",
+      "kind": "zero-cost",
+      "n": 1000,
+      "m": 5000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291409,
+      "purpose": "maximum zero cost"
+    }
+  ]
+}

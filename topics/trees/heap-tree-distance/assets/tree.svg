@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#536779"/></marker></defs>
+<rect width="1100" height="420" fill="#f8fafc"/>
+<path d="M550.0 45L302.5 145" stroke="#be6419" stroke-width="5" fill="none"/>
+<path d="M550.0 45L797.5 145" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M302.5 145L178.75 245" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M302.5 145L426.25 245" stroke="#be6419" stroke-width="5" fill="none"/>
+<path d="M797.5 145L673.75 245" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M797.5 145L921.25 245" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M178.75 245L116.875 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M178.75 245L240.625 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M426.25 245L364.375 345" stroke="#be6419" stroke-width="5" fill="none"/>
+<path d="M426.25 245L488.125 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M673.75 245L611.875 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M673.75 245L735.625 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M921.25 245L859.375 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<path d="M921.25 245L983.125 345" stroke="#9dacb8" stroke-width="2" fill="none"/>
+<circle cx="550.0" cy="45" r="23" fill="white" stroke="#be6419" stroke-width="3"/>
+<text x="550.0" y="53" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">1</text>
+<circle cx="302.5" cy="145" r="23" fill="white" stroke="#be6419" stroke-width="3"/>
+<text x="302.5" y="153" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">2</text>
+<circle cx="797.5" cy="145" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="797.5" y="153" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">3</text>
+<circle cx="178.75" cy="245" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="178.75" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">4</text>
+<circle cx="426.25" cy="245" r="23" fill="white" stroke="#be6419" stroke-width="3"/>
+<text x="426.25" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">5</text>
+<circle cx="673.75" cy="245" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="673.75" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">6</text>
+<circle cx="921.25" cy="245" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="921.25" y="253" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">7</text>
+<circle cx="116.875" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="116.875" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">8</text>
+<circle cx="240.625" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="240.625" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">9</text>
+<circle cx="364.375" cy="345" r="23" fill="white" stroke="#be6419" stroke-width="3"/>
+<text x="364.375" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">10</text>
+<circle cx="488.125" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="488.125" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">11</text>
+<circle cx="611.875" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="611.875" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">12</text>
+<circle cx="735.625" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="735.625" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">13</text>
+<circle cx="859.375" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="859.375" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">14</text>
+<circle cx="983.125" cy="345" r="23" fill="white" stroke="#287ea0" stroke-width="3"/>
+<text x="983.125" y="353" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">15</text>
+<text x="550" y="402" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#1b354b">1 → 2 → 5 → 10 : 3 edges</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="435" viewBox="0 0 820 435" role="img" aria-labelledby="title description">
+  <title id="title">Why the merge deletes DE</title>
+  <desc id="description">With current base CD, the first right candidate is E and the next is F. The circumcircle of CDE is centered at (8,3), exactly F, and has radius five. F is strictly inside, so DE is deleted. The next cross edge will be CF.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="820" height="435" fill="white" stroke="none" />
+  <circle cx="271" cy="231" r="135" fill="#fcfaf6" stroke="#a85a04" stroke-width="1.8" />
+  <line x1="55" y1="312" x2="55" y2="150" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="55" y1="150" x2="136" y2="231" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="136" y1="231" x2="55" y2="312" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="163" y1="150" x2="271" y2="231" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="271" y1="231" x2="163" y2="312" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="55" y1="312" x2="163" y2="312" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="136" y1="231" x2="163" y2="312" stroke="#a85a04" stroke-width="4" stroke-linecap="round" />
+  <line x1="163" y1="312" x2="163" y2="150" stroke="#ad3845" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 5" />
+  <line x1="136" y1="231" x2="271" y2="231" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <circle cx="55" cy="312" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="37" y="333" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="55" cy="150" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="37" y="137" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="136" cy="231" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="118" y="218" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="163" cy="312" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="177" y="333" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="163" cy="150" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="177" y="137" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="271" cy="231" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="285" y="218" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="620" y="103" fill="#a85a04" font-size="24" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">base = CD</text>
+  <text x="620" y="155" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">s = E,  t = F</text>
+  <text x="620" y="215" fill="#ad3845" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F ∈ disk(CDE)</text>
+  <text x="620" y="267" fill="#ad3845" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">− DE</text>
+  <text x="620" y="319" fill="#1268b3" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">+ CF</text>
+  <text x="235" y="407" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(x − 8)² + (y − 3)² = 25</text>
+</svg>

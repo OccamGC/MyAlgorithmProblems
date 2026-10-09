@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="370" viewBox="0 0 900 370" role="img" aria-labelledby="title description">
+  <title id="title">Convex hull and triangulation</title>
+  <desc id="description">The same six sites appear twice. A B C D E form the convex hull. Adding segments from interior site P to each hull vertex gives five triangles.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="900" height="370" fill="white" stroke="none" />
+  <line x1="450" y1="55" x2="450" y2="315" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <polygon points="75,280 325,280 365,155 220,75 75,130" fill="#eef4fa" stroke="#1268b3" />
+  <line x1="75" y1="280" x2="325" y2="280" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="325" y1="280" x2="365" y2="155" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="365" y1="155" x2="220" y2="75" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="220" y1="75" x2="75" y2="130" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="75" y1="130" x2="75" y2="280" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <circle cx="75" cy="280" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="58" y="302" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="325" cy="280" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="340" y="302" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="365" cy="155" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="380" y="141" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="220" cy="75" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="220" y="61" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="75" cy="130" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="58" y="116" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="210" cy="180" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="210" y="166" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">P</text>
+  <text x="225" y="34" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(A)</text>
+  <polygon points="525,280 775,280 815,155 670,75 525,130" fill="#eef4fa" stroke="#1268b3" />
+  <line x1="525" y1="280" x2="775" y2="280" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="775" y1="280" x2="815" y2="155" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="815" y1="155" x2="670" y2="75" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="670" y1="75" x2="525" y2="130" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <line x1="525" y1="130" x2="525" y2="280" stroke="#1268b3" stroke-width="3" stroke-linecap="round" />
+  <polygon points="660,180 525,280 775,280" fill="#e0f1ed" stroke="none" />
+  <line x1="660" y1="180" x2="525" y2="280" stroke="#086d61" stroke-width="2" stroke-linecap="round" />
+  <polygon points="660,180 775,280 815,155" fill="#edf4fb" stroke="none" />
+  <line x1="660" y1="180" x2="775" y2="280" stroke="#086d61" stroke-width="2" stroke-linecap="round" />
+  <polygon points="660,180 815,155 670,75" fill="#e0f1ed" stroke="none" />
+  <line x1="660" y1="180" x2="815" y2="155" stroke="#086d61" stroke-width="2" stroke-linecap="round" />
+  <polygon points="660,180 670,75 525,130" fill="#edf4fb" stroke="none" />
+  <line x1="660" y1="180" x2="670" y2="75" stroke="#086d61" stroke-width="2" stroke-linecap="round" />
+  <polygon points="660,180 525,130 525,280" fill="#e0f1ed" stroke="none" />
+  <line x1="660" y1="180" x2="525" y2="130" stroke="#086d61" stroke-width="2" stroke-linecap="round" />
+  <circle cx="525" cy="280" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="508" y="302" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="775" cy="280" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="790" y="302" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="815" cy="155" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="830" y="141" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="670" cy="75" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="670" y="61" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="525" cy="130" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="508" y="116" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="660" cy="180" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="660" y="166" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">P</text>
+  <text x="675" y="34" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(B)</text>
+  <text x="225" y="348" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A → B → C → D → E → A</text>
+  <text x="675" y="348" fill="#086d61" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">5 △</text>
+</svg>

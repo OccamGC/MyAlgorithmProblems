@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012401,
+      "mode": "grox",
+      "a": "0",
+      "b": 0,
+      "c": 0,
+      "n": "0",
+      "purpose": "empty alphabet and empty word"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012402,
+      "mode": "grox",
+      "a": "6",
+      "b": 9,
+      "c": 7,
+      "n": "5",
+      "purpose": "corrected source sample"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012403,
+      "mode": "grox",
+      "a": "0",
+      "b": 0,
+      "c": 2,
+      "n": "1",
+      "purpose": "zero occurrence coefficient"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012404,
+      "mode": "grox",
+      "a": "1",
+      "b": 4,
+      "c": 0,
+      "n": "1004535808",
+      "purpose": "positive exponent divisible by p-1 and power-two degree"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012405,
+      "mode": "grox",
+      "a": "0",
+      "b": 0,
+      "c": 0,
+      "n": "1004535808",
+      "purpose": "zero base and positive exponent"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012406,
+      "mode": "grox",
+      "a": "maximum",
+      "b": 100000,
+      "c": 1000,
+      "n": "maximum",
+      "purpose": "all upper bounds"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012407,
+      "mode": "grox",
+      "a": "101000",
+      "b": 100000,
+      "c": 1000,
+      "n": "1004535808",
+      "purpose": "zero evaluation base at maximum degree"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012408,
+      "mode": "grox",
+      "a": "1004535809",
+      "b": 100000,
+      "c": 1000,
+      "n": "0",
+      "purpose": "zero exponent with full polynomial"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012409,
+      "mode": "grox",
+      "a": "99999999999999999999",
+      "b": 65536,
+      "c": 0,
+      "n": "99999999999999999999",
+      "purpose": "power-two degree convolution"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012410,
+      "mode": "grox",
+      "a": "1",
+      "b": 0,
+      "c": 1000,
+      "n": "1004535809",
+      "purpose": "all odd-or-zero types"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="330" viewBox="0 0 820 330"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#718096"/></marker><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1379ad"/></marker></defs><rect width="100%" height="100%" fill="#fff"/>
+<text x="205" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#172b4d">T_1[S]</text>
+<path d="M205 97L105 223" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M205 97L305 223" fill="none" stroke="#718096" stroke-width="2"/>
+<circle cx="205" cy="97" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="205" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">2</text>
+<text x="205" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">−3</text>
+<circle cx="105" cy="223" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="105" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">4</text>
+<text x="105" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">5</text>
+<circle cx="305" cy="223" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="305" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">5</text>
+<text x="305" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<text x="205" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">S = {2,4,5},  Σa_i = 9</text>
+<text x="615" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#172b4d">T_2[S]</text>
+<path d="M615 97L515 223" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M615 97L715 223" fill="none" stroke="#718096" stroke-width="2"/>
+<circle cx="615" cy="97" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="615" y="94" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">2</text>
+<text x="615" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">−3</text>
+<circle cx="515" cy="223" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="515" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">4</text>
+<text x="515" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">5</text>
+<circle cx="715" cy="223" r="33" fill="#e4f4fc" stroke="#1379ad" stroke-width="2"/>
+<text x="715" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" fill="#172b4d">5</text>
+<text x="715" y="242" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#172b4d">7</text>
+<text x="615" y="302" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">S = {2,4,5},  Σa_i = 9</text>
+</svg>

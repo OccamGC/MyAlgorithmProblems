@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012200,
+      "purpose": "zero; boundary/structure coverage",
+      "N": 1,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012201,
+      "purpose": "small; boundary/structure coverage",
+      "N": 1000,
+      "mode": "small"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012202,
+      "purpose": "zero; boundary/structure coverage",
+      "N": 100000,
+      "mode": "zero"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012203,
+      "purpose": "maximum; boundary/structure coverage",
+      "N": 100000,
+      "mode": "maximum"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012204,
+      "purpose": "powers; boundary/structure coverage",
+      "N": 100000,
+      "mode": "powers"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012205,
+      "purpose": "cutoff; boundary/structure coverage",
+      "N": 100000,
+      "mode": "cutoff"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012206,
+      "purpose": "descending; boundary/structure coverage",
+      "N": 100000,
+      "mode": "descending"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012207,
+      "purpose": "random; boundary/structure coverage",
+      "N": 100000,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012208,
+      "purpose": "cluster; boundary/structure coverage",
+      "N": 100000,
+      "mode": "cluster"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012209,
+      "purpose": "small; boundary/structure coverage",
+      "N": 100000,
+      "mode": "small"
+    }
+  ]
+}

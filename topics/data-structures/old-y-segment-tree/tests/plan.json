@@ -1,0 +1,107 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320001,
+      "purpose": "equal",
+      "n": 1,
+      "m": 10,
+      "shape": "equal"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320002,
+      "purpose": "random",
+      "n": 30,
+      "m": 100,
+      "shape": "random",
+      "alphabet": 10
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320003,
+      "purpose": "increasing",
+      "n": 2000,
+      "m": 2000,
+      "shape": "increasing"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320004,
+      "purpose": "decreasing",
+      "n": 2000,
+      "m": 2000,
+      "shape": "decreasing"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320005,
+      "purpose": "random",
+      "n": 2000,
+      "m": 2000,
+      "shape": "random",
+      "alphabet": 20
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320006,
+      "purpose": "whole",
+      "n": 50000,
+      "m": 50000,
+      "shape": "decreasing",
+      "mode": "whole"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320007,
+      "purpose": "random",
+      "n": 50000,
+      "m": 50000,
+      "shape": "random"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320008,
+      "purpose": "equal",
+      "n": 50000,
+      "m": 50000,
+      "shape": "equal"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320009,
+      "purpose": "zigzag",
+      "n": 50000,
+      "m": 50000,
+      "shape": "zigzag"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320010,
+      "purpose": "increasing",
+      "n": 50000,
+      "m": 50000,
+      "shape": "increasing"
+    }
+  ]
+}

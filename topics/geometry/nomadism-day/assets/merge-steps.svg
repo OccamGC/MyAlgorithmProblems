@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="740" viewBox="0 0 1080 740" role="img" aria-labelledby="title description">
+  <title id="title">Six stages of a Delaunay merge</title>
+  <desc id="description">Coordinates: A=(0,0), B=(0,6), C=(3,3), D=(4,0), E=(4,6), F=(8,3). The two initial triangles are ABC and DEF. The cross edges are added in the order AD, CD, CF, CE, BE. DE is deleted before adding CF. Blue edges were already added, and orange marks the current base.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1080" height="740" fill="white" stroke="none" />
+  <text x="180" y="35" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(1)</text>
+  <line x1="159.5" y1="64" x2="159.5" y2="308" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="44" y1="282" x2="44" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="44" y1="84" x2="143" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="143" y1="183" x2="44" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="176" y1="282" x2="176" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="176" y1="84" x2="308" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="308" y1="183" x2="176" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <circle cx="44" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="27" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="44" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="27" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="143" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="126" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="176" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="176" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="176" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="176" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="308" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="325" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="180" y="337" fill="#20354b" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">△ABC + △DEF</text>
+  <line x1="360" y1="18" x2="360" y2="350" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <text x="540" y="35" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(2)</text>
+  <line x1="519.5" y1="64" x2="519.5" y2="308" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="404" y1="282" x2="404" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="404" y1="84" x2="503" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="503" y1="183" x2="404" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="536" y1="282" x2="536" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="536" y1="84" x2="668" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="668" y1="183" x2="536" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="404" y1="282" x2="536" y2="282" stroke="#a85a04" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="404" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="387" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="404" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="387" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="503" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="486" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="536" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="536" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="536" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="536" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="668" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="685" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="540" y="337" fill="#a85a04" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">+ AD</text>
+  <line x1="720" y1="18" x2="720" y2="350" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <text x="900" y="35" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(3)</text>
+  <line x1="879.5" y1="64" x2="879.5" y2="308" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="764" y1="282" x2="764" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="764" y1="84" x2="863" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="863" y1="183" x2="764" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="896" y1="282" x2="896" y2="84" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="896" y1="84" x2="1028" y2="183" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="1028" y1="183" x2="896" y2="282" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="764" y1="282" x2="896" y2="282" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="863" y1="183" x2="896" y2="282" stroke="#a85a04" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="764" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="747" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="764" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="747" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="863" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="846" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="896" cy="282" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="896" y="304" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="896" cy="84" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="896" y="70" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="1028" cy="183" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="1045" y="169" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="900" y="337" fill="#a85a04" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">+ CD</text>
+  <line x1="18" y1="370" x2="342" y2="370" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <text x="180" y="405" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(4)</text>
+  <line x1="159.5" y1="434" x2="159.5" y2="678" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="44" y1="652" x2="44" y2="454" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="44" y1="454" x2="143" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="143" y1="553" x2="44" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="176" y1="652" x2="176" y2="454" stroke="#ad3845" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 5" />
+  <line x1="176" y1="454" x2="308" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="308" y1="553" x2="176" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="44" y1="652" x2="176" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="143" y1="553" x2="176" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="143" y1="553" x2="308" y2="553" stroke="#a85a04" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="44" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="27" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="44" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="27" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="143" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="126" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="176" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="176" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="176" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="176" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="308" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="325" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="180" y="707" fill="#a85a04" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">− DE, + CF</text>
+  <line x1="360" y1="388" x2="360" y2="720" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="378" y1="370" x2="702" y2="370" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <text x="540" y="405" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(5)</text>
+  <line x1="519.5" y1="434" x2="519.5" y2="678" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="404" y1="652" x2="404" y2="454" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="404" y1="454" x2="503" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="503" y1="553" x2="404" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="536" y1="454" x2="668" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="668" y1="553" x2="536" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="404" y1="652" x2="536" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="503" y1="553" x2="536" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="503" y1="553" x2="668" y2="553" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="503" y1="553" x2="536" y2="454" stroke="#a85a04" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="404" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="387" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="404" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="387" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="503" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="486" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="536" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="536" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="536" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="536" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="668" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="685" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="540" y="707" fill="#a85a04" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">+ CE</text>
+  <line x1="720" y1="388" x2="720" y2="720" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="738" y1="370" x2="1062" y2="370" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <text x="900" y="405" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">(6)</text>
+  <line x1="879.5" y1="434" x2="879.5" y2="678" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 5" />
+  <line x1="764" y1="652" x2="764" y2="454" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="764" y1="454" x2="863" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="863" y1="553" x2="764" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="896" y1="454" x2="1028" y2="553" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="1028" y1="553" x2="896" y2="652" stroke="#acb9c6" stroke-width="2" stroke-linecap="round" />
+  <line x1="764" y1="652" x2="896" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="863" y1="553" x2="896" y2="652" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="863" y1="553" x2="1028" y2="553" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="863" y1="553" x2="896" y2="454" stroke="#1268b3" stroke-width="2.7" stroke-linecap="round" />
+  <line x1="764" y1="454" x2="896" y2="454" stroke="#a85a04" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="764" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="747" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="764" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="747" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="863" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="846" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="896" cy="652" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="896" y="674" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <circle cx="896" cy="454" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="896" y="440" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">E</text>
+  <circle cx="1028" cy="553" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="1045" y="539" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">F</text>
+  <text x="900" y="707" fill="#a85a04" font-size="22" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">+ BE</text>
+</svg>

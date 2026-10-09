@@ -1,0 +1,152 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "literal",
+      "seed": 410101,
+      "purpose": "Basic branch and membership cases",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "rows": [
+        [
+          2,
+          2,
+          2,
+          18
+        ],
+        [
+          3,
+          12,
+          2,
+          4
+        ],
+        [
+          2,
+          2,
+          1,
+          9
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          7,
+          25,
+          0,
+          0
+        ],
+        [
+          2,
+          6,
+          3,
+          9
+        ],
+        [
+          3,
+          1,
+          2,
+          1
+        ],
+        [
+          1000000,
+          1000000000,
+          1,
+          1000000000
+        ]
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "small",
+      "seed": 410102,
+      "purpose": "Exhaustive small counts and wealth",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "boundary",
+      "seed": 410103,
+      "purpose": "Zero, empty, singleton and maximum boundaries",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "rich-target",
+      "seed": 410104,
+      "purpose": "Initial target already at least as rich",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "even",
+      "seed": 410105,
+      "purpose": "Even total population",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "odd",
+      "seed": 410106,
+      "purpose": "Odd total population",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "unbalanced",
+      "seed": 410107,
+      "purpose": "Extreme population asymmetry",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "large-rich",
+      "seed": 410108,
+      "purpose": "Both populations large; poor target",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "near-equal",
+      "seed": 410109,
+      "purpose": "Exact fraction comparisons near equality",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "mode": "random",
+      "seed": 410110,
+      "purpose": "Mixed arbitrary wealth with 4096 population pairs",
+      "verification": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+      "n": 100000
+    }
+  ]
+}

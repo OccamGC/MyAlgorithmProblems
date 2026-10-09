@@ -1,0 +1,104 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "sample": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291600,
+      "purpose": "sample 1"
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "sample": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291601,
+      "purpose": "sample 2"
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "sample": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291602,
+      "purpose": "sample 3"
+    },
+    {
+      "id": "maximum-pairs",
+      "kind": "pairs",
+      "n": 100000,
+      "m": 200000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291603,
+      "purpose": "maximum pairs"
+    },
+    {
+      "id": "maximum-star",
+      "kind": "star",
+      "n": 100000,
+      "m": 200000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291604,
+      "purpose": "maximum star"
+    },
+    {
+      "id": "maximum-dense",
+      "kind": "dense",
+      "n": 100000,
+      "m": 200000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291605,
+      "purpose": "maximum dense"
+    },
+    {
+      "id": "maximum-chain",
+      "kind": "chain",
+      "n": 100000,
+      "m": 200000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291606,
+      "purpose": "maximum chain"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 100000,
+      "m": 200000,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291607,
+      "purpose": "maximum random"
+    },
+    {
+      "id": "unbalanced",
+      "kind": "random",
+      "n": 100000,
+      "m": 200000,
+      "left": 100,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291608,
+      "purpose": "unbalanced"
+    },
+    {
+      "id": "single-workbench",
+      "kind": "random",
+      "n": 100000,
+      "m": 200000,
+      "left": 1,
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609291609,
+      "purpose": "single workbench"
+    }
+  ]
+}

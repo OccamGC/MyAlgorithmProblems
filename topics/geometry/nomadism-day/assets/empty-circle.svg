@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title description">
+  <title id="title">Two diagonals and the empty-circle test</title>
+  <desc id="description">A=(0,0), B=(6,0), C=(6,4), D=(0,2). The diagonal AC is invalid: D is inside the circumcircle of ABC. The diagonal BD gives a Delaunay triangulation; C is outside the circumcircle of ABD.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="900" height="420" fill="white" stroke="none" />
+  <line x1="450" y1="60" x2="450" y2="362" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <circle cx="205" cy="205" r="126.19429464123962" fill="#fcfaf6" stroke="#a85a04" stroke-width="1.5" />
+  <line x1="100" y1="275" x2="310" y2="275" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="310" y1="275" x2="310" y2="135" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="310" y1="135" x2="100" y2="205" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="100" y1="205" x2="100" y2="275" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="100" y1="275" x2="310" y2="135" stroke="#ad3845" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="7 5" />
+  <circle cx="100" cy="275" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="84" y="295" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="310" cy="275" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="326" y="295" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="310" cy="135" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="326" y="123" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="100" cy="205" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="84" y="193" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <text x="225" y="36" fill="#ad3845" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">AC  ×</text>
+  <text x="225" y="390" fill="#ad3845" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D ∈ disk(ABC)</text>
+  <circle cx="655" cy="240" r="110.67971810589329" fill="#fcfaf6" stroke="#a85a04" stroke-width="1.5" />
+  <line x1="550" y1="275" x2="760" y2="275" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="760" y1="275" x2="760" y2="135" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="760" y1="135" x2="550" y2="205" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="550" y1="205" x2="550" y2="275" stroke="#20354b" stroke-width="2" stroke-linecap="round" />
+  <line x1="760" y1="275" x2="550" y2="205" stroke="#086d61" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="550" cy="275" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="534" y="295" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">A</text>
+  <circle cx="760" cy="275" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="776" y="295" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">B</text>
+  <circle cx="760" cy="135" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="776" y="123" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C</text>
+  <circle cx="550" cy="205" r="4.5" fill="#20354b" stroke="white" stroke-width="1" />
+  <text x="534" y="193" fill="#20354b" font-size="18" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">D</text>
+  <text x="675" y="36" fill="#086d61" font-size="25" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">BD  ✓</text>
+  <text x="675" y="390" fill="#086d61" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C ∉ disk(ABD)</text>
+</svg>

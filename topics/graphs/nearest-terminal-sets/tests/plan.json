@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 40,
+      "extra_conditions": "n <= 500 and each terminal set has size <= 1"
+    },
+    {
+      "id": 2,
+      "score_percent": 20,
+      "extra_conditions": "Each terminal set has size <= 1"
+    },
+    {
+      "id": 3,
+      "score_percent": 40,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012100,
+      "purpose": "zero; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1,
+      "m": 1,
+      "mode": "zero"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012101,
+      "purpose": "parallel; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500,
+      "m": 500000,
+      "mode": "parallel"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012102,
+      "purpose": "disconnected; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500,
+      "m": 5000,
+      "mode": "disconnected"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012103,
+      "purpose": "random; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500,
+      "m": 500000,
+      "mode": "random"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012104,
+      "purpose": "chain; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "chain"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012105,
+      "purpose": "disconnected; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "disconnected"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012106,
+      "purpose": "random; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012107,
+      "purpose": "no-source; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "no-source"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012108,
+      "purpose": "no-target; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "no-target"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012109,
+      "purpose": "zero; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 500000,
+      "m": 500000,
+      "mode": "zero"
+    }
+  ]
+}

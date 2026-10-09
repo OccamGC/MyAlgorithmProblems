@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "n": 0,
+      "m": 0,
+      "purpose": "empty",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330001
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "purpose": "incorrect subtraction counterexample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330002
+    },
+    {
+      "n": 1000,
+      "m": 2,
+      "purpose": "few leaves",
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330003
+    },
+    {
+      "n": 1000,
+      "m": 500,
+      "purpose": "middle",
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330004
+    },
+    {
+      "n": 1000,
+      "m": 999,
+      "purpose": "star",
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330005
+    },
+    {
+      "n": 100000,
+      "m": 2,
+      "purpose": "full exponent range",
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330006
+    },
+    {
+      "n": 100000,
+      "m": 50000,
+      "purpose": "balanced counts",
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330007
+    },
+    {
+      "n": 100000,
+      "m": 99999,
+      "purpose": "full star",
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330008
+    },
+    {
+      "n": 100000,
+      "m": 0,
+      "purpose": "impossible",
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330009
+    },
+    {
+      "n": 99999,
+      "m": 33333,
+      "purpose": "large surjection",
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330010
+    }
+  ]
+}

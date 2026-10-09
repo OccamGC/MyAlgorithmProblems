@@ -1,0 +1,790 @@
+{
+  "timestamp": "2026-09-28 16:33:43 +0800",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "repeats": 5,
+  "time_resolution_seconds": 0.5,
+  "multiplier": 2.0,
+  "timing": "wall clock, one input file per process; first run used to produce output, then repeated timed runs; median per case",
+  "problems": {
+    "prism-tank": {
+      "sample_count": 3,
+      "std_sha256": "a6f878c723fab0063d01c817dfa34a70c5dab6ab3cf6468c7f05fbe7f6af24a1",
+      "generator_sha256": "6e99092d9b8e9f3af31494929fe214f6b7e6aa60f4fafa85d22a529bcb2b1341",
+      "plan_sha256": "6966c7509a38fb2a12fa0605e26823336151d4841a3c21c59672c88870c973f0",
+      "program_sha256": "5f4a885f6ba4e743ce802caf56262c1731a04625ef8607352fcefdac2bdd4558",
+      "standard_time_seconds": 0.14698400004999712,
+      "peak_working_set_bytes": 5177344,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "isolated",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "isolated vertices and zero edges",
+          "dimensions": {
+            "n": 2000,
+            "block_limit": 0,
+            "e": 0,
+            "shifted_expectation": 5000.0,
+            "expected_output": [
+              "5000"
+            ]
+          },
+          "input_bytes": 27593,
+          "input_sha256": "136ffb2b21ffbf93f2737c8569260babb3e89e9224ff804fdc1ad3365a56abbe",
+          "output_sha256": "c14f0eeaec609582c1564d5ad140795a7b7bbc9a3fa6e68b6d62fe34057cf2af",
+          "peak_working_set_bytes": 5083136,
+          "times_seconds": [
+            0.021465800004079938,
+            0.022437100007664412,
+            0.022841600002720952,
+            0.022055700013879687,
+            0.02294260001508519
+          ],
+          "median_seconds": 0.022437100007664412
+        },
+        {
+          "id": "zero-damage",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "zero expected damage",
+          "dimensions": {
+            "n": 20,
+            "block_limit": 1,
+            "e": 19,
+            "shifted_expectation": 0.0,
+            "expected_output": [
+              "0"
+            ]
+          },
+          "input_bytes": 330,
+          "input_sha256": "d146131c5bd81c204d9c09c3bf2f03c14a758876091ed8c78d61a4c7d1e90543",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5054464,
+          "times_seconds": [
+            0.014831699954811484,
+            0.014629800047259778,
+            0.01522649999242276,
+            0.015321899962145835,
+            0.015338300028815866
+          ],
+          "median_seconds": 0.01522649999242276
+        },
+        {
+          "id": "star-cut",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "two valuable leaves; arbitrary cuts assigned to child endpoints",
+          "dimensions": {
+            "n": 2000,
+            "block_limit": 1,
+            "e": 1999,
+            "shifted_expectation": 10000.0,
+            "expected_output": [
+              "10000"
+            ]
+          },
+          "input_bytes": 34912,
+          "input_sha256": "4cbeec5f11695fd77d09a281b60277d097b787a53ef6af544ff1186ec0d23f25",
+          "output_sha256": "36736dd83c6e02474284d8c5f112dec95d5ed6876bf5353dcb672f365d6b0fd1",
+          "peak_working_set_bytes": 5177344,
+          "times_seconds": [
+            0.14698400004999712,
+            0.151268900022842,
+            0.15148299996508285,
+            0.14513239997904748,
+            0.14395520003745332
+          ],
+          "median_seconds": 0.14698400004999712
+        },
+        {
+          "id": "star-no-cut",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "two valuable leaves diluted by forced zero-damage children",
+          "dimensions": {
+            "n": 2000,
+            "block_limit": 0,
+            "e": 1999,
+            "shifted_expectation": 5003.0025025025025,
+            "expected_output": [
+              "5003"
+            ]
+          },
+          "input_bytes": 34912,
+          "input_sha256": "a571a7cd338d40764dc709d73a7e5ba367793907fb35868fd2302d688c736d64",
+          "output_sha256": "98b49d28b8b956e65a043c805305fb469ba8a58937f00ab0fde0bf410b9394da",
+          "peak_working_set_bytes": 5177344,
+          "times_seconds": [
+            0.13603069999953732,
+            0.13186949997907504,
+            0.12960859999293461,
+            0.1310869000153616,
+            0.13980159995844588
+          ],
+          "median_seconds": 0.13186949997907504
+        },
+        {
+          "id": "long-chain",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "maximum depth and iterative traversal",
+          "dimensions": {
+            "n": 2000,
+            "block_limit": 1,
+            "e": 1999,
+            "shifted_expectation": 4948793.0,
+            "expected_output": [
+              "4948793"
+            ]
+          },
+          "input_bytes": 45330,
+          "input_sha256": "431e8642d5bc07c9a77a179093a1d6e10e235db134d183903fcff090c67ea646",
+          "output_sha256": "290bd3202a8fa5d2e4816b8c093239593fea925859f84ba584cbed613b7513ea",
+          "peak_working_set_bytes": 5120000,
+          "times_seconds": [
+            0.08220619999337941,
+            0.07933249999769032,
+            0.07698110002093017,
+            0.07923969998955727,
+            0.0772685999982059
+          ],
+          "median_seconds": 0.07923969998955727
+        },
+        {
+          "id": "forest",
+          "group": 1,
+          "score_percent": 15,
+          "purpose": "separate components and block_limit greater than one",
+          "dimensions": {
+            "n": 500,
+            "block_limit": 5,
+            "e": 400,
+            "shifted_expectation": 149749.00159736545,
+            "expected_output": [
+              "149749"
+            ]
+          },
+          "input_bytes": 9770,
+          "input_sha256": "be02ea4f0eb399ea6f7934fb3db2341a4232c06af01ecde60928592d48f474b9",
+          "output_sha256": "e44483c2dd44c3c02dd28783fe22b592be1ebe426f0c8401770eb7c2df812169",
+          "peak_working_set_bytes": 5115904,
+          "times_seconds": [
+            0.017350100039038807,
+            0.016977299994323403,
+            0.01680579996900633,
+            0.016899699985515326,
+            0.01759249996393919
+          ],
+          "median_seconds": 0.016977299994323403
+        },
+        {
+          "id": "maximum-random",
+          "group": 1,
+          "score_percent": 20,
+          "purpose": "maximum connected random tree",
+          "dimensions": {
+            "n": 2000,
+            "block_limit": 0,
+            "e": 1999,
+            "shifted_expectation": 725784.0022490385,
+            "expected_output": [
+              "725784"
+            ]
+          },
+          "input_bytes": 44327,
+          "input_sha256": "19f179980f5d42a8b074bbe6bba8ef3c351680f1f4086f9dbb953e738475377e",
+          "output_sha256": "8fad4981c5f716ff6da29ded5a681141d50d3d19681e35904fc293b36708d4d1",
+          "peak_working_set_bytes": 5124096,
+          "times_seconds": [
+            0.08902520005358383,
+            0.08629710000241175,
+            0.0903186000068672,
+            0.07857459998922423,
+            0.08382140001049265
+          ],
+          "median_seconds": 0.08629710000241175
+        }
+      ]
+    },
+    "psychic-commando": {
+      "sample_count": 2,
+      "std_sha256": "0a2681dc447cb05d5534e6772643e814b85c468c664c593e45e6bfa04b2201ce",
+      "generator_sha256": "e24e4c94cbf100a20dd7d91ca971ab90c0e882793bc361e329305a09492b1c8d",
+      "plan_sha256": "911699b66eb29207460c4ca3ecac09e0a94cd3bce7f8aa339cb5402fa75c2c92",
+      "program_sha256": "5fc2f7b099417959281a05b5a2f3cdf9f6df5b0ddcd7269f845c83d7b15ef8b6",
+      "standard_time_seconds": 0.045189499971456826,
+      "peak_working_set_bytes": 37007360,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "horizontal",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "horizontal; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 10000,
+            "width": 1001,
+            "height": 1,
+            "min_span": 0,
+            "offline": false,
+            "query_count": 3334
+          },
+          "input_bytes": 170124,
+          "input_sha256": "bf988cd62e059069080e7f7c226b483ee7e6b6530b6f66db73690c8ed15dda61",
+          "output_sha256": "dab05bfb93b689c3ec18c15e47f7830d60779884d562ec33c9587b1b4115f1cb",
+          "peak_working_set_bytes": 5074944,
+          "times_seconds": [
+            0.01866379997227341,
+            0.018632999970577657,
+            0.018254199996590614,
+            0.019438999996054918,
+            0.018800900026690215
+          ],
+          "median_seconds": 0.01866379997227341
+        },
+        {
+          "id": "vertical",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "vertical; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 10000,
+            "width": 1,
+            "height": 1001,
+            "min_span": 0,
+            "offline": false,
+            "query_count": 3334
+          },
+          "input_bytes": 221195,
+          "input_sha256": "209e9de2712466fc664b971597c3090b1129c61d11d48778ca8672f1a9273580",
+          "output_sha256": "89dd97dd2a3ffe1e147f0617b615950e9b46c52f321781d550c5f50ade1efc6c",
+          "peak_working_set_bytes": 5079040,
+          "times_seconds": [
+            0.01807709998684004,
+            0.017542999994475394,
+            0.01829179999185726,
+            0.019061799976043403,
+            0.018991699966136366
+          ],
+          "median_seconds": 0.01829179999185726
+        },
+        {
+          "id": "narrow",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "narrow; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 10000,
+            "width": 51,
+            "height": 1001,
+            "min_span": 50,
+            "offline": false,
+            "query_count": 3334
+          },
+          "input_bytes": 382556,
+          "input_sha256": "42c00531b3b8e3721a1d7453cf63b87a9ce5a55234b3bfecd6f4b9a7c5b9cfd9",
+          "output_sha256": "22b027d0a0e99e26b2a2550ced5639bd2fc02e7fa79fd5cb8b3af0f7be2cdb10",
+          "peak_working_set_bytes": 6549504,
+          "times_seconds": [
+            0.019747600017581135,
+            0.02136640000389889,
+            0.019231999991461635,
+            0.02087290002964437,
+            0.021718200005125254
+          ],
+          "median_seconds": 0.02087290002964437
+        },
+        {
+          "id": "one-cell",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "one-cell; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 40,
+            "width": 1,
+            "height": 1,
+            "min_span": 0,
+            "offline": false,
+            "query_count": 14,
+            "expected_output": [
+              "0",
+              "-9997",
+              "-9997",
+              "-19132",
+              "-19240",
+              "0",
+              "-26364",
+              "-17145",
+              "0",
+              "-17145",
+              "-8499",
+              "-10434",
+              "-3715",
+              "-3715"
+            ]
+          },
+          "input_bytes": 590,
+          "input_sha256": "7b5bcf862b77f84e328b007b6ddb037dae94d2bd0950d785e00ea4c52bdcbf26",
+          "output_sha256": "8eb735775d5920cc617ca64cd6eb47a1bdcd854158be4ff25663ce83c5acba29",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.015692299988586456,
+            0.01499400002649054,
+            0.01521759998286143,
+            0.015005000052042305,
+            0.017153599997982383
+          ],
+          "median_seconds": 0.01521759998286143
+        },
+        {
+          "id": "offline",
+          "group": 3,
+          "score_percent": 20,
+          "purpose": "offline; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 10000,
+            "width": 1001,
+            "height": 1001,
+            "min_span": 1000,
+            "offline": true,
+            "query_count": 3334
+          },
+          "input_bytes": 193921,
+          "input_sha256": "30a27fcb3fc07e4ee72e61231f95e7ec934f5c55b81f8e78ecdc633e5fabcbe0",
+          "output_sha256": "fb98ea922d9955104445c765e3c80b6ab0f562e0c971839304cf12f70c9cf348",
+          "peak_working_set_bytes": 37007360,
+          "times_seconds": [
+            0.035120900021865964,
+            0.03338239999720827,
+            0.03411890001734719,
+            0.033693900040816516,
+            0.03389040002366528
+          ],
+          "median_seconds": 0.03389040002366528
+        },
+        {
+          "id": "clipping",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "clipping; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 200,
+            "width": 13,
+            "height": 18,
+            "min_span": 12,
+            "offline": false,
+            "query_count": 68,
+            "expected_output": [
+              "0",
+              "-2339986",
+              "-1344980",
+              "-3947764",
+              "-23726",
+              "0",
+              "-2444577",
+              "-14622",
+              "0",
+              "-3583108",
+              "-17189",
+              "0",
+              "-1035556",
+              "7594",
+              "-621878",
+              "-2040703",
+              "10044",
+              "-477290",
+              "-2791805",
+              "-26008",
+              "-721321",
+              "-1252721",
+              "-8176",
+              "-396823",
+              "402251",
+              "2435",
+              "576366",
+              "1987009",
+              "-9884",
+              "1890292",
+              "2568010",
+              "-2505",
+              "370026",
+              "3686097",
+              "-4302",
+              "127344",
+              "3323943",
+              "13041",
+              "1037207",
+              "5486013",
+              "64612",
+              "2185374",
+              "9653977",
+              "35628",
+              "0",
+              "9216660",
+              "36239",
+              "8031986",
+              "9533689",
+              "77289",
+              "2900386",
+              "8155350",
+              "47377",
+              "4891462",
+              "9058560",
+              "29473",
+              "392193",
+              "11700888",
+              "31282",
+              "668864",
+              "10484436",
+              "38405",
+              "0",
+              "12722364",
+              "42798",
+              "1500801",
+              "11519764",
+              "6424727"
+            ]
+          },
+          "input_bytes": 3283,
+          "input_sha256": "88b6d03ff63daca4439d9346f338f9380e920c5e0e5f8d6f08088265448f2752",
+          "output_sha256": "8321ceee720d47cf2f90de65195e080de5d00b86756634365c5c27163fc20bc4",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.01497770001878962,
+            0.014038800029084086,
+            0.015139400027692318,
+            0.013495999970473349,
+            0.018230099987704307
+          ],
+          "median_seconds": 0.01497770001878962
+        },
+        {
+          "id": "medium",
+          "group": 4,
+          "score_percent": 10,
+          "purpose": "medium; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 10000,
+            "width": 1001,
+            "height": 1001,
+            "min_span": 1000,
+            "offline": false,
+            "query_count": 3334
+          },
+          "input_bytes": 209728,
+          "input_sha256": "2ad280da27591f40584788ee0ec684e80329e4126399cbbdd3edc7791eef0e92",
+          "output_sha256": "3efd0b4092878f331236c91e979e532b8ed6b2d79426cee7e4c2a24d064c988d",
+          "peak_working_set_bytes": 37003264,
+          "times_seconds": [
+            0.030239899992011487,
+            0.031856600020546466,
+            0.031060900015290827,
+            0.030517600011080503,
+            0.032188399985898286
+          ],
+          "median_seconds": 0.031060900015290827
+        },
+        {
+          "id": "maximum-random",
+          "group": 5,
+          "score_percent": 20,
+          "purpose": "maximum-random; mixed queries, bombardments and cleanup",
+          "dimensions": {
+            "m": 30000,
+            "width": 1001,
+            "height": 1001,
+            "min_span": 1000,
+            "offline": false,
+            "query_count": 10001
+          },
+          "input_bytes": 1147511,
+          "input_sha256": "82516f4b325b0567c937b3a1c6c22069017366d21c4ee802f53a0742376df36c",
+          "output_sha256": "06d810bd9d51cbc994071ad97a90987834099bf7b231c0d5b55b23be7b951082",
+          "peak_working_set_bytes": 37007360,
+          "times_seconds": [
+            0.04677249997621402,
+            0.04602910001995042,
+            0.04479469999205321,
+            0.04477310000220314,
+            0.045189499971456826
+          ],
+          "median_seconds": 0.045189499971456826
+        }
+      ]
+    },
+    "elite-combatant": {
+      "sample_count": 4,
+      "std_sha256": "421140da2fd668f0b13cd4ee012f6b008944850827f3da41d8e8625c6091ce32",
+      "generator_sha256": "224fa2c9aa382193a4e99ef35ce47e3acfa9b9e6fe59d718af4bcd003548050a",
+      "plan_sha256": "9f398ccb7047c844197b29fc2e8a9d34e4d5ed10a1b9bf696e0f08abab4e4009",
+      "program_sha256": "90f8c25432028ea350f5eab25954f662cefcc095737be536129566640e8716de",
+      "standard_time_seconds": 0.3743073000223376,
+      "peak_working_set_bytes": 30711808,
+      "indicative_limit_seconds": 1.0,
+      "cases": [
+        {
+          "id": "small",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "support choice and original sample",
+          "dimensions": {
+            "k": 2,
+            "n": 3,
+            "positive_types": 2,
+            "expected_output": [
+              "140"
+            ]
+          },
+          "input_bytes": 55,
+          "input_sha256": "b0a723bcc58e1ba538fadfca1592d0950f2e829b5db163e7bdb275ac12fc436d",
+          "output_sha256": "4ec2b4d87cca3765d34f37805d9c0bfb28199f32c7c76957b45c4f030898bc43",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.015577000041957945,
+            0.015262399974744767,
+            0.015267800015863031,
+            0.01506500004325062,
+            0.014511200017295778
+          ],
+          "median_seconds": 0.015262399974744767
+        },
+        {
+          "id": "healing",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "answer beyond unsigned 64-bit",
+          "dimensions": {
+            "k": 1,
+            "n": 50000,
+            "positive_types": 0,
+            "expected_output": [
+              "24999874999500000000"
+            ]
+          },
+          "input_bytes": 300053,
+          "input_sha256": "c97383a73e9a8f7d9e4ebd51437d3559f5db4e947c1a38f1938dfe1c0035b74d",
+          "output_sha256": "618bcb23280c154f39a985411a45ddd36fcec033d2249b96e64fb08a8e7ec356",
+          "peak_working_set_bytes": 5038080,
+          "times_seconds": [
+            0.01620750001166016,
+            0.015756400011014193,
+            0.014978499966673553,
+            0.016218500037211925,
+            0.01569329999620095
+          ],
+          "median_seconds": 0.015756400011014193
+        },
+        {
+          "id": "neutral",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "zero hostile types and zero healing",
+          "dimensions": {
+            "k": 1,
+            "n": 50000,
+            "positive_types": 0,
+            "expected_output": [
+              "2000000000"
+            ]
+          },
+          "input_bytes": 400049,
+          "input_sha256": "c88457cde8868dcec30a651f0b5b2883c97db07eb3be5dff01a786ebf8bad86a",
+          "output_sha256": "81663fd7f9a56a1707ddf038b5b99118383faa26d22de230bc333f74100e05b4",
+          "peak_working_set_bytes": 5046272,
+          "times_seconds": [
+            0.015757200017105788,
+            0.01638340001227334,
+            0.015319400001317263,
+            0.015863900014664978,
+            0.015493900049477816
+          ],
+          "median_seconds": 0.015757200017105788
+        },
+        {
+          "id": "absent",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "zero-count positive type and UTF-8 name",
+          "dimensions": {
+            "k": 2,
+            "n": 1,
+            "positive_types": 1,
+            "expected_output": [
+              "1"
+            ]
+          },
+          "input_bytes": 61,
+          "input_sha256": "8c5e26c99ea5330e73c177b92767756a252aab0e510982b2bf375f5f3eae072a",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "peak_working_set_bytes": 5042176,
+          "times_seconds": [
+            0.015625,
+            0.014532300003338605,
+            0.014368899981491268,
+            0.014372500008903444,
+            0.013737000001128763
+          ],
+          "median_seconds": 0.014372500008903444
+        },
+        {
+          "id": "fatal",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "impossible mission and exactly zero health",
+          "dimensions": {
+            "k": 3,
+            "n": 5,
+            "positive_types": 2,
+            "expected_output": [
+              "leave!"
+            ]
+          },
+          "input_bytes": 99,
+          "input_sha256": "9913d5f401c10c0be6576ebc5e0d42822e89ec04c058b832929ff8632e48f640",
+          "output_sha256": "3a1c54b97fe8b29ec013e0c6fc08ade2ce3b068e4df5825188751cb137c42a2b",
+          "peak_working_set_bytes": 5029888,
+          "times_seconds": [
+            0.015997500042431056,
+            0.015994700021110475,
+            0.01540129998466,
+            0.015818800020497292,
+            0.017908399982843548
+          ],
+          "median_seconds": 0.015994700021110475
+        },
+        {
+          "id": "midturn",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "final health is insufficient as survival check",
+          "dimensions": {
+            "k": 3,
+            "n": 5,
+            "positive_types": 2,
+            "expected_output": [
+              "leave!"
+            ]
+          },
+          "input_bytes": 79,
+          "input_sha256": "bc29e9c9bbed550262bcae4c2e26b91067e9a9831f1ec0407a541c8cf17a7644",
+          "output_sha256": "3a1c54b97fe8b29ec013e0c6fc08ade2ce3b068e4df5825188751cb137c42a2b",
+          "peak_working_set_bytes": 5033984,
+          "times_seconds": [
+            0.01634339999873191,
+            0.018525200022850186,
+            0.01634079997893423,
+            0.016221500001847744,
+            0.015444699965883046
+          ],
+          "median_seconds": 0.01634079997893423
+        },
+        {
+          "id": "dense",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "twenty hostile types with many units and healing",
+          "dimensions": {
+            "k": 21,
+            "n": 50000,
+            "positive_types": 20,
+            "expected_output": [
+              "2394789341918634000"
+            ]
+          },
+          "input_bytes": 370361,
+          "input_sha256": "a14fa965f9d95fcbfba9229270f18befa414c7cf408d9cae667b78c1d8a2b3f3",
+          "output_sha256": "1da8184897229650b2051404ec9e47b510c0ac2e48631445b21aebf82aee742f",
+          "peak_working_set_bytes": 30056448,
+          "times_seconds": [
+            0.3781967000104487,
+            0.3739336000289768,
+            0.37171330000273883,
+            0.3671180999954231,
+            0.37247950001619756
+          ],
+          "median_seconds": 0.37247950001619756
+        },
+        {
+          "id": "types",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "five thousand distinct type names",
+          "dimensions": {
+            "k": 5000,
+            "n": 50000,
+            "positive_types": 20,
+            "expected_output": [
+              "83351057292685"
+            ]
+          },
+          "input_bytes": 546668,
+          "input_sha256": "8ca8e17976324fa078329773b5de967a1b6b1a72fa4506e88c36ef3116ec62ae",
+          "output_sha256": "359276a9707a9c09ba950f4182a34298a9cd47a1181e590ca5d0d51a078a6d56",
+          "peak_working_set_bytes": 30711808,
+          "times_seconds": [
+            0.22470449999673292,
+            0.2270608000108041,
+            0.22618100000545382,
+            0.22857520001707599,
+            0.22624899999937043
+          ],
+          "median_seconds": 0.22624899999937043
+        },
+        {
+          "id": "wide",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "large signed transition values",
+          "dimensions": {
+            "k": 21,
+            "n": 50000,
+            "positive_types": 20,
+            "expected_output": [
+              "11792806871257921250"
+            ]
+          },
+          "input_bytes": 362962,
+          "input_sha256": "7dc48c82c6e56083ed32e14fb59161cf2d25821606dbf6a3b243f4c671d97fe2",
+          "output_sha256": "15e5733a93c043cdfc802c0b024cddebe92d9869052284682b5f7fde09c06de9",
+          "peak_working_set_bytes": 30056448,
+          "times_seconds": [
+            0.3710942000034265,
+            0.3743073000223376,
+            0.378352600033395,
+            0.3701650000293739,
+            0.3761194000253454
+          ],
+          "median_seconds": 0.3743073000223376
+        },
+        {
+          "id": "random",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "all subset states reachable",
+          "dimensions": {
+            "k": 20,
+            "n": 20,
+            "positive_types": 20,
+            "expected_output": [
+              "1999956962"
+            ]
+          },
+          "input_bytes": 531,
+          "input_sha256": "ad5fd04a15b123db1cc0874b3614ad39b01c9c6f1fcc6b8e33e3f39b66fcdc11",
+          "output_sha256": "324e95ff7dc8fa23445d9f3e5537c77ad5c036257303855cf770b6f053d68761",
+          "peak_working_set_bytes": 30052352,
+          "times_seconds": [
+            0.262791599961929,
+            0.26329259999329224,
+            0.2545938999974169,
+            0.2606849999865517,
+            0.2593245000462048
+          ],
+          "median_seconds": 0.2606849999865517
+        }
+      ]
+    }
+  }
+}

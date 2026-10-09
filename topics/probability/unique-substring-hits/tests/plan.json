@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "q": 10,
+      "mode": "same",
+      "purpose": "same",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 350001
+    },
+    {
+      "n": 20,
+      "q": 30,
+      "mode": "binary",
+      "purpose": "binary",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 350002
+    },
+    {
+      "n": 2000,
+      "q": 500,
+      "mode": "same",
+      "purpose": "same",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 350003
+    },
+    {
+      "n": 2000,
+      "q": 500,
+      "mode": "alternating",
+      "purpose": "alternating",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 350004
+    },
+    {
+      "n": 500,
+      "q": 500,
+      "mode": "ascii",
+      "purpose": "ascii",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 350005
+    },
+    {
+      "n": 100000,
+      "q": 500,
+      "mode": "same",
+      "purpose": "same",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 350006
+    },
+    {
+      "n": 100000,
+      "q": 500,
+      "mode": "ascii",
+      "purpose": "ascii",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 350007
+    },
+    {
+      "n": 100000,
+      "q": 500,
+      "mode": "alternating",
+      "purpose": "alternating",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 350008
+    },
+    {
+      "n": 96047,
+      "q": 500,
+      "mode": "singular",
+      "purpose": "singular",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 350009
+    },
+    {
+      "n": 100000,
+      "q": 500,
+      "mode": "binary",
+      "purpose": "binary",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 350010
+    }
+  ]
+}

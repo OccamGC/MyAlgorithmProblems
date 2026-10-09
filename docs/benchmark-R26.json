@@ -1,0 +1,1644 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Shanghai",
+  "cpu": "Intel(R) Core(TM) Ultra 9 275HX",
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "compiler": "g++.exe (GCC) 16.2.0",
+  "flags": [
+    "-std=c++17",
+    "-O2",
+    "-DNDEBUG",
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic"
+  ],
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "timing_scope": "Startup and I/O included; generation and validation excluded.",
+  "memory_scope": "Separately measured peak working set includes runtime overhead.",
+  "problems": {
+    "distinct-tile-runs": {
+      "sources": {
+        "std.cpp": "263bf8e8b704cfdc3b6f1aae65093d6ef09254a77e82b8ab8c531c07f26d482c"
+      },
+      "binaries": {
+        "std": "20a255a361595c55199bdd9215b41c6aa8fc91af2e4280050b91d6b58df9398c"
+      },
+      "generator_sha256": "2b94828d66d724c16504970e0f66a98f74b501fd0b33a5f014fd0168092249b5",
+      "plan_sha256": "1d4cf92103cdb648b8041eaf5b4506d594550a49b79ed29cad5f6dadeb3366a5",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 1,
+            "m": 1,
+            "k": 1
+          },
+          "input_sha256": "5a99eb8f8eeb5d251bc287022bbffc94675cc3a05eda3c59d26fb992f4cdc7b3",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.015586799941956997,
+                0.014402500004507601,
+                0.015116200083866715,
+                0.0145860998891294,
+                0.014525999897159636
+              ],
+              "median_seconds": 0.0145860998891294,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 3,
+            "m": 1,
+            "k": 3
+          },
+          "input_sha256": "94ee88ac3985daebe8bbcb057622e6710fd6a8e3ebb5fca22664182adeae5df7",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.013676799950189888,
+                0.019870399963110685,
+                0.014962999965064228,
+                0.016221800004132092,
+                0.014597499975934625
+              ],
+              "median_seconds": 0.014962999965064228,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 8,
+            "m": 2,
+            "k": 20
+          },
+          "input_sha256": "c2eea632580f70719648f7cf86365e02bb14659ac93299c9fe53d9e1ae7c4d5b",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01633909996598959,
+                0.015523200039751828,
+                0.01668589992914349,
+                0.014581599971279502,
+                0.01872449996881187
+              ],
+              "median_seconds": 0.01633909996598959,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 5000000,
+            "m": 5000000,
+            "k": 5000000
+          },
+          "input_sha256": "368b7a9e79f16aedc001ea131719235155ccae901f3868acb956b090c20566ca",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.35367500002030283,
+                0.35676730005070567,
+                0.3472833000123501,
+                0.34950689994730055,
+                0.34938129992224276
+              ],
+              "median_seconds": 0.34950689994730055,
+              "peak_working_set_bytes": 85225472
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 5000000,
+            "m": 1,
+            "k": 5000000
+          },
+          "input_sha256": "b9861e844a5f803e4d5b21b5a99874e41369d6d661b4617f492a3c1fa9499f2c",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.27675119997002184,
+                0.29173039994202554,
+                0.2808284000493586,
+                0.2743947000708431,
+                0.266345499898307
+              ],
+              "median_seconds": 0.27675119997002184,
+              "peak_working_set_bytes": 85225472
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 5000000,
+            "m": 5000000,
+            "k": 5000000
+          },
+          "input_sha256": "2ef2c52410f8a10883c092b3b06cfe4addb3604de95d16e00ba047260e505fa5",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.7433555000461638,
+                0.7081276000244543,
+                0.7382862999802455,
+                0.7533149999799207,
+                0.7132518999278545
+              ],
+              "median_seconds": 0.7382862999802455,
+              "peak_working_set_bytes": 85225472
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 5000000,
+            "m": 5000000,
+            "k": 5000000
+          },
+          "input_sha256": "ad16d259b56c7ad8d059bb3e12eb0658a79f766b360ba4b207767642f850b0c9",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5273185999831185,
+                0.5449590000789613,
+                0.5305304999928921,
+                0.5353611999889836,
+                0.528643700061366
+              ],
+              "median_seconds": 0.5305304999928921,
+              "peak_working_set_bytes": 85221376
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 5000000,
+            "m": 1,
+            "k": 5000000
+          },
+          "input_sha256": "c4499e9fa0806305abb5e54274a8f038ee98b61d24657bb5a9fc9c9975143b43",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.34229770000092685,
+                0.3344873000169173,
+                0.3277581000002101,
+                0.33135530003346503,
+                0.3342147999210283
+              ],
+              "median_seconds": 0.3342147999210283,
+              "peak_working_set_bytes": 85225472
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 2,
+            "m": 2500000,
+            "k": 5000000
+          },
+          "input_sha256": "a4471be67f1e710f248bdf43ad22099af09cd10410ced571c60f6476ba0dbea5",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.24209289997816086,
+                0.23102079995442182,
+                0.23917070007883012,
+                0.23043200001120567,
+                0.23646879999432713
+              ],
+              "median_seconds": 0.23646879999432713,
+              "peak_working_set_bytes": 85217280
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Full output: direct 64-state transitions without bit-parallel folding. Independent subset enumeration is used on small inputs.",
+          "dimensions": {
+            "n": 4999999,
+            "m": 1,
+            "k": 4999999
+          },
+          "input_sha256": "2ceca24529de29856f6db90e28c43c6d4c0bee3dc7df59f8a4c4c8351aad0f1d",
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.28336780006065965,
+                0.2735888999886811,
+                0.27364959998521954,
+                0.2749909999547526,
+                0.2670691000530496
+              ],
+              "median_seconds": 0.27364959998521954,
+              "peak_working_set_bytes": 85225472
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.7382862999802455,
+          "peak_working_set_bytes": 85225472
+        }
+      },
+      "multiplier": 2,
+      "multiplier_reason": "Default multiplier.",
+      "limit_seconds": 1.5,
+      "within_limit": {
+        "std": true
+      }
+    },
+    "prefix-tile-groups": {
+      "sources": {
+        "std.cpp": "971dea0e43dfc9b779c7fe66ffcc9f368c212d78e3b5da5c74ec39c132a3d9f5"
+      },
+      "binaries": {
+        "std": "a246da2f1f087789656fd3858a46a32f2b83802e7f94e97ece30bbfaa130afb4"
+      },
+      "generator_sha256": "2b94828d66d724c16504970e0f66a98f74b501fd0b33a5f014fd0168092249b5",
+      "plan_sha256": "b35bd0fb13e0827f83eda298fd5773fecc59b5486d5e71d35f02cc5a010929ce",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 1
+          },
+          "input_sha256": "a6e2b7a040683432de03a18fd8a1939a2fdf82585b364bfc874bdd4095c4cae1",
+          "output_sha256": "064ad2ea83b15862d42df2078becc66fcb58701fc6045d8ba52f4f8a2f3e7d55",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.018513199989683926,
+                0.015593299991451204,
+                0.01566659996751696,
+                0.017696499940939248,
+                0.016306999954394996
+              ],
+              "median_seconds": 0.016306999954394996,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 8
+          },
+          "input_sha256": "3a8ee2c82fdb0665b51b9b22b4549e44dfc534435778a4337fc306ab81003328",
+          "output_sha256": "d92c0f443a4cb20a94450b2bba5d32bcad9b4682a057cd135c97c5ce34c4cdf6",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016579600051045418,
+                0.015670199994929135,
+                0.020547799998894334,
+                0.015496399952098727,
+                0.014585400000214577
+              ],
+              "median_seconds": 0.015670199994929135,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "8a136dfe983ab44c5b5bd5fbafe4cdff6c0cca7f82cce03fd4d60b49d7cbf467",
+          "output_sha256": "36efa2c8db97dd661a61fe4129a788759040db2ad4ce93175ccb1532367e549b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07158380001783371,
+                0.07229710009414703,
+                0.07652250002138317,
+                0.07546959992032498,
+                0.07159930001944304
+              ],
+              "median_seconds": 0.07229710009414703,
+              "peak_working_set_bytes": 5369856
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "c5157a045d12b5387f3d8f76ac7501708045a78c00626efec2548bd34c0b10c3",
+          "output_sha256": "dde576c99d1cafd788e35563d082e23fbc0456c8fa8ed0a9233a090ecaf593f9",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07592979993205518,
+                0.07185930002015084,
+                0.07342489995062351,
+                0.07024479995016009,
+                0.07139870000537485
+              ],
+              "median_seconds": 0.07185930002015084,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "8627311b6eea71d6a6a51e050aaf76009b0a8a138b8b63bb479f011a62c6f527",
+          "output_sha256": "96bfb53c25c6ec6066643df6cbd4839d481841001497e715ce56a1f65643ece9",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07311009999830276,
+                0.07198520004749298,
+                0.16065320000052452,
+                0.07202500000130385,
+                0.0704763000831008
+              ],
+              "median_seconds": 0.07202500000130385,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "0bbb655c9e212ef45059e30746387659a132e6fd9481eb91af297dd235dd904d",
+          "output_sha256": "edab65b0323978fe7a5c6305570b7fd3f860d2a337f49d9b7aba732faa5bce25",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.13889310008380562,
+                0.1398072000592947,
+                0.1366971000097692,
+                0.13923920004162937,
+                0.13915129995439202
+              ],
+              "median_seconds": 0.13915129995439202,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "6fef132439b096c690e5f78a7e907f8ffdcc1f399425cd8a8946e4a0c90f9839",
+          "output_sha256": "28e2097d2e1a5f37d0beae7efa0b996561f17b206d670e57e37d3c08287c547a",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.13803359994199127,
+                0.13952460000291467,
+                0.13712139998096973,
+                0.12978660000953823,
+                0.13738860003650188
+              ],
+              "median_seconds": 0.13738860003650188,
+              "peak_working_set_bytes": 5369856
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "c3a8c90be6cfd153ee3a04568e498b15c2901de6d30a8a00e24a494913b4d41d",
+          "output_sha256": "79856aa96bda3bb6ce10073e312fa33ddc34d80d20134836f9ab1415645e099f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.0923492000438273,
+                0.0877250999910757,
+                0.09633580001536757,
+                0.08901580004021525,
+                0.08489259995985776
+              ],
+              "median_seconds": 0.08901580004021525,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 5000000
+          },
+          "input_sha256": "a3ab500ac2cffd96551641040cbe4a407ce68e01d970912d8efaa9a7bacaf1bc",
+          "output_sha256": "7cd1515584cf7711a90d09b56ef89c1c7992fa8a496ed2aba2b29d3db67e0382",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07849560002796352,
+                0.07403729995712638,
+                0.07661710004322231,
+                0.07292900001630187,
+                0.07472590007819235
+              ],
+              "median_seconds": 0.07472590007819235,
+              "peak_working_set_bytes": 5369856
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every prefix: explicit 18-state transitions without lookup tables. Independent group recursion is used on small inputs.",
+          "dimensions": {
+            "n": 4999999
+          },
+          "input_sha256": "ad6562b1abfcf44c70cb304537297ac485c06b1e2ac1d13eb98e32ba32582914",
+          "output_sha256": "752fb0dee2363f98297c8c18bce00650ade5941d066e4734c2335062fc3ea4d6",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.14851610001642257,
+                0.1373748000478372,
+                0.12946790002752095,
+                0.12450959999114275,
+                0.13221880001947284
+              ],
+              "median_seconds": 0.13221880001947284,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.13915129995439202,
+          "peak_working_set_bytes": 5369856
+        }
+      },
+      "multiplier": 2,
+      "multiplier_reason": "Default multiplier.",
+      "limit_seconds": 0.5,
+      "within_limit": {
+        "std": true
+      }
+    },
+    "old-yd-disjoint-set": {
+      "sources": {
+        "std.cpp": "274cd8579ee36f2acf1f9c3732bff0a62fc57ff917d335be637b5f99e06b913d",
+        "alternative.cpp": "cbb942e2483fb85c4b73e1eaf05ef6fa3ba730043c1270656736e436cd8a75fd"
+      },
+      "binaries": {
+        "std": "bc96cf82cea5c09937546fd817fe2b020517956d63a93b833d4f725f5c43b68d",
+        "alternative": "23c53f31c651c6a293ea4db67d427768263d8a08767aca2b554c6c491a25a780"
+      },
+      "generator_sha256": "2b94828d66d724c16504970e0f66a98f74b501fd0b33a5f014fd0168092249b5",
+      "plan_sha256": "69927a6d6c00e49b490e448a7ecd0187f1e794ab81aa8a259b1f8634de1e08c1",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 1,
+            "maximum_n": 3
+          },
+          "input_sha256": "1339c60ea33ff9794f0865e749e4469e912a7ab7afd3e81b6b964208680c5d11",
+          "output_sha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.016567899961955845,
+                0.016521999961696565,
+                0.016115799895487726,
+                0.01635839999653399,
+                0.016098499996587634
+              ],
+              "median_seconds": 0.01635839999653399,
+              "peak_working_set_bytes": 5361664
+            },
+            "alternative": {
+              "seconds": [
+                0.016960599925369024,
+                0.01734629995189607,
+                0.01622769993264228,
+                0.016938399989157915,
+                0.01672710001002997
+              ],
+              "median_seconds": 0.016938399989157915,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 69
+          },
+          "input_sha256": "3bf8901b7de0582d0a57b2f15db029445a04347638d19a8a6dce536bc1677c3a",
+          "output_sha256": "f345d779773777dd2e604fa96f139dbbeac43b9124dc85df73a9e019f2cdc8c8",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.017351999995298684,
+                0.017402700032107532,
+                0.016045200056396425,
+                0.016275899950414896,
+                0.016107800067402422
+              ],
+              "median_seconds": 0.016275899950414896,
+              "peak_working_set_bytes": 5357568
+            },
+            "alternative": {
+              "seconds": [
+                0.02225489995907992,
+                0.016442099935375154,
+                0.01793620001990348,
+                0.017763199983164668,
+                0.017520900000818074
+              ],
+              "median_seconds": 0.017763199983164668,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "b0e5e7019a1c753c64f9e58350bb62cb7af293af3bdfeb01d4406501565c8456",
+          "output_sha256": "3aea5fb4ba037cf80027db5db1c7e07af880b725b2fb87c57ad51bb3c8cdc48b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.49200379999820143,
+                0.48118710005655885,
+                0.48025289992801845,
+                0.504571900004521,
+                0.4938171999529004
+              ],
+              "median_seconds": 0.49200379999820143,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.9739151000976562,
+                1.0084449999267235,
+                0.9924776999978349,
+                0.9891820000484586,
+                0.9703520000912249
+              ],
+              "median_seconds": 0.9891820000484586,
+              "peak_working_set_bytes": 45223936
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "9b3bad0316fe245e0f629feb397c973059f365d7ab12d0a24689267006c92614",
+          "output_sha256": "4f1db85b64b988123e410f48a33769a00d7f6cc0edf876ec32f7e832bae21335",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4876920999959111,
+                0.49870520003605634,
+                0.4990379000082612,
+                0.4926570999668911,
+                0.515755100059323
+              ],
+              "median_seconds": 0.49870520003605634,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.9861158999847248,
+                0.9867493999190629,
+                0.9605887000216171,
+                0.9801245999988168,
+                0.9570831999881193
+              ],
+              "median_seconds": 0.9801245999988168,
+              "peak_working_set_bytes": 45219840
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 9999990,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "10661db5871465f600882c80edbadca8d467d8c89be07cd7846b331a17cd4032",
+          "output_sha256": "bb92aa03e23e3d0662519d11be7db7ec0e4abfc3e6c722c600dbd53a981c6f40",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.021567899966612458,
+                0.01877339999191463,
+                0.021150899934582412,
+                0.01634380000177771,
+                0.017929800087586045
+              ],
+              "median_seconds": 0.01877339999191463,
+              "peak_working_set_bytes": 5357568
+            },
+            "alternative": {
+              "seconds": [
+                0.017787200049497187,
+                0.02334389998577535,
+                0.016542600002139807,
+                0.017658500000834465,
+                0.017759000067599118
+              ],
+              "median_seconds": 0.017759000067599118,
+              "peak_working_set_bytes": 5357568
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "073fdb52b7e14b6824863c0e2a6ccea518ec8593cb72fac927980c8a13369be8",
+          "output_sha256": "cf9c4ff884a81a762402faa595c46dba12e9bb1960736990e9f5d6c6cc734c4a",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.41680459992494434,
+                0.4003882999531925,
+                0.3967568000080064,
+                0.40439279994461685,
+                0.3959063000511378
+              ],
+              "median_seconds": 0.4003882999531925,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.6917649999959394,
+                0.6891677000094205,
+                0.702358299982734,
+                0.6933501999592409,
+                0.6887590000405908
+              ],
+              "median_seconds": 0.6917649999959394,
+              "peak_working_set_bytes": 45219840
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "dc37305006e75f3d3f5389af485522a315bbb53067e132c22b3d77745a76bb6f",
+          "output_sha256": "be850b45b867dfcc265526bb15bf059e7ac8e87d4c5bcedf54a1ad29c5019692",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4944257000461221,
+                0.4922255000565201,
+                0.4919539999682456,
+                0.49694179999642074,
+                0.4936145000392571
+              ],
+              "median_seconds": 0.4936145000392571,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.9899232999887317,
+                0.9509972999803722,
+                0.9773164000362158,
+                0.9997028999496251,
+                0.9808833999559283
+              ],
+              "median_seconds": 0.9808833999559283,
+              "peak_working_set_bytes": 45223936
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "628a6da6afb53951daf0d8a5c4f289a349f23da91d21bdb6210c40d5c23c7db2",
+          "output_sha256": "068d8890dee0043875a0efa6c1ac43bb86f17dd930ab72adccee7f0e9ab4fe93",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.500401199911721,
+                0.4793536000652239,
+                0.4917364999419078,
+                0.4929532000096515,
+                0.496204600087367
+              ],
+              "median_seconds": 0.4929532000096515,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.9596456999424845,
+                0.9677849999861792,
+                0.9918089000275359,
+                1.0490867999615148,
+                0.9692866000114009
+              ],
+              "median_seconds": 0.9692866000114009,
+              "peak_working_set_bytes": 45223936
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 5000000,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "6a79674f1570fbd77d07a18c1af747fbc092e4858bd11ef337f0f04e0b8874aa",
+          "output_sha256": "f3e31a828d97a5d32eecf9c5228624f8632b1d79c0bf9a6b7153098693628776",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2560978000983596,
+                0.1833563999971375,
+                0.19263289996888489,
+                0.17192759993486106,
+                0.17761380004230887
+              ],
+              "median_seconds": 0.1833563999971375,
+              "peak_working_set_bytes": 85225472
+            },
+            "alternative": {
+              "seconds": [
+                0.2334584000054747,
+                0.2555626999819651,
+                0.24604400002863258,
+                0.24054509995039552,
+                0.24236809997819364
+              ],
+              "median_seconds": 0.24236809997819364,
+              "peak_working_set_bytes": 25219072
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Full output matched both published implementations and unchanged setter program. Small instances additionally use independent recursive expansion.",
+          "dimensions": {
+            "B": 3,
+            "m": 5,
+            "maximum_n": 10000000
+          },
+          "input_sha256": "4c211539e695903845948260d4305bc69a7ce9b9dd46d2394cc9e16081a8a6d5",
+          "output_sha256": "fa23f3d5b9da308cc9256b819a0b73007d11e893b71ba21c59360b587a1f6749",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3420292999362573,
+                0.3370993999997154,
+                0.40113650006242096,
+                0.3411560000386089,
+                0.3403108000056818
+              ],
+              "median_seconds": 0.3411560000386089,
+              "peak_working_set_bytes": 165228544
+            },
+            "alternative": {
+              "seconds": [
+                0.534677300020121,
+                0.5042066000169143,
+                0.5124114999780431,
+                0.5019663000712171,
+                0.5135043999180198
+              ],
+              "median_seconds": 0.5124114999780431,
+              "peak_working_set_bytes": 45219840
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.49870520003605634,
+          "peak_working_set_bytes": 165228544
+        },
+        "alternative": {
+          "slowest_median_seconds": 0.9891820000484586,
+          "peak_working_set_bytes": 45223936
+        }
+      },
+      "multiplier": 4,
+      "multiplier_reason": "The lower-memory parallel alternative needs at least twofold measured headroom on the full original range.",
+      "limit_seconds": 2.0,
+      "within_limit": {
+        "std": true,
+        "alternative": true
+      }
+    },
+    "minimum-weighted-subarrays": {
+      "sources": {
+        "std.cpp": "b19fde190f89287fd61ff19772982ae664dffbb65f9acf7f4332d1f27fc433f9",
+        "alternative.cpp": "ee9aebe919942dca84d429e1b18142bbc0ed1c91a3a0cd530f4dbe844af2e0ff"
+      },
+      "binaries": {
+        "std": "ef235656664027efd73ea4a51cf0aad0b1f62288dfad04ca527d53c14cb1dca5",
+        "alternative": "429d87abcfb188f6c731ea8e7dc3af15bee9dcf313395328082293274abf304f"
+      },
+      "generator_sha256": "2b94828d66d724c16504970e0f66a98f74b501fd0b33a5f014fd0168092249b5",
+      "plan_sha256": "bfcb5500cfffbb9d0b4f8a9113ceee8e7770ee3c2763d4b55dceb0f90c61608e",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 1
+          },
+          "input_sha256": "2e60a799db3c5f170731d16e52963bd9d945308fe612ced2cca6d202594bb958",
+          "output_sha256": "28a7b0020a82e7b17c34f6df66d7b5c69f9a90fb3193b1fd1c9713d5898ef5a0",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.01697019999846816,
+                0.018319500028155744,
+                0.0179214000236243,
+                0.022545099956914783,
+                0.01784169999882579
+              ],
+              "median_seconds": 0.0179214000236243,
+              "peak_working_set_bytes": 5353472
+            },
+            "alternative": {
+              "seconds": [
+                0.02211449993774295,
+                0.020266099949367344,
+                0.017550399992614985,
+                0.021782600088045,
+                0.019507399993017316
+              ],
+              "median_seconds": 0.020266099949367344,
+              "peak_working_set_bytes": 5349376
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 60
+          },
+          "input_sha256": "be3b3ef94279813bdde1e6224e9499ca22c6ba9301d4ea4a55339e98a492fbe6",
+          "output_sha256": "28c533944fa6dd987ae1b1cc20671ce063b5607122ae3623ae36b7d4aa869e18",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.017020100029185414,
+                0.017862600041553378,
+                0.017243399983271956,
+                0.017274299985729158,
+                0.01941800001077354
+              ],
+              "median_seconds": 0.017274299985729158,
+              "peak_working_set_bytes": 5353472
+            },
+            "alternative": {
+              "seconds": [
+                0.01735420001205057,
+                0.017155100009404123,
+                0.01862370001617819,
+                0.01856019999831915,
+                0.018812099937349558
+              ],
+              "median_seconds": 0.01856019999831915,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "a365bc5edc8eb08809821879b6cda8f4e02daf2291e4bccdc6a843a2da3aee1a",
+          "output_sha256": "9ab5a59914286df1bd0c8beb01c19d197783bef5e05f0945e2a214ef5350bf0b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4847510999534279,
+                0.5023921000538394,
+                0.5045222999760881,
+                0.5016778000863269,
+                0.49646049994044006
+              ],
+              "median_seconds": 0.5016778000863269,
+              "peak_working_set_bytes": 205221888
+            },
+            "alternative": {
+              "seconds": [
+                0.2755186000140384,
+                0.27079809992574155,
+                0.2667994999792427,
+                0.2818592000985518,
+                0.2681822000304237
+              ],
+              "median_seconds": 0.27079809992574155,
+              "peak_working_set_bytes": 5349376
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "1d0cc648d5d5b0fb5e744b6d372c9157f80bda3355940c9bf9540913c9f6e983",
+          "output_sha256": "9ab5a59914286df1bd0c8beb01c19d197783bef5e05f0945e2a214ef5350bf0b",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5184772000648081,
+                0.5268696999410167,
+                0.516491899965331,
+                0.5297451999504119,
+                0.5232348000863567
+              ],
+              "median_seconds": 0.5232348000863567,
+              "peak_working_set_bytes": 205221888
+            },
+            "alternative": {
+              "seconds": [
+                0.2883234000764787,
+                0.2760217998875305,
+                0.2857855000765994,
+                0.28373699996154755,
+                0.28614029998425394
+              ],
+              "median_seconds": 0.2857855000765994,
+              "peak_working_set_bytes": 5349376
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "262fd0af365584c9463b2068346f1db60b5751da1aa9ecbcdd7c01e8b945e1f4",
+          "output_sha256": "cad670cd8ebad927244f3fca05cc6e578cc680e9b84741bbeb423e7ebcfcee2d",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5329728999640793,
+                0.5135512000415474,
+                0.5043957000598311,
+                0.5026237999554724,
+                0.49981860001571476
+              ],
+              "median_seconds": 0.5043957000598311,
+              "peak_working_set_bytes": 245223424
+            },
+            "alternative": {
+              "seconds": [
+                0.24716300005093217,
+                0.2561453999951482,
+                0.24918540008366108,
+                0.2534890999086201,
+                0.2469149000244215
+              ],
+              "median_seconds": 0.24918540008366108,
+              "peak_working_set_bytes": 245219328
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "9fe6efe992350172d555b104f0219a0ee00b627b22c920a595556012e8dde4ec",
+          "output_sha256": "13a399570962b9c4e3e0f70a3efde1d8965f3c8dbf78577c5c4e2eb6d7a3624f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.47226640000008047,
+                0.4763006999855861,
+                0.4725947000551969,
+                0.48037460003979504,
+                0.487378399935551
+              ],
+              "median_seconds": 0.4763006999855861,
+              "peak_working_set_bytes": 205221888
+            },
+            "alternative": {
+              "seconds": [
+                0.25208430003840476,
+                0.2540076000150293,
+                0.25463009998202324,
+                0.25760000001173466,
+                0.25940099998842925
+              ],
+              "median_seconds": 0.25463009998202324,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "ec8b53fd02a6b386346ca1736f8b2829eba4601001afbc34f5a7e940ea495f47",
+          "output_sha256": "6cbe9f6a8697d588a78d08a8581713f3926f08ed2567548feddb27929a239f3a",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5126904000062495,
+                0.5195575000252575,
+                0.5215206999564543,
+                0.5254279999062419,
+                0.5286565000424162
+              ],
+              "median_seconds": 0.5215206999564543,
+              "peak_working_set_bytes": 205225984
+            },
+            "alternative": {
+              "seconds": [
+                0.2987784000579268,
+                0.297642600024119,
+                0.29918820003513247,
+                0.294543799944222,
+                0.30295589996967465
+              ],
+              "median_seconds": 0.2987784000579268,
+              "peak_working_set_bytes": 5349376
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "a88e3d236bdba0ff97f222546621db938d96f2a9ce252cd9c63ad90dc38b7cfe",
+          "output_sha256": "6ae5043c3ae471df6a4883dfbac2b06dbf9bc9ed173d3679a95f57272b3a2849",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5717602999648079,
+                0.5811220998875797,
+                0.5737459999509156,
+                0.6042236000066623,
+                0.5601328000193462
+              ],
+              "median_seconds": 0.5737459999509156,
+              "peak_working_set_bytes": 205221888
+            },
+            "alternative": {
+              "seconds": [
+                0.35746369999833405,
+                0.34797869995236397,
+                0.3506863999646157,
+                0.35268819995690137,
+                0.3496508999960497
+              ],
+              "median_seconds": 0.3506863999646157,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "f228876ce9df406b6270efd079a1a17c8b92d25285cee1dada435d22507a3fcf",
+          "output_sha256": "b0a336f6df94cb828136916f717b2d6920fd2a56206dc6891b1b4649ab29293e",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.4495841999305412,
+                0.43673849990591407,
+                0.4364490999141708,
+                0.4548145999433473,
+                0.43626380001660436
+              ],
+              "median_seconds": 0.43673849990591407,
+              "peak_working_set_bytes": 205225984
+            },
+            "alternative": {
+              "seconds": [
+                0.2320666000014171,
+                0.21761599997989833,
+                0.20847820001654327,
+                0.22967329993844032,
+                0.21415930008515716
+              ],
+              "median_seconds": 0.21761599997989833,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Full output: Cartesian-tree subtree aggregation with compiler wide integers independent of portable limbs.",
+          "dimensions": {
+            "n": 10000000
+          },
+          "input_sha256": "991d22dbb00e773ee0500503b17fbf4e4647a5ecf6af4ba1bbda386f0e7ec68b",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.39355040004011244,
+                0.4070981000550091,
+                0.40645440004300326,
+                0.4101529000326991,
+                0.39485460007563233
+              ],
+              "median_seconds": 0.40645440004300326,
+              "peak_working_set_bytes": 205225984
+            },
+            "alternative": {
+              "seconds": [
+                0.19022379990201443,
+                0.18679840001277626,
+                0.18134619994089007,
+                0.18335800000932068,
+                0.19307570008095354
+              ],
+              "median_seconds": 0.18679840001277626,
+              "peak_working_set_bytes": 5353472
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.5737459999509156,
+          "peak_working_set_bytes": 245223424
+        },
+        "alternative": {
+          "slowest_median_seconds": 0.3506863999646157,
+          "peak_working_set_bytes": 245219328
+        }
+      },
+      "multiplier": 2,
+      "multiplier_reason": "Default multiplier.",
+      "limit_seconds": 1.5,
+      "within_limit": {
+        "std": true,
+        "alternative": true
+      }
+    },
+    "clue-generator": {
+      "sources": {
+        "std.cpp": "15e72401852d2832e67ee3a98abdc4d44290aff6a3e6df02a6e965f6975cf149",
+        "alternative.cpp": "e2a9ea3674fa58136c1c2ba11ab0f3da50eba5847bd87103b4184e706fc29580"
+      },
+      "binaries": {
+        "std": "a5c44e8185a8fa0277d307edb2b351b13656d0d6624a4af7d5fa9ef35fcadcec",
+        "alternative": "824dda2087c9ddafd52d7ca92feef0519c1212b34a5cc8a622490a6e3e76c363"
+      },
+      "generator_sha256": "2b94828d66d724c16504970e0f66a98f74b501fd0b33a5f014fd0168092249b5",
+      "plan_sha256": "bbb84abf9bfd46cfd57fd2616f644189904cbdaa04ac1c636003138033880a28",
+      "cases": [
+        {
+          "id": "01",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 7,
+            "m": 2
+          },
+          "input_sha256": "bd468bfe6cd5512a4fc8cff62f4eb5f5bd8bc41e05c4ab74b330183b3d903b37",
+          "output_sha256": "3a30849cebecf8d1c7f0a56bc45aa8721bfaf937712b543b03629286510e1ac7",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.019138499977998435,
+                0.018190299975685775,
+                0.016735199955292046,
+                0.017411299981176853,
+                0.01702489994931966
+              ],
+              "median_seconds": 0.017411299981176853,
+              "peak_working_set_bytes": 5357568
+            },
+            "alternative": {
+              "seconds": [
+                0.019160900032147765,
+                0.016328199999406934,
+                0.01661489997059107,
+                0.019160500029101968,
+                0.018078799941577017
+              ],
+              "median_seconds": 0.018078799941577017,
+              "peak_working_set_bytes": 5361664
+            }
+          }
+        },
+        {
+          "id": "02",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 70,
+            "m": 100
+          },
+          "input_sha256": "987e23bedc10af6c431eb193478291a361a70c6bb697954a0b37d3c596435be5",
+          "output_sha256": "049143ff16b63704a70d7e53e36b8286cc62eaf38aede1fd799b52e6b8027225",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.017610300099477172,
+                0.016938899992965162,
+                0.021411300054751337,
+                0.015920599922537804,
+                0.01604999997653067
+              ],
+              "median_seconds": 0.016938899992965162,
+              "peak_working_set_bytes": 5361664
+            },
+            "alternative": {
+              "seconds": [
+                0.016888700076378882,
+                0.01683229999616742,
+                0.01661449996754527,
+                0.01631239999551326,
+                0.017734099994413555
+              ],
+              "median_seconds": 0.01683229999616742,
+              "peak_working_set_bytes": 5365760
+            }
+          }
+        },
+        {
+          "id": "03",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "10deb8defd626ceb4c714a580d5cbad5e5b7c36385f786995334d06ef6b71e1d",
+          "output_sha256": "29984dba94a9a4c0d444f0d1652d7d9c5181cea54824f9bd6ea03fbe48bffbde",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.18633270007558167,
+                0.18597569991834462,
+                0.2718487000092864,
+                0.19338289997540414,
+                0.19098379998467863
+              ],
+              "median_seconds": 0.19098379998467863,
+              "peak_working_set_bytes": 9240576
+            },
+            "alternative": {
+              "seconds": [
+                0.20425230008549988,
+                0.2034703999524936,
+                0.20752089994493872,
+                0.20880609995219857,
+                0.20972269994672388
+              ],
+              "median_seconds": 0.20752089994493872,
+              "peak_working_set_bytes": 9232384
+            }
+          }
+        },
+        {
+          "id": "04",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "d5753b380ccc3c2214f8c55a7b7a9f82b45f8794af63424bf027e0c8b091bd4d",
+          "output_sha256": "6e2833b5499272afd7fb37500adf29c70f57f018033d293d78cf18faeab9beca",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3910469999536872,
+                0.38699620007537305,
+                0.384351099957712,
+                0.3951987000182271,
+                0.3814705000258982
+              ],
+              "median_seconds": 0.38699620007537305,
+              "peak_working_set_bytes": 140046336
+            },
+            "alternative": {
+              "seconds": [
+                0.29115570010617375,
+                0.2945068000117317,
+                0.2976687999907881,
+                0.2916105999611318,
+                0.37611610000021756
+              ],
+              "median_seconds": 0.2945068000117317,
+              "peak_working_set_bytes": 13238272
+            }
+          }
+        },
+        {
+          "id": "05",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "3f349e186585f7a76d62b16f3564484f543ae75679424e77b5e4438fadb25722",
+          "output_sha256": "450fd367ab805d0cb2da4ec88c15b6b1d6063c0c31bab9ceea3f744a5e89906f",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.19380720006302,
+                0.19704240001738071,
+                0.1947419000789523,
+                0.2891582000302151,
+                0.19350320007652044
+              ],
+              "median_seconds": 0.1947419000789523,
+              "peak_working_set_bytes": 9236480
+            },
+            "alternative": {
+              "seconds": [
+                0.31439730001147836,
+                0.2309865999268368,
+                0.22016649995930493,
+                0.22752099996432662,
+                0.23706610000226647
+              ],
+              "median_seconds": 0.2309865999268368,
+              "peak_working_set_bytes": 9232384
+            }
+          }
+        },
+        {
+          "id": "06",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "51a86e05e40e50adb43a5525783e6cfd5d48d0f61fda2a9ef2b381360847e236",
+          "output_sha256": "4868468ce338bcfd84e1a1e8b60bbf4144c4c193c712fd49e05a1d95cb87d8d1",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2789810999529436,
+                0.2680911999195814,
+                0.293115200009197,
+                0.28351009998004884,
+                0.2846309000160545
+              ],
+              "median_seconds": 0.28351009998004884,
+              "peak_working_set_bytes": 9641984
+            },
+            "alternative": {
+              "seconds": [
+                0.5043788000475615,
+                0.5846399998990819,
+                0.5366519999224693,
+                0.5007103000534698,
+                0.5712332000257447
+              ],
+              "median_seconds": 0.5366519999224693,
+              "peak_working_set_bytes": 9240576
+            }
+          }
+        },
+        {
+          "id": "07",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "f687baffaa09c9293311d0dd6874c1209b55a265e62a895b303b378302793574",
+          "output_sha256": "4f766d99c7c7b2999c18b3a978168f350677e23eae3f578dd17088a5f9ec61e5",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2472228999249637,
+                0.26424529997166246,
+                0.29632319998927414,
+                0.2329987999983132,
+                0.237866299925372
+              ],
+              "median_seconds": 0.2472228999249637,
+              "peak_working_set_bytes": 9596928
+            },
+            "alternative": {
+              "seconds": [
+                0.5591912999516353,
+                0.6136039999546483,
+                0.5913900000741705,
+                0.4890001000603661,
+                0.5419552000239491
+              ],
+              "median_seconds": 0.5591912999516353,
+              "peak_working_set_bytes": 9240576
+            }
+          }
+        },
+        {
+          "id": "08",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 100000,
+            "m": 100000
+          },
+          "input_sha256": "73ffd8c7bb9d9835525816f85c1c56b13eec2af51b869cb36ad4d0bebabcf8b2",
+          "output_sha256": "6e2833b5499272afd7fb37500adf29c70f57f018033d293d78cf18faeab9beca",
+          "programs": {
+            "std": {
+              "seconds": [
+                1.1612591999582946,
+                1.1726522999815643,
+                1.1060815999517217,
+                1.1788729999680072,
+                1.1664965000236407
+              ],
+              "median_seconds": 1.1664965000236407,
+              "peak_working_set_bytes": 140038144
+            },
+            "alternative": {
+              "seconds": [
+                0.5157160999951884,
+                0.5209519000491127,
+                0.5006310000317171,
+                0.48659179999958724,
+                0.5329698000568897
+              ],
+              "median_seconds": 0.5157160999951884,
+              "peak_working_set_bytes": 13242368
+            }
+          }
+        },
+        {
+          "id": "09",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 99999,
+            "m": 100000
+          },
+          "input_sha256": "c1c3517e60c996bd9b15913e8c0c4b133d192d922840cfff164b347f0932ca24",
+          "output_sha256": "8ba32601cfcda3dc120629f6ab90bd57d25b447a6b0688679986f2512b91b245",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.2873115000547841,
+                0.27824200002942234,
+                0.3059301000321284,
+                0.2980688000097871,
+                0.4027059000218287
+              ],
+              "median_seconds": 0.2980688000097871,
+              "peak_working_set_bytes": 10420224
+            },
+            "alternative": {
+              "seconds": [
+                0.6987239000154659,
+                0.6927679000655189,
+                0.7084705999586731,
+                0.6789433999219909,
+                0.6968252999940887
+              ],
+              "median_seconds": 0.6968252999940887,
+              "peak_working_set_bytes": 9261056
+            }
+          }
+        },
+        {
+          "id": "10",
+          "verification_scope": "Every answer: Mo interval maintenance after decoding with candidate preceding answers; equality for all queries proves correct decoding by induction.",
+          "dimensions": {
+            "n": 1,
+            "m": 100000
+          },
+          "input_sha256": "3ce11ea618e84100ad350fd312d6537bda413d11769fe2336c57fcf670ef5d65",
+          "output_sha256": "3a705571facbd30697b3bc252229bcb7f1704b355cc61f1729b1be09a23e2ba0",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02084200002718717,
+                0.022545100073330104,
+                0.021578800049610436,
+                0.02455019997432828,
+                0.02232039999216795
+              ],
+              "median_seconds": 0.02232039999216795,
+              "peak_working_set_bytes": 5373952
+            },
+            "alternative": {
+              "seconds": [
+                0.023733199923299253,
+                0.02395900001283735,
+                0.02164169994648546,
+                0.025239700102247298,
+                0.02184339996892959
+              ],
+              "median_seconds": 0.023733199923299253,
+              "peak_working_set_bytes": 5378048
+            }
+          }
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 1.1664965000236407,
+          "peak_working_set_bytes": 140046336
+        },
+        "alternative": {
+          "slowest_median_seconds": 0.6968252999940887,
+          "peak_working_set_bytes": 13242368
+        }
+      },
+      "multiplier": 2,
+      "multiplier_reason": "Default multiplier.",
+      "limit_seconds": 2.5,
+      "within_limit": {
+        "std": true,
+        "alternative": true
+      }
+    }
+  }
+}

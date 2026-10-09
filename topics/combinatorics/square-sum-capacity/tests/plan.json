@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012401,
+      "mode": "capacity",
+      "queries": 1,
+      "digits": 1,
+      "shape": "small",
+      "purpose": "small and full input coverage"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012402,
+      "mode": "capacity",
+      "queries": 1000,
+      "digits": 4,
+      "shape": "small",
+      "purpose": "small and full input coverage"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012403,
+      "mode": "capacity",
+      "queries": 1,
+      "digits": 100001,
+      "shape": "maximum",
+      "purpose": "maximum and full input coverage"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012404,
+      "mode": "capacity",
+      "queries": 5,
+      "digits": 100001,
+      "shape": "maximum",
+      "purpose": "maximum and full input coverage"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012405,
+      "mode": "capacity",
+      "queries": 6,
+      "digits": 99990,
+      "shape": "nines",
+      "purpose": "nines and full input coverage"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012406,
+      "mode": "capacity",
+      "queries": 1000,
+      "digits": 590,
+      "shape": "random",
+      "purpose": "random and full input coverage"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012407,
+      "mode": "capacity",
+      "queries": 2,
+      "digits": 65536,
+      "shape": "power",
+      "purpose": "power and full input coverage"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012408,
+      "mode": "capacity",
+      "queries": 3,
+      "digits": 32769,
+      "shape": "alternating",
+      "purpose": "alternating and full input coverage"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012409,
+      "mode": "capacity",
+      "queries": 1,
+      "digits": 100000,
+      "shape": "leading_zero",
+      "purpose": "leading_zero and full input coverage"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012410,
+      "mode": "capacity",
+      "queries": 1,
+      "digits": 100000,
+      "shape": "nines",
+      "purpose": "nines and full input coverage"
+    }
+  ]
+}

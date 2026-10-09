@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012000,
+      "purpose": "boundary and structure coverage",
+      "values": [
+        "0",
+        "00",
+        "000000000000000000",
+        "010",
+        "00121",
+        "10",
+        "1001"
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012001,
+      "purpose": "boundary and structure coverage",
+      "values": [
+        "999999999999999999",
+        "100000000000000000",
+        "100000000000000001"
+      ]
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012002,
+      "purpose": "boundary and structure coverage",
+      "T": 1000,
+      "mode": "palindromes"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012003,
+      "purpose": "boundary and structure coverage",
+      "T": 1000,
+      "mode": "zeros"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012004,
+      "purpose": "boundary and structure coverage",
+      "T": 1000,
+      "mode": "padded"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012005,
+      "purpose": "maximum size or randomized coverage",
+      "T": 1000,
+      "mode": "random"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012006,
+      "purpose": "maximum size or randomized coverage",
+      "T": 1000,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012007,
+      "purpose": "maximum size or randomized coverage",
+      "T": 1000,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012008,
+      "purpose": "maximum size or randomized coverage",
+      "T": 1000,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012009,
+      "purpose": "maximum size or randomized coverage",
+      "T": 1000,
+      "mode": "random"
+    }
+  ]
+}

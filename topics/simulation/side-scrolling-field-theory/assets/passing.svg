@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="375" viewBox="0 0 1000 375">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#294c67"/></marker></defs>
+<rect width="1000" height="375" fill="#f6f9fc"/>
+<text x="500" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">N = 5</text>
+<rect x="50" y="61" width="120" height="124" rx="10" fill="white" stroke="#8ca6bb" stroke-width="2"/>
+<text x="110" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">1 : A</text>
+<path d="M110 143L110 110" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="110" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">f = 0</text>
+<rect x="245" y="61" width="120" height="124" rx="10" fill="white" stroke="#8ca6bb" stroke-width="2"/>
+<text x="305" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">2 : B</text>
+<path d="M305 109L305 143" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="305" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">f = 1</text>
+<rect x="440" y="61" width="120" height="124" rx="10" fill="white" stroke="#8ca6bb" stroke-width="2"/>
+<text x="500" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">3 : C</text>
+<path d="M500 143L500 110" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="500" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">f = 0</text>
+<rect x="635" y="61" width="120" height="124" rx="10" fill="white" stroke="#8ca6bb" stroke-width="2"/>
+<text x="695" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">4 : D</text>
+<path d="M695 109L695 143" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="695" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">f = 1</text>
+<rect x="830" y="61" width="120" height="124" rx="10" fill="white" stroke="#8ca6bb" stroke-width="2"/>
+<text x="890" y="93" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">5 : E</text>
+<path d="M890 109L890 143" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="890" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">f = 1</text>
+<path d="M35 119L15 119L15 215L985 215L985 119L965 119" fill="none" stroke="#738da0" stroke-width="2" stroke-dasharray="6 4"/>
+<circle cx="500" cy="237" r="8" fill="none" stroke="#294c67" stroke-width="2"/>
+<path d="M483 257Q500 240 517 257" fill="none" stroke="#294c67" stroke-width="2"/>
+<text x="78" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">1</text>
+<path d="M102 331L223 331" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="163" y="309" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">(1, 0)</text>
+<text x="247" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">1</text>
+<path d="M271 331L392 331" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="332" y="309" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">(1, 6)</text>
+<text x="416" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">2</text>
+<path d="M440 331L561 331" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="501" y="309" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">(1, 6)</text>
+<text x="585" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">1</text>
+<path d="M609 331L730 331" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="670" y="309" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">(0, 6)</text>
+<text x="754" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">5</text>
+<path d="M778 331L899 331" fill="none" stroke="#294c67" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="839" y="309" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">(1, 2)</text>
+<text x="923" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#17364c">3</text>
+<text x="500" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#17364c">(d, p)</text>
+</svg>

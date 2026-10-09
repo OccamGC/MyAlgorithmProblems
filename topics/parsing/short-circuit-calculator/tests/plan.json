@@ -1,0 +1,90 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320001,
+      "purpose": "Boundary and full-range parameters",
+      "expression": "1?0:1?2:3"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 320002,
+      "purpose": "Boundary and full-range parameters",
+      "expression": "(0&&(1/0))||((15<<33)==30)"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320003,
+      "purpose": "Boundary and full-range parameters",
+      "expression": "(0)&&(0/0)||(1/0)"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320004,
+      "purpose": "Boundary and full-range parameters",
+      "expression": "(-1000000000*3)/(-1)+(1<<-1)"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 320005,
+      "purpose": "middle",
+      "mode": "middle",
+      "length": 5000
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320006,
+      "purpose": "unary",
+      "mode": "unary",
+      "length": 200000
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320007,
+      "purpose": "deep",
+      "mode": "deep",
+      "length": 200000
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320008,
+      "purpose": "conditional",
+      "mode": "conditional",
+      "length": 200000
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320009,
+      "purpose": "middle",
+      "mode": "middle",
+      "length": 200000
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 320010,
+      "purpose": "short",
+      "mode": "short",
+      "length": 200000
+    }
+  ]
+}

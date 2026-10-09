@@ -1,0 +1,102 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290300
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290301
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609290302
+    },
+    {
+      "id": "one-color",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "one color",
+      "n": 5,
+      "m": 1,
+      "seed": 202609290303
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 5,
+      "m": 7,
+      "seed": 202609290304
+    },
+    {
+      "id": "uniform",
+      "kind": "uniform",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "uniform",
+      "n": 5,
+      "m": 7,
+      "seed": 202609290305
+    },
+    {
+      "id": "sparse",
+      "kind": "sparse",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sparse",
+      "n": 5,
+      "m": 7,
+      "seed": 202609290306
+    },
+    {
+      "id": "fixed-valid",
+      "kind": "valid-fixed",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "fixed valid",
+      "n": 5,
+      "m": 7,
+      "seed": 202609290307
+    },
+    {
+      "id": "fixed-invalid",
+      "kind": "invalid-fixed",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "fixed invalid",
+      "n": 5,
+      "m": 7,
+      "seed": 202609290308
+    },
+    {
+      "id": "two-colors",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "two colors",
+      "n": 5,
+      "m": 2,
+      "seed": 202609290309
+    }
+  ]
+}

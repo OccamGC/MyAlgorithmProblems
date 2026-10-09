@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360300,
+      "n": 1,
+      "parameter": 1,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360301,
+      "n": 1,
+      "parameter": 100000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360302,
+      "n": 4,
+      "parameter": 3,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360303,
+      "n": 99,
+      "parameter": 100000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360304,
+      "n": 1999999,
+      "parameter": 3,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360305,
+      "n": 2000000,
+      "parameter": 100000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360306,
+      "n": 2000001,
+      "parameter": 2,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360307,
+      "n": 1000000000,
+      "parameter": 1,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360308,
+      "n": 999999937,
+      "parameter": 99991,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 360309,
+      "n": 1000000000,
+      "parameter": 100000,
+      "purpose": "boundary, cutoff or arithmetic stress"
+    }
+  ]
+}

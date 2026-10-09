@@ -1,0 +1,109 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290700
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290701
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609290702
+    },
+    {
+      "id": "empty",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "empty",
+      "n": 100000,
+      "m": 100000,
+      "k": 0,
+      "seed": 202609290703
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 100000,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290704
+    },
+    {
+      "id": "diagonal",
+      "kind": "diagonal",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "diagonal",
+      "n": 100000,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290705
+    },
+    {
+      "id": "repeated-building",
+      "kind": "duplicate",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "repeated building",
+      "n": 100000,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290706
+    },
+    {
+      "id": "one-row",
+      "kind": "row",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "one row",
+      "n": 1,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290707
+    },
+    {
+      "id": "four-corners",
+      "kind": "corners",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "four corners",
+      "n": 100000,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290708
+    },
+    {
+      "id": "middle-row",
+      "kind": "row",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "middle row",
+      "n": 100000,
+      "m": 100000,
+      "k": 200,
+      "seed": 202609290709
+    }
+  ]
+}

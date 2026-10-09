@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": "100/3",
+      "extra_conditions": "n <= 104"
+    },
+    {
+      "id": 2,
+      "score_percent": "100/3",
+      "extra_conditions": "n <= 3000"
+    },
+    {
+      "id": 3,
+      "score_percent": "100/3",
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": "100/9",
+      "seed": 202610012401,
+      "mode": "literal",
+      "input": "0\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": "100/9",
+      "seed": 202610012402,
+      "mode": "literal",
+      "input": "1\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": "100/9",
+      "seed": 202610012403,
+      "mode": "literal",
+      "input": "104\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": "100/9",
+      "seed": 202610012404,
+      "mode": "literal",
+      "input": "105\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": "100/9",
+      "seed": 202610012405,
+      "mode": "literal",
+      "input": "2999\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": "100/9",
+      "seed": 202610012406,
+      "mode": "literal",
+      "input": "3000\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": "100/9",
+      "seed": 202610012407,
+      "mode": "literal",
+      "input": "3001\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": "100/9",
+      "seed": 202610012408,
+      "mode": "literal",
+      "input": "999999\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": "100/9",
+      "seed": 202610012409,
+      "mode": "literal",
+      "input": "1000000\n",
+      "purpose": "exact one-third groups and endpoint coverage"
+    }
+  ]
+}

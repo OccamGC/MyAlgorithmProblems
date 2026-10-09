@@ -1,0 +1,467 @@
+{
+  "purpose": "Exploratory only; sizes exceed formal statement limits.",
+  "repeats": 5,
+  "generator_sha256": "222070311c81bef3eec123d7571ea6fceb5bbc1746ec9f6b420ff10f7f51dc37",
+  "cases": [
+    {
+      "slug": "forest-ranger",
+      "n": 4000000,
+      "kind": "random",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 3999999,
+      "input_bytes": 59952441,
+      "input_sha256": "fdc3e0bb996f578c12bfad586feb5df15a96ed7188a89fc65a55c14be1b2c8f6",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 196595712,
+          "output_sha256": "f1b32b54611137872673209110afb739e1ca93bcd655717de5322810c641b5b9",
+          "times_seconds": [
+            1.4647179999738,
+            1.4237492000102066,
+            1.4005781000014395,
+            1.5285673000034876,
+            1.5554033999796957
+          ],
+          "median_seconds": 1.4647179999738
+        },
+        "alternative": {
+          "peak_working_set_bytes": 188633088,
+          "output_sha256": "f1b32b54611137872673209110afb739e1ca93bcd655717de5322810c641b5b9",
+          "times_seconds": [
+            1.4341111000394449,
+            1.3993009999976493,
+            1.4379740000003949,
+            1.4559128999826498,
+            1.567558899987489
+          ],
+          "median_seconds": 1.4379740000003949
+        }
+      }
+    },
+    {
+      "slug": "forest-ranger",
+      "n": 4000000,
+      "kind": "comb",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 3999999,
+      "input_bytes": 60666686,
+      "input_sha256": "4df3bfa1d0afa685d140becc41cceceb9e4f3b704b7dcd70261506acd9041ff1",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 196632576,
+          "output_sha256": "f463d14b4eebb69065353125388d25243dcba659103899ac6a3e2bd8fed8fd80",
+          "times_seconds": [
+            0.5791324999881908,
+            0.5656255999929272,
+            0.5523891000193544,
+            0.6323168000089936,
+            0.62855419999687
+          ],
+          "median_seconds": 0.5791324999881908
+        },
+        "alternative": {
+          "peak_working_set_bytes": 188678144,
+          "output_sha256": "f463d14b4eebb69065353125388d25243dcba659103899ac6a3e2bd8fed8fd80",
+          "times_seconds": [
+            0.6641473000054248,
+            0.561197400034871,
+            0.5694036000058986,
+            0.5729071000241674,
+            0.6375996000133455
+          ],
+          "median_seconds": 0.5729071000241674
+        }
+      }
+    },
+    {
+      "slug": "forest-ranger",
+      "n": 4000000,
+      "kind": "spider",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 3999999,
+      "input_bytes": 61774997,
+      "input_sha256": "f2d93cb369b6411e8f8db3be3f1bd2504f795d76cf011bf7a9bda99fede4867e",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 164896768,
+          "output_sha256": "200dba63536f410d16eaa256dcb15dc4fd01f66c53b3bf70a5a3f1bd681723be",
+          "times_seconds": [
+            0.613850400026422,
+            0.624341499991715,
+            0.6098373000277206,
+            0.6007412999751978,
+            0.6058199999970384
+          ],
+          "median_seconds": 0.6098373000277206
+        },
+        "alternative": {
+          "peak_working_set_bytes": 148881408,
+          "output_sha256": "200dba63536f410d16eaa256dcb15dc4fd01f66c53b3bf70a5a3f1bd681723be",
+          "times_seconds": [
+            0.5992245999514125,
+            0.5732639000052586,
+            0.57360050000716,
+            0.5938215000205673,
+            0.5764502999954857
+          ],
+          "median_seconds": 0.5764502999954857
+        }
+      }
+    },
+    {
+      "slug": "forest-ranger",
+      "n": 4000000,
+      "kind": "chain-window",
+      "seed": 2026093013,
+      "L": 840000,
+      "R": 2680000,
+      "input_bytes": 61777790,
+      "input_sha256": "0c40a95b1937f22cb971c75ac5ebec23503403d3bf22521136528d59baa05771",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 164900864,
+          "output_sha256": "c237b36986773313aaf5fd2086f50be6e97b200d69d7ac68341fe868eafa6401",
+          "times_seconds": [
+            0.5270678999950178,
+            0.5418583999853581,
+            0.5380573000293225,
+            0.5380780000123195,
+            0.5374838000279851
+          ],
+          "median_seconds": 0.5380573000293225
+        },
+        "alternative": {
+          "peak_working_set_bytes": 148873216,
+          "output_sha256": "c237b36986773313aaf5fd2086f50be6e97b200d69d7ac68341fe868eafa6401",
+          "times_seconds": [
+            0.5470712000387721,
+            0.5196122000343166,
+            0.52619569998933,
+            0.544723899976816,
+            0.5207174000097439
+          ],
+          "median_seconds": 0.52619569998933
+        }
+      }
+    },
+    {
+      "slug": "festival-plan",
+      "n": 2000000,
+      "kind": "random",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 1999999,
+      "input_bytes": 37507213,
+      "input_sha256": "3acffdd90f48fc5506ed7378533b43321d5e1f95077883556e1e2b275ee6eeee",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 224776192,
+          "output_sha256": "c0d740d898c4f93d2fb301d9b599c737cf5ee2686f5bdb59f052f0c1b93ce186",
+          "times_seconds": [
+            4.061819900001865,
+            4.000333399977535,
+            4.015336700016633,
+            4.08544830000028,
+            4.005372699990403
+          ],
+          "median_seconds": 4.015336700016633
+        },
+        "alternative": {
+          "peak_working_set_bytes": 200503296,
+          "output_sha256": "c0d740d898c4f93d2fb301d9b599c737cf5ee2686f5bdb59f052f0c1b93ce186",
+          "times_seconds": [
+            4.455989199981559,
+            4.391314600012265,
+            4.340518100012559,
+            4.343294799968135,
+            4.39640430000145
+          ],
+          "median_seconds": 4.391314600012265
+        }
+      }
+    },
+    {
+      "slug": "festival-plan",
+      "n": 2000000,
+      "kind": "comb",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 1999999,
+      "input_bytes": 37450264,
+      "input_sha256": "1a70d2c9c314976671a6d16d1a36b84f93bda1acf291751eda515aaa21111ed2",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 214552576,
+          "output_sha256": "eeade3e0b1bce3ae6960a6638711f87bc75dea5688611a1acd74d244f899f8e3",
+          "times_seconds": [
+            1.9285762999788858,
+            1.9332498000003397,
+            1.9457621999899857,
+            1.923356999992393,
+            1.9086261000484228
+          ],
+          "median_seconds": 1.9285762999788858
+        },
+        "alternative": {
+          "peak_working_set_bytes": 205799424,
+          "output_sha256": "eeade3e0b1bce3ae6960a6638711f87bc75dea5688611a1acd74d244f899f8e3",
+          "times_seconds": [
+            2.1493552000029013,
+            2.0272343999822624,
+            2.1839378000004217,
+            2.042251600010786,
+            2.0680375999654643
+          ],
+          "median_seconds": 2.0680375999654643
+        }
+      }
+    },
+    {
+      "slug": "festival-plan",
+      "n": 2000000,
+      "kind": "spider",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 1999999,
+      "input_bytes": 38560039,
+      "input_sha256": "c707d046c64aa9cd89996fa3fec91e05190576fac79f941dc11188edaa93b705",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 211542016,
+          "output_sha256": "f676d89769504ef94def47d3977d0b9a6c6d4ecc6791b5363bd773344fe7bade",
+          "times_seconds": [
+            1.5643120000022464,
+            1.6051885000197217,
+            1.6435565000283532,
+            1.6669769999571145,
+            1.5830772000481375
+          ],
+          "median_seconds": 1.6051885000197217
+        },
+        "alternative": {
+          "peak_working_set_bytes": 187265024,
+          "output_sha256": "f676d89769504ef94def47d3977d0b9a6c6d4ecc6791b5363bd773344fe7bade",
+          "times_seconds": [
+            1.555840499990154,
+            1.5337613999727182,
+            1.7556886000093073,
+            1.5551468000048772,
+            1.5455844000098296
+          ],
+          "median_seconds": 1.5551468000048772
+        }
+      }
+    },
+    {
+      "slug": "festival-plan",
+      "n": 2000000,
+      "kind": "chain-window",
+      "seed": 2026093013,
+      "L": 420000,
+      "R": 1340000,
+      "input_bytes": 38561373,
+      "input_sha256": "3452bfb551beec3ebbae3d7fb72b8112bc4d776284279c240df2df2ae247149a",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 220450816,
+          "output_sha256": "912a0835b27de7e047b4bd087689a3ea5e6d3b030fd47e593f8854551016b49e",
+          "times_seconds": [
+            2.198225200001616,
+            2.150857000029646,
+            2.17182489996776,
+            2.1168891999986954,
+            2.1566310999915004
+          ],
+          "median_seconds": 2.1566310999915004
+        },
+        "alternative": {
+          "peak_working_set_bytes": 218509312,
+          "output_sha256": "912a0835b27de7e047b4bd087689a3ea5e6d3b030fd47e593f8854551016b49e",
+          "times_seconds": [
+            2.2459807000122964,
+            2.4264515999821015,
+            2.3256535000400618,
+            2.30316250002943,
+            2.2535195000236854
+          ],
+          "median_seconds": 2.30316250002943
+        }
+      }
+    },
+    {
+      "slug": "grinder",
+      "n": 1000000,
+      "kind": "random",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 999999,
+      "input_bytes": 17886075,
+      "input_sha256": "27226458ed706f60b043534e69e8be8226081269148715b1cc75542683a33644",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 187985920,
+          "output_sha256": "85ca5e6ef7bddf6c68f18493c829e6065207beaadb4dc9c587f8c5d16f3bebb5",
+          "times_seconds": [
+            4.3260567000252195,
+            4.105899999965914,
+            4.0611640000133775,
+            4.091742900025565,
+            4.155619099969044
+          ],
+          "median_seconds": 4.105899999965914
+        },
+        "alternative": {
+          "peak_working_set_bytes": 100511744,
+          "output_sha256": "85ca5e6ef7bddf6c68f18493c829e6065207beaadb4dc9c587f8c5d16f3bebb5",
+          "times_seconds": [
+            1.9834694000310265,
+            1.9534879000275396,
+            1.9651934999856167,
+            1.9794768000137992,
+            1.9783098999760114
+          ],
+          "median_seconds": 1.9783098999760114
+        }
+      }
+    },
+    {
+      "slug": "grinder",
+      "n": 1000000,
+      "kind": "comb",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 999999,
+      "input_bytes": 18058543,
+      "input_sha256": "9e342e3688056aa3d90e54dcf1768dd3ebab20b5c74b0560133d5bf1deb4729e",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 191934464,
+          "output_sha256": "63c3233055a6a1d5106fd31fdebfaa6778d4e8d4561133db06582b410ee8c640",
+          "times_seconds": [
+            2.0437890999601223,
+            2.004725100006908,
+            1.9947186000063084,
+            2.0393717999686487,
+            1.999630700040143
+          ],
+          "median_seconds": 2.004725100006908
+        },
+        "alternative": {
+          "peak_working_set_bytes": 110678016,
+          "output_sha256": "63c3233055a6a1d5106fd31fdebfaa6778d4e8d4561133db06582b410ee8c640",
+          "times_seconds": [
+            1.117565199965611,
+            1.038810400001239,
+            1.0807672999799252,
+            1.0515740999835543,
+            1.0660745999775827
+          ],
+          "median_seconds": 1.0660745999775827
+        }
+      }
+    },
+    {
+      "slug": "grinder",
+      "n": 1000000,
+      "kind": "spider",
+      "seed": 2026093013,
+      "L": 1,
+      "R": 999999,
+      "input_bytes": 18169051,
+      "input_sha256": "589804f8025cace06564ce30869d75df05ce0b65565cc85ff9c4450813414486",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 188088320,
+          "output_sha256": "9965dad9da2d31c415996ffb464c385aa5e95d4235248d46b8f17d7ca2839a63",
+          "times_seconds": [
+            2.286587300011888,
+            2.273390800051857,
+            2.3711307999910787,
+            2.288923199987039,
+            2.2382440000073984
+          ],
+          "median_seconds": 2.286587300011888
+        },
+        "alternative": {
+          "peak_working_set_bytes": 95424512,
+          "output_sha256": "9965dad9da2d31c415996ffb464c385aa5e95d4235248d46b8f17d7ca2839a63",
+          "times_seconds": [
+            0.7749485000385903,
+            0.776116400025785,
+            0.7741823999676853,
+            0.7576237000175752,
+            0.7541835000156425
+          ],
+          "median_seconds": 0.7741823999676853
+        }
+      }
+    },
+    {
+      "slug": "grinder",
+      "n": 1000000,
+      "kind": "chain-window",
+      "seed": 2026093013,
+      "L": 210000,
+      "R": 670000,
+      "input_bytes": 18169653,
+      "input_sha256": "60f97191622ba3a36b2b0d252a3512014b134f7b987cb341c83a85f76554e216",
+      "variants": {
+        "std": {
+          "peak_working_set_bytes": 195985408,
+          "output_sha256": "7069f66ecb96bb9ede0ebdd56b9a84236a42e9d391e0823e56457d622b3ff617",
+          "times_seconds": [
+            1.8869940000004135,
+            1.8409718999755569,
+            1.8259534999961033,
+            1.866064900008496,
+            1.9079180999542587
+          ],
+          "median_seconds": 1.866064900008496
+        },
+        "alternative": {
+          "peak_working_set_bytes": 111030272,
+          "output_sha256": "7069f66ecb96bb9ede0ebdd56b9a84236a42e9d391e0823e56457d622b3ff617",
+          "times_seconds": [
+            1.1204510999959894,
+            1.1121041999431327,
+            1.1419763999874704,
+            1.1610212000086904,
+            1.1055250999634154
+          ],
+          "median_seconds": 1.1204510999959894
+        }
+      }
+    }
+  ],
+  "sources_sha256": {
+    "forest-ranger": {
+      "std": "f67a76a85c1c59bf3080d0bd95d213694c634c41539bcd0257326a1b1749cf2c",
+      "alternative": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed"
+    },
+    "festival-plan": {
+      "std": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+      "alternative": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b"
+    },
+    "grinder": {
+      "std": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+      "alternative": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28"
+    }
+  },
+  "binaries_sha256": {
+    "forest-ranger": {
+      "std": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031",
+      "alternative": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+    },
+    "festival-plan": {
+      "std": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5",
+      "alternative": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+    },
+    "grinder": {
+      "std": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a",
+      "alternative": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+    }
+  }
+}

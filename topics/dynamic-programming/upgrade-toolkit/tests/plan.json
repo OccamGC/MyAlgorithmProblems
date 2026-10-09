@@ -1,0 +1,95 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample",
+      "kind": "sample",
+      "purpose": "Type counts rather than labeled individual boxes",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "01",
+      "seed": 202609281100
+    },
+    {
+      "id": "empty",
+      "kind": "none",
+      "purpose": "No types",
+      "group": 1,
+      "score_percent": 10,
+      "n": 0,
+      "seed": 202609281101
+    },
+    {
+      "id": "one-type",
+      "kind": "maximum",
+      "purpose": "One type reaches capacity 1000",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1,
+      "seed": 202609281102
+    },
+    {
+      "id": "maximum",
+      "kind": "maximum",
+      "purpose": "Maximum total capacity",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281103
+    },
+    {
+      "id": "no-stock",
+      "kind": "none",
+      "purpose": "All capacities zero",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281104
+    },
+    {
+      "id": "ones",
+      "kind": "ones",
+      "purpose": "Binomial coefficients modulo the modulus",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281105
+    },
+    {
+      "id": "late-active",
+      "kind": "late-active",
+      "purpose": "Zero capacities must not renumber later types",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281106
+    },
+    {
+      "id": "stock-limited",
+      "kind": "stock",
+      "purpose": "Limits set by available quantities",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281107
+    },
+    {
+      "id": "value-limited",
+      "kind": "value",
+      "purpose": "Value just below one item cost",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281108
+    },
+    {
+      "id": "random",
+      "kind": "random",
+      "purpose": "Mixed active and inactive types",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1000,
+      "seed": 202609281109
+    }
+  ]
+}

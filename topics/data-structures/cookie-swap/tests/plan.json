@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "id": "tiny-exclusion",
+      "kind": "random",
+      "n": 10,
+      "m": 10,
+      "cap": 50,
+      "seed": 101,
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small capacities and singleton ranges"
+    },
+    {
+      "id": "small-random",
+      "kind": "random",
+      "n": 100,
+      "m": 100,
+      "cap": 1000000000,
+      "seed": 102,
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "small flow-verifiable ranges"
+    },
+    {
+      "id": "medium-random",
+      "kind": "random",
+      "n": 300,
+      "m": 300,
+      "cap": 1000000000,
+      "seed": 103,
+      "group": 3,
+      "score_percent": 20,
+      "purpose": "mixed updates and queries"
+    },
+    {
+      "id": "medium-updates",
+      "kind": "random",
+      "n": 3000,
+      "m": 3000,
+      "cap": 1000000000,
+      "seed": 104,
+      "group": 4,
+      "score_percent": 20,
+      "purpose": "repeated point replacements"
+    },
+    {
+      "id": "large-random",
+      "kind": "random",
+      "n": 50000,
+      "m": 50000,
+      "cap": 1000000000,
+      "seed": 105,
+      "group": 5,
+      "score_percent": 20,
+      "purpose": "large sums beyond 32 bits"
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 300000,
+      "m": 300000,
+      "cap": 1000000000,
+      "seed": 106,
+      "group": 6,
+      "score_percent": 10,
+      "purpose": "maximum size and query count"
+    },
+    {
+      "id": "dominant-participant",
+      "kind": "dominant",
+      "n": 300000,
+      "m": 300000,
+      "cap": 1000000000,
+      "seed": 107,
+      "group": 6,
+      "score_percent": 10,
+      "purpose": "one participant owns all supply and demand; answer always zero"
+    }
+  ]
+}

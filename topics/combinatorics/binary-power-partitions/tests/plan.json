@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "8\n",
+      "purpose": "boundary/sample",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012901
+    },
+    {
+      "mode": "literal",
+      "input": "0\n",
+      "purpose": "boundary/sample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012902
+    },
+    {
+      "mode": "literal",
+      "input": "1\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012903
+    },
+    {
+      "mode": "literal",
+      "input": "2\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012904
+    },
+    {
+      "mode": "literal",
+      "input": "7\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012905
+    },
+    {
+      "mode": "literal",
+      "input": "2147483647\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012906
+    },
+    {
+      "mode": "literal",
+      "input": "4294967296\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012907
+    },
+    {
+      "mode": "literal",
+      "input": "4611686018427387904\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012908
+    },
+    {
+      "mode": "literal",
+      "input": "9223372036854775806\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012909
+    },
+    {
+      "mode": "literal",
+      "input": "9223372036854775807\n",
+      "purpose": "integer boundary / bit pattern",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012910
+    }
+  ]
+}

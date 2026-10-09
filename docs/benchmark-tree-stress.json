@@ -1,0 +1,4031 @@
+{
+  "purpose": "Targeted tree inputs, repeated paired timings, operation counts and formal limit calibration.",
+  "notes": [
+    "Screening timings are single runs used only to select candidates.",
+    "Confirm and pivot use seven runs; scale uses five. Calibration adds two formal inputs with seven runs.",
+    "Each stage preserves its original generator and binary hashes. The calibration stage regenerated all eleven confirmed inputs within the formal limits and checked their hashes and input contracts.",
+    "Only inputs within the published size limits enter calibration.summary; 2x and 4x inputs are experiments.",
+    "The limit uses standard-program time, multiplier 2, and 0.5-second upward rounding.",
+    "Peak working sets include process overhead. Instrumented runs provide counts only, never timing results."
+  ],
+  "screen": {
+    "stage": "screen",
+    "repeats": 1,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "generator_sha256": "c2d177f72db15f856205ad240e395d6468eb21d9d0e1b09ae3b877ebb171bada",
+    "programs": {
+      "forest-ranger": {
+        "std": {
+          "source_sha256": "6800b64de913f803577c2a7b1a427ed4b71493ce342a27aa64489f7fa9e45bd2",
+          "binary_sha256": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031"
+        },
+        "alternative": {
+          "source_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+          "binary_sha256": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+        }
+      },
+      "festival-plan": {
+        "std": {
+          "source_sha256": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+          "binary_sha256": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5"
+        },
+        "alternative": {
+          "source_sha256": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b",
+          "binary_sha256": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+        }
+      },
+      "grinder": {
+        "std": {
+          "source_sha256": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+          "binary_sha256": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a"
+        },
+        "alternative": {
+          "source_sha256": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28",
+          "binary_sha256": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+        }
+      }
+    },
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "formal_limits": {
+      "forest-ranger": 1000000,
+      "festival-plan": 500000,
+      "grinder": 300000
+    },
+    "timing": "Sequential wall-clock processes, alternating variant order; output hashes checked.",
+    "cases": [
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "param": 0,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-00",
+        "seed": 2026093001,
+        "order_index": 0,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "74e58d0ebe9e648ec4e8bab3ec0802a3658b4f48653709867d5cea7a2ffebede",
+        "input_bytes": 8973075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5874984000110999
+            ],
+            "output_sha256": "15acb29c7dcb08c5164323c5fe081ba1a35538408e8e17caa55906d7908f885d",
+            "median_seconds": 0.5874984000110999
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5893307999940589
+            ],
+            "output_sha256": "15acb29c7dcb08c5164323c5fe081ba1a35538408e8e17caa55906d7908f885d",
+            "median_seconds": 0.5893307999940589
+          }
+        },
+        "ratio": 1.0031189871886024
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 1,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-01",
+        "seed": 2026093001,
+        "order_index": 1,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "9f8608e5ba407e91d8714e4e993c3ccf60eb6492d440eb26a08adce51bf462b0",
+        "input_bytes": 8861970,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.46536019997438416
+            ],
+            "output_sha256": "2497f4900951cbc46e86bf7c39ea9702def76e38768404479ad62a9b0f1c39b8",
+            "median_seconds": 0.46536019997438416
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4948725000140257
+            ],
+            "output_sha256": "2497f4900951cbc46e86bf7c39ea9702def76e38768404479ad62a9b0f1c39b8",
+            "median_seconds": 0.4948725000140257
+          }
+        },
+        "ratio": 1.0634181866890766
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-02",
+        "seed": 2026093001,
+        "order_index": 2,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "e9b77cea6a5ae5a01a6a8d30e539f034cc9454ff24aefd4d8c0e10c7e3b806e8",
+        "input_bytes": 8904827,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.3495948000345379
+            ],
+            "output_sha256": "477861fe3b21b831e4762438a61c74a376bae45157c92a5c9b6d9a64effbcfc2",
+            "median_seconds": 0.3495948000345379
+          },
+          "alternative": {
+            "times_seconds": [
+              0.41277749999426305
+            ],
+            "output_sha256": "477861fe3b21b831e4762438a61c74a376bae45157c92a5c9b6d9a64effbcfc2",
+            "median_seconds": 0.41277749999426305
+          }
+        },
+        "ratio": 1.1807312349997285
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 63,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-03",
+        "seed": 2026093001,
+        "order_index": 3,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "3258631e262917f4ff04f8e50111d2cfef69315f02949b995e96c952b4bd13ce",
+        "input_bytes": 8957841,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.38418329996056855
+            ],
+            "output_sha256": "14be02c9525b8aa1bf45346376d7042de3d81f6059ccf14b32661a8200ab4a7b",
+            "median_seconds": 0.38418329996056855
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3902120999991894
+            ],
+            "output_sha256": "14be02c9525b8aa1bf45346376d7042de3d81f6059ccf14b32661a8200ab4a7b",
+            "median_seconds": 0.3902120999991894
+          }
+        },
+        "ratio": 1.0156925093809117
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 1023,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-04",
+        "seed": 2026093001,
+        "order_index": 4,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "8157b2812ac674f58dab880996005999d9fe453cb0bc48eae3043f9ddf734fba",
+        "input_bytes": 8971609,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.460087499988731
+            ],
+            "output_sha256": "a52e3b93b1ef6adeb4e09febae8d47eb3336e84e26e17319d857dd20cbdda2d9",
+            "median_seconds": 0.460087499988731
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4731777000124566
+            ],
+            "output_sha256": "a52e3b93b1ef6adeb4e09febae8d47eb3336e84e26e17319d857dd20cbdda2d9",
+            "median_seconds": 0.4731777000124566
+          }
+        },
+        "ratio": 1.028451544595422
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "spider",
+        "param": 3,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-05",
+        "seed": 2026093001,
+        "order_index": 5,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "ed1c509f002bb7ed4553997ccff76ff324663e0766b99d467acbea6366410a16",
+        "input_bytes": 8973065,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5846075000008568
+            ],
+            "output_sha256": "98d2c064e2b5fe0ed4af4a1d90649e35af029e643bbb6176de3e474e5ccf1266",
+            "median_seconds": 0.5846075000008568
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5934055999969132
+            ],
+            "output_sha256": "98d2c064e2b5fe0ed4af4a1d90649e35af029e643bbb6176de3e474e5ccf1266",
+            "median_seconds": 0.5934055999969132
+          }
+        },
+        "ratio": 1.01504958454355
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "spider",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-06",
+        "seed": 2026093001,
+        "order_index": 6,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "6e57dfabc48b4f0fda9f439a0742a94e93fd11a6bf8b3bc95540ffa43a7ca49d",
+        "input_bytes": 8973043,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5335115999914706
+            ],
+            "output_sha256": "18e37f8a895825fc38d907080010417df8fd1ffaa9ae470418fefc0cfb50e0e9",
+            "median_seconds": 0.5335115999914706
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5427592999767512
+            ],
+            "output_sha256": "18e37f8a895825fc38d907080010417df8fd1ffaa9ae470418fefc0cfb50e0e9",
+            "median_seconds": 0.5427592999767512
+          }
+        },
+        "ratio": 1.0173336437022709
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "spider",
+        "param": 31,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-07",
+        "seed": 2026093001,
+        "order_index": 7,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "75ca5a140dd84642edf1c7dc8c0afb21088e7a21734c5a752ecb9bb5da7829d6",
+        "input_bytes": 8972929,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.45187069999519736
+            ],
+            "output_sha256": "b5e24127111a64b5e97fa8179c7a8d25e565584f0b3658fe2a8b95a21328d91f",
+            "median_seconds": 0.45187069999519736
+          },
+          "alternative": {
+            "times_seconds": [
+              0.47189679997973144
+            ],
+            "output_sha256": "b5e24127111a64b5e97fa8179c7a8d25e565584f0b3658fe2a8b95a21328d91f",
+            "median_seconds": 0.47189679997973144
+          }
+        },
+        "ratio": 1.0443182086927676
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "subdivided-binary",
+        "param": 16,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-08",
+        "seed": 2026093001,
+        "order_index": 8,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "413c94bd9d7ac669a9013c7922d3bb39b9590af4267f244a0be0c838ad9b559d",
+        "input_bytes": 8966129,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.40876969997771084
+            ],
+            "output_sha256": "efe5470532268e57f2ef62f58e6cc5bab22a3e4640b009bc88784babac958871",
+            "median_seconds": 0.40876969997771084
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4510937000159174
+            ],
+            "output_sha256": "efe5470532268e57f2ef62f58e6cc5bab22a3e4640b009bc88784babac958871",
+            "median_seconds": 0.4510937000159174
+          }
+        },
+        "ratio": 1.1035399640445815
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "subdivided-binary",
+        "param": 256,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-09",
+        "seed": 2026093001,
+        "order_index": 9,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "cddef07120674510c12d944764c4c5658d11ba3ffd8d7d81b38a7c098934315b",
+        "input_bytes": 8972638,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.4520662999711931
+            ],
+            "output_sha256": "156ac2de939ea97ff44e949a1350f840c5608d1fe8167323f10314b04d0c70e5",
+            "median_seconds": 0.4520662999711931
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4600226999609731
+            ],
+            "output_sha256": "156ac2de939ea97ff44e949a1350f840c5608d1fe8167323f10314b04d0c70e5",
+            "median_seconds": 0.4600226999609731
+          }
+        },
+        "ratio": 1.0176000732421042
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "subdivided-binary",
+        "param": 4096,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-10",
+        "seed": 2026093001,
+        "order_index": 10,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "fd9752c9feccef47118800171cd5fb052a915f4c9607c7cfa49ab59b39b0fc27",
+        "input_bytes": 8973044,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5014176000258885
+            ],
+            "output_sha256": "50c3c07cab7fce74798585f20e18b55473acbc1e9f6c10edb904a2cdd76bd628",
+            "median_seconds": 0.5014176000258885
+          },
+          "alternative": {
+            "times_seconds": [
+              0.50621099997079
+            ],
+            "output_sha256": "50c3c07cab7fce74798585f20e18b55473acbc1e9f6c10edb904a2cdd76bd628",
+            "median_seconds": 0.50621099997079
+          }
+        },
+        "ratio": 1.0095596962385325
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "double-broom",
+        "param": 2,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-11",
+        "seed": 2026093001,
+        "order_index": 11,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "6d188c9d21f41de1691512ef2a2906e3c92482281ee41501ee04f856c7de672b",
+        "input_bytes": 8348075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.40642559999832883
+            ],
+            "output_sha256": "3b5ea79c9ce01f693b55f1529dab3780233847278e931069097edaff95935c8e",
+            "median_seconds": 0.40642559999832883
+          },
+          "alternative": {
+            "times_seconds": [
+              0.42762969998875633
+            ],
+            "output_sha256": "3b5ea79c9ce01f693b55f1529dab3780233847278e931069097edaff95935c8e",
+            "median_seconds": 0.42762969998875633
+          }
+        },
+        "ratio": 1.0521721564549937
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "double-broom",
+        "param": 8,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-12",
+        "seed": 2026093001,
+        "order_index": 12,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "c4b4f562aa27dacb50cd11c3ed98e65235cb93d143c887de694adc51b5895640",
+        "input_bytes": 7698075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.242238900042139
+            ],
+            "output_sha256": "495b593ddcba082f65584ee3a1965971e3bf258abec9b08f0fc4a6c3db412a8e",
+            "median_seconds": 0.242238900042139
+          },
+          "alternative": {
+            "times_seconds": [
+              0.28321630001300946
+            ],
+            "output_sha256": "495b593ddcba082f65584ee3a1965971e3bf258abec9b08f0fc4a6c3db412a8e",
+            "median_seconds": 0.28321630001300946
+          }
+        },
+        "ratio": 1.1691611048586423
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "recursive-comb",
+        "param": 2,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-13",
+        "seed": 2026093001,
+        "order_index": 13,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "a8ce469188db08bc828b1e4b13091ef0f1f53f5438e7db546220f4574f2b74c2",
+        "input_bytes": 8973030,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5696084999945015
+            ],
+            "output_sha256": "e1e0a8b357db6162253eec813d52f5f49477d660c8bf79accffb4623996c0285",
+            "median_seconds": 0.5696084999945015
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5930888999719173
+            ],
+            "output_sha256": "e1e0a8b357db6162253eec813d52f5f49477d660c8bf79accffb4623996c0285",
+            "median_seconds": 0.5930888999719173
+          }
+        },
+        "ratio": 1.041221997174625
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "recursive-comb",
+        "param": 4,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-14",
+        "seed": 2026093001,
+        "order_index": 14,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "683765d1b23d04acb18e4bfe4afb8fe9d09613539509f90a136dfd3e3e09caa9",
+        "input_bytes": 8973010,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.4944117999984883
+            ],
+            "output_sha256": "9daaf9951d165a195711ab2ccf3b40f85404b22423a0966c2cf81c700be99901",
+            "median_seconds": 0.4944117999984883
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5185332000255585
+            ],
+            "output_sha256": "9daaf9951d165a195711ab2ccf3b40f85404b22423a0966c2cf81c700be99901",
+            "median_seconds": 0.5185332000255585
+          }
+        },
+        "ratio": 1.0487880750967997
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "half",
+        "weights": "random",
+        "id": "screen-15",
+        "seed": 2026093001,
+        "order_index": 15,
+        "L": 1,
+        "R": 249997,
+        "input_sha256": "adbe45c05655bc8ec5b1e2ad0057cc570826582148fbcca29505ff354b7b3ffc",
+        "input_bytes": 8973075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5822616000077687
+            ],
+            "output_sha256": "1e3698f0ecfc68d2955390e34834b72332413b195b2133b87b2235e3ae5375a3",
+            "median_seconds": 0.5822616000077687
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6123260000022128
+            ],
+            "output_sha256": "1e3698f0ecfc68d2955390e34834b72332413b195b2133b87b2235e3ae5375a3",
+            "median_seconds": 0.6123260000022128
+          }
+        },
+        "ratio": 1.05163383605246
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "screen-16",
+        "seed": 2026093001,
+        "order_index": 16,
+        "L": 1,
+        "R": 166661,
+        "input_sha256": "1f3084235936c83ca573983cfab0f1e35d81d45ab1ffc516845aad52f7f6e8bd",
+        "input_bytes": 8973075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6442838999792002
+            ],
+            "output_sha256": "d3c1b2fd85bc8f4b8bafcb7194e2070a0b97a5384f0a413e9a32d63476df4064",
+            "median_seconds": 0.6442838999792002
+          },
+          "alternative": {
+            "times_seconds": [
+              0.7073110999772325
+            ],
+            "output_sha256": "d3c1b2fd85bc8f4b8bafcb7194e2070a0b97a5384f0a413e9a32d63476df4064",
+            "median_seconds": 0.7073110999772325
+          }
+        },
+        "ratio": 1.0978251978670692
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "dyadic",
+        "weights": "random",
+        "id": "screen-17",
+        "seed": 2026093001,
+        "order_index": 17,
+        "L": 1,
+        "R": 131070,
+        "input_sha256": "1910756fb81d3374b95de10eb776db3cec52ac00d97e10a642b38b9da22a59ff",
+        "input_bytes": 8973075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6201883000321686
+            ],
+            "output_sha256": "128194c13e6b21c7fb78e3ad0e96b9449d425a2cf0072a2bab10da5d6f9d1e72",
+            "median_seconds": 0.6201883000321686
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6598735000006855
+            ],
+            "output_sha256": "128194c13e6b21c7fb78e3ad0e96b9449d425a2cf0072a2bab10da5d6f9d1e72",
+            "median_seconds": 0.6598735000006855
+          }
+        },
+        "ratio": 1.0639889529784075
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "middle",
+        "weights": "random",
+        "id": "screen-18",
+        "seed": 2026093001,
+        "order_index": 18,
+        "L": 71428,
+        "R": 285714,
+        "input_sha256": "03e6f033118b9661b4dd14dc869ad1efac910ffd6dd25ddb8ab6d0e9c60f994a",
+        "input_bytes": 8973079,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5612523999880068
+            ],
+            "output_sha256": "ca09dd373a33054e9e719d62e6ab36193efce0b4eca57f688d6adf19a082d49a",
+            "median_seconds": 0.5612523999880068
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6176906999899074
+            ],
+            "output_sha256": "ca09dd373a33054e9e719d62e6ab36193efce0b4eca57f688d6adf19a082d49a",
+            "median_seconds": 0.6176906999899074
+          }
+        },
+        "ratio": 1.1005577882662179
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "zero",
+        "id": "screen-19",
+        "seed": 2026093001,
+        "order_index": 19,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "eab4fbfbe327e80b8a68fbd204611f5fd1a525d6a2c41939c56b71ff61eab839",
+        "input_bytes": 7777797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5140100000426173
+            ],
+            "output_sha256": "a03a4de02c859c46e3231073eaf924573859cd6e5a046e96356a8d46ce879dc9",
+            "median_seconds": 0.5140100000426173
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5602736999862827
+            ],
+            "output_sha256": "a03a4de02c859c46e3231073eaf924573859cd6e5a046e96356a8d46ce879dc9",
+            "median_seconds": 0.5602736999862827
+          }
+        },
+        "ratio": 1.0900054472477765
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "positive",
+        "id": "screen-20",
+        "seed": 2026093001,
+        "order_index": 20,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "cf6131a92aeccade76f244216b118bcf074068380ef064f4ea6b7fc1c8b35dc6",
+        "input_bytes": 7777797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5128340999945067
+            ],
+            "output_sha256": "d8ea4f30a51bcc02668824bebf12c813c7252d63eda15ea43d7d30db575031da",
+            "median_seconds": 0.5128340999945067
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5587413000175729
+            ],
+            "output_sha256": "d8ea4f30a51bcc02668824bebf12c813c7252d63eda15ea43d7d30db575031da",
+            "median_seconds": 0.5587413000175729
+          }
+        },
+        "ratio": 1.0895166683018114
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "alternating",
+        "id": "screen-21",
+        "seed": 2026093001,
+        "order_index": 21,
+        "L": 1,
+        "R": 500000,
+        "input_sha256": "41aa5ac7224ea3f0cd3ecb0a955b7d1ea052cf425e8cbd2606539305bed43671",
+        "input_bytes": 9527797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5338398000458255
+            ],
+            "output_sha256": "a93d3edc1ef7366e6c14dc10133603b40de65e0bed5aad38dd8f4eb5456077e8",
+            "median_seconds": 0.5338398000458255
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5666208999464288
+            ],
+            "output_sha256": "a93d3edc1ef7366e6c14dc10133603b40de65e0bed5aad38dd8f4eb5456077e8",
+            "median_seconds": 0.5666208999464288
+          }
+        },
+        "ratio": 1.0614062493987697
+      },
+      {
+        "slug": "festival-plan",
+        "n": 262141,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-22",
+        "seed": 2026093001,
+        "order_index": 22,
+        "L": 1,
+        "R": 262141,
+        "input_sha256": "2efb6b7e5d82abde28e88baa2f837107f4e010be3a33a9bcf39ff2f4cc330ec8",
+        "input_bytes": 4598793,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.31216909998329356
+            ],
+            "output_sha256": "40bc5f1009b667594159bbe81dceaead78e5b5f37a2008107bb56cddb919507b",
+            "median_seconds": 0.31216909998329356
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2862182999961078
+            ],
+            "output_sha256": "40bc5f1009b667594159bbe81dceaead78e5b5f37a2008107bb56cddb919507b",
+            "median_seconds": 0.2862182999961078
+          }
+        },
+        "ratio": 0.9168694147224227
+      },
+      {
+        "slug": "festival-plan",
+        "n": 262143,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-23",
+        "seed": 2026093001,
+        "order_index": 23,
+        "L": 1,
+        "R": 262143,
+        "input_sha256": "c963fe40a4737cb218fa8204d3cd7adc665517301e4941d3495347721f47d8e8",
+        "input_bytes": 4598829,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.30094350001309067
+            ],
+            "output_sha256": "b4e127f2bf4b06b59cebf5317d8b431461f9b3a3c061d8e76c3f137cdda3d287",
+            "median_seconds": 0.30094350001309067
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2837979000178166
+            ],
+            "output_sha256": "b4e127f2bf4b06b59cebf5317d8b431461f9b3a3c061d8e76c3f137cdda3d287",
+            "median_seconds": 0.2837979000178166
+          }
+        },
+        "ratio": 0.9430271795385902
+      },
+      {
+        "slug": "festival-plan",
+        "n": 262145,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-24",
+        "seed": 2026093001,
+        "order_index": 24,
+        "L": 1,
+        "R": 262145,
+        "input_sha256": "ff86b487f02518f3cf77432da941629bb987ebb03a5b8c79b5c83a4a1ae84aa7",
+        "input_bytes": 4598867,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.3059372999705374
+            ],
+            "output_sha256": "a437359ee8a2fc4b1c7fa56ea3098a74201118f32dc1beb58d113fbefe58e6be",
+            "median_seconds": 0.3059372999705374
+          },
+          "alternative": {
+            "times_seconds": [
+              0.28686150000430644
+            ],
+            "output_sha256": "a437359ee8a2fc4b1c7fa56ea3098a74201118f32dc1beb58d113fbefe58e6be",
+            "median_seconds": 0.28686150000430644
+          }
+        },
+        "ratio": 0.9376480083727351
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-25",
+        "seed": 2026093001,
+        "order_index": 25,
+        "L": 1,
+        "R": 249997,
+        "input_sha256": "29e9f5c504a4fa0b6f8fa8285d06e58780e7a684af206381ecd03b35b09d4d00",
+        "input_bytes": 8973654,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.7266912000486627
+            ],
+            "output_sha256": "2bf95fdc476ee0e0f836760485b4bfcd0b0a7c9ce28d66221d5fb1b32514aeac",
+            "median_seconds": 1.7266912000486627
+          },
+          "alternative": {
+            "times_seconds": [
+              1.3665860000182875
+            ],
+            "output_sha256": "2bf95fdc476ee0e0f836760485b4bfcd0b0a7c9ce28d66221d5fb1b32514aeac",
+            "median_seconds": 1.3665860000182875
+          }
+        },
+        "ratio": 0.7914478280654778
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 7,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-26",
+        "seed": 2026093001,
+        "order_index": 26,
+        "L": 1,
+        "R": 249997,
+        "input_sha256": "247f9fff1dcc2bb48cb59075a4f2f3c235c7b1f476a0e0fabaaaba0103dd5a84",
+        "input_bytes": 8973571,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6629030999611132
+            ],
+            "output_sha256": "5ce838481c6f5f7d2e7fc2043e27f092ac5dc525cf83e06d41c98a7405f3d163",
+            "median_seconds": 0.6629030999611132
+          },
+          "alternative": {
+            "times_seconds": [
+              0.7685665999888442
+            ],
+            "output_sha256": "5ce838481c6f5f7d2e7fc2043e27f092ac5dc525cf83e06d41c98a7405f3d163",
+            "median_seconds": 0.7685665999888442
+          }
+        },
+        "ratio": 1.159395091128597
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "subdivided-binary",
+        "param": 256,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-27",
+        "seed": 2026093001,
+        "order_index": 27,
+        "L": 1,
+        "R": 249997,
+        "input_sha256": "071a0f87f9f011fa5b39087828761d5b7472c98160911a99e4ea029b5d842b9d",
+        "input_bytes": 8973653,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7494826999609359
+            ],
+            "output_sha256": "a08bdf8fd2df7b623c2b11539f94741754d327d26ea4445b166ff45bf2b88eaf",
+            "median_seconds": 0.7494826999609359
+          },
+          "alternative": {
+            "times_seconds": [
+              0.7607778999954462
+            ],
+            "output_sha256": "a08bdf8fd2df7b623c2b11539f94741754d327d26ea4445b166ff45bf2b88eaf",
+            "median_seconds": 0.7607778999954462
+          }
+        },
+        "ratio": 1.0150706614510236
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "param": 0,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-28",
+        "seed": 2026093001,
+        "order_index": 28,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "2da48257fce4749acacd5b1e5ebe3aff3c94b65ed28f4cda5e55d48733fb46ff",
+        "input_bytes": 5294967,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6787305999896489
+            ],
+            "output_sha256": "2ea1ef0c64f158ece8eafc0e94bed7ac922663146c5f15c0cdf4b6ea6ac673a1",
+            "median_seconds": 0.6787305999896489
+          },
+          "alternative": {
+            "times_seconds": [
+              0.37674360000528395
+            ],
+            "output_sha256": "2ea1ef0c64f158ece8eafc0e94bed7ac922663146c5f15c0cdf4b6ea6ac673a1",
+            "median_seconds": 0.37674360000528395
+          }
+        },
+        "ratio": 0.5550708926502349
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 1,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-29",
+        "seed": 2026093001,
+        "order_index": 29,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "13fc242a4274f907b50ebb3286619985f85b077d34176240e4b13ef50eb6507a",
+        "input_bytes": 5183862,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6405835999757983
+            ],
+            "output_sha256": "58fe9f3b8cad93ad48f30feef008dd9406740b2a37a4548903f29df01865e535",
+            "median_seconds": 0.6405835999757983
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3418447999865748
+            ],
+            "output_sha256": "58fe9f3b8cad93ad48f30feef008dd9406740b2a37a4548903f29df01865e535",
+            "median_seconds": 0.3418447999865748
+          }
+        },
+        "ratio": 0.5336458816608636
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-30",
+        "seed": 2026093001,
+        "order_index": 30,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "ad9fc523363eb7aef2aa79edeb8f01d9bb9c1ae57e34bd7b43ef7edd04174557",
+        "input_bytes": 5255290,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5116694999742322
+            ],
+            "output_sha256": "20d9b1d5bdbfca088165a359487ca500c966497d3c086af1909e78e7a8ad4946",
+            "median_seconds": 0.5116694999742322
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2946479999809526
+            ],
+            "output_sha256": "20d9b1d5bdbfca088165a359487ca500c966497d3c086af1909e78e7a8ad4946",
+            "median_seconds": 0.2946479999809526
+          }
+        },
+        "ratio": 0.5758560945997194
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 63,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-31",
+        "seed": 2026093001,
+        "order_index": 31,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "7697633414a1fb41352ab76f72e85d789beb9501e3129e96256bfefd92d860ed",
+        "input_bytes": 5286082,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5623706000042148
+            ],
+            "output_sha256": "ce6618f65bbebd22d96a994a9dcab1b1973cd7dd9b261544acb28da0d447d881",
+            "median_seconds": 0.5623706000042148
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2969751000055112
+            ],
+            "output_sha256": "ce6618f65bbebd22d96a994a9dcab1b1973cd7dd9b261544acb28da0d447d881",
+            "median_seconds": 0.2969751000055112
+          }
+        },
+        "ratio": 0.5280772145686233
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 1023,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-32",
+        "seed": 2026093001,
+        "order_index": 32,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "204d0f55878854d762e69197e3c47f6dae8335c747a029b6fbeac41bf4df749b",
+        "input_bytes": 5294089,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6802195000345819
+            ],
+            "output_sha256": "3b83d9768a1466072f5d44ebeee53fe46da3b5149bb3f83ea3a60f1cea044b4f",
+            "median_seconds": 0.6802195000345819
+          },
+          "alternative": {
+            "times_seconds": [
+              0.33836180000798777
+            ],
+            "output_sha256": "3b83d9768a1466072f5d44ebeee53fe46da3b5149bb3f83ea3a60f1cea044b4f",
+            "median_seconds": 0.33836180000798777
+          }
+        },
+        "ratio": 0.49743031475984695
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "spider",
+        "param": 3,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-33",
+        "seed": 2026093001,
+        "order_index": 33,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "f5cf702490d916bbc64a3ab3bd88eaa90180f66ff0f01c8c86625bec8b11e194",
+        "input_bytes": 5294955,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6871050000190735
+            ],
+            "output_sha256": "f4a8b2b6ad46507a3152b08ede2d67158e6a32ba6ede9889a23595af73174dfe",
+            "median_seconds": 0.6871050000190735
+          },
+          "alternative": {
+            "times_seconds": [
+              0.33926390000851825
+            ],
+            "output_sha256": "f4a8b2b6ad46507a3152b08ede2d67158e6a32ba6ede9889a23595af73174dfe",
+            "median_seconds": 0.33926390000851825
+          }
+        },
+        "ratio": 0.4937584503083234
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "spider",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-34",
+        "seed": 2026093001,
+        "order_index": 34,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "34af82f5ba0b84fe6b2abc62b0eb0b3fe37bb9beee9a68f4381d0a2e18b113de",
+        "input_bytes": 5294934,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6895659999572672
+            ],
+            "output_sha256": "02b88d121261cd7a5483228bdc4a0f2e49c53981a2b3587186172024c54af349",
+            "median_seconds": 0.6895659999572672
+          },
+          "alternative": {
+            "times_seconds": [
+              0.31109039997681975
+            ],
+            "output_sha256": "02b88d121261cd7a5483228bdc4a0f2e49c53981a2b3587186172024c54af349",
+            "median_seconds": 0.31109039997681975
+          }
+        },
+        "ratio": 0.4511394123203554
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "spider",
+        "param": 31,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-35",
+        "seed": 2026093001,
+        "order_index": 35,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "1855adc29c03d2e99b14e44901696cbafec42e3ea5e8e42a68241f01f37171fc",
+        "input_bytes": 5294829,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7014005999662913
+            ],
+            "output_sha256": "b6f8a0eba2829cb347714d1da936c1a9a4c60b71af65f81abea885af166c5abc",
+            "median_seconds": 0.7014005999662913
+          },
+          "alternative": {
+            "times_seconds": [
+              0.27106570004252717
+            ],
+            "output_sha256": "b6f8a0eba2829cb347714d1da936c1a9a4c60b71af65f81abea885af166c5abc",
+            "median_seconds": 0.27106570004252717
+          }
+        },
+        "ratio": 0.38646345619829003
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "subdivided-binary",
+        "param": 16,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-36",
+        "seed": 2026093001,
+        "order_index": 36,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "040203c280b93e2bf89e4be6e31b3bc73679a074fece3453434192b48e23a530",
+        "input_bytes": 5288021,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5955956000252627
+            ],
+            "output_sha256": "0236d24e5d21aecf4f4056d621b3eb5c7b5bc73754d4dc9763cc9c6354280611",
+            "median_seconds": 0.5955956000252627
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2642136000213213
+            ],
+            "output_sha256": "0236d24e5d21aecf4f4056d621b3eb5c7b5bc73754d4dc9763cc9c6354280611",
+            "median_seconds": 0.2642136000213213
+          }
+        },
+        "ratio": 0.44361241085413405
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "subdivided-binary",
+        "param": 256,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-37",
+        "seed": 2026093001,
+        "order_index": 37,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "91c956a4dd30c2b32ce5e7b39456733414bcdf6a8ccdb629a008343088f553f9",
+        "input_bytes": 5294530,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6423828999977559
+            ],
+            "output_sha256": "4a54a156453a61e28009359cab61876657d13b26c37224800738b4f746908eae",
+            "median_seconds": 0.6423828999977559
+          },
+          "alternative": {
+            "times_seconds": [
+              0.30206999997608364
+            ],
+            "output_sha256": "4a54a156453a61e28009359cab61876657d13b26c37224800738b4f746908eae",
+            "median_seconds": 0.30206999997608364
+          }
+        },
+        "ratio": 0.4702335631554621
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "subdivided-binary",
+        "param": 4096,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-38",
+        "seed": 2026093001,
+        "order_index": 38,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "33fb2316e00c8dba1c52823103f5ae7e14d85aa1634a23ed0259a3fbc89868b9",
+        "input_bytes": 5294936,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7341262999689206
+            ],
+            "output_sha256": "7f5a56c5bc8d8524a1aace451764b8003f1865b5e95d6234b41f4bc73f4737cc",
+            "median_seconds": 0.7341262999689206
+          },
+          "alternative": {
+            "times_seconds": [
+              0.30188319995068014
+            ],
+            "output_sha256": "7f5a56c5bc8d8524a1aace451764b8003f1865b5e95d6234b41f4bc73f4737cc",
+            "median_seconds": 0.30188319995068014
+          }
+        },
+        "ratio": 0.4112142555898902
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "double-broom",
+        "param": 2,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-39",
+        "seed": 2026093001,
+        "order_index": 39,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "7aa7867573e21c2c235d3c54558da8886127d64d4dfbdc1ea4438e42e7b599af",
+        "input_bytes": 4919967,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6154278999892995
+            ],
+            "output_sha256": "5c0a0537464335131b1cb3f72e26be92d7f8f173059221054c4eeb5e0cb59246",
+            "median_seconds": 0.6154278999892995
+          },
+          "alternative": {
+            "times_seconds": [
+              0.27063169999746606
+            ],
+            "output_sha256": "5c0a0537464335131b1cb3f72e26be92d7f8f173059221054c4eeb5e0cb59246",
+            "median_seconds": 0.27063169999746606
+          }
+        },
+        "ratio": 0.439745581898662
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "double-broom",
+        "param": 8,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-40",
+        "seed": 2026093001,
+        "order_index": 40,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "14577978a0f066b2e25eecabb7282c4e263419d074a4a795f6eae398a70f56f5",
+        "input_bytes": 4569967,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5648361999774352
+            ],
+            "output_sha256": "32f7ce5d15717183f96e77fc3ed228b15530dd57c4e3a89da3300070dffb0909",
+            "median_seconds": 0.5648361999774352
+          },
+          "alternative": {
+            "times_seconds": [
+              0.19668809999711812
+            ],
+            "output_sha256": "32f7ce5d15717183f96e77fc3ed228b15530dd57c4e3a89da3300070dffb0909",
+            "median_seconds": 0.19668809999711812
+          }
+        },
+        "ratio": 0.3482214843966723
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "recursive-comb",
+        "param": 2,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-41",
+        "seed": 2026093001,
+        "order_index": 41,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "03e055d192d458dda3fa240f147005782b17c3e35de06789b3ec9117919d751e",
+        "input_bytes": 5294922,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7391448999987915
+            ],
+            "output_sha256": "37260632bfee957d2c2e673053cfd8ae07775e30685f4383899e5c7bf1b62a27",
+            "median_seconds": 0.7391448999987915
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3491572000202723
+            ],
+            "output_sha256": "37260632bfee957d2c2e673053cfd8ae07775e30685f4383899e5c7bf1b62a27",
+            "median_seconds": 0.3491572000202723
+          }
+        },
+        "ratio": 0.47237990821670167
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "recursive-comb",
+        "param": 4,
+        "window": "full",
+        "weights": "random",
+        "id": "screen-42",
+        "seed": 2026093001,
+        "order_index": 42,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "df987d6cb9c09985bb2969cabbad74f27356e520209b5eb67bbca49f1ae79b05",
+        "input_bytes": 5294896,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7202350999577902
+            ],
+            "output_sha256": "57d87ec6f66a570964b6db33c3a3cfa853676e97f00209d68b44f7c85db3ba79",
+            "median_seconds": 0.7202350999577902
+          },
+          "alternative": {
+            "times_seconds": [
+              0.38681309996172786
+            ],
+            "output_sha256": "57d87ec6f66a570964b6db33c3a3cfa853676e97f00209d68b44f7c85db3ba79",
+            "median_seconds": 0.38681309996172786
+          }
+        },
+        "ratio": 0.5370650499877015
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "half",
+        "weights": "random",
+        "id": "screen-43",
+        "seed": 2026093001,
+        "order_index": 43,
+        "L": 1,
+        "R": 149996,
+        "input_sha256": "92e13900f87b1feb58b284bcb57b5c0d14e4d5fd9069971d65636e686b043a83",
+        "input_bytes": 5294967,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.686140300007537
+            ],
+            "output_sha256": "06d0d1968a1183669fdc2ecfd945aebb19a7d731c2903a03d3d6e7cba3d4b69a",
+            "median_seconds": 0.686140300007537
+          },
+          "alternative": {
+            "times_seconds": [
+              0.37688599998364225
+            ],
+            "output_sha256": "06d0d1968a1183669fdc2ecfd945aebb19a7d731c2903a03d3d6e7cba3d4b69a",
+            "median_seconds": 0.37688599998364225
+          }
+        },
+        "ratio": 0.5492841624074585
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "screen-44",
+        "seed": 2026093001,
+        "order_index": 44,
+        "L": 1,
+        "R": 99994,
+        "input_sha256": "13d659b01773603754acf312f8cfae65bb5cf0b5ce40f0d106b9177ed488bc62",
+        "input_bytes": 5294966,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6751489999587648
+            ],
+            "output_sha256": "6c69c00263bcd468d612995055377fc7313484607dbb5aa3618d3a8d25fe33a8",
+            "median_seconds": 0.6751489999587648
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4595471000066027
+            ],
+            "output_sha256": "6c69c00263bcd468d612995055377fc7313484607dbb5aa3618d3a8d25fe33a8",
+            "median_seconds": 0.4595471000066027
+          }
+        },
+        "ratio": 0.6806602691178835
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "dyadic",
+        "weights": "random",
+        "id": "screen-45",
+        "seed": 2026093001,
+        "order_index": 45,
+        "L": 1,
+        "R": 131070,
+        "input_sha256": "5e248c06a0b423fb690016a73780c8c5901a0e661cd4105d35233ec5b23adfcb",
+        "input_bytes": 5294967,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6705191000364721
+            ],
+            "output_sha256": "732465617f6a4965cafbc76b0f229bddc996965d643f2521c2087c8ba3d53c36",
+            "median_seconds": 0.6705191000364721
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3665368999936618
+            ],
+            "output_sha256": "732465617f6a4965cafbc76b0f229bddc996965d643f2521c2087c8ba3d53c36",
+            "median_seconds": 0.3665368999936618
+          }
+        },
+        "ratio": 0.5466464713290411
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "middle",
+        "weights": "random",
+        "id": "screen-46",
+        "seed": 2026093001,
+        "order_index": 46,
+        "L": 42857,
+        "R": 171428,
+        "input_sha256": "65a09e4ef6b514a59b44d4eebca032f81c45a798f7024ed02a8eb33d9e04f9d7",
+        "input_bytes": 5294971,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6256144000217319
+            ],
+            "output_sha256": "295db5ff32fa97784c1b4c3345151d76130e4092a05a5d121abbe368a00c6fa7",
+            "median_seconds": 0.6256144000217319
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3741516000009142
+            ],
+            "output_sha256": "295db5ff32fa97784c1b4c3345151d76130e4092a05a5d121abbe368a00c6fa7",
+            "median_seconds": 0.3741516000009142
+          }
+        },
+        "ratio": 0.5980546483391644
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "zero",
+        "id": "screen-47",
+        "seed": 2026093001,
+        "order_index": 47,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "afa46e9b0706e9e4c4b5edf6ad26c1d2494fd97fc0e04852fa1c96c6b2486034",
+        "input_bytes": 4577797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6299293999909423
+            ],
+            "output_sha256": "7346a0138f21b12f384ac50612c0ab8b4229945d8f09c7d914ec0726cc5d4277",
+            "median_seconds": 0.6299293999909423
+          },
+          "alternative": {
+            "times_seconds": [
+              0.36608690000139177
+            ],
+            "output_sha256": "7346a0138f21b12f384ac50612c0ab8b4229945d8f09c7d914ec0726cc5d4277",
+            "median_seconds": 0.36608690000139177
+          }
+        },
+        "ratio": 0.5811554437793437
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "positive",
+        "id": "screen-48",
+        "seed": 2026093001,
+        "order_index": 48,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "aa46928932bf65adc65a6cef43f62cec17467c193ceaab2cd86f2f2a1717834e",
+        "input_bytes": 4577797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6427207000087947
+            ],
+            "output_sha256": "a4f13c68def8f28357164ec0599afd4962e6fc8495128969ec10239a72885396",
+            "median_seconds": 0.6427207000087947
+          },
+          "alternative": {
+            "times_seconds": [
+              0.34194379998371005
+            ],
+            "output_sha256": "a4f13c68def8f28357164ec0599afd4962e6fc8495128969ec10239a72885396",
+            "median_seconds": 0.34194379998371005
+          }
+        },
+        "ratio": 0.5320254972012431
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "full",
+        "weights": "alternating",
+        "id": "screen-49",
+        "seed": 2026093001,
+        "order_index": 49,
+        "L": 0,
+        "R": 299999,
+        "input_sha256": "99ce32ac47a5776e5374e75cc2e8a934e7e0f10620442bf8a50600c5bb323c9a",
+        "input_bytes": 5627797,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6508006000076421
+            ],
+            "output_sha256": "3175a99fd2029e01d63c297804bce3fdf1f3a71d2894e041cfa5a68b0cd0f42f",
+            "median_seconds": 0.6508006000076421
+          },
+          "alternative": {
+            "times_seconds": [
+              0.37095830001635477
+            ],
+            "output_sha256": "3175a99fd2029e01d63c297804bce3fdf1f3a71d2894e041cfa5a68b0cd0f42f",
+            "median_seconds": 0.37095830001635477
+          }
+        },
+        "ratio": 0.5700030086204573
+      },
+      {
+        "slug": "grinder",
+        "n": 262141,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-50",
+        "seed": 2026093001,
+        "order_index": 50,
+        "L": 0,
+        "R": 262140,
+        "input_sha256": "9f44cd1ccf67d506de2adc34d97e90aedb53f48a1b090a5da7b82216a751ed44",
+        "input_bytes": 4598793,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5269780000089668
+            ],
+            "output_sha256": "40bc5f1009b667594159bbe81dceaead78e5b5f37a2008107bb56cddb919507b",
+            "median_seconds": 0.5269780000089668
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3083527000271715
+            ],
+            "output_sha256": "40bc5f1009b667594159bbe81dceaead78e5b5f37a2008107bb56cddb919507b",
+            "median_seconds": 0.3083527000271715
+          }
+        },
+        "ratio": 0.5851339145503698
+      },
+      {
+        "slug": "grinder",
+        "n": 262143,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-51",
+        "seed": 2026093001,
+        "order_index": 51,
+        "L": 0,
+        "R": 262142,
+        "input_sha256": "898cea07d7232bd54926c794ec02f55daa3d325bbd99976d07f301232b2187bc",
+        "input_bytes": 4598829,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5833364999853075
+            ],
+            "output_sha256": "b4e127f2bf4b06b59cebf5317d8b431461f9b3a3c061d8e76c3f137cdda3d287",
+            "median_seconds": 0.5833364999853075
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2769346999702975
+            ],
+            "output_sha256": "b4e127f2bf4b06b59cebf5317d8b431461f9b3a3c061d8e76c3f137cdda3d287",
+            "median_seconds": 0.2769346999702975
+          }
+        },
+        "ratio": 0.4747426227868009
+      },
+      {
+        "slug": "grinder",
+        "n": 262145,
+        "shape": "chain",
+        "window": "full",
+        "weights": "random",
+        "id": "screen-52",
+        "seed": 2026093001,
+        "order_index": 52,
+        "L": 0,
+        "R": 262144,
+        "input_sha256": "4756e12263391d4e923660214351dd0a57c16268e94cc03aabed3c6e205ec643",
+        "input_bytes": 4598867,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5853087000432424
+            ],
+            "output_sha256": "a437359ee8a2fc4b1c7fa56ea3098a74201118f32dc1beb58d113fbefe58e6be",
+            "median_seconds": 0.5853087000432424
+          },
+          "alternative": {
+            "times_seconds": [
+              0.293731999990996
+            ],
+            "output_sha256": "a437359ee8a2fc4b1c7fa56ea3098a74201118f32dc1beb58d113fbefe58e6be",
+            "median_seconds": 0.293731999990996
+          }
+        },
+        "ratio": 0.501841165130973
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-53",
+        "seed": 2026093001,
+        "order_index": 53,
+        "L": 1,
+        "R": 149996,
+        "input_sha256": "f5fba424a4d2c4d9858ebd841c8efde5cd7d79b23d62d2b3021fc1f401afdfff",
+        "input_bytes": 5295371,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.0723923000041395
+            ],
+            "output_sha256": "453b8ac090470fee801596b6ef5c4453cfa9cd90dd025753dd1f533546ad5d01",
+            "median_seconds": 1.0723923000041395
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6461835000081919
+            ],
+            "output_sha256": "453b8ac090470fee801596b6ef5c4453cfa9cd90dd025753dd1f533546ad5d01",
+            "median_seconds": 0.6461835000081919
+          }
+        },
+        "ratio": 0.6025626069915809
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 7,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-54",
+        "seed": 2026093001,
+        "order_index": 54,
+        "L": 1,
+        "R": 149996,
+        "input_sha256": "ac276500c447aad538ef2c5d18b3407a63df0276c9bd1fb6ec0dd0a86184aa18",
+        "input_bytes": 5295287,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7229196999687701
+            ],
+            "output_sha256": "f6d800894bd90df0dc1c119986c0a98dd66e7e2b1dc1239f16ff4726bf4802e0",
+            "median_seconds": 0.7229196999687701
+          },
+          "alternative": {
+            "times_seconds": [
+              0.41688999999314547
+            ],
+            "output_sha256": "f6d800894bd90df0dc1c119986c0a98dd66e7e2b1dc1239f16ff4726bf4802e0",
+            "median_seconds": 0.41688999999314547
+          }
+        },
+        "ratio": 0.5766753901037072
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "subdivided-binary",
+        "param": 256,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "screen-55",
+        "seed": 2026093001,
+        "order_index": 55,
+        "L": 1,
+        "R": 149996,
+        "input_sha256": "6bcd1842f4a9a5799066a5f0ab156e89a1d2cbd7e0b7acedf93fc82f846dfe07",
+        "input_bytes": 5295367,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.8685172999976203
+            ],
+            "output_sha256": "9b2a2c593ab1802b0fdb71ccd6d1187fe06a506a4449fb16c39e4a55e37bf15c",
+            "median_seconds": 0.8685172999976203
+          },
+          "alternative": {
+            "times_seconds": [
+              0.4122046999982558
+            ],
+            "output_sha256": "9b2a2c593ab1802b0fdb71ccd6d1187fe06a506a4449fb16c39e4a55e37bf15c",
+            "median_seconds": 0.4122046999982558
+          }
+        },
+        "ratio": 0.47460735669788645
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "star",
+        "param": 0,
+        "order": "shuffle",
+        "id": "screen-56",
+        "seed": 2026093001,
+        "order_index": 56,
+        "input_sha256": "7d2998c5b666438b15a4bb982f42cfeafe97ec274ae597a5cbf457dfa61bb41f",
+        "input_bytes": 8888900,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1618921000044793
+            ],
+            "output_sha256": "ba10933db934c6779ba3c14aa2d22417cd3d71abe56898b397246838e6e3bb83",
+            "median_seconds": 0.1618921000044793
+          },
+          "alternative": {
+            "times_seconds": [
+              0.17151779995765537
+            ],
+            "output_sha256": "ba10933db934c6779ba3c14aa2d22417cd3d71abe56898b397246838e6e3bb83",
+            "median_seconds": 0.17151779995765537
+          }
+        },
+        "ratio": 1.0594575025767765
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 2,
+        "order": "shuffle",
+        "id": "screen-57",
+        "seed": 2026093001,
+        "order_index": 57,
+        "input_sha256": "91405e4238714c4a83fd6cc9fcdf57cfb75b1c6232878d895e7311bc17bbd6f3",
+        "input_bytes": 10519045,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.16440430004149675
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.16440430004149675
+          },
+          "alternative": {
+            "times_seconds": [
+              0.17661319999024272
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.17661319999024272
+          }
+        },
+        "ratio": 1.074261439303378
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 2,
+        "order": "organ",
+        "id": "screen-58",
+        "seed": 2026093001,
+        "order_index": 58,
+        "input_sha256": "2d04ff382d297aa9d376fa48f7485be33af227d00241f1be34e1b879c95b562c",
+        "input_bytes": 10555995,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.15384799998719245
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.15384799998719245
+          },
+          "alternative": {
+            "times_seconds": [
+              0.1794009999721311
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.1794009999721311
+          }
+        },
+        "ratio": 1.1660925068058465
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 2,
+        "order": "ascending",
+        "id": "screen-59",
+        "seed": 2026093001,
+        "order_index": 59,
+        "input_sha256": "0a809f5cbbedc1d8fe3dbb64b943450b7d2d7a40742c43c013d9bf965e1796ba",
+        "input_bytes": 10555995,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1634846000233665
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.1634846000233665
+          },
+          "alternative": {
+            "times_seconds": [
+              0.18674159998772666
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.18674159998772666
+          }
+        },
+        "ratio": 1.142258047308652
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 2,
+        "order": "descending",
+        "id": "screen-60",
+        "seed": 2026093001,
+        "order_index": 60,
+        "input_sha256": "4afa6a7b48649447f16e76aead127b805810073ac934cad8464d4a6a1d7b4fde",
+        "input_bytes": 10500445,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.16094649996375665
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.16094649996375665
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15189019998069853
+            ],
+            "output_sha256": "2c46a5f11235cb2a40075a0c15bcc8799acc071004e918a81ddbfa880b8f4914",
+            "median_seconds": 0.15189019998069853
+          }
+        },
+        "ratio": 0.9437309914468628
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 4,
+        "order": "shuffle",
+        "id": "screen-61",
+        "seed": 2026093001,
+        "order_index": 61,
+        "input_sha256": "abde002eea0519c966d54160139f0ba81b6324d4bf7bde17a1bcd3a468119e3d",
+        "input_bytes": 11823137,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.18419060000451282
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.18419060000451282
+          },
+          "alternative": {
+            "times_seconds": [
+              0.1844412999926135
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.1844412999926135
+          }
+        },
+        "ratio": 1.0013610900235654
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 4,
+        "order": "organ",
+        "id": "screen-62",
+        "seed": 2026093001,
+        "order_index": 62,
+        "input_sha256": "41000ab9020053bac32ecd189269bde25ed4b379c7df748c3c328f433041c4ba",
+        "input_bytes": 11864624,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1477493999991566
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.1477493999991566
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2353045999770984
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.2353045999770984
+          }
+        },
+        "ratio": 1.5925925924466806
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 4,
+        "order": "ascending",
+        "id": "screen-63",
+        "seed": 2026093001,
+        "order_index": 63,
+        "input_sha256": "bea6acf5f813b981328dd4c01901a6d6468968b34173b3920986dfcd8299a95e",
+        "input_bytes": 11889572,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1525394999771379
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.1525394999771379
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15216810000129044
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.15216810000129044
+          }
+        },
+        "ratio": 0.9975652209696301
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 4,
+        "order": "descending",
+        "id": "screen-64",
+        "seed": 2026093001,
+        "order_index": 64,
+        "input_sha256": "894bf529b023c58222ed0d139101d30da7a62ddd50e87f99ea32fea7119ffb4b",
+        "input_bytes": 11806348,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1512866000412032
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.1512866000412032
+          },
+          "alternative": {
+            "times_seconds": [
+              0.16456010000547394
+            ],
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.16456010000547394
+          }
+        },
+        "ratio": 1.0877374464139962
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 16,
+        "order": "shuffle",
+        "id": "screen-65",
+        "seed": 2026093001,
+        "order_index": 65,
+        "input_sha256": "e7e0b8fc44dec5115b70e8a22d0a2467f9c7fd8956b9ff0397f779cda9722fee",
+        "input_bytes": 13204028,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.23370659997453913
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.23370659997453913
+          },
+          "alternative": {
+            "times_seconds": [
+              0.17860360001213849
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.17860360001213849
+          }
+        },
+        "ratio": 0.7642214641417753
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 16,
+        "order": "organ",
+        "id": "screen-66",
+        "seed": 2026093001,
+        "order_index": 66,
+        "input_sha256": "5fabece9b78f0512eb9f3ddc3155db4b5ba17249b2fe830e5e935eb2f87ab225",
+        "input_bytes": 13224114,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1751895999768749
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.1751895999768749
+          },
+          "alternative": {
+            "times_seconds": [
+              0.1646206000004895
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.1646206000004895
+          }
+        },
+        "ratio": 0.9396710764920949
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 16,
+        "order": "ascending",
+        "id": "screen-67",
+        "seed": 2026093001,
+        "order_index": 67,
+        "input_sha256": "5e96bd8c2402cd62e9c0ab2f207db63b9ed34f61d1ca5c79c912579e037310e2",
+        "input_bytes": 13235176,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.15151500003412366
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.15151500003412366
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15040760004194453
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.15040760004194453
+          }
+        },
+        "ratio": 0.9926911527444165
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 16,
+        "order": "descending",
+        "id": "screen-68",
+        "seed": 2026093001,
+        "order_index": 68,
+        "input_sha256": "f25ddddd9695c3c209a38a81bbe6e2d41429ddebad2fdd150a03f591fa172580",
+        "input_bytes": 13197981,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1499642999842763
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.1499642999842763
+          },
+          "alternative": {
+            "times_seconds": [
+              0.16636769997421652
+            ],
+            "output_sha256": "1c0b8fab58faf4b1ff56f3f97890db9ceb4875868b76718c3fa62504003ff0b6",
+            "median_seconds": 0.16636769997421652
+          }
+        },
+        "ratio": 1.1093820328682233
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 64,
+        "order": "shuffle",
+        "id": "screen-69",
+        "seed": 2026093001,
+        "order_index": 69,
+        "input_sha256": "38d3cce6f23f14954828e63e95ed2aee816d1622dfa3ca802508af265f6d3d7d",
+        "input_bytes": 13627931,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.19040119997225702
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.19040119997225702
+          },
+          "alternative": {
+            "times_seconds": [
+              0.21698769996874034
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.21698769996874034
+          }
+        },
+        "ratio": 1.1396340989466305
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 64,
+        "order": "organ",
+        "id": "screen-70",
+        "seed": 2026093001,
+        "order_index": 70,
+        "input_sha256": "f4bf903286ff57c3bb0659e6b0dd642562e11e0bd28aaa8ea2ea863e4e7baf91",
+        "input_bytes": 13634057,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.25735379999969155
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.25735379999969155
+          },
+          "alternative": {
+            "times_seconds": [
+              0.17232499999227002
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.17232499999227002
+          }
+        },
+        "ratio": 0.669603479694011
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 64,
+        "order": "ascending",
+        "id": "screen-71",
+        "seed": 2026093001,
+        "order_index": 71,
+        "input_sha256": "4bbfc4a35db5ec1ef11f7a45cc578413ac4b6b1d599269ca6dbc79506365fe67",
+        "input_bytes": 13637758,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.16063080000458285
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.16063080000458285
+          },
+          "alternative": {
+            "times_seconds": [
+              0.1643610000028275
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.1643610000028275
+          }
+        },
+        "ratio": 1.0232221964787465
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 64,
+        "order": "descending",
+        "id": "screen-72",
+        "seed": 2026093001,
+        "order_index": 72,
+        "input_sha256": "20849c7ebb1c2af44fb63dcb0a0f8e2fc07dfa9026be3b5819a898f917262466",
+        "input_bytes": 13626307,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1634932000306435
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.1634932000306435
+          },
+          "alternative": {
+            "times_seconds": [
+              0.16022260003956035
+            ],
+            "output_sha256": "59bbb0f6074752e5b689f7ab0f89bcc7705c56bdfec8ae1e73237f560923ab42",
+            "median_seconds": 0.16022260003956035
+          }
+        },
+        "ratio": 0.9799954983420097
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-geometric",
+        "param": 32,
+        "order": "shuffle",
+        "id": "screen-73",
+        "seed": 2026093001,
+        "order_index": 73,
+        "input_sha256": "24cd3f0a1823de0f3953807aad4a50b974f8e67a21faae231e4da24bf2731acf",
+        "input_bytes": 11333872,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.17500339995604008
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.17500339995604008
+          },
+          "alternative": {
+            "times_seconds": [
+              0.24379699997371063
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.24379699997371063
+          }
+        },
+        "ratio": 1.3930986485688341
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-geometric",
+        "param": 32,
+        "order": "organ",
+        "id": "screen-74",
+        "seed": 2026093001,
+        "order_index": 74,
+        "input_sha256": "b83cdcd5dab6fa1bad1885667ccbd0a0b4b206ca4872d8f8aea90cbcd0e5f00b",
+        "input_bytes": 11389215,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1619602999999188
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.1619602999999188
+          },
+          "alternative": {
+            "times_seconds": [
+              0.16378080000868067
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.16378080000868067
+          }
+        },
+        "ratio": 1.011240408969129
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-geometric",
+        "param": 32,
+        "order": "ascending",
+        "id": "screen-75",
+        "seed": 2026093001,
+        "order_index": 75,
+        "input_sha256": "771f493b837baf5b9052c05eb2ab69d1333d974780d596241f6be25f25228b43",
+        "input_bytes": 11389215,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.14818399999057874
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.14818399999057874
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15249549999134615
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.15249549999134615
+          }
+        },
+        "ratio": 1.0290955838757323
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-geometric",
+        "param": 32,
+        "order": "descending",
+        "id": "screen-76",
+        "seed": 2026093001,
+        "order_index": 76,
+        "input_sha256": "2380ca030cc578c5b2faea8b6c9fc07f86012ee3e1940d7c0fad0f8a6849ef51",
+        "input_bytes": 11293169,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.14436249999562278
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.14436249999562278
+          },
+          "alternative": {
+            "times_seconds": [
+              0.14711660001194105
+            ],
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.14711660001194105
+          }
+        },
+        "ratio": 1.0190776691758716
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-distinct",
+        "param": 0,
+        "order": "shuffle",
+        "id": "screen-77",
+        "seed": 2026093001,
+        "order_index": 77,
+        "input_sha256": "affb7b243e5cd9542a7e318b294f4d30d1f51c0e8321fd924971baeac64f7fe4",
+        "input_bytes": 13770877,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.16035720001673326
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.16035720001673326
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15640689997235313
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.15640689997235313
+          }
+        },
+        "ratio": 0.9753656209763708
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-distinct",
+        "param": 0,
+        "order": "organ",
+        "id": "screen-78",
+        "seed": 2026093001,
+        "order_index": 78,
+        "input_sha256": "6d6dc778cf516a30c8f1d52c1c79ba3c68ec4a7b2e4be2f27f619f6ea0f13466",
+        "input_bytes": 13771182,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.15079290000721812
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.15079290000721812
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15707649994874373
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.15707649994874373
+          }
+        },
+        "ratio": 1.0416703965586234
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-distinct",
+        "param": 0,
+        "order": "ascending",
+        "id": "screen-79",
+        "seed": 2026093001,
+        "order_index": 79,
+        "input_sha256": "0859a13b86c8d312d84580a1977d237e3eb85b5c8d5c4e1e3d5bfc713d68e578",
+        "input_bytes": 13771371,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.16430810000747442
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.16430810000747442
+          },
+          "alternative": {
+            "times_seconds": [
+              0.2277155999909155
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.2277155999909155
+          }
+        },
+        "ratio": 1.3859061116314817
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-distinct",
+        "param": 0,
+        "order": "descending",
+        "id": "screen-80",
+        "seed": 2026093001,
+        "order_index": 80,
+        "input_sha256": "e94269a77f879b4e759bc3822c6e22a311065169f227c4816be840adc37ad183",
+        "input_bytes": 13770804,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.15645950002362952
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.15645950002362952
+          },
+          "alternative": {
+            "times_seconds": [
+              0.16312990000005811
+            ],
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.16312990000005811
+          }
+        },
+        "ratio": 1.0426333969840194
+      }
+    ]
+  },
+  "confirm": {
+    "stage": "confirm",
+    "repeats": 7,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "generator_sha256": "c2d177f72db15f856205ad240e395d6468eb21d9d0e1b09ae3b877ebb171bada",
+    "programs": {
+      "forest-ranger": {
+        "std": {
+          "source_sha256": "6800b64de913f803577c2a7b1a427ed4b71493ce342a27aa64489f7fa9e45bd2",
+          "binary_sha256": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031"
+        },
+        "alternative": {
+          "source_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+          "binary_sha256": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+        }
+      },
+      "festival-plan": {
+        "std": {
+          "source_sha256": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+          "binary_sha256": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5"
+        },
+        "alternative": {
+          "source_sha256": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b",
+          "binary_sha256": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+        }
+      },
+      "grinder": {
+        "std": {
+          "source_sha256": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+          "binary_sha256": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a"
+        },
+        "alternative": {
+          "source_sha256": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28",
+          "binary_sha256": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+        }
+      }
+    },
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "formal_limits": {
+      "forest-ranger": 1000000,
+      "festival-plan": 500000,
+      "grinder": 300000
+    },
+    "timing": "Sequential wall-clock processes, alternating variant order; output hashes checked.",
+    "cases": [
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "formal-screen-02",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 500000,
+        "screen_id": "screen-02",
+        "order_index": 0,
+        "input_sha256": "e9b77cea6a5ae5a01a6a8d30e539f034cc9454ff24aefd4d8c0e10c7e3b806e8",
+        "input_bytes": 8904827,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.3612273999606259,
+              0.41971069999272004,
+              0.36443890002556145,
+              0.3690292999963276,
+              0.3563142999773845,
+              0.3743364000110887,
+              0.38251030002720654
+            ],
+            "peak_working_set_bytes": 50044928,
+            "output_sha256": "477861fe3b21b831e4762438a61c74a376bae45157c92a5c9b6d9a64effbcfc2",
+            "median_seconds": 0.3690292999963276
+          },
+          "alternative": {
+            "times_seconds": [
+              0.44774069997947663,
+              0.41849410004215315,
+              0.4173481999896467,
+              0.43542340002022684,
+              0.42065690003801137,
+              0.43035670003155246,
+              0.5131349999574013
+            ],
+            "peak_working_set_bytes": 51179520,
+            "output_sha256": "477861fe3b21b831e4762438a61c74a376bae45157c92a5c9b6d9a64effbcfc2",
+            "median_seconds": 0.43035670003155246
+          }
+        },
+        "ratio": 1.1661857203095667
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "double-broom",
+        "param": 8,
+        "window": "full",
+        "weights": "random",
+        "id": "formal-screen-12",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 500000,
+        "screen_id": "screen-12",
+        "order_index": 1,
+        "input_sha256": "c4b4f562aa27dacb50cd11c3ed98e65235cb93d143c887de694adc51b5895640",
+        "input_bytes": 7698075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.25050899997586384,
+              0.23679659998742864,
+              0.23943890002556145,
+              0.26751979999244213,
+              0.25761679996503517,
+              0.2377481999574229,
+              0.23604019999038428
+            ],
+            "peak_working_set_bytes": 51806208,
+            "output_sha256": "495b593ddcba082f65584ee3a1965971e3bf258abec9b08f0fc4a6c3db412a8e",
+            "median_seconds": 0.23943890002556145
+          },
+          "alternative": {
+            "times_seconds": [
+              0.27595590002601966,
+              0.2727320999838412,
+              0.27244540001265705,
+              0.3189672000007704,
+              0.29427799995755777,
+              0.29135249997489154,
+              0.26756300003034994
+            ],
+            "peak_working_set_bytes": 52023296,
+            "output_sha256": "495b593ddcba082f65584ee3a1965971e3bf258abec9b08f0fc4a6c3db412a8e",
+            "median_seconds": 0.27595590002601966
+          }
+        },
+        "ratio": 1.1525107240158545
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "formal-screen-16",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 166661,
+        "screen_id": "screen-16",
+        "order_index": 2,
+        "input_sha256": "1f3084235936c83ca573983cfab0f1e35d81d45ab1ffc516845aad52f7f6e8bd",
+        "input_bytes": 8973075,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5804613999789581,
+              0.5965973000274971,
+              0.5849536000168882,
+              0.5814063000143506,
+              0.5627299000043422,
+              0.6652238999959081,
+              0.5728302000206895
+            ],
+            "peak_working_set_bytes": 53260288,
+            "output_sha256": "d3c1b2fd85bc8f4b8bafcb7194e2070a0b97a5384f0a413e9a32d63476df4064",
+            "median_seconds": 0.5814063000143506
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6055490000289865,
+              0.6921649999567308,
+              0.6179175000288524,
+              0.6084492000518367,
+              0.6240703999646939,
+              0.5992920999997295,
+              0.593791900028009
+            ],
+            "peak_working_set_bytes": 54001664,
+            "output_sha256": "d3c1b2fd85bc8f4b8bafcb7194e2070a0b97a5384f0a413e9a32d63476df4064",
+            "median_seconds": 0.6084492000518367
+          }
+        },
+        "ratio": 1.0465129119461185
+      },
+      {
+        "slug": "festival-plan",
+        "n": 500000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "formal-screen-25",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 249997,
+        "screen_id": "screen-25",
+        "order_index": 3,
+        "input_sha256": "29e9f5c504a4fa0b6f8fa8285d06e58780e7a684af206381ecd03b35b09d4d00",
+        "input_bytes": 8973654,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.7340294999885373,
+              1.7451652000308968,
+              1.7657785000046715,
+              1.7424554000026546,
+              1.7539538000128232,
+              1.6907115000067279,
+              1.7418373000109568
+            ],
+            "peak_working_set_bytes": 58576896,
+            "output_sha256": "2bf95fdc476ee0e0f836760485b4bfcd0b0a7c9ce28d66221d5fb1b32514aeac",
+            "median_seconds": 1.7424554000026546
+          },
+          "alternative": {
+            "times_seconds": [
+              1.3205355000100099,
+              1.3444705999572761,
+              1.4065997000434436,
+              1.356307200039737,
+              1.3240254999836907,
+              1.386346000013873,
+              1.3583029999863356
+            ],
+            "peak_working_set_bytes": 58003456,
+            "output_sha256": "2bf95fdc476ee0e0f836760485b4bfcd0b0a7c9ce28d66221d5fb1b32514aeac",
+            "median_seconds": 1.356307200039737
+          }
+        },
+        "ratio": 0.7783884741254614
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "formal-screen-30",
+        "seed": 2026093001,
+        "L": 0,
+        "R": 299999,
+        "screen_id": "screen-30",
+        "order_index": 4,
+        "input_sha256": "ad9fc523363eb7aef2aa79edeb8f01d9bb9c1ae57e34bd7b43ef7edd04174557",
+        "input_bytes": 5255290,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5174970999942161,
+              0.5036912999930792,
+              0.5239510000101291,
+              0.5229393999907188,
+              0.5244297999888659,
+              0.5144262999529019,
+              0.5183768999995664
+            ],
+            "peak_working_set_bytes": 67035136,
+            "output_sha256": "20d9b1d5bdbfca088165a359487ca500c966497d3c086af1909e78e7a8ad4946",
+            "median_seconds": 0.5183768999995664
+          },
+          "alternative": {
+            "times_seconds": [
+              0.32830519997514784,
+              0.29575829999521375,
+              0.30066060001263395,
+              0.31007269996916875,
+              0.3010369000257924,
+              0.3017418999806978,
+              0.32104350003646687
+            ],
+            "peak_working_set_bytes": 37670912,
+            "output_sha256": "20d9b1d5bdbfca088165a359487ca500c966497d3c086af1909e78e7a8ad4946",
+            "median_seconds": 0.3017418999806978
+          }
+        },
+        "ratio": 0.5820897883006557
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "formal-screen-44",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 99994,
+        "screen_id": "screen-44",
+        "order_index": 5,
+        "input_sha256": "13d659b01773603754acf312f8cfae65bb5cf0b5ce40f0d106b9177ed488bc62",
+        "input_bytes": 5294966,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.6631616000086069,
+              0.6779051999910735,
+              0.6654479000135325,
+              0.6494574000244029,
+              0.6642533999984153,
+              0.7153879000106826,
+              0.6693504999857396
+            ],
+            "peak_working_set_bytes": 55275520,
+            "output_sha256": "6c69c00263bcd468d612995055377fc7313484607dbb5aa3618d3a8d25fe33a8",
+            "median_seconds": 0.6654479000135325
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3901590000023134,
+              0.3852161999675445,
+              0.3693755000131205,
+              0.3612479000003077,
+              0.3988950999919325,
+              0.38707600004272535,
+              0.37491899996530265
+            ],
+            "peak_working_set_bytes": 33484800,
+            "output_sha256": "6c69c00263bcd468d612995055377fc7313484607dbb5aa3618d3a8d25fe33a8",
+            "median_seconds": 0.3852161999675445
+          }
+        },
+        "ratio": 0.578882584135754
+      },
+      {
+        "slug": "grinder",
+        "n": 300000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "formal-screen-53",
+        "seed": 2026093001,
+        "L": 1,
+        "R": 149996,
+        "screen_id": "screen-53",
+        "order_index": 6,
+        "input_sha256": "f5fba424a4d2c4d9858ebd841c8efde5cd7d79b23d62d2b3021fc1f401afdfff",
+        "input_bytes": 5295371,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.0851944999885745,
+              1.241340600012336,
+              1.0739636000362225,
+              1.0765281000058167,
+              1.0751039999886416,
+              1.1221730000106618,
+              1.0951937999925576
+            ],
+            "peak_working_set_bytes": 66850816,
+            "output_sha256": "453b8ac090470fee801596b6ef5c4453cfa9cd90dd025753dd1f533546ad5d01",
+            "median_seconds": 1.0851944999885745
+          },
+          "alternative": {
+            "times_seconds": [
+              0.680878599989228,
+              0.7153421000111848,
+              0.7232605000026524,
+              0.6636370999622159,
+              0.6672391999745741,
+              0.660993299970869,
+              0.684327700000722
+            ],
+            "peak_working_set_bytes": 40079360,
+            "output_sha256": "453b8ac090470fee801596b6ef5c4453cfa9cd90dd025753dd1f533546ad5d01",
+            "median_seconds": 0.680878599989228
+          }
+        },
+        "ratio": 0.6274254062257011
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-uniform",
+        "param": 4,
+        "order": "organ",
+        "id": "formal-screen-62",
+        "seed": 2026093001,
+        "screen_id": "screen-62",
+        "order_index": 7,
+        "input_sha256": "41000ab9020053bac32ecd189269bde25ed4b379c7df748c3c328f433041c4ba",
+        "input_bytes": 11864624,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1474076999584213,
+              0.1726205999730155,
+              0.15152479999233037,
+              0.15503089997218922,
+              0.15190470003290102,
+              0.15394689998356625,
+              0.14598329999716952
+            ],
+            "peak_working_set_bytes": 49111040,
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.15190470003290102
+          },
+          "alternative": {
+            "times_seconds": [
+              0.1500184999895282,
+              0.1494313000002876,
+              0.15190810000058264,
+              0.1468907999806106,
+              0.14666790002956986,
+              0.16186980000929907,
+              0.14731169998412952
+            ],
+            "peak_working_set_bytes": 46669824,
+            "output_sha256": "3db14124b9625ff54fcb50cb04269697cd7a5b51ca1ead666600ed80cd316772",
+            "median_seconds": 0.1494313000002876
+          }
+        },
+        "ratio": 0.9837174226203816
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-geometric",
+        "param": 32,
+        "order": "shuffle",
+        "id": "formal-screen-73",
+        "seed": 2026093001,
+        "screen_id": "screen-73",
+        "order_index": 8,
+        "input_sha256": "24cd3f0a1823de0f3953807aad4a50b974f8e67a21faae231e4da24bf2731acf",
+        "input_bytes": 11333872,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.17891519999830052,
+              0.17613979999441653,
+              0.17832139995880425,
+              0.17916929995408282,
+              0.17022920004092157,
+              0.18310359999304637,
+              0.17784039996331558
+            ],
+            "peak_working_set_bytes": 49094656,
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.17832139995880425
+          },
+          "alternative": {
+            "times_seconds": [
+              0.18975320004392415,
+              0.1786386999883689,
+              0.18050199997378513,
+              0.2198554000351578,
+              0.17522219999227673,
+              0.1727314000017941,
+              0.1823980999761261
+            ],
+            "peak_working_set_bytes": 47083520,
+            "output_sha256": "807e58d262ec062b79fc48eaa5e324dddd5da0ad0239d13100b2cdfc154fc025",
+            "median_seconds": 0.18050199997378513
+          }
+        },
+        "ratio": 1.0122284819179563
+      },
+      {
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-distinct",
+        "param": 0,
+        "order": "ascending",
+        "id": "formal-screen-79",
+        "seed": 2026093001,
+        "screen_id": "screen-79",
+        "order_index": 9,
+        "input_sha256": "0859a13b86c8d312d84580a1977d237e3eb85b5c8d5c4e1e3d5bfc713d68e578",
+        "input_bytes": 13771371,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.15831720002461225,
+              0.15949329995783046,
+              0.17762309999670833,
+              0.17042370000854135,
+              0.15300170000409707,
+              0.15583210001932457,
+              0.16243770002620295
+            ],
+            "peak_working_set_bytes": 44912640,
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.15949329995783046
+          },
+          "alternative": {
+            "times_seconds": [
+              0.15511579997837543,
+              0.17541540000820532,
+              0.16152069997042418,
+              0.1748218000284396,
+              0.16250789997866377,
+              0.16101569996681064,
+              0.16442350001307204
+            ],
+            "peak_working_set_bytes": 40898560,
+            "output_sha256": "7adcf76ad62c5207c6677669a265c31636dcb8530852b06564e9d47a1654716f",
+            "median_seconds": 0.16250789997866377
+          }
+        },
+        "ratio": 1.018901107580258
+      }
+    ]
+  },
+  "pivot": {
+    "stage": "confirm",
+    "repeats": 7,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "generator_sha256": "9e2e65ef904e5f012aee9aeed871da453e5a21f96ec55f4420016baf92f4f88d",
+    "programs": {
+      "forest-ranger": {
+        "std": {
+          "source_sha256": "6800b64de913f803577c2a7b1a427ed4b71493ce342a27aa64489f7fa9e45bd2",
+          "binary_sha256": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031"
+        },
+        "alternative": {
+          "source_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+          "binary_sha256": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+        }
+      },
+      "festival-plan": {
+        "std": {
+          "source_sha256": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+          "binary_sha256": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5"
+        },
+        "alternative": {
+          "source_sha256": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b",
+          "binary_sha256": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+        }
+      },
+      "grinder": {
+        "std": {
+          "source_sha256": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+          "binary_sha256": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a"
+        },
+        "alternative": {
+          "source_sha256": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28",
+          "binary_sha256": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+        }
+      }
+    },
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "formal_limits": {
+      "forest-ranger": 1000000,
+      "festival-plan": 500000,
+      "grinder": 300000
+    },
+    "timing": "Sequential wall-clock processes, alternating variant order; output hashes checked.",
+    "cases": [
+      {
+        "id": "pivot-1000000",
+        "slug": "forest-ranger",
+        "n": 1000000,
+        "shape": "gains-pivot-guards",
+        "order": "fixed",
+        "seed": 2026093001,
+        "order_index": 0,
+        "input_sha256": "196d6000bbdbe5402314bfa1731e7bc117bd1a28da52d034e2d6eebce2c93d6e",
+        "input_bytes": 8899733,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.1556992000550963,
+              0.1492490000091493,
+              0.149081900017336,
+              0.16720600001281127,
+              0.14807520003523678,
+              0.15204989997437224,
+              0.1614545999909751
+            ],
+            "peak_working_set_bytes": 53022720,
+            "output_sha256": "af3d52b3638d37d9e940e43c0dd626a5f32dafd74d67dff3dc04a98e7ffebcb9",
+            "median_seconds": 0.15204989997437224
+          },
+          "alternative": {
+            "times_seconds": [
+              0.19989950000308454,
+              0.1958207999705337,
+              0.19567729998379946,
+              0.1969391999882646,
+              0.19878009997773916,
+              0.19548769999528304,
+              0.2109941999660805
+            ],
+            "peak_working_set_bytes": 53018624,
+            "output_sha256": "af3d52b3638d37d9e940e43c0dd626a5f32dafd74d67dff3dc04a98e7ffebcb9",
+            "median_seconds": 0.1969391999882646
+          }
+        },
+        "ratio": 1.2952274221913882
+      },
+      {
+        "id": "pivot-2000000",
+        "slug": "forest-ranger",
+        "n": 2000000,
+        "shape": "gains-pivot-guards",
+        "order": "fixed",
+        "seed": 2026093001,
+        "order_index": 1,
+        "input_sha256": "5006d4a5abdf0944b762c2cb4a25fb27ed13f61c08dde8eead45b8405d63c490",
+        "input_bytes": 18902597,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.2925764999818057,
+              0.29052019998198375,
+              0.3112735999748111,
+              0.29109140002401546,
+              0.29014850000385195,
+              0.28422490000957623,
+              0.2861577000003308
+            ],
+            "peak_working_set_bytes": 100909056,
+            "output_sha256": "8bfef8432ea56d892543ca7d6de01686f3bc02ee96c22d905ba7a05eecaad6cf",
+            "median_seconds": 0.29052019998198375
+          },
+          "alternative": {
+            "times_seconds": [
+              0.3896309999981895,
+              0.4654320999979973,
+              0.38733830000273883,
+              0.38378229999216273,
+              0.44048859999747947,
+              0.3861089000129141,
+              0.41788759996416047
+            ],
+            "peak_working_set_bytes": 100896768,
+            "output_sha256": "8bfef8432ea56d892543ca7d6de01686f3bc02ee96c22d905ba7a05eecaad6cf",
+            "median_seconds": 0.3896309999981895
+          }
+        },
+        "ratio": 1.3411494278964147
+      },
+      {
+        "id": "pivot-4000000",
+        "slug": "forest-ranger",
+        "n": 4000000,
+        "shape": "gains-pivot-guards",
+        "order": "fixed",
+        "seed": 2026093001,
+        "order_index": 2,
+        "input_sha256": "1f7677959d2d43a90444e634d1eb577f131dc05a53956570f5e663565a3504d7",
+        "input_bytes": 38904089,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.5885077000129968,
+              0.5800390999647789,
+              0.5698097000131384,
+              0.5780456999782473,
+              0.5610885999631137,
+              0.560901399992872,
+              0.5885273000458255
+            ],
+            "peak_working_set_bytes": 196636672,
+            "output_sha256": "cd06096b082993dc46fe114c9641a551c0b33c803ec4d5f5bff91c9a8f47484c",
+            "median_seconds": 0.5780456999782473
+          },
+          "alternative": {
+            "times_seconds": [
+              0.8832142999744974,
+              0.8540626000030898,
+              0.8348765000118874,
+              0.8304345000069588,
+              0.8572553999838419,
+              0.9038075000280514,
+              0.8375455000204965
+            ],
+            "peak_working_set_bytes": 196583424,
+            "output_sha256": "cd06096b082993dc46fe114c9641a551c0b33c803ec4d5f5bff91c9a8f47484c",
+            "median_seconds": 0.8540626000030898
+          }
+        },
+        "ratio": 1.4775001354308654
+      }
+    ]
+  },
+  "scale": {
+    "stage": "confirm",
+    "repeats": 5,
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "generator_sha256": "9e2e65ef904e5f012aee9aeed871da453e5a21f96ec55f4420016baf92f4f88d",
+    "programs": {
+      "forest-ranger": {
+        "std": {
+          "source_sha256": "6800b64de913f803577c2a7b1a427ed4b71493ce342a27aa64489f7fa9e45bd2",
+          "binary_sha256": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031"
+        },
+        "alternative": {
+          "source_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+          "binary_sha256": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+        }
+      },
+      "festival-plan": {
+        "std": {
+          "source_sha256": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+          "binary_sha256": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5"
+        },
+        "alternative": {
+          "source_sha256": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b",
+          "binary_sha256": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+        }
+      },
+      "grinder": {
+        "std": {
+          "source_sha256": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+          "binary_sha256": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a"
+        },
+        "alternative": {
+          "source_sha256": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28",
+          "binary_sha256": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+        }
+      }
+    },
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "formal_limits": {
+      "forest-ranger": 1000000,
+      "festival-plan": 500000,
+      "grinder": 300000
+    },
+    "timing": "Sequential wall-clock processes, alternating variant order; output hashes checked.",
+    "cases": [
+      {
+        "slug": "festival-plan",
+        "n": 1000000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "scale-2-screen-02",
+        "seed": 2026093001,
+        "screen_id": "screen-02",
+        "order_index": 0,
+        "L": 1,
+        "R": 1000000,
+        "input_sha256": "7e541aef9c08f33142fa5a8fd569345013f19370304803c78cc7a5c253bf8575",
+        "input_bytes": 18057940,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.7373120000120252,
+              0.7251495999516919,
+              0.706716199987568,
+              0.7212977999588475,
+              0.7119719000183977
+            ],
+            "peak_working_set_bytes": 96030720,
+            "output_sha256": "489291c8b5500cb016f2530e584dabc17ef055d93bb22b9f15ebd7b9541a9aaa",
+            "median_seconds": 0.7212977999588475
+          },
+          "alternative": {
+            "times_seconds": [
+              0.8940512000117451,
+              0.87456209998345,
+              0.8990070000290871,
+              0.934408999979496,
+              0.867522899992764
+            ],
+            "peak_working_set_bytes": 97337344,
+            "output_sha256": "489291c8b5500cb016f2530e584dabc17ef055d93bb22b9f15ebd7b9541a9aaa",
+            "median_seconds": 0.8940512000117451
+          }
+        },
+        "ratio": 1.2395035726751888
+      },
+      {
+        "slug": "festival-plan",
+        "n": 2000000,
+        "shape": "comb",
+        "param": 7,
+        "window": "full",
+        "weights": "random",
+        "id": "scale-4-screen-02",
+        "seed": 2026093001,
+        "screen_id": "screen-02",
+        "order_index": 1,
+        "L": 1,
+        "R": 2000000,
+        "input_sha256": "c544bd1463aeca45249f754ed6d3af4f13df21ba2fd7ff699e5b7155ba7e3511",
+        "input_bytes": 38307643,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.5086779999546707,
+              1.5281669999822043,
+              1.4947349999565631,
+              1.505047500017099,
+              1.5238040999975055
+            ],
+            "peak_working_set_bytes": 185987072,
+            "output_sha256": "8292bd6f27c99f49a84b986e3fa11a313440acdb9d50467c4be85b70894aa1d5",
+            "median_seconds": 1.5086779999546707
+          },
+          "alternative": {
+            "times_seconds": [
+              1.8197157999966294,
+              1.7670365999802016,
+              1.759763500012923,
+              1.8496451000100933,
+              1.7853454999858513
+            ],
+            "peak_working_set_bytes": 191315968,
+            "output_sha256": "8292bd6f27c99f49a84b986e3fa11a313440acdb9d50467c4be85b70894aa1d5",
+            "median_seconds": 1.7853454999858513
+          }
+        },
+        "ratio": 1.1833840620990652
+      },
+      {
+        "slug": "festival-plan",
+        "n": 1000000,
+        "shape": "double-broom",
+        "param": 8,
+        "window": "full",
+        "weights": "random",
+        "id": "scale-2-screen-12",
+        "seed": 2026093001,
+        "screen_id": "screen-12",
+        "order_index": 2,
+        "L": 1,
+        "R": 1000000,
+        "input_sha256": "376820914684c891857446f765c8a91002a9b6c959dabd8062ed37de242092b1",
+        "input_bytes": 15981545,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.4921115000033751,
+              0.4848583999555558,
+              0.4776137999724597,
+              0.4996928999898955,
+              0.4883998000295833
+            ],
+            "peak_working_set_bytes": 97607680,
+            "output_sha256": "643f11580d764427a46e3d65d27c87a087357a102f1b0997ab6bd30519dd548f",
+            "median_seconds": 0.4883998000295833
+          },
+          "alternative": {
+            "times_seconds": [
+              0.5637477000127546,
+              0.5735116999712773,
+              0.5655574999982491,
+              0.5564192999736406,
+              0.5533980000182055
+            ],
+            "peak_working_set_bytes": 99049472,
+            "output_sha256": "643f11580d764427a46e3d65d27c87a087357a102f1b0997ab6bd30519dd548f",
+            "median_seconds": 0.5637477000127546
+          }
+        },
+        "ratio": 1.1542750426568713
+      },
+      {
+        "slug": "festival-plan",
+        "n": 2000000,
+        "shape": "double-broom",
+        "param": 8,
+        "window": "full",
+        "weights": "random",
+        "id": "scale-4-screen-12",
+        "seed": 2026093001,
+        "screen_id": "screen-12",
+        "order_index": 3,
+        "L": 1,
+        "R": 2000000,
+        "input_sha256": "1b7f8c8300ead4b02361a064b7c5be81cd3b19481bd5a60df6a10fd549ecdc66",
+        "input_bytes": 33186605,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              0.9934373000287451,
+              0.9853210999863222,
+              0.9645385000039823,
+              1.003010499989614,
+              0.9832622999674641
+            ],
+            "peak_working_set_bytes": 189620224,
+            "output_sha256": "c5f850d84b4290fa26d82dc5c4d8340de74e27cae07e795e21f0f446a4b0904c",
+            "median_seconds": 0.9853210999863222
+          },
+          "alternative": {
+            "times_seconds": [
+              1.0932099999627098,
+              1.1271044999593869,
+              1.1007771999575198,
+              1.070244400005322,
+              1.0824240999645554
+            ],
+            "peak_working_set_bytes": 194412544,
+            "output_sha256": "c5f850d84b4290fa26d82dc5c4d8340de74e27cae07e795e21f0f446a4b0904c",
+            "median_seconds": 1.0932099999627098
+          }
+        },
+        "ratio": 1.1094961835059507
+      },
+      {
+        "slug": "grinder",
+        "n": 600000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "scale-2-screen-44",
+        "seed": 2026093001,
+        "screen_id": "screen-44",
+        "order_index": 4,
+        "L": 1,
+        "R": 199994,
+        "input_sha256": "ffc954239cb5918e25c6618c4d583142bde0f9ac6f7dc45eddd4accc4faecc53",
+        "input_bytes": 10812224,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.4224029000033624,
+              1.382727199990768,
+              1.4255142000038177,
+              1.3897521000471897,
+              1.3807168999919668
+            ],
+            "peak_working_set_bytes": 105152512,
+            "output_sha256": "365f11dce5835d0200b7e830551f00db91acd37e2d948c7aa6f61ee27af0eec3",
+            "median_seconds": 1.3897521000471897
+          },
+          "alternative": {
+            "times_seconds": [
+              0.781072000041604,
+              0.7945902000064962,
+              0.795112399966456,
+              0.7663958999910392,
+              0.7814095999929123
+            ],
+            "peak_working_set_bytes": 62074880,
+            "output_sha256": "365f11dce5835d0200b7e830551f00db91acd37e2d948c7aa6f61ee27af0eec3",
+            "median_seconds": 0.7814095999929123
+          }
+        },
+        "ratio": 0.5622654572469284
+      },
+      {
+        "slug": "grinder",
+        "n": 1200000,
+        "shape": "chain",
+        "window": "third",
+        "weights": "random",
+        "id": "scale-4-screen-44",
+        "seed": 2026093001,
+        "screen_id": "screen-44",
+        "order_index": 5,
+        "L": 1,
+        "R": 399994,
+        "input_sha256": "65397c599f72c685060bc6fe63d1208320c9b8f5419e5417371afea3dc38b8ea",
+        "input_bytes": 22247562,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              2.983440999989398,
+              3.0183530999929644,
+              3.1475401999778114,
+              3.0245580000337213,
+              3.0009735000203364
+            ],
+            "peak_working_set_bytes": 203513856,
+            "output_sha256": "7218ed60432cc89bbee14357913752a468b19ead8ab394f530adb24f0df70029",
+            "median_seconds": 3.0183530999929644
+          },
+          "alternative": {
+            "times_seconds": [
+              1.6513615000294521,
+              1.6367442000191659,
+              1.6595773000153713,
+              1.744485299976077,
+              1.6547777999658138
+            ],
+            "peak_working_set_bytes": 119234560,
+            "output_sha256": "7218ed60432cc89bbee14357913752a468b19ead8ab394f530adb24f0df70029",
+            "median_seconds": 1.6547777999658138
+          }
+        },
+        "ratio": 0.5482386404591534
+      },
+      {
+        "slug": "grinder",
+        "n": 600000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "scale-2-screen-53",
+        "seed": 2026093001,
+        "screen_id": "screen-53",
+        "order_index": 6,
+        "L": 1,
+        "R": 299996,
+        "input_sha256": "d88efed14aabe7bfd9061a28411947d38d8b8bdccfd19ee3788e3b8dddb85ac1",
+        "input_bytes": 10812641,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              2.8966247999924235,
+              2.867276099976152,
+              2.931969699973706,
+              3.0325127999531105,
+              3.076028000039514
+            ],
+            "peak_working_set_bytes": 127475712,
+            "output_sha256": "59c25d097b370de4f3850ec4a0d7d5eb9939ab67b8ac5aac02a67fd08c1ef1a9",
+            "median_seconds": 2.931969699973706
+          },
+          "alternative": {
+            "times_seconds": [
+              1.7874469999806024,
+              1.8026681000483222,
+              1.7758111999719404,
+              1.7502951000351459,
+              1.79033009998966
+            ],
+            "peak_working_set_bytes": 75284480,
+            "output_sha256": "59c25d097b370de4f3850ec4a0d7d5eb9939ab67b8ac5aac02a67fd08c1ef1a9",
+            "median_seconds": 1.7874469999806024
+          }
+        },
+        "ratio": 0.6096403383693332
+      },
+      {
+        "slug": "grinder",
+        "n": 1200000,
+        "shape": "chain",
+        "param": 0,
+        "window": "half",
+        "weights": "random",
+        "relabel": true,
+        "id": "scale-4-screen-53",
+        "seed": 2026093001,
+        "screen_id": "screen-53",
+        "order_index": 7,
+        "L": 1,
+        "R": 599996,
+        "input_sha256": "bf8e7ecb98a6750c971ce7797a7384f90e22d3e917e67a3ae363163c23be3ce6",
+        "input_bytes": 22248734,
+        "variants": {
+          "std": {
+            "times_seconds": [
+              8.115973499952815,
+              8.12879950000206,
+              8.338558699993882,
+              8.143168399983551,
+              8.420446900010575
+            ],
+            "peak_working_set_bytes": 248193024,
+            "output_sha256": "628b5c31746841cecd365a04877cadb8f7cf70381323a110abf3bd8ca23885e6",
+            "median_seconds": 8.143168399983551
+          },
+          "alternative": {
+            "times_seconds": [
+              4.427477199991699,
+              4.471238300029654,
+              4.471260000020266,
+              4.4290990000008605,
+              4.452477199956775
+            ],
+            "peak_working_set_bytes": 145608704,
+            "output_sha256": "628b5c31746841cecd365a04877cadb8f7cf70381323a110abf3bd8ca23885e6",
+            "median_seconds": 4.452477199956775
+          }
+        },
+        "ratio": 0.546774545392647
+      }
+    ]
+  },
+  "calibration": {
+    "timestamp": "2026-09-30 13:24:36 +0800",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.14",
+    "programs": {
+      "forest-ranger": {
+        "std": {
+          "source_sha256": "6800b64de913f803577c2a7b1a427ed4b71493ce342a27aa64489f7fa9e45bd2",
+          "binary_sha256": "5589a5dd01451d33eada103ab1d3a37dd5132f11269e6a2f4924045248425031"
+        },
+        "alternative": {
+          "source_sha256": "993b9de075353a89a31a59fe5cfa0b2be07573e104467a9529a5d8cc1cd914ed",
+          "binary_sha256": "b52ac315f066c0be58e37f1fd590af90602d0f354d48b61147f2904af5f3f7a2"
+        }
+      },
+      "festival-plan": {
+        "std": {
+          "source_sha256": "a54a778b6f0a997560253610724b68908380b87b1f7797095f61825e9cf13e1b",
+          "binary_sha256": "4b1b689c0df14ec635bad951d345364f982734ea99aa0438f809932be38769c5"
+        },
+        "alternative": {
+          "source_sha256": "eadf53239697182c17a004f95cbb938d8b79b32aec41d74753b7cfef9bc45d5b",
+          "binary_sha256": "4bee6a9b3393ea238a6acb5d5ce539f27c81fe9cfd928fe154f27b275a4fdcbe"
+        }
+      },
+      "grinder": {
+        "std": {
+          "source_sha256": "9b20d27c3ee42d6b6b32b0d065d9f92e6d27e6c27a11d67d1e9590686681f5b3",
+          "binary_sha256": "d162bd5b8ba162289105af72a7619d5af774f56730982a017f9dffd46647749a"
+        },
+        "alternative": {
+          "source_sha256": "bf28cd525988129e7f3d779505132f1c640ef57c3ebf2643fdd200e3bb766d28",
+          "binary_sha256": "1e4557fe01cf5caa42a407a2f35a6abdc7736e0c9decd5d67b31e6af469d07ef"
+        }
+      }
+    },
+    "flags": [
+      "-std=c++17",
+      "-O2",
+      "-DNDEBUG",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic"
+    ],
+    "generator_sha256": "d90ea7a85bdb3e743035c70160f2e303aceeb2a60acb3cee39bce7a4291b5172",
+    "calibration_script_sha256": "313176260138a0d04d5a7768fb9476ccd19cd115b1f842886925fd8c441b104d",
+    "repeats": 7,
+    "multiplier": 2,
+    "resolution_seconds": 0.5,
+    "baseline_record": "benchmark-P1.json",
+    "baseline_sha256": "4b9ddc147442d43e2b7d59e6fbc673af93d9cd2081de4d9d0eb5ac0ca9627618",
+    "formal_input_validation": [
+      {
+        "id": "formal-screen-02",
+        "slug": "festival-plan",
+        "input_sha256": "e9b77cea6a5ae5a01a6a8d30e539f034cc9454ff24aefd4d8c0e10c7e3b806e8",
+        "dimensions": {
+          "n": 500000,
+          "L": 1,
+          "R": 500000,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-12",
+        "slug": "festival-plan",
+        "input_sha256": "c4b4f562aa27dacb50cd11c3ed98e65235cb93d143c887de694adc51b5895640",
+        "dimensions": {
+          "n": 500000,
+          "L": 1,
+          "R": 500000,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-16",
+        "slug": "festival-plan",
+        "input_sha256": "1f3084235936c83ca573983cfab0f1e35d81d45ab1ffc516845aad52f7f6e8bd",
+        "dimensions": {
+          "n": 500000,
+          "L": 1,
+          "R": 166661,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-25",
+        "slug": "festival-plan",
+        "input_sha256": "29e9f5c504a4fa0b6f8fa8285d06e58780e7a684af206381ecd03b35b09d4d00",
+        "dimensions": {
+          "n": 500000,
+          "L": 1,
+          "R": 249997,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-30",
+        "slug": "grinder",
+        "input_sha256": "ad9fc523363eb7aef2aa79edeb8f01d9bb9c1ae57e34bd7b43ef7edd04174557",
+        "dimensions": {
+          "n": 300000,
+          "L": 0,
+          "R": 299999,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-44",
+        "slug": "grinder",
+        "input_sha256": "13d659b01773603754acf312f8cfae65bb5cf0b5ce40f0d106b9177ed488bc62",
+        "dimensions": {
+          "n": 300000,
+          "L": 1,
+          "R": 99994,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-53",
+        "slug": "grinder",
+        "input_sha256": "f5fba424a4d2c4d9858ebd841c8efde5cd7d79b23d62d2b3021fc1f401afdfff",
+        "dimensions": {
+          "n": 300000,
+          "L": 1,
+          "R": 149996,
+          "expected_constant": null
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-62",
+        "slug": "forest-ranger",
+        "input_sha256": "41000ab9020053bac32ecd189269bde25ed4b379c7df748c3c328f433041c4ba",
+        "dimensions": {
+          "n": 1000000
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-73",
+        "slug": "forest-ranger",
+        "input_sha256": "24cd3f0a1823de0f3953807aad4a50b974f8e67a21faae231e4da24bf2731acf",
+        "dimensions": {
+          "n": 1000000
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "formal-screen-79",
+        "slug": "forest-ranger",
+        "input_sha256": "0859a13b86c8d312d84580a1977d237e3eb85b5c8d5c4e1e3d5bfc713d68e578",
+        "dimensions": {
+          "n": 1000000
+        },
+        "matches_measured_input": true
+      },
+      {
+        "id": "pivot-1000000",
+        "slug": "forest-ranger",
+        "input_sha256": "196d6000bbdbe5402314bfa1731e7bc117bd1a28da52d034e2d6eebce2c93d6e",
+        "dimensions": {
+          "n": 1000000
+        },
+        "matches_measured_input": true
+      }
+    ],
+    "operation_counts": [
+      {
+        "n": 4000000,
+        "input_sha256": "1f7677959d2d43a90444e634d1eb577f131dc05a53956570f5e663565a3504d7",
+        "instrumented_source_sha256": "38d851467a475722fe93cf003890ed71fd1290e0515ddb8e5d99b69bf7196c5e",
+        "counts": {
+          "Components": 0,
+          "ComponentVertices": 0,
+          "SmallComponents": 0,
+          "SmallVertices": 0,
+          "Queries": 0,
+          "QueryLoops": 0,
+          "QueryFragments": 0,
+          "EmptyQueries": 0,
+          "MaxDepth": 0,
+          "TreeSlots": 0,
+          "VisitBytes": 0,
+          "GainCount": 3996341,
+          "GainSum": 3999999,
+          "GainOnes": 3996256,
+          "GainDistinct": 86,
+          "MaxGain": 89,
+          "SortComparisons": 257562524
+        },
+        "output_sha256": "cd06096b082993dc46fe114c9641a551c0b33c803ec4d5f5bff91c9a8f47484c"
+      },
+      {
+        "n": 1000000,
+        "input_sha256": "196d6000bbdbe5402314bfa1731e7bc117bd1a28da52d034e2d6eebce2c93d6e",
+        "output_sha256": "af3d52b3638d37d9e940e43c0dd626a5f32dafd74d67dff3dc04a98e7ffebcb9",
+        "instrumented_source_sha256": "38d851467a475722fe93cf003890ed71fd1290e0515ddb8e5d99b69bf7196c5e",
+        "counts": {
+          "Components": 0,
+          "ComponentVertices": 0,
+          "SmallComponents": 0,
+          "SmallVertices": 0,
+          "Queries": 0,
+          "QueryLoops": 0,
+          "QueryFragments": 0,
+          "EmptyQueries": 0,
+          "MaxDepth": 0,
+          "TreeSlots": 0,
+          "VisitBytes": 0,
+          "GainCount": 996993,
+          "GainSum": 999999,
+          "GainOnes": 996916,
+          "GainDistinct": 78,
+          "MaxGain": 81,
+          "SortComparisons": 58269639
+        }
+      }
+    ],
+    "cases": [
+      {
+        "id": "maximum-relabelled-chain",
+        "kind": "chain",
+        "n": 500000,
+        "L": 1,
+        "R": 249997,
+        "weights": "random",
+        "relabel": true,
+        "group": 1,
+        "score_percent": 5,
+        "seed": 2026093001,
+        "purpose": "deep repeated traversal with shuffled labels and a wide length window",
+        "slug": "festival-plan",
+        "shape": "chain",
+        "input_sha256": "410c8b19e2638bab33591b03998a370c5290df881e242416c0caaa08d95463a1",
+        "input_bytes": 8973164,
+        "dimensions": {
+          "n": 500000,
+          "L": 1,
+          "R": 249997,
+          "expected_constant": null
+        },
+        "generator_sha256": "1539923adf62e39919640238c730f4940ac472e81fbab0f571bcebfed3781893",
+        "plan_sha256": "da0c2045ed6a33b74275e0369b7c552d5d85e3911afe5e7bce1a1267d0dda2e9",
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.7882843000115827,
+              1.7410294000292197,
+              1.7032268000184558,
+              1.7367755000013858,
+              1.7638071000110358,
+              1.7462651999667287,
+              1.787085899966769
+            ],
+            "peak_working_set_bytes": 58585088,
+            "output_sha256": "018d8dbed97e56349fbdde31afea1790d88df9090de4d3b96c588b17497762de",
+            "median_seconds": 1.7462651999667287
+          },
+          "alternative": {
+            "times_seconds": [
+              1.3578132000402547,
+              1.382801500032656,
+              1.3936690000118688,
+              1.343066200031899,
+              1.4340264999773353,
+              1.432112500013318,
+              1.4225744999712333
+            ],
+            "peak_working_set_bytes": 57995264,
+            "output_sha256": "018d8dbed97e56349fbdde31afea1790d88df9090de4d3b96c588b17497762de",
+            "median_seconds": 1.3936690000118688
+          }
+        },
+        "ratio": 0.7980855370870484
+      },
+      {
+        "id": "maximum-relabelled-chain",
+        "kind": "chain",
+        "n": 300000,
+        "L": 1,
+        "R": 149996,
+        "weights": "random",
+        "relabel": true,
+        "group": 1,
+        "score_percent": 5,
+        "seed": 2026093001,
+        "purpose": "deep repeated traversal with shuffled labels and a wide length window",
+        "slug": "grinder",
+        "shape": "chain",
+        "input_sha256": "0935e7b39379c433b63ba29867d35504deb9e043eaf36ba7d9c5b1318c183a40",
+        "input_bytes": 5294761,
+        "dimensions": {
+          "n": 300000,
+          "L": 1,
+          "R": 149996,
+          "expected_constant": null
+        },
+        "generator_sha256": "1539923adf62e39919640238c730f4940ac472e81fbab0f571bcebfed3781893",
+        "plan_sha256": "1864e6f7c1ee0165cb3315a47d56cd1382be9a6c483aec45230bea5e45e1075a",
+        "variants": {
+          "std": {
+            "times_seconds": [
+              1.0958264999790117,
+              1.0835880000377074,
+              1.1929714000434615,
+              1.1019804999814369,
+              1.1229631999740377,
+              1.1198668000288308,
+              1.0993999000056647
+            ],
+            "peak_working_set_bytes": 66830336,
+            "output_sha256": "f288410181bda568e07a7ae6a6a654ad9c7577a833e1ff8dd463e8e2d5fa2ef1",
+            "median_seconds": 1.1019804999814369
+          },
+          "alternative": {
+            "times_seconds": [
+              0.6710297000245191,
+              0.694346799980849,
+              0.6793135000043549,
+              0.6551042000064626,
+              0.673995399964042,
+              0.6947148000472225,
+              0.693945300008636
+            ],
+            "peak_working_set_bytes": 40038400,
+            "output_sha256": "f288410181bda568e07a7ae6a6a654ad9c7577a833e1ff8dd463e8e2d5fa2ef1",
+            "median_seconds": 0.6793135000043549
+          }
+        },
+        "ratio": 0.6164478409697794
+      }
+    ],
+    "summary": {
+      "festival-plan": {
+        "std": {
+          "max_median_seconds": 1.7462651999667287,
+          "peak_working_set_bytes": 60747776,
+          "indicative_limit_seconds": 3.5
+        },
+        "alternative": {
+          "max_median_seconds": 1.3936690000118688,
+          "peak_working_set_bytes": 58011648,
+          "indicative_limit_seconds": 3.0
+        }
+      },
+      "grinder": {
+        "std": {
+          "max_median_seconds": 1.1019804999814369,
+          "peak_working_set_bytes": 67035136,
+          "indicative_limit_seconds": 2.5
+        },
+        "alternative": {
+          "max_median_seconds": 0.680878599989228,
+          "peak_working_set_bytes": 40124416,
+          "indicative_limit_seconds": 1.5
+        }
+      }
+    }
+  }
+}

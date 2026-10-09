@@ -1,0 +1,134 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300001,
+      "purpose": "Boundary and full-range coverage: (1, 0, 1, 1)",
+      "values": [
+        1,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300002,
+      "purpose": "Boundary and full-range coverage: (4, 6, 7, 3)",
+      "values": [
+        4,
+        6,
+        7,
+        3
+      ]
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300003,
+      "purpose": "Boundary and full-range coverage: (10000000, 1, 1000000000, 1000000000)",
+      "values": [
+        10000000,
+        1,
+        1000000000,
+        1000000000
+      ]
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300004,
+      "purpose": "Boundary and full-range coverage: (10000000, 2000, 17, 0)",
+      "values": [
+        10000000,
+        2000,
+        17,
+        0
+      ]
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300005,
+      "purpose": "Boundary and full-range coverage: (31, 1000, 0, 1000000000)",
+      "values": [
+        31,
+        1000,
+        0,
+        1000000000
+      ]
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300006,
+      "purpose": "Boundary and full-range coverage: (10000000, 1000000000, 1000000000, 1000000000)",
+      "values": [
+        10000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ]
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300007,
+      "purpose": "Boundary and full-range coverage: (10000000, 988244354, 2, 3)",
+      "values": [
+        10000000,
+        988244354,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300008,
+      "purpose": "Boundary and full-range coverage: (10000000, 998244354, 1, 0)",
+      "values": [
+        10000000,
+        998244354,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300009,
+      "purpose": "Boundary and full-range coverage: (10000000, 998244353, 0, 1)",
+      "values": [
+        10000000,
+        998244353,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300010,
+      "purpose": "Boundary and full-range coverage: (1, 1000000000, 1000000000, 1000000000)",
+      "values": [
+        1,
+        1000000000,
+        1000000000,
+        1000000000
+      ]
+    }
+  ]
+}

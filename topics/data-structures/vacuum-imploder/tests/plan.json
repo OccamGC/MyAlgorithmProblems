@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample",
+      "kind": "sample",
+      "purpose": "Original mixed transformation example",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "01",
+      "seed": 202609281000
+    },
+    {
+      "id": "order",
+      "kind": "sample",
+      "purpose": "Translation and rotation do not commute",
+      "group": 1,
+      "score_percent": 10,
+      "sample": "02",
+      "seed": 202609281001
+    },
+    {
+      "id": "random-small",
+      "kind": "random",
+      "purpose": "Small overlapping ranges",
+      "group": 1,
+      "score_percent": 10,
+      "n": 30,
+      "m": 100,
+      "seed": 202609281002
+    },
+    {
+      "id": "maximum",
+      "kind": "random",
+      "purpose": "Maximum size and arbitrary angles",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281003
+    },
+    {
+      "id": "rotations",
+      "kind": "rotations",
+      "purpose": "Fifty thousand one-degree rotations",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281004
+    },
+    {
+      "id": "translations",
+      "kind": "translations",
+      "purpose": "Large accumulated translations",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281005
+    },
+    {
+      "id": "queries",
+      "kind": "queries",
+      "purpose": "Maximum number of output rows",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281006
+    },
+    {
+      "id": "reflections",
+      "kind": "reflections",
+      "purpose": "Repeated combinations of four reflections",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281007
+    },
+    {
+      "id": "singletons",
+      "kind": "singletons",
+      "purpose": "Leaf updates and leaf queries",
+      "group": 1,
+      "score_percent": 10,
+      "n": 50000,
+      "m": 50000,
+      "seed": 202609281008
+    },
+    {
+      "id": "one-point",
+      "kind": "random",
+      "purpose": "One point with many operations",
+      "group": 1,
+      "score_percent": 10,
+      "n": 1,
+      "m": 50000,
+      "seed": 202609281009
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#718096"/></marker><marker id="blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#1379ad"/></marker></defs><rect width="100%" height="100%" fill="#fff"/>
+<text x="140" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">000</text>
+<path d="M34 75L34 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M34 241L96 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M96 241L96 75" fill="none" stroke="#718096" stroke-width="2"/>
+<rect x="40" y="193" width="50" height="43" fill="#e4f4fc" stroke="#1379ad"/>
+<text x="65" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">1</text>
+<path d="M124 75L124 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M124 241L186 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M186 241L186 75" fill="none" stroke="#718096" stroke-width="2"/>
+<rect x="130" y="193" width="50" height="43" fill="#e4f4fc" stroke="#1379ad"/>
+<text x="155" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">2</text>
+<rect x="130" y="143" width="50" height="43" fill="#e4f4fc" stroke="#1379ad"/>
+<text x="155" y="173" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">3</text>
+<path d="M230 146L291 146" fill="none" stroke="#1379ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="450" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">00011</text>
+<path d="M344 75L344 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M344 241L406 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M406 241L406 75" fill="none" stroke="#718096" stroke-width="2"/>
+<rect x="350" y="193" width="50" height="43" fill="#e4f4fc" stroke="#1379ad"/>
+<text x="375" y="223" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#172b4d">3</text>
+<path d="M434 75L434 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M434 241L496 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M496 241L496 75" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M540 146L601 146" fill="none" stroke="#1379ad" stroke-width="3" marker-end="url(#blue)"/>
+<text x="760" y="42" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#172b4d">000111</text>
+<path d="M654 75L654 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M654 241L716 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M716 241L716 75" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M744 75L744 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M744 241L806 241" fill="none" stroke="#718096" stroke-width="2"/>
+<path d="M806 241L806 75" fill="none" stroke="#718096" stroke-width="2"/>
+</svg>

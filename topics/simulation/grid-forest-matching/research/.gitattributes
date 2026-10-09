@@ -1,0 +1,3 @@
+# Preserve proof formatting and the exact bytes fingerprinted by the input manifest.
+proofs/** -text -whitespace
+examples/inputs/*.in -text

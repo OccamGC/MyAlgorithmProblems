@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012100,
+      "purpose": "identity; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1,
+      "mode": "identity"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012101,
+      "purpose": "identity; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 8,
+      "mode": "identity"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012102,
+      "purpose": "pairs; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 12,
+      "mode": "pairs"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012103,
+      "purpose": "custom; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 30,
+      "mode": "custom",
+      "lengths": [
+        4,
+        6,
+        5,
+        7,
+        8
+      ]
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012104,
+      "purpose": "identity; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1000000,
+      "mode": "identity"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012105,
+      "purpose": "cycle; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 999983,
+      "mode": "cycle"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012106,
+      "purpose": "pairs; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1000000,
+      "mode": "pairs"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012107,
+      "purpose": "prime-powers; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1000000,
+      "mode": "prime-powers"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012108,
+      "purpose": "increasing; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1000000,
+      "mode": "increasing"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012109,
+      "purpose": "random; declared dimensions exercise boundaries and algorithmic structure",
+      "n": 1000000,
+      "mode": "random"
+    }
+  ]
+}

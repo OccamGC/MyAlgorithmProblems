@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "minimum",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "Two vertices and negative weights",
+      "kind": "chain",
+      "n": 2,
+      "m": 40
+    },
+    {
+      "id": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "Direct-model-sized mixed operations",
+      "kind": "random",
+      "n": 80,
+      "m": 300
+    },
+    {
+      "id": "zero-operations",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "Empty operation sequence",
+      "kind": "chain",
+      "n": 200000,
+      "m": 0
+    },
+    {
+      "id": "long-chain",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Deep tree and changing roots",
+      "kind": "chain",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "star",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "High degree and ignored moves",
+      "kind": "star",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "balanced",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "Balanced topology with updates",
+      "kind": "balanced",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "wide-query",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "Maximum total number of query vertices",
+      "kind": "wide",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "edge-reuse",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Repeated detach, reuse and adjacent updates",
+      "kind": "relink",
+      "n": 200000,
+      "m": 200000
+    },
+    {
+      "id": "negative",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "Negative path sums and rerooting",
+      "kind": "negative",
+      "n": 200000,
+      "m": 200000
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"id": "equal-cycle", "kind": "equal-cycle", "seed": 21, "group": 1, "score_percent": 5, "purpose": "equal MST alternatives and strict second cost"},
+    {"id": "second-distinct", "kind": "second-distinct", "seed": 26, "group": 1, "score_percent": 5, "purpose": "equal-weight replacement must use the second-largest distinct path weight; answer 4"},
+    {"id": "random-small", "kind": "random", "n": 8, "m": 20, "seed": 22, "group": 1, "score_percent": 10, "purpose": "small connected graph with parallel candidates"},
+    {"id": "medium", "kind": "random", "n": 5000, "m": 10000, "seed": 23, "group": 2, "score_percent": 30, "purpose": "medium connected graph"},
+    {"id": "long-chain", "kind": "chain", "n": 100000, "m": 200000, "seed": 24, "group": 3, "score_percent": 25, "purpose": "maximum-depth tree and many path queries"},
+    {"id": "maximum-random", "kind": "random", "n": 100000, "m": 200000, "seed": 25, "group": 3, "score_percent": 25, "purpose": "maximum vertex and edge counts"}
+  ]
+}

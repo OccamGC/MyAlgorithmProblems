@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="380" viewBox="0 0 500 380">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#264c66"/></marker></defs>
+<rect width="500" height="380" rx="10" fill="#f5f8fc"/>
+<rect x="90" y="35" width="150" height="150" fill="#ffffff" stroke="#264c66" stroke-width="2"/>
+<text x="165" y="121" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#17364c">1</text>
+<rect x="250" y="35" width="150" height="150" fill="#d4dce6" stroke="#264c66" stroke-width="2"/>
+<path d="M270 47L290 70" fill="none" stroke="#a5b3c1" stroke-width="2"/>
+<path d="M295 47L315 70" fill="none" stroke="#a5b3c1" stroke-width="2"/>
+<path d="M320 47L340 70" fill="none" stroke="#a5b3c1" stroke-width="2"/>
+<path d="M345 47L365 70" fill="none" stroke="#a5b3c1" stroke-width="2"/>
+<path d="M370 47L390 70" fill="none" stroke="#a5b3c1" stroke-width="2"/>
+<text x="325" y="121" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#17364c">0</text>
+<rect x="90" y="195" width="150" height="150" fill="#ffffff" stroke="#264c66" stroke-width="2"/>
+<text x="165" y="281" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#17364c">1</text>
+<rect x="250" y="195" width="150" height="150" fill="#ffffff" stroke="#264c66" stroke-width="2"/>
+<text x="325" y="281" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#17364c">1</text>
+<path d="M165 139L165 236" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+<path d="M197 270L293 270" fill="none" stroke="#264c66" stroke-width="3" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+</svg>

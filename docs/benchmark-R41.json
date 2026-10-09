@@ -1,0 +1,338 @@
+{
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "GCC 16.2.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra",
+  "problems": {
+    "town-editing-simoleons-3": {
+      "sources": {
+        "alternative-affine.cpp": "f1157f9f06cce4bcf605a4fe92eb1f52ae50c2756e40df5740f6f1152bfa2170",
+        "std.cpp": "f4909cbac61c54f3d4508db4487225e913001a8a1efb0e9ef1e265e3b76bb82c"
+      },
+      "binaries": {
+        "alternative-affine": "4cf384d8b7b18fff06d251c7561d7ca91b2a46776242476f5dc996ae01565dde",
+        "std": "df9910478b168893488cd9e92cd99bd97a7d09b42b803efb192952dec3a03d8a"
+      },
+      "generator_sha256": "91974bffd06ea48ed7edef04ec6afa18a54a42a19682d8ded9803b33045ae24c",
+      "plan_sha256": "db445f0d049e96f7087861a3840ff1eba6167a8d26ab2c7505a58241426575ae",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "2102fe8895b3ab1ffd9331630d5da1eb993873cc46f1670f7a346350892b431f",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.023265000083483756,
+                0.02285980002488941,
+                0.022552300011739135,
+                0.022944899974390864,
+                0.022486699977889657
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02285980002488941
+            },
+            "std": {
+              "seconds": [
+                0.02244760002940893,
+                0.021753299981355667,
+                0.02301970007829368,
+                0.02418160007800907,
+                0.022699200082570314
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.022699200082570314
+            }
+          },
+          "output_sha256": "7bde779e24b7927101728f84ee483a80e5609ce0be49846359c9609ce625cfa8"
+        },
+        {
+          "id": "02",
+          "input_sha256": "65daf5bafdf3ceca1d684a895501e0d00697af1fd6485374855779f353f3c5fb",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.02772670006379485,
+                0.02687159995548427,
+                0.027922499924898148,
+                0.0276568999979645,
+                0.02784550003707409
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02772670006379485
+            },
+            "std": {
+              "seconds": [
+                0.027003400027751923,
+                0.026055000023916364,
+                0.026469799922779202,
+                0.026109499973244965,
+                0.02686920005362481
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.026469799922779202
+            }
+          },
+          "output_sha256": "1d1d9a43f074dbecadf5adb0dd78c117b7ff937f27130db3460d11b38735effc"
+        },
+        {
+          "id": "03",
+          "input_sha256": "f6a9172a796a1015bfa72a283a767d4b81225336be19f719863120e6e347a588",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.0712038999190554,
+                0.06681440002284944,
+                0.06647189997602254,
+                0.06506820011418313,
+                0.06536999996751547
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.06647189997602254
+            },
+            "std": {
+              "seconds": [
+                0.06498639995697886,
+                0.06731290009338409,
+                0.06894060003105551,
+                0.06611540005542338,
+                0.06720649998169392
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.06720649998169392
+            }
+          },
+          "output_sha256": "33637a32c1d9ffd7cff2cc574176e97352dda04ecb3fb49f85b257ebf372962a"
+        },
+        {
+          "id": "04",
+          "input_sha256": "a4de7da8314adc2f0c757e17c71b0b9ca5736cbc0f9ef50b84f62e80dbbab516",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.056382999988272786,
+                0.05505029996857047,
+                0.05658400000538677,
+                0.05588769994210452,
+                0.05679850000888109
+              ],
+              "peak_working_set_bytes": 5566464,
+              "median_seconds": 0.056382999988272786
+            },
+            "std": {
+              "seconds": [
+                0.05606039997655898,
+                0.056321300100535154,
+                0.05743280006572604,
+                0.057048500049859285,
+                0.05598790000658482
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.056321300100535154
+            }
+          },
+          "output_sha256": "b44686b2636e0b87e02eac0c5d540d91fcbdb0d3ec10570fc2c4c7018d691b48"
+        },
+        {
+          "id": "05",
+          "input_sha256": "04d7ca9c74b4b47990ec008f6250b3e48d62db718fd5fb225a76917d8a533a66",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.0852406999329105,
+                0.08390930003952235,
+                0.08131579996552318,
+                0.08484140003565699,
+                0.08380599995143712
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.08390930003952235
+            },
+            "std": {
+              "seconds": [
+                0.10722470004111528,
+                0.10377070005051792,
+                0.10099090007133782,
+                0.11550749989692122,
+                0.104159300099127
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.104159300099127
+            }
+          },
+          "output_sha256": "38d34501faf74e4a030d0ca981818876613eea3e6b5e78c55be7ecd67df8bbc2"
+        },
+        {
+          "id": "06",
+          "input_sha256": "83494872908d774ed4340a01877f7b0bdebcbb2394c14f6ead1071d37a6e6435",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.09361879993230104,
+                0.0976960000116378,
+                0.09574090002570301,
+                0.10023320000618696,
+                0.0950027999933809
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.09574090002570301
+            },
+            "std": {
+              "seconds": [
+                0.10015670000575483,
+                0.10007439996115863,
+                0.10231839993502945,
+                0.1899571999674663,
+                0.10419260000344366
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.10231839993502945
+            }
+          },
+          "output_sha256": "180e8204318c5313ecd39bca5f723fccaa3c3708d01a37723589a397e767f652"
+        },
+        {
+          "id": "07",
+          "input_sha256": "778dcc3b5e600bc2fc819c2ae8e32082544efcb3233df5e68cc7f7d1bc16c926",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.09688299999106675,
+                0.09913950006011873,
+                0.098055399954319,
+                0.09541880001779646,
+                0.09618929994758219
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.09688299999106675
+            },
+            "std": {
+              "seconds": [
+                0.09213529992848635,
+                0.18355760001577437,
+                0.0988654000684619,
+                0.0927452000323683,
+                0.09432829997967929
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.09432829997967929
+            }
+          },
+          "output_sha256": "5cd2c2b6ddc523f0537bffafa4a199f5bd7dd84ea40ea09263dbeb36a26a05a4"
+        },
+        {
+          "id": "08",
+          "input_sha256": "b62488f00a14e34aa6f70f98caad252aeb391bd78be04424798ea823e94dcbdd",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.10433450003620237,
+                0.10366560006514192,
+                0.1048702000407502,
+                0.1925127999857068,
+                0.10789990006014705
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.1048702000407502
+            },
+            "std": {
+              "seconds": [
+                0.10031039989553392,
+                0.10394309996627271,
+                0.10117259994149208,
+                0.10234519990626723,
+                0.09964579995721579
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.10117259994149208
+            }
+          },
+          "output_sha256": "8b3b6e6fbac1deef261118e83cd4841d3bff091c7f535cfacd913264a330c712"
+        },
+        {
+          "id": "09",
+          "input_sha256": "0e62f293a231d367728a6a20b62eb7f7de0e90ba5c81894998b1d9c965d635b6",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.16032110003288835,
+                0.07081300008576363,
+                0.06928099994547665,
+                0.07061890000477433,
+                0.07106900005601346
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.07081300008576363
+            },
+            "std": {
+              "seconds": [
+                0.0742633999325335,
+                0.07901520002633333,
+                0.08607850002590567,
+                0.07571300002746284,
+                0.07593829999677837
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.07593829999677837
+            }
+          },
+          "output_sha256": "a036907e46420a859b64bb9aab898096a8fb62befc81208a63dcaaeae1444946"
+        },
+        {
+          "id": "10",
+          "input_sha256": "3a662aa93352f1361db89d21384a3ed578232efa8cf2ed727b90ff00aa3bc53c",
+          "verification_method": "exact rational full-state search when k,l<=30; otherwise generic matrix evaluation of a proven optimal moving schedule",
+          "programs": {
+            "alternative-affine": {
+              "seconds": [
+                0.07932659995276481,
+                0.08588829997461289,
+                0.07895039999857545,
+                0.07947029999922961,
+                0.08002730004955083
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.07947029999922961
+            },
+            "std": {
+              "seconds": [
+                0.07702309999149293,
+                0.07677219994366169,
+                0.08243910002056509,
+                0.07849290000740439,
+                0.08576090005226433
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.07849290000740439
+            }
+          },
+          "output_sha256": "28f2ec62f83c390dea3e5302d3e41b5c0b8458e00dd6beb58651b9e0feb9aec3"
+        }
+      ],
+      "summary": {
+        "alternative-affine": {
+          "slowest_median_seconds": 0.1048702000407502,
+          "peak_working_set_bytes": 5578752,
+          "passes_estimated_limit": true
+        },
+        "std": {
+          "slowest_median_seconds": 0.104159300099127,
+          "peak_working_set_bytes": 5578752,
+          "passes_estimated_limit": true
+        }
+      },
+      "oracle_sha256": "a6a2ed8c22bcb4497cc17a90d1bf1e19015bf2760d783da8c369da0f4200efd7",
+      "limit_seconds": 0.5
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title description">
+  <title id="title">A tree and its first-visit tour</title>
+  <desc id="description">Four farms form a square of side ten. Three sides form an MST of weight thirty. The doubled tree walk visits 1 2 3 4 3 2 1 and costs sixty. Its first-visit tour 1 2 3 4 1 uses the fourth side and costs forty.</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1268b3" />
+    </marker>
+    <marker id="arrow-ink" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#20354b" />
+    </marker>
+    <pattern id="removed" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#fff5dd" />
+      <path d="M -2 2 L 2 -2 M 0 10 L 10 0 M 8 12 L 12 8" stroke="#dba963" stroke-width="1.2" />
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="960" height="420" fill="white" stroke="none" />
+  <text x="245" y="42" fill="#20354b" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">M = 30</text>
+  <text x="720" y="42" fill="#20354b" font-size="26" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C = 40</text>
+  <line x1="480" y1="65" x2="480" y2="375" stroke="#acb9c6" stroke-width="1" stroke-linecap="round" />
+  <line x1="145" y1="290" x2="345" y2="290" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="345" y1="290" x2="345" y2="90" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="345" y1="90" x2="145" y2="90" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <text x="245" y="76" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <text x="380" y="196" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <text x="245" y="323" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <circle cx="145" cy="290" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="145" y="297" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <circle cx="345" cy="290" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="345" y="297" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <circle cx="345" cy="90" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="345" y="97" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3</text>
+  <circle cx="145" cy="90" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="145" y="97" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">4</text>
+  <text x="245" y="351" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1 → 2 → 3 → 4 → 3 → 2 → 1</text>
+  <text x="245" y="393" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2M = 60</text>
+  <line x1="620" y1="290" x2="820" y2="290" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="820" y1="290" x2="820" y2="90" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="820" y1="90" x2="620" y2="90" stroke="#1268b3" stroke-width="4" stroke-linecap="round" />
+  <line x1="620" y1="90" x2="620" y2="290" stroke="#a85a04" stroke-width="4" stroke-linecap="round" stroke-dasharray="9 6" />
+  <text x="585" y="196" fill="#a85a04" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <text x="720" y="76" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <text x="855" y="196" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <text x="720" y="323" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">10</text>
+  <circle cx="620" cy="290" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="620" y="297" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1</text>
+  <circle cx="820" cy="290" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="820" y="297" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">2</text>
+  <circle cx="820" cy="90" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="820" y="97" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">3</text>
+  <circle cx="620" cy="90" r="20" fill="white" stroke="#20354b" stroke-width="2" />
+  <text x="620" y="97" fill="#20354b" font-size="21" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">4</text>
+  <text x="720" y="351" fill="#20354b" font-size="20" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">1 → 2 → 3 → 4 → 1</text>
+  <text x="720" y="393" fill="#20354b" font-size="23" font-family="Arial, Helvetica, sans-serif" text-anchor="middle">C = 40 ≤ 2M</text>
+</svg>

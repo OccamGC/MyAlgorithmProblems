@@ -1,0 +1,86 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "2 2\n1 0 0 1 1000 1000\n1 1\n1 995 1000 2 505 505 -1000 2\n2 505 500 1 1000 1000 -990 -50\n",
+      "purpose": "original finite sample",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380201
+    },
+    {
+      "mode": "literal",
+      "input": "0 1\n1 -10000 -10000 1 10000 10000\n10\n",
+      "purpose": "no portals and maximum direct walk",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380202
+    },
+    {
+      "mode": "random",
+      "purpose": "small literal fixed-point oracle",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380203
+    },
+    {
+      "mode": "negative",
+      "purpose": "3000 portals with bounded negative cycles",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380204
+    },
+    {
+      "mode": "slow-cycle",
+      "purpose": "only one negative world transition per cycle",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380205
+    },
+    {
+      "mode": "positive",
+      "purpose": "large positive finite answer",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380206
+    },
+    {
+      "mode": "unreachable",
+      "purpose": "unreachable negative target world",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380207
+    },
+    {
+      "mode": "infinity",
+      "purpose": "reachable negative target world",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380208
+    },
+    {
+      "mode": "reset",
+      "purpose": "negative intermediate world with finite destination",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380209
+    },
+    {
+      "mode": "coordinates",
+      "purpose": "maximum coordinates and movement time",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 380210
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 5,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290400
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290401
+    },
+    {
+      "id": "small-bound",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small bound",
+      "n": 1000000,
+      "a": 10000000,
+      "seed": 202609290402
+    },
+    {
+      "id": "medium-1",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium 1",
+      "n": 1500000,
+      "a": 9999991,
+      "seed": 202609290403
+    },
+    {
+      "id": "medium-2",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium 2",
+      "n": 2000000,
+      "a": 10007,
+      "seed": 202609290404
+    },
+    {
+      "id": "medium-3",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium 3",
+      "n": 3000000,
+      "a": 9999999,
+      "seed": 202609290405
+    },
+    {
+      "id": "large",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "large",
+      "n": 5000000,
+      "a": 1,
+      "seed": 202609290406
+    },
+    {
+      "id": "maximum-1",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "maximum 1",
+      "n": 10000000,
+      "a": 1,
+      "seed": 202609290407
+    },
+    {
+      "id": "maximum-bound",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "maximum bound",
+      "n": 10000000,
+      "a": 10000000,
+      "seed": 202609290408
+    },
+    {
+      "id": "maximum-prime",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 15,
+      "purpose": "maximum prime",
+      "n": 10000000,
+      "a": 9999991,
+      "seed": 202609290409
+    }
+  ]
+}

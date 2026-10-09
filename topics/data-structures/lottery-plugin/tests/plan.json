@@ -1,0 +1,131 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291200
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291201
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291202
+    },
+    {
+      "id": "no-events",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "no events",
+      "n": 1,
+      "m": 0,
+      "q": 0,
+      "k": 0,
+      "seed": 202609291203
+    },
+    {
+      "id": "only-removals",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "only removals",
+      "n": 100,
+      "m": 1000,
+      "q": 0,
+      "k": 0,
+      "seed": 202609291204
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 3500000,
+      "m": 4000000,
+      "q": 200000,
+      "k": 200000,
+      "seed": 202609291205
+    },
+    {
+      "id": "maximum-rejoin",
+      "kind": "rejoin",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum rejoin",
+      "n": 3500000,
+      "m": 4000000,
+      "q": 200000,
+      "k": 200000,
+      "abc": [
+        1000000000,
+        0,
+        0
+      ],
+      "seed": 202609291206
+    },
+    {
+      "id": "small-rejoin",
+      "kind": "rejoin",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small rejoin",
+      "n": 1,
+      "m": 100,
+      "q": 40,
+      "k": 20,
+      "abc": [
+        0,
+        0,
+        0
+      ],
+      "seed": 202609291207
+    },
+    {
+      "id": "maximum-initial",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum initial",
+      "n": 3500000,
+      "m": 0,
+      "q": 0,
+      "k": 0,
+      "seed": 202609291208
+    },
+    {
+      "id": "medium-cycle",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "medium cycle",
+      "n": 100000,
+      "m": 100000,
+      "q": 15000,
+      "k": 15000,
+      "abc": [
+        1,
+        1,
+        0
+      ],
+      "seed": 202609291209
+    }
+  ]
+}

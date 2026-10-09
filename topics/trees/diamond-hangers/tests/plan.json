@@ -1,0 +1,94 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300001,
+      "purpose": "Boundary and full-range coverage: down",
+      "n": 1,
+      "mode": "down"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 300002,
+      "purpose": "Boundary and full-range coverage: random",
+      "n": 15,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300003,
+      "purpose": "Boundary and full-range coverage: balanced",
+      "n": 1000,
+      "mode": "balanced"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300004,
+      "purpose": "Boundary and full-range coverage: down",
+      "n": 1000,
+      "mode": "down"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 300005,
+      "purpose": "Boundary and full-range coverage: right",
+      "n": 1000,
+      "mode": "right"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300006,
+      "purpose": "Boundary and full-range coverage: down",
+      "n": 100000,
+      "mode": "down"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300007,
+      "purpose": "Boundary and full-range coverage: right",
+      "n": 100000,
+      "mode": "right"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300008,
+      "purpose": "Boundary and full-range coverage: zigzag",
+      "n": 100000,
+      "mode": "zigzag"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300009,
+      "purpose": "Boundary and full-range coverage: balanced",
+      "n": 100000,
+      "mode": "balanced"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 300010,
+      "purpose": "Boundary and full-range coverage: random",
+      "n": 100000,
+      "mode": "random"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012801,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "1 0\n0\n0\n0\n0\n0\n"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012802,
+      "purpose": "boundary example",
+      "mode": "literal",
+      "input": "2 3\n11\n10\n00\n01\n10\n3 1\n1 2\n5 2\n"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012803,
+      "purpose": "zero",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "zero"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012804,
+      "purpose": "one",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "one"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012805,
+      "purpose": "alternating",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "alternating"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012806,
+      "purpose": "repeat",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "repeat"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012807,
+      "purpose": "ends",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "ends"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012808,
+      "purpose": "sweep",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "sweep"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012809,
+      "purpose": "random",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012810,
+      "purpose": "random",
+      "mode": "binary",
+      "n": 10000,
+      "m": 10000,
+      "shape": "random"
+    }
+  ]
+}

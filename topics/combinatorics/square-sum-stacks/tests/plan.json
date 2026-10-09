@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012401,
+      "mode": "literal",
+      "input": "1\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012402,
+      "mode": "literal",
+      "input": "2\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012403,
+      "mode": "literal",
+      "input": "3\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012404,
+      "mode": "literal",
+      "input": "4\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012405,
+      "mode": "literal",
+      "input": "5\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012406,
+      "mode": "literal",
+      "input": "31\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012407,
+      "mode": "literal",
+      "input": "32\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012408,
+      "mode": "literal",
+      "input": "997\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012409,
+      "mode": "literal",
+      "input": "999\n",
+      "purpose": "odd/even construction and boundaries"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012410,
+      "mode": "literal",
+      "input": "1000\n",
+      "purpose": "odd/even construction and boundaries"
+    }
+  ]
+}

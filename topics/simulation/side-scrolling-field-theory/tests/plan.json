@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 50,
+      "extra_conditions": "Sum of step counts <= 4000000; no move crosses either end before wrapping."
+    },
+    {
+      "id": 2,
+      "score_percent": 20,
+      "extra_conditions": "Sum of step counts <= 4000000."
+    },
+    {
+      "id": 3,
+      "score_percent": 30,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012000,
+      "purpose": "boundary and structure coverage",
+      "n": 1,
+      "m": 4,
+      "mode": "random"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012001,
+      "purpose": "boundary and structure coverage",
+      "n": 8,
+      "m": 50,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012002,
+      "purpose": "boundary and structure coverage",
+      "n": 1999,
+      "m": 1999,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012003,
+      "purpose": "boundary and structure coverage",
+      "n": 97,
+      "m": 500,
+      "mode": "random"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012004,
+      "purpose": "boundary and structure coverage",
+      "n": 30000,
+      "m": 30000,
+      "mode": "random"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012005,
+      "purpose": "maximum size or randomized coverage",
+      "n": 30000,
+      "m": 30000,
+      "mode": "random"
+    },
+    {
+      "id": "07",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012006,
+      "purpose": "maximum size or randomized coverage",
+      "n": 2,
+      "m": 30000,
+      "mode": "random"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012007,
+      "purpose": "maximum size or randomized coverage",
+      "n": 30000,
+      "m": 30000,
+      "mode": "extreme"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012008,
+      "purpose": "maximum size or randomized coverage",
+      "n": 29999,
+      "m": 30000,
+      "mode": "multiples"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202610012009,
+      "purpose": "maximum size or randomized coverage",
+      "n": 30000,
+      "m": 30000,
+      "mode": "same-label"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "cases": [
+    {
+      "n": 0,
+      "q": 0,
+      "mode": "empty",
+      "purpose": "empty cycle",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370401
+    },
+    {
+      "n": 4,
+      "q": 0,
+      "mode": "sample",
+      "purpose": "published sample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370402
+    },
+    {
+      "n": 4,
+      "q": 100,
+      "mode": "counter",
+      "purpose": "actual minimum above one plus small edits",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370403
+    },
+    {
+      "n": 8,
+      "q": 2000,
+      "mode": "random",
+      "purpose": "literal sequence operations",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370404
+    },
+    {
+      "n": 100000,
+      "q": 100000,
+      "mode": "change",
+      "purpose": "maximum random changes, independent heaps",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370405
+    },
+    {
+      "n": 0,
+      "q": 100000,
+      "mode": "append",
+      "purpose": "maximum append growth",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370406
+    },
+    {
+      "n": 100000,
+      "q": 100000,
+      "mode": "pop",
+      "purpose": "remove alternating endpoints down to empty",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370407
+    },
+    {
+      "n": 100000,
+      "q": 100000,
+      "mode": "uniform",
+      "purpose": "arbitrary-rank insertions and deletions with a closed game answer",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370408
+    },
+    {
+      "n": 99999,
+      "q": 0,
+      "mode": "positive",
+      "value": 100,
+      "purpose": "odd cycle, maximum weights",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370409
+    },
+    {
+      "n": 100000,
+      "q": 100000,
+      "mode": "change",
+      "zero": true,
+      "purpose": "many zero edges and changing zero endpoints",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370410
+    }
+  ]
+}

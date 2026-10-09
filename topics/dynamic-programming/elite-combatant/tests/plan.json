@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "id": "small",
+      "kind": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 441,
+      "purpose": "support choice and original sample"
+    },
+    {
+      "id": "healing",
+      "kind": "healing",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 442,
+      "purpose": "answer beyond unsigned 64-bit"
+    },
+    {
+      "id": "neutral",
+      "kind": "neutral",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 443,
+      "purpose": "zero hostile types and zero healing"
+    },
+    {
+      "id": "absent",
+      "kind": "absent",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 444,
+      "purpose": "zero-count positive type and UTF-8 name"
+    },
+    {
+      "id": "fatal",
+      "kind": "fatal",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 445,
+      "purpose": "impossible mission and exactly zero health"
+    },
+    {
+      "id": "midturn",
+      "kind": "midturn",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 446,
+      "purpose": "final health is insufficient as survival check"
+    },
+    {
+      "id": "dense",
+      "kind": "dense",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 447,
+      "purpose": "twenty hostile types with many units and healing"
+    },
+    {
+      "id": "types",
+      "kind": "types",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 448,
+      "purpose": "five thousand distinct type names"
+    },
+    {
+      "id": "wide",
+      "kind": "wide",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 449,
+      "purpose": "large signed transition values"
+    },
+    {
+      "id": "random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 450,
+      "purpose": "all subset states reachable"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 740" role="img" aria-labelledby="title desc">
+<title id="title">Edit Town and Simoleons 4: fixed household positions</title>
+<desc id="desc">Both targets finish in D. Total town wealth stays 20; the targets own 12.</desc>
+<rect width="1120" height="740" rx="20" fill="#f3f6fc"/>
+<g font-family="Segoe UI, Arial, sans-serif" fill="#17243d">
+<text x="28" y="44" font-size="25" font-weight="700">Edit Town and Simoleons 4</text>
+<text x="28" y="73" font-size="17" fill="#506079">Four fixed positions: A, B, C, D</text>
+<text x="198.0" y="117" text-anchor="middle" font-size="20" font-weight="700">Initial</text>
+<text x="198.0" y="143" text-anchor="middle" font-size="15" fill="#506079">Reserve D for targets</text>
+<rect x="28.0" y="163" width="340.0" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="190" font-size="18" font-weight="700">A</text>
+<text x="198.0" y="203" text-anchor="middle" font-size="20">T1, T2</text>
+<text x="198.0" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 2</text>
+<rect x="28.0" y="282" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="309" font-size="18" font-weight="700">B</text>
+<text x="198.0" y="322" text-anchor="middle" font-size="20">O1</text>
+<text x="198.0" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 9</text>
+<rect x="28.0" y="401" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="428" font-size="18" font-weight="700">C</text>
+<text x="198.0" y="441" text-anchor="middle" font-size="20">O2</text>
+<text x="198.0" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 9</text>
+<rect x="28.0" y="520" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="42.0" y="547" font-size="18" font-weight="700">D</text>
+<text x="198.0" y="560" text-anchor="middle" font-size="20">empty</text>
+<text x="198.0" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<path d="M 373.0 397 H 385.0 l -5 -5 m 5 5 l -5 5" fill="none" stroke="#6c809e" stroke-width="2"/>
+<text x="560.0" y="117" text-anchor="middle" font-size="20" font-weight="700">After T1</text>
+<text x="560.0" y="143" text-anchor="middle" font-size="15" fill="#506079">T1 visits B, C, D</text>
+<rect x="390.0" y="163" width="340.0" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="404.0" y="190" font-size="18" font-weight="700">A</text>
+<text x="560.0" y="203" text-anchor="middle" font-size="20">T2</text>
+<text x="560.0" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 1</text>
+<rect x="390.0" y="282" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="404.0" y="309" font-size="18" font-weight="700">B</text>
+<text x="560.0" y="322" text-anchor="middle" font-size="20">O1</text>
+<text x="560.0" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 5</text>
+<rect x="390.0" y="401" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="404.0" y="428" font-size="18" font-weight="700">C</text>
+<text x="560.0" y="441" text-anchor="middle" font-size="20">O2</text>
+<text x="560.0" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 7</text>
+<rect x="390.0" y="520" width="340.0" height="101" rx="12" fill="#e6eefc" stroke="#bfcee4" stroke-width="2"/>
+<text x="404.0" y="547" font-size="18" font-weight="700">D</text>
+<text x="560.0" y="560" text-anchor="middle" font-size="20">T1</text>
+<text x="560.0" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 7</text>
+<path d="M 735.0 397 H 747.0 l -5 -5 m 5 5 l -5 5" fill="none" stroke="#6c809e" stroke-width="2"/>
+<text x="922.0" y="117" text-anchor="middle" font-size="20" font-weight="700">After T2</text>
+<text x="922.0" y="143" text-anchor="middle" font-size="15" fill="#506079">T2 visits B, C, D</text>
+<rect x="752.0" y="163" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="766.0" y="190" font-size="18" font-weight="700">A</text>
+<text x="922.0" y="203" text-anchor="middle" font-size="20">empty</text>
+<text x="922.0" y="241" text-anchor="middle" font-size="24" font-weight="700">M = 0</text>
+<rect x="752.0" y="282" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="766.0" y="309" font-size="18" font-weight="700">B</text>
+<text x="922.0" y="322" text-anchor="middle" font-size="20">O1</text>
+<text x="922.0" y="360" text-anchor="middle" font-size="24" font-weight="700">M = 3</text>
+<rect x="752.0" y="401" width="340.0" height="101" rx="12" fill="#ffffff" stroke="#bfcee4" stroke-width="2"/>
+<text x="766.0" y="428" font-size="18" font-weight="700">C</text>
+<text x="922.0" y="441" text-anchor="middle" font-size="20">O2</text>
+<text x="922.0" y="479" text-anchor="middle" font-size="24" font-weight="700">M = 5</text>
+<rect x="752.0" y="520" width="340.0" height="101" rx="12" fill="#dff6eb" stroke="#1f9470" stroke-width="2"/>
+<text x="766.0" y="547" font-size="18" font-weight="700">D</text>
+<text x="922.0" y="560" text-anchor="middle" font-size="20">T1, T2</text>
+<text x="922.0" y="598" text-anchor="middle" font-size="24" font-weight="700">M = 12</text>
+<text x="28" y="675" font-size="18">Both targets finish in D. Total town wealth stays 20; the targets own 12.</text>
+<text x="28" y="711" font-size="16" fill="#506079">T = target resident   O = other resident   M = household wealth</text>
+</g></svg>

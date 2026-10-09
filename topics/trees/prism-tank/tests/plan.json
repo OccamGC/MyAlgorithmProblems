@@ -1,0 +1,81 @@
+{
+  "cases": [
+    {
+      "id": "isolated",
+      "kind": "isolated",
+      "n": 2000,
+      "block_limit": 0,
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "isolated vertices and zero edges",
+      "seed": 401,
+      "zero": false
+    },
+    {
+      "id": "zero-damage",
+      "kind": "chain",
+      "n": 20,
+      "block_limit": 1,
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "zero expected damage",
+      "seed": 402,
+      "zero": true
+    },
+    {
+      "id": "star-cut",
+      "kind": "star",
+      "n": 2000,
+      "block_limit": 1,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "two valuable leaves; arbitrary cuts assigned to child endpoints",
+      "seed": 403,
+      "zero": false
+    },
+    {
+      "id": "star-no-cut",
+      "kind": "star",
+      "n": 2000,
+      "block_limit": 0,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "two valuable leaves diluted by forced zero-damage children",
+      "seed": 404,
+      "zero": false
+    },
+    {
+      "id": "long-chain",
+      "kind": "chain",
+      "n": 2000,
+      "block_limit": 1,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "maximum depth and iterative traversal",
+      "seed": 405,
+      "zero": false
+    },
+    {
+      "id": "forest",
+      "kind": "forest",
+      "n": 500,
+      "block_limit": 5,
+      "group": 1,
+      "score_percent": 15,
+      "purpose": "separate components and block_limit greater than one",
+      "seed": 406,
+      "zero": false
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "n": 2000,
+      "block_limit": 0,
+      "group": 1,
+      "score_percent": 20,
+      "purpose": "maximum connected random tree",
+      "seed": 407,
+      "zero": false
+    }
+  ]
+}

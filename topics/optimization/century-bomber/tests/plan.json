@@ -1,0 +1,116 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290000
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609290001
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609290002
+    },
+    {
+      "id": "random-small",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "random small",
+      "n": 30,
+      "m": 40,
+      "k": 20,
+      "q": 100,
+      "seed": 202609290003
+    },
+    {
+      "id": "maximum-full",
+      "kind": "full",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum full",
+      "n": 2000,
+      "m": 2000,
+      "k": 2000,
+      "q": 30000,
+      "seed": 202609290004
+    },
+    {
+      "id": "maximum-random",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum random",
+      "n": 2000,
+      "m": 2000,
+      "k": 1999,
+      "q": 30000,
+      "seed": 202609290005
+    },
+    {
+      "id": "singletons",
+      "kind": "singletons",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "singletons",
+      "n": 2000,
+      "m": 2000,
+      "k": 1000,
+      "q": 30000,
+      "seed": 202609290006
+    },
+    {
+      "id": "zero-values",
+      "kind": "zero",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "zero values",
+      "n": 2000,
+      "m": 2000,
+      "k": 2000,
+      "q": 30000,
+      "seed": 202609290007
+    },
+    {
+      "id": "no-starts",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "no starts",
+      "n": 2000,
+      "m": 2000,
+      "k": 0,
+      "q": 30000,
+      "seed": 202609290008
+    },
+    {
+      "id": "short-line",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "short line",
+      "n": 2000,
+      "m": 1,
+      "k": 1,
+      "q": 30000,
+      "seed": 202609290009
+    }
+  ]
+}

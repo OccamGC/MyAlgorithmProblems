@@ -1,0 +1,127 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310001,
+      "purpose": "Boundary or explicit regression",
+      "queries": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310002,
+      "purpose": "random",
+      "M": 20,
+      "R": 8,
+      "K": 2,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310003,
+      "purpose": "random",
+      "M": 1000,
+      "R": 10000,
+      "K": 100,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310004,
+      "purpose": "single",
+      "M": 1000,
+      "R": 10000,
+      "K": 1000000000,
+      "mode": "single"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310005,
+      "purpose": "singular",
+      "M": 1000,
+      "R": 10000,
+      "K": 1000000000,
+      "mode": "singular"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310006,
+      "purpose": "random",
+      "M": 100000,
+      "R": 1000000000,
+      "K": 1000000000,
+      "mode": "random"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310007,
+      "purpose": "single",
+      "M": 100000,
+      "R": 1000000000,
+      "K": 1000000000,
+      "mode": "single"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310008,
+      "purpose": "singular",
+      "M": 100000,
+      "R": 1000000000,
+      "K": 1000000000,
+      "mode": "singular"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310009,
+      "purpose": "edges",
+      "M": 100000,
+      "R": 1000000000,
+      "K": 1000000000,
+      "mode": "edges"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310010,
+      "purpose": "random",
+      "M": 100000,
+      "R": 1000000000,
+      "K": 2,
+      "mode": "random"
+    }
+  ]
+}

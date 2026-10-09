@@ -1,0 +1,102 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "1 1\n0\n1 1\n",
+      "purpose": "Already strongly connected",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380401
+    },
+    {
+      "mode": "literal",
+      "input": "7 3\n4 5 1 0 5 4 4\n5 1\n7 1\n7 4\n",
+      "purpose": "Close a local path instead of always stopping there",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380402
+    },
+    {
+      "mode": "chain",
+      "n": 500000,
+      "m": 2000000,
+      "purpose": "Maximum depth and edge count",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380403
+    },
+    {
+      "mode": "same",
+      "n": 500000,
+      "m": 2000000,
+      "purpose": "Equal-height DAG",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380404
+    },
+    {
+      "mode": "isolates",
+      "n": 500000,
+      "m": 1,
+      "purpose": "Maximum number of isolated SCCs",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380405
+    },
+    {
+      "mode": "cycle",
+      "n": 500000,
+      "m": 2000000,
+      "purpose": "One maximum-size SCC",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380406
+    },
+    {
+      "mode": "gap",
+      "n": 500000,
+      "m": 1999999,
+      "purpose": "An uncrossed height gap is impossible",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380407
+    },
+    {
+      "mode": "layers",
+      "n": 500000,
+      "m": 2000000,
+      "purpose": "Large sparse height layers and endpoint imbalance",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380408
+    },
+    {
+      "mode": "layers",
+      "n": 100000,
+      "m": 2000000,
+      "purpose": "Dense layers with equal-height SCCs",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380409
+    },
+    {
+      "mode": "chain",
+      "n": 100001,
+      "m": 2000000,
+      "purpose": "Many repeated downward edges",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 380410
+    }
+  ]
+}

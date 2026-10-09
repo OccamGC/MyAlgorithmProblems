@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; random.Random with fixed seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301700,
+      "purpose": "empty-cycle",
+      "mode": "empty-cycle",
+      "n": 1,
+      "m": 120
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301701,
+      "purpose": "mixed",
+      "mode": "mixed",
+      "n": 2,
+      "m": 1000
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301702,
+      "purpose": "mixed",
+      "mode": "mixed",
+      "n": 1000,
+      "m": 100000
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301703,
+      "purpose": "moves",
+      "mode": "moves",
+      "n": 100000,
+      "m": 100000
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301704,
+      "purpose": "insert",
+      "mode": "insert",
+      "n": 100000,
+      "m": 100000
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301705,
+      "purpose": "delete",
+      "mode": "delete",
+      "n": 80000,
+      "m": 100000
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301706,
+      "purpose": "query",
+      "mode": "query",
+      "n": 1,
+      "m": 100000
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301707,
+      "purpose": "mixed",
+      "mode": "mixed",
+      "n": 100000,
+      "m": 100000
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301708,
+      "purpose": "empty-cycle",
+      "mode": "empty-cycle",
+      "n": 1,
+      "m": 100000
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301709,
+      "purpose": "moves",
+      "mode": "moves",
+      "n": 1001,
+      "m": 100000
+    }
+  ]
+}

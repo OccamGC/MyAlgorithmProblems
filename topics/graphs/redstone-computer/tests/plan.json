@@ -1,0 +1,109 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "small-boolean",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "small boolean",
+      "n": 20,
+      "m": 40,
+      "k": 1,
+      "seed": 202609290600
+    },
+    {
+      "id": "medium-boolean",
+      "kind": "random",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium boolean",
+      "n": 50,
+      "m": 500,
+      "k": 1,
+      "seed": 202609290601
+    },
+    {
+      "id": "medium-impossible",
+      "kind": "late-impossible",
+      "group": 2,
+      "score_percent": 10,
+      "purpose": "medium impossible",
+      "n": 50,
+      "m": 10000,
+      "k": 1,
+      "seed": 202609290602
+    },
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609290603
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609290604
+    },
+    {
+      "id": "sample-4",
+      "kind": "sample",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "sample 4",
+      "sample": "04",
+      "seed": 202609290605
+    },
+    {
+      "id": "maximum-consistent",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "maximum consistent",
+      "n": 500,
+      "m": 10000,
+      "k": 150,
+      "seed": 202609290606
+    },
+    {
+      "id": "late-impossible",
+      "kind": "late-impossible",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "late impossible",
+      "n": 500,
+      "m": 10000,
+      "k": 150,
+      "seed": 202609290607
+    },
+    {
+      "id": "self-relations",
+      "kind": "self",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "self relations",
+      "n": 500,
+      "m": 10000,
+      "k": 150,
+      "seed": 202609290608
+    },
+    {
+      "id": "no-constraints",
+      "kind": "random",
+      "group": 3,
+      "score_percent": 10,
+      "purpose": "no constraints",
+      "n": 500,
+      "m": 0,
+      "k": 150,
+      "seed": 202609290609
+    }
+  ]
+}

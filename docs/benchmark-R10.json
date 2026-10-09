@@ -1,0 +1,587 @@
+{
+  "timestamp": "2026-09-29 03:22:57 +0800",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "repeats": 5,
+  "time_resolution_seconds": 0.5,
+  "multiplier": 2.0,
+  "timing": "wall clock, one input file per process; first run used to produce output, then repeated timed runs; median per case",
+  "problems": {
+    "melon-planting-2": {
+      "sample_count": 3,
+      "std_sha256": "65766682338863677b4e2d34e73d07c72205a0b3f36f2a3d6bba80107c6fb0b6",
+      "cpp_sources_sha256": {
+        "std.cpp": "65766682338863677b4e2d34e73d07c72205a0b3f36f2a3d6bba80107c6fb0b6",
+        "tests/slow.cpp": "1d1bdaf5cd67e5333079b1271cd70c69a75b9ccb284348771e7a38b20f243112"
+      },
+      "generator_sha256": "bae05cfc128410472c95760a8e9c879065d38fea56c8fe3284f8edc0caba7bdf",
+      "plan_sha256": "3b5f34f9dca62974164c50749650c9e0f005ac09630249666d7c0b00bb2cd21a",
+      "program_sha256": "0d600f5b0d06b02a2d901f3f823b468ea2dc221dcb255556af26a5c7a19fc6de",
+      "standard_time_seconds": 0.467794900003355,
+      "peak_working_set_bytes": 5013504,
+      "indicative_limit_seconds": 1.0,
+      "cases": [
+        {
+          "id": "no-vines",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "No vines; all plots stay empty.",
+          "dimensions": {
+            "p": 0,
+            "q": 96,
+            "edges": 0,
+            "expected": 0
+          },
+          "input_bytes": 5,
+          "input_sha256": "b0b9b31ee6096a36520c65c06c5821254f9eee4433d928b28015adfde163c157",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5009408,
+          "times_seconds": [
+            0.017079100012779236,
+            0.015864400018472224,
+            0.01642980001633987,
+            0.014701500011142343,
+            0.014825599966570735
+          ],
+          "median_seconds": 0.015864400018472224
+        },
+        {
+          "id": "small-irregular",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "Zero degrees and overlapping neighborhoods.",
+          "dimensions": {
+            "p": 10,
+            "q": 12,
+            "edges": 17,
+            "expected": null
+          },
+          "input_bytes": 63,
+          "input_sha256": "68013a30c1a060c4cd50fa852962156110280687434dbc4515f3190b3719111f",
+          "output_sha256": "7fb2aaeaf3eef66b52db104118c30f62899f5f0df520350a94a8fcb843c0dfdf",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.01518650003708899,
+            0.017117800016421825,
+            0.015331899980083108,
+            0.01529910002136603,
+            0.015232599980663508
+          ],
+          "median_seconds": 0.01529910002136603
+        },
+        {
+          "id": "eighteen-dense",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Many vines compete for a small set of plots.",
+          "dimensions": {
+            "p": 18,
+            "q": 10,
+            "edges": 72,
+            "expected": null
+          },
+          "input_bytes": 194,
+          "input_sha256": "bf285964aae2105c847e58bc119704eed3bc015510e70783fa339863b6bb52c7",
+          "output_sha256": "69fa4dd4fdc0b43ba7ca7c997539c4500f03ab9b220228e2b1e97bd305397806",
+          "peak_working_set_bytes": 5009408,
+          "times_seconds": [
+            0.022507900022901595,
+            0.020422799978405237,
+            0.021465199999511242,
+            0.021174299996346235,
+            0.021058499987702817
+          ],
+          "median_seconds": 0.021174299996346235
+        },
+        {
+          "id": "eighteen-cycle",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Long alternating paths and repeated rerouting.",
+          "dimensions": {
+            "p": 18,
+            "q": 18,
+            "edges": 36,
+            "expected": 12
+          },
+          "input_bytes": 132,
+          "input_sha256": "0c65304fdb58816061d37810ca75a7f31018ee93f6e446c45915d6a69d8c90b3",
+          "output_sha256": "f2bf6cb915ec521520920f625e9a641f22bae7808a5f5db7867c431c1a79440f",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.019983100006356835,
+            0.019021600019186735,
+            0.018437999999150634,
+            0.017971499997656792,
+            0.018045299977529794
+          ],
+          "median_seconds": 0.018437999999150634
+        },
+        {
+          "id": "eighteen-irregular",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Unused plot IDs and unequal degrees.",
+          "dimensions": {
+            "p": 18,
+            "q": 40,
+            "edges": 28,
+            "expected": null
+          },
+          "input_bytes": 123,
+          "input_sha256": "6aa7df9b60c2c9767c52811b14e83cc869f2105c2e21e6b3a5b30aa21ab370d7",
+          "output_sha256": "4593c89b4d60161d78fef3f48312d7833649b876a0c1d762cb5b9d73acaa0a20",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.016322200011927634,
+            0.016123300010804087,
+            0.017781800008378923,
+            0.01687120000133291,
+            0.017454399960115552
+          ],
+          "median_seconds": 0.01687120000133291
+        },
+        {
+          "id": "maximum-dense",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Frequent loss and restoration of required-plot coverage.",
+          "dimensions": {
+            "p": 24,
+            "q": 12,
+            "edges": 96,
+            "expected": null
+          },
+          "input_bytes": 270,
+          "input_sha256": "4cf79e1513730ad66b23a5b04fc9dad093344bca93a05838be7d67315854f86f",
+          "output_sha256": "4593c89b4d60161d78fef3f48312d7833649b876a0c1d762cb5b9d73acaa0a20",
+          "peak_working_set_bytes": 5005312,
+          "times_seconds": [
+            0.3572446000180207,
+            0.3523826000164263,
+            0.36198679998051375,
+            0.3634528999682516,
+            0.3911422000383027
+          ],
+          "median_seconds": 0.36198679998051375
+        },
+        {
+          "id": "maximum-balanced",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Alternating paths across a general connection graph.",
+          "dimensions": {
+            "p": 24,
+            "q": 24,
+            "edges": 96,
+            "expected": null
+          },
+          "input_bytes": 305,
+          "input_sha256": "dada481f778ea7a5e0fd486dcbff9266f371d3c52b37e3bcf92ffaf4c94e4af0",
+          "output_sha256": "e2bb232cac786f7284bb237d193407e94f32ee0fbf64d27d0ae8b1642de44923",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.4620238000061363,
+            0.4560586999868974,
+            0.47223870002198964,
+            0.45747070002835244,
+            0.4535825999919325
+          ],
+          "median_seconds": 0.45747070002835244
+        },
+        {
+          "id": "maximum-sparse",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Many plots, some with a single possible vine.",
+          "dimensions": {
+            "p": 24,
+            "q": 48,
+            "edges": 96,
+            "expected": null
+          },
+          "input_bytes": 326,
+          "input_sha256": "83e806f0ad570c58f9bd1c8fe669f5fa420f914e5efa70c4682822aa80c5f149",
+          "output_sha256": "5a7caad39badd4848563fe7402f185c7e1ff0a8416b2dbce8fef86137b2d79c3",
+          "peak_working_set_bytes": 5009408,
+          "times_seconds": [
+            0.467794900003355,
+            0.4849845999851823,
+            0.46595199999865144,
+            0.4815130000351928,
+            0.46474720002152026
+          ],
+          "median_seconds": 0.467794900003355
+        },
+        {
+          "id": "maximum-private",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Every vine must grow; stresses full subset enumeration.",
+          "dimensions": {
+            "p": 24,
+            "q": 96,
+            "edges": 96,
+            "expected": 24
+          },
+          "input_bytes": 333,
+          "input_sha256": "63840f40d6c74618ef14c74dedfd9114362677b19eaf560ad9f0024f4e8aa324",
+          "output_sha256": "f6bca0e7f46a94bd3349fdb86511cbec4a9091e409b62dd2d6b8c1fdb9a3ce00",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.366868200013414,
+            0.3611071999766864,
+            0.3243337000021711,
+            0.31200360000366345,
+            0.3255969000165351
+          ],
+          "median_seconds": 0.3255969000165351
+        },
+        {
+          "id": "maximum-cycle",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Connected degree-two graph with a known optimum.",
+          "dimensions": {
+            "p": 24,
+            "q": 24,
+            "edges": 48,
+            "expected": 16
+          },
+          "input_bytes": 180,
+          "input_sha256": "0ffae28665e813831fd9fa255a96052e33c48ccdaccc7233a965b00bf5d7cdbc",
+          "output_sha256": "b7a33ec2d3fa6748259d5a72ed976b7308fa7355fd99818bc0dc12fece595277",
+          "peak_working_set_bytes": 5013504,
+          "times_seconds": [
+            0.22148940002080053,
+            0.21882139996159822,
+            0.21675060002598912,
+            0.2288082999875769,
+            0.22469870001077652
+          ],
+          "median_seconds": 0.22148940002080053
+        }
+      ]
+    },
+    "melon-planting-3": {
+      "sample_count": 4,
+      "std_sha256": "9682d98fe4be56a35ebeafcb0dd54c898b84786d157e413f66a085a2a384728d",
+      "cpp_sources_sha256": {
+        "std.cpp": "9682d98fe4be56a35ebeafcb0dd54c898b84786d157e413f66a085a2a384728d"
+      },
+      "generator_sha256": "db9b0d298cd4bf74c18144754816055cd2efc09b6abc01087e0d547edb7bb3a1",
+      "plan_sha256": "09d011af18396601e26fc8e393f839a94ea312cf66cc28d6915bc20ac06be44b",
+      "program_sha256": "c1881bee9e3c1847d9467bd9da3c7ac1dd14f56b667713cbfec94c00daac696e",
+      "standard_time_seconds": 0.0839955999981612,
+      "peak_working_set_bytes": 5189632,
+      "indicative_limit_seconds": 0.5,
+      "cases": [
+        {
+          "id": "long-row",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "Transpose the longest allowed row; path optimum.",
+          "dimensions": {
+            "n": 1,
+            "m": 5000,
+            "p": 2500,
+            "expected": 1667
+          },
+          "input_bytes": 5008,
+          "input_sha256": "d77502ce409239677a4945200285bd96dc65362c29eb80202a5db2c0a44a4f49",
+          "output_sha256": "f5f8c0db3f082ad4b8513165f8907b884b2eb9e02e41bd768ef17a78bc0e250d",
+          "peak_working_set_bytes": 5189632,
+          "times_seconds": [
+            0.016286700032651424,
+            0.013749499979894608,
+            0.014510499953757972,
+            0.015186099975835532,
+            0.01535830000648275
+          ],
+          "median_seconds": 0.015186099975835532
+        },
+        {
+          "id": "long-column-pairs",
+          "group": 1,
+          "score_percent": 10,
+          "purpose": "Independent forced edges separated by obstacles.",
+          "dimensions": {
+            "n": 5000,
+            "m": 1,
+            "p": 1250,
+            "expected": 1250
+          },
+          "input_bytes": 10007,
+          "input_sha256": "249d18215f20231da899674eb83e3c00170d3d2c0f3ad2fd730b8805c9c3c1de",
+          "output_sha256": "e8ad0b8059800cf3bf50d1e8af8f59c3ac6ff001df91be5e732f6cc22cffa141",
+          "peak_working_set_bytes": 5185536,
+          "times_seconds": [
+            0.016477500030305237,
+            0.014860700001008809,
+            0.01725769997574389,
+            0.014767799992114305,
+            0.01497159997234121
+          ],
+          "median_seconds": 0.01497159997234121
+        },
+        {
+          "id": "four-columns",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Long narrow board with many vines.",
+          "dimensions": {
+            "n": 1250,
+            "m": 4,
+            "p": 2500,
+            "expected": null
+          },
+          "input_bytes": 6257,
+          "input_sha256": "504aa1078983d22dff72c43ff70dc43ea0571841fffbd73e52c86577fb734258",
+          "output_sha256": "f5f8c0db3f082ad4b8513165f8907b884b2eb9e02e41bd768ef17a78bc0e250d",
+          "peak_working_set_bytes": 5062656,
+          "times_seconds": [
+            0.015444700024090707,
+            0.016164599976036698,
+            0.015686099999584258,
+            0.01899710000725463,
+            0.015302999992854893
+          ],
+          "median_seconds": 0.015686099999584258
+        },
+        {
+          "id": "four-rows",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Transpose a random narrow board.",
+          "dimensions": {
+            "n": 4,
+            "m": 1250,
+            "p": 2015,
+            "expected": null
+          },
+          "input_bytes": 5011,
+          "input_sha256": "5ecf3505b273ae035fcb6a55114e869382e6da2a79aafd1b5d9e5ba310b641fb",
+          "output_sha256": "5aa07638ca8dd6ee97eafa994cb6277d373070be96a0260018d53fd91622302c",
+          "peak_working_set_bytes": 5066752,
+          "times_seconds": [
+            0.016493899980559945,
+            0.014731100003700703,
+            0.016480599995702505,
+            0.015701099997386336,
+            0.015310499991755933
+          ],
+          "median_seconds": 0.015701099997386336
+        },
+        {
+          "id": "striped-board",
+          "group": 2,
+          "score_percent": 10,
+          "purpose": "Only vertical vine-to-empty edges.",
+          "dimensions": {
+            "n": 1250,
+            "m": 4,
+            "p": 2500,
+            "expected": 1668
+          },
+          "input_bytes": 6257,
+          "input_sha256": "d848a673e18e5b0232d88700dceca71a321eca095a1e9c3277022e9f3727769b",
+          "output_sha256": "4dc911399b3c9baac86a57c369ef5649e8ba642f4c304de5ec5cd26fa5899441",
+          "peak_working_set_bytes": 5062656,
+          "times_seconds": [
+            0.016449700051452965,
+            0.017179700022097677,
+            0.016640499990899116,
+            0.01588119997177273,
+            0.016459700011182576
+          ],
+          "median_seconds": 0.016459700011182576
+        },
+        {
+          "id": "maximum-checker",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Full area and width; many alternating matching choices.",
+          "dimensions": {
+            "n": 625,
+            "m": 8,
+            "p": 2500,
+            "expected": null
+          },
+          "input_bytes": 5631,
+          "input_sha256": "e4b1c3689390198f5b9c7785d51c075dd519e5bc3fd89fccae8b838395eda3ec",
+          "output_sha256": "f5f8c0db3f082ad4b8513165f8907b884b2eb9e02e41bd768ef17a78bc0e250d",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.08525450003799051,
+            0.08502830000361428,
+            0.08375679998425767,
+            0.0839955999981612,
+            0.08389250002801418
+          ],
+          "median_seconds": 0.0839955999981612
+        },
+        {
+          "id": "maximum-transposed",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Transpose at the maximum area and width.",
+          "dimensions": {
+            "n": 8,
+            "m": 625,
+            "p": 2500,
+            "expected": null
+          },
+          "input_bytes": 5014,
+          "input_sha256": "cfebd7a7eda3cfdf30c05074d96fdfe15a86a892d06424b45c9e9fea610d2743",
+          "output_sha256": "f5f8c0db3f082ad4b8513165f8907b884b2eb9e02e41bd768ef17a78bc0e250d",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.1401985000120476,
+            0.08055110002169386,
+            0.07986639998853207,
+            0.08504600002197549,
+            0.07964350003749132
+          ],
+          "median_seconds": 0.08055110002169386
+        },
+        {
+          "id": "maximum-random",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Obstacles, same-type neighbors and disconnected components.",
+          "dimensions": {
+            "n": 625,
+            "m": 8,
+            "p": 2058,
+            "expected": null
+          },
+          "input_bytes": 5631,
+          "input_sha256": "27f2a727952d1ebcfb7bca63290e8616cd5e6552fe83a14c6cd4dbee5742ed04",
+          "output_sha256": "b4a292e1a42fa44653ca74fbfb3824a125a8d24795ff451c721fbf36c1da1be8",
+          "peak_working_set_bytes": 5021696,
+          "times_seconds": [
+            0.02643780002836138,
+            0.028262200008612126,
+            0.027604400005657226,
+            0.026717300002928823,
+            0.025616099999751896
+          ],
+          "median_seconds": 0.026717300002928823
+        },
+        {
+          "id": "no-empty-cells",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "No legal growth despite many vines.",
+          "dimensions": {
+            "n": 625,
+            "m": 8,
+            "p": 5000,
+            "expected": 0
+          },
+          "input_bytes": 5631,
+          "input_sha256": "e68473f4fb1d6c48a0175bb1a8a953729068773aa05bac8d38e0f80abd3fa24c",
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.026081599993631244,
+            0.024757300037890673,
+            0.028395799978170544,
+            0.025295800005551428,
+            0.024712100042961538
+          ],
+          "median_seconds": 0.025295800005551428
+        },
+        {
+          "id": "maximum-pairs",
+          "group": 3,
+          "score_percent": 10,
+          "purpose": "Many independent components with an exact answer.",
+          "dimensions": {
+            "n": 625,
+            "m": 8,
+            "p": 1250,
+            "expected": 1250
+          },
+          "input_bytes": 5631,
+          "input_sha256": "351091eac4704553c792e87c7000bb1b437e6c90fcc7ac382a806ecd794e8b7c",
+          "output_sha256": "e8ad0b8059800cf3bf50d1e8af8f59c3ac6ff001df91be5e732f6cc22cffa141",
+          "peak_working_set_bytes": 5025792,
+          "times_seconds": [
+            0.02558449999196455,
+            0.02527640003245324,
+            0.02515599998878315,
+            0.024913500004913658,
+            0.025905299989972264
+          ],
+          "median_seconds": 0.02527640003245324
+        }
+      ]
+    }
+  },
+  "matching_rebuild_baseline": {
+    "repeats": 3,
+    "cases": [
+      {
+        "id": "maximum-balanced",
+        "times_seconds": [
+          2.190858499961905,
+          2.1628888999694027,
+          2.1622235999675468
+        ],
+        "median_seconds": 2.1628888999694027
+      },
+      {
+        "id": "maximum-cycle",
+        "times_seconds": [
+          1.7966934999567457,
+          1.843829600024037,
+          1.829737499996554
+        ],
+        "median_seconds": 1.829737499996554
+      },
+      {
+        "id": "maximum-dense",
+        "times_seconds": [
+          1.9221464000293054,
+          1.9656094000092708,
+          1.9262890000245534
+        ],
+        "median_seconds": 1.9262890000245534
+      },
+      {
+        "id": "maximum-private",
+        "times_seconds": [
+          2.7811003000242636,
+          2.7245584000484087,
+          2.7905328000197187
+        ],
+        "median_seconds": 2.7811003000242636
+      },
+      {
+        "id": "maximum-sparse",
+        "times_seconds": [
+          2.3078884999849834,
+          2.2736274000490084,
+          2.1553191000130028
+        ],
+        "median_seconds": 2.2736274000490084
+      }
+    ],
+    "source_sha256": "1d1bdaf5cd67e5333079b1271cd70c69a75b9ccb284348771e7a38b20f243112",
+    "slowest_median_seconds": 2.7811003000242636
+  },
+  "correctness_checks": {
+    "graph_brute": 912,
+    "grid_brute": 929,
+    "cross_algorithm": 30,
+    "grid_symmetry": 90,
+    "grid_components": 30,
+    "total": 1991,
+    "seed": 2026092910,
+    "incremental_vertex_updates": 50000
+  },
+  "original_problem": "All original melon-planting files match the pre-task SHA-256 snapshot.",
+  "input_regeneration": "All 20 inputs regenerated byte-for-byte.",
+  "attribution_update": "Added bilingual constraint/solution credits and source comments; recompiled binaries have unchanged SHA-256."
+}

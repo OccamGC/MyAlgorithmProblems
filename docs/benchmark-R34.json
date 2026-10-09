@@ -1,0 +1,2288 @@
+{
+  "repeat": 5,
+  "multiplier": 2,
+  "resolution_seconds": 0.5,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "GCC 16.2.0",
+  "flags": "-std=c++17 -O2 -Wall -Wextra",
+  "problems": {
+    "dynamic-decreasing-stack": {
+      "sources": {
+        "alternative.cpp": "8ee0de0243ba07e1ec389b51022be6b9faa27e7c42515508b0b09e737ac140f1",
+        "std.cpp": "87951c5cbf32a4630aa24425416a446c66b2f8721800139192c7ebdb4ed5a71a"
+      },
+      "binaries": {
+        "alternative": "7b1c4616fbf7ee4363bf7b77cba1fca184600f108e850df9bbfbf5ecd5de2bb2",
+        "std": "861096f9c8e981be1bac3c4a02ff73ae37906c126fad6a49ad7ab0426eb89488"
+      },
+      "generator_sha256": "3d51995e1f8333a7c1294e193af4bad7e981c4958599190b8282b23a3aa76b7e",
+      "plan_sha256": "79ffa687c64fbaed1a7347f61dcc0b0210a843455fa67f286afaf37f3653d598",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "23df1137861b8480093f5dae2f1fa523211847b7b2a06555f688731daceb669c",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02292149991262704,
+                0.023238400113768876,
+                0.02213079994544387,
+                0.022231100010685623,
+                0.021975899930112064
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.022231100010685623
+            },
+            "std": {
+              "seconds": [
+                0.02207030006684363,
+                0.021857599960640073,
+                0.022429400007240474,
+                0.02170969999860972,
+                0.021988000022247434
+              ],
+              "peak_working_set_bytes": 5566464,
+              "median_seconds": 0.021988000022247434
+            }
+          },
+          "verification_method": "literal stack simulation",
+          "expected_output_available": true,
+          "output_sha256": "13f1c417e959e80301ad13db56baa8881e5a175909fe941e67aed917b9485d59"
+        },
+        {
+          "id": "02",
+          "input_sha256": "de5c8701cb1100f535e4243383662245a9a941b9dd1cd97afa48b9ce93bd66af",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.023563899914734066,
+                0.021643999963998795,
+                0.021461599972099066,
+                0.020819100085645914,
+                0.022929999977350235
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.021643999963998795
+            },
+            "std": {
+              "seconds": [
+                0.02153060003183782,
+                0.022229599999263883,
+                0.02269520005211234,
+                0.020612500025890768,
+                0.022393699968233705
+              ],
+              "peak_working_set_bytes": 5566464,
+              "median_seconds": 0.022229599999263883
+            }
+          },
+          "verification_method": "literal stack simulation",
+          "expected_output_available": true,
+          "output_sha256": "12ea5d1132b68f3804551061bf8730e255dd01344f281e3f9225acea41898032"
+        },
+        {
+          "id": "03",
+          "input_sha256": "9d8e755b127e7a8e9a6dbe6ff35163f6c1e8d356f34eb400aff9099d93665c35",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.027239499962888658,
+                0.023248799960128963,
+                0.023836800013668835,
+                0.021703800070099533,
+                0.023585099959746003
+              ],
+              "peak_working_set_bytes": 5586944,
+              "median_seconds": 0.023585099959746003
+            },
+            "std": {
+              "seconds": [
+                0.022155400016345084,
+                0.022089999984018505,
+                0.02172770001925528,
+                0.023260499932803214,
+                0.02237250003963709
+              ],
+              "peak_working_set_bytes": 5648384,
+              "median_seconds": 0.022155400016345084
+            }
+          },
+          "verification_method": "literal stack simulation",
+          "expected_output_available": true,
+          "output_sha256": "39abd3e8ac1aa2427954c728686c11894668534ae7021a341a184db3332b927e"
+        },
+        {
+          "id": "04",
+          "input_sha256": "09a4698527ea374013be537c7f86ef55a21255bdb48295bbe1f4c018fa580ab0",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02294260007329285,
+                0.022998400032520294,
+                0.021891499985940754,
+                0.022964400006458163,
+                0.023348799906671047
+              ],
+              "peak_working_set_bytes": 5586944,
+              "median_seconds": 0.022964400006458163
+            },
+            "std": {
+              "seconds": [
+                0.022372899926267564,
+                0.022240599966607988,
+                0.022840000106953084,
+                0.02233519998844713,
+                0.022725199931301177
+              ],
+              "peak_working_set_bytes": 5644288,
+              "median_seconds": 0.022372899926267564
+            }
+          },
+          "verification_method": "literal stack simulation",
+          "expected_output_available": true,
+          "output_sha256": "5dbbfe5a5caa275ef2085cf1bb25114b8c7749026109b05d1da04ad756946ab1"
+        },
+        {
+          "id": "05",
+          "input_sha256": "e41120361edfea1508bea8f5c8d1e04c4f8e1f450c5e640f32b4e09c74b8c9b8",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.022643700009211898,
+                0.022008499945513904,
+                0.02267169998958707,
+                0.021564500057138503,
+                0.09226110007148236
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.022643700009211898
+            },
+            "std": {
+              "seconds": [
+                0.02309209993109107,
+                0.023872100049629807,
+                0.022449999931268394,
+                0.02159289992414415,
+                0.02265089994762093
+              ],
+              "peak_working_set_bytes": 5644288,
+              "median_seconds": 0.02265089994762093
+            }
+          },
+          "verification_method": "literal stack simulation",
+          "expected_output_available": true,
+          "output_sha256": "a08da4d98f13abb962034fd10b421671fd78ded6cd065c2c48f28e6a3e6ae9ff"
+        },
+        {
+          "id": "06",
+          "input_sha256": "466c0766ab3fa226faab70e1e838e04516ac9bb206ca694879e2410de8f6c3e1",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.06141279998701066,
+                0.06137939996551722,
+                0.06075790000613779,
+                0.06104659999255091,
+                0.06151329993735999
+              ],
+              "peak_working_set_bytes": 5894144,
+              "median_seconds": 0.06137939996551722
+            },
+            "std": {
+              "seconds": [
+                0.04852880001999438,
+                0.04785040009301156,
+                0.04774720000568777,
+                0.04736279998905957,
+                0.04989060002844781
+              ],
+              "peak_working_set_bytes": 7229440,
+              "median_seconds": 0.04785040009301156
+            }
+          },
+          "verification_method": "constant or strictly decreasing invariant",
+          "expected_output_available": true,
+          "output_sha256": "ffcb60971b49fa56183f96da83b73da121930ce2cab39ea500291c3f08be78ec"
+        },
+        {
+          "id": "07",
+          "input_sha256": "c77eab56577df30e29de17f7bd579e404034a42a5a4523edee99876f1b355618",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.05990320001728833,
+                0.11859109997749329,
+                0.06017559999600053,
+                0.05969829997047782,
+                0.05866380000952631
+              ],
+              "peak_working_set_bytes": 5779456,
+              "median_seconds": 0.05990320001728833
+            },
+            "std": {
+              "seconds": [
+                0.046440099948085845,
+                0.04567759996280074,
+                0.04527040000539273,
+                0.04537690000142902,
+                0.045815300079993904
+              ],
+              "peak_working_set_bytes": 7229440,
+              "median_seconds": 0.04567759996280074
+            }
+          },
+          "verification_method": "constant or strictly decreasing invariant",
+          "expected_output_available": true,
+          "output_sha256": "15f01beecf19e97c1b9b9dfe18418c14323e8c34f1487e80a8ca2dd5828bce93"
+        },
+        {
+          "id": "08",
+          "input_sha256": "22060ac90d977c246909ac2dd8c3ed2973ec8f4d0a0fbf6c2357ada66afaf008",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.06331889994908124,
+                0.06188270007260144,
+                0.06459429999813437,
+                0.06654759997036308,
+                0.06322050001472235
+              ],
+              "peak_working_set_bytes": 5787648,
+              "median_seconds": 0.06331889994908124
+            },
+            "std": {
+              "seconds": [
+                0.05453660001512617,
+                0.05557649990078062,
+                0.054630399914458394,
+                0.058625200064852834,
+                0.05556610005442053
+              ],
+              "peak_working_set_bytes": 7233536,
+              "median_seconds": 0.05556610005442053
+            }
+          },
+          "verification_method": "two complete algorithms and independent small models",
+          "expected_output_available": false,
+          "output_sha256": "813f3a9bbbcb5beed8050a4f8db443601ba8b6206c27a1dfbb9139c3e2b54d31"
+        },
+        {
+          "id": "09",
+          "input_sha256": "5ea78decb3b761759111dc14b8f09f97c4c08563261a226390ffec6c70a273a5",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.04099909996148199,
+                0.04171419993508607,
+                0.03970229998230934,
+                0.04855780000798404,
+                0.04384689999278635
+              ],
+              "peak_working_set_bytes": 5767168,
+              "median_seconds": 0.04171419993508607
+            },
+            "std": {
+              "seconds": [
+                0.052180099999532104,
+                0.05192240001633763,
+                0.05137290002312511,
+                0.05401319998782128,
+                0.05090749997179955
+              ],
+              "peak_working_set_bytes": 7188480,
+              "median_seconds": 0.05192240001633763
+            }
+          },
+          "verification_method": "no queries",
+          "expected_output_available": true,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "10",
+          "input_sha256": "c47b630699870b42c3c38d279a6be1af4b64803a36fabe7ae416c4759e35f1fc",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.06269890000112355,
+                0.06114490004256368,
+                0.061395399970933795,
+                0.06296790007036179,
+                0.06029069994110614
+              ],
+              "peak_working_set_bytes": 5787648,
+              "median_seconds": 0.061395399970933795
+            },
+            "std": {
+              "seconds": [
+                0.05363680003210902,
+                0.05409620003774762,
+                0.14349599997512996,
+                0.05562050000298768,
+                0.053110199980437756
+              ],
+              "peak_working_set_bytes": 7237632,
+              "median_seconds": 0.05409620003774762
+            }
+          },
+          "verification_method": "two complete algorithms and independent small models",
+          "expected_output_available": false,
+          "output_sha256": "90833990dadae83d4e2bf16115470d429e14410602e9adcb7afa5864a006fc1a"
+        }
+      ],
+      "summary": {
+        "alternative": {
+          "slowest_median_seconds": 0.06331889994908124,
+          "peak_working_set_bytes": 5894144,
+          "passes_estimated_limit": true
+        },
+        "std": {
+          "slowest_median_seconds": 0.05556610005442053,
+          "peak_working_set_bytes": 7237632,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 0.5
+    },
+    "shared-charger": {
+      "sources": {
+        "alternative.cpp": "7f9633709a6da420335bbbab26a52db050dc22e133b2fe747126fe44de122319",
+        "std.cpp": "2577e443c5bca4cac81a65133da09e17f43f62e44b60f1cd7a4d70948c4ede90"
+      },
+      "binaries": {
+        "alternative": "315ff6cdc18d023c1b93c09612bc0c066719c79055aa20f20292358abd2e7d16",
+        "std": "9af4021184051cd64a0535291ffa1367fa8d51dd3bc205f3f7d59f0b6cf2f316"
+      },
+      "generator_sha256": "bad651de713f7db4edd4c776704938e6ce865ed2631f19771acd6ca5dc6c5d39",
+      "plan_sha256": "2611261cbb9c66b881aa60ce7bb65a5a841227cd1db4027617f06c6a714fb0f0",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "ef7680147351ceac9600a0f5bb214d9850d84bdf8403ba8178843a558a3bc08b",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02261099999304861,
+                0.02153969998471439,
+                0.021496300003491342,
+                0.020959300105459988,
+                0.021241299924440682
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.021496300003491342
+            },
+            "std": {
+              "seconds": [
+                0.02129339997190982,
+                0.02234250004403293,
+                0.020843900041654706,
+                0.021144600003026426,
+                0.020329700084403157
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.021144600003026426
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "2f335c71db230a27daf69d6fe2b8d9a19cdc04a4168d86a6b23e173e89fc07c4"
+        },
+        {
+          "id": "02",
+          "input_sha256": "09410c68c8e5d2db5ebbd61888b128666ec349b8afce417db25fd3b2587f1581",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.021484400029294193,
+                0.024965899996459484,
+                0.02133350004442036,
+                0.022245200001634657,
+                0.020688800024800003
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.021484400029294193
+            },
+            "std": {
+              "seconds": [
+                0.10815300000831485,
+                0.0231529000448063,
+                0.021595700061880052,
+                0.02101349993608892,
+                0.020864899968728423
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.021595700061880052
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "03",
+          "input_sha256": "9a1fdaceebf2f5e0e7570bfe36fe74a4be0d3ca74a41a78f61f405ae719b1c4c",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.021922699990682304,
+                0.02074259996879846,
+                0.02156589995138347,
+                0.021030299947597086,
+                0.02179750008508563
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02156589995138347
+            },
+            "std": {
+              "seconds": [
+                0.02106229995843023,
+                0.02199150004889816,
+                0.021140199969522655,
+                0.020954499952495098,
+                0.019723900011740625
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.02106229995843023
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "04",
+          "input_sha256": "5650bc1263bf1f583a96181b4b01838784df6661870be30e72ec5474c26b83f6",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.021648299996741116,
+                0.022406900068745017,
+                0.022983299917541444,
+                0.025756999966688454,
+                0.021775599918328226
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.022406900068745017
+            },
+            "std": {
+              "seconds": [
+                0.022873300011269748,
+                0.022206900059245527,
+                0.020579800009727478,
+                0.021703099948354065,
+                0.021073500043712556
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.021703099948354065
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "05",
+          "input_sha256": "8df6dcf8493f3d8acfd7ac472f59f88b4a296a387639a518f49f02a17b398e60",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02341519994661212,
+                0.020128000061959028,
+                0.022808499983511865,
+                0.020929399994201958,
+                0.020669399993494153
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.020929399994201958
+            },
+            "std": {
+              "seconds": [
+                0.0213203999446705,
+                0.020808500004932284,
+                0.02198840002529323,
+                0.02107399993110448,
+                0.021575500024482608
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.0213203999446705
+            }
+          },
+          "verification_method": "Python priority-queue earliest-deadline scheduling",
+          "expected_output_available": true,
+          "output_sha256": "136624fe4d48761f34f7a2cfcab268d7c0b4d551efbb2e8029d0c98dc537b867"
+        },
+        {
+          "id": "06",
+          "input_sha256": "40cd9802375a2921b24edbbaca8c37c675113534c1e57e94a4cc991afc10ea43",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.023396399919874966,
+                0.022284500068053603,
+                0.020390799967572093,
+                0.021153799956664443,
+                0.021109800087288022
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.021153799956664443
+            },
+            "std": {
+              "seconds": [
+                0.02118430007249117,
+                0.021092600072734058,
+                0.021610199939459562,
+                0.022460000007413328,
+                0.021608000039123
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.021608000039123
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "7fb2aaeaf3eef66b52db104118c30f62899f5f0df520350a94a8fcb843c0dfdf"
+        },
+        {
+          "id": "07",
+          "input_sha256": "131f7063801bf130f03a8e0529f018cd282ae09b77a39a038ae72fae95aa49a9",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.021360899903811514,
+                0.021268599899485707,
+                0.022568500018678606,
+                0.02234999998472631,
+                0.020325300050899386
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.021360899903811514
+            },
+            "std": {
+              "seconds": [
+                0.021488300058990717,
+                0.020242700004018843,
+                0.02060910000000149,
+                0.020523900049738586,
+                0.020659000030718744
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.02060910000000149
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "08",
+          "input_sha256": "24fc1edaed997d3ecb019c95f032572e49e64ffd5191d714f1fd4380e9611b16",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02111740002874285,
+                0.022751000011339784,
+                0.021677599987015128,
+                0.02395340008661151,
+                0.022996500018052757
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.022751000011339784
+            },
+            "std": {
+              "seconds": [
+                0.020508800051175058,
+                0.021835999912582338,
+                0.020330999977886677,
+                0.020596900023519993,
+                0.023047300055623055
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.020596900023519993
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "09",
+          "input_sha256": "ef7680147351ceac9600a0f5bb214d9850d84bdf8403ba8178843a558a3bc08b",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.021605700021609664,
+                0.022057699970901012,
+                0.0215069999685511,
+                0.021120599936693907,
+                0.020872200024314225
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.0215069999685511
+            },
+            "std": {
+              "seconds": [
+                0.021110599976964295,
+                0.021449799998663366,
+                0.02066570008173585,
+                0.022891500033438206,
+                0.022690400015562773
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.021449799998663366
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "2f335c71db230a27daf69d6fe2b8d9a19cdc04a4168d86a6b23e173e89fc07c4"
+        },
+        {
+          "id": "10",
+          "input_sha256": "607f142fdb20784bb57a82b200ee156dd248fd43ed4638d2a5f4795695b07be1",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.022368400008417666,
+                0.02350590005517006,
+                0.025409900001250207,
+                0.024904899997636676,
+                0.024832500028423965
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.024832500028423965
+            },
+            "std": {
+              "seconds": [
+                0.023264699964784086,
+                0.024985299911350012,
+                0.023937500081956387,
+                0.02576390001922846,
+                0.024709500023163855
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.024709500023163855
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "11",
+          "input_sha256": "f2ef27bfa3bd15f2850a7388723f4d49933ba85cf9e8801e34dd828262faa7b1",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024415799998678267,
+                0.02636390004772693,
+                0.024965799995698035,
+                0.038058800040744245,
+                0.024354299996048212
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.024965799995698035
+            },
+            "std": {
+              "seconds": [
+                0.0254926000488922,
+                0.02384949999395758,
+                0.1033129000570625,
+                0.028229699935764074,
+                0.024483200046233833
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.0254926000488922
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "12",
+          "input_sha256": "84992ce0da47fd7f046de8c59530faec713ed3d04d7f929100dab594b0fa2a2a",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024296199902892113,
+                0.03170359996147454,
+                0.02602739993017167,
+                0.02862029999960214,
+                0.026708399993367493
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.026708399993367493
+            },
+            "std": {
+              "seconds": [
+                0.023872099933214486,
+                0.02340800000820309,
+                0.025566000025719404,
+                0.025057299993932247,
+                0.02467479999177158
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02467479999177158
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "13",
+          "input_sha256": "c0421d7cf337d3f5d36e9eb07fe1432796d296deb9b7d8922584aedfc9051c27",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02576039999257773,
+                0.02474839997012168,
+                0.024234100012108684,
+                0.026853600051254034,
+                0.02478719991631806
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.02478719991631806
+            },
+            "std": {
+              "seconds": [
+                0.02531319996342063,
+                0.024795799981802702,
+                0.026168399956077337,
+                0.02573669992852956,
+                0.02541410003323108
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02541410003323108
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "da32ce51e54ee0b13b58335bea253a5ef32aa45865fde2f3658366c1b89e7e6e"
+        },
+        {
+          "id": "14",
+          "input_sha256": "1d16bbc5b42c6c10ebf86145488f1cee36d0cf98d76b1579bd7f5b467c256e40",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.027399800019338727,
+                0.02513520000502467,
+                0.02761290001217276,
+                0.023720200057141483,
+                0.027035500039346516
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.027035500039346516
+            },
+            "std": {
+              "seconds": [
+                0.0257072999374941,
+                0.02550760004669428,
+                0.02395920001436025,
+                0.026608700049109757,
+                0.0250258999876678
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02550760004669428
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "15",
+          "input_sha256": "77468e557b3b53e9d98eab1e71526d52dcf6e6e2098350ef3240dcde116edc3e",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024474899983033538,
+                0.02461550000589341,
+                0.024509599898010492,
+                0.026094899978488684,
+                0.025034500053152442
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.02461550000589341
+            },
+            "std": {
+              "seconds": [
+                0.02534000005107373,
+                0.03208150004502386,
+                0.10513170005287975,
+                0.02905310003552586,
+                0.024531500064767897
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02905310003552586
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "16",
+          "input_sha256": "c7e14cb3597c1d85914e7f4d7eda57a342973a42c8ac5cddb2969bc6071ebf10",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02471010002773255,
+                0.023890499956905842,
+                0.024073799955658615,
+                0.023925800109282136,
+                0.025507799931801856
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.024073799955658615
+            },
+            "std": {
+              "seconds": [
+                0.024045699974521995,
+                0.025168800028041005,
+                0.024923100019805133,
+                0.025004099938087165,
+                0.025030600023455918
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.025004099938087165
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "17",
+          "input_sha256": "83e9047da6fadac9c009ac6fc6d4b0d23143c74aee0488b2ab19b492f18a08f8",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024708200013265014,
+                0.025390699971467257,
+                0.02498450002167374,
+                0.024435099912807345,
+                0.02542709989938885
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.02498450002167374
+            },
+            "std": {
+              "seconds": [
+                0.0262675000121817,
+                0.023924199980683625,
+                0.025002500042319298,
+                0.024857199983671308,
+                0.024680999922566116
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.024857199983671308
+            }
+          },
+          "verification_method": "Python priority-queue earliest-deadline scheduling",
+          "expected_output_available": true,
+          "output_sha256": "fe28c0e1864bb3b6586a00612c2eb42d240a97af6c591a7eddf88ade50faa3d1"
+        },
+        {
+          "id": "18",
+          "input_sha256": "d9c0badf72a13adf29dccb55549eeca17e177433c5b839d5904c90ea3dd91ee3",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.027617799933068454,
+                0.025167400017380714,
+                0.025019200053066015,
+                0.024187500006519258,
+                0.02455460000783205
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.025019200053066015
+            },
+            "std": {
+              "seconds": [
+                0.02504340000450611,
+                0.023759899893775582,
+                0.02531589998397976,
+                0.030528099974617362,
+                0.023968599969521165
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02504340000450611
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "8ce88a8842c1584e3d6871e84e166e3b513c3ce2a9da6166760c7af1645dea29"
+        },
+        {
+          "id": "19",
+          "input_sha256": "2aaf56ae2d628db477920fd85d2de27e50113bcd4fed4030435c0bc23ba9ee19",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.023994100047275424,
+                0.026665100012905896,
+                0.024414999992586672,
+                0.026253500021994114,
+                0.026086000027135015
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.026086000027135015
+            },
+            "std": {
+              "seconds": [
+                0.02487439999822527,
+                0.028342299978248775,
+                0.024371800012886524,
+                0.10037829994689673,
+                0.023605199996381998
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.02487439999822527
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "20",
+          "input_sha256": "57f0efbfee3f7aca7b51d5fac559e171f626c3066e8875b9f8feabc82ec0170b",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.023692100076004863,
+                0.024724300019443035,
+                0.02470850001554936,
+                0.024884599959477782,
+                0.024711200036108494
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.024711200036108494
+            },
+            "std": {
+              "seconds": [
+                0.024512200034223497,
+                0.026088599930517375,
+                0.024486200069077313,
+                0.024967000004835427,
+                0.024435800034552813
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.024512200034223497
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "21",
+          "input_sha256": "b2e0b27755fec07faf8320e7a488973d7062b0532a7cf04922a45275d0152dde",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.028225400019437075,
+                0.025011399993672967,
+                0.025992599898017943,
+                0.02398389996960759,
+                0.025957100093364716
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.025957100093364716
+            },
+            "std": {
+              "seconds": [
+                0.024947999976575375,
+                0.02368639991618693,
+                0.025010199984535575,
+                0.024375100038014352,
+                0.024456399958580732
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.024456399958580732
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "ab031ce3fb65841f37eacdafc4ec55933a744130119dd439e9379c616aaee2bb"
+        },
+        {
+          "id": "22",
+          "input_sha256": "c40daec3ccbd9ca602808e69d81f4013a6a4b52354decb7a75d7480aa33b86f6",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02571029996033758,
+                0.024622400058433414,
+                0.02510430000256747,
+                0.023205699981190264,
+                0.029102200060151517
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02510430000256747
+            },
+            "std": {
+              "seconds": [
+                0.02396019990555942,
+                0.02472650003619492,
+                0.024232700001448393,
+                0.02424940001219511,
+                0.02568520000204444
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02424940001219511
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "23",
+          "input_sha256": "17c00393cd1b8a134a21193bc470187c902ce050911ee67e9148e9e2e0b6f4a7",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.0250569999916479,
+                0.026661799987778068,
+                0.024685800075531006,
+                0.024734899983741343,
+                0.09222630003932863
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.0250569999916479
+            },
+            "std": {
+              "seconds": [
+                0.02395619999151677,
+                0.024796899990178645,
+                0.0246715999674052,
+                0.025825400021858513,
+                0.025233899941667914
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.024796899990178645
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "24",
+          "input_sha256": "a62654eeda7c4c77262b2b6450a8ed0fc94391460c23d7443f39b158cbfed750",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.026075599947944283,
+                0.02461369999218732,
+                0.025292200036346912,
+                0.023462300072424114,
+                0.023804999887943268
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02461369999218732
+            },
+            "std": {
+              "seconds": [
+                0.023730000015348196,
+                0.024928899947553873,
+                0.025185000034980476,
+                0.0244183000177145,
+                0.023651800001971424
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.0244183000177145
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "25",
+          "input_sha256": "3d200dd27880dedc5bc829ebf368d502b9f30cfd276c741c11584fae80b1c5cb",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.025322900037281215,
+                0.025926500093191862,
+                0.024233500007539988,
+                0.024922500015236437,
+                0.02429109998047352
+              ],
+              "peak_working_set_bytes": 5586944,
+              "median_seconds": 0.024922500015236437
+            },
+            "std": {
+              "seconds": [
+                0.02521720004733652,
+                0.025436599971726537,
+                0.02413550007622689,
+                0.027284499956294894,
+                0.024941700045019388
+              ],
+              "peak_working_set_bytes": 5586944,
+              "median_seconds": 0.02521720004733652
+            }
+          },
+          "verification_method": "Python priority-queue earliest-deadline scheduling",
+          "expected_output_available": true,
+          "output_sha256": "31dba1fcb2cc4ea629b7776798645d2916fe8b58f07ef63091c1f0da4ca02899"
+        },
+        {
+          "id": "26",
+          "input_sha256": "d409569cc674a637ad921afa14d80fa7c9f8e6a09db4d907f50d3b1486e6fad0",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024494700017385185,
+                0.023845499963499606,
+                0.027278700028546154,
+                0.030799000058323145,
+                0.025458800024352968
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.025458800024352968
+            },
+            "std": {
+              "seconds": [
+                0.023645599954761565,
+                0.02416359994094819,
+                0.030548600014299154,
+                0.02340469998307526,
+                0.023467499995604157
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.023645599954761565
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "c38029691f44acacc2e533e91a213e03bcfc10d50ef256bfa7a0e962f73c8f41"
+        },
+        {
+          "id": "27",
+          "input_sha256": "19a39a17e6d2cd5249cf83594d6cd889ed8d60119a0d6cf922ef886ead58aaea",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.024482599925249815,
+                0.025299400091171265,
+                0.026976600056514144,
+                0.02443310001399368,
+                0.025497899972833693
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.025299400091171265
+            },
+            "std": {
+              "seconds": [
+                0.022375800064764917,
+                0.031263000098988414,
+                0.03376989997923374,
+                0.02546099992468953,
+                0.02467869990505278
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.02546099992468953
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "28",
+          "input_sha256": "21aa10b76cd3f01bc42ab6d796cdb2db954bdb640e26bc315e77a2d6fcc938b7",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.02523899998050183,
+                0.023497699992731214,
+                0.026689899968914688,
+                0.02375050005502999,
+                0.024105299962684512
+              ],
+              "peak_working_set_bytes": 5582848,
+              "median_seconds": 0.024105299962684512
+            },
+            "std": {
+              "seconds": [
+                0.02392530010547489,
+                0.02383630000986159,
+                0.02368480002041906,
+                0.02612199995201081,
+                0.025991799891926348
+              ],
+              "peak_working_set_bytes": 5578752,
+              "median_seconds": 0.02392530010547489
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "29",
+          "input_sha256": "fdf0523d2ca0aba62aba63df0a538579d28c46c14e5451f12d702a591a457930",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.06288129999302328,
+                0.06740260007791221,
+                0.06390130007639527,
+                0.06161079998128116,
+                0.06329199997708201
+              ],
+              "peak_working_set_bytes": 8032256,
+              "median_seconds": 0.06329199997708201
+            },
+            "std": {
+              "seconds": [
+                0.03868409991264343,
+                0.04429059999529272,
+                0.03839550004340708,
+                0.03791740001179278,
+                0.038529900019057095
+              ],
+              "peak_working_set_bytes": 7716864,
+              "median_seconds": 0.038529900019057095
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "38bcf55c4f85d1ac08310deb030e67ba22cdad059fd1ef9bf7604729d5e0a3eb"
+        },
+        {
+          "id": "30",
+          "input_sha256": "4a779511f117fd87f1773eec51af9740e0d0985b9215a335e340a2de6eb9b24e",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.03097129997331649,
+                0.030544300097972155,
+                0.1030073999427259,
+                0.031117499922402203,
+                0.029177699936553836
+              ],
+              "peak_working_set_bytes": 6176768,
+              "median_seconds": 0.03097129997331649
+            },
+            "std": {
+              "seconds": [
+                0.030591599992476404,
+                0.02882640005555004,
+                0.03170090005733073,
+                0.03153360006399453,
+                0.029962699976749718
+              ],
+              "peak_working_set_bytes": 6184960,
+              "median_seconds": 0.030591599992476404
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "31",
+          "input_sha256": "3120fc0e7c873cb3d86678d3a3a782dae0f4fde2007af1a58aaf3329863db36e",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.03364719997625798,
+                0.032076000003144145,
+                0.031966299982741475,
+                0.03195680002681911,
+                0.031357600004412234
+              ],
+              "peak_working_set_bytes": 6176768,
+              "median_seconds": 0.031966299982741475
+            },
+            "std": {
+              "seconds": [
+                0.03368899994529784,
+                0.031247800099663436,
+                0.030721399933099747,
+                0.03165630006697029,
+                0.031061400077305734
+              ],
+              "peak_working_set_bytes": 6184960,
+              "median_seconds": 0.031247800099663436
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        },
+        {
+          "id": "32",
+          "input_sha256": "c3d3c3268d2103b6bd2cc8520eee13c33c02e0ec56c267f9800089655b96a838",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.03241189999971539,
+                0.03202499996405095,
+                0.03158199996687472,
+                0.03193370008375496,
+                0.03194240003358573
+              ],
+              "peak_working_set_bytes": 6184960,
+              "median_seconds": 0.03194240003358573
+            },
+            "std": {
+              "seconds": [
+                0.03234489995520562,
+                0.03231390006840229,
+                0.03218029998242855,
+                0.03332819999195635,
+                0.032652299967594445
+              ],
+              "peak_working_set_bytes": 6189056,
+              "median_seconds": 0.03234489995520562
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "33",
+          "input_sha256": "10540bb6d7673eb53adafd305226d6a87ede85266c53f4e1fe71a0977b42db27",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.08121450000908226,
+                0.08376090007368475,
+                0.08144729991909117,
+                0.08216259989421815,
+                0.0829900000244379
+              ],
+              "peak_working_set_bytes": 7991296,
+              "median_seconds": 0.08216259989421815
+            },
+            "std": {
+              "seconds": [
+                0.039704599999822676,
+                0.03976879990659654,
+                0.04418319999240339,
+                0.040731800021603703,
+                0.040116799995303154
+              ],
+              "peak_working_set_bytes": 7680000,
+              "median_seconds": 0.040116799995303154
+            }
+          },
+          "verification_method": "Python priority-queue earliest-deadline scheduling",
+          "expected_output_available": true,
+          "output_sha256": "b0e91bd541f3cb1f14db9dd1b8fb3a11282295061b37e8357da3b330debe5c3f"
+        },
+        {
+          "id": "34",
+          "input_sha256": "038b2e7c9ba27bb95816618d7e8f10ab9316845c94d8f01c4c1303d08dada7d8",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.03846199996769428,
+                0.03655729989986867,
+                0.038516500033438206,
+                0.037437799968756735,
+                0.03785610001068562
+              ],
+              "peak_working_set_bytes": 6180864,
+              "median_seconds": 0.03785610001068562
+            },
+            "std": {
+              "seconds": [
+                0.033132400014437735,
+                0.03381599998101592,
+                0.033856699941679835,
+                0.03345869993790984,
+                0.03275189991109073
+              ],
+              "peak_working_set_bytes": 6184960,
+              "median_seconds": 0.03345869993790984
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "c38029691f44acacc2e533e91a213e03bcfc10d50ef256bfa7a0e962f73c8f41"
+        },
+        {
+          "id": "35",
+          "input_sha256": "dd89eec7c42f3eb6375887798f6ad518d631c168dc415aaf5bc1a67fa82641b1",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.032975499983876944,
+                0.03378069994505495,
+                0.03434369992464781,
+                0.031692199991084635,
+                0.03250059997662902
+              ],
+              "peak_working_set_bytes": 7913472,
+              "median_seconds": 0.032975499983876944
+            },
+            "std": {
+              "seconds": [
+                0.03331379999872297,
+                0.03249879996292293,
+                0.03269709995947778,
+                0.03244400001130998,
+                0.03596900007687509
+              ],
+              "peak_working_set_bytes": 7733248,
+              "median_seconds": 0.03269709995947778
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "36",
+          "input_sha256": "2e6b0a102c4af3229809500e29a9b5b60da97a268383d80d7124074d076cf9ed",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.03128610004205257,
+                0.02988669998012483,
+                0.03123660001438111,
+                0.03174129989929497,
+                0.1056808999273926
+              ],
+              "peak_working_set_bytes": 7880704,
+              "median_seconds": 0.03128610004205257
+            },
+            "std": {
+              "seconds": [
+                0.03187820001039654,
+                0.03078020003158599,
+                0.030249399947933853,
+                0.029297900036908686,
+                0.03210479998961091
+              ],
+              "peak_working_set_bytes": 7712768,
+              "median_seconds": 0.03078020003158599
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "37",
+          "input_sha256": "20dc9eee24ef43535cac4678051001a75acea7384855970bb2c7f5b9dd68e9a5",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.41049040004145354,
+                0.4089153000386432,
+                0.41495050000958145,
+                0.42739570001140237,
+                0.41274270007852465
+              ],
+              "peak_working_set_bytes": 26669056,
+              "median_seconds": 0.41274270007852465
+            },
+            "std": {
+              "seconds": [
+                0.21385359996929765,
+                0.20508699992205948,
+                0.20787240006029606,
+                0.2114029999356717,
+                0.20554769993759692
+              ],
+              "peak_working_set_bytes": 20234240,
+              "median_seconds": 0.20787240006029606
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "69038af3dc89de81fa7d9f4ba731ece6fc8ccbb0b767b9e0fddbaff688f9b099"
+        },
+        {
+          "id": "38",
+          "input_sha256": "d610b28c43256c3044dc5090a6d7baea4f9a82ca3eb4067d5e33644cf27ba0ed",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.7361965000163764,
+                0.7427682999987155,
+                0.7523611999349669,
+                0.7329721000278369,
+                0.7376205999171361
+              ],
+              "peak_working_set_bytes": 26669056,
+              "median_seconds": 0.7376205999171361
+            },
+            "std": {
+              "seconds": [
+                0.23459240002557635,
+                0.22657599998638034,
+                0.22162150009535253,
+                0.22765080002136528,
+                0.2243492000270635
+              ],
+              "peak_working_set_bytes": 20271104,
+              "median_seconds": 0.22657599998638034
+            }
+          },
+          "verification_method": "Python priority-queue earliest-deadline scheduling",
+          "expected_output_available": true,
+          "output_sha256": "893a97443968650ca3d0a828e532e997b81e669708a4df17bac1612b84009231"
+        },
+        {
+          "id": "39",
+          "input_sha256": "2762d0ec29a09b126a6f0aa65f4353429b0c57d8ecfafd7b064bfd00a6952d4b",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.0973245999775827,
+                0.08467529993504286,
+                0.09908850002102554,
+                0.08392419992014766,
+                0.09316920000128448
+              ],
+              "peak_working_set_bytes": 26427392,
+              "median_seconds": 0.09316920000128448
+            },
+            "std": {
+              "seconds": [
+                0.08310649998020381,
+                0.08675510005559772,
+                0.08030690008308738,
+                0.07771849993150681,
+                0.07945860002655536
+              ],
+              "peak_working_set_bytes": 20271104,
+              "median_seconds": 0.08030690008308738
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "186a919b8c7cb84aebf4e53c70cd1cc028a93a1d183ee29dd6e10cd18a714577"
+        },
+        {
+          "id": "40",
+          "input_sha256": "98a8052cf8b84dc4e4a1cc7c2d8dc913738f98e72c43a5b7785fde0cf7ddf8c1",
+          "programs": {
+            "alternative": {
+              "seconds": [
+                0.11658169992733747,
+                0.09831800009123981,
+                0.10080920008476824,
+                0.10392310004681349,
+                0.10071410005912185
+              ],
+              "peak_working_set_bytes": 11403264,
+              "median_seconds": 0.10080920008476824
+            },
+            "std": {
+              "seconds": [
+                0.1102625000057742,
+                0.1026752000907436,
+                0.1320787000004202,
+                0.09791230002883822,
+                0.09620859997812659
+              ],
+              "peak_working_set_bytes": 11411456,
+              "median_seconds": 0.1026752000907436
+            }
+          },
+          "verification_method": "closed boundary formula",
+          "expected_output_available": true,
+          "output_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+        }
+      ],
+      "summary": {
+        "alternative": {
+          "slowest_median_seconds": 0.7376205999171361,
+          "peak_working_set_bytes": 26669056,
+          "passes_estimated_limit": false
+        },
+        "std": {
+          "slowest_median_seconds": 0.22657599998638034,
+          "peak_working_set_bytes": 20271104,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 0.5
+    },
+    "tolerance-paths": {
+      "sources": {
+        "std.cpp": "c58206672a6eb58f6221f9fc5c2ff90ac40ead3328e5dac71d8a7451043d4f8e"
+      },
+      "binaries": {
+        "std": "2cfa592b044b8e8689a2dcf9edb33dd408e8313bcd13e952555c0b40398d631a"
+      },
+      "generator_sha256": "020d8b6dfe6daa3a795ba05833936dfc07fbf026fc68f9f049f281a1998578cf",
+      "plan_sha256": "4d785c186703f607fd2a5403907ffca693beea1e6b68a2fcf78a4a2a7f40e9ad",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "fd83de958892f14b8bb97095417040e043ac80099ac032e6344f0b6e09199182",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03717240004334599,
+                0.02215600002091378,
+                0.025230900035239756,
+                0.02437359991017729,
+                0.024074099957942963
+              ],
+              "peak_working_set_bytes": 5574656,
+              "median_seconds": 0.02437359991017729
+            }
+          },
+          "verification_method": "enumeration of all path-weight assignments",
+          "expected_output_available": true,
+          "output_sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+        },
+        {
+          "id": "02",
+          "input_sha256": "3537a54944c33741e52e04104df2614997c24514c0925b99eded6f0b526403e3",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.023521800059825182,
+                0.02512060001026839,
+                0.023823100025765598,
+                0.02546999999321997,
+                0.028369600069709122
+              ],
+              "peak_working_set_bytes": 5570560,
+              "median_seconds": 0.02512060001026839
+            }
+          },
+          "verification_method": "enumeration of all path-weight assignments",
+          "expected_output_available": true,
+          "output_sha256": "a291e93f253bd638e47bbafd6e0831d31af538de0af81ba356e984c6eb4ef0ef"
+        },
+        {
+          "id": "03",
+          "input_sha256": "150a2af36177fbc8efb7c293a764bb5354335224bf3b9b0f2d11ed75e4ec2fb7",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.024727700045332313,
+                0.025463400059379637,
+                0.024627899983897805,
+                0.02441379998344928,
+                0.024193500052206218
+              ],
+              "peak_working_set_bytes": 5623808,
+              "median_seconds": 0.024627899983897805
+            }
+          },
+          "verification_method": "set cross products without ordered searches",
+          "expected_output_available": true,
+          "output_sha256": "b17e8ca78f5c505ba42d99f8365f68bfd1d37c23d2be4abf28ae13332a1cdf24"
+        },
+        {
+          "id": "04",
+          "input_sha256": "4b239ce0408a37e292f3efc7e64a68932e51bc60c2f3d06baeb55b90232544d5",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.025359799969010055,
+                0.023578899912536144,
+                0.02318280003964901,
+                0.024091199971735477,
+                0.02495899994391948
+              ],
+              "peak_working_set_bytes": 5603328,
+              "median_seconds": 0.024091199971735477
+            }
+          },
+          "verification_method": "union of equal-weight connected components",
+          "expected_output_available": true,
+          "output_sha256": "78bc9095e87251de2eda01bb5b63a04edab614404de8fcebbfa1798b7b302417"
+        },
+        {
+          "id": "05",
+          "input_sha256": "e0a163e26ec0b09353acf37d0c7067bb026fe6c88157ce0c6815156e46f36afa",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.02447490009944886,
+                0.023909299983642995,
+                0.025389299960806966,
+                0.024457600084133446,
+                0.026063599972985685
+              ],
+              "peak_working_set_bytes": 5623808,
+              "median_seconds": 0.02447490009944886
+            }
+          },
+          "verification_method": "unrestricted component sizes",
+          "expected_output_available": true,
+          "output_sha256": "1f8d68c0aff354a1ae6207ace15b7d68e94ae294cb596066b54831132f081a32"
+        },
+        {
+          "id": "06",
+          "input_sha256": "3daa79ce1508a31720865818e46a1af5da05f42c71f1b3e54c269b3e81de8c33",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.33401009999215603,
+                0.3192326999269426,
+                0.3260970999253914,
+                0.33025220001582056,
+                0.3412798000499606
+              ],
+              "peak_working_set_bytes": 6348800,
+              "median_seconds": 0.33025220001582056
+            }
+          },
+          "verification_method": "unrestricted component sizes",
+          "expected_output_available": true,
+          "output_sha256": "c8c36375186b81a32686966c066d3ac21c7537ac2d5a9ae95b4acad41880d114"
+        },
+        {
+          "id": "07",
+          "input_sha256": "89b1d18465db22e3173949d66cef2641cd4ceec008c5545a53fd56c13595d952",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.033089300035499036,
+                0.028916000039316714,
+                0.03359479992650449,
+                0.03239539999049157,
+                0.046961499960161746
+              ],
+              "peak_working_set_bytes": 5984256,
+              "median_seconds": 0.033089300035499036
+            }
+          },
+          "verification_method": "union of equal-weight connected components",
+          "expected_output_available": true,
+          "output_sha256": "e7b4ebce5b0b5fea72c6df8fda9a4ac3faad0ad32047f88904a57db0997c6b80"
+        },
+        {
+          "id": "08",
+          "input_sha256": "0a94bf6ad847f4747e32ac15be1295ace1ae99e29e83597f12590edd60516fc4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.046863699913956225,
+                0.03532000002451241,
+                0.047298099962063134,
+                0.03420739993453026,
+                0.03429269988555461
+              ],
+              "peak_working_set_bytes": 5931008,
+              "median_seconds": 0.03532000002451241
+            }
+          },
+          "verification_method": "two-edge star paths grouped by edge weight",
+          "expected_output_available": true,
+          "output_sha256": "716d11b062e5fb9b4240c1757bcff6ac80e1d6f883a4fe9465d47c487e0c87b8"
+        },
+        {
+          "id": "09",
+          "input_sha256": "8d83c46686c5fe04d2e74f03942419c4df081562723bb6ca6db7b23ac33b362c",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.034859699895605445,
+                0.0264272999484092,
+                0.026364200050011277,
+                0.025330599979497492,
+                0.02707039995584637
+              ],
+              "peak_working_set_bytes": 6004736,
+              "median_seconds": 0.0264272999484092
+            }
+          },
+          "verification_method": "union of equal-weight connected components",
+          "expected_output_available": true,
+          "output_sha256": "90256bcda25f35d01b739443370a18b7890b3eb30375d46fc4da743ec08715e0"
+        },
+        {
+          "id": "10",
+          "input_sha256": "3feb2f5cbe5e1e2d7f1c44232b7f3a5edfc071af326217f2875ed817955ec274",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.09330940002109855,
+                0.08159880002494901,
+                0.09361169999465346,
+                0.08284439996350557,
+                0.17150289996061474
+              ],
+              "peak_working_set_bytes": 6000640,
+              "median_seconds": 0.09330940002109855
+            }
+          },
+          "verification_method": "union of equal-weight connected components",
+          "expected_output_available": true,
+          "output_sha256": "47a9f67dd022b86d8fca12827cae83b2abea433a8c43b77829c9b9b6ad520d24"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.33025220001582056,
+          "peak_working_set_bytes": 6348800,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 1.0
+    },
+    "substring-permutation": {
+      "sources": {
+        "simulate.cpp": "8452f06f1aa65bc25fa4099c8b45887eb82270c6ce06d42018a282231230ba69",
+        "solver.hpp": "1103df2b7404d86a30b0e9ec2d5ea7c373f8ab6061b821cd3b958077c5fbe546",
+        "std.cpp": "fa4fdde5f77abd973abddaa14788e88d1fde8e1930b16bd2d55e699e4fc0e7d8"
+      },
+      "binaries": {
+        "std": "3508e245563763ad28e40404adf568d44c8b671135ae87fd7ba29f8e704342cb"
+      },
+      "generator_sha256": "3cc2f3934de3c13903def7059cd9d064ccbbe70b4eeb3de311b948b52760e01c",
+      "plan_sha256": "a60281b533aa705d957f728800482d5232df30c655c4325851f9690578d310dd",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "ad0fadf63cc7cd779ce475e345bf4063565b63a3c2efef1eebc89790aaa6acba",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04024660005234182,
+                0.024248799891211092,
+                0.024805999943055212,
+                0.030248699942603707,
+                0.026946199941448867
+              ],
+              "median_seconds": 0.026946199941448867,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 0,
+          "output_sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        {
+          "id": "02",
+          "input_sha256": "74f51c6ec28bb254fb7d4ccb33c8650479c2ccfd0ad8c54c38cf73f5d30349f4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03241510002408177,
+                0.024254800053313375,
+                0.026203899993561208,
+                0.024173200014047325,
+                0.026470899931155145
+              ],
+              "median_seconds": 0.026203899993561208,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 20,
+          "output_sha256": "b102e6d34cfbf3f53a0a6608ef0b9ff8c1e47e6de4ffe5dc3142150e739b0abf"
+        },
+        {
+          "id": "03",
+          "input_sha256": "d0c5bb48c33c39ddc9172d688ff13fced265188c6a3657493539fbce4da74333",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.03451569995377213,
+                0.03546080004889518,
+                0.04069040005560964,
+                0.05544300004839897,
+                0.03418760001659393
+              ],
+              "median_seconds": 0.03546080004889518,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 209,
+          "output_sha256": "93bf04cd6c281c2e3daef8400f5464ceee820d7078936ca8e19bd3df34ccf256"
+        },
+        {
+          "id": "04",
+          "input_sha256": "59ca678d15713ac9f97b61728c09ead88828f09945883265f1bc6eca6e6a09c8",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04237689997535199,
+                0.04632830002810806,
+                0.03559870005119592,
+                0.042946500005200505,
+                0.03497370006516576
+              ],
+              "median_seconds": 0.04237689997535199,
+              "peak_working_set_bytes": 5537792
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 200,
+          "output_sha256": "426ed73bbcf484c8843d172aa934aba35879c42d2a6c71f5102d91fcf8350c7d"
+        },
+        {
+          "id": "05",
+          "input_sha256": "6e3159a3c7bea741cf0ca408285ba207caf8d11e1f5addab4b52945ed30ee1a8",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.042116799973882735,
+                0.03810730006080121,
+                0.04201039997860789,
+                0.03690300008747727,
+                0.04759029997512698
+              ],
+              "median_seconds": 0.04201039997860789,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 231,
+          "output_sha256": "018185c6997af7a73f27f06df6bf60eda98ece23ac2fd6ab591e71501e82d8a0"
+        },
+        {
+          "id": "06",
+          "input_sha256": "df7c98e23d6ac4d2a5fe537ca58fdfa59522587f26cef2df16c58ad589962857",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.05816349992528558,
+                0.08463250007480383,
+                0.055760699906386435,
+                0.05798509996384382,
+                0.06190879992209375
+              ],
+              "median_seconds": 0.05816349992528558,
+              "peak_working_set_bytes": 5537792
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 601,
+          "output_sha256": "ae391bd611285a72c886ff27edfca31932bd75f2c4a17d307f8cfc5756cc9170"
+        },
+        {
+          "id": "07",
+          "input_sha256": "846dbc6ad664f29b4e7728a268c5952ad5454ee5e687e55f44cb72e3983f9657",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.06260599999222904,
+                0.05788959993515164,
+                0.06074679992161691,
+                0.059145100065506995,
+                0.060368499951437116
+              ],
+              "median_seconds": 0.060368499951437116,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 609,
+          "output_sha256": "f98c92775727567a569d52368d2b47a011b9b6ea30e0303a2d4a9ffb5749ef9b"
+        },
+        {
+          "id": "08",
+          "input_sha256": "a2afa3f3057855d0a3d4b78b8d53405f35a8266c7dff123c09c0d1e457e3d4e4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.08292219997383654,
+                0.0626672999933362,
+                0.06070759997237474,
+                0.06066389998886734,
+                0.06430950004141778
+              ],
+              "median_seconds": 0.0626672999933362,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 701,
+          "output_sha256": "b0157da30a96e45c64393b1b0a79c7db13083f3ace8cdd5b320a0f14bed5d7fb"
+        },
+        {
+          "id": "09",
+          "input_sha256": "de269c0340e0fa52e3c1474cb3dfadff0dd6fff341534ad453f11f3bc4c10add",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.08474500000011176,
+                0.1564898999640718,
+                0.0719319999916479,
+                0.0679496000520885,
+                0.07443500007502735
+              ],
+              "median_seconds": 0.07443500007502735,
+              "peak_working_set_bytes": 5537792
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 686,
+          "output_sha256": "f3bd83c139c0f5ad49b1a86b910df6ebdbab7c1eb46c9f47f8a25ecb006b1fed"
+        },
+        {
+          "id": "10",
+          "input_sha256": "39bf811a75d11889776a8e59fa7b5b8b1af976df634cf44716b761f33c128d49",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.07172020000871271,
+                0.06893349997699261,
+                0.06685810000635684,
+                0.06269349996000528,
+                0.06335790001321584
+              ],
+              "median_seconds": 0.06685810000635684,
+              "peak_working_set_bytes": 5533696
+            }
+          },
+          "verification_method": "actual hidden-permutation judge",
+          "expected_output_available": true,
+          "queries": 675,
+          "output_sha256": "4f0f6c4a12e9e1cf617911609bae9b005c42a09efdba7082f719d962ecbd66b6"
+        }
+      ],
+      "judge_sha256": "9e2d90b822ba3820a827f2924bb8cdd2fb74c86a3f758d2671df9898ad4d03e3",
+      "timing_note": "Actual interactive solver via pipes, including Python judge wall time; memory measures only solver. simulate.cpp is a testing harness, not a submission.",
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.07443500007502735,
+          "peak_working_set_bytes": 5537792,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 0.5
+    },
+    "you-wrote-this-problem": {
+      "sources": {
+        "std.cpp": "5972a173e3b399f19a36448738e48cec50176f21051dabf734fafac052fbc0fd"
+      },
+      "binaries": {
+        "std": "24856d9eaf187da40faed5d0048ae747b5e2ac5aefd92fa11e203f462c0e6f74"
+      },
+      "generator_sha256": "b19c4274f07f989adbb2a4d3db9486c3ef67a35b6234ea4f4b6694e88bb8a863",
+      "plan_sha256": "f7018cf6914965118d69d76028f9a8b6460d3b39dcce8168d141e0fe5c0a5ebe",
+      "cases": [
+        {
+          "id": "01",
+          "input_sha256": "92f3d846f53b44f1c568b7d1d7bc0994fb213faeba09c6e99843c0931b30ac98",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.028563600033521652,
+                0.024190800031647086,
+                0.024123099981807172,
+                0.02384799998253584,
+                0.024593700072728097
+              ],
+              "peak_working_set_bytes": 5591040,
+              "median_seconds": 0.024190800031647086
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "7eb9e781a3f1d99d87a908f31599a5ce0bf028f21a617dcdd6e71a72e1f2c7f7"
+        },
+        {
+          "id": "02",
+          "input_sha256": "798304b5ee18b71f23fb145d6cdf224d619bab70635f0b7eb6ff533e7001ead2",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.025675200042314827,
+                0.09170909994281828,
+                0.023811300052329898,
+                0.029471599962562323,
+                0.02900959993712604
+              ],
+              "peak_working_set_bytes": 5586944,
+              "median_seconds": 0.02900959993712604
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "0f1b7e8a08db261a0ed5e3c2e20561b89a8d6fa89b6122f85f0761fc115f0774"
+        },
+        {
+          "id": "03",
+          "input_sha256": "063fdd2bd98164478561bbf74827ad4616d918cc4fb4ac044f91eb57cee6bfd3",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04829760000575334,
+                0.04905719996895641,
+                0.05732579994946718,
+                0.05859999998938292,
+                0.05900609993841499
+              ],
+              "peak_working_set_bytes": 5648384,
+              "median_seconds": 0.05732579994946718
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "6581e001e9f47bc6026baf57360d1a2f0432cf9ab1f49e1f055843cb36d97743"
+        },
+        {
+          "id": "04",
+          "input_sha256": "9e3a7234fe8aa7e69af1b5544437a2f7fa694152ea4277de79d52528de9d25d4",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.047296599950641394,
+                0.05552320007700473,
+                0.0515851000091061,
+                0.05117900006007403,
+                0.059495899942703545
+              ],
+              "peak_working_set_bytes": 5935104,
+              "median_seconds": 0.0515851000091061
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "49c92ab4bd955027be8cc6cb11577c51f8ef7bd37bb6adfabdfb5500342748b6"
+        },
+        {
+          "id": "05",
+          "input_sha256": "e7d69ad1c1457a9b17ad43c8c1cae4fbd8750feaaace6d34f353d43a022feb01",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.04004160000476986,
+                0.0447647999972105,
+                0.04040240007452667,
+                0.1233061000239104,
+                0.0529202000470832
+              ],
+              "peak_working_set_bytes": 5595136,
+              "median_seconds": 0.0447647999972105
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "cc7e1f4db62aa3cd22199926b8827536481de965e5b6a244457d64065545c842"
+        },
+        {
+          "id": "06",
+          "input_sha256": "c7993df9bffb0da7144a34d0eecf9d40f0c2be1d72d54211bcf386bff64868a0",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.31579400005284697,
+                0.3304338000016287,
+                0.33050580008421093,
+                0.33439820003695786,
+                0.42311199998948723
+              ],
+              "peak_working_set_bytes": 8892416,
+              "median_seconds": 0.33050580008421093
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "65ef0ec0b21e89711e5af17b2f6539f98916d8a2c714bf9fd2aab217cf00a571"
+        },
+        {
+          "id": "07",
+          "input_sha256": "602f143b17e80dece6c982a82b9c8a9fe223fd05546ea5d94e0fe92e16806b55",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.3942926999880001,
+                0.3844399000518024,
+                0.3896439999807626,
+                0.3898102999664843,
+                0.3919874000130221
+              ],
+              "peak_working_set_bytes": 9248768,
+              "median_seconds": 0.3898102999664843
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "389844cf47aa3637aa324026c2d358fc2bbea2bbecb57eaf383c204e8199ab97"
+        },
+        {
+          "id": "08",
+          "input_sha256": "ce9b67e659eb584a54d844e02b7bbf6151f3317c736b70aa46253e405740c8ad",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.6850456000538543,
+                0.6875399999553338,
+                0.6912586999824271,
+                0.6953108999878168,
+                0.6876425999216735
+              ],
+              "peak_working_set_bytes": 31567872,
+              "median_seconds": 0.6876425999216735
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "id": "09",
+          "input_sha256": "7742a648f141792a54f9339f8ada94e1d4aaf1eb075713d6be2904b256861a12",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.5376077000983059,
+                0.47193100000731647,
+                0.46978580008726567,
+                0.4944839000236243,
+                0.4730782000115141
+              ],
+              "peak_working_set_bytes": 31555584,
+              "median_seconds": 0.4730782000115141
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "bb3bb5caaeb4b34faaf6c12b90c70c4b48d0685941674e6153c193faebb6c5c5"
+        },
+        {
+          "id": "10",
+          "input_sha256": "83e243aa5d2e088efc22a92452dbff2f69a393600dbb8f1835c069d156f56e3c",
+          "programs": {
+            "std": {
+              "seconds": [
+                0.7231311000650749,
+                0.6354221000801772,
+                0.7643047999590635,
+                0.6566886999644339,
+                0.7071125000948086
+              ],
+              "peak_working_set_bytes": 10326016,
+              "median_seconds": 0.7071125000948086
+            }
+          },
+          "verification_method": "Python block Counters; no pair matrix or position tree",
+          "expected_output_available": true,
+          "output_sha256": "a94b194aed80797334e42e172751835025b0af1f8cf51db4c5af156bdfb9ff85"
+        }
+      ],
+      "summary": {
+        "std": {
+          "slowest_median_seconds": 0.7071125000948086,
+          "peak_working_set_bytes": 31567872,
+          "passes_estimated_limit": true
+        }
+      },
+      "limit_seconds": 1.5
+    }
+  }
+}

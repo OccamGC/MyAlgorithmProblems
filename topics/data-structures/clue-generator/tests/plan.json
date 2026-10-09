@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012601,
+      "mode": "literal",
+      "input": "7 2\n0 0 0 0 0 0 0\n0 6\n0 6\n",
+      "purpose": "middle-block counterexample"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012602,
+      "mode": "zero",
+      "n": 70,
+      "m": 100,
+      "shape": "small",
+      "purpose": "independent enumeration"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012603,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "zero",
+      "purpose": "zero"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012604,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "positive",
+      "purpose": "positive"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012605,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "alternating",
+      "purpose": "alternating"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012606,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "cycle",
+      "purpose": "cycle"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012607,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "smallwalk",
+      "purpose": "smallwalk"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012608,
+      "mode": "zero",
+      "n": 100000,
+      "m": 100000,
+      "shape": "wide",
+      "purpose": "wide"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012609,
+      "mode": "zero",
+      "n": 99999,
+      "m": 100000,
+      "shape": "small",
+      "purpose": "small"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012610,
+      "mode": "zero",
+      "n": 1,
+      "m": 100000,
+      "shape": "zero",
+      "purpose": "zero"
+    }
+  ]
+}

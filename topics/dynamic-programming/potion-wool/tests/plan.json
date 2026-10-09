@@ -1,0 +1,130 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291000
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291001
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291002
+    },
+    {
+      "id": "single",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "single",
+      "a": 1,
+      "b": 3,
+      "p": 1,
+      "k": 1,
+      "t": 1000000,
+      "chests": 1,
+      "seed": 202609291003
+    },
+    {
+      "id": "maximum-mixed",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum mixed",
+      "a": 10,
+      "b": 10,
+      "p": 10,
+      "k": 50,
+      "t": 1000000,
+      "chests": 10,
+      "seed": 202609291004
+    },
+    {
+      "id": "maximum-negative",
+      "kind": "negative",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum negative",
+      "a": 10,
+      "b": 10,
+      "p": 10,
+      "k": 50,
+      "t": 1,
+      "chests": 10,
+      "seed": 202609291005
+    },
+    {
+      "id": "maximum-positive",
+      "kind": "positive",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum positive",
+      "a": 10,
+      "b": 10,
+      "p": 10,
+      "k": 50,
+      "t": 1000000,
+      "chests": 10,
+      "seed": 202609291006
+    },
+    {
+      "id": "maze",
+      "kind": "maze",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maze",
+      "a": 10,
+      "b": 10,
+      "p": 10,
+      "k": 50,
+      "t": 1000000,
+      "chests": 1,
+      "seed": 202609291007
+    },
+    {
+      "id": "many-chests",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "many chests",
+      "a": 5,
+      "b": 5,
+      "p": 10,
+      "k": 1,
+      "t": 3,
+      "chests": 10,
+      "seed": 202609291008
+    },
+    {
+      "id": "mixed-speed",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "mixed speed",
+      "a": 10,
+      "b": 10,
+      "p": 10,
+      "k": 50,
+      "t": 200,
+      "chests": 10,
+      "seed": 202609291009
+    }
+  ]
+}

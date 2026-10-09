@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "n": 20,
+      "m": 30,
+      "k": 4,
+      "a": 1,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330001
+    },
+    {
+      "n": 20,
+      "m": 30,
+      "k": 4,
+      "a": 0,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330002
+    },
+    {
+      "n": 1000,
+      "m": 300,
+      "k": 30,
+      "a": 2,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330003
+    },
+    {
+      "n": 1000,
+      "m": 300,
+      "k": 30,
+      "a": 1000000006,
+      "mode": "n",
+      "purpose": "n",
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330004
+    },
+    {
+      "n": 1000,
+      "m": 300,
+      "k": 30,
+      "a": 1,
+      "mode": "coef",
+      "purpose": "coef",
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330005
+    },
+    {
+      "n": 1000000000,
+      "m": 10000,
+      "k": 200,
+      "a": 2,
+      "mode": "n",
+      "purpose": "n",
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330006
+    },
+    {
+      "n": 1000000000,
+      "m": 10000,
+      "k": 200,
+      "a": 1,
+      "mode": "n",
+      "purpose": "n",
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330007
+    },
+    {
+      "n": 1000000000,
+      "m": 10000,
+      "k": 200,
+      "a": 1000000006,
+      "mode": "coef",
+      "purpose": "coef",
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330008
+    },
+    {
+      "n": 1000000000,
+      "m": 10000,
+      "k": 200,
+      "a": 0,
+      "mode": "n",
+      "purpose": "n",
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330009
+    },
+    {
+      "n": 1000000000,
+      "m": 10000,
+      "k": 200,
+      "a": 91371417,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330010
+    }
+  ]
+}

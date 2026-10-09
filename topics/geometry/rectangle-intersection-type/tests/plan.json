@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; fixed random.Random seeds",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 40,
+      "extra_conditions": "Both rectangles nondegenerate"
+    },
+    {
+      "id": 2,
+      "score_percent": 10,
+      "extra_conditions": "Both are nonzero segments"
+    },
+    {
+      "id": 3,
+      "score_percent": 10,
+      "extra_conditions": "Both are points"
+    },
+    {
+      "id": 4,
+      "score_percent": 10,
+      "extra_conditions": "Points or nonzero segments"
+    },
+    {
+      "id": 5,
+      "score_percent": 10,
+      "extra_conditions": "Points or nondegenerate rectangles"
+    },
+    {
+      "id": 6,
+      "score_percent": 10,
+      "extra_conditions": "Nonzero segments or nondegenerate rectangles"
+    },
+    {
+      "id": 7,
+      "score_percent": 10,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301800,
+      "purpose": "random",
+      "T": 0,
+      "mode": "random",
+      "types": [
+        2
+      ]
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301801,
+      "purpose": "nondegenerate area, edge, point, disjoint; coordinate extremes",
+      "T": 1000,
+      "mode": "boundary",
+      "types": [
+        2
+      ]
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301802,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        2
+      ]
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301803,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        2
+      ]
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202609301804,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        1
+      ]
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 202609301805,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        0
+      ]
+    },
+    {
+      "id": "07",
+      "group": 4,
+      "score_percent": 10,
+      "seed": 202609301806,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "08",
+      "group": 5,
+      "score_percent": 10,
+      "seed": 202609301807,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "09",
+      "group": 6,
+      "score_percent": 10,
+      "seed": 202609301808,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "10",
+      "group": 7,
+      "score_percent": 10,
+      "seed": 202609301809,
+      "purpose": "random",
+      "T": 1000,
+      "mode": "random",
+      "types": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}

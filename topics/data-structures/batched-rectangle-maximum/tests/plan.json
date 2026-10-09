@@ -1,0 +1,114 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 1,
+      "q": 100,
+      "mode": "negative",
+      "purpose": "negative",
+      "group": 1,
+      "id": "01",
+      "score_percent": 10,
+      "seed": 350001
+    },
+    {
+      "n": 7,
+      "m": 11,
+      "q": 100,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 1,
+      "id": "02",
+      "score_percent": 10,
+      "seed": 350002
+    },
+    {
+      "n": 100,
+      "m": 100,
+      "q": 1000,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 2,
+      "id": "03",
+      "score_percent": 10,
+      "seed": 350003
+    },
+    {
+      "n": 1,
+      "m": 100000,
+      "q": 5000,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 2,
+      "id": "04",
+      "score_percent": 10,
+      "seed": 350004
+    },
+    {
+      "n": 300,
+      "m": 300,
+      "q": 5000,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 2,
+      "id": "05",
+      "score_percent": 10,
+      "seed": 350005
+    },
+    {
+      "n": 2500,
+      "m": 4000,
+      "q": 100000,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 3,
+      "id": "06",
+      "score_percent": 10,
+      "seed": 350006
+    },
+    {
+      "n": 1,
+      "m": 10000000,
+      "q": 100000,
+      "mode": "negative",
+      "purpose": "negative",
+      "group": 3,
+      "id": "07",
+      "score_percent": 10,
+      "seed": 350007
+    },
+    {
+      "n": 5000000,
+      "m": 2,
+      "q": 100000,
+      "mode": "mixed",
+      "purpose": "mixed",
+      "group": 3,
+      "id": "08",
+      "score_percent": 10,
+      "seed": 350008
+    },
+    {
+      "n": 2047,
+      "m": 4885,
+      "q": 100000,
+      "mode": "queries",
+      "purpose": "queries",
+      "group": 3,
+      "id": "09",
+      "score_percent": 10,
+      "seed": 350009
+    },
+    {
+      "n": 2000,
+      "m": 5000,
+      "q": 100000,
+      "mode": "overflow",
+      "purpose": "overflow",
+      "group": 3,
+      "id": "10",
+      "score_percent": 10,
+      "seed": 350010
+    }
+  ]
+}

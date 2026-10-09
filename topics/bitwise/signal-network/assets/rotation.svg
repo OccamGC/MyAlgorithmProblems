@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="305" viewBox="0 0 830 305">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#536779"/></marker></defs>
+<rect width="830" height="305" fill="#f8fafc"/>
+<text x="415" y="30" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#1b354b">8-bit illustration / rotate right by 3</text>
+<rect x="95" y="55" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="130" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="175" y="55" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="210" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="255" y="55" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="290" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="335" y="55" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="370" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="415" y="55" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="450" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="495" y="55" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="530" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="575" y="55" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="610" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="655" y="55" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="690" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<text x="60" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#1b354b">7</text>
+<text x="770" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#1b354b">0</text>
+<rect x="95" y="215" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="130" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="175" y="215" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="210" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="255" y="215" width="70" height="55" rx="5" fill="#e6f4fa" stroke="#287ea0" stroke-width="2"/>
+<text x="290" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="335" y="215" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="370" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="415" y="215" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="450" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="495" y="215" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="530" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">0</text>
+<rect x="575" y="215" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="610" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<rect x="655" y="215" width="70" height="55" rx="5" fill="white" stroke="#287ea0" stroke-width="2"/>
+<text x="690" y="251" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#1b354b">1</text>
+<text x="60" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#1b354b">7</text>
+<text x="770" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#1b354b">0</text>
+<path d="M610 119L210 200" stroke="#be6419" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="605" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#1b354b">wrap</text>
+</svg>

@@ -1,0 +1,104 @@
+{
+  "cases": [
+    {
+      "n": 1,
+      "m": 0,
+      "mode": "random",
+      "purpose": "random",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330001
+    },
+    {
+      "n": 8,
+      "m": 20,
+      "mode": "random",
+      "purpose": "random",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 330002
+    },
+    {
+      "n": 2000,
+      "m": 2000,
+      "mode": "random",
+      "purpose": "random",
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330003
+    },
+    {
+      "n": 2000,
+      "m": 1000,
+      "mode": "pairs",
+      "purpose": "pairs",
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330004
+    },
+    {
+      "n": 2000,
+      "m": 1999,
+      "mode": "chain",
+      "purpose": "chain",
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 330005
+    },
+    {
+      "n": 200000,
+      "m": 199999,
+      "mode": "chain",
+      "purpose": "chain",
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330006
+    },
+    {
+      "n": 200000,
+      "m": 100000,
+      "mode": "pairs",
+      "purpose": "pairs",
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330007
+    },
+    {
+      "n": 200000,
+      "m": 200000,
+      "mode": "random",
+      "purpose": "random",
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330008
+    },
+    {
+      "n": 200000,
+      "m": 199999,
+      "mode": "star",
+      "purpose": "star",
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330009
+    },
+    {
+      "n": 200000,
+      "m": 0,
+      "mode": "random",
+      "purpose": "random",
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 330010
+    }
+  ]
+}

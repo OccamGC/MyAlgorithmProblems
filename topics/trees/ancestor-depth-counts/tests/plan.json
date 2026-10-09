@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012501,
+      "mode": "literal",
+      "input": "1\n\n",
+      "purpose": "minimum and non-topological labels"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012502,
+      "mode": "literal",
+      "input": "4\n3 1 3\n",
+      "purpose": "minimum and non-topological labels"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012503,
+      "mode": "tree",
+      "n": 500,
+      "shape": "random",
+      "relabel": true,
+      "purpose": "random relabelled"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012504,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "chain",
+      "relabel": false,
+      "purpose": "chain"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012505,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "star",
+      "relabel": false,
+      "purpose": "star"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012506,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "binary",
+      "relabel": false,
+      "purpose": "binary"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012507,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "random",
+      "relabel": true,
+      "purpose": "random relabelled"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012508,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "broom",
+      "relabel": false,
+      "purpose": "broom"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012509,
+      "mode": "tree",
+      "n": 2000000,
+      "shape": "comb",
+      "relabel": true,
+      "purpose": "comb relabelled"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012510,
+      "mode": "tree",
+      "n": 1999999,
+      "shape": "ternary",
+      "relabel": false,
+      "purpose": "ternary"
+    }
+  ]
+}

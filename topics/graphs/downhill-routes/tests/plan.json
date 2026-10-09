@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 50,
+      "extra_conditions": "n,m <= 300"
+    },
+    {
+      "id": 2,
+      "score_percent": 50,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012501,
+      "mode": "literal",
+      "input": "0 0\n\n",
+      "purpose": "empty graph, parallel edges and source sample"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012502,
+      "mode": "literal",
+      "input": "2 3\n2 1\n1 2\n1 2\n1 1\n",
+      "purpose": "empty graph, parallel edges and source sample"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012503,
+      "mode": "literal",
+      "input": "5 5\n1 2 3 4 5\n5 4\n5 3\n4 3\n3 2\n2 1\n",
+      "purpose": "empty graph, parallel edges and source sample"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012504,
+      "mode": "graph",
+      "n": 300,
+      "m": 300,
+      "shape": "layered",
+      "purpose": "layered"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012505,
+      "mode": "graph",
+      "n": 300,
+      "m": 300,
+      "shape": "equal",
+      "purpose": "equal"
+    },
+    {
+      "id": "06",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012506,
+      "mode": "graph",
+      "n": 100000,
+      "m": 100000,
+      "shape": "chain",
+      "purpose": "chain"
+    },
+    {
+      "id": "07",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012507,
+      "mode": "graph",
+      "n": 100000,
+      "m": 100000,
+      "shape": "equal",
+      "purpose": "equal"
+    },
+    {
+      "id": "08",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012508,
+      "mode": "graph",
+      "n": 100000,
+      "m": 100000,
+      "shape": "random",
+      "purpose": "random"
+    },
+    {
+      "id": "09",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012509,
+      "mode": "graph",
+      "n": 100000,
+      "m": 100000,
+      "shape": "layered",
+      "purpose": "layered"
+    },
+    {
+      "id": "10",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 202610012510,
+      "mode": "graph",
+      "n": 100000,
+      "m": 100000,
+      "shape": "extremes",
+      "purpose": "extremes"
+    }
+  ]
+}

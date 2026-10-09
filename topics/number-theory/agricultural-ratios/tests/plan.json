@@ -1,0 +1,107 @@
+{
+  "seed_algorithm": "SplitMix64 with unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 1",
+      "sample": "01",
+      "seed": 202609291100
+    },
+    {
+      "id": "sample-2",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 2",
+      "sample": "02",
+      "seed": 202609291101
+    },
+    {
+      "id": "sample-3",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 3",
+      "sample": "03",
+      "seed": 202609291102
+    },
+    {
+      "id": "sample-4",
+      "kind": "sample",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "sample 4",
+      "sample": "04",
+      "seed": 202609291103
+    },
+    {
+      "id": "maximum-periods",
+      "kind": "coprime",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum periods",
+      "n": 10,
+      "finite": 1,
+      "period": 197,
+      "seed": 202609291104
+    },
+    {
+      "id": "long-prefix",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "long prefix",
+      "n": 10,
+      "finite": 195,
+      "period": 3,
+      "seed": 202609291105
+    },
+    {
+      "id": "mixed-digits",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "mixed digits",
+      "n": 10,
+      "finite": 90,
+      "period": 108,
+      "seed": 202609291106
+    },
+    {
+      "id": "terminating",
+      "kind": "zeros",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "terminating",
+      "n": 10,
+      "finite": 190,
+      "period": 8,
+      "seed": 202609291107
+    },
+    {
+      "id": "repeating-nines",
+      "kind": "nines",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "repeating nines",
+      "n": 10,
+      "finite": 1,
+      "period": 197,
+      "seed": 202609291108
+    },
+    {
+      "id": "maximum-single",
+      "kind": "random",
+      "group": 1,
+      "score_percent": 10,
+      "purpose": "maximum single",
+      "n": 1,
+      "finite": 1,
+      "period": 197,
+      "seed": 202609291109
+    }
+  ]
+}

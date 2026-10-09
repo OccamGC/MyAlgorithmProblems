@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "random": "SplitMix64; fixed unsigned 64-bit arithmetic",
+  "cases": [
+    {
+      "id": "sample-1",
+      "group": 1,
+      "score_percent": 10,
+      "kind": "sample",
+      "sample": "01",
+      "purpose": "Published sample"
+    },
+    {
+      "id": "single",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120001,
+      "purpose": "Single-vertex updates",
+      "kind": "isolated",
+      "n": 1,
+      "q": 100
+    },
+    {
+      "id": "small",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120002,
+      "purpose": "Small independent-model case",
+      "kind": "random",
+      "n": 80,
+      "q": 300
+    },
+    {
+      "id": "long-chain",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120003,
+      "purpose": "Long paths and assignment/addition composition",
+      "kind": "chain",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "star",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120004,
+      "purpose": "Short paths through high-degree center",
+      "kind": "star",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "balanced",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120005,
+      "purpose": "Many heavy-chain boundaries",
+      "kind": "balanced",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "forest",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120006,
+      "purpose": "Multiple components",
+      "kind": "forest",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "isolated",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120007,
+      "purpose": "No edges",
+      "kind": "isolated",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "negative",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120008,
+      "purpose": "Negative counts and sums",
+      "kind": "negative",
+      "n": 500000,
+      "q": 10000
+    },
+    {
+      "id": "random",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 120009,
+      "purpose": "Mixed operations at full scale",
+      "kind": "random",
+      "n": 500000,
+      "q": 10000
+    }
+  ]
+}

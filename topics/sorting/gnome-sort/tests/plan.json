@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301500,
+      "purpose": "descending",
+      "n": 2,
+      "mode": "descending"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301501,
+      "purpose": "random",
+      "n": 30,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301502,
+      "purpose": "ascending",
+      "n": 500000,
+      "mode": "ascending"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301503,
+      "purpose": "descending",
+      "n": 500000,
+      "mode": "descending"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301504,
+      "purpose": "same-first",
+      "n": 500000,
+      "mode": "same-first"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301505,
+      "purpose": "same-second",
+      "n": 500000,
+      "mode": "same-second"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301506,
+      "purpose": "sum-ties",
+      "n": 500000,
+      "mode": "sum-ties"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301507,
+      "purpose": "zigzag",
+      "n": 500000,
+      "mode": "zigzag"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301508,
+      "purpose": "random",
+      "n": 500000,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202609301509,
+      "purpose": "random",
+      "n": 499999,
+      "mode": "random"
+    }
+  ]
+}

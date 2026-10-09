@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "runtime": "Python 3.12; standard library only",
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "mode": "literal",
+      "input": "1\n1 1 2\n1 1 1 1 1\n1 1 1 2\n",
+      "purpose": "boundary/sample",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012901
+    },
+    {
+      "mode": "literal",
+      "input": "1\n4 8 2\n2 3 1 4 3\n2 4 7 5\n",
+      "purpose": "boundary/sample",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012902
+    },
+    {
+      "mode": "battle",
+      "shape": "events",
+      "purpose": "events",
+      "n": 5000,
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012903
+    },
+    {
+      "mode": "battle",
+      "shape": "wide",
+      "purpose": "wide",
+      "n": 5000,
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012904
+    },
+    {
+      "mode": "battle",
+      "shape": "head",
+      "purpose": "head",
+      "n": 5000,
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012905
+    },
+    {
+      "mode": "battle",
+      "shape": "no_damage",
+      "purpose": "no_damage",
+      "n": 5000,
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012906
+    },
+    {
+      "mode": "battle",
+      "shape": "steps",
+      "purpose": "steps",
+      "n": 5000,
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012907
+    },
+    {
+      "mode": "battle",
+      "shape": "ties",
+      "purpose": "ties",
+      "n": 5000,
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012908
+    },
+    {
+      "mode": "battle",
+      "shape": "mixed",
+      "purpose": "mixed",
+      "n": 5000,
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012909
+    },
+    {
+      "mode": "battle",
+      "shape": "random",
+      "purpose": "random",
+      "n": 5000,
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 202610012910
+    }
+  ]
+}

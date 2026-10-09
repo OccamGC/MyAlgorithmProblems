@@ -1,0 +1,33 @@
+{
+  "seed": 2026100419,
+  "arithmetic_operations": 140521,
+  "oracle_games": 656,
+  "oracle_queries": 2614,
+  "verified_variants": [
+    "std",
+    "brute",
+    "streaming",
+    "branches",
+    "slow-sort",
+    "slow-binary",
+    "slow-dense"
+  ],
+  "samples": 3,
+  "rejected_invalid_inputs": 10,
+  "cli_and_deterministic_generation": true,
+  "standalone_std": true,
+  "sources": {
+    "alternative-streaming.cpp": "a77b62352072c521699e3df2d79a7a9e5134a049fe73c270a70713b41df426f4",
+    "brute.cpp": "f6883ac82f702e58330cb90871085b3c16f71383cbc4ff32727e6d4c1564a541",
+    "std.cpp": "3d7a486e5eeaf243f3eb8ca5119b700b583fecb4c3c6aefa5d52e36f5d960a06",
+    "tests\\generate.py": "0b994384b4a9f782eafad45e9d9a729fef052f7d691bb61c47d7e19905a8da45",
+    "tests\\slow-binary.cpp": "094a9c30933ca322917b21dbd1dc34b311a6ece89871bed7ae839f47c792b4f8",
+    "tests\\slow-dense.cpp": "9f7c7a7a357cf19bf0253e1ba7b79ff30639642a4b7ca3f1778d968c40a6a66c",
+    "tests\\slow-sort.cpp": "aa5276b6512acffa44a954b144e4b30c25664be1992bab805db5a0150704ebf0",
+    "tests\\stress-smoke.py": "a228e4fe43fe2fdfa0e8d8aa605b85b7b1a5344b64626fc94bb161ae37365db9",
+    "tests\\validate.py": "5faf8d16364775c5b8d25fbef2a519df930e612b407ab0c561d3ebc34309ed64",
+    "tests\\verify-arithmetic.cpp": "b6825201e4dca498b08ada3a60d592e1bffd05ee6a79e4118b7b8e34a2b288e9",
+    "tests\\verify-branches.cpp": "27609cf3b16faa53fd385214235ac7d7939925ad4b00875a5b3f810f0c00552b",
+    "tests\\verify.py": "60acfdf3a597974bd81cf2a9dd141f5ced66fe6a6f8055f855cc97bee59b9393"
+  }
+}

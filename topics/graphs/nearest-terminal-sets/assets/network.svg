@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="365" viewBox="0 0 750 365">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#264c66"/></marker></defs>
+<rect width="750" height="365" rx="10" fill="#f5f8fc"/>
+<path d="M100 70L365 105" fill="none" stroke="#7f92a4" stroke-width="2"/>
+<text x="227" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#17364c">5</text>
+<path d="M365 105L650 70" fill="none" stroke="#157862" stroke-width="5"/>
+<text x="510" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#17364c">2</text>
+<path d="M365 285L365 105" fill="none" stroke="#157862" stroke-width="5"/>
+<text x="392" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#17364c">1</text>
+<path d="M365 285L100 285" fill="none" stroke="#7f92a4" stroke-width="2"/>
+<text x="230" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#17364c">9</text>
+<path d="M100 70L100 285" fill="none" stroke="#7f92a4" stroke-width="2"/>
+<text x="66" y="180" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#17364c">20</text>
+<circle cx="100" cy="70" r="32" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="100" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">1</text>
+<text x="148" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">S</text>
+<circle cx="365" cy="105" r="32" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="365" y="111" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">2</text>
+<circle cx="650" cy="70" r="32" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="650" y="76" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">3</text>
+<text x="698" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">T</text>
+<circle cx="365" cy="285" r="32" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="365" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">4</text>
+<text x="413" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">S</text>
+<circle cx="100" cy="285" r="32" fill="white" stroke="#264c66" stroke-width="2"/>
+<text x="100" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#17364c">5</text>
+<text x="148" y="267" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#17364c">T</text>
+</svg>

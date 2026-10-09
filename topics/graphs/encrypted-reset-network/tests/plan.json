@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "n": 2,
+      "m": 1,
+      "k": 1,
+      "threshold": 0,
+      "mode": "resets",
+      "purpose": "zero threshold",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370101
+    },
+    {
+      "n": 8,
+      "m": 15,
+      "k": 100,
+      "threshold": 8,
+      "mode": "random",
+      "purpose": "independent Bellman-Ford trace",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370102
+    },
+    {
+      "n": 12,
+      "m": 20,
+      "k": 300,
+      "threshold": 100,
+      "mode": "random",
+      "purpose": "mixed directions and weights",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370103
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 0,
+      "mode": "resets",
+      "purpose": "maximum deleted-edge count and bidirectional logical counting",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370104
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 100,
+      "mode": "initial",
+      "purpose": "initial qualifying path clears only after first packet",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370105
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 100,
+      "mode": "never",
+      "purpose": "heavy edges cannot qualify",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370106
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 100,
+      "mode": "decreases",
+      "purpose": "one hundred successive distance improvements on a large star",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370107
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 100,
+      "mode": "cycles",
+      "purpose": "three-packet clearing cycles",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370108
+    },
+    {
+      "n": 4,
+      "m": 1,
+      "k": 50000,
+      "threshold": 0,
+      "mode": "cycles",
+      "purpose": "zero-weight paths and repeated resets",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370109
+    },
+    {
+      "n": 100000,
+      "m": 100000,
+      "k": 50000,
+      "threshold": 100,
+      "mode": "resets",
+      "purpose": "large decryption multiplications",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10.0,
+      "seed": 370110
+    }
+  ]
+}

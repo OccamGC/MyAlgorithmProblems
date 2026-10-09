@@ -1,0 +1,10 @@
+{
+  "cases": [
+    {"id": "tiny-tie", "kind": "tie", "L": 10, "M": 5, "N": 3, "seed": 51, "group": 1, "score_percent": 10, "purpose": "leftmost maximizer"},
+    {"id": "tiny-random", "kind": "random", "L": 100, "M": 50, "N": 50, "seed": 52, "group": 1, "score_percent": 20, "purpose": "small dense positions"},
+    {"id": "one-door", "kind": "random", "L": 1000000000, "M": 300, "N": 1, "seed": 53, "group": 2, "score_percent": 20, "purpose": "single-door convex objective"},
+    {"id": "uneven-doors", "kind": "uneven", "L": 1000000000, "M": 300, "N": 300, "seed": 54, "group": 2, "score_percent": 25, "purpose": "uneven gaps and many candidate peaks"},
+    {"id": "maximum-random", "kind": "random", "L": 1000000000, "M": 300, "N": 300, "seed": 55, "group": 2, "score_percent": 15, "purpose": "maximum passenger and door counts"},
+    {"id": "half-integer", "kind": "half-integer", "L": 300, "M": 300, "N": 300, "seed": 56, "group": 2, "score_percent": 10, "purpose": "unique interior half-integer optimum; rejects integer-only and endpoint-only enumeration"}
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "cases": [
+    {
+      "mode": "literal",
+      "rows": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "oracle": "exact",
+      "purpose": "No initial empty slot; equal means free slots",
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420501,
+      "verification": "exact Fraction grid"
+    },
+    {
+      "mode": "literal",
+      "rows": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "oracle": "exact",
+      "purpose": "Three distinct rational wealth levels at exact capacity",
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420502,
+      "verification": "exact Fraction grid"
+    },
+    {
+      "mode": "poor",
+      "k": 20,
+      "money": 1000000000,
+      "purpose": "Zero richer levels",
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420503,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 20,
+      "money": 1,
+      "levels": [
+        [
+          999,
+          1
+        ]
+      ],
+      "purpose": "One enormous aggregated population",
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420504,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 20,
+      "money": 1,
+      "levels": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "purpose": "Unreduced fractions and two exact wealth levels",
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420505,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 20,
+      "money": 1,
+      "levels": [
+        [
+          998,
+          999
+        ],
+        [
+          999,
+          1000
+        ],
+        [
+          1000,
+          1001
+        ]
+      ],
+      "purpose": "Three close rational levels",
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420506,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 20,
+      "money": 1000000000,
+      "levels": [
+        [
+          1000000000,
+          1
+        ],
+        [
+          999999999,
+          1
+        ],
+        [
+          999999937,
+          1
+        ]
+      ],
+      "purpose": "Maximum money and close integer levels",
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420507,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "modulus",
+      "k": 20,
+      "money": 1,
+      "purpose": "Group sizes P-1, P, P+1; total population crosses 32-bit",
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420508,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 20,
+      "money": 0,
+      "levels": [
+        [
+          7,
+          2
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          31,
+          9
+        ]
+      ],
+      "mixed": true,
+      "purpose": "Empty households, zero money and random three-level data",
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420509,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    },
+    {
+      "mode": "groups",
+      "k": 1,
+      "money": 1,
+      "levels": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "purpose": "Single target and enormous outside populations",
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 420510,
+      "n": 1000000,
+      "verification": "generic matrix exponentiation on grouped original-family means"
+    }
+  ]
+}

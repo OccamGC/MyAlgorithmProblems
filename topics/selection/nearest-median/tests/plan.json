@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310001,
+      "purpose": "Boundary or explicit regression",
+      "values": [
+        1
+      ],
+      "k": 1
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 310002,
+      "purpose": "Boundary or explicit regression",
+      "values": [
+        1,
+        1,
+        1,
+        1,
+        4,
+        7,
+        7,
+        7
+      ],
+      "k": 5
+    },
+    {
+      "id": "03",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310003,
+      "purpose": "random",
+      "n": 10000,
+      "k": 1,
+      "mode": "random"
+    },
+    {
+      "id": "04",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310004,
+      "purpose": "extremes",
+      "n": 10000,
+      "k": 10000,
+      "mode": "extremes"
+    },
+    {
+      "id": "05",
+      "group": 2,
+      "score_percent": 10,
+      "seed": 310005,
+      "purpose": "random",
+      "n": 9999,
+      "k": 5000,
+      "mode": "random"
+    },
+    {
+      "id": "06",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310006,
+      "purpose": "random",
+      "n": 1000000,
+      "k": 500001,
+      "mode": "random"
+    },
+    {
+      "id": "07",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310007,
+      "purpose": "ascending",
+      "n": 1000000,
+      "k": 333333,
+      "mode": "ascending"
+    },
+    {
+      "id": "08",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310008,
+      "purpose": "equal",
+      "n": 1000000,
+      "k": 999999,
+      "mode": "equal"
+    },
+    {
+      "id": "09",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310009,
+      "purpose": "extremes",
+      "n": 1000000,
+      "k": 500000,
+      "mode": "extremes"
+    },
+    {
+      "id": "10",
+      "group": 3,
+      "score_percent": 10,
+      "seed": 310010,
+      "purpose": "organ",
+      "n": 999999,
+      "k": 500000,
+      "mode": "organ"
+    }
+  ]
+}

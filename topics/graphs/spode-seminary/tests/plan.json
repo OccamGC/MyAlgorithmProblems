@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "groups": [
+    {
+      "id": 1,
+      "score_percent": 100,
+      "extra_conditions": "None"
+    }
+  ],
+  "cases": [
+    {
+      "id": "01",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093040,
+      "purpose": "none; parameters recorded below",
+      "n": 1,
+      "m": 1,
+      "q": 1,
+      "mode": "none"
+    },
+    {
+      "id": "02",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093041,
+      "purpose": "random; parameters recorded below",
+      "n": 5,
+      "m": 4,
+      "q": 3,
+      "mode": "random"
+    },
+    {
+      "id": "03",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093042,
+      "purpose": "none; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "none"
+    },
+    {
+      "id": "04",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093043,
+      "purpose": "ample; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "ample"
+    },
+    {
+      "id": "05",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093044,
+      "purpose": "ordered; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "ordered"
+    },
+    {
+      "id": "06",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093045,
+      "purpose": "ties; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "ties"
+    },
+    {
+      "id": "07",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093046,
+      "purpose": "chain; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "chain"
+    },
+    {
+      "id": "08",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093047,
+      "purpose": "random; parameters recorded below",
+      "n": 1000,
+      "m": 300,
+      "q": 10,
+      "mode": "random"
+    },
+    {
+      "id": "09",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093048,
+      "purpose": "random; parameters recorded below",
+      "n": 1000,
+      "m": 1000,
+      "q": 10,
+      "mode": "random"
+    },
+    {
+      "id": "10",
+      "group": 1,
+      "score_percent": 10,
+      "seed": 2026093049,
+      "purpose": "random; parameters recorded below",
+      "n": 500,
+      "m": 1000,
+      "q": 10,
+      "mode": "random"
+    }
+  ]
+}
