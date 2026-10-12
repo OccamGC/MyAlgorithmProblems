@@ -2,9 +2,9 @@
 
 ## 署名与版本 / Attribution and versions
 
-作者使用公开署名 **OccamGC**。[CITATION.cff](CITATION.cff)描述整个仓库；引用某项数学结论时，请使用下方对应研究笔记的条目，并注明实际使用的版本。四邻接的三次方界与补树障碍引用研究提交 `640ae4ac52a1ce5a3082022162611839f97591fe`；仅对角邻接拓展引用自己的提交 `3fe652bb9f3458ed41071e5f2377141272848dbc`；八邻接拓展引用 `600f5edfc176a6c2265dac1c62e74ac94081bfbd`。这些研究版本均发布于 2026-10-12，链接分别固定到包含该成果的证明版本。
+作者使用公开署名 **OccamGC**。[CITATION.cff](CITATION.cff)描述整个仓库；引用某项数学结论时，请使用下方对应研究笔记的条目，并注明实际使用的版本。四邻接的三次方界与补树障碍引用研究提交 `640ae4ac52a1ce5a3082022162611839f97591fe`；仅对角邻接拓展引用自己的提交 `3fe652bb9f3458ed41071e5f2377141272848dbc`；八邻接拓展引用 `600f5edfc176a6c2265dac1c62e74ac94081bfbd`。路径障碍拓展引用 `731f1e1bf650937ec0c9810f90a4e52f4b674ca1`。这些研究版本均发布于 2026-10-12，链接分别固定到包含该成果的证明版本。
 
-The public author name is **OccamGC**. [CITATION.cff](CITATION.cff) describes the whole repository. For a particular mathematical result, use its separate research-note entry below and identify the version actually used. The orthogonal cubic bound and tree obstructions cite research commit `640ae4ac52a1ce5a3082022162611839f97591fe`; the diagonal-only extension cites `3fe652bb9f3458ed41071e5f2377141272848dbc`; the eight-neighbor extension cites `600f5edfc176a6c2265dac1c62e74ac94081bfbd`. These research versions were published on 2026-10-12, with immutable links to versions that contain the respective results.
+The public author name is **OccamGC**. [CITATION.cff](CITATION.cff) describes the whole repository. For a particular mathematical result, use its separate research-note entry below and identify the version actually used. The orthogonal cubic bound and tree obstructions cite research commit `640ae4ac52a1ce5a3082022162611839f97591fe`; the diagonal-only extension cites `3fe652bb9f3458ed41071e5f2377141272848dbc`; the eight-neighbor extension cites `600f5edfc176a6c2265dac1c62e74ac94081bfbd`. The edge-obstacle extension cites `731f1e1bf650937ec0c9810f90a4e52f4b674ca1`. These research versions were published on 2026-10-12, with immutable links to versions that contain the respective results.
 
 入口页及默认分支会继续维护；以下固定链接不会随默认分支变化。条目类型为公开研究笔记，不表示期刊或会议发表。程序复核记录是辅助证据，不替代文字证明。
 
@@ -87,5 +87,27 @@ This result extends the original complete-history charge from two to four invers
   howpublished = {MyAlgorithmProblems research note},
   note = {Published 2026-10-12. Git commit 600f5edfc176a6c2265dac1c62e74ac94081bfbd. Extension of the complete-history cubic charging proof},
   url = {https://github.com/OccamGC/MyAlgorithmProblems/blob/600f5edfc176a6c2265dac1c62e74ac94081bfbd/topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md}
+}
+```
+
+## 顶点与路径障碍拓展 / Vertex and edge obstacles
+
+OccamGC. (2026). *Vertex and edge obstacles: four- and eight-neighbor forest matching*. MyAlgorithmProblems, research note, commit `731f1e1`.
+
+本项允许静态无向路径障碍，只要求实际开放边图为森林。修正算法的旧点新边规则，并在平移交域中同时检查两侧开放边，原三次方收费界仍然成立。固定版本包含中英文证明、四邻接细分归约、匹配下界及 351,744 个短行走组合与 677 个完整收费实例的验证报告。
+
+This result allows static undirected edge obstacles and requires only the actual open-edge graph to be a forest. Revising the new-edge-to-old-vertex rule and retaining only common open edges in translated intersections preserve the cubic charging bound. The snapshot includes bilingual proofs, the orthogonal subdivision reduction, a matching lower bound, and a report covering 351,744 short walks and 677 complete-charge cases.
+
+[当前中文证明](topics/simulation/grid-forest-matching/research/results/edge-obstacles.zh.md) · [Current English proof](topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md) · [固定中文证明](https://github.com/OccamGC/MyAlgorithmProblems/blob/731f1e1bf650937ec0c9810f90a4e52f4b674ca1/topics/simulation/grid-forest-matching/research/results/edge-obstacles.zh.md) · [Versioned English proof](https://github.com/OccamGC/MyAlgorithmProblems/blob/731f1e1bf650937ec0c9810f90a4e52f4b674ca1/topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md)
+
+```bibtex
+@misc{OccamGC2026EdgeObstacleGridForest,
+  author = {{OccamGC}},
+  title = {Vertex and edge obstacles: four- and eight-neighbor forest matching},
+  year = {2026},
+  month = oct,
+  howpublished = {MyAlgorithmProblems research note},
+  note = {Published 2026-10-12. Git commit 731f1e1bf650937ec0c9810f90a4e52f4b674ca1. Static undirected open-edge forests; modified candidate-list algorithm},
+  url = {https://github.com/OccamGC/MyAlgorithmProblems/blob/731f1e1bf650937ec0c9810f90a4e52f4b674ca1/topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md}
 }
 ```

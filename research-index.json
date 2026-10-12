@@ -286,6 +286,8 @@
         ]
       },
       "citation_key": "OccamGC2026EdgeObstacleGridForest",
+      "publication_commit": "731f1e1bf650937ec0c9810f90a4e52f4b674ca1",
+      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/731f1e1bf650937ec0c9810f90a4e52f4b674ca1/topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md",
       "extends": [
         "grid-forest-matching-cubic-bound",
         "grid-forest-matching-eight-neighbor"
