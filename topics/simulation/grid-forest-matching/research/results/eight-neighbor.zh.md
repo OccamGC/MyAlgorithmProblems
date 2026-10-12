@@ -218,3 +218,5 @@ python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py 
 数学结论依赖第 2～4 节的逐项证明迁移；实验只用于排查八方向邻接、候选答案和收费实现的不一致。
 
 本项只推广匹配复杂度结论；四邻接和仅对角模型中的补点成树障碍不由本文迁移到八邻接。复核使用 Python 3.10+ 标准库。引用键为 `OccamGC2026EightNeighborGridForest`，见[引用说明](../../../../../CITATION.md)。证明状态表示仓库提供文字证明，不表示外部同行评审或证明助手形式化验证。
+
+后续推广：[顶点与路径障碍并存](edge-obstacles.zh.md)允许选择性封边，要求实际可通行图为森林，并说明算法与交域的必要修改。

@@ -38,6 +38,8 @@ jobs:
         run: python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json
       - name: Verify eight-neighbor forests and charging certificates
         run: python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py --output tmp/grid-forest-matching/eight-neighbor-results.json --check-published
+      - name: Verify edge-obstacle forests and charging certificates
+        run: python topics/simulation/grid-forest-matching/research/verify_edge_obstacles.py --output tmp/grid-forest-matching/edge-obstacles-results.json --check-published
       - name: Build website
         run: python website/build.py
       - name: Check rendered site

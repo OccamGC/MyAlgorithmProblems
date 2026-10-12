@@ -223,6 +223,75 @@
       "related_results": ["grid-forest-matching-diagonal-only"]
     },
     {
+      "id": "grid-forest-matching-edge-obstacles",
+      "featured": true,
+      "title": {
+        "zh": "顶点与路径障碍：四邻接、八邻接仍有三次方界",
+        "en": "Vertex and edge obstacles: cubic bounds for four and eight neighbors"
+      },
+      "summary": {
+        "zh": "只要求实际开放边构成森林时，修改重复位置规则并使用公共开放边交域，仍保留原精确检查次数上界和三次方最坏量级。",
+        "en": "When only the actual open-edge graph is a forest, revised revisit handling and common open-edge intersections preserve the exact check bound and cubic worst-case order."
+      },
+      "status": "current_proof",
+      "keywords": [
+        "grid forest matching",
+        "edge obstacles",
+        "blocked paths",
+        "open-edge forest",
+        "common-edge intersection",
+        "four-neighbor",
+        "eight-neighbor",
+        "cubic bound",
+        "路径障碍",
+        "封边",
+        "可通行森林",
+        "三次方上界"
+      ],
+      "assumptions": [
+        "Usable vertices and open undirected edges lie on an n-by-n four- or eight-neighbor grid; obstacles are static and the actual traversable graph is a forest.",
+        "Crossing diagonal edges create no additional junctions. Every valid start executes the entire movement prefix and failure is permanent.",
+        "The modified candidate algorithm checks open edges at new vertices, skips known edges, and clears the active candidate count in O(1) when a new edge joins two old query vertices."
+      ],
+      "conclusions": [
+        "Both models satisfy W <= (5n-3)N and time O(n^2 + m + nN), hence O(n^3 + m); space O(n^2).",
+        "Common intersection graphs retain only edges open in both translated copies; the complete-history charging proof and 1+1+2 per-label budget still apply.",
+        "For m >= n-1, fully usable boards with only horizontal row edges open attain matching worst-case time Theta(n^3 + m) for this candidate-list algorithm.",
+        "Four neighbors also admit an independent constant-scale subdivision reduction to an induced orthogonal forest."
+      ],
+      "limitations": [
+        "The unmodified C++ reference program checks destination cells only and does not implement edge obstacles.",
+        "The lower bound concerns the candidate-list algorithm, not all possible algorithms. No new tree-extension obstruction is established.",
+        "Finite verification supplements the proof. The charging core is adapted from the existing verifier, while answers use an independent stepwise oracle."
+      ],
+      "entry_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/edge-obstacles.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md"
+      },
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/edge-obstacles.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/edge-obstacles.en.md"
+      },
+      "evidence_paths": [
+        "topics/simulation/grid-forest-matching/research/verify_edge_obstacles.py",
+        "topics/simulation/grid-forest-matching/research/edge-obstacles-results.json"
+      ],
+      "verification": {
+        "cwd": "repository-root",
+        "requirements": [
+          "Python >= 3.10, standard library only"
+        ],
+        "commands": [
+          "python topics/simulation/grid-forest-matching/research/verify_edge_obstacles.py --output tmp/grid-forest-matching/edge-obstacles-results.json --check-published"
+        ]
+      },
+      "citation_key": "OccamGC2026EdgeObstacleGridForest",
+      "extends": [
+        "grid-forest-matching-cubic-bound",
+        "grid-forest-matching-eight-neighbor"
+      ]
+    },
+    {
       "id": "grid-forest-matching-comb-candidates",
       "title": {
         "zh": "线性轮筛选后仍有平方候选的单棵梳形树",

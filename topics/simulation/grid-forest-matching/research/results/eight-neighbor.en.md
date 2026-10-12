@@ -218,3 +218,5 @@ python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py 
 The mathematical result depends on the proof transfer in Sections 2–4. Finite checks only help detect inconsistencies in eight-direction adjacency, candidate answers, and the charging implementation.
 
 This note extends matching complexity only; it does not transfer orthogonal or diagonal-only tree-extension obstructions to the eight-neighbor model. Verification needs Python 3.10 or later, standard library only. The citation key is `OccamGC2026EightNeighborGridForest`; see the [citation guide](../../../../../CITATION.md). Proof status indicates a written proof in this repository, not external peer review or proof-assistant verification.
+
+Further extension: [vertex and edge obstacles](edge-obstacles.en.md) allow selective edge blocking, require the actual traversable graph to be a forest, and explain the necessary algorithm and intersection changes.

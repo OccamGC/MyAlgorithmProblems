@@ -1,8 +1,8 @@
 # 复杂度研究资料 / Complexity research
 
-首次阅读可从[网格森林平移匹配的三次方上界](results/cubic-bound.zh.md)与[诱导网格森林不能总靠补点扩充成树](results/tree-extension.zh.md)的摘要开始。拓展模型见[仅对角邻接的奇偶拆分与完整证明](results/diagonal-only.zh.md)及[八邻接的方向词推广与三次方界](results/eight-neighbor.zh.md)。各入口给出模型、结论、证明和复核命令。
+首次阅读可从[网格森林平移匹配的三次方上界](results/cubic-bound.zh.md)与[诱导网格森林不能总靠补点扩充成树](results/tree-extension.zh.md)的摘要开始。拓展模型见[仅对角邻接的奇偶拆分与完整证明](results/diagonal-only.zh.md)及[八邻接的方向词推广与三次方界](results/eight-neighbor.zh.md)。允许单独封闭路径时，见[四邻接与八邻接的边障碍拓展](results/edge-obstacles.zh.md)。各入口给出模型、结论、证明和复核命令。
 
-Start with the summaries of [the cubic bound for grid forest translation matching](results/cubic-bound.en.md) and [obstructions to extending induced grid forests to trees](results/tree-extension.en.md). Extensions cover [diagonal-only adjacency through parity decomposition](results/diagonal-only.en.md) and [eight-neighbor adjacency through direction words](results/eight-neighbor.en.md). Each entry identifies the model, result, proof, and verification commands.
+Start with the summaries of [the cubic bound for grid forest translation matching](results/cubic-bound.en.md) and [obstructions to extending induced grid forests to trees](results/tree-extension.en.md). Extensions cover [diagonal-only adjacency through parity decomposition](results/diagonal-only.en.md) and [eight-neighbor adjacency through direction words](results/eight-neighbor.en.md). For individually blocked paths, see [the edge-obstacle extension for four and eight neighbors](results/edge-obstacles.en.md). Each entry identifies the model, result, proof, and verification commands.
 
 [结论状态索引 / Result status index](../../../../research-index.json) · [Agent 导航 / Agent guide](../../../../llms.txt) · [固定版本引用 / Versioned citations](../../../../CITATION.md)
 
@@ -22,6 +22,7 @@ Continuation update, 2026-10-12: opposite early arms refute direction A's connec
 | 有限第二轴引理与一般三次方证明 / Finite second-axis lemma and general cubic proof | [证明、符号速查与收费算例](proofs/cubic-bound.zh.md) | [Proof, notation guide, and worked charge](proofs/cubic-bound.en.md) |
 | 仅对角邻接拓展：奇偶同构、上下界与补树障碍 / Diagonal-only extension: parity isomorphism, bounds, and tree obstructions | [完整归约证明](results/diagonal-only.zh.md) | [Complete reduction proof](results/diagonal-only.en.md) |
 | 八邻接拓展：秩四方向词、相同收费预算与上下界 / Eight-neighbor extension: rank-four direction words, unchanged budgets, and matching bounds | [完整证明迁移](results/eight-neighbor.zh.md) | [Complete proof transfer](results/eight-neighbor.en.md) |
+| 顶点与路径障碍：实际开放边森林、算法修改与相同三次方界 / Vertex and edge obstacles: traversable forests, modified algorithm, and unchanged cubic bound | [结论、证明与复核](results/edge-obstacles.zh.md) | [Result, proof, and checks](results/edge-obstacles.en.md) |
 | 较早的带对数上界 / Earlier logarithmic bound | [详细证明与图示](../complexity.zh.md) | [Illustrated proof](../complexity.en.md) |
 | 去掉对数的进展 / Removing the logarithm | [研究综述](../complexity-research.zh.md) | [Overview](../complexity-research.en.md) |
 | 路径与方向字符串 / Paths and direction strings | [证明](proofs/complexity-paths.zh.md) | [Proof](proofs/complexity-paths.en.md) |
@@ -81,6 +82,10 @@ The [complete-charge verifier](verify_cubic_bound.py) independently reconstructs
 
 The [eight-neighbor verifier](verify_eight_neighbor.py) checks every induced edge, exhausts 847,872 short walks on small boards, and audits 881 complete-charge cases, including mixed-direction curved power-one and repeated-early-endpoint instances. The [report](eight-neighbor-results.json) stores case fingerprints, statistics, and source hashes. It reuses the original charging core, with an independent stepwise simulation for small-case answers. Finite evidence neither replaces the proof nor establishes smaller capacity constants.
 
+[路径障碍验证器](verify_edge_obstacles.py)同时覆盖四邻接与八邻接，穷举二阶棋盘全部可用点集和无环开放边集的 351,744 个四步行走组合，并复核 677 个完整历史收费实例。[报告](edge-obstacles-results.json)保存逐例统计、收费指纹和源码散列。另含闭环整体判零、公共交域需检查两侧边的负对照，以及全道路水平路径的精确下界。收费核心仍复用原实现，答案则以独立逐步模拟核对。
+
+The [edge-obstacle verifier](verify_edge_obstacles.py) covers both four and eight neighbors, exhausting 351,744 four-step walks over all usable vertex sets and acyclic open-edge sets on a two-by-two board, plus 677 complete-history charging cases. Its [report](edge-obstacles-results.json) stores per-case statistics, charging fingerprints, and source hashes. Controls check bulk clearing on a new cycle, open edges on both sides of an intersection, and the exact lower-bound cost on fully usable horizontal paths. The charging core is reused; an independent stepwise oracle checks answers.
+
 从仓库根目录运行。验证脚本只依赖 Python 3.10+ 标准库；C++ 答案对照另需 C++17 编译器。下面把新结果写入已忽略的临时目录，保留随仓库发布的结果记录。
 
 Run from the repository root. Verification uses only the Python 3.10+ standard library; comparing C++ answers additionally needs a C++17 compiler. Fresh reports below go into an ignored temporary directory, preserving the published evidence.
@@ -93,6 +98,7 @@ python topics/simulation/grid-forest-matching/research/verify_examples.py
 python topics/simulation/grid-forest-matching/research/verify_cubic_bound.py --output tmp/grid-forest-matching/cubic-bound-results.json
 python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json
 python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py --output tmp/grid-forest-matching/eight-neighbor-results.json
+python topics/simulation/grid-forest-matching/research/verify_edge_obstacles.py --output tmp/grid-forest-matching/edge-obstacles-results.json --check-published
 ```
 
 需要与标准程序比较时，编译后选择下面的完整复核命令。它包含全部 1,886 个实例的 Python 复核，并对其中 17 个实例运行标准程序。结果中的 `program_compared` 字段取决于是否传入该选项。

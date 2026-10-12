@@ -28,7 +28,7 @@ def main():
         "complexity-overlaps", "complexity-labels", "reference-followup", "reference-capacity", "cubic-bound"]]
     pairs += [HERE / "examples" / name for name in [
         "comb-scales", "comb-candidates", "tree-extension", "local-obstructions", "reference-components"]]
-    pairs += [HERE / "results" / name for name in ["cubic-bound", "tree-extension", "diagonal-only", "eight-neighbor"]]
+    pairs += [HERE / "results" / name for name in ["cubic-bound", "tree-extension", "diagonal-only", "eight-neighbor", "edge-obstacles"]]
     counts = {}
     for stem in pairs:
         zh, en = formulas(Path(str(stem)+".zh.md")), formulas(Path(str(stem)+".en.md"))

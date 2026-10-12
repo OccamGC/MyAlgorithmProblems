@@ -88,11 +88,15 @@ def main():
         extension = f'topics/simulation/grid-forest-matching/research/results/eight-neighbor.{language}/index.html'
         assert pages[extension].display_math >= 10, (extension, pages[extension].display_math)
         assert pages[extension].math == 89, (extension, pages[extension].math)
+        edges = f'topics/simulation/grid-forest-matching/research/results/edge-obstacles.{language}/index.html'
+        assert pages[edges].display_math == 9, (edges, pages[edges].display_math)
+        assert pages[edges].math == 70, (edges, pages[edges].math)
     search = json.loads((SITE / 'search/search_index.json').read_text(encoding='utf8'))
     assert any('cubic-bound.zh' in row['location'] for row in search['docs'])
     assert any('tree-extension.en' in row['location'] for row in search['docs'])
     for language in ['zh', 'en']:
         assert any(f'eight-neighbor.{language}' in row['location'] for row in search['docs'])
+        assert any(f'edge-obstacles.{language}' in row['location'] for row in search['docs'])
     sitemap = ET.parse(SITE / 'sitemap.xml')
     assert len(sitemap.getroot()) >= len(pages) - 1
     print(json.dumps({'html_pages': len(pages), 'checked_internal_links': count,
