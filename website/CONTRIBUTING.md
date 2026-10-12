@@ -57,6 +57,8 @@ python website/check_site.py
 
 首次构建需要联网获取固定版本的 MathJax 并校验 SHA-256；文件缓存在已忽略的 `build/vendor/`。网站发布的公式脚本与字体图形自包含，页面本身无需访问公式 CDN。Material 的字体使用系统字体。
 
+独立公式使用各占一行的 `$$` 分隔符。网站也兼容公式紧贴前后文字、未留空行的写法；`website/markdown_math.py` 在 Markdown 解析阶段保留公式原文，再交给 MathJax。代码示例中的分隔符不会被当成公式。整站检查会拦截代码块之外残留的 `$$`，避免漏渲染悄悄发布。公式兼容性回归测试可运行 `python -m unittest discover -s website -p 'test_*.py'`。
+
 输出为 `build/pages/`，可本地预览：
 
 ```text

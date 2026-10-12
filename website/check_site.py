@@ -16,15 +16,21 @@ class Page(HTMLParser):
         self.ids = set()
         self.links = []
         self.math = 0
+        self.display_math = 0
+        self.literal_depth = 0
+        self.readable_text = []
         self.canonical = None
         self.feed(text)
 
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
+        if tag in ('code', 'pre', 'script', 'style'):
+            self.literal_depth += 1
         if 'id' in attrs:
             self.ids.add(attrs['id'])
         if 'arithmatex' in attrs.get('class', '').split():
             self.math += 1
+            self.display_math += tag == 'div'
         if tag == 'link' and attrs.get('rel') == 'canonical':
             self.canonical = attrs.get('href')
         if tag in ('a', 'link', 'script', 'img'):
@@ -32,12 +38,22 @@ class Page(HTMLParser):
             if href:
                 self.links.append(href)
 
+    def handle_endtag(self, tag):
+        if tag in ('code', 'pre', 'script', 'style'):
+            self.literal_depth -= 1
+
+    def handle_data(self, data):
+        if not self.literal_depth:
+            self.readable_text.append(data)
+
 
 def main():
     pages = {p.relative_to(SITE).as_posix(): Page(p.read_text(encoding='utf8')) for p in SITE.rglob('*.html')}
     broken = []
     count = 0
     for path, page in pages.items():
+        if '$$' in '\n'.join(page.readable_text):
+            broken.append((path, '$$', 'unprocessed display-math delimiter outside code'))
         for link in page.links:
             url = urlsplit(urljoin(BASE + path, link))
             if url.netloc != urlsplit(BASE).netloc:
@@ -67,6 +83,8 @@ def main():
     for language in ['zh', 'en']:
         path = f'topics/simulation/grid-forest-matching/research/proofs/cubic-bound.{language}/index.html'
         assert pages[path].math >= 50, (language, pages[path].math)
+        regression = f'topics/data-structures/selective-suffix-sort/statement.{language}/index.html'
+        assert pages[regression].display_math == 2, (regression, pages[regression].display_math)
     search = json.loads((SITE / 'search/search_index.json').read_text(encoding='utf8'))
     assert any('cubic-bound.zh' in row['location'] for row in search['docs'])
     assert any('tree-extension.en' in row['location'] for row in search['docs'])

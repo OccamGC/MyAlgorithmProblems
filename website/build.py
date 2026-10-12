@@ -21,6 +21,7 @@ import yaml
 from mkdocs.commands.build import build
 from mkdocs.config import load_config
 from pymdownx.slugs import slugify
+from markdown_math import AdjacentDisplayMathExtension
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'build/site-source'
@@ -306,6 +307,7 @@ def main() -> None:
     write(SOURCE / 'llms.txt', llms)
     write(SOURCE / '.nojekyll', '')
     config = load_config(config_file=str(ROOT / 'mkdocs.yml'), strict=True)
+    config['markdown_extensions'].append(AdjacentDisplayMathExtension())
     for extension in config['mdx_configs']:
         if extension == 'toc':
             config['mdx_configs'][extension]['slugify'] = slugify(case='lower')
