@@ -141,9 +141,9 @@ The per-label budgets are therefore unchanged:
 
 | Part | Budget |
 | --- | --- |
-| Markers paid at the common cut | $|G_h|$ |
-| Component-local reference classes | $|G_h|$ |
-| Nonreference strict markers | $2|G_h|$ |
+| Markers paid at the common cut | $\lvert G_h\rvert$ |
+| Component-local reference classes | $\lvert G_h\rvert$ |
+| Nonreference strict markers | $2\lvert G_h\rvert$ |
 
 Hence
 

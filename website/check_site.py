@@ -87,6 +87,7 @@ def main():
         assert pages[regression].display_math == 2, (regression, pages[regression].display_math)
         extension = f'topics/simulation/grid-forest-matching/research/results/eight-neighbor.{language}/index.html'
         assert pages[extension].display_math >= 10, (extension, pages[extension].display_math)
+        assert pages[extension].math == 89, (extension, pages[extension].math)
     search = json.loads((SITE / 'search/search_index.json').read_text(encoding='utf8'))
     assert any('cubic-bound.zh' in row['location'] for row in search['docs'])
     assert any('tree-extension.en' in row['location'] for row in search['docs'])
