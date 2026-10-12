@@ -36,6 +36,8 @@ jobs:
         run: python -m unittest discover -s website -p 'test_*.py'
       - name: Verify diagonal-only reduction
         run: python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json
+      - name: Verify eight-neighbor forests and charging certificates
+        run: python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py --output tmp/grid-forest-matching/eight-neighbor-results.json --check-published
       - name: Build website
         run: python website/build.py
       - name: Check rendered site

@@ -171,6 +171,56 @@
       "extends": ["grid-forest-matching-cubic-bound", "induced-grid-forest-tree-extension-obstructions"]
     },
     {
+      "id": "grid-forest-matching-eight-neighbor",
+      "featured": true,
+      "title": {
+        "zh": "八邻接诱导森林：三次方复杂度仍然成立",
+        "en": "Eight-neighbor induced forests retain the cubic bound"
+      },
+      "summary": {
+        "zh": "同时允许正交和对角方向时，秩四方向词保留完整历史收费与有限第二轴引理，得到相同的检查次数上界和三次方最坏量级。",
+        "en": "With both orthogonal and diagonal moves, rank-four direction words preserve complete-history charging and the finite second-axis lemma, giving the same exact check bound and cubic worst-case order."
+      },
+      "status": "current_proof",
+      "keywords": ["eight-neighbor grid forest", "king graph", "translation matching", "rank-four free group", "finite second-axis lemma", "cubic bound", "八邻接", "诱导森林", "方向词", "三次方上界"],
+      "assumptions": [
+        "Roads on an n-by-n board induce a forest with all eight orthogonal and diagonal neighbor edges retained; the road set may be empty.",
+        "Moves use those same eight directions without additional side-cell corner-cutting restrictions.",
+        "Every valid start executes the entire movement prefix; failures are permanent, and the candidate-list algorithm scans only at new relative displacements."
+      ],
+      "conclusions": [
+        "W <= (5n-3)N; time O(n^2 + m + nN), hence O(n^3 + m); space O(n^2).",
+        "For m >= n-1, separated horizontal road rows give matching worst-case time Theta(n^3 + m) for the candidate-list algorithm.",
+        "The complete-history proof extends from two to four inverse direction pairs; the per-label budget remains 1+1+2, independently of the number of directions."
+      ],
+      "limitations": [
+        "This extends the existing charging proof, not the diagonal-only parity reduction. Diagonal letters must remain independent generators despite coordinate relations.",
+        "No eight-neighbor tree-extension obstruction is established here.",
+        "The lower bound concerns the candidate-list algorithm, not all algorithms. Finite checks supplement the proof; the certificate core is reused, not independently reimplemented.",
+        "The original problem statement, direction encoding, and C++ reference program remain orthogonal."
+      ],
+      "entry_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/eight-neighbor.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md"
+      },
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/eight-neighbor.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md"
+      },
+      "evidence_paths": [
+        "topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py",
+        "topics/simulation/grid-forest-matching/research/eight-neighbor-results.json"
+      ],
+      "verification": {
+        "cwd": "repository-root",
+        "requirements": ["Python >= 3.10, standard library only"],
+        "commands": ["python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py --output tmp/grid-forest-matching/eight-neighbor-results.json"]
+      },
+      "citation_key": "OccamGC2026EightNeighborGridForest",
+      "extends": ["grid-forest-matching-cubic-bound"],
+      "related_results": ["grid-forest-matching-diagonal-only"]
+    },
+    {
       "id": "grid-forest-matching-comb-candidates",
       "title": {
         "zh": "线性轮筛选后仍有平方候选的单棵梳形树",

@@ -85,9 +85,13 @@ def main():
         assert pages[path].math >= 50, (language, pages[path].math)
         regression = f'topics/data-structures/selective-suffix-sort/statement.{language}/index.html'
         assert pages[regression].display_math == 2, (regression, pages[regression].display_math)
+        extension = f'topics/simulation/grid-forest-matching/research/results/eight-neighbor.{language}/index.html'
+        assert pages[extension].display_math >= 10, (extension, pages[extension].display_math)
     search = json.loads((SITE / 'search/search_index.json').read_text(encoding='utf8'))
     assert any('cubic-bound.zh' in row['location'] for row in search['docs'])
     assert any('tree-extension.en' in row['location'] for row in search['docs'])
+    for language in ['zh', 'en']:
+        assert any(f'eight-neighbor.{language}' in row['location'] for row in search['docs'])
     sitemap = ET.parse(SITE / 'sitemap.xml')
     assert len(sitemap.getroot()) >= len(pages) - 1
     print(json.dumps({'html_pages': len(pages), 'checked_internal_links': count,

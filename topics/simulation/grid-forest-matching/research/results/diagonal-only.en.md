@@ -1,5 +1,7 @@
 # Diagonal-only grid forests: parity decomposition and cubic bounds
 
+For the model retaining both orthogonal and diagonal edges, see the [eight-neighbor extension](eight-neighbor.en.md), proved through direction words.
+
 [中文](diagonal-only.zh.md) · [Orthogonal cubic proof](../proofs/cubic-bound.en.md) · [Tree-extension obstructions](../examples/tree-extension.en.md) · [Citation](../../../../../CITATION.md) · [Research directory](../README.md)
 
 Date: 2026-10-12. This note gives the complete reduction for four diagonal directions only. It is a corollary of the existing orthogonal results: each parity class is isomorphic to the orthogonal integer grid, with answers and individual candidate checks preserved. No new charging proof is needed.

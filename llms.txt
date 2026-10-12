@@ -1,6 +1,6 @@
 # MyAlgorithmProblems
 
-> 192 algorithm problems with Chinese and English statements and editorials, C++17 solutions, and reproducible Python generators. Selected research covers translation matching in induced four-neighbor grid forests and obstructions to extending such forests to trees.
+> 192 algorithm problems with Chinese and English statements and editorials, C++17 solutions, and reproducible Python generators. Selected research covers translation matching in induced four-neighbor, diagonal-only, and eight-neighbor grid forests, together with tree-extension obstructions in the first two models.
 
 Research notation: n is board side length, N is road vertex count (N <= n^2), m is actual move count, and W is total individual candidate checks. Candidate-list filtering occurs only at previously unseen relative displacements.
 
@@ -9,6 +9,8 @@ The current proof gives W <= (5n-3)N and time O(n^2+m+nN), hence O(n^3+m), for g
 The tree-extension counterexamples retain fixed grid positions and every induced four-neighbor edge, permitting only vertex addition. They remain obstructions on larger boards, and do not disprove reductions that change those rules. They do not imply supercubic matching work.
 
 With diagonal-only adjacency and movement (+/-1,+/-1), the two coordinate-sum parity classes separately map to orthogonal grids of side at most n. Answers and candidate checks add exactly, preserving W <= (5n-3)N and the cubic worst-case order. Tree-extension obstructions transfer within a parity class; different classes are never connectable. This corollary excludes eight-neighbor movement and side-cell corner-cutting restrictions.
+
+With all eight orthogonal and diagonal directions retained, the full induced road graph must still be a forest. A separate proof extends direction words to the rank-four free group and preserves the finite second-axis lemma and the 1+1+2 charging budgets. Thus W <= (5n-3)N and O(n^3+m) time still hold, with matching worst-case order for the candidate-list algorithm when m >= n-1. The parity reduction is not used. This result does not establish eight-neighbor tree-extension obstructions, and the C++ reference program remains four-directional.
 
 Direction A's connected-resource-union disjointness conjecture is false. The current proof uses bounded resource-assignment capacity instead. Historical finite experiments and the earlier capacity draft have limited scope. A repository status of current_proof means a written proof is available; it is not a claim of external peer review or formal verification.
 
@@ -20,6 +22,8 @@ Direction A's connected-resource-union disjointness conjecture is false. The cur
 - [补树障碍，中文](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/tree-extension.zh.md): 小反例、两条长路径及线性数量大分量的两两障碍。
 - [Diagonal-only extension, English](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/diagonal-only.en.md): Full parity-isomorphism proof, exact check bound, transferred lower bound and tree obstructions, and finite verification scope.
 - [仅对角邻接，中文](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/diagonal-only.zh.md): 奇偶拆分与完整证明、复杂度上下界、补树障碍及复核说明。
+- [Eight-neighbor extension, English](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md): Full proof transfer using rank-four direction words, unchanged exact bound, stripe lower bound, and finite charging certificates.
+- [八邻接拓展，中文](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/eight-neighbor.zh.md): 四对方向符号、有限第二轴引理迁移、复杂度上下界和完整收费复核。
 - [Result and status index](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/research-index.json): Machine-readable assumptions, conclusions, current and historical statuses, proof paths, and verification commands. Paths are relative to repository root.
 
 ## Full proofs and reproduction
