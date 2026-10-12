@@ -166,6 +166,8 @@
         "commands": ["python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json"]
       },
       "citation_key": "OccamGC2026DiagonalGridForest",
+      "publication_commit": "3fe652bb9f3458ed41071e5f2377141272848dbc",
+      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/3fe652bb9f3458ed41071e5f2377141272848dbc/topics/simulation/grid-forest-matching/research/results/diagonal-only.en.md",
       "extends": ["grid-forest-matching-cubic-bound", "induced-grid-forest-tree-extension-obstructions"]
     },
     {
