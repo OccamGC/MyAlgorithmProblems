@@ -1,0 +1,34 @@
+# MyAlgorithmProblems
+
+> 192 algorithm problems with Chinese and English statements and editorials, C++17 solutions, and reproducible Python generators. Selected research covers translation matching in induced four-neighbor grid forests and obstructions to extending such forests to trees.
+
+Research notation: n is board side length, N is road vertex count (N <= n^2), m is actual move count, and W is total individual candidate checks. Candidate-list filtering occurs only at previously unseen relative displacements.
+
+The current proof gives W <= (5n-3)N and time O(n^2+m+nN), hence O(n^3+m), for general induced grid forests. The matching worst-case lower bound for m >= n-1 concerns this candidate-list algorithm, not all possible algorithms. The old logarithmic bound is valid but weaker.
+
+The tree-extension counterexamples retain fixed grid positions and every induced four-neighbor edge, permitting only vertex addition. They remain obstructions on larger boards, and do not disprove reductions that change those rules. They do not imply supercubic matching work.
+
+Direction A's connected-resource-union disjointness conjecture is false. The current proof uses bounded resource-assignment capacity instead. Historical finite experiments and the earlier capacity draft have limited scope. A repository status of current_proof means a written proof is available; it is not a claim of external peer review or formal verification.
+
+## Result summaries
+
+- [Cubic bound, English](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/cubic-bound.en.md): Model, exact bound, proof outline, reproduction, and citation.
+- [三次方上界，中文](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/cubic-bound.zh.md): 模型、准确结论、证明思路、复核与引用。
+- [Tree-extension obstructions, English](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/tree-extension.en.md): Small and scalable counterexamples under fixed-position induced vertex addition.
+- [补树障碍，中文](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/results/tree-extension.zh.md): 小反例、两条长路径及线性数量大分量的两两障碍。
+- [Result and status index](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/research-index.json): Machine-readable assumptions, conclusions, current and historical statuses, proof paths, and verification commands. Paths are relative to repository root.
+
+## Full proofs and reproduction
+
+- [General cubic proof](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/proofs/cubic-bound.en.md): Complete-history charging, finite second-axis lemma, capacity-two bins, and lower bound.
+- [Tree-extension proof](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/examples/tree-extension.en.md): Coordinates, forbidden separators, and proofs for arbitrary parameters.
+- [Algorithm editorial](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/solution.en.md): Algorithm and implementation details.
+- [Research directory and verification commands](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/README.md): Bilingual reading map, Python checks, and optional C++ comparisons. Finite verification supplements mathematical proofs.
+- [Citation guide](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/CITATION.md): Separate research-note citations and immutable proof URLs at publication commit 640ae4ac52a1ce5a3082022162611839f97591fe.
+
+## Optional
+
+- [All problems](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/README.md): Topic index for the full bilingual problem collection.
+- [Research history](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/complexity-research.en.md): Development of the logarithm-removal route.
+- [Opposite early arms and historical draft](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/proofs/reference-capacity.en.md): Refutation of direction A and the earlier capacity argument; the general theorem is in the current cubic proof.
+- [Comb candidate counts](https://raw.githubusercontent.com/OccamGC/MyAlgorithmProblems/main/topics/simulation/grid-forest-matching/research/examples/comb-candidates.en.md): Quadratically many survivors after linearly many effective scans do not imply supercubic total work.

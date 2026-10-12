@@ -1,10 +1,23 @@
-# 算法题库
+# MyAlgorithmProblems 算法题库与研究笔记
 
 共 192 道题，按主题排列。每题提供中英文题面与题解、C++17 标准程序、样例，以及可重复生成测试输入的 Python 3 脚本。具有多种解法的题目在题解中说明首选、并列或备用方案及其适用条件。
 
 题目使用与评测说明见[评测环境与性能](docs/评测环境与性能.md)。Grox、Spode 系列的英文题记来源见[Spore 题记来源](docs/Spore题记来源.md)。
 
-网格森林匹配的复杂度研究：一般三次方上界的[中文证明](topics/simulation/grid-forest-matching/research/proofs/cubic-bound.zh.md)与[English proof](topics/simulation/grid-forest-matching/research/proofs/cubic-bound.en.md)，以及[研究过程、反例和复核方法](topics/simulation/grid-forest-matching/research/README.md)。
+192 algorithm problems with Chinese and English statements and editorials, C++17 solutions, and reproducible Python test generators. Research notes include amortized analysis of translation matching in induced grid forests and obstructions to extending such forests to trees.
+
+## 研究成果 / Research results
+
+下表链接到结论摘要、精确假设、证明和复核方法。这里的 n 是网格边长，N 是道路顶点数，m 是移动次数。
+
+The entries below give precise assumptions, result summaries, proofs, and reproducibility instructions. Here n is the board side length, N the number of road vertices, and m the number of moves.
+
+| 问题 / Question | 结论 / Result | 阅读入口 / Start here |
+| --- | --- | --- |
+| 四邻接网格森林的平移匹配 / Translation matching in four-neighbor grid forests | 候选列表算法的总检查次数 W ≤ (5n−3)N，时间 O(n²+m+nN)，从而 O(n³+m) / Cubic upper bound; matching worst-case lower bound when m ≥ n−1 | [中文](topics/simulation/grid-forest-matching/research/results/cubic-bound.zh.md) · [English](topics/simulation/grid-forest-matching/research/results/cubic-bound.en.md) |
+| 诱导网格森林能否补点扩充成树 / Can an induced grid forest be extended to a tree by adding vertices? | 固定位置、保留全部四邻接边时不一定能；存在 Θ(n) 棵、每棵 Θ(n) 个顶点的两两障碍族 / Counterexamples with linearly many large components | [中文](topics/simulation/grid-forest-matching/research/results/tree-extension.zh.md) · [English](topics/simulation/grid-forest-matching/research/results/tree-extension.en.md) |
+
+[全部研究材料 / Research directory](topics/simulation/grid-forest-matching/research/README.md) · [结论与状态索引 / Machine-readable result index](research-index.json) · [Agent 阅读导航 / Agent reading guide](llms.txt) · [引用 / How to cite](CITATION.md)
 
 ## 题目目录
 

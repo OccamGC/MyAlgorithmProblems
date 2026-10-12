@@ -1,5 +1,7 @@
 # Matching in a Class of Four-Neighbor Grid Forests
 
+Research update (2026-10-12): the cubic upper-bound conjecture in the story now has a [general proof and result summary](research/results/cubic-bound.en.md). The problem and input/output requirements retain their original definitions.
+
 Estimated time limit: 1 seconds. Memory limit: 128 MB.
 
 The actual limit is the reference program's slowest median runtime on the target platform multiplied by $11$ , rounded up to a multiple of $0.5$ seconds. See the [evaluation environment](../../../docs/评测环境与性能.md).

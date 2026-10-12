@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "For the repository, cite this record and the commit used. For individual grid-forest-matching results, use the separate versioned research-note citations in CITATION.md."
+title: "MyAlgorithmProblems: Bilingual Algorithm Problems and Research Notes"
+type: software
+authors:
+  - family-names: "OccamGC"
+    alias: "OccamGC"
+    website: "https://github.com/OccamGC"
+url: "https://github.com/OccamGC/MyAlgorithmProblems"
+repository-code: "https://github.com/OccamGC/MyAlgorithmProblems"
+abstract: "A bilingual algorithm problem collection with C++17 solutions, Python test generators, and research notes on translation matching in induced grid forests and obstructions to induced tree extension."
+keywords:
+  - algorithms
+  - graph theory
+  - grid forests
+  - translation matching
+  - amortized analysis
+  - induced tree extension

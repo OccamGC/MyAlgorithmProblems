@@ -8,6 +8,7 @@ from urllib.parse import unquote
 
 HERE = Path(__file__).resolve().parent
 PROBLEM = HERE.parent
+REPO = PROBLEM.parents[2]
 BT = chr(96)
 MATH = re.compile(BT*3+r"[^\n]*\n.*?"+BT*3+"|"+BT+"[^"+BT+r"\n]*"+BT+
                   r"|\$\$(.*?)\$\$|(?<![\$\\])\$(?!\$)([^\n]*?)(?<!\\)\$(?!\$)", re.S)
@@ -27,14 +28,16 @@ def main():
         "complexity-overlaps", "complexity-labels", "reference-followup", "reference-capacity", "cubic-bound"]]
     pairs += [HERE / "examples" / name for name in [
         "comb-scales", "comb-candidates", "tree-extension", "local-obstructions", "reference-components"]]
+    pairs += [HERE / "results" / name for name in ["cubic-bound", "tree-extension"]]
     counts = {}
     for stem in pairs:
         zh, en = formulas(Path(str(stem)+".zh.md")), formulas(Path(str(stem)+".en.md"))
         assert zh == en, (stem.name, zh-en, en-zh)
-        counts[stem.name] = sum(zh.values())
+        counts[stem.relative_to(PROBLEM).as_posix()] = sum(zh.values())
     broken = []
     links = 0
     documents = list(PROBLEM.glob("*.md")) + list(HERE.rglob("*.md"))
+    documents += [REPO / name for name in ["README.md", "CITATION.md", "llms.txt"]]
     for path in documents:
         body = path.read_text(encoding="utf8")
         assert body.count("$$") % 2 == 0, path
@@ -44,7 +47,7 @@ def main():
             target = (path.parent / unquote(link.split("#", 1)[0].strip("<>"))).resolve()
             links += 1
             if not target.exists():
-                broken.append((str(path.relative_to(PROBLEM)), link))
+                broken.append((str(path.relative_to(REPO)), link))
     assert not broken, json.dumps(broken, ensure_ascii=False, indent=2)
     expected = "0aabcd81214279752287d1ca35ff4192fd4dafbca47a74037e36da63b2a546d0"
     assert hashlib.sha256((PROBLEM/"std.cpp").read_bytes()).hexdigest() == expected

@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/OccamGC/MyAlgorithmProblems",
+  "updated": "2026-10-12",
+  "path_base": "repository-root",
+  "scope": "Selected grid-forest-matching research results, not a catalog of every problem in the repository.",
+  "publication_commit": "640ae4ac52a1ce5a3082022162611839f97591fe",
+  "version_policy": "publication_commit identifies the published proofs and evidence. Entry pages and this index are maintained on the default branch; cite the immutable proof links for that research version.",
+  "notation": {
+    "n": "Square board side length",
+    "N": "Number of road vertices, at most n^2",
+    "m": "Number of actual moves",
+    "W": "Total individual candidate checks at newly discovered relative displacements"
+  },
+  "status_definitions": {
+    "current_proof": "A general written proof is supplied in this repository; this is a repository classification, not a claim of external peer review or formal proof-assistant verification.",
+    "refuted_conjecture": "A previously proposed claim has a documented counterexample; use the counterexample, not the claim, as the result.",
+    "historical_upper_bound": "A valid earlier bound superseded in strength by a current proof.",
+    "historical_experiment": "Finite evidence retained for reproducibility; it does not prove the associated general conjecture."
+  },
+  "results": [
+    {
+      "id": "grid-forest-matching-cubic-bound",
+      "title": {
+        "zh": "四邻接网格森林平移匹配的三次方复杂度上界",
+        "en": "A cubic time bound for translation matching in four-neighbor grid forests"
+      },
+      "status": "current_proof",
+      "keywords": ["grid forest matching", "translation matching", "walk prefix matching", "candidate filtering", "amortized analysis", "cubic time bound", "网格森林匹配", "平移匹配", "摊还分析", "去对数"],
+      "assumptions": [
+        "Road cells induce a forest with all orthogonal neighbor edges retained on an n-by-n board; the road set may be empty.",
+        "The entire movement prefix must remain on roads under translation, without rotation or reflection.",
+        "Candidates are eliminated permanently on failure; the candidate-list algorithm scans only at first visits to relative displacements."
+      ],
+      "conclusions": [
+        "W <= (5n-3)N.",
+        "Time O(n^2 + m + nN), hence O(n^3 + m); space O(n^2).",
+        "When m >= n-1, this candidate-list algorithm has matching worst-case time Theta(n^3 + m).",
+        "For short walks, time O(n^2 + m + N min(m,n))."
+      ],
+      "limitations": [
+        "The lower bound concerns this candidate-list algorithm, not every possible algorithm for the problem.",
+        "Finite checks supplement the written proof; they do not exhaust all boards or movement sequences."
+      ],
+      "entry_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/cubic-bound.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/cubic-bound.en.md"
+      },
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/proofs/cubic-bound.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/proofs/cubic-bound.en.md"
+      },
+      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/640ae4ac52a1ce5a3082022162611839f97591fe/topics/simulation/grid-forest-matching/research/proofs/cubic-bound.en.md",
+      "evidence_paths": ["topics/simulation/grid-forest-matching/research/cubic-bound-results.json"],
+      "verification": {
+        "cwd": "repository-root",
+        "requirements": ["Python >= 3.10, standard library only"],
+        "commands": [
+          "python -c \"from pathlib import Path; Path('tmp/grid-forest-matching').mkdir(parents=True, exist_ok=True)\"",
+          "python topics/simulation/grid-forest-matching/research/verify_cubic_bound.py --output tmp/grid-forest-matching/cubic-bound-results.json"
+        ]
+      },
+      "citation_key": "OccamGC2026GridForestCubic",
+      "supersedes": ["grid-forest-matching-logarithmic-bound"]
+    },
+    {
+      "id": "induced-grid-forest-tree-extension-obstructions",
+      "title": {
+        "zh": "诱导四邻接网格森林不一定能通过补点扩充成树",
+        "en": "Induced four-neighbor grid forests need not extend to trees by adding vertices"
+      },
+      "status": "current_proof",
+      "keywords": ["induced grid forest", "induced tree extension", "vertex addition", "vertex-deleted grid tree", "nonextendable forest", "forbidden separator", "诱导网格森林", "森林扩充成树", "树删除顶点"],
+      "assumptions": [
+        "Original integer-grid vertex positions are fixed and every original vertex is retained.",
+        "All edges between vertices at Manhattan distance one are induced and cannot be selectively removed.",
+        "Only vertices may be added; even arbitrary enlargement of the board is allowed."
+      ],
+      "conclusions": [
+        "There exists a finite F whose induced grid graph is a forest but no finite superset S has an induced grid graph that is a tree.",
+        "A 5-by-5 example consists of a 13-vertex path and a singleton.",
+        "Two obstructed components may both be paths with Theta(n) vertices.",
+        "An n-by-n board may contain Theta(n) components, each of size Theta(n), such that any selected pair cannot be extended to an induced tree even after removing all other components.",
+        "For integer s >= 1 and n = 12s+1, the nested construction has s+1 trees, each with between 2n-5 and 4n-7 vertices."
+      ],
+      "limitations": [
+        "This refutes the fixed-position induced vertex-addition reduction; it does not rule out other reductions allowing relocation, scaling, edge deletion, or separate component accounting.",
+        "These static forests do not provide supercubic candidate-checking complexity."
+      ],
+      "entry_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/tree-extension.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/tree-extension.en.md"
+      },
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/examples/tree-extension.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/examples/tree-extension.en.md"
+      },
+      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/640ae4ac52a1ce5a3082022162611839f97591fe/topics/simulation/grid-forest-matching/research/examples/tree-extension.en.md",
+      "evidence_paths": ["topics/simulation/grid-forest-matching/research/verify_tree_extension.py"],
+      "verification": {
+        "cwd": "repository-root",
+        "requirements": ["Python >= 3.10, standard library only"],
+        "commands": ["python topics/simulation/grid-forest-matching/research/verify_tree_extension.py"]
+      },
+      "citation_key": "OccamGC2026GridForestTreeExtension"
+    },
+    {
+      "id": "grid-forest-matching-comb-candidates",
+      "title": {
+        "zh": "线性轮筛选后仍有平方候选的单棵梳形树",
+        "en": "A single comb tree retaining quadratically many candidates after linearly many scans"
+      },
+      "status": "current_proof",
+      "keywords": ["comb tree", "candidate count", "effective scans", "梳形树", "平方候选"],
+      "assumptions": ["n denotes board side length; effective scans visit previously unseen relative displacements."],
+      "conclusions": ["A single induced comb tree can retain Theta(n^2) candidates after Theta(n) effective scans."],
+      "limitations": ["The construction does not give supercubic total candidate checks; candidate count alone does not bound the full scan history."],
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/examples/comb-candidates.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/examples/comb-candidates.en.md"
+      }
+    },
+    {
+      "id": "grid-forest-matching-direction-a",
+      "title": {
+        "zh": "方向 A 的连通资源并集不交猜想已被否定",
+        "en": "Direction A's connected-resource-union disjointness conjecture is false"
+      },
+      "status": "refuted_conjecture",
+      "keywords": ["connected resource union", "opposite early arms", "reference class", "方向 A", "左右早横枝"],
+      "conjecture": "After removing a reference class, each connected union U of remaining early-prefix resources satisfies U intersect (U+h) = empty for its horizontal label h.",
+      "conclusions": ["Opposite early arms give a counterexample. A connected union of individually short resources need not be short or disjoint from its label translate."],
+      "limitations": ["The source also contains a historical capacity-two draft with narrower assumptions. Use the current cubic proof for the final all-powers theorem."],
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/proofs/reference-capacity.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/proofs/reference-capacity.en.md"
+      },
+      "evidence_paths": ["topics/simulation/grid-forest-matching/research/examples/inputs/opposite-arms.in"],
+      "related_results": ["grid-forest-matching-cubic-bound"]
+    },
+    {
+      "id": "grid-forest-matching-logarithmic-bound",
+      "title": {
+        "zh": "较早的带对数因子复杂度上界",
+        "en": "The earlier upper bound with a logarithmic factor"
+      },
+      "status": "historical_upper_bound",
+      "keywords": ["prefix-size bound", "logarithmic gap", "对数差距"],
+      "assumptions": ["The same induced-grid-forest candidate-list model as the current cubic bound."],
+      "conclusions": ["The bound O(n^3 log(n+1) + m) remains valid, but is weaker than the current O(n^3 + m) result."],
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/complexity.zh.md",
+        "en": "topics/simulation/grid-forest-matching/complexity.en.md"
+      },
+      "superseded_by": "grid-forest-matching-cubic-bound"
+    },
+    {
+      "id": "grid-forest-matching-direction-a-finite-search",
+      "title": {
+        "zh": "方向 A 的早期有限验证记录",
+        "en": "Early finite checks of direction A"
+      },
+      "status": "historical_experiment",
+      "keywords": ["finite verification", "reference components", "有限验证"],
+      "conclusions": ["The tested cases did not refute direction A; the later opposite-early-arms construction refutes its general form."],
+      "limitations": ["A successful finite experiment does not establish the general disjointness conjecture or the cubic theorem."],
+      "documentation_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/examples/reference-components.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/examples/reference-components.en.md"
+      },
+      "evidence_paths": ["topics/simulation/grid-forest-matching/research/reference-components-results.json"],
+      "related_results": ["grid-forest-matching-direction-a", "grid-forest-matching-cubic-bound"]
+    }
+  ]
+}

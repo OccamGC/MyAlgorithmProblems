@@ -1,5 +1,11 @@
 # 复杂度研究资料 / Complexity research
 
+首次阅读可从两项成果的摘要开始：[网格森林平移匹配的三次方上界](results/cubic-bound.zh.md)与[诱导网格森林不能总靠补点扩充成树](results/tree-extension.zh.md)。摘要分别给出模型、结论、证明入口和复核命令。
+
+Start with the summaries of [the cubic bound for grid forest translation matching](results/cubic-bound.en.md) and [obstructions to extending induced grid forests to trees](results/tree-extension.en.md). Each identifies the model, result, proof, and verification commands.
+
+[结论状态索引 / Result status index](../../../../research-index.json) · [Agent 导航 / Agent guide](../../../../llms.txt) · [固定版本引用 / Versioned citations](../../../../CITATION.md)
+
 一般的 $O(n^3+m)$ 上界已由有限第二轴引理与完整历史收费证明得到；当 $m\ge n-1$ 时有匹配下界。以下材料区分当前证明、辅助计费方法的反例与历史探索。
 
 A finite second-axis lemma and complete-history charge now prove the general $O(n^3+m)$ bound, matching the lower bound when $m\ge n-1$. These materials distinguish the current proof, counterexamples to auxiliary charges, and research history.
