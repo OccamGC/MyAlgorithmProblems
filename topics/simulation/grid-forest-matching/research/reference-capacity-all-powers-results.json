@@ -1,0 +1,392 @@
+{
+  "status": "finite checks of an obstruction and reference capacity",
+  "min_power": 1,
+  "cases": [
+    {
+      "name": "opposite-arms-small",
+      "roads": 171,
+      "query_size": 65,
+      "sha256": "7c0db3649bf042a25942cf5412ea36f341a4691148ef9ce3fa7534ea30b6685e",
+      "scenarios": 7,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "host_label_components": 7,
+      "assigned_marks": 38,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 2,
+      "obstruction": {
+        "h": [
+          0,
+          6
+        ],
+        "reference": [
+          [
+            -40,
+            0
+          ],
+          50,
+          56
+        ],
+        "markers": [
+          [
+            [
+              -23,
+              0
+            ],
+            31,
+            58
+          ],
+          [
+            [
+              -10,
+              0
+            ],
+            10,
+            60
+          ],
+          [
+            [
+              -10,
+              0
+            ],
+            11,
+            61
+          ],
+          [
+            [
+              -10,
+              0
+            ],
+            12,
+            62
+          ],
+          [
+            [
+              -10,
+              0
+            ],
+            13,
+            63
+          ],
+          [
+            [
+              -10,
+              0
+            ],
+            14,
+            64
+          ]
+        ],
+        "cut": 50,
+        "tau": 51,
+        "axis_span": 8,
+        "overlap": [
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            -2
+          ]
+        ],
+        "early_multiplicity": 1,
+        "failure_edges": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ]
+      },
+      "n": 71,
+      "moves": 116,
+      "scans": 1418,
+      "literal_stars_verified": true,
+      "literal_answers_verified": true,
+      "program_compared": true,
+      "input_sha256": "a42df97d57161119fe48ebb0425f56e1e5786b7fcd31700321bb83c54c0e06ce"
+    },
+    {
+      "name": "opposite-arms-seven-classes",
+      "roads": 1140,
+      "query_size": 291,
+      "sha256": "3927b71e3bdefd28599f7199ec1e8b4e41723429ea2af2431bd4dac55f5ce9c4",
+      "scenarios": 6,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "host_label_components": 6,
+      "assigned_marks": 147,
+      "max_capacity_used": 2,
+      "max_bins_at_a_resource_point": 2,
+      "after_four_classes_and_reference": {
+        "long_class_counts": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "remaining_sources": [
+          [
+            -6,
+            0
+          ],
+          [
+            -3,
+            0
+          ]
+        ],
+        "remaining_marks": 10,
+        "overlap": [
+          [
+            0,
+            -6
+          ],
+          [
+            0,
+            -5
+          ],
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            -2
+          ]
+        ],
+        "unpaid_after_source_blocks": 0
+      }
+    },
+    {
+      "name": "opposite-arms-power-3",
+      "roads": 133,
+      "query_size": 52,
+      "sha256": "cc6ca0ac738bb2779bd94761c97d0b501201eb0da125f5c548dc228f2220624c",
+      "scenarios": 2,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 2,
+      "power_one_scenarios": 0,
+      "host_label_components": 2,
+      "assigned_marks": 5,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 2,
+      "literal_stars_verified": true
+    },
+    {
+      "name": "opposite-arms-power-2",
+      "roads": 119,
+      "query_size": 47,
+      "sha256": "fd3ba7f1a75ceebbb5ebeeb34ac02057b46d4b6dc8e3c7863ba4ad7a9c399bf6",
+      "scenarios": 2,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 2,
+      "power_one_scenarios": 0,
+      "host_label_components": 2,
+      "assigned_marks": 3,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1,
+      "literal_stars_verified": true
+    },
+    {
+      "name": "unchanged-bounding-box.in",
+      "roads": 13,
+      "query_size": 8,
+      "sha256": "0ef51924cf7f99dca323a7bc00b3ec25f590604486e30d0d46ee15a0de021370"
+    },
+    {
+      "name": "unchanged-union.in",
+      "roads": 23,
+      "query_size": 14,
+      "sha256": "7d15998a5db0bc9bf05c44d98b049d7c33e81d26a54cff9816fcc8fc6c3dfdc3"
+    },
+    {
+      "name": "same-direction-parallelogram.in",
+      "roads": 43,
+      "query_size": 22,
+      "sha256": "f0f726b29df67aee70f562e40baef9d08e3e4765d764274c04de2ab61bb07b5f"
+    },
+    {
+      "name": "local-path-capacity-k2.in",
+      "roads": 37,
+      "query_size": 21,
+      "sha256": "5d65745f8aa0328be0a797921b9fa617a0acc1c883dfdc7e2add370e68930707",
+      "scenarios": 1,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "host_label_components": 1,
+      "assigned_marks": 3,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "connected-resources.in",
+      "roads": 118,
+      "query_size": 60,
+      "sha256": "e4432f817f24b996f3e5416ccd6666f6f2b3d18889c96a3328f5d72f8dd4410b",
+      "scenarios": 1,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "host_label_components": 1,
+      "assigned_marks": 3,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "overlapping-bands-s4.in",
+      "roads": 30,
+      "query_size": 15,
+      "sha256": "3ad072956e1c1c24a05752297361f89031569bb3d503ff8c0a1ef21b8a0d58e1"
+    },
+    {
+      "name": "repeated-axis-classes.in",
+      "roads": 2632,
+      "query_size": 132,
+      "sha256": "9122913d5f0cfb088710698d2ddb025202033d4e114dda569c05cc09661717d3",
+      "scenarios": 14,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 120,
+      "host_label_components": 14,
+      "assigned_marks": 240,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "nested-combs-k7-t3-w4.in",
+      "roads": 14507,
+      "query_size": 1328,
+      "sha256": "546a54845432ea84fa3ecf26bc09cb406599b267e41130ebd77c99e11f6aac1d",
+      "scenarios": 17,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 2694,
+      "host_label_components": 17,
+      "assigned_marks": 4041,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "nested-k4-t2-w1",
+      "roads": 1194,
+      "query_size": 206,
+      "sha256": "ad32b0da1bc0639f15a5b6de5f5aa05d4f95410d48f7cf18f0b9c5f96c777111",
+      "scenarios": 3,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 66,
+      "host_label_components": 3,
+      "assigned_marks": 132,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "nested-k6-t3-w2",
+      "roads": 5368,
+      "query_size": 532,
+      "sha256": "272e46ff42114d6a263daa677dca49811cc0b0ece705580bdf90b040f540d3c6",
+      "scenarios": 5,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 690,
+      "host_label_components": 5,
+      "assigned_marks": 1035,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "nested-k9-t2-w3",
+      "roads": 8439,
+      "query_size": 1198,
+      "sha256": "2b628756cd6c8f61ef3c1269c47f26a968ba5bf5dca2243c3ade98d31e453ca3",
+      "scenarios": 8,
+      "curved_scenarios": 0,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 1404,
+      "host_label_components": 8,
+      "assigned_marks": 2808,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "bent-k3-t2",
+      "roads": 6549,
+      "query_size": 1295,
+      "sha256": "290aa1c2bf883419b8a3074def06477ae1271913108c0d84e002f46d39f223ba",
+      "scenarios": 2,
+      "curved_scenarios": 2,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 231,
+      "host_label_components": 2,
+      "assigned_marks": 462,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "bent-k4-t2",
+      "roads": 8835,
+      "query_size": 1691,
+      "sha256": "fe468289f9819791439965867fba34e087761e3aa8e2e92ec672c1adde73619e",
+      "scenarios": 3,
+      "curved_scenarios": 3,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "same_early_consecutive_pairs": 462,
+      "host_label_components": 3,
+      "assigned_marks": 924,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    },
+    {
+      "name": "bent-k6-t1",
+      "roads": 4647,
+      "query_size": 2483,
+      "sha256": "7d239c3ff1bd4f6e535dfc8735ecc1cd28a8ac2a0cebceff6ea93219629c98b5",
+      "scenarios": 5,
+      "curved_scenarios": 5,
+      "low_power_scenarios": 0,
+      "power_one_scenarios": 0,
+      "host_label_components": 5,
+      "assigned_marks": 1155,
+      "max_capacity_used": 1,
+      "max_bins_at_a_resource_point": 1
+    }
+  ],
+  "totals": {
+    "scenarios": 76,
+    "curved_scenarios": 10,
+    "host_label_components": 76,
+    "assigned_marks": 10996,
+    "same_early_consecutive_pairs": 5667,
+    "low_power_scenarios": 4,
+    "power_one_scenarios": 0,
+    "max_capacity_used": 2,
+    "max_bins_at_a_resource_point": 2
+  }
+}

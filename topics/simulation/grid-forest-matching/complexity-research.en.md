@@ -1,24 +1,30 @@
-# Removing the Logarithm: Results, Failed Approaches, and Open Questions
+# Removing the Logarithm: General Proof and Research Record
 
-This article collects proved results, refuted approaches, and open questions. Start with the [detailed general upper-bound proof](complexity.en.md), then use the [research directory](research/README.md) to find detailed proofs and constructions.
+The general cubic upper bound is now proved. Start with the [self-contained general proof](research/proofs/cubic-bound.en.md). The [earlier product-bound proof](complexity.en.md) explains the old logarithm; this overview retains the subclasses, reductions, and failed approaches that led to the new proof.
 
 ## 1. The exact current status
 
 For an induced four-neighbour road forest with $N\le n^2$ road cells, the candidate-list algorithm has the proved bound
 
 $$
-T=O(n^2+m+nN\log(n+1)).
+W\le(5n-3)N,\qquad T=O(n^2+m+nN)\subseteq O(n^3+m).
 $$
 
-When $m\ge n-1$, a legal family gives
+When $m\ge n-1$, horizontal road strips give a matching lower bound, hence
 
 $$
-T=\Omega(n^3+m).
+T_{\rm worst}=\Theta(n^3+m).
 $$
 
-**A general $O(n^3+m)$ upper bound remains unproved, and no asymptotic counterexample satisfying all requirements is known from this work.**
+**The general logarithmic gap is closed.** The proof uses earliest row stars over the entire history, a common cut, references within each component, and capacity-two allocation in label-axis-length bins, establishing
 
-The stronger estimate $W=O(nN)$ would suffice, where $W$ counts actual candidate checks. A “capacity” assigns markers to permitted road vertices while bounding assignments per vertex. “Paying” markers means bounding them by a quantity with an established total budget. These are proof devices, not additional program steps.
+$$
+\widetilde M_h\le4|G_h|.
+$$
+
+The key is to fix the original query-axis image of equal-early copies and use the reference late axis as the second axis. Two actual finite segments force spacing beyond a label-axis length, with no high-power, straight-axis, or infinite-extension requirement. Although direction A's connected-union disjointness is false, constant capacity holds. See the [obstruction and initial draft](research/proofs/reference-capacity.en.md) and the [complete general proof](research/proofs/cubic-bound.en.md).
+
+A “capacity” assigns marks to permitted road vertices while bounding assignments per vertex. “Paying” uses a quantity with an established total budget. These are proof devices, not new algorithm steps. Sections 2–5 retain historical derivations and proposed directions: their local restrictions and counterexamples remain meaningful, but no longer indicate an unresolved general algorithmic complexity.
 
 Results below have three statuses:
 
@@ -28,7 +34,7 @@ Results below have three statuses:
 
 Finding no counterexample in finite searches is not a proof. Refuting an auxiliary estimate does not refute the algorithm's complexity.
 
-## 2. Subclasses where the logarithm has been removed
+## 2. Subclasses established before the general proof
 
 Each row gives an independent sufficient condition; they need not hold together. The query tree is always the last complete displacement tree with a surviving candidate. The final failing new vertex is excluded.
 
@@ -47,7 +53,9 @@ Here $L_T$ is the rooted query leaf count, $\ell_C$ the unrooted leaf count of a
 
 Another instructive restricted family mixes comb layers of different heights in one board. Their total cost is bounded using the total tooth height. The key is to charge how long a candidate can survive, instead of granting the entire road budget anew at every prefix. Mixing many heights therefore need not create a logarithmic lower bound. See the [mixed-height proof](research/examples/comb-scales.en.md).
 
-## 3. Complete-prefix labels: the clearest remaining target
+For a single comb-shaped host tree that retains quadratically many candidates after linearly many scans, yet stays within cubic work under the stated visit order and any continuation, see the illustrated [comb-tree questions](research/examples/comb-candidates.en.md). The note adds exact counts for fixed template-size multiples and distinguishes one-prefix counts from total scanning cost.
+
+## 3. Complete-prefix labels: historical reductions and their resolution
 
 ### 3.1 From successful checks to early and late query points
 
@@ -88,7 +96,7 @@ W\le(n+1)N+\sum_hM_h,\qquad
 =\sum_r k_r(k_r-1)\le(n-1)N.
 $$
 
-Here $k_r$ is the road count in row $r$. A uniform per-label estimate $M_h\le C|G_h|$ would therefore remove the logarithm. This sufficient target remains open.
+Here $k_r$ is the road count in row $r$. The general proof now establishes the former sufficient target $M_h\le C|G_h|$ with constant four. The intermediate reductions leading to it are retained below.
 
 ### 3.2 Why complete early resources help
 
@@ -133,7 +141,7 @@ $$
 \boxed{W\le(12n-10)N+E.}
 $$
 
-**The estimate $E=O(nN)$ is still unproved.** This is the explicit remaining gap. Counting axes or domains, or merely having a block for each source, does not bound it. See the [label proof, Sections 29–38](research/proofs/complexity-labels.en.md).
+**The formerly uncontrolled remainder now satisfies $E=O(nN)$.** It counts a subset of actual marks, so the general label-capacity bound controls it directly, without separately charging curved periods and source excess. Axis counts, domain counts, and source blocks alone did not establish this. See the historical reduction in [Sections 29–38](research/proofs/complexity-labels.en.md).
 
 ### 3.5 Another constraint: failure of the label-shifted source
 
@@ -147,6 +155,7 @@ Each row refutes an auxiliary claim. None of these constructions directly provid
 
 | Refuted strengthening | What the counterexample shows | What remains valid and where to read it |
 | --- | --- | --- |
+| Every road forest can be extended to an induced tree by adding vertices without moving roads | Linearly many paths, each of linear size, can be pairwise impossible to join, even on a larger board | Refutes this extension reduction; these path forests still belong to a subclass with a proved cubic bound. [Counterexamples, illustrations, and proof](research/examples/tree-extension.en.md) |
 | Once the pattern is larger than linear, only linearly many candidates remain | Legal combs have both pattern and candidate counts much larger than the side length, while their product reaches the general bound's order | The single-prefix product bound remains valid. [Multiscale comb constructions](research/examples/comb-scales.en.md) |
 | Apply the static parallelogram restriction to all historical successful displacements | Different successful events use different complete prefixes; their union can contain a nondegenerate parallelogram | The main proof must fix one complete pattern. [Local counterexamples](research/examples/local-obstructions.en.md) |
 | Every success enlarges the bounding box or the union of copies | Both may remain unchanged through successive legal successes | New occupied space cannot pay every success individually. [Overlap proof](research/proofs/complexity-overlaps.en.md) |
@@ -157,6 +166,7 @@ Each row refutes an auxiliary claim. None of these constructions directly provid
 | Add resource-union sizes across potential classes or axis images | Reuse causes unbounded overcount; taking the smaller horizontal/vertical budget also fails in general | Single-class injection and within-image disjointness remain valid. [Label proof, Sections 10, 22, and 39](research/proofs/complexity-labels.en.md) |
 | Periodically translating the whole label domain preserves a forest | Different off-axis branches can align in distant copies and form a cycle | One strict-cut resource satisfies stronger hypotheses and still has a periodic forest extension. [Label proof, Sections 34–35](research/proofs/complexity-labels.en.md) |
 | Per-source blocks pay everything, so the excess can be discarded | Deep hooks and two-dimensional combs retain genuine excess | That excess still has explicit unit assignments: the rule is insufficient, not the algorithm. [Label proof, Sections 38–39](research/proofs/complexity-labels.en.md) |
+| Each failure exit edge serves only constantly many remaining sources or units of excess | Even after four-class, reference-class, and source-block payments, one edge carries linearly many sources and unbounded excess | Only constant charging per edge is ruled out; joint resource allocation after sharing an edge remains possible. [Ten-round follow-up, Section 1](research/proofs/reference-followup.en.md) |
 
 For example, the latest nested-comb family simultaneously satisfies
 
@@ -168,13 +178,25 @@ $$
 
 It refutes a road-linear budget for coarse resource sizes, while actual scans stay below the target cubic bound. The [parameter proof](research/examples/nested-combs.zh.md) checks induced acyclicity, genuine earliest stars, unit assignment, and the real move count.
 
-## 5. Possible directions to continue
+## 5. Original directions and their outcomes
 
-These are open ideas, not established conclusions.
+The proposals below are retained as research history. The general proof now settles the algorithm's cubic target; stronger auxiliary claims do not automatically follow.
 
-### A. Are connected resource components free of their label translates after removing the reference class?
+### The combined plan and its outcomes (2026-10-12)
 
-Fix an actual common cut, one high-power conjugacy class, and a selected marker family. Remove the reference axis class containing the latest early endpoint. Let $U$ be a connected component of the union of remaining complete early resources, including unit grid edges between different resources. The conjecture is
+The new suggestions complement A–E: amortization across scales is the overall aim, candidate lifetimes provide the counting framework, and complete prefixes, reference axes, and failure edges supply possible structural tools.
+
+| Main line | Relation to earlier directions | Current outcome |
+| --- | --- | --- |
+| Amortization across scales and structure near saturation | Strengthen D, using the lifetime count in F to retain history | Complete-history label charging bounds the total, excluding unboundedly many full-budget scales without classifying near-saturation |
+| Complete early resources and candidate failure | A's disjointness conjecture is refuted; switch to label-length bins, with B, C, E, and F as related tools | Capacity two is proved for all powers by a finite second-axis lemma; common-cut and reference payments give capacity four |
+| Aim directly at cubic cost and search for counterexamples | New G and H avoid requiring the stronger road-count bound | The stronger road-count-times-side-length upper bound is proved and matches the existing cubic lower bound |
+
+**Capacity-two bins ultimately complete the general proof.** Investigation of A progressed through the [initial checks](research/examples/reference-components.en.md) and [ten rounds](research/proofs/reference-followup.en.md), before [opposite early arms](research/proofs/reference-capacity.en.md) refuted general disjointness. The new proof retains equal-early spacing greater than a label-axis length without requiring disjointness of the entire connected union.
+
+### A. Connected-union disjointness after reference deletion: refuted
+
+Fix an actual common cut, one high-power conjugacy class, and a selected marker family. Remove the reference axis class containing the latest early endpoint. Let $U$ be a connected component of the union of remaining complete early resources, including unit grid edges between different resources. The original conjecture was
 
 $$
 U\cap(U+h)=\varnothing.
@@ -182,35 +204,67 @@ $$
 
 **Why it could help:** if one query early endpoint repeats in that component, the corresponding sources are separated along their own host axis by more than a label length, because they also match a different reference late axis. Their connecting tree path lies in the resource component and would contain two points differing by the label, contradicting the conjecture. Early endpoints would then be distinct, enabling unit capacity.
 
-**What is missing:** each individual resource is disjoint from its own translate; this has not been proved for the connected union. Arbitrary connected unions do not have the property. Reference selection, the common late prefix, and actual earliest stars must all be used. Saved finite inputs have no counterexample, which is not a proof.
+**Current conclusion:** two valid early resources can extend left and right from a common axis point. Each is shorter than the label, while their connected union crosses a full label length. The complete-history obstruction on a board of side 71 with 171 roads has been independently checked; a seven-layer version also survives four-class payment and reference reselection. It has neither repeated early endpoints nor final source-block excess, so it refutes only the disjointness claim.
+
+The original-order nested-comb column-band proof and axis-projection equivalence from the [ten-round investigation](research/proofs/reference-followup.en.md) remain valid. Grouping resource left endpoints by label-axis length now proves capacity two: early endpoints are distinct per bin, and each road vertex participates in at most two bins. See the [general proof](research/proofs/cubic-bound.en.md) for the finite second-axis lemma and complete charge.
 
 ### B. Pay source excess through failure edges
 
 Each nonreference source has a real exit edge from its label domain. One could try to show that many sources producing large excess through one edge force extra road space through their complete late prefixes, or create a forbidden second connection.
 
-Only the existence of the edge is proved. Its multiplicity is not bounded. Summing all early-resource sizes per source has already been refuted by nested combs.
+It is now proved that both source multiplicity and unpaid excess at one edge can grow without bound even after the existing payments. Constant charging per edge is ruled out; sources sharing it might still jointly use other road resources. See [Section 1 of the ten-round follow-up](research/proofs/reference-followup.en.md). Summing all early-resource sizes per source has also been refuted by nested combs.
 
-### C. Combine budgets across curved periods
+### C. Combine budgets across curved periods: bypassed
 
 Long axes with one common shortest period have a linear length budget. For shortest period one, distinct actual axis intersections are disjoint. There is no sufficient combined budget for different growing periods sharing road space.
 
 The number of relevant domains and the total number of periodic repetitions have established bounds. The target, however, is actual marker count. A repetition budget is not a budget for the sum of all axis lengths or resource sizes.
 
-### D. Prove that multiple scales cannot saturate together
+### D. Prove that multiple scales cannot saturate together: settled by the full-history bound
 
-The general logarithm comes from charging prefix scales separately. Historical nonparallel high-overlap translations obey geometric restrictions, and maximum repetition multipliers of same-direction runs have a linear total budget. Deleted candidates can therefore retain useful constraints.
+The logarithm in the old bound comes from charging prefix scales separately. Historical nonparallel high-overlap translations obey geometric restrictions, and maximum repetition multipliers of same-direction runs have a linear total budget. Deleted candidates can therefore retain useful constraints.
 
 The missing step is charging all actual successes to that budget. A budget using only one fixed reference direction already has a counterexample. See the [overlap proof](research/proofs/complexity-overlaps.en.md).
 
-### E. Refine the remaining height-record charges
+One can first study whether near-saturation of the static product bound forces candidates into a few directions, long repeated segments, or shared branching structures, then examine how query growth destroys them. Each structure should receive its budget only once. Static combs already attain the product bound in order of magnitude, so merely sharpening one-prefix inequalities cannot suffice: candidate survival history must connect the scales.
+
+### E. Refine the remaining height-record charges: local questions retained
 
 Some branching costs under arbitrary discovery orders have been paid. What remains can be reduced to genuine successes while a diameter or root height grows. Repeated records satisfy root-projection order, failure cutoffs, and short-arm windows.
 
 The accumulated multiplicity of candidate transfers is uncontrolled. Records can themselves reach cubic cost and require arbitrarily many root-to-leaf chains. The refuted general linear-frontier bound and historical third-arm capacity cannot replace this missing argument.
 
+### F. Organize successful checks by candidate lifetime: counting framework retained
+
+Let $s(a)$ count successful checks of the initial road candidate $a$ during full scans at new positions, excluding the initial zero displacement and repeated visits. A failed candidate never returns, so
+
+$$
+W\le N+\sum_{a\in F}s(a).
+$$
+
+This only recounts the same checks and does not improve the bound yet. Some candidates may live very long; a linear lifetime for each candidate must not be assumed. Group candidates by lifetime, retaining their full matching prefixes, first failure edges, and branching records, and seek a budget shared by all lifetime groups. Shifted-source failure edges in B and transfer multiplicities in E are concrete problems within this framework.
+
+### G. Aim directly at cubic cost: the stronger target is complete
+
+The sufficient target $W=O(nN)$ is stronger than the original goal. An **immediate corollary of the logarithmic bound at that time** is
+
+$$
+N\le\frac{n^2}{\log(n+1)}
+\quad\Longrightarrow\quad
+W=O(n^3),\qquad T=O(n^3+m).
+$$
+
+Thus the original goal needs no new argument for sparse roads; attention can focus above this threshold. A possible budget could use roads, obstacle cells, and boundaries together, allowing the whole board area. No new dense-board structure is proved here, and successful checks need not create new occupied area: that assertion already has counterexamples.
+
+### H. Test actual total cost: now used to check the proof
+
+For recursive branching, nested repeated blocks, mixed periods, and varied discovery orders, record $W/n^3$, actual move count, and costs in doubling prefix-size ranges. Many scales must accumulate large cost on one board and one walk; choosing a different worst board for each scale does not help.
+
+Finite experiments select parameter families worth proving. Refuting the target total time requires an unbounded ratio along a family and control of the move term. A single large ratio, excessive resource-size sums, or many candidates at several scales is insufficient. The A experiments also save actual costs and move counts, but do not exhaust this counterexample direction.
+
 ## 6. How to evaluate the next proof or counterexample
 
-This is a resumption checklist, not a new conjecture:
+These checks also apply when reviewing the existing proof or improving its constants:
 
 1. **Identify the count.** Is it actual candidate checking, or an auxiliary quantity that can substantially overcount?
 2. **Keep the complete prefix.** A successful candidate must match every previously visited position.

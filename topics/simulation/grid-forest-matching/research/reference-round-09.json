@@ -1,0 +1,94 @@
+{
+  "round": 9,
+  "stats": {
+    "components": 94,
+    "overlap_components": 3,
+    "max_axis_span": 143,
+    "max_label_length": 39,
+    "cases": 8
+  },
+  "cases": [
+    {
+      "k": 4,
+      "t": 2,
+      "w": 1,
+      "keep_reference": false,
+      "components": 6,
+      "overlap_components": 0,
+      "max_axis_span": 2,
+      "max_label_length": 21
+    },
+    {
+      "k": 4,
+      "t": 2,
+      "w": 1,
+      "keep_reference": true,
+      "components": 7,
+      "overlap_components": 1,
+      "max_axis_span": 42,
+      "max_label_length": 21
+    },
+    {
+      "k": 6,
+      "t": 1,
+      "w": 3,
+      "keep_reference": false,
+      "components": 5,
+      "overlap_components": 0,
+      "max_axis_span": 2,
+      "max_label_length": 33
+    },
+    {
+      "k": 6,
+      "t": 1,
+      "w": 3,
+      "keep_reference": true,
+      "components": 6,
+      "overlap_components": 0,
+      "max_axis_span": 11,
+      "max_label_length": 33
+    },
+    {
+      "k": 7,
+      "t": 3,
+      "w": 4,
+      "keep_reference": false,
+      "components": 18,
+      "overlap_components": 0,
+      "max_axis_span": 2,
+      "max_label_length": 39
+    },
+    {
+      "k": 7,
+      "t": 3,
+      "w": 4,
+      "keep_reference": true,
+      "components": 19,
+      "overlap_components": 1,
+      "max_axis_span": 143,
+      "max_label_length": 39
+    },
+    {
+      "k": 9,
+      "t": 2,
+      "w": 3,
+      "keep_reference": false,
+      "components": 16,
+      "overlap_components": 0,
+      "max_axis_span": 2,
+      "max_label_length": 33
+    },
+    {
+      "k": 9,
+      "t": 2,
+      "w": 3,
+      "keep_reference": true,
+      "components": 17,
+      "overlap_components": 1,
+      "max_axis_span": 66,
+      "max_label_length": 33
+    }
+  ],
+  "counterexamples": [],
+  "purpose": "Audit the proved axis-span equivalence on both ordinary and positive-control unions."
+}

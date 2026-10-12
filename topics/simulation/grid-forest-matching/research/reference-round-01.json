@@ -1,0 +1,112 @@
+{
+  "round": 1,
+  "stats": {
+    "cases": 4,
+    "scenarios": 38,
+    "markers_with_scenario_multiplicity": 1159,
+    "max_exit_multiplicity": 1,
+    "components": 223,
+    "mixed_components": 3,
+    "wide_components": 2,
+    "overlap_components": 2,
+    "repeated_early_components": 3,
+    "max_axes": 6
+  },
+  "cases": [
+    {
+      "name": "connected-resources.in/keep-reference",
+      "N": 118,
+      "query_size": 60,
+      "cases": 1,
+      "scenarios": 5,
+      "markers_with_scenario_multiplicity": 28,
+      "max_exit_multiplicity": 1,
+      "components": 5,
+      "mixed_components": 1,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 1,
+      "max_axes": 2,
+      "sha256": "e4432f817f24b996f3e5416ccd6666f6f2b3d18889c96a3328f5d72f8dd4410b"
+    },
+    {
+      "name": "connected-resources.in/remove-reference",
+      "N": 118,
+      "query_size": 60,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 3,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "e4432f817f24b996f3e5416ccd6666f6f2b3d18889c96a3328f5d72f8dd4410b"
+    },
+    {
+      "name": "repeated-axis-classes.in/keep-reference",
+      "N": 2632,
+      "query_size": 132,
+      "cases": 1,
+      "scenarios": 18,
+      "markers_with_scenario_multiplicity": 888,
+      "max_exit_multiplicity": 1,
+      "components": 137,
+      "mixed_components": 2,
+      "wide_components": 2,
+      "overlap_components": 2,
+      "repeated_early_components": 2,
+      "max_axes": 6,
+      "sha256": "9122913d5f0cfb088710698d2ddb025202033d4e114dda569c05cc09661717d3"
+    },
+    {
+      "name": "repeated-axis-classes.in/remove-reference",
+      "N": 2632,
+      "query_size": 132,
+      "cases": 1,
+      "scenarios": 14,
+      "markers_with_scenario_multiplicity": 240,
+      "max_exit_multiplicity": 1,
+      "components": 80,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "9122913d5f0cfb088710698d2ddb025202033d4e114dda569c05cc09661717d3"
+    }
+  ],
+  "counterexamples": [],
+  "purpose": "Positive control: retain reference markers, then remove them correctly.",
+  "positive_controls": [
+    {
+      "name": "connected-resources.in/keep-reference",
+      "h": [
+        0,
+        20
+      ],
+      "cut": 18,
+      "early_multiplicity": 2,
+      "first_overlap_point": [],
+      "note": "Reference class deliberately retained; not a counterexample to direction A."
+    },
+    {
+      "name": "repeated-axis-classes.in/keep-reference",
+      "h": [
+        0,
+        10
+      ],
+      "cut": 39,
+      "early_multiplicity": 47,
+      "first_overlap_point": [
+        [
+          0,
+          0
+        ]
+      ],
+      "note": "Reference class deliberately retained; not a counterexample to direction A."
+    }
+  ]
+}

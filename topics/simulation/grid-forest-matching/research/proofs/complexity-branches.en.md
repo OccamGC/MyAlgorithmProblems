@@ -1,8 +1,10 @@
 # Matching in a Four-Neighbor Grid Forest: Charging Long Branches
 
-This note analyzes the existing candidate-list algorithm. The general bound remains $O(n^2+m+nN\log(n+1))$. We give an additional bound in terms of the distribution of branches, extending the cases with a proved cubic bound. Here $N$ is the number of road cells and $W$ counts actual candidate checks, both successful and failed. Repeated offsets and direct clearing on an out-of-range offset do not add to $W$.
+**Historical research record (updated 2026-10-12).** The [standalone proof](cubic-bound.en.md) now establishes the general cubic bound. The derivations, remainders, and counterexamples below retain their historical order. Statements that a problem is unresolved refer to that stage or local method; stronger auxiliary claims do not automatically follow from the general bound.
 
-**Current status:** The actual complete-prefix periodic family in the final section disproves both the per-pair and aggregate proposals for paying all repeated markers from historical third-arm capacity. The deletion-time lemma, short-arm windows, and reductions with an explicit remainder remain valid. The general complexity question is still open.
+This note analyzes the existing candidate-list algorithm. At the time of this investigation, the established general bound was $O(n^2+m+nN\log(n+1))$. We give an additional bound in terms of the distribution of branches, extending the cases with a proved cubic bound. Here $N$ is the number of road cells and $W$ counts actual candidate checks, both successful and failed. Repeated offsets and direct clearing on an out-of-range offset do not add to $W$.
+
+**Status at the end of this investigation:** The actual complete-prefix periodic family in the final section disproves both the per-pair and aggregate proposals for paying all repeated markers from historical third-arm capacity. The deletion-time lemma, short-arm windows, and reductions with an explicit remainder remain valid. The general complexity question is still open.
 
 ## Results
 

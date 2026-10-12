@@ -1,6 +1,8 @@
 # Intersection forests for fixed horizontal labels
 
-An area potential proves $W\le2nN$ when every nonempty horizontal translation intersection of the query is connected. This covers straight comb queries with arbitrary roots and discovery orders. Section 15 also proves a host subclass with unrestricted queries: a constant bound on the multiplicity of vertical-edge column differences between consecutive rows gives $O(nN)$ scans. The bound for general labels remains unproved. The general worst-case complexity is still between $\Omega(n^3+m)$ and $O(n^3\log(n+1)+m)$.
+**Historical research record (updated 2026-10-12).** The [standalone proof](cubic-bound.en.md) now establishes the general cubic bound. The derivations, remainders, and counterexamples below retain their historical order. Statements that a problem is unresolved refer to that stage or local method; stronger auxiliary claims do not automatically follow from the general bound.
+
+An area potential proves $W\le2nN$ when every nonempty horizontal translation intersection of the query is connected. This covers straight comb queries with arbitrary roots and discovery orders. Section 15 also proves a host subclass with unrestricted queries: a constant bound on the multiplicity of vertical-edge column differences between consecutive rows gives $O(nN)$ scans. At the time of this investigation, the bound for general labels was unproved and general worst-case complexity lay between $\Omega(n^3+m)$ and $O(n^3\log(n+1)+m)$; the later general proof closes this gap.
 
 ## 1. Successful events and earliest stars
 
@@ -1841,6 +1843,8 @@ $$
 x=a+\operatorname{parent}(q_{j_a})\in K,\qquad
 y=a+q_{j_a}\in F\setminus G_h.
 $$
-This gives each nonreference source an edge leaving its label intersection domain. Different sources may use the same edge; a constant-multiplicity payment of all markers through these edges has not been proved.
+This gives each nonreference source an edge leaving its label intersection domain. Subsequent work proves that a single edge can carry linearly many remaining sources and unbounded excess even after the existing payments. Constant charging per edge is therefore insufficient; see the parameter proof in [Section 1 of the ten-round follow-up](reference-followup.en.md).
 
-It remains a conjecture that, after deleting the reference class, each connected resource component has distinct early endpoints and is disjoint from its own label translate. This conjecture does not establish a general upper bound.
+Opposite early arms now refute connected-union disjointness after reference deletion. The obstruction still has distinct early endpoints, so it does not refute unit capacity itself. See the [continuation record](reference-capacity.en.md) for the construction and replacement capacity-two draft. The subsequent audit replaces the key step with a finite second-axis lemma, removes the high-power restriction, and completes the [general cubic proof](cubic-bound.en.md). Finite allocation checks are retained separately as supporting verification.
+
+The earlier [axis-projection equivalence lemma](reference-followup.en.md) expresses disjointness exactly as a resource component's projected span being shorter than the axis translation length, and proves this property for nested combs in their original order. The lemma and restricted-family result remain valid; the general strict span claim is refuted by the new obstruction.

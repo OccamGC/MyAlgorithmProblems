@@ -4,6 +4,8 @@
 
 题目使用与评测说明见[评测环境与性能](docs/评测环境与性能.md)。Grox、Spode 系列的英文题记来源见[Spore 题记来源](docs/Spore题记来源.md)。
 
+网格森林匹配的复杂度研究：一般三次方上界的[中文证明](topics/simulation/grid-forest-matching/research/proofs/cubic-bound.zh.md)与[English proof](topics/simulation/grid-forest-matching/research/proofs/cubic-bound.en.md)，以及[研究过程、反例和复核方法](topics/simulation/grid-forest-matching/research/README.md)。
+
 ## 题目目录
 
 | 主题 | 题目 | 题面 | 题解 |

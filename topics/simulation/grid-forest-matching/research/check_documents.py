@@ -24,8 +24,9 @@ def main():
     pairs = [PROBLEM / name for name in ["solution", "complexity", "complexity-research"]]
     pairs += [HERE / "proofs" / name for name in [
         "complexity-paths", "complexity-chains", "complexity-branches",
-        "complexity-overlaps", "complexity-labels"]]
-    pairs += [HERE / "examples" / name for name in ["comb-scales", "local-obstructions"]]
+        "complexity-overlaps", "complexity-labels", "reference-followup", "reference-capacity", "cubic-bound"]]
+    pairs += [HERE / "examples" / name for name in [
+        "comb-scales", "comb-candidates", "tree-extension", "local-obstructions", "reference-components"]]
     counts = {}
     for stem in pairs:
         zh, en = formulas(Path(str(stem)+".zh.md")), formulas(Path(str(stem)+".en.md"))

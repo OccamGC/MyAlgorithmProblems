@@ -39,30 +39,29 @@ O(n^2+m+W)
 $$
 time and $O(n^2)$ space. Board reading, moves, and output have been accounted for separately; the main quantity is the sum of candidate counts over all rounds.
 
-For any complete set $P$ of already visited displacements, let $A(P)$ be its legal translation starts. The proved product bound is
+The following scan bound is now proved for the entire history:
 $$
-|A(P)|\,|P|\le(2n-1)N.
-$$
-Its key idea is to fix a road target and represent complete copies covering it as anchors inside the pattern. Unique paths in the forest exclude nondegenerate parallelograms, and elementary row-distance counting bounds the anchors linearly.
-
-Before filtering round $j$, the old pattern has exactly $j$ points. There are at most $L=\min(m,N)$ filtering rounds, giving
-$$
-W\le N\sum_{j=1}^{L}\min\left\{1,\frac{2n-1}{j}\right\}.
-$$
-Hence the general upper bound is
-$$
-\boxed{O(n^2+m+nN\log(n+1))\subseteq O(n^3\log(n+1)+m)}.
+\boxed{W\le(5n-3)N},\qquad
+\boxed{T=O(n^2+m+nN)\subseteq O(n^3+m)}.
 $$
 
-- [Detailed proof](complexity.en.md): the counting strategy, geometric lemma, double counting, and harmonic sum.
-- [Research overview](complexity-research.en.md): solved subclasses, refuted auxiliary claims, the current remainder, and open directions.
-- [Research directory](research/README.md): detailed proofs, constructions, representative inputs, and a verification script.
+Group successful checks by host target and query row, pairing every later check with the group's earliest success, called its star. A pair's horizontal displacement is its label $h$. Its complete early prefix supplies a resource inside the intersection $G_h=F\cap(F-h)$.
 
-A general cubic upper bound remains unproved. The striped input below gives a cubic lower bound. Subclasses already without the logarithm include bounded leaf counts, path roads, some branching restrictions, and straight comb queries.
-
-For short move sequences, the generic bound is also available:
+For one label, pay its common-cut class with one intersection budget. In each remaining intersection component, choose a reference class with latest early endpoint and pay it with one more budget. Every remaining resource spans less than one label length on the host axis, whereas different copies of the same early endpoint are farther apart than that length. Bin resource projection left endpoints: each bin has distinct early endpoints and a unit allocation, while a road vertex participates in at most two bins. Thus four intersection budgets suffice per label:
 $$
-O(n^2+m+N\min(m,N)).
+\widetilde M_h\le4|G_h|,\qquad
+\sum_{h=(0,d),\ d\ne0}|G_h|
+=\sum_r k_r(k_r-1)\le(n-1)N.
+$$
+Here $k_r$ is the road count in row $r$. Add at most $nN$ stars and one failed check per candidate to obtain the scan bound. The key separation lemma uses two actual complete reference late prefixes and covers straight axes, curved axes, and all powers.
+
+- [Complete general cubic proof](research/proofs/cubic-bound.en.md): the counting strategy, common cut, finite second-axis lemma, capacity-two bins, and sum over labels.
+- [Earlier product bound and logarithmic proof](complexity.en.md): retained anchor diagrams, geometric lemmas, and harmonic summation explain where the old logarithm came from.
+- [Research overview](complexity-research.en.md) and [directory](research/README.md): completion of the general proof, valid subclass results, failed approaches, and verification scripts.
+
+For short move sequences, combine this with at most one full-road scan per move:
+$$
+O(n^2+m+N\min(m,n)).
 $$
 The bitset implementation scans machine words each round; see its [separate editorial](solution-alternative-bitsets.en.md). It does not inherit the candidate-check bound directly. Reproducible measurements are in the [performance record](../../../docs/benchmark-R28.json); measurements do not replace complexity proofs.
 
@@ -76,7 +75,7 @@ $$
 =r\left(\frac{n(n+1)}2-1\right)
 =\Theta(n^3)
 $$
-candidate checks. Later moves require no new filters, but input and output still take $\Omega(m)$ time. Hence, for $m\ge n-1$, this valid family gives a worst-case time lower bound of $\Omega(n^3+m)$. It establishes the cubic lower bound; an $O(n^3+m)$ upper bound for general $m$ still requires a separate proof.
+candidate checks. Later moves require no new filters, but input and output still take $\Omega(m)$ time. Hence, for $m\ge n-1$, this valid family gives a worst-case time lower bound of $\Omega(n^3+m)$, matching the general $O(n^3+m)$ upper bound.
 
 ## Why acyclicity matters
 

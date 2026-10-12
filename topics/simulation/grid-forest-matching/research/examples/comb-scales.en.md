@@ -1,5 +1,7 @@
 # Comb constructions: multiple scales and mixed heights
 
+For a connected host, candidates after linearly many scans, exact counts for fixed template-size multiples, and why the construction still has no supercubic cost, see the illustrated [comb-tree questions](comb-candidates.en.md).
+
 ## The single-prefix product bound is tight at many scales
 
 A uniform threshold cannot force the candidate count down to linear size early: no absolute constant $C$ makes $|P|>Cn\Rightarrow|A(P)|\le Cn$ hold for every forest.

@@ -1,5 +1,7 @@
 # Matching in Four-Neighbor Grid Forests: Accounting Along Root-to-Leaf Paths
 
+**Historical research record (updated 2026-10-12).** The [standalone proof](cubic-bound.en.md) now establishes the general cubic bound. The derivations, remainders, and counterexamples below retain their historical order. Statements that a problem is unresolved refer to that stage or local method; stronger auxiliary claims do not automatically follow from the general bound.
+
 This note analyzes the [candidate-list program](../../std.cpp) and supplements the [general bound](../../complexity.en.md). Road trees may branch arbitrarily; the parameters below count leaves in the query tree or the road trees.
 
 ## Result and parameters

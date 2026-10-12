@@ -1,5 +1,7 @@
 # Matching in a Class of Four-Neighbor Grid Forests — Overlap Across Prefixes
 
+**Historical research record (updated 2026-10-12).** The [standalone proof](cubic-bound.en.md) now establishes the general cubic bound. The derivations, remainders, and counterexamples below retain their historical order. Statements that a problem is unresolved refer to that stage or local method; stronger auxiliary claims do not automatically follow from the general bound.
+
 This note proves overlap constraints across prefixes, collinearity of historical high-overlap components, and a total multiplier budget for changes of high-overlap direction. It then reduces actual candidate checks to a total of root-path matches and bounds some parts of that total. The full total-count bound remains a conjecture; these results have not removed the logarithm from the [general upper bound](../../complexity.en.md).
 
 **Current result: a linear total for unweighted frontiers is false.** The final section gives induced grid trees with a common query and host root whose frontier count is $\Theta(nN)$, with $N=\Theta(n^2)$. This does not refute a cubic bound for the actual algorithm or the direct root-path matching target: many of these frontiers cannot satisfy one actual complete-prefix history. The valid reductions and earlier obstacles remain below, but frontier linearity is no longer an open target.

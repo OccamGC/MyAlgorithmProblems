@@ -1,5 +1,7 @@
 # Matching in a Class of Four-Neighbor Grid Forests: A Cubic Bound for Path Components
 
+**Historical research record (updated 2026-10-12).** The [standalone proof](cubic-bound.en.md) now establishes the general cubic bound. The derivations, remainders, and counterexamples below retain their historical order. Statements that a problem is unresolved refer to that stage or local method; stronger auxiliary claims do not automatically follow from the general bound.
+
 This document gives a self-contained analysis of the [candidate-list implementation](../../std.cpp) when every component of the road forest is a path. The proof was prepared by Codex (GPT-6). See the [main complexity proof](../../complexity.en.md) for general forests.
 
 The subsequent [root-to-leaf path proof](complexity-chains.en.md) improves this subclass to $W\le(6n-5)N$ and also covers path queries on branching roads. This document retains the original direction-string border argument and its independent lemma.

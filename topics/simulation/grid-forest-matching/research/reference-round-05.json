@@ -1,0 +1,10 @@
+{
+  "round": 5,
+  "stats": {
+    "rejected_nonforests": 317,
+    "rejected_query_nonforests": 283
+  },
+  "cases": [],
+  "counterexamples": [],
+  "purpose": "Vary row gaps and early arm lengths together with nonaligned source phases."
+}

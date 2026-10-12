@@ -1,6 +1,6 @@
 # Matching in a Four-Neighbour Grid Forest: the Logarithmic Upper Bound
 
-This article proves the general upper bound for the candidate-list algorithm and explains how to find the proof. See the [editorial](solution.en.md) and [std.cpp](std.cpp) for the algorithm. Results, failed approaches, and open ideas for removing the logarithm are collected separately in the [research overview](complexity-research.en.md).
+This article preserves the earlier logarithmic bound and its illustrations, explaining the static product inequality and harmonic sum. A later [complete-history charge](research/proofs/cubic-bound.en.md) proves the general cubic bound; the weaker bound here remains valid. See the [editorial](solution.en.md), [std.cpp](std.cpp), and [research overview](complexity-research.en.md) for the algorithm and research history.
 
 ## 1. The result and the quantity we must count
 
@@ -34,7 +34,7 @@ $$
 
 Space is $O(n^2)$. If $N=0$ or $m=0$, then $W=0$, with an empty sum interpreted as zero. Writing $\log(n+1)$ also covers $n=1$.
 
-This does not prove a general cubic upper bound. A legal family gives a lower bound of $\Omega(n^3+m)$ when $m\ge n-1$. A logarithmic gap remains.
+The prefix-by-prefix sum alone gives only this weaker bound. A legal family gives a lower bound of $\Omega(n^3+m)$ when $m\ge n-1$; the later [general proof](research/proofs/cubic-bound.en.md) closes the logarithmic gap with a matching cubic-plus-moves upper bound.
 
 ## 2. Strategy: freeze time, then change how we count
 
@@ -64,6 +64,10 @@ The proof has four steps:
 4. Double-count to obtain the product bound, then sum a harmonic series over prefix sizes.
 
 The first two steps turn the algorithmic question into a forbidden geometric configuration. The third is elementary counting. Only the last step returns to running time.
+
+**First see how the total cost follows.** Temporarily assume the product bound: doubling the pattern size halves the candidate bound but doubles the possible number of new-position filtering rounds in that scale. Each doubling scale therefore costs at most $O(nN)$. All pattern sizes below $n$ together cost at most the same order; a surviving pattern has at most as many vertices as there are roads, leaving only $O(\log(n+1))$ scales between linear and quadratic size. This gives $O(nN\log(n+1))$ total work. Section 8 supplies the exact sum and a table of costs per scale.
+
+The restriction concerns pattern size times candidate count. It does not claim that a pattern of linear size must leave only linearly many candidates. Nor is the product bound at one instant a bound on all scanning work; the latter still requires summing over prefixes.
 
 ## 3. Why a surviving complete prefix is a tree
 
@@ -102,6 +106,12 @@ This copy aligns the pattern point $p$ with the road cell $v$. We call $p$ an an
 | A complete legal copy covering a fixed road cell | An anchor inside the pattern |
 | Overlapping copies in the roads | Several points in one pattern |
 | The total size of all copies, with multiplicity | First bound the anchors at each road cell |
+
+For a horizontal-road example, write only column coordinates and omit the common row coordinate. Take $P=\{0,1,2\}$ and $F=\{0,\ldots,8\}$, giving all legal starts $A(P)=\{0,\ldots,6\}$. For fixed $v=4$, exactly the three copies starting at $a=2,3,4$ cover that cell; their corresponding pattern anchors are $p=2,1,0$.
+
+![Three copies of a three-vertex pattern on one nine-vertex road cover the fixed road cell v equal to 4, corresponding to pattern anchors 2, 1, and 0.](assets/forest-bound-anchors.svg)
+
+The lower three rows display copies on the same road at different vertical offsets for clarity; they are not separate roads. The orange circles refer to one physical cell but to different pattern positions in the copies. Once an anchor is chosen, its start is uniquely determined by $a=v-p$.
 
 This anchor set is not the union of successful displacements from different times. Every anchor here represents a copy of **the same complete pattern**. The path comparisons below require that condition.
 
@@ -149,6 +159,10 @@ $$
 
 They form a closed walk. They may overlap and backtrack, so we cannot simply call this a simple cycle. The next step handles that difficulty.
 
+![A contradiction diagram shows four paths paired by translation. Solid blue and dashed orange paths may overlap, while their four endpoints form a nondegenerate parallelogram.](assets/forest-bound-parallelogram.svg)
+
+The diagram uses $u=(5,0)$ and $w=(2,3)$. Solid blue lines show U and its translate; dashed orange lines show V and its translate, with some shared segments. The shaded quadrilateral represents only the geometry of the endpoints; the actual objects being compared are the polygonal paths. **This depicts the path relations under the contradiction hypothesis, not a legal forest input.**
+
 ### 5.2 Signed area handles overlap and backtracking
 
 For planar vectors, define the determinant
@@ -195,6 +209,8 @@ $$
 
 The two displacement directions are parallel, and the four anchors are collinear. This proves the lemma.
 
+In the diagram, $\det(u,w)=5\cdot3-0\cdot2=15$. Even after opposite traversals of overlapping blue and orange segments cancel, the whole closed walk has nonzero weight. If it lay in a tree, its weight would have to be zero. The contradiction comes from computable directed edge weights, not from visually assuming that the paths form a simple cycle.
+
 **The reusable idea:** a forest forces paths with equal endpoints to agree; translation creates four corresponding paths; directed edge weights then turn a possibly overlapping closed walk into an algebraic contradiction. The four paths need not be disjoint.
 
 ## 6. Elementary counting: only linearly many anchors
@@ -204,6 +220,10 @@ Consider a point set in an $H\times B$ integer rectangle with no nondegenerate p
 In a nonempty row containing $k$ points, choose the leftmost point as the base. Its positive horizontal distances to the other points give $k-1$ distinct values.
 
 **Different rows cannot use the same positive distance.** Otherwise, choosing one pair at that distance in each row produces a nondegenerate parallelogram with equal horizontal opposite sides.
+
+![Columns 1 and 5 in the upper row and columns 3 and 7 in the lower row both have separation 4, forming a slanted parallelogram.](assets/forest-bound-row-distances.svg)
+
+Both rows use distance $d=4$. The pairs need not be vertically aligned: equal horizontal opposite sides suffice. The dashed blue segments only connect endpoints to show the forbidden geometric configuration; they do not represent paths in the pattern.
 
 The possible positive integer distances are $1,\ldots,B-1$. If there are $r$ nonempty rows with sizes $k_1,\ldots,k_r$, then
 
@@ -251,6 +271,14 @@ $$
 $$
 
 This counts copies with multiplicity, rather than bounding the size of their union. Copies may overlap; we have bounded how often any road cell can be covered.
+
+Return to the horizontal-road example in Section 4. Seven legal starts each carry three pattern vertices, giving twenty-one pairs when counted by copy. From left to right, the road-cell multiplicities are one, two, three, three, three, three, three, two, and one, so
+
+$$
+7\cdot3=1+2+3+3+3+3+3+2+1=21.
+$$
+
+The union has only nine road vertices, but the double-counted total is twenty-one. Overlap does not remove these pairs.
 
 If $A(P)=\varnothing$, the left side is zero and the inequality still holds.
 
@@ -304,18 +332,30 @@ $$
 
 The same phenomenon can be viewed in doubling intervals: when the pattern size doubles, the candidate bound halves, but the number of rounds in that interval doubles. Each scale costs at most the road count times the side length, and there are logarithmically many scales. **The logarithm comes from summing scales, not from a graph traversal or a data-structure operation.**
 
-## 9. Why this proof does not yet remove the logarithm
+Retaining $c=2n-1$, group the pattern size j before each scan into the following intervals to make that explanation quantitative. Every interval is truncated at the actual number of scanning rounds; empty intervals are ignored.
 
-The product bound applies to each fixed prefix. Summing the worst bound for every prefix may charge the same road resources repeatedly. We do not yet have a general proof that this reuse can occur only a constant number of times.
+| Pattern-size interval | Maximum rounds | Maximum candidates per round | Maximum checks in this interval |
+| --- | --- | --- | --- |
+| $1\le j<c$ | $c-1$ | $N$ | $(c-1)N$ |
+| $c\le j<2c$ | $c$ | $N$ | $cN$ |
+| $2c\le j<4c$ | $2c$ | $N/2$ | $cN$ |
+| $4c\le j<8c$ | $4c$ | $N/4$ | $cN$ |
+| $2^r c\le j<2^{r+1}c$, where $r\ge0$ | $2^r c$ | $N/2^r$ | $cN$ |
+
+The last row generalizes the doubling intervals above; it is not an additional interval. Since $c=\Theta(n)$, every interval costs at most $O(nN)$. While candidates survive, the pattern has at most $N\le n^2$ vertices, leaving at most $O(\log(n+1))$ intervals in total. These are upper bounds, not a claim that any input spends the full allowance at every scale.
+
+## 9. The limit of prefix-by-prefix counting and how the logarithm was removed
+
+The product bound applies to each fixed prefix. Summing the worst bound for every prefix may charge the same road resources repeatedly. This static inequality alone does not control the combined cost across prefixes.
 
 Two questions must be distinguished:
 
 - Can one prefix approach the product bound? Yes: legal comb families attain its order at several parameter scales.
-- Can one road board and one actual query approach it simultaneously at many scales? The existing constructions do not answer this.
+- Can one board and one actual query spend a full road-count-times-side-length budget at an increasing number of scales? The later bound on the entire history excludes this cumulative behavior.
 
 Choosing a different input for each scale and adding their costs does not establish a running-time lower bound. Conversely, a decreasing candidate set does not automatically turn the harmonic sum into a constant.
 
-The [research overview](complexity-research.en.md) organizes further results by proved subclasses, failed approaches, and open directions, with links to detailed proofs and constructions.
+The later [general proof](research/proofs/cubic-bound.en.md) groups all successful checks by horizontal labels and uses each label intersection at most four times, bounding the whole history at once. It does not sharpen each static product inequality separately. The [research overview](complexity-research.en.md) retains the subclass results, counterexamples, and changes of direction that led to this proof.
 
 ## 10. Common pitfalls
 

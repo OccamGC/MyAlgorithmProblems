@@ -3,6 +3,9 @@
 /review/
 /tmp/
 
+# Local research continuation state (public evidence is kept separately)
+/topics/simulation/grid-forest-matching/research/continuation-state.json
+
 # Compiled programs and intermediate files (sample *.out files are versioned)
 *.exe
 *.dll

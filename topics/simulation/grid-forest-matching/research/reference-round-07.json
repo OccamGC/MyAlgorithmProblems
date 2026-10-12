@@ -1,0 +1,1409 @@
+{
+  "round": 7,
+  "stats": {
+    "cases": 160,
+    "scenarios": 44,
+    "markers_with_scenario_multiplicity": 964,
+    "max_exit_multiplicity": 3,
+    "components": 51,
+    "mixed_components": 14,
+    "wide_components": 0,
+    "overlap_components": 0,
+    "repeated_early_components": 0,
+    "max_axes": 3
+  },
+  "cases": [
+    {
+      "name": "mutation0",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "e01edf2855e3c25b88c56bb445c1ae3635d376d58238b405c322e3b715551eb1"
+    },
+    {
+      "name": "mutation1",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "aadd4774f9c5338dc38494b7484ee2db3f7f8833f482bee19b616a6e69415fee"
+    },
+    {
+      "name": "mutation2",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 3,
+      "markers_with_scenario_multiplicity": 90,
+      "max_exit_multiplicity": 3,
+      "components": 6,
+      "mixed_components": 2,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 3,
+      "sha256": "9a7f105db70ede658d603aeec6a2764e78f24d384f82adc008ac400d43e96623"
+    },
+    {
+      "name": "mutation3",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "6216f81da16ac47f43ea375a2a89867881e590c2884ae7e2b9e6aa308b2062e1"
+    },
+    {
+      "name": "mutation4",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "28cb2d8eddc8c6f0cd75db958754e59747de344a480ef03bc185a5043b620286"
+    },
+    {
+      "name": "mutation5",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "cc0a76a9a2d86b637e23ea39e449f7ae9227a8841213849562bf3a74c26d858e"
+    },
+    {
+      "name": "mutation6",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "be8618fb605d989f2d7a52128af5bac33547d3bcd43ef735516799fed8cff6d2"
+    },
+    {
+      "name": "mutation7",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 3,
+      "markers_with_scenario_multiplicity": 96,
+      "max_exit_multiplicity": 3,
+      "components": 3,
+      "mixed_components": 2,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 3,
+      "sha256": "bc81afed9b72dd9b4463242cd426ff298541eed10dc61fd5e10be3c9cd6d9b3f"
+    },
+    {
+      "name": "mutation8",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "f029785d3037223db679c9c425572fc520444ab761cf12f38088d46a9615128e"
+    },
+    {
+      "name": "mutation9",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "e2caa539dfc2cd9d573da6b5793dcb7483eb3c3b4c65fedddfdfb2d1d64c9c5b"
+    },
+    {
+      "name": "mutation10",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "6daa29a64bea0d8687a0397ad5eed0c728dbe525ebe0257507e5f4e6bb037fba"
+    },
+    {
+      "name": "mutation11",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "50f8ac6bb160d5578279c660d6b66b0a97b5aa443b90b2d2bdbe87021fc25ee8"
+    },
+    {
+      "name": "mutation12",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "7553795c9fe34174d99b26a6d41840e06985965096aa80864a3365902cac53fa"
+    },
+    {
+      "name": "mutation13",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "75fb8f503c81e40ef95fdd1fa76548a2bb6ca6761c973bf3c5ca7ed81b7716eb"
+    },
+    {
+      "name": "mutation14",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "f8b9f0231a2d9f8801320b1f8c326124a64ef789e33d05b338ccf05ef8c8f196"
+    },
+    {
+      "name": "mutation15",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "dd476e627d237e100fa1a8c10d6cb55398f0cc40ab2a64119058658c5df711bc"
+    },
+    {
+      "name": "mutation16",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "bbea0c29959acd2813b686f50b8c6fa25834e9d9f1cc63b8bcd35164cb393b75"
+    },
+    {
+      "name": "mutation17",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "08e4dfd32a88aa4e902e84f6d525675930952611b37acace035678ed1aeb7690"
+    },
+    {
+      "name": "mutation18",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "5cf75a55b108037c164fe7cafee8738b91ea0aaf0dee84a2ec1940675e81ab39"
+    },
+    {
+      "name": "mutation19",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "8342d5c20423c9e2af16bd280b4f07bff7e0b5a04440aff7ac07f943bc993242"
+    },
+    {
+      "name": "mutation20",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "5aaed92ecbf22935ba618a2fa1967d2ad17c2732f6f08099be5daa777a745481"
+    },
+    {
+      "name": "mutation21",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "0b84a8e1fa894f92a451c9269206b5f4f8f7d49e8f169580080621538ce2a437"
+    },
+    {
+      "name": "mutation22",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "38b2888e42d87e6dd4d2495170eae9e2f545070faf6150762395795d1bd4dde6"
+    },
+    {
+      "name": "mutation23",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "57badafb88e0cb526ce96a3c009f32ab478f53d0ca738bcb17f1e34e903a1e98"
+    },
+    {
+      "name": "mutation24",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "e10d56b226e1c073d9c3131c92dd50f72442e30f30854231340e931ee291a8ee"
+    },
+    {
+      "name": "mutation25",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "0095e77a0720f3c50902a44750289a5b10ff68dc3b0c63cac4fc48d3888a8a76"
+    },
+    {
+      "name": "mutation26",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 18,
+      "max_exit_multiplicity": 1,
+      "components": 2,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "25fda0b31651d67c31ed30c6922cab8f4c8eece0502fd3eba768f40954a86ee9"
+    },
+    {
+      "name": "mutation27",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "b855ad534b66a4951a40d3f5809abea42cb566af83d38880aa098778efb24b4b"
+    },
+    {
+      "name": "mutation28",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "b3f2aee49bb8f96962fc5a84249ba8512322a6220e620132dd5bac9810d5ad2f"
+    },
+    {
+      "name": "mutation29",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "8ef240357858db6ff29ccb25b989a42061091755e35e925c93a35efec3a7ff39"
+    },
+    {
+      "name": "mutation30",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "3c841f1d05718e7e127a92b7133f97e2e9f017e3d754a9a06652373eea3b34cc"
+    },
+    {
+      "name": "mutation31",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "7b264fb90c2ae7ef37654e8b61581e026e816fe4e9c8b278035676fc9a832493"
+    },
+    {
+      "name": "mutation32",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "25c0f390e527bdfc1d4ba7dc832b9e0f1bb0f50d6f00ea67b896483420482798"
+    },
+    {
+      "name": "mutation33",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "387f0dfc10fbe7570225230a7b8b91e14cd946941667f321b8141f957083d976"
+    },
+    {
+      "name": "mutation34",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "7ac1e7643fc8106fe8451f2e6501f3daf3a6be6960e970a6092c4c7a7f95f9c6"
+    },
+    {
+      "name": "mutation35",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 27,
+      "max_exit_multiplicity": 1,
+      "components": 3,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "0763466a56b26be1f561276b72f6590ac9c4902af0f53400eec6759416caed3e"
+    },
+    {
+      "name": "mutation36",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "0246a99c8c323656892ff1ae3778137e80463ffecb80d99582ea73e5f4b5c9e3"
+    },
+    {
+      "name": "mutation37",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "9abba37e7d778252c0b5498fd045ae9bd3a066842a425fe5ecdc79d5af53df7d"
+    },
+    {
+      "name": "mutation38",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "6753d3a9b0af3d91e2e0c6bc6ad29b608a9dd12610c3b19a742c94bfcbffb7ce"
+    },
+    {
+      "name": "mutation39",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "8c23c0b56b371df69c03ccd90563e12a483eb8a336f256c274db5afb6b98d807"
+    },
+    {
+      "name": "mutation40",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "cde2a516ace04fde080d927191c9a2b18e9b40dd09fc183e4a4793c05c7bfb5a"
+    },
+    {
+      "name": "mutation41",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "b3ca9baa0989a307edf9fcc400ab54adc87dedfea2d2bf29a86b53fb89bdae6f"
+    },
+    {
+      "name": "mutation42",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "4ffbda867d45b11f682d0a6414159307b42e4d4d115261d82817f44f5a2b424d"
+    },
+    {
+      "name": "mutation43",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "606180596bd2aa8942ff75818f5366b8548ecf4bff18b5a801aa5ada307b6f46"
+    },
+    {
+      "name": "mutation44",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "8a767190ca95c1541ef570f4ebeb990c40f141517a4d315019e8a8e49cfb8bda"
+    },
+    {
+      "name": "mutation45",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "2e024c01003284430e13e96a3f2fbf78b0890e025dd5c2857f67a06f8ad6563d"
+    },
+    {
+      "name": "mutation46",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "117048635679f5110ac97a1a8c114ace5e3baff859ebebda979c92b5aff7018b"
+    },
+    {
+      "name": "mutation47",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 36,
+      "max_exit_multiplicity": 2,
+      "components": 2,
+      "mixed_components": 1,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 2,
+      "sha256": "baa76b532f05fbd757a486db4ff478b340b02e2542bdd75d4ff71391b710a258"
+    },
+    {
+      "name": "mutation48",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "f2830ca7d9db4869dbbb996808ffc3560d241fdbdcc2064e94120c761cf722e9"
+    },
+    {
+      "name": "mutation49",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "a509c626d4305ed9982df756b3831c37122f4429e3d03a18438ce188aa9e0fdf"
+    },
+    {
+      "name": "mutation50",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "3bdac750c2942788a145eba3517dd24a2b5e420fc0933966769cb83acf5dc8e3"
+    },
+    {
+      "name": "mutation51",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "49b174d05c7970e50d25dcfc997b8cece864588f29bc430de6d419e810b9d019"
+    },
+    {
+      "name": "mutation52",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 6,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "f0175e2b71ebbdb1a875353cc8eb1baf5122be272164938cdf13da7f721bfa04"
+    },
+    {
+      "name": "mutation53",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "b96f5f099c2898f1a629d7243551226839234f9930d8a7b47ba6bda89a43c943"
+    },
+    {
+      "name": "mutation54",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "d846563abff0355986c991f9aec53006eb6856ef781386cf870acf4117f622ff"
+    },
+    {
+      "name": "mutation55",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 64,
+      "max_exit_multiplicity": 2,
+      "components": 2,
+      "mixed_components": 1,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 2,
+      "sha256": "bddf7ae7d17fb12d0a5959b16365385f3a2be364f58ed9bd018a04278ee94a3b"
+    },
+    {
+      "name": "mutation56",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "af07a6fb8442bca6a2907b9d6072715519ea7922464c43fe1d19d8cb77a88fc3"
+    },
+    {
+      "name": "mutation57",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "49eca019d61f6a17373a3f694a51ed8b455edd4376146ef88cc8acf898525fa9"
+    },
+    {
+      "name": "mutation58",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 8,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "7d395c47ca3c14c56913c15a7d70321fedbca118c2a82c34206735f14e0b23b5"
+    },
+    {
+      "name": "mutation59",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 3,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "8ff000245af9d3462cb90a053e9ffd81ff0b56153a2aa243ffc3b3851035e469"
+    },
+    {
+      "name": "mutation60",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "43a487042dde09e9de5efaa32dfc4d57dc512dd4c7b3f7f67e5bfd5c0c2b1e32"
+    },
+    {
+      "name": "mutation61",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "f30f6b94b8582d53d8ef6967b207078fd0afb39e98abb0f57312aa3888dac083"
+    },
+    {
+      "name": "mutation62",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "26b1bbfd5c5e920c51864f44890ff39a4fe0e5912d1897894fad6215fb5f1808"
+    },
+    {
+      "name": "mutation63",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "781fea6b3bbc6c29da5eb67315c008e0411d196ef072866657769cfdded38013"
+    },
+    {
+      "name": "mutation64",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "afc428ee20db841a50ebf4e834aa387c48e9fe443efc22ef0da90ca28431f4de"
+    },
+    {
+      "name": "mutation65",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "c3c955ee275fbdd5780f3fdf1bfb97e4522a9f25ac7968bc989d17bb7c6c929b"
+    },
+    {
+      "name": "mutation66",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "afe495438a0312ed0d327880abc24589e4d18d15b4d0653931c9e0088345792f"
+    },
+    {
+      "name": "mutation67",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "922100250fb315e427236c151a5b00771d0c834c2fc6711aab04f7f6d90f9a22"
+    },
+    {
+      "name": "mutation68",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "1cb8de9f38cb7e46c0984772de363171d14c8120c35a222cbbddc806de09b64e"
+    },
+    {
+      "name": "mutation69",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "017a1d523f87dc481b7ce3e51ce450b786b6debb2376df9bb30e147bd93c55d6"
+    },
+    {
+      "name": "mutation70",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "d346c8786fe50baa734febe07f58c3150c45941af63e5a9006bc83839da18992"
+    },
+    {
+      "name": "mutation71",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "ad897bedd376ce06984c00b95548a197d0ea1039d9b1052c5e288360f09e0bb5"
+    },
+    {
+      "name": "mutation72",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "d949509ffda4a714c2259c9eafc5eacbec786e3eb50425ca954173c773fea184"
+    },
+    {
+      "name": "mutation73",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "fdfff432bfa3d15faeda44486bcffb33c9c545a87261dafbccd6dcff6219fd6e"
+    },
+    {
+      "name": "mutation74",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "03772785e7416c7f888683654c4b6291fec6e74b6cb8d43d7138faa51731a3d6"
+    },
+    {
+      "name": "mutation75",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "1c7e64323282da5504df165f4e800a32eb3b0fab7c6e6dd429c518d330618f1b"
+    },
+    {
+      "name": "mutation76",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "2a6d9c493a736635dcd0d09a602c50a12042fd11d2a3ca5f762365c90e7436d2"
+    },
+    {
+      "name": "mutation77",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "7ae259275cdf33c5b985d5e4c0272d6757161cdc09475d3fc7d5d631efcf5e82"
+    },
+    {
+      "name": "mutation78",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "d669ae145efb475ccfccda23cf9d15984aa92a03a0c5c53d77891ae5d93b1534"
+    },
+    {
+      "name": "mutation79",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 43,
+      "max_exit_multiplicity": 2,
+      "components": 2,
+      "mixed_components": 1,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 2,
+      "sha256": "7973069f8968fef2a60e7f114e3adcaf1a86756a683d434d0f3b80a852f222db"
+    },
+    {
+      "name": "mutation80",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "894f8e6de9c4763275fee1954fa25d8e1d45c87ab4adcec2311f9ab131a33f7e"
+    },
+    {
+      "name": "mutation81",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "b81fa4770bd5a3b27d122892454b647193efacc0cf1047de6211bdb8b673523c"
+    },
+    {
+      "name": "mutation82",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "6d0c097cf91217ad346387932b6a7c01092d952d45efe8b77ec12723a1fbc34c"
+    },
+    {
+      "name": "mutation83",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 5,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "8dbc21fc4b602a3ddd47140139c65980fa5cabbf67b7102caa75b13f75a483c3"
+    },
+    {
+      "name": "mutation84",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "57217660c546ae736efd7bb72aec551041ae104ab208d0c9d1b3e99b376b3196"
+    },
+    {
+      "name": "mutation85",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "1b3e2062302de43a913b5b3f73cf64b56e642c55fd02625ae34f208e56b50057"
+    },
+    {
+      "name": "mutation86",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "6ea445a7952a806256c33e7619f0ff1113d325566bab56199a962af2556e0207"
+    },
+    {
+      "name": "mutation87",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "d11b6bc7ec23d03ca096cd83d54a27357f9f4e4894afb6684c0ffeb60251f29c"
+    },
+    {
+      "name": "mutation88",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "b2a7d0c1169d4486c5bb915e2b217f06b90000001dbb270fd6015ea778017f3f"
+    },
+    {
+      "name": "mutation89",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "cad09499cae1f8e4e72e0f6590e1b93a4fa63cca8830cf5da2c8886c021c2287"
+    },
+    {
+      "name": "mutation90",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "4477b03e26e6b9b5a7451f857084045d56f22f636f7ce945177bf29cd6a703d2"
+    },
+    {
+      "name": "mutation91",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "cbb40e6a116871275dd94b4f04f3fdffe1f01e7ac92a410010a96cb447d55bdb"
+    },
+    {
+      "name": "mutation92",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "0b62663dec82c4276b1ea6f2d97bc7f8d69b2e9275951eb91d72a7064df4a085"
+    },
+    {
+      "name": "mutation93",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "808f0ad99076b8a3df6d330a8f824ebe2a27625b3484c59e5b1de1d2a3df61d5"
+    },
+    {
+      "name": "mutation94",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "ba5707afc28296f385762b470cb14281cfc593c1d370a72e0ec8b2b5f6174b60"
+    },
+    {
+      "name": "mutation95",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "9e09f19d9948f3f7c299f18c56a48bd90dc309daea0487179354a73c35bc41b4"
+    },
+    {
+      "name": "mutation96",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "4766ecec58862b2e939051cef38f48aa0518f2f33054916b5336580ab3661c90"
+    },
+    {
+      "name": "mutation97",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "a0ab06599871d233921436296a7961ff91328c98308ead05625838b94ae330c7"
+    },
+    {
+      "name": "mutation98",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "6dcb2aa1289c65a6f7eba9fa4d283f590da7b40f1030aa62b664b3a5ea12d6dc"
+    },
+    {
+      "name": "mutation99",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "2b360897451656e528ea90e41dfe853b1648649b1b79cb7769abd20b965b194d"
+    },
+    {
+      "name": "mutation100",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "f7605afb547ee4fa656fe990103c7a734b19c1515edfc62b083940d9f2c2f925"
+    },
+    {
+      "name": "mutation101",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "49e7ac0b4a90f3c5b3b96939169463cac5f4c2acd16050792d0831fcae590b17"
+    },
+    {
+      "name": "mutation102",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "48d94c3055fdf8c0ca8bf40f7cc93a0cb62b50dfb52e94741180038d887dce61"
+    },
+    {
+      "name": "mutation103",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 3,
+      "markers_with_scenario_multiplicity": 134,
+      "max_exit_multiplicity": 3,
+      "components": 3,
+      "mixed_components": 2,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 3,
+      "sha256": "20ce06423e4e8cd44744d53392e17c23c6de03f7e3f0b780d7936cbca2aa8448"
+    },
+    {
+      "name": "mutation104",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "eb96fde5d5b59e7ff3a326044abadfc33773a444b0823c8ec44819b38a4a4cef"
+    },
+    {
+      "name": "mutation105",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "c1418736a069847c235fb35c0d136efc28499aa116849756f0e1b16a6af3e0e8"
+    },
+    {
+      "name": "mutation106",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "e259f946511ab648290d350245388680bd1dbf9cbf85de1c181aa55973abc199"
+    },
+    {
+      "name": "mutation107",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "fb6b380472cffc58128a09bd74ccfcbedacdfc2bfcaea032092a558c5d65cc60"
+    },
+    {
+      "name": "mutation108",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "7f19933b3dee18f076964edf6f938c8a815617f8c57a3da5559eaf7541b76be7"
+    },
+    {
+      "name": "mutation109",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "a04902f0c2812f3edb80316e5f004e849b84a8ee81a646b48d9d84ebc32192c3"
+    },
+    {
+      "name": "mutation110",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "af41c50285d28e6b01c9329a5d1572d8f2cf4d48448d642c36bb22dfa85f22a9"
+    },
+    {
+      "name": "mutation111",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "e00e303dbf75b1f2226a24c9c3e7ff2090ec8fc1232b18174b55d98bfdb3ab3e"
+    },
+    {
+      "name": "mutation112",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "43f4ab266b38397de154bc3a2d97ab49864cfdee8de079d1a3284fa25fb5d951"
+    },
+    {
+      "name": "mutation113",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "6976ec6f07880d0a0c667b23fd6168e25838a2726f24bed79924481234150ab6"
+    },
+    {
+      "name": "mutation114",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "0f888d0ff0786b51194f044b8820afefd4c4be29a32c54a1bc06e5c7b2cbc868"
+    },
+    {
+      "name": "mutation115",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "61e27f8363ea0191b9f92a6becec33ab684b087483c8c47aff85b1a2f6e83ac4"
+    },
+    {
+      "name": "mutation116",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "5a5e5309dd7b12288264f2e59b59ba9ff6622cfcc8f0e9c5126bd1e6cb55d4cb"
+    },
+    {
+      "name": "mutation117",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "0add761f28a111949f2d173769e3bdf44c08ecdde264e315d40d9c08850d4c19"
+    },
+    {
+      "name": "mutation118",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "73aa5f7b2e07e49d7cacc32f222c51ca9036937001acef58d9a628a3495b22a6"
+    },
+    {
+      "name": "mutation119",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "d947dd9c6b752bc3f5463afa6f6869732d3fa5fd55c37188b425e9bc62af0657"
+    },
+    {
+      "name": "mutation120",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "623eddb20420db8e9d6ffe4070b58575b34963a05ae4660f1ad1a3eb0ba9526c"
+    },
+    {
+      "name": "mutation121",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "cfe96091541c72877f011c4b025a9b9f7b3d146af1862837cf858b8ed9d825b3"
+    },
+    {
+      "name": "mutation122",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "5d21057a8b4fb77f25fce8de1a8a8d57f5f980c1300b7ae24684885b3e86dc52"
+    },
+    {
+      "name": "mutation123",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "ba84591b1e69ef7d2abee18cc12b7567ae8448dee3ff7e5ee6aa34e40fb7ca5f"
+    },
+    {
+      "name": "mutation124",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "2332f8e1c21e82174decab464e0e3cd9efdf37f09c74b753bc1e8932f4c9cafe"
+    },
+    {
+      "name": "mutation125",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 1,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "72410103d67323957f2641b2e07230252f5597ccb6f35fad6ec16f40b4ae1e41"
+    },
+    {
+      "name": "mutation126",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "2c8b314fba1395750ba834fd73796e49f26ae403d7f10eeb31383d41651c422c"
+    },
+    {
+      "name": "mutation127",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "9b23854eb12dae8299cf44462f8a06b705216286f3ee8c4c2a85199f77ce3376"
+    },
+    {
+      "name": "mutation128",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "00497f883e0acfccc0a201546c8c6e310050985b4c0519ba5a5d6ec736ec7bb5"
+    },
+    {
+      "name": "mutation129",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "04534e213fcc52dedc450023e05a27d92a9f1896f9b5aa70d8f2a871d01fed36"
+    },
+    {
+      "name": "mutation130",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "8afda5e899617407ddf9ece145511d1c69a3a9f57e1f0a0f71277863ade5388c"
+    },
+    {
+      "name": "mutation131",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 52,
+      "max_exit_multiplicity": 2,
+      "components": 4,
+      "mixed_components": 2,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 2,
+      "sha256": "ba9aefb1093c3bf24231c7b126219d4ef584600c36e0f16a4b55540f815ea1c5"
+    },
+    {
+      "name": "mutation132",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "e35ee2bfe47d283f1735c377590bf0c05af89292049ca0871f722571beb8ffe7"
+    },
+    {
+      "name": "mutation133",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "5e3237a858eac5ff4809728936fcd3907c09f28d8eaad9cfa1acf4d576ecdbe6"
+    },
+    {
+      "name": "mutation134",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "39d2934a62ced3a18b4ce42a9be0b002395f5f92565f64ea9930d36e479f83bf"
+    },
+    {
+      "name": "mutation135",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "1631d54af93562d964437776798a0e10aca63cb6890f2e8ccf3d6a93b2ef843a"
+    },
+    {
+      "name": "mutation136",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "a68efbde9bb8f286dbda8dc7236e4d02c977bc375444192adfa2cd6cc5e0b112"
+    },
+    {
+      "name": "mutation137",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "bcba1fc39513a03dc622a11f917fe17aadbd467f5abe35cbf3794c4509c8b412"
+    },
+    {
+      "name": "mutation138",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "d0dd6ca2d50ee9237c55dd2925f73336491c99e39977b5ce8cc6ede97102b2c6"
+    },
+    {
+      "name": "mutation139",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "ce5c0cd5eab43ac2752039c6e2fe3a37d4bd843570fb0c0e150511a4d805efc0"
+    },
+    {
+      "name": "mutation140",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "50aec485daedb0c0a569cc1cfe709a8401359cc33b9574e792e576acbe117d24"
+    },
+    {
+      "name": "mutation141",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "8218c94f863d00742bdade74b21b97c5118068abfa7afe17a5dafa085644eae0"
+    },
+    {
+      "name": "mutation142",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 23,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "24ed4b39bf9a905402a8ab49416111bd221dac4de7bd7531bb04c572b0d3d0a4"
+    },
+    {
+      "name": "mutation143",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "287349f26fd0b75c30a0e182e0899ff7bc2741b1640bf2c846cf29412fefb6b1"
+    },
+    {
+      "name": "mutation144",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "50ab60ce63dc48052ee355e912ddf907055d96df30c7ff42025543e7c61012e9"
+    },
+    {
+      "name": "mutation145",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "08b2b51a181595d87d6afa384dc3d11450f34d9468b7e97cb2601c778dd0f60a"
+    },
+    {
+      "name": "mutation146",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "3747ff410b8ef38cf72939c662cb433855f33ecdb09509a0b06b7f2f9e2f64a6"
+    },
+    {
+      "name": "mutation147",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "8e00797af2f2ceb03c7bdd99ebe84be718ffabe06831ee8cc9e98f2c790ab0ed"
+    },
+    {
+      "name": "mutation148",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "bde5a394b63141974ea7d604cd07cd01c7449a397a51d817d842358dc01c1406"
+    },
+    {
+      "name": "mutation149",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "9c62c115dd0a91590850c6841da7f54ea5dfe69ca582869085986a2ddd6f9cf7"
+    },
+    {
+      "name": "mutation150",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "27e9fbda40263d16dc480b9f5620c2fb50ea3faf9d80e837c1215a6711439468"
+    },
+    {
+      "name": "mutation151",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "scenarios": 2,
+      "markers_with_scenario_multiplicity": 69,
+      "max_exit_multiplicity": 2,
+      "components": 2,
+      "mixed_components": 1,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 2,
+      "sha256": "ea14fc19f1f22e87e2e74e960978408e9da9e9793034bd447040bbfd8bff05fd"
+    },
+    {
+      "name": "mutation152",
+      "N": 392,
+      "query_size": 206,
+      "cases": 1,
+      "sha256": "72976b5b976d1fd633d54a20cf40b4258f6ab4bd9deb0ebe6fdefc04d66689d6"
+    },
+    {
+      "name": "mutation153",
+      "N": 606,
+      "query_size": 302,
+      "cases": 1,
+      "sha256": "8158757ed6d7616e1ddb3be349bb1c4a22691b33ffd8324320ef251271fa30d8"
+    },
+    {
+      "name": "mutation154",
+      "N": 1194,
+      "query_size": 206,
+      "cases": 1,
+      "scenarios": 1,
+      "markers_with_scenario_multiplicity": 11,
+      "max_exit_multiplicity": 1,
+      "components": 1,
+      "mixed_components": 0,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 1,
+      "sha256": "7830b850764aadb84fad202efb3fdc59b4576977033c4078eca6c598d4f1527d"
+    },
+    {
+      "name": "mutation155",
+      "N": 1812,
+      "query_size": 302,
+      "cases": 1,
+      "scenarios": 3,
+      "markers_with_scenario_multiplicity": 62,
+      "max_exit_multiplicity": 3,
+      "components": 3,
+      "mixed_components": 2,
+      "wide_components": 0,
+      "overlap_components": 0,
+      "repeated_early_components": 0,
+      "max_axes": 3,
+      "sha256": "995bf78288512da54a44dffbac7e01b55970ae9914fb9c17c90602d6e37726e4"
+    },
+    {
+      "name": "mutation156",
+      "N": 742,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "39391126990be34a6e0c710a44222f19145a017cd120a82c0cf6ecc33f56bfdb"
+    },
+    {
+      "name": "mutation157",
+      "N": 1152,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "8f1b9dad9731d266d26c311dffa57cdadf2907936689dd5bb27eac37a91a5291"
+    },
+    {
+      "name": "mutation158",
+      "N": 2310,
+      "query_size": 364,
+      "cases": 1,
+      "sha256": "1093eba9877edb3f0a7438cf87eced72d5eb0f07fb08c5c80cd9bd07191b7cd0"
+    },
+    {
+      "name": "mutation159",
+      "N": 3500,
+      "query_size": 532,
+      "cases": 1,
+      "sha256": "bbb2c35f75c812ad93f72d1010bfd5ea39c28c93addb880324faf08bdb5f5c1f"
+    }
+  ],
+  "counterexamples": [],
+  "purpose": "Leaf removals and additions preserve the induced tree and one complete query copy."
+}

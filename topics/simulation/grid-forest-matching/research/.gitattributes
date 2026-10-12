@@ -1,3 +1,7 @@
 # Preserve proof formatting and the exact bytes fingerprinted by the input manifest.
 proofs/** -text -whitespace
 examples/inputs/*.in -text
+
+# Generated evidence is retained for reproducibility; keep review focused on sources.
+*-results.json linguist-generated=true
+reference-round-*.json linguist-generated=true

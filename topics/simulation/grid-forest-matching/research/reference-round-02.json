@@ -1,0 +1,118 @@
+{
+  "round": 2,
+  "stats": {
+    "cases": 6
+  },
+  "cases": [
+    {
+      "k": 6,
+      "N": 1830,
+      "nonreference_sources": 5,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 1,
+      "excess_per_source": 3,
+      "total_remaining_excess": 3
+    },
+    {
+      "k": 7,
+      "N": 2157,
+      "nonreference_sources": 6,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 2,
+      "excess_per_source": 3,
+      "total_remaining_excess": 6
+    },
+    {
+      "k": 9,
+      "N": 2811,
+      "nonreference_sources": 8,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 4,
+      "excess_per_source": 3,
+      "total_remaining_excess": 12
+    },
+    {
+      "k": 12,
+      "N": 3792,
+      "nonreference_sources": 11,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 7,
+      "excess_per_source": 3,
+      "total_remaining_excess": 21
+    },
+    {
+      "k": 18,
+      "N": 5754,
+      "nonreference_sources": 17,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 13,
+      "excess_per_source": 3,
+      "total_remaining_excess": 39
+    },
+    {
+      "k": 30,
+      "N": 9678,
+      "nonreference_sources": 29,
+      "shared_exit_edge": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "sources_after_four_classes_and_reference": 25,
+      "excess_per_source": 3,
+      "total_remaining_excess": 75
+    }
+  ],
+  "counterexamples": [],
+  "purpose": "Verify unbounded reuse of one shifted-source failure edge."
+}

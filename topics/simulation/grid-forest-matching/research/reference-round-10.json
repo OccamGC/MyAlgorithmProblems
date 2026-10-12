@@ -1,0 +1,68 @@
+{
+  "round": 10,
+  "stats": {
+    "cases": 7
+  },
+  "cases": [
+    {
+      "file": "local-path-capacity-k2.in",
+      "literal_markers": 6
+    },
+    {
+      "file": "connected-resources.in",
+      "literal_markers": 41
+    },
+    {
+      "k": 6,
+      "w": 3,
+      "n": 250,
+      "within_official_side_limit": true,
+      "actual_long_axis_classes": 6,
+      "actual_remaining_sources": 1,
+      "actual_remaining_excess": 3,
+      "distinct_failure_edges": 1
+    },
+    {
+      "k": 9,
+      "w": 3,
+      "n": 376,
+      "within_official_side_limit": true,
+      "actual_long_axis_classes": 9,
+      "actual_remaining_sources": 4,
+      "actual_remaining_excess": 12,
+      "distinct_failure_edges": 1
+    },
+    {
+      "k": 18,
+      "w": 3,
+      "n": 754,
+      "within_official_side_limit": true,
+      "actual_long_axis_classes": 18,
+      "actual_remaining_sources": 13,
+      "actual_remaining_excess": 39,
+      "distinct_failure_edges": 1
+    },
+    {
+      "k": 30,
+      "w": 3,
+      "n": 1258,
+      "within_official_side_limit": false,
+      "actual_long_axis_classes": 30,
+      "actual_remaining_sources": 25,
+      "actual_remaining_excess": 75,
+      "distinct_failure_edges": 1
+    },
+    {
+      "k": 8,
+      "w": 5,
+      "n": 526,
+      "within_official_side_limit": true,
+      "actual_long_axis_classes": 8,
+      "actual_remaining_sources": 3,
+      "actual_remaining_excess": 105,
+      "distinct_failure_edges": 1
+    }
+  ],
+  "counterexamples": [],
+  "purpose": "Independently check full-prefix stars and the actual Section 29/38 remainder."
+}

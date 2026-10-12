@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="305" viewBox="0 0 740 305" role="img" aria-labelledby="title desc">
+<title id="title">不同行复用同一水平距离，就产生非退化平行四边形</title><desc id="desc">Two points in an upper row at columns one and five and two in a lower row at columns three and seven form a parallelogram, even though the pairs are not vertically aligned.</desc>
+<defs>
+<marker id="blue-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="#2676bb"/></marker>
+<marker id="orange-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0,0L10,5L0,10Z" fill="#bd6516"/></marker>
+</defs><rect width="740" height="305" fill="white"/>
+<g font-family="Arial, Microsoft YaHei, sans-serif" fill="#18324a">
+<text x="24" y="34" font-size="22" text-anchor="start" fill="#18324a">不同行复用同一水平距离，就产生非退化平行四边形</text>
+<circle cx="110" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="186" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="262" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="338" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="414" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="490" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="566" cy="120" r="2" fill="#d6e0e8"/>
+<circle cx="110" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="186" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="262" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="338" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="414" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="490" cy="212" r="2" fill="#d6e0e8"/>
+<circle cx="566" cy="212" r="2" fill="#d6e0e8"/>
+<polyline points="110,120 262,212" fill="none" stroke="#2676bb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<polyline points="414,120 566,212" fill="none" stroke="#2676bb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="5 5"/>
+<polyline points="110,120 414,120" fill="none" stroke="#bd6516" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#orange-arrow)"/>
+<circle cx="110" cy="120" r="6" fill="#2676bb" stroke="#2676bb" stroke-width="2.5"/>
+<circle cx="414" cy="120" r="6" fill="#2676bb" stroke="#2676bb" stroke-width="2.5"/>
+<text x="262.0" y="100" font-size="17" text-anchor="middle" fill="#18324a">相同距离 d = 4</text>
+<polyline points="262,212 566,212" fill="none" stroke="#bd6516" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#orange-arrow)"/>
+<circle cx="262" cy="212" r="6" fill="#2676bb" stroke="#2676bb" stroke-width="2.5"/>
+<circle cx="566" cy="212" r="6" fill="#2676bb" stroke="#2676bb" stroke-width="2.5"/>
+<text x="414.0" y="192" font-size="17" text-anchor="middle" fill="#18324a">相同距离 d = 4</text>
+<text x="24" y="126" font-size="17" text-anchor="start" fill="#18324a">上一行</text>
+<text x="24" y="218" font-size="17" text-anchor="start" fill="#18324a">下一行</text>
+<text x="59" y="251" font-size="15" text-anchor="start" fill="#18324a">列</text>
+<text x="110" y="251" font-size="15" text-anchor="middle" fill="#18324a">1</text>
+<text x="186" y="251" font-size="15" text-anchor="middle" fill="#18324a">2</text>
+<text x="262" y="251" font-size="15" text-anchor="middle" fill="#18324a">3</text>
+<text x="338" y="251" font-size="15" text-anchor="middle" fill="#18324a">4</text>
+<text x="414" y="251" font-size="15" text-anchor="middle" fill="#18324a">5</text>
+<text x="490" y="251" font-size="15" text-anchor="middle" fill="#18324a">6</text>
+<text x="566" y="251" font-size="15" text-anchor="middle" fill="#18324a">7</text>
+<text x="24" y="287" font-size="16" text-anchor="start" fill="#18324a">不要求两对点左右对齐：两条水平对边等长，就足以构成禁形。</text>
+</g></svg>
