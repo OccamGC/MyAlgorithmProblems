@@ -18,6 +18,8 @@ $$
 
 Space is $O(n^2)$. When $m\ge n-1$, there is a matching worst-case total-time lower bound of $\Omega(n^3+m)$ for this candidate-list algorithm. This is not a cubic lower bound for every possible algorithm. Shorter move sequences also admit the bound $O(n^2+m+N\min(m,n))$.
 
+Extension: [with diagonal directions only](diagonal-only.en.md), coordinate isomorphisms on the two parity classes preserve these check and complexity bounds. That corollary has its own model specification and complete reduction proof.
+
 ## Proof idea
 
 The proof counts successful checks over the entire history at once. Group successes by the host road vertex reached and the query row, retain the earliest success in each group, and pair later successes with it. Each pair receives a horizontal translation label and a complete early-prefix resource.

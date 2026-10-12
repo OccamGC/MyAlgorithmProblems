@@ -1,8 +1,8 @@
 # 复杂度研究资料 / Complexity research
 
-首次阅读可从两项成果的摘要开始：[网格森林平移匹配的三次方上界](results/cubic-bound.zh.md)与[诱导网格森林不能总靠补点扩充成树](results/tree-extension.zh.md)。摘要分别给出模型、结论、证明入口和复核命令。
+首次阅读可从[网格森林平移匹配的三次方上界](results/cubic-bound.zh.md)与[诱导网格森林不能总靠补点扩充成树](results/tree-extension.zh.md)的摘要开始。拓展模型见[仅对角邻接的奇偶拆分与完整证明](results/diagonal-only.zh.md)。各入口给出模型、结论、证明和复核命令。
 
-Start with the summaries of [the cubic bound for grid forest translation matching](results/cubic-bound.en.md) and [obstructions to extending induced grid forests to trees](results/tree-extension.en.md). Each identifies the model, result, proof, and verification commands.
+Start with the summaries of [the cubic bound for grid forest translation matching](results/cubic-bound.en.md) and [obstructions to extending induced grid forests to trees](results/tree-extension.en.md). For an extended model, see [diagonal-only adjacency: parity decomposition and full proof](results/diagonal-only.en.md). Each entry identifies the model, result, proof, and verification commands.
 
 [结论状态索引 / Result status index](../../../../research-index.json) · [Agent 导航 / Agent guide](../../../../llms.txt) · [固定版本引用 / Versioned citations](../../../../CITATION.md)
 
@@ -20,6 +20,7 @@ Continuation update, 2026-10-12: opposite early arms refute direction A's connec
 | --- | --- | --- |
 | 算法 / Algorithm | [题解](../solution.zh.md) | [Editorial](../solution.en.md) |
 | 有限第二轴引理与一般三次方证明 / Finite second-axis lemma and general cubic proof | [证明、符号速查与收费算例](proofs/cubic-bound.zh.md) | [Proof, notation guide, and worked charge](proofs/cubic-bound.en.md) |
+| 仅对角邻接拓展：奇偶同构、上下界与补树障碍 / Diagonal-only extension: parity isomorphism, bounds, and tree obstructions | [完整归约证明](results/diagonal-only.zh.md) | [Complete reduction proof](results/diagonal-only.en.md) |
 | 较早的带对数上界 / Earlier logarithmic bound | [详细证明与图示](../complexity.zh.md) | [Illustrated proof](../complexity.en.md) |
 | 去掉对数的进展 / Removing the logarithm | [研究综述](../complexity-research.zh.md) | [Overview](../complexity-research.en.md) |
 | 路径与方向字符串 / Paths and direction strings | [证明](proofs/complexity-paths.zh.md) | [Proof](proofs/complexity-paths.en.md) |
@@ -85,6 +86,7 @@ python topics/simulation/grid-forest-matching/research/check_documents.py
 python topics/simulation/grid-forest-matching/research/verify_tree_extension.py
 python topics/simulation/grid-forest-matching/research/verify_examples.py
 python topics/simulation/grid-forest-matching/research/verify_cubic_bound.py --output tmp/grid-forest-matching/cubic-bound-results.json
+python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json
 ```
 
 需要与标准程序比较时，编译后选择下面的完整复核命令。它包含全部 1,886 个实例的 Python 复核，并对其中 17 个实例运行标准程序。结果中的 `program_compared` 字段取决于是否传入该选项。

@@ -5,7 +5,7 @@
   "path_base": "repository-root",
   "scope": "Selected research results and open questions; new topics may be added with stable IDs and repository-relative paths. This is not a catalog of every algorithm problem.",
   "publication_commit": "640ae4ac52a1ce5a3082022162611839f97591fe",
-  "version_policy": "publication_commit identifies the published proofs and evidence. Entry pages and this index are maintained on the default branch; cite the immutable proof links for that research version.",
+  "version_policy": "The top-level publication_commit identifies the original orthogonal research snapshot. Later results carry their own publication_commit when pinned; cite each result's immutable proof link. Entry pages and this index are maintained on the default branch.",
   "notation": {
     "n": "Square board side length",
     "N": "Number of road vertices, at most n^2",
@@ -116,6 +116,57 @@
         "commands": ["python topics/simulation/grid-forest-matching/research/verify_tree_extension.py"]
       },
       "citation_key": "OccamGC2026GridForestTreeExtension"
+    },
+    {
+      "id": "grid-forest-matching-diagonal-only",
+      "featured": true,
+      "title": {
+        "zh": "仅对角邻接的网格森林：奇偶拆分与三次方界",
+        "en": "Diagonal-only grid forests: parity decomposition and cubic bounds"
+      },
+      "summary": {
+        "zh": "只允许四个对角方向时，两种奇偶类各自同构于四邻接网格，保留原检查次数上界与三次方最坏量级；补树障碍也可迁移。",
+        "en": "With diagonal directions only, each parity class is isomorphic to an orthogonal grid, preserving the check bound, cubic worst-case order, and tree-extension obstructions."
+      },
+      "status": "current_proof",
+      "keywords": ["diagonal-only grid forest", "parity decomposition", "lattice isomorphism", "translation matching", "cubic bound", "对角邻接", "奇偶拆分", "坐标变换"],
+      "assumptions": [
+        "Roads on an n-by-n board induce a forest using exactly the four diagonal directions (+/-1,+/-1); every such edge is retained.",
+        "Moves use the same four diagonal directions, without orthogonal moves, side-cell corner-cutting restrictions, or junctions at geometric edge crossings.",
+        "A start must execute the entire movement prefix. The candidate-list algorithm eliminates failures permanently and scans only at new relative displacements."
+      ],
+      "conclusions": [
+        "The two parity classes separately reduce to orthogonal induced forests on boards of side at most n; answers and candidate checks add exactly.",
+        "W <= (5n-3)N; time O(n^2 + m + nN), hence O(n^3 + m); space O(n^2).",
+        "For m >= n-1, this candidate-list algorithm has matching worst-case time Theta(n^3 + m). Short walks admit O(n^2 + m + N min(m,n)).",
+        "Vertices from different parity classes can never be connected, even by adding vertices on arbitrarily enlarged boards.",
+        "Within one parity class, orthogonal tree-extension obstructions transfer, including Theta(n) components of size Theta(n) with pairwise nonextendability."
+      ],
+      "limitations": [
+        "This is a corollary of the orthogonal cubic and obstruction proofs through lattice isomorphisms, not a new charging argument.",
+        "The reduction does not cover eight-neighbor movement or additional corner-cutting restrictions.",
+        "The lower bound concerns the candidate-list algorithm, not all possible algorithms. Finite verification supplements the general proof.",
+        "The original problem statement, direction encoding, and C++ reference program remain orthogonal."
+      ],
+      "entry_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/diagonal-only.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/diagonal-only.en.md"
+      },
+      "proof_paths": {
+        "zh": "topics/simulation/grid-forest-matching/research/results/diagonal-only.zh.md",
+        "en": "topics/simulation/grid-forest-matching/research/results/diagonal-only.en.md"
+      },
+      "evidence_paths": [
+        "topics/simulation/grid-forest-matching/research/verify_diagonal_only.py",
+        "topics/simulation/grid-forest-matching/research/diagonal-only-results.json"
+      ],
+      "verification": {
+        "cwd": "repository-root",
+        "requirements": ["Python >= 3.10, standard library only"],
+        "commands": ["python topics/simulation/grid-forest-matching/research/verify_diagonal_only.py --output tmp/grid-forest-matching/diagonal-only-results.json"]
+      },
+      "citation_key": "OccamGC2026DiagonalGridForest",
+      "extends": ["grid-forest-matching-cubic-bound", "induced-grid-forest-tree-extension-obstructions"]
     },
     {
       "id": "grid-forest-matching-comb-candidates",

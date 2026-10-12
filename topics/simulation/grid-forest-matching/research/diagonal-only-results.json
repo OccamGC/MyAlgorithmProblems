@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "scope": "Finite evidence for the written lattice-isomorphism proof; not a proof by enumeration.",
+  "parity_board_side_range": [
+    1,
+    12
+  ],
+  "parity_board_checks": 24,
+  "road_subsets_n_1_to_3": 530,
+  "forests_n_1_to_3": 498,
+  "move_sequence_length": 4,
+  "forest_and_length_4_walk_cases": 127488,
+  "direct_simulation_answer_checks": 127488,
+  "embedded_lower_bounds": [
+    {
+      "board_side": 7,
+      "roads": 8,
+      "moves": 3,
+      "checks": 18
+    },
+    {
+      "board_side": 15,
+      "roads": 32,
+      "moves": 7,
+      "checks": 140
+    },
+    {
+      "board_side": 31,
+      "roads": 128,
+      "moves": 15,
+      "checks": 1080
+    },
+    {
+      "board_side": 63,
+      "roads": 512,
+      "moves": 31,
+      "checks": 8432
+    }
+  ]
+}

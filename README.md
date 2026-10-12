@@ -18,6 +18,7 @@ The entries below give precise assumptions, result summaries, proofs, and reprod
 | --- | --- | --- |
 | 四邻接网格森林的平移匹配 / Translation matching in four-neighbor grid forests | 候选列表算法的总检查次数 W ≤ (5n−3)N，时间 O(n²+m+nN)，从而 O(n³+m) / Cubic upper bound; matching worst-case lower bound when m ≥ n−1 | [中文](topics/simulation/grid-forest-matching/research/results/cubic-bound.zh.md) · [English](topics/simulation/grid-forest-matching/research/results/cubic-bound.en.md) |
 | 诱导网格森林能否补点扩充成树 / Can an induced grid forest be extended to a tree by adding vertices? | 固定位置、保留全部四邻接边时不一定能；存在 Θ(n) 棵、每棵 Θ(n) 个顶点的两两障碍族 / Counterexamples with linearly many large components | [中文](topics/simulation/grid-forest-matching/research/results/tree-extension.zh.md) · [English](topics/simulation/grid-forest-matching/research/results/tree-extension.en.md) |
+| 只允许四个对角方向 / Diagonal-only adjacency and movement | 奇偶拆分保留 W ≤ (5n−3)N 与 O(n³+m)；补树障碍可迁移 / Parity reduction preserves the cubic bounds and tree-extension obstructions | [中文与完整证明](topics/simulation/grid-forest-matching/research/results/diagonal-only.zh.md) · [English with proof](topics/simulation/grid-forest-matching/research/results/diagonal-only.en.md) |
 
 [全部研究材料 / Research directory](topics/simulation/grid-forest-matching/research/README.md) · [结论与状态索引 / Machine-readable result index](research-index.json) · [Agent 阅读导航 / Agent reading guide](llms.txt) · [引用 / How to cite](CITATION.md)
 
