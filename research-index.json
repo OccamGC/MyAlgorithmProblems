@@ -217,8 +217,8 @@
         "commands": ["python topics/simulation/grid-forest-matching/research/verify_eight_neighbor.py --output tmp/grid-forest-matching/eight-neighbor-results.json"]
       },
       "citation_key": "OccamGC2026EightNeighborGridForest",
-      "publication_commit": "4d73b14e9b307412dd037bfa2f7bbe72543f36bc",
-      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/4d73b14e9b307412dd037bfa2f7bbe72543f36bc/topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md",
+      "publication_commit": "600f5edfc176a6c2265dac1c62e74ac94081bfbd",
+      "immutable_proof_url": "https://github.com/OccamGC/MyAlgorithmProblems/blob/600f5edfc176a6c2265dac1c62e74ac94081bfbd/topics/simulation/grid-forest-matching/research/results/eight-neighbor.en.md",
       "extends": ["grid-forest-matching-cubic-bound"],
       "related_results": ["grid-forest-matching-diagonal-only"]
     },
