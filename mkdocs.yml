@@ -1,0 +1,66 @@
+site_name: MyAlgorithmProblems
+site_url: https://occamgc.github.io/MyAlgorithmProblems/
+site_description: 算法问题、数学证明与可复核反例。Bilingual algorithm problems, proofs, counterexamples, and reproducible research.
+site_author: OccamGC
+repo_url: https://github.com/OccamGC/MyAlgorithmProblems
+repo_name: OccamGC/MyAlgorithmProblems
+edit_uri: ''
+docs_dir: build/site-source
+site_dir: build/pages
+use_directory_urls: true
+theme:
+  name: material
+  custom_dir: website/overrides
+  language: zh
+  font: false
+  logo: assets/site/mark.svg
+  favicon: assets/site/mark.svg
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换深色 / Dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换浅色 / Light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search:
+      lang: [en, zh]
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+extra_css:
+  - assets/site/site.css
+extra_javascript:
+  - assets/site/mathjax-config.js
+  - assets/site/mathjax/tex-svg.js
+validation:
+  nav:
+    omitted_files: ignore
+  links:
+    not_found: warn
+    unrecognized_links: warn
+    anchors: info
+copyright: OccamGC · 研究笔记与算法题库 / Research notes and algorithm problems

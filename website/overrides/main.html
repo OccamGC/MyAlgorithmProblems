@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block htmltitle %}
+  {{ super() }}
+  {% if page and page.meta.language %}<meta name="language" content="{{ page.meta.language }}">{% endif %}
+{% endblock %}
+{% block extrahead %}
+  {{ super() }}
+  <link rel="describedby" href="{{ config.site_url }}llms.txt" type="text/plain">
+  {% if page and page.meta.source_url %}
+  <link rel="alternate" type="text/markdown" href="{{ page.meta.source_url }}">
+  {% endif %}
+  {% if page and page.meta.translations %}
+    {% for language, url in page.meta.translations.items() %}
+    <link rel="alternate" hreflang="{{ language }}" href="{{ url }}">
+    {% endfor %}
+  {% endif %}
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="MyAlgorithmProblems">
+  {% if page %}
+  <meta property="og:title" content="{{ page.title | default(config.site_name, true) | e }}">
+  <meta property="og:description" content="{{ page.meta.description | default(config.site_description, true) | e }}">
+  <meta property="og:url" content="{{ page.canonical_url }}">
+  {% endif %}
+{% endblock %}
+{% block content %}
+  {% if page and page.meta.github_url %}
+  <div class="source-bar">
+    <a href="{{ page.meta.github_url }}">GitHub 源文件</a>
+    <a href="{{ page.meta.source_url }}">Markdown</a>
+    {% if page.meta.other_language_url %}
+    <a href="{{ page.meta.other_language_url }}">{{ page.meta.other_language_label }}</a>
+    {% endif %}
+  </div>
+  {% endif %}
+  <div lang="{{ page.meta.language if page and page.meta.language else 'zh-CN' }}">
+    {{ super() }}
+  </div>
+{% endblock %}

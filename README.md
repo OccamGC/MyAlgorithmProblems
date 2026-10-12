@@ -1,5 +1,7 @@
 # MyAlgorithmProblems 算法题库与研究笔记
 
+[在线阅读 / Website](https://occamgc.github.io/MyAlgorithmProblems/) · [研究成果 / Research](https://occamgc.github.io/MyAlgorithmProblems/research/) · [新增成果与网站维护 / Contributing](website/CONTRIBUTING.md)
+
 共 192 道题，按主题排列。每题提供中英文题面与题解、C++17 标准程序、样例，以及可重复生成测试输入的 Python 3 脚本。具有多种解法的题目在题解中说明首选、并列或备用方案及其适用条件。
 
 题目使用与评测说明见[评测环境与性能](docs/评测环境与性能.md)。Grox、Spode 系列的英文题记来源见[Spore 题记来源](docs/Spore题记来源.md)。

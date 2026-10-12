@@ -1,0 +1,16 @@
+{
+  "id": "replace-with-stable-result-id",
+  "title": {"zh": "替换为中文标题", "en": "Replace with English title"},
+  "status": "open_question",
+  "keywords": ["replace with relevant search terms"],
+  "assumptions": ["Replace with the precise model assumptions"],
+  "conclusions": ["Replace with the precise open question or established result"],
+  "limitations": ["Replace with the boundaries of the claim"],
+  "documentation_paths": {
+    "zh": "topics/replace-topic/replace-problem/research/results/replace-result.zh.md",
+    "en": "topics/replace-topic/replace-problem/research/results/replace-result.en.md"
+  },
+  "related_results": [],
+  "featured": false,
+  "summary": {"zh": "替换为简短摘要", "en": "Replace with a short summary"}
+}

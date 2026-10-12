@@ -3,7 +3,7 @@
   "repository": "https://github.com/OccamGC/MyAlgorithmProblems",
   "updated": "2026-10-12",
   "path_base": "repository-root",
-  "scope": "Selected grid-forest-matching research results, not a catalog of every problem in the repository.",
+  "scope": "Selected research results and open questions; new topics may be added with stable IDs and repository-relative paths. This is not a catalog of every algorithm problem.",
   "publication_commit": "640ae4ac52a1ce5a3082022162611839f97591fe",
   "version_policy": "publication_commit identifies the published proofs and evidence. Entry pages and this index are maintained on the default branch; cite the immutable proof links for that research version.",
   "notation": {
@@ -16,11 +16,19 @@
     "current_proof": "A general written proof is supplied in this repository; this is a repository classification, not a claim of external peer review or formal proof-assistant verification.",
     "refuted_conjecture": "A previously proposed claim has a documented counterexample; use the counterexample, not the claim, as the result.",
     "historical_upper_bound": "A valid earlier bound superseded in strength by a current proof.",
-    "historical_experiment": "Finite evidence retained for reproducibility; it does not prove the associated general conjecture."
+    "historical_experiment": "Finite evidence retained for reproducibility; it does not prove the associated general conjecture.",
+    "conjecture": "A precise claim awaiting proof or refutation.",
+    "experimental_evidence": "A claim supported by finite experiments, without a general proof.",
+    "open_question": "A research question without an established answer."
   },
   "results": [
     {
       "id": "grid-forest-matching-cubic-bound",
+      "featured": true,
+      "summary": {
+        "zh": "对只在新位移处筛选的候选列表算法，完整历史的收费证明去掉了对数因子，得到一般森林上的 O(n³+m) 上界。",
+        "en": "Complete-history charging removes the logarithmic factor for candidate-list filtering at new displacements, giving O(n³+m) time on general forests."
+      },
       "title": {
         "zh": "四邻接网格森林平移匹配的三次方复杂度上界",
         "en": "A cubic time bound for translation matching in four-neighbor grid forests"
@@ -65,6 +73,11 @@
     },
     {
       "id": "induced-grid-forest-tree-extension-obstructions",
+      "featured": true,
+      "summary": {
+        "zh": "保持原位置与全部四邻接边时，补点不一定能把森林连成树；这种障碍可以扩展到线性数量、每棵线性大小的路径。",
+        "en": "With positions and all induced edges preserved, adding vertices need not connect a forest into a tree—even for linearly many paths of linear size."
+      },
       "title": {
         "zh": "诱导四邻接网格森林不一定能通过补点扩充成树",
         "en": "Induced four-neighbor grid forests need not extend to trees by adding vertices"
