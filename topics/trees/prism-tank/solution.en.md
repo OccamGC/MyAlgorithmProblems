@@ -1,5 +1,11 @@
 # Prism Tank Solution
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Rerooting DP](solution-alternative-reroot.en.md) | Evaluate all firing roots in two forest traversals | [C++17](alternative-reroot.cpp) |
+
 ## Comparing solutions
 
 The problem setter’s solution enumerates the final firing root and performs tree DP. It sorts child contributions in descending order, tries the number $k$ of retained children, multiplies the top-$k$ sum by the corresponding attenuation factor, and adds the current vertex's damage. For fixed $k$ , choosing the largest contributions is optimal; induction from leaves gives the recurrence below. If blocking is unavailable, all children are retained.

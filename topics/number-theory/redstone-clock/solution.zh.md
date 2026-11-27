@@ -25,3 +25,9 @@ $$\operatorname{lcm}(i,a)=\frac{i}{\gcd(i,a)}\,a$$
 用 $U$ 表示周期和初始参数的数值上界，本题 $U=10^7$ .每次最大公约数计算需 $O(\log U)$ 时间，总时间为 $O(n\log U)$ ，额外空间为 $O(1)$ ，按固定字长整数运算计。
 
 最小公倍数和 $a^2$ 可能超过 32 位整数范围，使用 64 位整数。先除以最大公约数，再乘以 $a$ ；所有询问在线生成，无需保存。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [查表 GCD](solution-alternative-tabulated-gcd.zh.md) | 询问密集且可接受值域表的空间 | [C++17](alternative-tabulated-gcd.cpp) |

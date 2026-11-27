@@ -63,3 +63,9 @@ For the underlying structures, see Sleator and Tarjan's [A Data Structure for Dy
 An independent adjacency-list model constructs root paths directly, intersects their prefixes and performs subtree moves. Tests include negative weights, moves after rerooting, self-subtree moves, nonexistent edges, single- and multiple-vertex queries and no operations. Formal cases additionally exercise long chains and repeated edge-node reuse.
 
 See [environment and measurements](../../../docs/评测环境与性能.md) for performance measurements.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Adjacent-pair LCA](solution-alternative-pair-lca.en.md) | Use structural depth of pair LCAs without an endpoint map | [C++17](alternative-pair-lca.cpp) |

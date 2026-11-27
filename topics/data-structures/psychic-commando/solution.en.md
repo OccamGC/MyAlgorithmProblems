@@ -54,3 +54,9 @@ Let the recorded width and height be $W,H\le1001$ . Time is $O(WH+m\log(W+1)\lo
 One operation changes a cell by at most $10^4$ in absolute value. Each cell therefore has absolute value at most $3\times10^8$ , and a region sum at most $3\times10^8WH$ . For a conservative bound on intermediates, each operation produces at most $20$ difference-point updates, and each weight gains a factor of at most $WH$ . The prefix formula combines four terms, and rectangle inclusion-exclusion combines four prefixes. Thus intermediates are bounded by $320m\cdot10^4WH<10^{17}$ in absolute value, within signed 64-bit range.
 
 Preserve negative values. Radius one, a single row or column, disjoint rectangles, and zero power all fit the same data structure.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Row blocks and column segment trees](solution-alternative-row-blocks.en.md) | Compare row blocks with the 2D Fenwick tree | [C++17](alternative-row-blocks.cpp) |

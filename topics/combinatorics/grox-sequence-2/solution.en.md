@@ -1,6 +1,13 @@
 # Grox's Sequence II Editorial
 
-**Preferred method: prefix sums by exponent residue, a linear algorithm by Codex (GPT-6) for the three requested totals.** The problem setter’s divide-and-conquer NTT method computes all coefficients; its complete approach and complexity are retained below. Since this task needs only three totals, `std.cpp` uses the linear method.
+**Reference implementation: prefix sums by exponent residue, a linear algorithm by Codex (GPT-6) for the three requested totals.** The problem setter’s divide-and-conquer NTT method computes all coefficients; its complete approach and complexity are retained below. Since this task needs only three totals, `std.cpp` uses the linear method.
+
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Constant-space evaluation](solution-alternative-constant-space.en.md) | Compute the three residue sums in constant extra space | [C++17](alternative-constant-space.cpp) |
+| [Divide-and-conquer NTT](solution-alternative-divide-ntt.en.md) | Recover every Laurent coefficient | [C++17](alternative-divide-ntt.cpp) |
 
 ## 1. Retain the information needed by the output
 

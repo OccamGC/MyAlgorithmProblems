@@ -2,6 +2,13 @@
 
 **出题人解法：按阶乘下标分块，预处理带连续乘积的块内和。** Codex（GPT-6）整理 C++17 实现，补齐零下标、空和及末块边界。模数为合数，算法始终只使用加法和乘法，不需要阶乘逆元。
 
+## 实现选择
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [离线对角线递推](solution-alternative-diagonal-dp.zh.md) | 批量询问，复用同一对角线的状态 | [C++17](alternative-diagonal-dp.cpp) |
+| [整表查询](solution-alternative-lookup.zh.md) | 内存充足时在线常数时间查询 | [C++17](alternative-lookup.cpp) |
+
 ## 1. 同步移动两个下标
 
 令 $j=i+b-a$ .一次询问中，$i$ 从 $a$ 开始，$j$ 从 $b$ 开始，两者同步加一，直到某个下标超过 $n$ .

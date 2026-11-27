@@ -28,6 +28,12 @@ Induction first on energy and then on height proves the recurrence, because ever
 
 Equal-height vertices may be processed in any order. A self-loop costs one and refers to an earlier layer. When reusing a rolling array, every current-layer entry is assigned afresh, while the preceding two layers remain available. Reduce after every addition; two residues sum to less than $2^{31}$ .
 
-Sorting costs $O(n\log(n+1)+m\log(m+1))$ time, the DP costs $O((E+1)(n+m))$ , and space is $O(n+m)$ . The reference [std.cpp](std.cpp) supports the full constraints. Forward propagation by exact energy spent and ending vertex is another direction on the same acyclic state graph and is used for independent validation. Keeping all energy layers does not improve this problem's time or space needs, so no separate published program is listed for it.
+Sorting costs $O(n\log(n+1)+m\log(m+1))$ time, the DP costs $O((E+1)(n+m))$ , and space is $O(n+m)$ . The reference [std.cpp](std.cpp) supports the full constraints. Forward propagation by exact energy spent and ending vertex is another direction on the same acyclic state graph and is used for independent validation. Three rolling layers suffice in this direction as well.
 
 The supplied materials contain no usable solver or solution explanation. GPT-6 applies classical layered DP and provides the model, proof, bilingual explanation and C++17 implementation; layered DP itself is a general technique. Tests cover zero energy, empty graphs, parallel edges, self-loops, equal-height cycles, descending chains and maximum energy. See the [measurements](../../../docs/benchmark-R25.json).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Forward propagation](solution-alternative-forward.en.md) | Count by ending vertex and exact energy spent | [C++17](alternative-forward.cpp) |

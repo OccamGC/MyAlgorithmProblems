@@ -29,3 +29,9 @@ Since $C_i\le\lfloor1000/i\rfloor$ , the total capacity satisfies
 $$S\le\sum_{i=1}^{1000}\left\lfloor\frac{1000}{i}\right\rfloor=7069$$
 
 Time complexity is $O(n(S+1))$ and space complexity is $O(S+1)$ . Each window update adds or removes one reduced coefficient, so ordinary integer arithmetic with immediate normalization suffices.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Direct convolution](solution-alternative-convolution.en.md) | Enumerate quantities of each type directly | [C++17](alternative-convolution.cpp) |

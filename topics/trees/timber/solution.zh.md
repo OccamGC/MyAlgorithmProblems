@@ -1,5 +1,12 @@
 # 砍树：题解
 
+## 实现选择
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [线性计数排序](solution-alternative-counting.zh.md) | 用链长的取值范围实现线性排序 | [C++17](alternative-counting.cpp) |
+| [DFS 序与线段树](solution-alternative-subtree-updates.zh.md) | 直接观察每次砍伐后各端点的收益 | [C++17](alternative-subtree-updates.cpp) |
+
 ## 解法比较
 
 标程采用静态最长链分解。它把收益提取阶段从动态子树修改的 $O(n\log(n+1))$ 降至 $O(n)$ ，并省去区间维护数组。最终排序使总时间仍为 $O(n\log(n+1))$ .

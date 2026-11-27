@@ -45,3 +45,9 @@ An update changes one leaf's quantity and its $d_i+s_i$ , then recomputes ances
 ## Complexity and numeric bounds
 
 Building takes $O(n)$ time, each update or query takes $O(\log n)$ , total time is $O(n+m\log n)$ , and space is $O(n)$ . Totals may exceed 32-bit range, so use signed 64-bit values for every summary; $\mathrm{Demand}+\mathrm{Supply}\le6\times10^{14}$ .
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Four-field segment tree](solution-alternative-residual.en.md) | Maintain unmatched supply and demand explicitly | [C++17](alternative-residual.cpp) |

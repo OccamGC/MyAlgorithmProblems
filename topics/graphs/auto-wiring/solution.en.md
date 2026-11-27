@@ -46,3 +46,9 @@ Time is $O((n+m)\sqrt n)$ and space is $O(n+m)$ . Isolated vertices do not affe
 `tests/checker.py` takes input, reference-answer, and contestant-output paths. It checks integer syntax, ID range, duplicates, declared size, optimal size, and coverage of every edge. Only the optimal size is taken from the reference answer; the selected ports may differ.
 
 Small-instance validation enumerates every nonempty $3\times3$ bipartite graph and every vertex subset to find the optimum directly, with additional random multigraphs. For performance measurements, see [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Unit-capacity Dinic](solution-alternative-dinic.en.md) | Expose the matching flow and minimum cut | [C++17](alternative-dinic.cpp) |

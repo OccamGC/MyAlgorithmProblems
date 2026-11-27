@@ -1,0 +1,340 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "compiler": "g++ (GCC) 16.2.0",
+  "flags": "-std=c++17 -O2",
+  "repetitions": 3,
+  "cases": {
+    "grox-sequence-2": {
+      "id": "10",
+      "input_sha256": "b80500a01f984c764f1a3b486622d0ef7cc5b13fa9bd57ec9015113eaf875597",
+      "variants": {
+        "std": {
+          "source_sha256": "16af1dd6506e83e99cd1774e283d745c6a952b1a21d703c299ab02f9cc353057",
+          "wall_s": [
+            0.019314,
+            0.024468,
+            0.026223
+          ],
+          "peak_mib": 5.98,
+          "median_s": 0.024468
+        },
+        "alternative-constant-space": {
+          "source_sha256": "a4e342c8c698ff8a15eeb6a113cb6223d4a7d24e817c3bacd23021a4bbe7694d",
+          "wall_s": [
+            0.018296,
+            0.018964,
+            0.021083
+          ],
+          "peak_mib": 4.82,
+          "median_s": 0.018964,
+          "published_source_sha256": "1eb9a35fe1741a261cd22b1c4a9dd80392d4043117df5c1a2ff38286b1670aa5"
+        },
+        "alternative-divide-ntt": {
+          "source_sha256": "3a3413bf39b3f6e4d15f7bc04e071a854084f618bc260b9444d5f321955f4070",
+          "wall_s": [
+            0.196921,
+            0.179743,
+            0.192198
+          ],
+          "peak_mib": 8.96,
+          "median_s": 0.192198,
+          "published_source_sha256": "f90c350eac357f4174c64a0773cbf4c80741f68335a346ea4172c4702d8d9f6e"
+        }
+      },
+      "expected_output_sha256": "d4da9890526890e5b81faec0e3854221683d2a1c3887df2b671415273de7af29"
+    },
+    "grox-sequence-3": {
+      "id": "05",
+      "input_sha256": "bac06a5d3425469717398aeecad925023b0655495c17ae1869915730ea897ead",
+      "variants": {
+        "std": {
+          "source_sha256": "ce5bb7a9168888d22f5edb7e9e6c462a448599e66a9ad5511ac08f273b5d6253",
+          "wall_s": [
+            0.256901,
+            0.255982,
+            0.249603
+          ],
+          "peak_mib": 7.97,
+          "median_s": 0.255982
+        },
+        "alternative-diagonal-dp": {
+          "source_sha256": "8e35a9445062be9ec35b14d9ac677bcf2973a14d012870a26f973923c32619f0",
+          "wall_s": [
+            0.167362,
+            0.165989,
+            0.164123
+          ],
+          "peak_mib": 9.23,
+          "median_s": 0.165989,
+          "published_source_sha256": "25e144a6f8feaaf221cab2ab06986d9e9a5d3329a1c04308a546f3631246aa32"
+        },
+        "alternative-lookup": {
+          "source_sha256": "4a7892db654c7a1a050e109bb10f7c279c2fbce613ec9c47671673b4e3dcac9f",
+          "wall_s": [
+            0.161186,
+            0.131191,
+            0.130695
+          ],
+          "peak_mib": 100.21,
+          "median_s": 0.131191,
+          "published_source_sha256": "787efaf5aa0b19d230d107554461844a1bb6cba299e528ebd1136a35a424bf5a"
+        }
+      },
+      "expected_output_sha256": "41b3990e6b66a5ca503c88e5da8e316c2aad6642a6265e73cca89ccf785b7e4f"
+    },
+    "prism-tank": {
+      "id": "maximum-random",
+      "input_sha256": "19f179980f5d42a8b074bbe6bba8ef3c351680f1f4086f9dbb953e738475377e",
+      "variants": {
+        "std": {
+          "source_sha256": "a6f878c723fab0063d01c817dfa34a70c5dab6ab3cf6468c7f05fbe7f6af24a1",
+          "wall_s": [
+            0.09708,
+            0.086981,
+            0.087112
+          ],
+          "peak_mib": 5.38,
+          "median_s": 0.087112
+        },
+        "alternative-reroot": {
+          "source_sha256": "99bbe4c67d91ace6408ebe0131fee23ea7e91230a2f2a4395dd34f7e3fd2d12f",
+          "wall_s": [
+            0.027687,
+            0.029069,
+            0.026407
+          ],
+          "peak_mib": 5.02,
+          "median_s": 0.027687,
+          "published_source_sha256": "dfcb448e92a308a5375080987b2765c41f457fd650bd65fb6ffd808d104e0fc5"
+        }
+      },
+      "expected_output_sha256": "8fad4981c5f716ff6da29ded5a681141d50d3d19681e35904fc293b36708d4d1"
+    },
+    "wheat-field": {
+      "id": "diagonal",
+      "input_sha256": "98fb16fd4ae229d561ca1e4ef45332df3a5365661d1edeaec4a722392a34a3aa",
+      "variants": {
+        "std": {
+          "source_sha256": "53aed1c9b700efbf079872a626da5d3dd6eaa60772b082726625df7e1a17c5b8",
+          "wall_s": [
+            0.021134,
+            0.019877,
+            0.019503
+          ],
+          "peak_mib": 5.27,
+          "median_s": 0.019877
+        },
+        "alternative-decreasing-strip": {
+          "source_sha256": "ef1fdfce48980ee928e6c13afb8b548a661599627896fe33f7dd2c4a21f595b5",
+          "wall_s": [
+            0.01817,
+            0.018328,
+            0.018482
+          ],
+          "peak_mib": 4.83,
+          "median_s": 0.018328,
+          "published_source_sha256": "8e2c8aa8d0cb1444622135e9ec415dfd41259396098a81afab13041bed9c32cb"
+        }
+      },
+      "expected_output_sha256": "92b53a210b121a3df0fd8a15a17fdaabf83ec635a26d3f2d331ebf27b762d06d"
+    },
+    "timber": {
+      "id": "maximum-balanced",
+      "input_sha256": "e2c66445da0008dac44ce0d8261333449e36ea2af35cde5ab25f691a6a1bfd5c",
+      "variants": {
+        "std": {
+          "source_sha256": "bfaebaa4bc1a0d5ce334f01e22d796ed3f3b17fddaef2797e3f47b0416831f06",
+          "wall_s": [
+            0.158368,
+            0.151753,
+            0.142817
+          ],
+          "peak_mib": 36.95,
+          "median_s": 0.151753
+        },
+        "alternative-counting": {
+          "source_sha256": "8d57c46528f36dbccd9e7491fcbf293ffa01bbe7c8e3e2957744f4eae13a4686",
+          "wall_s": [
+            0.163879,
+            0.144711,
+            0.155709
+          ],
+          "peak_mib": 37.43,
+          "median_s": 0.155709,
+          "published_source_sha256": "87414d7f645b46afde739a875552ebfc52467d0f617364379edb31d91f346d3f"
+        },
+        "alternative-subtree-updates": {
+          "source_sha256": "676051630e067cdf239e021a48f2c4ea25543b2c9bfb7433b79d4dd8fe446275",
+          "wall_s": [
+            0.274069,
+            0.248565,
+            0.252488
+          ],
+          "peak_mib": 54.73,
+          "median_s": 0.252488,
+          "published_source_sha256": "0d0ced94cd7adea538da4c97f8c357ddb47a68cf6cf8b4b1933e1bb92be1b0d8"
+        }
+      },
+      "expected_output_sha256": "5c057092d5bb54c8e61545c618f7a902724c59c3c80fa004bfa18bf5bd95cebe"
+    },
+    "sign-recognition": {
+      "id": "long-prefixes",
+      "input_sha256": "df385eec5a6a551b5fbd87edf79e32edef4937772c43c5f0a22a4a0e425d685d",
+      "variants": {
+        "std": {
+          "source_sha256": "1ff4d9fa95e7d02b82ed0fd43fbe7a79f1f97939f6b6f77b1c69eadb13eecf7d",
+          "wall_s": [
+            0.117812,
+            0.12278,
+            0.119733
+          ],
+          "peak_mib": 12.9,
+          "median_s": 0.119733
+        },
+        "alternative-length-prefix": {
+          "source_sha256": "d42baea4fb912b8b7177287f32f3202d04fb525f3d08ef050ae79e586a6fdda0",
+          "wall_s": [
+            0.056642,
+            0.056543,
+            0.058046
+          ],
+          "peak_mib": 14.35,
+          "median_s": 0.056642,
+          "published_source_sha256": "f325db8a697d1dbb80dae2e7404abab9da99fca0865ba61761ab44ff6e7bbd51"
+        },
+        "alternative-suffix-treap": {
+          "source_sha256": "ff81d07253bd99d8af00842788840d5dcacd697698885b774de74e289727562f",
+          "wall_s": [
+            0.278306,
+            0.283159,
+            0.277031
+          ],
+          "peak_mib": 14.11,
+          "median_s": 0.278306,
+          "published_source_sha256": "f8b9fb9a5ab902a36f2e5dfc107b0fb017a47458f2b7372d74bc32ca7c5b4cd8"
+        }
+      },
+      "expected_output_sha256": "3c8f8d15eb7e5538e6e342584c21e1bb410ef752a04ec56caa5155a53429526a"
+    },
+    "passengers-need-exercise": {
+      "id": "maximum-random",
+      "input_sha256": "4baadaf457713418c734a93610c486cb0b4e3350a2b9b50fb496fd4e17d0ae42",
+      "variants": {
+        "std": {
+          "source_sha256": "2bf6810c5930faf4b2f0bfea65372ac79d4717e403d0b2b922ca71149856e010",
+          "wall_s": [
+            0.018942,
+            0.024791,
+            0.018539
+          ],
+          "peak_mib": 4.9,
+          "median_s": 0.018942
+        },
+        "alternative-slope-sweep": {
+          "source_sha256": "ee24a28d29b180ce855f09ac56d185d65dfee201d0dbdf6ba199c1b423a0bc51",
+          "wall_s": [
+            0.029424,
+            0.030219,
+            0.031289
+          ],
+          "peak_mib": 9.48,
+          "median_s": 0.030219,
+          "published_source_sha256": "eeb13b6f29a1386559ff8afd91da1003f0f09605291a596cd0a7631a77721e01"
+        }
+      },
+      "expected_output_sha256": "1f11b16a9b3683e278c310052228b105cd800729f08882f78863d35b6d630363"
+    },
+    "just-a-little-more": {
+      "id": "maximum-output",
+      "input_sha256": "7bda3056c445edccba04d27d4f78348815dc777f711fbd46530e505658e7df09",
+      "variants": {
+        "std": {
+          "source_sha256": "f4f80655eb856506f2690744cea86bf999a6fe07dfbdb43ab953b7bbe5adf96d",
+          "wall_s": [
+            0.181698,
+            0.184111,
+            0.279514
+          ],
+          "peak_mib": 5.27,
+          "median_s": 0.184111
+        },
+        "alternative-materialize": {
+          "source_sha256": "1faa4c638f2084ec84324c2594faecee39dbdfff82e782b2bb3e5eebae772049",
+          "wall_s": [
+            0.153323,
+            0.063943,
+            0.065838
+          ],
+          "peak_mib": 7.94,
+          "median_s": 0.065838,
+          "published_source_sha256": "7570bc31c4b2b82f55b4dae2125efaac2ca1cf68ff8edeb6cd4faa4428f2cc35"
+        }
+      },
+      "expected_output_sha256": "b2d6372fe46de2d6da41fa351d010a702602c5dd8a2fab95c04a3aa265d66873"
+    },
+    "redstone-clock": {
+      "id": "maximum-bound",
+      "input_sha256": "02e1fdd7baf0fe1e7d8061f57c1965e1883f3ff6c5f580228e4430abee4400e7",
+      "variants": {
+        "std": {
+          "source_sha256": "48637f8e8bde16e4387cb6ed5d8cb2c1371f4b60526131d034ba101a541c76c0",
+          "wall_s": [
+            1.559202,
+            1.465767,
+            1.498156
+          ],
+          "peak_mib": 4.76,
+          "median_s": 1.498156
+        },
+        "alternative-tabulated-gcd": {
+          "source_sha256": "d9c09c66770273d5502bf3b1efbb95a7fab57aae60571376f8f3d0c6f55d9287",
+          "wall_s": [
+            0.525928,
+            0.54667,
+            0.529573
+          ],
+          "peak_mib": 141.54,
+          "median_s": 0.529573,
+          "published_source_sha256": "34f932ab4a82cb498fbf771d2a2179eb65d6d42aa0e10b1a487f7ba5161b1e89"
+        }
+      },
+      "expected_output_sha256": "3ac370d5e0b3efe1cf9a37eaf75708512a1b5934c6648f21927302f1496b9796"
+    }
+  },
+  "cpu": "Intel Core Ultra 9 275HX",
+  "os": "Windows 11 10.0.26200",
+  "date": "2026-11-26",
+  "method": "One formal recipe per problem. A separate warm run records peak process working set (MiB) and checks the output. Three timed repetitions rotate program order and include startup, input and output. Medians describe these inputs, not judge limits.",
+  "additional_cases": {
+    "passengers-need-exercise": {
+      "id": "dense-breakpoints",
+      "input_sha256": "c9d733cdc1c7344771d4b70c42f9f5756de2edd1df8d14b2d9ca817d68a87d59",
+      "variants": {
+        "std": {
+          "source_sha256": "2bf6810c5930faf4b2f0bfea65372ac79d4717e403d0b2b922ca71149856e010",
+          "wall_s": [
+            0.070907,
+            0.06736,
+            0.065868
+          ],
+          "peak_mib": 4.89,
+          "median_s": 0.06736
+        },
+        "alternative-slope-sweep": {
+          "source_sha256": "ee24a28d29b180ce855f09ac56d185d65dfee201d0dbdf6ba199c1b423a0bc51",
+          "wall_s": [
+            0.032468,
+            0.027286,
+            0.031106
+          ],
+          "peak_mib": 9.48,
+          "median_s": 0.031106,
+          "published_source_sha256": "eeb13b6f29a1386559ff8afd91da1003f0f09605291a596cd0a7631a77721e01"
+        }
+      },
+      "input_recipe": "L=10000000, M=N=300. For i=0..299 use passenger position 5000000+113*i and door offset 101*i. All passenger/door midpoints fall inside the allowed stop interval.",
+      "expected_output_sha256": "e47aa39b8ba47c5e67b7c434916bc94889d15def575e405c9f51f9c7c0188831"
+    }
+  },
+  "source_hashes": "source_sha256 identifies the exact bytes compiled for the measurements. Where present, published_source_sha256 includes the one-line implementation credit subsequently added at the top of the source. Removing that line reproduces the measured source."
+}

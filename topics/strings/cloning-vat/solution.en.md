@@ -29,3 +29,9 @@ After all pairs are decided, the remaining budget is $0$ or $1$ . Keep the midd
 The feasibility interval exactly determines whether a candidate character can be extended to a valid string. Each step therefore chooses the smallest character that permits completion. Any lexicographically smaller string would use an infeasible character at its first differing position. Choosing the middle character by the same rule completes the lexicographically smallest valid result.
 
 Each pair tries at most four characters. Time is $O(n)$ per query and $O(\sum n)$ overall. The program writes the result into the input string, using $O(1)$ additional space beyond it and $O(\max n)$ peak storage.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Fixed-center parity construction](solution-alternative-fixed-center.en.md) | Compare the two center choices explicitly | [C++17](alternative-fixed-center.cpp) |

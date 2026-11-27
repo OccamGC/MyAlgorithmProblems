@@ -29,3 +29,9 @@ $$g_j=\sum_{k=0}^{C_i} f_{j-k}$$
 $$S\le\sum_{i=1}^{1000}\left\lfloor\frac{1000}{i}\right\rfloor=7069$$
 
 时间复杂度 $O(n(S+1))$ ，空间复杂度 $O(S+1)$ .窗口每次只加减一个已取模的系数，使用普通整数并及时归一化即可。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [逐项卷积](solution-alternative-convolution.zh.md) | 直接枚举每类选取的数量 | [C++17](alternative-convolution.cpp) |

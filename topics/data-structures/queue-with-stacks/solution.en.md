@@ -54,3 +54,9 @@ The last rule restores occupancy hidden by the bottom-only representation. The l
 Two scans take $O(m)$ time and $O(m)$ space. Allocate by the operation count, not the potentially billion-sized stack count. Since $V\le\lfloor m/2\rfloor$ , the answer is at most $4V\le2m$ and fits a signed thirty-two-bit integer. For $m=0$ , do not read a string; the answer is zero. See the [reference program](std.cpp).
 
 Explicit stacks and transfers construct a legal execution of the same cost, but bottom markers suffice to compute the answer. Small cases can also be checked by a shortest-path search over all stack configurations with the required time windows; that state space does not scale to the full constraints.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Explicit-stack simulation](solution-alternative-explicit-stacks.en.md) | Inspect the individual stack transfers | [C++17](alternative-explicit-stacks.cpp) |

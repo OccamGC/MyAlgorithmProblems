@@ -25,3 +25,10 @@ The definition sums one contribution for each drop, start, and valid offset. The
 ## Complexity and implementation
 
 Let $h=\min(n,m)$ . Time is $O(n+m+k+qh+kh)$ and space is $O(n+m+k)$ . The bounds allow direct enumeration of the relevant offsets in each drop, without storing the queries. The reference uses fixed-capacity arrays requiring about $48$ KB.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Suffix convolution](solution-alternative-suffix-ntt.en.md) | Exploit convolution over drop offsets and start positions | [C++17](alternative-suffix-ntt.cpp) |
+| [Block aggregation](solution-alternative-blocks.en.md) | Aggregate repeated complete blocks of offsets | [C++17](alternative-blocks.cpp) |

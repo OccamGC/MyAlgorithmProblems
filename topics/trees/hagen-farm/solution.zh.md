@@ -73,3 +73,9 @@ $$E=\frac2n\sum_v\sum_{k=1}^{s_v}L_v(k)W_v(k)$$
 ## 数据与验证
 
 `tests/generate.py` 覆盖链、星形、平衡树、扫帚形、零权边和随机树。小规模独立校验枚举生成根、苹果数量及全部子集，直接统计连接苹果的边。参考时限见[评测环境与性能](../../../docs/评测环境与性能.md)。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [子树期望 DP](solution-alternative-subtree-dp.zh.md) | 需要按子树及苹果数量区分中间结果 | [C++17](alternative-subtree-dp.cpp) |

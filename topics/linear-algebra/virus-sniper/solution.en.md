@@ -69,3 +69,9 @@ Let $L$ be the maximum number of decimal digits in an input time and $b=O(L)$ it
 $$O(Q+AB+d^4+bd^2+K(L^2+bd^2+d^3))$$
 
 Space usage is $O(AB+d^3+bd+L)$ . Every modular product fits in a signed 64-bit integer; so does $7S<7dP$ .
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Full-exponent matrix powering](solution-alternative-matrix-power.en.md) | Small matrices or an independent full-exponent check | [C++17](alternative-matrix-power.cpp) |

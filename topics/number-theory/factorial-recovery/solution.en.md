@@ -57,3 +57,9 @@ Every modular product is less than $P^2<2^{63}$ , and the combined value is les
 Small cases compare the complete output with Python's exact integer factorial. Formal cases also use exact full-output comparison. Tests cover $k=0$ , $k=D$ , a full fifteen-digit prefix, leading zeros and maximum $n$ .
 
 See [environment and measurements](../../../docs/评测环境与性能.md) for performance measurements.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Single-modulus reconstruction](solution-alternative-single-modulus.en.md) | Recover the prefix using one sufficiently large prime | [C++17](alternative-single-modulus.cpp) |

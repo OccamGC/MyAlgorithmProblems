@@ -43,3 +43,9 @@ $$F_t=\max\left(F_{t+1},\ G_t+F_{\min(T+1,t+R_s+S)}\right)$$
 需要注意 $M=0$ 仍对应一个坐标、损失允许为负、建成时刻等于开启时刻可以被保护，以及事件可能覆盖工事尚未建成的时段。
 
 时间复杂度 $O(n+A+B+WT)$ ，空间复杂度 $O(n+A+B+WT)$ ；$W,T\le3000$ .损失、收益和动态规划值使用 64 位整数。输入数组在转为网格后及时释放。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [正向损失 DP](solution-alternative-forward-loss.zh.md) | 直接维护累计损失 | [C++17](alternative-forward-loss.cpp) |

@@ -25,3 +25,10 @@ $$s_j\gets s_j+a_{l+j}$$
 ## 复杂度与实现
 
 令 $h=\min(n,m)$ .时间复杂度为 $O(n+m+k+qh+kh)$ ，空间复杂度为 $O(n+m+k)$ .本题规模允许直接枚举投送中的有效偏移，无需保存所有询问。参考程序使用固定上限数组，额外数组空间约为 $48$ KB。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [后缀卷积](solution-alternative-suffix-ntt.zh.md) | 利用投放与起点的卷积结构 | [C++17](alternative-suffix-ntt.cpp) |
+| [分块](solution-alternative-blocks.zh.md) | 相同偏移整块重复出现 | [C++17](alternative-blocks.cpp) |

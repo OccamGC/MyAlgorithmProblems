@@ -43,3 +43,9 @@ Difference sums recover the combined event effects exactly. Construction counts 
 Remember that $M=0$ still covers one coordinate, loss may be negative, construction at the activation time is protected, and an event may begin before a fortification exists.
 
 Time complexity is $O(n+A+B+WT)$ and space complexity is $O(n+A+B+WT)$ , with $W,T\le3000$ . Use 64-bit integers for losses, benefits, and DP values. Input arrays are released after their contents have been incorporated into the grids.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Forward loss DP](solution-alternative-forward-loss.en.md) | Maintain cumulative loss directly | [C++17](alternative-forward-loss.cpp) |

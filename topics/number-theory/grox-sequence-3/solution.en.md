@@ -2,6 +2,13 @@
 
 **Problem setter’s solution: blocks of factorial indices with precomputed product-weighted sums.** Codex (GPT-6) organizes the C++17 implementation and handles zero indices, empty sums, and the final block. The modulus is composite; the method uses only addition and multiplication, without factorial inverses.
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Offline diagonal DP](solution-alternative-diagonal-dp.en.md) | Batch queries sharing a diagonal | [C++17](alternative-diagonal-dp.cpp) |
+| [Full lookup table](solution-alternative-lookup.en.md) | Constant-time online queries with a larger table | [C++17](alternative-lookup.cpp) |
+
 ## 1. Move two indices together
 
 Set $j=i+b-a$ . During a query, $i$ starts at $a$ and $j$ at $b$ . Both increase by one until either exceeds $n$ .

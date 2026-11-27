@@ -57,3 +57,9 @@ Distance sorting with complete equal-distance groups finds the minimum radius an
 Graph construction costs $O(K^2\log K+\sum_iP_i)$ . A conservative determinant bound is $O(K^3\log\mathrm{mod})$ , and the factorial costs $O(E)$ . Auxiliary space is $O(K^2+\sum_iP_i)$ , which is $O(K^2)$ under these constraints.
 
 Use 64-bit integers for construction times and modular products. Coordinates are used only to measure distances between buildings, with no storage proportional to $NM$ .
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Grid segment tree](solution-alternative-grid-tree.en.md) | Construct the graph with spatial count and maximum queries | [C++17](alternative-grid-tree.cpp) |

@@ -45,3 +45,9 @@ $$\min(\mathrm{Demand},\ \mathrm{Supply},\ \mathrm{Demand}+\mathrm{Supply}-\math
 ## 复杂度与数值范围
 
 建树 $O(n)$ ，每次修改或查询 $O(\log n)$ ，总时间 $O(n+m\log n)$ ，空间 $O(n)$ . 总量可超过 32 位范围，所有区间摘要使用有符号 64 位整数；$\mathrm{Demand}+\mathrm{Supply}\le6\times10^{14}$ .
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [四字段线段树](solution-alternative-residual.zh.md) | 直接维护剩余供需和增广 | [C++17](alternative-residual.cpp) |

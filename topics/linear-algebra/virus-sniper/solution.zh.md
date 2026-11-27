@@ -69,3 +69,9 @@ $$v_T=\sum_{j=0}^{d-1}r_j(v_0H^j)$$
 $$O(Q+AB+d^4+bd^2+K(L^2+bd^2+d^3))$$
 
 空间为 $O(AB+d^3+bd+L)$ .所有模乘都在 64 位有符号整数范围内；$7S<7dP$ 也不会溢出。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [完整指数矩阵快速幂](solution-alternative-matrix-power.zh.md) | 小维矩阵或独立核对大指数 | [C++17](alternative-matrix-power.cpp) |

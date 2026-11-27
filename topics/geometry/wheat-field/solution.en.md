@@ -1,5 +1,11 @@
 # Wheat Field — Solution
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Shrinking-strip implementation](solution-alternative-decreasing-strip.en.md) | Use one linear scan per left boundary | [C++17](alternative-decreasing-strip.cpp) |
+
 ## Comparing solutions
 
 The problem setter’s method enumerates two horizontal support lines determined by obstacles and field boundaries. Within their strip, it scans blocking points in horizontal order and takes the largest square fitting between consecutive blockers. An optimal empty square can be moved or expanded until boundaries or obstacles constrain it, so these support strips suffice. Boundary contacts follow the statement's convention.

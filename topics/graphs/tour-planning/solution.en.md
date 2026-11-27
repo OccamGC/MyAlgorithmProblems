@@ -59,3 +59,9 @@ Use signed 64-bit integers for distances, capacities, potentials, and accumulate
 ## Validation
 
 The independent small-instance oracle uses Floyd for distances, then enumerates the destination or stay-home choice of each individual traveler, merging states by used reception capacities. It maximizes traveler count before minimizing cost. Checks include zero preferences, tied destinations, negative edges and cycles, free purchases, and parallel roads. For performance measurements, see [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Zero-cost augmentation and relabeling](solution-alternative-relabel-flow.en.md) | Update flow potentials using the slack across a residual cut | [C++17](alternative-relabel-flow.cpp) |

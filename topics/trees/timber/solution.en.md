@@ -1,5 +1,12 @@
 # Timber — Solution
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Linear counting sort](solution-alternative-counting.en.md) | Sort gains in linear time using their bounded lengths | [C++17](alternative-counting.cpp) |
+| [DFS-order segment tree](solution-alternative-subtree-updates.en.md) | Track endpoint gains after each cut | [C++17](alternative-subtree-updates.cpp) |
+
 ## Comparing solutions
 
 The reference uses static longest-chain decomposition. Gain extraction takes $O(n)$ instead of the $O(n\log(n+1))$ required by dynamic subtree updates and needs no range-update arrays. Final sorting keeps total time at $O(n\log(n+1))$ .

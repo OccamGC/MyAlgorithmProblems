@@ -62,3 +62,9 @@ The six rows show every nondecreasing partition of $N=7$ . Each rectangle’s v
 ## Data and reproduction
 
 The statement contains three samples. The [test plan](tests/plan.json) defines ten scored inputs. The [generator](tests/generate.py) uses only the Python standard library and accepts --plan, --out-dir, --case and --std. Large generated inputs and executables stay outside the published package. See the [reference measurements](../../../docs/benchmark-R29.json) for runtime and memory.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Direct block DP](solution-alternative-direct-dp.en.md) | Check the recurrence before suffix-sum optimization | [C++17](alternative-direct-dp.cpp) |

@@ -45,3 +45,9 @@ Initialize the answer to the smallest signed 64-bit integer rather than $0$ : e
 Stack construction, iterative traversal, and reverse-order evaluation all take $O(n)$ time and $O(n)$ space. No recursion is used, so million-node chains caused by monotone or equal arrays are safe.
 
 Prefix sums have absolute value at most $10^{12}$ , and candidate products have absolute value at most $10^{18}$ . Use signed 64-bit arithmetic and promote values before multiplication.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Monotone stack and segment tree](solution-alternative-segment-tree.en.md) | Use range extrema in place of Cartesian-tree DP | [C++17](alternative-segment-tree.cpp) |

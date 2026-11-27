@@ -35,3 +35,9 @@ Apply inclusion-exclusion to the event that each column is monochromatic. Distin
 ## Complexity and implementation
 
 Each column state takes $O(n^2)$ time, for $O(n^2(m+1)^n)$ enumeration time. Binary exponentiation computes one denominator inverse per position; preprocessing takes $O(n^2(m+\log P))$ time. Space is $O(n^2m)$ . All arithmetic is modulo $P$ , with subtraction normalized to a nonnegative residue.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Row-state DP](solution-alternative-row-dp.en.md) | Track the still-monochromatic columns explicitly | [C++17](alternative-row-dp.cpp) |

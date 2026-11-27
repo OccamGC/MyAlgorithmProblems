@@ -41,3 +41,9 @@ Space is $O(m+1)$ . Worst-case bounds match the setter's full row: $O(k\log(k+1
 An exponential generating function extracts binomial moments through formal-series log/exp, giving a different algorithm with the same worst-case asymptotic bounds. It uses more polynomial operations; the supplied implementation exceeds the 0.5-second limit and is explicitly a backup, not a full-data reference.
 
 [Complete editorial and measurements](solution-alternative-fps.en.md) · [Program](alternative-fps.cpp)
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Rolling Stirling DP](solution-alternative-stirling-dp.en.md) | Small Stirling rows or few contributing columns | [C++17](alternative-stirling-dp.cpp) |

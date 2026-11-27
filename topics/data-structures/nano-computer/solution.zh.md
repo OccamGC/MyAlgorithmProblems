@@ -40,3 +40,9 @@ $$o_b=o_{L,b}+\begin{cases}o_{R,b},&z_L\text{ 的第 }b\text{ 位为 }0\\k_R-o_{
 ## 复杂度
 
 每次合并需要遍历 $B$ 个二进制位，耗时 $O(B)$ .建树时间为 $O(nB)$ ，每次单点赋值或区间查询的时间为 $O(B\log n)$ ，空间复杂度为 $O(nB)$ .
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [维护跨界贡献的线段树](solution-alternative-cross-sums.zh.md) | 在结点内直接保存子数组异或和 | [C++17](alternative-cross-sums.cpp) |

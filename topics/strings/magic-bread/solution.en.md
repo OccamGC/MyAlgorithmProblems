@@ -55,3 +55,9 @@ For each level, both scans process $2n-1$ characters. Time is $O(n\min(n,K))$ ,
 Handle single-position rings, constant strings, segments crossing the numbering boundary, $K>n$ , and adjacent palindromic blocks that differ. The largest product is at most $nK$ . The reference uses 32-bit unsigned integers for bit windows and integers for lengths and XOR results.
 
 Validation enumerates every binary ring of length at most 8, then checks random rings using direct extraction, reversal, and block comparison. Formal data include million-character constant strings, alternating strings, palindromic periods, and periodic strings with one changed character. For performance measurements, see [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Bidirectional palindromic trees](solution-alternative-palindromic-tree.en.md) | Represent palindrome repetitions with suffix links | [C++17](alternative-palindromic-tree.cpp) |

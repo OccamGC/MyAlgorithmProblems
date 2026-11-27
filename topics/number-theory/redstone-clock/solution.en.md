@@ -25,3 +25,9 @@ The least common multiple is exactly the first positive time when both clocks fi
 Let $U$ bound the periods and initial parameter; here $U=10^7$ . Each GCD takes $O(\log U)$ time, giving total time $O(n\log U)$ and auxiliary space $O(1)$ under fixed-width integer arithmetic.
 
 Both the LCM and $a^2$ may exceed 32-bit range, so use 64-bit integers. Divide by the GCD before multiplying by $a$ . Queries are generated online and need not be stored.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Tabulated GCD](solution-alternative-tabulated-gcd.en.md) | Many queries with memory available for lookup tables | [C++17](alternative-tabulated-gcd.cpp) |

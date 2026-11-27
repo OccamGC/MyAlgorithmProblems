@@ -57,3 +57,9 @@ $$u=(r_q-r_p)p^{-1}\bmod q$$
 小规模使用 Python 的整数阶乘直接比较完整输出；正式输入也逐字与整数阶乘比较。覆盖 $k=0$ 、$k=D$ 、最大十五位前缀、后缀前导零和最大 $n$ .
 
 性能测量见[评测环境与性能](../../../docs/评测环境与性能.md)。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [单模数还原](solution-alternative-single-modulus.zh.md) | 用一个足够大的素数恢复前缀 | [C++17](alternative-single-modulus.cpp) |

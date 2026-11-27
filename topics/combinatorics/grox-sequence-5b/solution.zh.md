@@ -41,3 +41,9 @@ $$O(m\log(k+1)+m\log(m+1)+\log(n+1))$$
 指数生成函数直接提取二项式矩，经形式级数 log/exp 得到同阶的不同算法。它需要更多多项式运算；当前随附实现超过 0.5 秒时限，明确作为备用方案，不能作为完整数据的标程。
 
 [完整题解与测量](solution-alternative-fps.zh.md) · [计算程序](alternative-fps.cpp)
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [逐行 Stirling 递推](solution-alternative-stirling-dp.zh.md) | 较小的 Stirling 行或较少的有效列 | [C++17](alternative-stirling-dp.cpp) |

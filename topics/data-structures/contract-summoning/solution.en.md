@@ -61,3 +61,9 @@ The infinity sentinel must exceed every legal attribute. Identical requirement t
 An independent model scans every NPC for each processed character and computes the closure directly. Tests cover the invalid attribute-aggregation shortcut, equality, zero attributes, duplicates, no reachable NPC and reversed long chains. Formal cases also include reporting every NPC in one query.
 
 See [environment and measurements](../../../docs/评测环境与性能.md) for performance measurements.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Fenwick tree of dynamic segment trees](solution-alternative-fenwick-range-tree.en.md) | Explore dominance reporting with dynamically allocated inner nodes | [C++17](alternative-fenwick-range-tree.cpp) |

@@ -34,3 +34,9 @@ A prefix of the initial string is printed correctly. For $t>L_1$ , the smallest
 Let $V=70$ be the maximum version index, and let $C$ count all output characters excluding newlines. Every internal recursive call splits into two nonempty parts, so there are $O(C+Q)$ calls. Each binary search costs $O(\log V)$ , giving $O(V+(C+Q)\log V)$ time and $O(V+|s_1|)$ auxiliary space, plus the output stream's buffer.
 
 Version indices strictly decrease along recursive calls, so depth is at most $V$ . Avoiding storage of the full string keeps memory use suitable for the 8 MB limit.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Full materialization](solution-alternative-materialize.en.md) | Repeated long outputs when the largest string fits | [C++17](alternative-materialize.cpp) |

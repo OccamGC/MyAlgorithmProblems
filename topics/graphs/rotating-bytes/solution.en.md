@@ -47,3 +47,9 @@ Build the required order in linear time. Bucket original edges by their source, 
 Let $L$ be the total character count of all vertex and edge labels. Every block is first entered once, every character is processed once, and every converted edge is examined once. Time and space are $O(n+m+L)$ . Here labels have length at most five, so both are $O(n+m)$ . The implementation stores five character slots per block instead of building a graph vertex per character; the four queues store block numbers and reuse capacity.
 
 The [reference program](std.cpp) uses this reverse linear algorithm. An independent verification method first computes suffix distances with Dijkstra, filters the smallest forward string in the shortest-path graph, and uses matching-string reachability to greedily choose predecessors backwards. Separating the three objectives this way requires a heap and extra passes, raising worst-case time to $O((n+m)\log n+L)$ , so it is not the preferred computation here.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Shortest-path DAG implementation](solution-alternative-shortest-dag.en.md) | Handle length, forward string and reverse path order separately | [C++17](alternative-shortest-dag.cpp) |

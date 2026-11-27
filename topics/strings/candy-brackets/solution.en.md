@@ -83,3 +83,11 @@ Let $L=N+M$ . Each insertion adds one element and each reduction removes at lea
 The absolute weight of any contiguous segment is at most $2\times10^6\cdot4\times10^9=8\times10^{15}$ . Signed 64-bit integers suffice for all four values and intermediate sums. The implementation is iterative, so deep nesting does not overflow the call stack. Initial types use one byte each to control memory use.
 
 [std.cpp](std.cpp) uses the four-value reductions and handles all data. For nonnegative weights, the problem setter's total-only method is also linear and stores fewer values, but it cannot directly handle negative weights. Rescanning after each update is a small-case oracle and may take quadratic total time. Offline activation of adjacent atoms within bracket levels provides an independent check, but needs all operations, the matching hierarchy and disjoint-set state, taking $O(L\alpha(L))$ time. It has no advantage over the online linear method and is used internally for validation.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Nonnegative-weight subtask](solution-alternative-nonnegative.en.md) | Nonnegative-weight subtask only | [C++17](alternative-nonnegative.cpp) |
+
+The offline verification algorithm that activates adjacent atoms within bracket levels also has a complete [Python implementation](../../../tools/check_candy_signed.py).

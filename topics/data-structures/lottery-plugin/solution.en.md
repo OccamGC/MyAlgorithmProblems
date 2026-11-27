@@ -37,3 +37,9 @@ The independent model stores active participants in a dictionary and scans them 
 ## Program and reproduction
 
 See [std.cpp](std.cpp) for the C++17 reference. After compiling, run `tests/generate.py --out-dir <path-outside-the-problem> --std <program-path>` to generate inputs and answers. Seeds and case purposes are in the [test plan](tests/plan.json). Performance results are documented in [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Skip list](solution-alternative-skip-list.en.md) | Track neighboring keys with reusable skip-list towers | [C++17](alternative-skip-list.cpp) |

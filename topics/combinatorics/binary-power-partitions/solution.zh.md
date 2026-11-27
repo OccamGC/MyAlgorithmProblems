@@ -62,3 +62,9 @@ $N=0$ 直接输出一。其他输入最多有 $63$ 个二进制位，仅访问�
 ## 数据与复现
 
 三个样例见题面。[生成配方](tests/plan.json)包含十份计分输入；[生成器](tests/generate.py)只依赖 Python 标准库，支持 --plan、--out-dir、--case 和 --std。正式大输入及可执行文件不放入发布包。时间和内存的参考测量见[性能记录](../../../docs/benchmark-R29.json)。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [直接分块递推](solution-alternative-direct-dp.zh.md) | 核对后缀和优化前的递推 | [C++17](alternative-direct-dp.cpp) |

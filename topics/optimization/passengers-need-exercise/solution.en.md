@@ -1,5 +1,11 @@
 # Passengers Need More Exercise: Solution
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Slope sweep](solution-alternative-slope-sweep.en.md) | Trade an event table for a lower worst-case time bound | [C++17](alternative-slope-sweep.cpp) |
+
 ## Comparing solutions
 
 The problem setter’s method enumerates interval endpoints and positions aligning a passenger with the midpoint of two adjacent doors. Between consecutive candidates, each passenger keeps the same nearest door, giving an absolute-value distance function. Their sum is convex, so its maximum and leftmost optimal position can be attained at a candidate. For each candidate, a two-pointer scan of ordered passengers and doors computes the sum of nearest-door distances. The convexity proof below preserves this reasoning.

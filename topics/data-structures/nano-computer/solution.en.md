@@ -40,3 +40,9 @@ Here the upper bound $U=65536=2^{16}$ is inclusive, so the reference implementat
 ## Complexity
 
 Each merge examines $B$ binary bits and takes $O(B)$ time. Building takes $O(nB)$ time; each point assignment or range query takes $O(B\log n)$ time. Space is $O(nB)$ .
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Segment tree with explicit cross sums](solution-alternative-cross-sums.en.md) | Store the subarray XOR sum at every node | [C++17](alternative-cross-sums.cpp) |

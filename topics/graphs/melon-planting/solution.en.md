@@ -47,3 +47,9 @@ The independent checker enumerates every three-state $2\times3$ grid, directly e
 ## Program and reproduction
 
 See [std.cpp](std.cpp) for the C++17 reference. After compiling, run `tests/generate.py --out-dir <path-outside-the-problem> --std <program-path>` to generate inputs and answers. Seeds and case purposes are in the [test plan](tests/plan.json). Performance results are documented in [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Pruned maximal-matching search](solution-alternative-pruned-search.en.md) | Prune using cells that must eventually be occupied | [C++17](alternative-pruned-search.cpp) |

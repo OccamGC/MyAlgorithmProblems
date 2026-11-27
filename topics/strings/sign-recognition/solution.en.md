@@ -1,5 +1,12 @@
 # Sign Recognition — Solution
 
+## Implementation choices
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Precomputed length counts](solution-alternative-length-prefix.en.md) | Radix-sort suffix ranks and answer length queries in constant time | [C++17](alternative-length-prefix.cpp) |
+| [Suffix treap with integer ranks](solution-alternative-suffix-treap.en.md) | Compare suffix tails using exact integer ranks | [C++17](alternative-suffix-treap.cpp) |
+
 ## Comparing solutions
 
 The problem setter’s program inserts suffixes from right to left into a treap, comparing their first character and the order label of the following suffix. This is the recursive definition of suffix order. Rotations relabel the affected subtree using floating-point interval midpoints. After obtaining the suffix array and adjacent LCPs, each query scans left and right separately for every source string, finds shared prefixes with other sources, and excludes non-unique lengths. The counting argument is the one below.

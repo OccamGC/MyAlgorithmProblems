@@ -1,5 +1,12 @@
 # 告示牌识别：题解
 
+## 实现选择
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [按长度预处理](solution-alternative-length-prefix.zh.md) | 倍增计数排序和常数时间长度查询 | [C++17](alternative-length-prefix.cpp) |
+| [整数排名后缀 Treap](solution-alternative-suffix-treap.zh.md) | 用精确整数排名比较尾后缀 | [C++17](alternative-suffix-treap.cpp) |
+
 ## 解法比较
 
 出题人实现从后往前插入后缀，用 Treap 按“首字符、下一后缀的顺序标签”排序；这是后缀字典序的递归定义。旋转后重标相应子树，标签取浮点区间中点。得到后缀数组和相邻 LCP 后，对每次询问、每个来源分别向左右扫描，求与其他来源的最长公共前缀，再扣掉不能独占的长度，计数依据与下文一致。

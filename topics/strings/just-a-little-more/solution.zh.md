@@ -34,3 +34,9 @@ $$L_1=|s_1|,\qquad L_k=L_{k-1}+\left\lceil L_{k-1}/5\right\rceil$$
 设最大版本编号为 $V=70$ ，所有询问的输出字符总数为 $C$（Characters，不含换行）。每次非叶递归都拆成两个非空部分，因此递归调用总数为 $O(C+Q)$ ；每次二分花费 $O(\log V)$ . 总时间为 $O(V+(C+Q)\log V)$ ，额外空间为 $O(V+|s_1|)$ ，另有标准输出流的缓冲区。
 
 递归中的版本编号严格下降，深度至多 $V$ . 这种输出方式无需存储数百万字符，适合本题的 8 MB 内存限制。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [完整构造](solution-alternative-materialize.zh.md) | 多次输出长版本且可容纳整串 | [C++17](alternative-materialize.cpp) |

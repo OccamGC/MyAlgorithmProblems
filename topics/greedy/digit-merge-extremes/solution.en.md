@@ -54,3 +54,9 @@ Suffix maxima test carry feasibility; suffix minima test no-carry feasibility. T
 Time is $O(n)$ and space is $O(n)$ . The sum of two digits is at most $2(k-1)<2\times10^9$ , which fits a signed thirty-two-bit integer. The complete result is never stored as an integer. The [reference program](std.cpp) uses buffered input and output.
 
 Enumerating left positions and querying suitable right partners can also verify answers, but requires more involved result-string comparisons and $O(n\log n)$ time. The linear greedy method is preferred here.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Left-position enumeration and segment tree](solution-alternative-partner-search.en.md) | Check the optimal partner at each left position | [C++17](alternative-partner-search.cpp) |

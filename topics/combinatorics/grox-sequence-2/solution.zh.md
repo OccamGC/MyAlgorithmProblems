@@ -1,6 +1,13 @@
 # Grox的序列二题解
 
-**首选：按指数余数分类的前缀和，Codex（GPT-6）针对所需的三个总和给出线性算法。** 出题人的分治 NTT 解法可计算全部系数，下文保留完整思路及复杂度；本题只要求三个总和，因此 `std.cpp` 采用线性算法。
+**标程采用按指数余数分类的前缀和，Codex（GPT-6）针对所需的三个总和给出线性算法。** 出题人的分治 NTT 解法可计算全部系数，下文保留完整思路及复杂度；本题只要求三个总和，因此 `std.cpp` 采用线性算法。
+
+## 实现选择
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [常数空间](solution-alternative-constant-space.zh.md) | 只求三个余数和，额外空间降至常数 | [C++17](alternative-constant-space.cpp) |
+| [分治 NTT](solution-alternative-divide-ntt.zh.md) | 需要全部 Laurent 系数 | [C++17](alternative-divide-ntt.cpp) |
 
 ## 1. 只保留会影响输出的信息
 

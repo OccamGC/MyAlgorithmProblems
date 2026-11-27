@@ -73,3 +73,9 @@ These DP states are useful if a variant asks about a particular subtree and a fi
 ## Data and validation
 
 `tests/generate.py` covers chains, stars, balanced trees, brooms, zero-length edges, and random trees. The independent small-instance oracle enumerates the generation root, apple count, and every subset, then directly finds the connecting edges. See [environment and measurements](../../../docs/评测环境与性能.md).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Subtree expectation DP](solution-alternative-subtree-dp.en.md) | Retain intermediate results by subtree and apple count | [C++17](alternative-subtree-dp.cpp) |

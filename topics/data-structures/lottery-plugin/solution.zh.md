@@ -37,3 +37,9 @@ Codex（GPT-6）采用的实现用标准有序集合实现相同操作，单次�
 ## 程序与复现
 
 参考程序见 [std.cpp](std.cpp)。使用 C++17 编译后，可用 `tests/generate.py --out-dir <题目目录以外的路径> --std <程序路径>` 生成输入和答案。固定种子与用例目的见 [生成计划](tests/plan.json)。性能测量见 [评测环境与性能](../../../docs/评测环境与性能.md)。
+
+## 补充实现
+
+| 方案 | 适用场景 | 源码 |
+| --- | --- | --- |
+| [跳表](solution-alternative-skip-list.zh.md) | 按层维护相邻候选并复用参与者结点 | [C++17](alternative-skip-list.cpp) |

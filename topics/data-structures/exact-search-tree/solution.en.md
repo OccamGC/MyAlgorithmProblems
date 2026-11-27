@@ -50,3 +50,9 @@ Accumulate an input magnitude in a sixty-four-bit integer, apply the sign, and t
 Induct on operations. The index maps every live key to its precise position. Insertion chooses the same unique empty link as a root search. Deletion performs the same count update, successor-data move and child transplant. Printing follows the same links. Thus all output agrees with direct simulation.
 
 Each insertion or deletion uses a constant number of $O(\log(M+1))$ index operations and constant link changes. Printing costs $O(P)$ in total. Total time is $O(M\log(M+1)+P)$ and space is $O(M)$ . The index adds storage per live key in exchange for searches independent of the actual tree height, within the unchanged constraints. The [reference program](std.cpp) uses this method.
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Direct tree simulation](solution-alternative-direct.en.md) | Inspect actual search and deletion paths in the unbalanced tree | [C++17](alternative-direct.cpp) |

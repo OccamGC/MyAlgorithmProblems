@@ -15,3 +15,9 @@ Another calculation method of the problem setter fills the board row by row. A s
 Start with all columns in $S$ and finish at $S=\varnothing$ . Enumerating the legal row choices enforces all row and column requirements. Every board has a unique sequence of row choices, so it is counted once. Apply inclusion-exclusion to the two diagonals. Enumerating states and their subsets takes $O(n3^n)$ time and $O(2^n)$ space for one order. This supports small offline calculations, but is not an online reference solution for the complete domain. Grouping mirror pairs avoids this exponential enumeration.
 
 Verification exhausts all boards through $n=4$ and compares all 21 constants with the calculator. See the [test recipes](tests/README.md) and [measurements](../../../docs/benchmark-R36.json).
+
+## Additional implementations
+
+| Method | When to use it | Source |
+| --- | --- | --- |
+| [Offline column-coverage DP](solution-alternative-column-dp.en.md) | Regenerate the fixed answer table offline | [C++17](alternative-column-dp.cpp) |
